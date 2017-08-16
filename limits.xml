@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+
+*********************************************************************-->
+<!-- This file was originally part of the book     -->
+<!-- (as copied on 2015/07/12)                     -->
+<!--                                               -->
+<!--   Abstract Algebra: Theory and Applications   -->
+<!--                                               -->
+<!-- Copyright (C) 1997-2014  Thomas W. Judson     -->
+
+<chapter xml:id="limits" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Limits of Functions</title>
+    <introduction>
+        <p>
+            At its heart, calculus is just the mathematicals of change.
+            In particular, calculus provides the tools necessary to describe how a function changes.
+            Since a function can be used to represent many quantities that appear in real life, calculus therefore gives us a way to study how many different quantities (such as temperature, acceleration, energy of a signal, etc.) can change.
+            But before we can start using calculus, we need to come up with the proper language to describe it.
+            The language we will need to develop is that of the <em>limit of a function</em>.
+        </p>
+    </introduction>
+    
+    <section xml:id="section-the-limit-of-a-function">
+        <title>The Limit of a Function</title> 
+        <subsection xml:id="subsection-motivating-limits">
+            <title>Motivating Limits</title>
+            <p>
+                Imagine creating a mathematical valley out of the graph of <m>f(x) = x^{2}</m>, and in this valley walks a mathematical ant.
+            </p>
+            <figure xml:id="figure-math-valley">
+                <image width="1000">
+                    <asymptote>
+                        import graph;
+                        size(200,IgnoreAspect);
+
+                        real f(real x) {return x^2;}
+
+                        draw(graph(f,-2,2), deepblue);
+
+                        yaxis("$y$",ymin=-.1,ymax=f(2.1),RightTicks(Label(Fill(white))),EndArrow);
+                        xaxis("$x$",xmin=-5,xmax=5,LeftTicks,EndArrow);
+                    </asymptote>
+                </image>
+                <caption>A mathematical valley minus a mathematical ant.</caption>
+            </figure>
+        </subsection>
+    </section>
+</chapter>
