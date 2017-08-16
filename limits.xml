@@ -28,9 +28,14 @@
             <title>Motivating Limits</title>
             <p>
                 Imagine creating a mathematical valley out of the graph of <m>f(x) = x^{2}</m>, and in this valley walks a mathematical ant.
+                The ant is walking towards the place on the hill directly above <m>x = -\frac{1}{2}</m>.
+                At <m>x=-2</m>, the ant is <m>4</m> units above the ground.
+                At <m>x=-1</m>, the ant is now <m>1</m> unit above the ground.
+                As the ant moves towards <m>x=-\frac{1}{2}</m>, its height above the ground gets closer and closer to <m>\frac{1}{4}</m>.
+                To say it more clearly, and because modern calculus is built on this idea, <em>as the ant approaches</em> the point above <m>x = -\frac{1}{2}</m>, its <em>height above the ground approaches</em> towards the value <m>\frac{1}{4}</m>.
             </p>
             <figure xml:id="figure-math-valley">
-                <image width="1000">
+                <image width="50%">
                     <asymptote>
                         import graph;
                         size(200,IgnoreAspect);
@@ -38,6 +43,13 @@
                         real f(real x) {return x^2;}
 
                         draw(graph(f,-2,2), deepblue);
+                        
+                        dot((-2,f(-2)), red);
+                        draw((-2,0)--(-2,f(-2)), red+dashed);
+                        dot((-1,f(-1)), red);
+                        draw((-1,0)--(-1,f(-1)), red+dashed);
+                        dot((-.5,f(-.5)), red);
+                        draw((-.5,0)--(-.5,f(-.5)), red+dashed);
 
                         yaxis("$y$",ymin=-.1,ymax=f(2.1),RightTicks(Label(Fill(white))),EndArrow);
                         xaxis("$x$",xmin=-5,xmax=5,LeftTicks,EndArrow);
