@@ -72,6 +72,44 @@
                 We're not quite ready to define the limit of a function precisely, but we can point one thing out right away: <em>the limit of a function requires two pieces of information: the function itself and the number that <m>x</m> is approaching.</em>
                 The limit should then be whatever number that <m>f(x)</m> is approaching.
             </p>
+            <example xml:id="example-estimating-the-limit-of-a-trigonometric-function">
+                <title>Estimating the limit of a trigonometric function</title>
+                <statement>
+                    <p>
+                        Let <m>f(x) = \sin x\cos x</m>.
+                        What is the limit of <m>f(x)</m> as <m>x</m> approaches the number <m>\pi</m>?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        We don't have a lot of tools to find limits yet, so we'll try to estimate it instead.
+                        What we'll do is we'll plug numbers that are closer and closer to <m>\pi</m> into <m>f(x)</m>.
+                        Let's try this:
+                    </p>
+                    <tabular halign="center" top="major">
+                        <row top="major" bottom="minor">
+                            <cell><m>x</m></cell>
+                            <cell><m>f(x)</m></cell>
+                        </row>
+                        <row>
+                            <cell><m>3</m></cell>
+                            <cell><m>-.140</m></cell>
+                        </row>
+                        <row>
+                            <cell><m>3.1</m></cell>
+                            <cell><m>-.042</m></cell>
+                        </row>
+                        <row bottom="major">
+                            <cell><m>3.14</m></cell>
+                            <cell><m>-.002</m></cell>
+                        </row>
+                    </tabular>
+                    <p>
+                        We can even let <m>x</m> approach <m>\pi</m> from the other direction as well (i.e. "from the right") and <m>f(x)</m> will still approach <m>0</m> as <m>x</m> gets closer and closer to <m>\pi</m>.
+                        So it looks like the limit should be <m>0</m>.
+                    </p>
+                </solution>
+            </example>
         </subsection>
     </section>
 </chapter>
