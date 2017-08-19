@@ -32,7 +32,8 @@
                 At <m>x=-2</m>, the ant is <m>4</m> units above the ground.
                 At <m>x=-1</m>, the ant is now <m>1</m> unit above the ground.
                 As the ant moves towards <m>x=-\frac{1}{2}</m>, its height above the ground gets closer and closer to <m>\frac{1}{4}</m>.
-                To say it more clearly, and because modern calculus is built on this idea, <em>as the ant approaches</em> the point above <m>x = -\frac{1}{2}</m>, its <em>height above the ground approaches</em> towards the value <m>\frac{1}{4}</m>.
+                To say it more clearly, and because modern calculus is built on this idea, <em>as the ant approaches</em> the point above <m>x = -\frac{1}{2}</m>, its <em>height above the ground approaches</em> the value <m>\frac{1}{4}</m>.
+                In other words, the <em>limit</em> of <m>f(x) = x^{2}</m> as <m>x</m> approaches <m>-\frac{1}{2}</m> is <m>\frac{1}{4}</m>.
             </p>
             <figure xml:id="figure-math-valley">
                 <image width="50%">
@@ -57,6 +58,20 @@
                 </image>
                 <caption>A mathematical valley minus a mathematical ant.</caption>
             </figure>
+            <p>
+                Remember that a function <m>f</m> of the variable <m>x</m> is just a rule that turns one number, <m>x</m>, into another number, <m>f(x)</m>.
+                So the idea that the <em>limit of a function</em> is trying to express is what happens to the number <m>f(x)</m> (the output) as the number <m>x</m> (the input) approaches some particular value.
+            </p>
+            <aside>
+                <p>
+                    Actually, functions are much more general than this.
+                    But for calculus, it won't hurt us to view functions in this way.
+                </p>
+            </aside>
+            <p>
+                We're not quite ready to define the limit of a function precisely, but we can point one thing out right away: <em>the limit of a function requires two pieces of information: the function itself and the number that <m>x</m> is approaching.</em>
+                The limit should then be whatever number that <m>f(x)</m> is approaching.
+            </p>
         </subsection>
     </section>
 </chapter>
