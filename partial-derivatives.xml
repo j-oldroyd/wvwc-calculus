@@ -915,7 +915,7 @@
                 To determine if they are, we need to use the <term>second derivative test</term>.
             </p>
             <theorem xml:id="theorem-second-derivative-test">
-                <index><main>maxima and minima</main><sub>second derivative test</sub></index>
+                <idx><h>maxima and minima</h><h>second derivative test</h></idx>
                 <title>Second Derivative Test</title>
                 <statement>
                     <p>
