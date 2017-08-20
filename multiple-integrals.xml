@@ -116,8 +116,8 @@
                 </statement>
                 <solution>
                     <p>
-                        We found this previously in <xref ref="example-double-integrals-by-volume" autoname="yes" />, so we'll try it again using Fubini's Theorem and see if we get the same answer.
-                        By <xref ref="theorem-fubini-s-theorem" autoname="yes" />, we have
+                        We found this previously in <xref ref="example-double-integrals-by-volume" text="type-global" />, so we'll try it again using Fubini's Theorem and see if we get the same answer.
+                        By <xref ref="theorem-fubini-s-theorem" text="type-global" />, we have
                         <md>
                             <mrow>\iint_{R}f(x,y)\,dA &amp; = \int_{0}^{3}\left[\int_{0}^{5}(5-x)\,dx\right]\,dy </mrow>
                             <mrow> &amp; = \int_{0}^{3}\left[5x - \frac{x^{2}}{2}\right]_{x=0}^{5}\,dy </mrow>
@@ -169,13 +169,13 @@
     <section xml:id="section-double-integrals-over-general-regions">
         <title>Double Integrals over General Regions</title>
         <h>
-            <xref ref="section-double-integrals-over-rectangles" autoname="yes" /> shows how to define the double integral over a rectangle <m>R</m>.
+            <xref ref="section-double-integrals-over-rectangles" text="type-global" /> shows how to define the double integral over a rectangle <m>R</m>.
             Now we want to extend it to more general regions.
             We'll be skipping an issue with how to actually define such an integral in terms of Riemann sums, but the main idea is to take a function defined over some general region <m>D</m> and then extend it to cover a rectangular region <m>R</m>.
-            Then we can just use <xref ref="definition-double-integral-over-a-rectangle" autoname="yes" /> to define this new integral as well.
+            Then we can just use <xref ref="definition-double-integral-over-a-rectangle" text="type-global" /> to define this new integral as well.
         </h>
         <h>
-            Our primary tool for computing double integrals will still be <xref ref="theorem-fubini-s-theorem" autoname="yes" />.
+            Our primary tool for computing double integrals will still be <xref ref="theorem-fubini-s-theorem" text="type-global" />.
             The main difficulty we'll encounter (aside from the usual integration issues) is how to properly set up limits for <m>x</m> and <m>y</m> for some region <m>D</m>.
         </h>
         <example xml:id="example-integrating-over-a-region-defined-by-a-parabola">
@@ -205,7 +205,7 @@
                     <me>D = \{(x,y) : \sqrt{y} \leq x\leq 1, 0\leq y\leq 1\}</me>
                     If we do this instead, we get
                     <me>\iint_{D}\frac{y}{x^{5}+1}\,dA = \int_{0}^{1}\int_{\sqrt{y}}^{1}\frac{y}{x^{5}+1}\,dx\,dy </me>
-                    By <xref ref="theorem-fubini-s-theorem" autoname="yes" />, this is guaranteed to equal <m>\frac{1}{10}\ln2</m>.
+                    By <xref ref="theorem-fubini-s-theorem" text="type-global" />, this is guaranteed to equal <m>\frac{1}{10}\ln2</m>.
                     However, the actual process of computing the double integral using this choice for the limits is much more difficult, since we would need to integrate <m>\frac{1}{x^{5}+1}</m> with respect to <m>x</m>.
                 </p>
             </solution>
@@ -214,7 +214,7 @@
             There are several important things we can take away from the above example:
             <ul>
                 <li>Much of the difficulty in computing double integrals lies in finding limits that describe the region you're integrating over. In general, it's a good idea to sketch the region you're integrating over in order to figure out what your limits should be.</li>
-                <li>There can be multiple ways to describe a single region. This leads to multiple ways of setting up limits for double integrals over this region. If the integrand is continuous, then <xref ref="theorem-fubini-s-theorem" autoname="yes" /> guarantees that these different methods will all produce the same value.</li>
+                <li>There can be multiple ways to describe a single region. This leads to multiple ways of setting up limits for double integrals over this region. If the integrand is continuous, then <xref ref="theorem-fubini-s-theorem" text="type-global" /> guarantees that these different methods will all produce the same value.</li>
                 <li>It's important to choose limits in such a way as to make computing the double integral more manageable.</li>
                 <li>When finding limits for a double integral, the outermost limits <em>must be constant</em> since the double integral must eventually simplify to a constant. In other words, we don't really have a notion of an "indefinite" double integral.</li>
             </ul>
@@ -229,7 +229,7 @@
             <solution>
                 <p>
                     If we try to integrate with respect to <m>x</m> right away, then we're stuck: <m>\cos x^{2}</m> has no elementary antiderivative, which for us means that we can only integrate it using power series.
-                    However, it is continuous, so <xref ref="theorem-fubini-s-theorem" autoname="yes" /> tells us that if we can integrate it with respect to <m>y</m> first and then <m>x</m> (i.e. replace <m>dx\,dy</m> with <m>dy\,dx</m>), we'll still get the same answer.
+                    However, it is continuous, so <xref ref="theorem-fubini-s-theorem" text="type-global" /> tells us that if we can integrate it with respect to <m>y</m> first and then <m>x</m> (i.e. replace <m>dx\,dy</m> with <m>dy\,dx</m>), we'll still get the same answer.
                     And integrating <m>\cos x^{2}</m> with respect to <m>y</m> is actually very easy.
                     This is called <term>reversing the order of integration</term>.
                 </p>
@@ -296,7 +296,7 @@
             Recall that the double integral was defined by first setting up a rectangular grid.
             The reason we used a rectangular grid was because we were working in Cartesian coordinates, so this made the most sense.
             If we're dealing with a circular region of integration, then using Cartesian coordinates is very awkward.
-            However, polar coordinates from <xref ref="section-polar-coordinates" autoname="yes" /> work very nicely with circular regions.
+            However, polar coordinates from <xref ref="section-polar-coordinates" text="type-global" /> work very nicely with circular regions.
             So we want to find out how to set up double integrals using polar coordinates.
         </p>
         <p>
@@ -370,7 +370,7 @@
                 <mrow>\Delta A &amp; \approx \frac{1}{2}[r\cos(\Delta\theta)][r\sin(\Delta\theta)] - \frac{1}{2}[(r-\Delta r)\cos(\Delta\theta)][(r-\Delta r)\sin(\Delta\theta)] </mrow>
                 <mrow> &amp; = r\Delta r\cos(\Delta\theta)\sin(\Delta\theta) - \frac{1}{2}(\Delta r)^{2}\cos(\Delta\theta)\sin(\Delta\theta)</mrow>
             </md>
-            If we assume that <m>\Delta r</m> and <m>\Delta\theta</m> are both small (which means the polar grid in <xref ref="figure-polar-rectangle" autoname="yes" /> is very fine), then 
+            If we assume that <m>\Delta r</m> and <m>\Delta\theta</m> are both small (which means the polar grid in <xref ref="figure-polar-rectangle" text="type-global" /> is very fine), then 
             <md>
                 <mrow>\cos(\Delta\theta) &amp; \approx 1 </mrow>
                 <mrow>\sin(\Delta\theta) &amp; \approx \Delta\theta </mrow>
@@ -592,7 +592,7 @@
             Just as we can view <m>dx</m> as an infinitesimal length and <m>dA</m> as an infinitesimal area, <m>dV</m> represents an infinitesimal volume.
         </p>
         <h>
-            Our main use for <xref ref="definition-triple-integrals-over-a-rectangle" autoname="yes" /> will be to recognize a triple integral "in the wild," but we won't actually use it to compute integrals.
+            Our main use for <xref ref="definition-triple-integrals-over-a-rectangle" text="type-global" /> will be to recognize a triple integral "in the wild," but we won't actually use it to compute integrals.
             For this purpose, we still use Fubini's Theorem.
         </h>
         <theorem xml:id="theorem-fubini-s-theorem-for-triple-integrals">
@@ -632,15 +632,15 @@
         </example>
         <p>
             An unfortunate side effect of increasing the dimension for our integral is that we lose a little bit of geometric intuition.
-            For instance, <xref ref="example-a-triple-integral-over-a-rectangular-prism" autoname="yes" /> is indeed calculating a "volume," but the volume in question is for a four dimensional region (the graph of <m>f(x,y,z)</m> over the rectangular prism).
-            We can only really visualize the "base" of this region, which served as our region of integration in <xref ref="example-a-triple-integral-over-a-rectangular-prism" autoname="yes" />.
+            For instance, <xref ref="example-a-triple-integral-over-a-rectangular-prism" text="type-global" /> is indeed calculating a "volume," but the volume in question is for a four dimensional region (the graph of <m>f(x,y,z)</m> over the rectangular prism).
+            We can only really visualize the "base" of this region, which served as our region of integration in <xref ref="example-a-triple-integral-over-a-rectangular-prism" text="type-global" />.
             Even so, the triple integral can still tell us important things about functions of three variables.
         </p>
         <example xml:id="example-finding-an-average-value">
             <title>Finding an average value</title>
             <statement>
                 <p>
-                    Find the average value of the function <m>f(x,y,z) = xyze^{-x^{2} - y^{2}}</m> over the region <m>D</m> given in <xref ref="example-a-triple-integral-over-a-rectangular-prism" autoname="yes" />.
+                    Find the average value of the function <m>f(x,y,z) = xyze^{-x^{2} - y^{2}}</m> over the region <m>D</m> given in <xref ref="example-a-triple-integral-over-a-rectangular-prism" text="type-global" />.
                 </p>
             </statement>
             <solution>
@@ -713,7 +713,7 @@
     <section xml:id="section-cylindrical-coordinates">
         <title>Cylindrical Coordinates</title>
         <p>
-            In <xref ref="section-polar-coordinates" autoname="yes" />, we saw that introducing a new coordinate system made certain double integrals much easier to work with.
+            In <xref ref="section-polar-coordinates" text="type-global" />, we saw that introducing a new coordinate system made certain double integrals much easier to work with.
             The same idea works with triple integrals.
             The first such system we'll look at is <term>cylindrical coordinates</term>, which are useful for computing triple integrals over cylindrical regions.
             To convert Cartesian coordinates <m>(x,y,z)</m> into cylindrical coordinates <m>(r,\theta,z)</m>, simply replace <m>x,y</m> with polar coordinates, and use <m>dV = r\,dr\,d\theta\,dz</m>.
