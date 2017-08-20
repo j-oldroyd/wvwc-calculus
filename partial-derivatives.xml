@@ -30,7 +30,7 @@
                 One such example comes from differential equations, where quantities such as the temperature of a metal rod depend on both a position <m>x</m> and a time <m>t</m>.
             </p>
             <definition xml:id="definition-functions-of-two-variables">
-                <index><main>functions of several variables</main><sub>two variables</sub></index>
+                <idx><h>functions of several variables</h><h>two variables</h></idx>
                 <title>Functions of Two Variables</title>
                 <statement>
                     <p>
@@ -86,7 +86,7 @@
         <subsection xml:id="subsection-contour-plots">
             <title>Contour Plots</title>
             <definition xml:id="definition-contour-plots">
-                <index><main>functions of several variables</main><sub>contour plots</sub></index>
+                <idx><h>functions of several variables</h><h>contour plots</h></idx>
                 <title>Contour Plots</title>
                 <statement>
                     <p>
@@ -129,7 +129,7 @@
                 However, limits involving several variables tend to be more restrictive.
             </p>
             <definition xml:id="definition-limit-of-a-function-of-two-variables">
-                <index><main>functions of several variables</main><sub>two variables</sub><sub>limits</sub></index>
+                <idx><h>functions of several variables</h><h>two variables</h><h>limits</h></idx>
                 <title>Limit of a Function of Two Variables</title>
                 <statement>
                     <p>
@@ -202,7 +202,7 @@
                 Now that we have the notion of limit, we can define continuous functions of two variables.
             </p>
             <definition xml:id="definition-continuous-function-of-two-variables">
-                <index><main>functions of several variables</main><sub>two variables</sub><sub>continuity</sub></index>
+                <idx><h>functions of several variables</h><h>two variables</h><h>continuity</h></idx>
                 <title>Continuous Function of Two Variables</title>
                 <statement>
                     <p>
@@ -246,13 +246,13 @@
     </section>
     <section xml:id="section-partial-derivatives">
         <title>Partial Derivatives</title>
-        <p>
+        <h>
             Now that we know how to take limits for functions of two variables, we can define a notion of derivative for these functions as well, which we'll call the <term>partial derivative</term>.
             The main idea behind the partial derivative is to measure how a function <m>f(x,y)</m> changes as a single variable changes.
             Although the definition given is only for functions of two variables, it also extends to functions of many variables.
-        </p>
+        </h>
         <definition xml:id="definition-partial-derivatives">
-            <index>partial derivatives</index>
+            <idx>partial derivatives</idx>
             <title>Partial Derivatives</title>
             <statement>
                 <p>
@@ -421,7 +421,7 @@
             </p>
             <theorem xml:id="theorem-tangent-planes-to-surfaces">
                 <title>Tangent Planes to Surfaces</title>
-                <index><main>tangent planes</main></index>
+                <idx><h>tangent planes</h></idx>
                 <statement>
                     <p>
                         Let <m>z = f(x,y)</m> be a surface and suppose that <m>f</m> has continuous partial derivatives at the point <m>(x_{0},y_{0})</m>.
@@ -458,7 +458,7 @@
                 This leads us to the idea of a linear approximation, or <term>linearization</term> of a function of the form <m>f(x,y)</m>.
             </p>
             <definition xml:id="definition-linearization">
-                <index><main>linearization</main></index>
+                <idx><h>linearization</h></idx>
                 <title>Linearization</title>
                 <statement>
                     <p>
@@ -520,7 +520,7 @@
             We'll start with the following formula.
         </p>
         <theorem xml:id="theorem-chain-rule-for-one-independent-variable">
-            <index><main>chain rule</main><sub>one independent variable</sub></index>
+            <idx><h>chain rule</h><h>one independent variable</h></idx>
             <title>Chain Rule for One Independent Variable</title>
             <statement>
                 <p>
@@ -575,7 +575,7 @@
             If we have more than one independent variable, then the situation becomes a little bit more complicated.
         </p>
         <theorem xml:id="theorem-chain-rule-with-two-independent-variables">
-            <index><main>chain rule</main><sub>two independent variables</sub></index>
+            <idx><h>chain rule</h><h>two independent variables</h></idx>
             <title>Chain Rule with Two Independent Variables</title>
             <statement>
                 <p>
@@ -683,7 +683,7 @@
                 This leads us to our next definition.
             </p>
             <definition xml:id="definition-directional-derivative">
-                <index><main>directional derivative</main><sub>definition</sub></index>
+                <idx><h>directional derivative</h><h>definition</h></idx>
                 <title>Directional Derivative</title>
                 <statement>
                     <p>
@@ -699,7 +699,7 @@
                 So we'd like to get a more practical formula.
             </p>
             <theorem xml:id="theorem-computing-the-directional-derivative">
-                <index><main>directional derivative</main><sub>formula</sub></index>
+                <idx><h>directional derivative</h><h>formula</h></idx>
                 <title>Computing the Directional Derivative</title>
                 <statement>
                     <p>
@@ -822,7 +822,7 @@
                 We summarize this in the following theorem.
             </p>
             <theorem xml:id="theorem-direction-of-greatest-increase-and-decrease">
-                <index><main>gradient</main><sub>direction of greatest increase/decrease</sub></index>
+                <idx><h>gradient</h><h>direction of greatest increase/decrease</h></idx>
                 <title>Direction of Greatest Increase and Decrease</title>
                 <statement>
                     <p>
@@ -863,7 +863,7 @@
                 We'd like to extend this concept to functions of multiple variables, but first we need to define what local maxima and minima actually are in this new setting.
             </p>
             <definition xml:id="definition-local-maxima-and-minima">
-                <index><main>maxima and minima</main><sub>local</sub></index>
+                <idx><h>maxima and minima</h><h>local</h></idx>
                 <title>Local Maxima and Minima</title>
                 <statement>
                     <p>
@@ -974,7 +974,7 @@
                 A similar statement is also true for local maxima, which leads to the following definition.
             </p>
                 <definition xml:id="definition-absolute-maxima-and-minima">
-                    <index><main>maxima and minima</main><sub>absolute</sub></index>
+                    <idx><h>maxima and minima</h><h>absolute</h></idx>
                     <title>Absolute Maxima and Minima</title>
                     <statement>
                         <p>
@@ -991,7 +991,7 @@
                 However, the following theorem says that they'll get us most of the way there.
             </p>
             <theorem xml:id="theorem-extreme-value-theorem">
-                <index><main>maxima and minima</main><sub>Extreme Value Theorem</sub></index>
+                <idx><h>maxima and minima</h><h>Extreme Value Theorem</h></idx>
                 <title>Extreme Value Theorem</title>
                 <statement>
                     <p>
@@ -1102,7 +1102,7 @@
             For this scenario, we must use the method of <term>Lagrange multipliers</term>.
         </p>
         <algorithm xml:id="algorithm-method-of-lagrange-multipliers">
-            <index><main>Lagrange multipliers</main></index>
+            <idx><h>Lagrange multipliers</h></idx>
             <title>Method of Lagrange Multipliers</title>
             <statement>
                 <p>
