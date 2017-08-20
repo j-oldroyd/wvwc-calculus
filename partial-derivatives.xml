@@ -885,7 +885,7 @@
                 </statement>
             </theorem>
             <p>
-                <xref ref="theorem theorem-derivatives-at-a-local-maximum-or-minimum" autoname="yes" /> does not tell us if a differentiable function <m>f(x,y)</m> has a local maximum or minimum at <m>(x_{0},y_{0})</m>, but it does tell us where to look.
+                <xref ref="theorem-derivatives-at-a-local-maximum-or-minimum" text="global-type" /> does not tell us if a differentiable function <m>f(x,y)</m> has a local maximum or minimum at <m>(x_{0},y_{0})</m>, but it does tell us where to look.
                 We call <m>(x_{0},y_{0})</m> a <term>critical point</term> of <m>f(x,y)</m> if <m>f_{x}(x_{0},y_{0}) = f_{y}(x_{0},y_{0}) = 0</m> or if these partial derivatives fail to exist at <m>(x_{0},y_{0})</m>.
             </p>
             <example xml:id="example-critical-points-of-an-exponential">
