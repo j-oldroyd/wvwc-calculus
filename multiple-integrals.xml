@@ -22,12 +22,14 @@
     </introduction>
     <section xml:id="section-double-integrals-over-rectangles">
         <title>Double Integrals over Rectangles</title>
-        <p>
-            We want to try to find the volume under the surface <m>z = f(x,y)</m> and above some rectangle <m>R</m> in the <m>xy</m>-plane.
-            If <m>f(x,y)</m> is a constant function, then this is easy: the resulting surface and the <m>xy</m>-plane then form a rectangular prism.
-            If <m>f(x,y)</m> is more complicated, then we might not have a nice volume formula to use.
-            However, we can steal an idea from Calculus I and try to approximate the volume by using simpler shapes; in this case, rectangular prisms.
-        </p>
+        <introduction>
+            <p>
+                We want to try to find the volume under the surface <m>z = f(x,y)</m> and above some rectangle <m>R</m> in the <m>xy</m>-plane.
+                If <m>f(x,y)</m> is a constant function, then this is easy: the resulting surface and the <m>xy</m>-plane then form a rectangular prism.
+                If <m>f(x,y)</m> is more complicated, then we might not have a nice volume formula to use.
+                However, we can steal an idea from Calculus I and try to approximate the volume by using simpler shapes; in this case, rectangular prisms.
+            </p>
+        </introduction>
         <subsection xml:id="subsection-riemann-sums">
             <title>Riemann Sums</title>
             <p>
@@ -162,22 +164,26 @@
                 </solution>
             </example>
         </subsection>
-        <p>
-            SUGGESTED PROBLEMS: 7, 9, 15, 19
-        </p>
+        <conclusion>
+            <p>
+                SUGGESTED PROBLEMS: 7, 9, 15, 19
+            </p>
+        </conclusion>
     </section>
     <section xml:id="section-double-integrals-over-general-regions">
         <title>Double Integrals over General Regions</title>
-        <h>
-            <xref ref="section-double-integrals-over-rectangles" text="type-global" /> shows how to define the double integral over a rectangle <m>R</m>.
-            Now we want to extend it to more general regions.
-            We'll be skipping an issue with how to actually define such an integral in terms of Riemann sums, but the main idea is to take a function defined over some general region <m>D</m> and then extend it to cover a rectangular region <m>R</m>.
-            Then we can just use <xref ref="definition-double-integral-over-a-rectangle" text="type-global" /> to define this new integral as well.
-        </h>
-        <h>
-            Our primary tool for computing double integrals will still be <xref ref="theorem-fubini-s-theorem" text="type-global" />.
-            The main difficulty we'll encounter (aside from the usual integration issues) is how to properly set up limits for <m>x</m> and <m>y</m> for some region <m>D</m>.
-        </h>
+        <conclusion>
+            <p>
+                <xref ref="section-double-integrals-over-rectangles" text="type-global" /> shows how to define the double integral over a rectangle <m>R</m>.
+                Now we want to extend it to more general regions.
+                We'll be skipping an issue with how to actually define such an integral in terms of Riemann sums, but the main idea is to take a function defined over some general region <m>D</m> and then extend it to cover a rectangular region <m>R</m>.
+                Then we can just use <xref ref="definition-double-integral-over-a-rectangle" text="type-global" /> to define this new integral as well.
+            </p>
+            <p>
+                Our primary tool for computing double integrals will still be <xref ref="theorem-fubini-s-theorem" text="type-global" />.
+                The main difficulty we'll encounter (aside from the usual integration issues) is how to properly set up limits for <m>x</m> and <m>y</m> for some region <m>D</m>.
+            </p>
+        </conclusion>
         <example xml:id="example-integrating-over-a-region-defined-by-a-parabola">
             <title>Integrating over a region defined by a parabola</title>
             <statement>
@@ -537,9 +543,11 @@
                 </solution>
             </example>
         </subsection>
-        <p>
-            SUGGESTED PROBLEMS: 3, 5, 13
-        </p>
+        <conclusion>
+            <p>
+                SUGGESTED PROBLEMS: 3, 5, 13
+            </p>
+        </conclusion>
     </section>
     <section xml:id="section-triple-integrals">
         <title>Triple Integrals</title>
