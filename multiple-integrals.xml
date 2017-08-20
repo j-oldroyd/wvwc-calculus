@@ -51,7 +51,7 @@
                 This gives us the following definition.
             </p>
             <definition xml:id="definition-double-integral-over-a-rectangle">
-                <index><main>double integrals</main><sub>over a rectangle</sub></index>
+                <idx><h>double integrals</h><h>over a rectangle</h></idx>
                 <title>Double Integral Over a Rectangle</title>
                 <statement>
                     <p>
@@ -105,7 +105,7 @@
                 </statement>
             </theorem>
             <example xml:id="example-double-integrals-by-fubini-s-theorem">
-                <index><main>Fubini's Theorem</main><sub>double integrals</sub></index>
+                <idx><h>Fubini's Theorem</h><h>double integrals</h></idx>
                 <title>Double integrals by Fubini's Theorem</title>
                 <statement>
                     <p>
@@ -145,7 +145,7 @@
                     </p>
                 </statement>
                 <solution>
-                    <p>
+                    <h>
                         First, note that
                         <me>\int_{1}^{3}\int_{1}^{3}\frac{\ln(xy)}{xy}\,dy\,dx = \int_{1}^{3}\int_{1}^{3}\frac{\ln(x)}{xy}\,dy\,dx + \int_{1}^{3}\int_{1}^{3}\frac{\ln(y)}{xy}\,dy\,dx</me>
                         To find the first double integral on the right, first we integrate with respect to <m>y</m> to get 
@@ -158,7 +158,7 @@
                         The same exact process shows that <m>\int_{1}^{3}\frac{\ln y}{xy}\,dy\,dx</m> must also equal <m>\frac{1}{2}(\ln3)^{3}</m>.
                         Therefore
                         <me>\int_{1}^{3}\int_{1}^{3}\frac{\ln(xy)}{xy}\,dy\,dx = (\ln3)^{3}</me>
-                    </p>
+                    </h>
                 </solution>
             </example>
         </subsection>
@@ -168,16 +168,16 @@
     </section>
     <section xml:id="section-double-integrals-over-general-regions">
         <title>Double Integrals over General Regions</title>
-        <p>
+        <h>
             <xref ref="section-double-integrals-over-rectangles" autoname="yes" /> shows how to define the double integral over a rectangle <m>R</m>.
             Now we want to extend it to more general regions.
             We'll be skipping an issue with how to actually define such an integral in terms of Riemann sums, but the main idea is to take a function defined over some general region <m>D</m> and then extend it to cover a rectangular region <m>R</m>.
             Then we can just use <xref ref="definition-double-integral-over-a-rectangle" autoname="yes" /> to define this new integral as well.
-        </p>
-        <p>
+        </h>
+        <h>
             Our primary tool for computing double integrals will still be <xref ref="theorem-fubini-s-theorem" autoname="yes" />.
             The main difficulty we'll encounter (aside from the usual integration issues) is how to properly set up limits for <m>x</m> and <m>y</m> for some region <m>D</m>.
-        </p>
+        </h>
         <example xml:id="example-integrating-over-a-region-defined-by-a-parabola">
             <title>Integrating over a region defined by a parabola</title>
             <statement>
@@ -382,7 +382,7 @@
             <me>dA = r\,dr\,d\theta</me>.
         </p>
         <theorem xml:id="theorem-double-integrals-in-polar-coordinates">
-            <index><main>double integrals</main><sub>polar coordinates</sub></index>
+            <idx><h>double integrals</h><h>polar coordinates</h></idx>
             <title>Double Integrals in Polar Coordinates</title>
             <statement>
                 <p>
@@ -557,7 +557,7 @@
             We can extend all of this to <m>\RR^{3}</m> by introducing the concept of the <term>triple integral</term>.
         </p>
         <definition xml:id="definition-triple-integrals-over-a-rectangle">
-            <index><main>triple integrals</main><sub>rectangular coordinates</sub></index>
+            <idx><h>triple integrals</h><h>rectangular coordinates</h></idx>
             <title>Triple Integrals over a Rectangle</title>
             <statement>
                 <p>
@@ -591,12 +591,12 @@
             </table>
             Just as we can view <m>dx</m> as an infinitesimal length and <m>dA</m> as an infinitesimal area, <m>dV</m> represents an infinitesimal volume.
         </p>
-        <p>
+        <h>
             Our main use for <xref ref="definition-triple-integrals-over-a-rectangle" autoname="yes" /> will be to recognize a triple integral "in the wild," but we won't actually use it to compute integrals.
             For this purpose, we still use Fubini's Theorem.
-        </p>
+        </h>
         <theorem xml:id="theorem-fubini-s-theorem-for-triple-integrals">
-            <index><main>Fubini's Theorem</main><sub>triple integrals</sub></index>
+            <idx><h>Fubini's Theorem</h><h>triple integrals</h></idx>
             <title>Fubini's Theorem for Triple Integrals</title>
             <statement>
                 <p>
