@@ -17,7 +17,7 @@
             For functions that depend on a single independent variable such as <m>x</m> or <m>t</m>, derivatives are useful because they represent how the function itself changes as the independent variable changes.
             However, there are many situations where it makes sense to consider functions of more than one independent variable.
             Therefore, we will want to extend the notion of derivative to include these functions as well.
-            Our primary tool for this will be the <term>partial derivative</term>, which we'll see in <xref ref="section-partial-derivatives" autoname="yes" />.
+            Our primary tool for this will be the <term>partial derivative</term>, which we'll see in <xref ref="section-partial-derivatives" text="type-global" />.
             But we'll need to build up some terminology to get there.
         </p>
     </introduction>
@@ -454,7 +454,7 @@
         <subsection xml:id="subsection-linear-approximations">
             <title>Linear Approximations</title>
             <p>
-                <xref ref="example-approximations-by-tangent-planes" autoname="yes" /> shows that we can use tangent planes to approximate complicated functions.
+                <xref ref="example-approximations-by-tangent-planes" text="type-global" /> shows that we can use tangent planes to approximate complicated functions.
                 This leads us to the idea of a linear approximation, or <term>linearization</term> of a function of the form <m>f(x,y)</m>.
             </p>
             <definition xml:id="definition-linearization">
@@ -481,13 +481,13 @@
                 </statement>
                 <solution>
                     <p>
-                        By <xref ref="definition-linearization" autoname="yes" />, the linearization is given by
+                        By <xref ref="definition-linearization" text="type-global" />, the linearization is given by
                         <me>L(x,y) = 30 - 30(t - 0) = 30(1 - t).</me>
                     </p>
                 </solution>
             </example>
             <p>
-                <xref ref="definition-linearization" autoname="yes" /> can also be extended to functions with more than two variables.
+                <xref ref="definition-linearization" text="type-global" /> can also be extended to functions with more than two variables.
             </p>
             <example xml:id="example-linearization-in-three-variables">
                 <title>Linearization in three variables</title>
@@ -527,7 +527,7 @@
                     Let <m>z = f(x,y)</m> be differentiable (so the partial derivatives <m>f_{x}</m> and <m>f_{y}</m> exist).
                     If <m>x</m> and <m>y</m> both depend on <m>t</m> (i.e. <m>x = x(t)</m> and <m>y = y(t)</m>), then
                     <me>\dv{z}{t} = \pdv{z}{x}\dv{x}{t} + \pdv{z}{y}\dv{y}{t}</me>
-                    See <xref ref="figure-chain-rule-one-independent-variable" autoname="yes" />.
+                    See <xref ref="figure-chain-rule-one-independent-variable" text="type-global" />.
                 </p>
             </statement>
         </theorem>
@@ -614,7 +614,7 @@
             </statement>
             <solution>
                 <p>
-                    A good way to tackle these problems is to set up a tree diagram like <xref ref="figure-chain-rule-two-independent-variables" autoname="yes" /> to list the dependencies between all of the variables.
+                    A good way to tackle these problems is to set up a tree diagram like <xref ref="figure-chain-rule-two-independent-variables" text="type-global" /> to list the dependencies between all of the variables.
                     For <m>f(x,y,z)</m>, we get
                     <figure>
                         <image width="30%">
@@ -716,7 +716,7 @@
                         Then by the Calculus I definition of the derivative,
                         <me>g'(0) = \lim_{h\to0}\frac{g(h) - g(0)}{h} = \lim_{h\to0}\frac{f(x_{0}+ha, y_{0}+hb) - f(x_{0},y_{0})}{h} = D_{\vv{u}}f(x_{0},y_{0}).</me>
                         On the other hand, if we set <m>x = x_{0} + ha</m> and <m>y = y_{0} + hb</m>, then <m>g(h) = f(x,y)</m>.
-                        We can then find <m>g'(h)</m> using the chain rule from <xref ref="section-the-chain-rule" autoname="yes" /> to get
+                        We can then find <m>g'(h)</m> using the chain rule from <xref ref="section-the-chain-rule" text="type-global" /> to get
                         <me>g'(h) = f_{x}\dv{x}{h} + f_{y}\dv{y}{h} = f_{x}(x,y)a + f_{y}(x,y)b</me>
                         So <m>g'(0) = f_{x}(x_{0},y_{0})a + f_{y}(x_{0},y_{0})b.</m>
                         Therefore
@@ -725,7 +725,7 @@
                 </proof>
             </theorem>
             <p>
-                The formula in <xref ref="theorem-computing-the-directional-derivative" autoname="yes" /> extends to functions such as <m>f(x,y,z)</m> as well.
+                The formula in <xref ref="theorem-computing-the-directional-derivative" text="type-global" /> extends to functions such as <m>f(x,y,z)</m> as well.
                 We just need to include more partial derivatives.
             </p>
             <example xml:id="example-computing-a-directional-derivative">
@@ -738,9 +738,9 @@
                 </statement>
                 <solution>
                     <p>
-                        We can use <xref ref="theorem-computing-the-directional-derivative" autoname="yes" /> to find the directional derivative.
+                        We can use <xref ref="theorem-computing-the-directional-derivative" text="type-global" /> to find the directional derivative.
                         However, there's something we need to watch out for here.
-                        Both <xref ref="definition-directional-derivative" autoname="yes" /> and <xref ref="theorem-computing-the-directional-derivative" autoname="yes" /> require using a <em>unit vector</em>, but our vector <m>\vv{v}</m> isn't a unit vector at all.
+                        Both <xref ref="definition-directional-derivative" text="type-global" /> and <xref ref="theorem-computing-the-directional-derivative" text="type-global" /> require using a <em>unit vector</em>, but our vector <m>\vv{v}</m> isn't a unit vector at all.
                         So we need to <term>normalize</term> <m>\vv{v}</m> to get a unit vector <m>\vv{u}</m> that is parallel to <m>\vv{v}</m>:
                         <me>\vv{u} = \frac{\vv{v}}{|\vv{v}|} = \dotprod{\frac{3}{\sqrt{34}}, \frac{5}{\sqrt{34}}}</me>
                         Since
@@ -760,7 +760,7 @@
         <subsection xml:id="subsection-gradients">
             <title>Gradients</title>
             <p>
-                <xref ref="theorem-computing-the-directional-derivative" autoname="yes" /> shows that the partial derivatives of a function are important in computing the directional derivatives.
+                <xref ref="theorem-computing-the-directional-derivative" text="type-global" /> shows that the partial derivatives of a function are important in computing the directional derivatives.
                 This leads us to the concept of a <term>gradient</term>.
             </p>
             <definition xml:id="definition-gradient-of-a-function">
@@ -788,7 +788,7 @@
                 </solution>
             </example>
             <p>
-                We can restate <xref ref="theorem-computing-the-directional-derivative" autoname="yes" /> very quickly in terms of the gradient.
+                We can restate <xref ref="theorem-computing-the-directional-derivative" text="type-global" /> very quickly in terms of the gradient.
                 In particular, if <m>\vv{u}</m> is a vector (not necessarily a unit vector) then 
                 <men xml:id="equation-directional-derivative-gradient">D_{\vv{u}}f = \grad f\cdot \frac{\vv{u}}{|\vv{u}|}</men>
             </p>
@@ -814,7 +814,7 @@
             </example>
             <p>
                 The gradient is also useful for telling us where a function is increasing and decreasing the greatest.
-                By <xref ref="equation-directional-derivative-gradient" autoname="yes" />, we can write 
+                By <xref ref="equation-directional-derivative-gradient" text="type-global" />, we can write 
                 <me>D_{\vv{u}}f = \grad f\cdot\frac{\vv{u}}{|\vv{u}|} = |\grad f| \cos\theta,</me>
                 where <m>\theta</m> is the acute angle between <m>\grad f</m> and <m>\vv{u}</m>.
                 It follows that
@@ -911,7 +911,7 @@
                 </solution>
             </example>
             <p>
-                We found the critical points in <xref ref="example-critical-points-of-an-exponential" autoname="yes" /> without too much trouble, but these are still not guaranteed to be local maxima or minima.
+                We found the critical points in <xref ref="example-critical-points-of-an-exponential" text="type-global" /> without too much trouble, but these are still not guaranteed to be local maxima or minima.
                 To determine if they are, we need to use the <term>second derivative test</term>.
             </p>
             <theorem xml:id="theorem-second-derivative-test">
@@ -933,14 +933,14 @@
                 </statement>
             </theorem>
             <p>
-                The quantity <m>D</m> from <xref ref="theorem-second-derivative-test" autoname="yes" /> is actually a determinant:
+                The quantity <m>D</m> from <xref ref="theorem-second-derivative-test" text="type-global" /> is actually a determinant:
                 <me>D(x,y) = \left|\begin{array}{cc} f_{xx} &amp; f_{xy} \\ f_{yx} &amp; f_{yy}\end{array}\right|</me>
             </p>
             <example xml:id="example-local-extrema-of-an-exponential">
                 <title>Local extrema of an exponential</title>
                 <statement>
                     <p>
-                        Classify the critical points of the function from <xref ref="example-critical-points-of-an-exponential" autoname="yes" />.
+                        Classify the critical points of the function from <xref ref="example-critical-points-of-an-exponential" text="type-global" />.
                     </p>
                 </statement>
                 <solution>
@@ -1059,7 +1059,7 @@
                 </solution>
             </example>
             <p>
-                Note that in <xref ref="example-absolute-values-on-a-triangle" autoname="yes" />, we don't actually determine if the critical point is a local maximum or minimum.
+                Note that in <xref ref="example-absolute-values-on-a-triangle" text="type-global" />, we don't actually determine if the critical point is a local maximum or minimum.
                 We just compare the value <m>f</m> reaches at the critical point with its maximum and minimum values on the boundary.
             </p>
             <example xml:id="example-absolute-maxima-and-minima-on-a-circular-sector">
@@ -1096,9 +1096,9 @@
     <section xml:id="section-lagrange-multipliers">
         <title>Lagrange Multipliers</title>
         <p>
-            <xref ref="theorem-second-derivative-test" autoname="yes" /> is useful for finding local maxima and minima of a function <m>f(x,y)</m>, but it's often the case where we have an additional restriction on the variables <m>x</m> and <m>y</m>, which we interpret as an equality <m>g(x,y) = k</m> for some constant <m>k</m>.
+            <xref ref="theorem-second-derivative-test" text="type-global" /> is useful for finding local maxima and minima of a function <m>f(x,y)</m>, but it's often the case where we have an additional restriction on the variables <m>x</m> and <m>y</m>, which we interpret as an equality <m>g(x,y) = k</m> for some constant <m>k</m>.
             Geometrically, this reduces down to finding the maximum and minimum values of <m>f(x,y)</m> on the curve <m>g(x,y) = k</m>.
-            In these cases, <xref ref="theorem-second-derivative-test" autoname="yes" /> is not as useful because there's no guarantee that the critical points of <m>f</m> will lie on the curve <m>g(x,y) = k</m>.
+            In these cases, <xref ref="theorem-second-derivative-test" text="type-global" /> is not as useful because there's no guarantee that the critical points of <m>f</m> will lie on the curve <m>g(x,y) = k</m>.
             For this scenario, we must use the method of <term>Lagrange multipliers</term>.
         </p>
         <algorithm xml:id="algorithm-method-of-lagrange-multipliers">
@@ -1133,7 +1133,7 @@
                     If we denote the dimensions of the box by <m>x,y,z</m>, then the function we need to maximize is <m>V(x,y,z) = xyz</m>.
                     However, not all dimensions are valid since we're only allowed to use <quantity><mag>12</mag><unit base="meter" exp="2" /></quantity> of material.
                     This means that the surface area of the box, which is given by <m>A(x,y,z) = xy + 2xz + 2yz</m>, must be equal to <m>12</m>.
-                    So our constraint is that <m>A(x,y,z) = 12</m>, and because we have this constraint we'll try to solve this using <xref ref="algorithm-method-of-lagrange-multipliers" autoname="yes" />.
+                    So our constraint is that <m>A(x,y,z) = 12</m>, and because we have this constraint we'll try to solve this using <xref ref="algorithm-method-of-lagrange-multipliers" text="type-global" />.
                 </p>
                 <p>
                     To begin, we need to solve <m>\grad V = \lambda \grad A</m>.
@@ -1164,7 +1164,7 @@
                     <men xml:id="equation-lagrange-example-1">xy + 2xz = xy + 2yz = 2xz + 2yz</men>
                 </p>
                 <p>
-                    The first two expressions in <xref ref="equation-lagrange-example-1" autoname="yes" /> simplify to <m>x=y</m>, while the first and third reduce to <m>x = 2z</m>.
+                    The first two expressions in <xref ref="equation-lagrange-example-1" text="type-global" /> simplify to <m>x=y</m>, while the first and third reduce to <m>x = 2z</m>.
                     So
                     <me>x = y = 2z</me>.
                     But these variables also need to satisfy <m>A(x,y,z) = 12</m>:
@@ -1199,7 +1199,7 @@
             </statement>
             <solution>
                 <p>
-                    First, recall from <xref ref="section-extreme-values" autoname="yes" /> that the absolute maxima and minima of a differentiable function over a bounded set occur at either a critical point or somewhere on the boundary.
+                    First, recall from <xref ref="section-extreme-values" text="type-global" /> that the absolute maxima and minima of a differentiable function over a bounded set occur at either a critical point or somewhere on the boundary.
                     So first, we need to find if <m>f(x,y)</m> has any critical points inside the disk.
                     If we solve <m>f_{x} = f_{y} = 0</m>, then we quickly get that <m>(0,0)</m> is a critical point, and hence a possible maximum or minimum value.
                     The only other place we need to check is the boundary <m>x^{2} + y^{2} = 1</m>, and this is something we can use Lagrange multipliers for.
