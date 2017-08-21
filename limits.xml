@@ -110,6 +110,23 @@
                     </p>
                 </solution>
             </example>
+            <p>
+                To keep ourselves from writing "the limit of <m>f(x)</m> as <m>x</m> approaches some number <m>a</m>" over and over, let's introduce some notation: <m>\lim_{x\to a}f(x)</m>.
+            </p>
+            <example xml:id="example-limit-of-a-piecewise-function">
+                <title>Limit of a piecewise function</title>
+                <statement>
+                    <p>
+                        Let
+                    </p>
+                    <me>f(x) = \begin{cases} \sin x &amp; \text{if $x&lt;0$} \\ \cos x &amp; \text{otherwise} \end{cases}</me>
+                </statement>
+                <solution>
+                    <p>
+                        
+                    </p>
+                </solution>
+            </example>
         </subsection>
     </section>
 </chapter>
