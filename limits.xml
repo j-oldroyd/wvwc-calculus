@@ -145,7 +145,7 @@
                 <idx><h>limit</h><h>function of a single variable</h></idx>
                 <statement>
                     <p>
-                        Let <m>f(x)</m> be a function and let <m>a</m> be some number in the domain of <m>f(x)</m> (so that <m>f(a)</m> makes sense).
+                        Let <m>f(x)</m> be a function.
                         Suppose that both the left-hand limit <m>\lim_{x\to a^{-}}f(x)</m> and the right-hand limit <m>\lim_{x\to a^{+}}f(x)</m> exist and are equal to the same number <m>L</m>.
                         Then we say that the limit of <m>f(x)</m> as <m>x</m> approaches <m>a</m> exists and is equal to <m>L</m>.
                         We denote this by writing <m>\lim_{x\to a}f(x) = L</m>.
