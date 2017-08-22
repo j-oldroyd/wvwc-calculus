@@ -14,7 +14,7 @@
     <title>Limits of Functions</title>
     <introduction>
         <p>
-            At its heart, calculus is just the mathematicals of change.
+            At its heart, calculus is just the mathematics of change.
             In particular, calculus provides the tools necessary to describe how a function changes.
             Since a function can be used to represent many quantities that appear in real life, calculus therefore gives us a way to study how many different quantities (such as temperature, acceleration, energy of a signal, etc.) can change.
             But before we can start using calculus, we need to come up with the proper language to describe it.
@@ -119,11 +119,94 @@
                     <p>
                         Let
                     </p>
-                    <me>f(x) = \begin{cases} \sin x &amp; \text{if $x&lt;0$} \\ \cos x &amp; \text{otherwise} \end{cases}</me>
+                    <me>f(x) = \begin{cases} \sin x &amp; \text{if $x&lt;0$} \\ \cos x &amp; \text{otherwise} \end{cases}.</me>
+                    <p>
+                        Find <m>\lim_{x\to0}f(x)</m>.
+                    </p>
                 </statement>
                 <solution>
                     <p>
-                        
+                        If we graph this function, we see that at <m>x=0</m> there is a jump in the graph.
+                        In particular, if <m>x</m> approaches <m>0</m> from the left then <m>f(x)</m> approaches <m>0</m>, whereas if <m>x</m> approaches <m>0</m> from the right then <m>f(x)</m> approaches <m>1</m>.
+                        So this function does not appear to have an unambiguous limit as <m>x</m> approaches <m>0</m>.
+                        Another way to say this: <m>\lim_{x\to0}f(x)</m> <em>does not exist</em>.
+                    </p>
+                </solution>
+            </example>
+            <p>
+                <xref ref="example-limit-of-a-piecewise-function" text="type-global" /> shows us something very important about limits: they depend on the two different ways <m>x</m> can approach a number.
+                So we introduce two new pieces of notation: the <term>left-hand limit</term> <m>\lim_{x\to a^{-}}f(x)</m> will stand for the value <m>f(x)</m> approaches (if any) as <m>x</m> approaches <m>a</m> from the left (i.e. as <m>x</m> increases to <m>a</m>), and <term>the right-hand limit</term> <m>\lim_{x\to a^{+}}f(x)</m> will stand for the value <m>f(x)</m> approaches (if any) as <m>x</m> approaches <m>a</m> from the right (i.e. as <m>x</m> decreases to <m>a</m>).
+            </p>
+            <p>
+                At this point, we can make a rough definition for the limit of a function.
+            </p>
+            <definition xml:id="definition-limit-of-a-function">
+                <title>Limit of a Function</title>
+                <idx><h>limit</h><h>function of a single variable</h></idx>
+                <statement>
+                    <p>
+                        Let <m>f(x)</m> be a function and let <m>a</m> be some number in the domain of <m>f(x)</m> (so that <m>f(a)</m> makes sense).
+                        Suppose that both the left-hand limit <m>\lim_{x\to a^{-}}f(x)</m> and the right-hand limit <m>\lim_{x\to a^{+}}f(x)</m> exist and are equal to the same number <m>L</m>.
+                        Then we say that the limit of <m>f(x)</m> as <m>x</m> approaches <m>a</m> exists and is equal to <m>L</m>.
+                        We denote this by writing <m>\lim_{x\to a}f(x) = L</m>.
+                    </p>
+                </statement>
+            </definition>
+            <example xml:id="example-piecewise-function-again">
+                <title>Piecewise function again</title>
+                <statement>
+                    <p>
+                        Let <m>f(x)</m> be given by
+                        <me>f(x) = \begin{cases} 0 &amp; -3\leq x \leq -1 \\ x^{2} &amp; -1 &lt; x &lt; \frac{1}{2} \\ \frac{1-x}{2} &amp; \frac{1}{2} &lt; x &lt; 3. \end{cases} </me>
+                        Evaluate <m>\lim_{x\to-1}f(x)</m> and <m>\lim_{x\to\frac{1}{2}}f(x)</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        If we graph <m>f(x)</m>, we get the following:
+                    </p>
+                    <figure>
+                        <image width="50%">
+                            <latex-image-code><![CDATA[
+                                \pgfmathdeclarefunction{MyFunction}{1}{%
+                                  \pgfmathparse{%
+                                    (and(   1,    #1<-1)*(0)            +%
+                                    (and(#1>=-1,  #1< .5)*(#1*#1)   +%
+                                    (and(#1>= .5,  #1< 3)*(.5-0.5*#1)%
+                                    }%
+                                }
+                                \begin{tikzpicture}
+                                    \begin{axis}[%
+                                        axis x line = center,
+                                        axis y line = center,
+                                        xtick={-3,...,3},
+                                        ytick={-3,...,3},
+                                        xmin = -4,
+                                        xmax = 4,
+                                        ymin = -1.5,
+                                        ymax = 1.5,
+                                        xlabel={$x$},
+                                        ylabel={$y$},
+                                        grid=both
+                                        ]
+                                        \foreach \xStart/\xEnd  in {-3/-1, -1/.5, .5/3} {
+                                        \addplot[domain=\xStart:\xEnd, blue, samples=10, ultra thick] {MyFunction(x)};
+                                        }
+                                        \addplot[incl] coordinates{(-3,0)};
+                                        \addplot[incl] coordinates{(-1,0)};
+                                        \addplot[excl] coordinates{(-1,1)};
+                                        \addplot[excl] coordinates{(.5,.25)};
+                                        \addplot[excl] coordinates{(3,-1)};
+                                        \addlegendentry{$y = f(x)$};
+                                    \end{axis}
+                                \end{tikzpicture}]]>
+                            </latex-image-code>
+                        </image>
+                    </figure>
+                    <p>
+                        The graph shows us that <m>\lim_{x\to-1^{-}}f(x) = 0</m>, while <m>\lim_{x\to-1^{+}}f(x) = 1</m>.
+                        Therefore <m>\lim_{x\to-1}f(x)</m> does not exist.
+                        On the other hand, <m>\lim_{x\to\frac{1}{2}}f(x)</m> exists and is equal to <m>\frac{1}{4}</m>.
                     </p>
                 </solution>
             </example>
