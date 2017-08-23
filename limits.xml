@@ -300,6 +300,33 @@
                 In particular, Limit Laws 1-5 give us the following: if <m>f(x)</m> is a polynomial or rational function, then <m>\lim_{x\to a}f(x) = f(a)</m> as long as <m>a</m> is in the domain of <m>f(x)</m>.
                 If <m>a</m> is not in the domain, trickery may be required.
             </p>
+            <example xml:id="example-trickery">
+                <title>Trickery</title>
+                <statement>
+                    <p>
+                        Evaluate 
+                        <me>\lim_{x\to1}\frac{\sqrt{x}-1}{x-1}.</me>
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        First, note that we can't use the Limit Laws right away since the denominator is <m>0</m> at <m>x=1</m>.
+                        What we need to do is use algebra to simplify the expression inside the limit:
+                    </p>
+                    <md>
+                        <mrow>\frac{\sqrt{x}-1}{x-1} &amp; = \frac{\sqrt{x}-1}{x-1}\frac{\sqrt{x}+1}{\sqrt{x}+1} </mrow>
+                        <mrow> &amp; = \frac{x - 1}{(x-1)(\sqrt{x}+1)} </mrow>
+                        <mrow> &amp; = \frac{1}{\sqrt{x}+1}. </mrow>
+                    </md>
+                    <p>
+                        Now we can use the Limit Laws to find the limit as <m>x</m> approaches <m>1</m>, since we no longer have a divide-by-zero problem in the denominator:
+                    </p>
+                    <md>
+                        <mrow>\lim_{x\to1}\frac{\sqrt{x}-1}{x-1} &amp; = \lim_{x\to1}\frac{1}{\sqrt{x}+1} </mrow>
+                        <mrow> &amp; = \frac{1}{2}. </mrow>
+                    </md>
+                </solution>
+            </example>
         </subsection>
     </section>
 </chapter>
