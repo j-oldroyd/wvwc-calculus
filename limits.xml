@@ -84,26 +84,28 @@
                     <p>
                         We don't have a lot of tools to find limits yet, so we'll try to estimate it instead.
                         What we'll do is we'll plug numbers that are closer and closer to <m>\pi</m> into <m>f(x)</m>.
-                        Let's try this:
+                        Let's list several values of <m>f(x)</m> as <m>x</m> gets closer to <m>\pi</m> from the left:
                     </p>
-                    <tabular halign="center" top="major">
-                        <row top="major" bottom="minor">
-                            <cell><m>x</m></cell>
-                            <cell><m>f(x)</m></cell>
-                        </row>
-                        <row>
-                            <cell><m>3</m></cell>
-                            <cell><m>-.140</m></cell>
-                        </row>
-                        <row>
-                            <cell><m>3.1</m></cell>
-                            <cell><m>-.042</m></cell>
-                        </row>
-                        <row bottom="major">
-                            <cell><m>3.14</m></cell>
-                            <cell><m>-.002</m></cell>
-                        </row>
-                    </tabular>
+                    <table>
+                        <tabular halign="center" top="major">
+                            <row top="major" bottom="minor">
+                                <cell><m>x</m></cell>
+                                <cell><m>f(x)</m></cell>
+                            </row>
+                            <row>
+                                <cell><m>3</m></cell>
+                                <cell><m>-.140</m></cell>
+                            </row>
+                            <row>
+                                <cell><m>3.1</m></cell>
+                                <cell><m>-.042</m></cell>
+                            </row>
+                            <row bottom="major">
+                                <cell><m>3.14</m></cell>
+                                <cell><m>-.002</m></cell>
+                            </row>
+                        </tabular>
+                    </table>
                     <p>
                         We can even let <m>x</m> approach <m>\pi</m> from the other direction as well (i.e. "from the right") and <m>f(x)</m> will still approach <m>0</m> as <m>x</m> gets closer and closer to <m>\pi</m>.
                         So it looks like the limit should be <m>0</m>.
@@ -210,6 +212,94 @@
                     </p>
                 </solution>
             </example>
+        </subsection>
+    </section>
+    <section xml:id="section-computing-limits">
+        <title>Computing Limits</title>
+        <introduction>
+            <p>
+                We've got a handle on how to estimate limits from <xref ref="section-the-limit-of-a-function" text="type-global" />, but the process is very tedious.
+                It requires either graphing the function in question or laboriously entering values into a calculator.
+                So our first order of business now that we have the concept of a limit is to find an easier way to calculate it.
+                This will be a running theme throughout the course.
+            </p>
+        </introduction>
+        <subsection xml:id="subsection-the-limit-laws">
+            <title>The Limit Laws</title>
+            <p>
+                In many cases of interest, we can use knowledge of simpler limits to obtain more complicated limits.
+                We do this via the <term>Limit Laws</term>.
+                Before we get to them, we'll state two very simple (and hopefully very believable) limits.
+            </p>
+            <proposition xml:id="proposition-simple-limits">
+                <title>Simple Limits</title>
+                <statement>
+                    <p>
+                        For any value of <m>a</m>, the following limits hold:
+                        <me>\lim_{x\to a}c = c</me>
+                        if <m>c</m> is a constant and
+                        <me>\lim_{x\to a}x = a.</me>
+                    </p>
+                </statement>
+            </proposition>
+            <theorem xml:id="theorem-the-limit-laws">
+                <title>The Limit Laws</title>
+                <statement>
+                    <p>
+                        Let <m>c</m> be a constant, let <m>n</m> be a positive whole number and let <m>f(x)</m> and <m>g(x)</m> be functions.
+                        Suppose that <m>\lim_{x\to a}f(x)</m> and <m>\lim_{x\to a}g(x)</m> both exist for some number <m>a</m>.
+                        Then the following rules hold:
+                    </p>
+                    <table xml:id="table-limit-laws">
+                        <caption>The Limit Laws.</caption>
+                        <tabular halign="left" top="major">
+                            <row top="major">
+                                <cell><m>1. \lim_{x\to a}[f(x)\pm g(x)] = \lim_{x\to a}f(x)\pm \lim_{x\to a}g(x)</m></cell>
+                                <cell><m>2. \lim_{x\to a}cf(x) = c\lim_{x\to a}f(x)</m> </cell>
+                            </row>
+                            <row>
+                                <cell><m>3. \lim_{x\to a}[f(x)g(x)] = \lim_{x\to a}f(x)\lim_{x\to a}g(x)</m></cell>
+                                <cell><m>4. \lim_{x\to a}\frac{f(x)}{g(x)} = \frac{\lim_{x\to a}f(x)}{\lim_{x\to a}g(x)}</m> (if <m>\lim_{x\to a}g(x)\neq 0</m>)</cell>
+                            </row>
+                            <row bottom="major">
+                                <cell><m>5. \lim_{x\to a}[f(x)^{n}] = [\lim_{x\to a}f(x)]^{n}</m></cell>
+                                <cell><m>6. \lim_{x\to a}\sqrt[n]{f(x)} = \sqrt[n]{\lim_{x\to a}f(x)}</m></cell>
+                            </row>
+                        </tabular>
+                    </table>
+                    <p>
+                        Note that item six in the table above only holds (in this class...) if <m>n</m> is odd or if <m>\lim_{x\to a}f(x)\geq0</m>.
+                    </p>
+                </statement>
+            </theorem>
+            <p>
+                <xref ref="theorem-the-limit-laws" text="type-global" /> gives us the ability to compute a wide variety of limits.
+            </p>
+            <example xml:id="example-limit-of-a-rational-function">
+                <title>Limit of a rational function</title>
+                <statement>
+                    <p>
+                        Let 
+                        <me>f(x) = \frac{3 - x^{5} + 5x}{2x-\sqrt[4]{x}}.</me>
+                        Evaluate <m>\lim_{x\to 16}f(x)</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        We can evaluate <m>\lim_{x\to 16}f(x)</m> by making use of the appropriate Limit Laws and <xref ref="proposition-simple-limits" text="type-global" />:
+                    </p>
+                    <md>
+                        <mrow>\lim_{x\to 16}\frac{3 - x^{5} + 5x}{2x-\sqrt[4]{x}} &amp; = \frac{\lim_{x\to 16}(3 - x^{5} + 5x)}{\lim_{x\to 16}(2x-\sqrt[4]{x})} &amp; \text{by Limit Law 4}</mrow>
+                        <mrow> &amp; = \frac{\lim_{x\to 16}3 - \lim_{x\to 16}x^{5} + \lim_{x\to 16}5x}{\lim_{x\to 16}2x-\lim_{x\to 16}\sqrt[4]{x}} &amp; \text{by Limit Law 1.} </mrow>
+                        <mrow> &amp; = \frac{3 - [\lim_{x\to 16}x]^{5} + 5\lim_{x\to 16}x}{2\lim_{x\to 16}x-\sqrt[4]{\lim_{x\to 16}x}} &amp; \text{by Limit Laws 2, 5, and 6.} </mrow>
+                        <mrow> &amp; = \frac{3-16^{5}+80}{30} &amp;</mrow>
+                    </md>
+                </solution>
+            </example>
+            <p>
+                In particular, Limit Laws 1-5 give us the following: if <m>f(x)</m> is a polynomial or rational function, then <m>\lim_{x\to a}f(x) = f(a)</m> as long as <m>a</m> is in the domain of <m>f(x)</m>.
+                If <m>a</m> is not in the domain, trickery may be required.
+            </p>
         </subsection>
     </section>
 </chapter>
