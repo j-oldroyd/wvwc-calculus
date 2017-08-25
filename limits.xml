@@ -474,19 +474,50 @@
             </solution>
         </example>
         <p>
-            We
+            We can also build more complicated continuous functions out of simpler ones.
         </p>
+        <theorem xml:id="theorem-combining-continuous-functions">
+            <title>Combining Continuous Functions</title>
+            <statement>
+                <p>
+                    Let <m>f(x)</m> and <m>g(x)</m> be continuous at a point <m>a</m>.
+                    Then the following statements are true:
+                    <ol>
+                        <li><m>f(x)+g(x)</m> is continuous at <m>a</m>.</li>
+                        <li><m>f(x)g(x)</m> is continuous at <m>a</m>.</li>
+                        <li><m>\frac{f(x)}{g(x)}</m> is continuous at <m>a</m> if <m>g(a)\neq0</m>.</li>
+                        <li><m>f(g(x))</m> is continuous at <m>a</m> if <m>g(a)</m> is in the domain of <m>f(x)</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+        </theorem>
         <example xml:id="example-determining-where-functions-are-continuous">
             <title>Determining where functions are continuous</title>
             <statement>
                 <p>
-                    Let <m>h(t) = \sqrt{t} + \frac{t}{t+4} - \frac{t+1}{t^{2}-1}</m>.
+                    Let <m>h(t) = \sqrt{t} + \frac{t}{t-4} - \frac{t+1}{t^{2}-1}</m>.
                     On what intervals is <m>h(t)</m> continuous?
                 </p>
             </statement>
             <solution>
                 <p>
-                    By refa
+                    By <xref ref="theorem-combining-continuous-functions" text="type-global" />, <m>h(t)</m> should be continuous wherever <m>\sqrt{t}, \frac{t}{t-4}</m> and <m>\frac{t+1}{t^{2}-1}</m> are all defined.
+                    Since <m>\sqrt{t}</m> is defined for <m>t\geq0</m>, <m>\frac{t}{t-4}</m> is defined for <m>t\neq4</m> and <m>\frac{t+1}{t^{2}-1}</m> is defined for <m>t\neq\pm1</m>, it follows that <m>h(t)</m> is continuous on <m>[0,1)\cup(1,4)\cup(4,\infty)</m>.
+                </p>
+            </solution>
+        </example>
+        <example xml:id="example-using-continuity-to-evaluate-a-limit">
+            <title>Using continuity to evaluate a limit</title>
+            <statement>
+                <p>
+                    Evaluate <m>\lim_{x\to\pi}\cos(x+\sin x)</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Since <m>x, \cos x</m> and <m>\sin x</m> are all continuous, this means that <m>\cos(x+\sin x)</m> must be continuous as well.
+                    Therefore
+                    <me>\lim_{x\to\pi}\cos(x+\sin x) = \cos(\pi+\sin\pi) = -1.</me>
                 </p>
             </solution>
         </example>
