@@ -371,6 +371,63 @@
             </solution>
         </example>
         <p>
+            If we're dealing with a function on a (bounded) closed interval, we need to introduce some new terminology.
+            We say that a function <m>f(x)</m> is <term>continuous from the left</term> at <m>x=a</m> if <m>\lim_{x\to a^{-}}f(x) = f(a)</m>.
+            Similarly, we say that <m>f(x)</m> is <term>continuous from the right</term> at <m>x=a</m> if <m>\lim_{x\to a^{+}}f(x) = f(a)</m>.
+            This is of course assuming that <m>a</m> is in the domain of <m>f(x)</m>.
+            Finally, we say that <m>f(x)</m> is continuous on the closed interval <m>[a,b]</m> if it is continuous on <m>(a,b)</m>, continuous from the right at <m>a</m> and continuous from the left at <m>b</m>.
+            The main idea is still that the graph contains no gaps over this interval.
+        </p>
+        <example xml:id="example-continuity-over-a-closed-interval">
+            <title>Continuity over a closed interval</title>
+            <statement>
+                <p>
+                    Let <m>f(x)</m> be given by
+                    <me>f(x) = \begin{cases} 3x-1 &amp; 1\leq x&lt; 2 \\ 9-x^{2} &amp; 2\leq x\leq 4.\end{cases}</me>
+                    Is <m>f(x)</m> continuous over <m>[1,4]</m>?
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    If we graph <m>f(x)</m> over this interval, we get the following:
+                </p>
+                <figure>
+                    <image width="50%">
+                        <latex-image-code><![CDATA[
+                            \pgfmathdeclarefunction{MyFunction}{1}{%
+                              \pgfmathparse{%
+                                (and(#1>=1,  #1< 2)*(3*#1-1)   +%
+                                (and(#1>= 2,  #1<= 4)*(9-#1*#1)%
+                                }%
+                            }
+                            \begin{tikzpicture}
+                                \begin{axis}[%
+                                    axis x line = center,
+                                    axis y line = center,
+                                    xtick={0,...,5},
+                                    ytick={-7,...,5},
+                                    xmin = -1,
+                                    xmax = 5,
+                                    ymin = -7.5,
+                                    ymax = 5.5,
+                                    xlabel={$x$},
+                                    ylabel={$y$},
+                                    grid=both
+                                    ]
+                                    \foreach \xStart/\xEnd  in {1/2, 2/4} {
+                                    \addplot[domain=\xStart:\xEnd, blue, samples=10, ultra thick] {MyFunction(x)};
+                                    }
+                                    \addplot[incl] coordinates{(1,2)};
+                                    \addplot[incl] coordinates{(4,-7)};
+                                    \addlegendentry{$y = f(x)$};
+                                \end{axis}
+                            \end{tikzpicture}]]>
+                        </latex-image-code>
+                    </image>
+                </figure>
+            </solution>
+        </example>
+        <p>
             Remember that we said a function is continuous over an interval if its graph has no gaps over that interval.
             This is a very rough explanation of continuity, but it should make the following theorem plausible.
         </p>
