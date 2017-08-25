@@ -425,6 +425,9 @@
                         </latex-image-code>
                     </image>
                 </figure>
+                <p>
+                    So from the graph it appears that <m>f(x)</m> is continuous on this interval.
+                </p>
             </solution>
         </example>
         <p>
@@ -439,6 +442,40 @@
                 </p>
             </statement>
         </theorem>
+        <p>
+            Although it doesn't directly mention piecewise functions, <xref ref="theorem-continuous-functions" text="type-global" /> is still useful for determining if they are continuous.
+            If a piecewise function is defined using any of the functions from <xref ref="theorem-continuous-functions" text="type-global" />, then the only points we really need to check for continuity are the the places where the function "changes rules".
+        </p>
+        <example xml:id="example-another-piecewise-function">
+            <title>Another piecewise function</title>
+            <statement>
+                <p>
+                    Over what intervals is the function <m>g(s)</m> given by
+                    <me>g(s) = \begin{cases} s^{2} &amp; s&lt;-1 \\ -5\cos (\pi s) &amp; -1\leq s\leq 1 \\ 5 &amp; s&gt; 1 \end{cases}</me>
+                    continuous?
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We need to check continuity at <m>s=-1</m> and <m>s=1</m>.
+                    At <m>s=-1</m>, we need to make sure that <m>\lim_{s\to -1}g(s)</m> exists and is equal to <m>g(-1)</m>.
+                    Since
+                    <me>\lim_{s\to-1^{-1}}g(s) = \lim_{s\to-1^{-1}}s^{2} = 1</me>
+                    and 
+                    <me>\lim_{s\to-1^{+}}g(s) = \lim_{s\to-1^{+}}\cos(\pi s) = -1,</me>
+                    it follows that <m>\lim_{s\to-1}g(s)</m> does not exist.
+                    So <m>g(s)</m> can't be continuous at <m>s=-1</m>.
+                </p>
+                <p>
+                    On the other hand, since <m>\lim_{s\to1^{-1}}g(s) = 5 = \lim_{s\to1^{+}}g(s)</m>, it follows that <m>\lim_{s\to1}g(s)</m> exists and is equal to <m>5</m>.
+                    Since <m>g(1)</m> also equals <m>5</m>, <m>g(s)</m> is continuous at <m>s=1</m>.
+                    So <m>g(s)</m> must be continuous on <m>(-\infty, -1)\cup(-1,\infty)</m>.
+                </p>
+            </solution>
+        </example>
+        <p>
+            We
+        </p>
         <example xml:id="example-determining-where-functions-are-continuous">
             <title>Determining where functions are continuous</title>
             <statement>
@@ -449,7 +486,7 @@
             </statement>
             <solution>
                 <p>
-                    
+                    By refa
                 </p>
             </solution>
         </example>
