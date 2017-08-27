@@ -522,4 +522,109 @@
             </solution>
         </example>
     </section>
+    <section xml:id="section-limits-involving-infinity">
+        <title>Limits Involving Infinity</title>
+        <subsection xml:id="subsection-limits-involving-vertical-asymptotes">
+            <title>Limits Involving Vertical Asymptotes</title>
+            <p>
+                Consider the function <m>f(x)=\frac{1}{x}</m>.
+                We know from algebra that this function has a vertical asymptote at <m>x=0</m>, and so in particular is undefined there.
+                However, just because it's undefined at <m>x=0</m> doesn't mean that we can't gather important information about the function near <m>0</m>.
+                This is because the function behaves in a very specific way as we let <m>x</m> approach <m>0</m>.
+                For example, if we let <m>x</m> approach <m>0</m> from the right, then <m>f(x)</m> increases without bound.
+                Similarly, <m>f(x)</m> decreases without bound as <m>x</m> approaches <m>0</m> from the left.
+            </p>
+            <p>
+                Even though <m>f(x)</m> is not approaching a specific value as <m>x</m> approaches <m>0</m> from either direction, this behavior shows up often enough and is important enough that we want to introduce notation to describe it.
+                For this function, we would say <m>\lim_{x\to0^{+}}\frac{1}{x}=\infty</m> and <m>\lim_{x\to0^{-}}\frac{1}{x}=-\infty</m>.
+            </p>
+            <p>
+                Now consider <m>g(x) = \frac{1}{(x-3)^{2}}</m>. 
+                Then <m>\lim_{x\to3^{-}}g(x) = \lim_{x\to3^{+}}g(x) = \infty</m> since the function increases without bound when <m>x</m> approaches <m>3</m> from both directions.
+                In this case, we say that <m>\lim_{x\to3}g(x)=\infty</m>.
+            </p>
+            <aside>
+                <p>
+                    It's <em>extremely</em> important to remember that the symbol <m>\infty</m> is not being used to represent a number or variable that we can perform algebra on.
+                    It's a symbol indicating how a particular function is behaving at a certain point.
+                </p>
+            </aside>
+            <p>
+                If <m>f(x)</m> is a function and <m>\lim_{x\to a}f(x)=\pm\infty</m>, <m>\lim_{x\to a^{-}}f(x)=\pm\infty</m> or <m>\lim_{x\to a^{+}}f(x)=\pm\infty</m>, then this means that the function has a vertical asymptote at <m>x=a</m>.
+                In this course, this basically corresponds to a divide-by-zero problem.
+            </p>
+            <example xml:id="example-infinite-limit-involving-a-rational-function">
+                <title>Infinite limit involving a rational function</title>
+                <statement>
+                    <p>
+                        Determine <m>\lim_{x\to4^{-}}\frac{x-3}{2x-8}</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        If we try to plug in <m>x=4</m> into <m>\frac{x-3}{2x-8}</m> we get <m>\frac{1}{0}</m>, which means we have run into a divide-by-zero problem.
+                        This is a good hint that the limit should be <m>\pm\infty</m>, we just need to figure out the correct sign.
+                        There are a couple ways we can do this.
+                        First, we could set up a sign chart for this function to see where it's positive and negative and then use that to see if it's increasing or decreasing without bound as <m>x\to4^{-}</m>.
+                        Second, we could just plug in values of <m>x</m> that are closer and closer to <m>4</m> and see how the function behaves.
+                        Either way, we see that it's negative for values of <m>x</m> that are close to (but less than) <m>4</m>.
+                        Hence <m>\lim_{x\to4^{-}}\frac{x-3}{2x-8}=-\infty</m>.
+                    </p>
+                </solution>
+            </example>
+        </subsection>
+        <subsection xml:id="subsection-limits-at-infinity">
+            <title>Limits at Infinity</title>
+            <p>
+                <xref ref="subsection-limits-involving-vertical-asymptotes" text="type-global" /> involved limits of functions whose values approached <m>\pm\infty</m>.
+                Now we look at what can happen to a function if its input values approach <m>\pm\infty</m>.
+                First, a definition of sorts.
+            </p>
+            <definition xml:id="definition-limit-at-infinity">
+                <title>Limit at Infinity</title>
+                <statement>
+                    <p>
+                        Let <m>f(x)</m> be a function.
+                        We say that <m>\lim_{x\to\infty}f(x) = L</m> if <m>f(x)</m> gets (and stays) arbitrarily close to <m>L</m> as <m>x</m> is made arbitrarily large.
+                        Similarly, we say that <m>\lim_{x\to-\infty}f(x) = L</m> if <m>f(x)</m> gets (and stays) arbitrarily close to <m>L</m> as <m>x</m> is made arbitrarily small.
+                    </p>
+                </statement>
+            </definition>
+            <example xml:id="example-an-important-limit-at-infinity">
+                <title>An important limit at infinity</title>
+                <statement>
+                    <p>
+                        Let <m>f(x) = \frac{1}{x}</m>.
+                        Determine <m>\lim_{x\to\infty}f(x)</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        As <m>x</m> gets arbitrarily large, <m>\frac{1}{x}</m> gets arbitrarily close to <m>0</m>.
+                        Therefore <m>\lim_{x\to\infty}f(x) = 0</m>.
+                    </p>
+                </solution>
+            </example>
+            <p>
+                <xref ref="example-an-important-limit-at-infinity" text="type-global" /> holds for many other reciprocal powers of <m>x</m>.
+                In particular, if <m>n&gt;0</m> then <m>\lim_{x\to\infty}\frac{1}{x^{n}} = \lim_{x\to-\infty}\frac{1}{x^{n}} = 0</m>.
+            </p>
+            <example xml:id="example-a-limit-at-infinity-involving-sine">
+                <title>A limit at infinity involving cosine</title>
+                <statement>
+                    <p>
+                        Let <m>g(s) = \cos s^{-3}</m>.
+                        Compute <m>\lim_{s\to-\infty}g(s)</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        First, note that <m>g(s) = \cos\frac{1}{s^{3}}</m>.
+                        By the previous remark, we know that <m>\lim_{s\to-\infty}\frac{1}{s^{3}} = 0</m>.
+                        Therefore <m>\lim_{s\to-\infty}g(s) = \cos0 = 1</m>.
+                    </p>
+                </solution>
+            </example>
+        </subsection>
+    </section>
 </chapter>
