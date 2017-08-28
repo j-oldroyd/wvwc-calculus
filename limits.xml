@@ -668,6 +668,30 @@
                     </md>
                 </solution>
             </example>
+            <p>
+                These limits at infinity have a graphical meaning as well.
+                If <m>\lim_{x\to\infty}f(x)</m> or <m>\lim_{x\to-\infty}f(x)</m> exists and is equal to <m>L</m>, then the line <m>y=L</m> is a horizontal asymptote of the graph of <m>y=f(x)</m>.
+            </p>
+            <example xml:id="example-asymptotic-equivalence">
+                <title>Asymptotic equivalence</title>
+                <statement>
+                    <p>
+                        Two functions <m>f(x)</m> and <m>g(x)</m> are said to be <term>asymptotically equivalent</term>, written <m>f\sim g</m>, if the following is true:
+                        <me>\lim_{x\to\infty}\frac{f(x)}{g(x)} = 1.</me>
+                        Show that <m>\sin\frac{1}{x}\sim\frac{1}{x}</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        All we need to do is compute <m>\lim_{x\to\infty}\frac{\sin\frac{1}{x}}{\frac{1}{x}}:</m>
+                        <md>
+                            <mrow>\lim_{x\to\infty}\frac{\sin\frac{1}{x}}{\frac{1}{x}} &amp; = \lim_{\theta\to0^{+}}\frac{\sin\theta}{\theta} </mrow>
+                            <mrow> &amp; = 1. </mrow>
+                        </md>
+                        Therefore <m>\sin\frac{1}{x}\sim\frac{1}{x}</m>.
+                    </p>
+                </solution>
+            </example>
         </subsection>
     </section>
 </chapter>
