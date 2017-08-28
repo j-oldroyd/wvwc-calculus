@@ -625,6 +625,49 @@
                     </p>
                 </solution>
             </example>
+            <aside>
+                <p>
+                    The reason we were able to find the limit in <xref ref="example-a-limit-at-infinity-involving-sine" text="type-global" /> was because of the following fact: if <m>\lim_{x\to a}g(x)</m> exists and if <m>f(x)</m> is continuous at <m>\lim_{x\to a}g(x)</m>, then <m>\lim_{x\to a}f(g(x)) = f(\lim_{x\to a}g(x))</m>. 
+                    Basically, we can swap continuous functions with limits without causing any harm.
+                </p>
+            </aside>
+            <p>
+                For limits at infinity involving powers of a variable, it is the highest power variables that determine the outcome.
+            </p>
+            <example xml:id="example-limit-at-infinity-of-a-rational-function">
+                <title>Limit at infinity of a rational function</title>
+                <statement>
+                    <p>
+                        Let 
+                        <me>f(t) = \frac{100t - 3 + t^{3}}{5t^{2}+1}\text{ and } g(t) = \frac{1-2t^{4}}{5t^{4}+3000t}.</me>
+                        Find <m>\lim_{t\to\infty} f(t)</m> and <m>\lim_{t\to-\infty}g(t)</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Let's start with <m>f(t)</m>.
+                        To figure out what this limit should be, we could try the following.
+                        As <m>t</m> gets very large the <m>t^{3}</m> term in the numerator should drown out everything else in the numerator.
+                        Similarly, the <m>5t^{2}</m> term in the denominator should drown out everything else in the denominator.
+                        So for <m>t</m> very large, <m>f(t)\approx\frac{t^{3}}{5t^{2}} = \frac{1}{5}t</m>.
+                        Hence <m>f(t)</m> should probably go to <m>\infty</m> as <m>t</m> goes to <m>\infty</m>.
+                        To make this more precise, we'll just divide the numerator and denominator by the largest power of the denominator, <m>t^{2}</m>, and then take the limit:
+                    </p>
+                    <md>
+                        <mrow>\lim_{t\to\infty}f(t) &amp; = \lim_{t\to\infty}\frac{100t-3+t^{3}}{5t^{2}+1} </mrow>
+                        <mrow> &amp; = \lim_{t\to\infty}\frac{\frac{100}{t} - \frac{3}{t^{2}}+t}{5+\frac{1}{t^{2}}} </mrow>
+                        <mrow> &amp; = \infty. </mrow>
+                    </md>
+                    <p>
+                        We can find <m>\lim_{t\to-\infty}g(t)</m> using the same idea.
+                        Just divide by the highest power in the denominator and then take the limit:
+                    </p>
+                    <md>
+                        <mrow>\lim_{t\to-\infty}g(t) &amp; = \lim_{t\to-\infty}\frac{\frac{1}{t^{4}}-2}{5+\frac{3000}{t^{3}}} </mrow>
+                        <mrow> &amp; = -\frac{2}{5}. </mrow>
+                    </md>
+                </solution>
+            </example>
         </subsection>
     </section>
 </chapter>
