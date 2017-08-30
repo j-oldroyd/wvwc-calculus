@@ -115,6 +115,42 @@
                     </p>
                 </solution>
             </example>
+            <p>
+                <xref ref="example-velocity-from-position" text="type-global" /> was a little tricky because we needed to compute <m>\lim_{t\to3}\frac{3t^{2}-5t-12}{t-3}</m>, and it was unclear how to simplify this at first.
+                This stemmed in large part from how we computed the velocity in the first place, using the formula
+                <me>\lim_{t\to3}\frac{s(t)-s(3)}{t-3}</me>
+                or more generally
+                <me>\lim_{x\to a}\frac{f(x) - f(a)}{x-a}</me>.
+            </p>
+            <p>
+                We want to rewrite this formula to make it a little easier to work with in certain cases.
+                We'll do this by making the denominator easier to handle.
+                In particular, set <m>x-a = h</m>.
+                Then
+                <me>\lim_{x\to a}\frac{f(x) - f(a)}{x-a} = \lim_{h\to0}\frac{f(a+h)-f(a)}{h}.</me>
+                Either formula can be used to compute the slope of the tangent line.
+            </p>
+            <example xml:id="example-velocity-revisited">
+                <title>Velocity revisited</title>
+                <statement>
+                    <p>
+                        Let <m>s(t)</m> be given as in <xref ref="example-velocity-from-position" text="type-global" />.
+                        Find the velocity at <m>t=3</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        We know that the velocity should be <m>13</m>, but we'll try to find it again using our new formula.
+                        So the velocity should also be
+                    </p>
+                    <md>
+                        <mrow>\lim_{h\to0}\frac{s(3+h)-s(3)}{h} &amp; = \lim_{h\to0}\frac{3(9+6h+h^{2})-5(3+h)-12}{h} </mrow>
+                        <mrow> &amp; = \lim_{h\to0}\frac{13h+3h^{2}}{h} </mrow>
+                        <mrow> &amp; = \lim_{h\to0}(13+3h) </mrow>
+                        <mrow> &amp; = 13. </mrow>
+                    </md>
+                </solution>
+            </example>
         </subsection>
     </section>
 </chapter>
