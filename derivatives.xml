@@ -151,6 +151,49 @@
                     </md>
                 </solution>
             </example>
+            <p>
+                Typically, if <m>f(x)-f(a)</m> is easy to factor in terms of <m>x-a</m> we'll want to use the first formula we had for computing rates of change.
+                Otherwise, we'll stick with the new formula involving <m>h</m>.
+            </p>
+        </subsection>
+        <subsection xml:id="subsection-the-derivative">
+            <title>The Derivative</title>
+            <p>
+                Suppose we go back to <xref ref="example-velocity-from-position" text="type-global" /> one more time, but now we want to find the velocity of <m>s(t)</m> at an arbitrary number <m>a</m>.
+                Then we could still use our limit formulas, which would give us 
+            </p>
+            <md>
+                <mrow>\lim_{h\to0}\frac{s(a+h)-s(a)}{h} &amp; = \lim_{h\to0}\frac{3(a^{2}+2ah+h^{2})-5(a+h) - 3a^{2} + 5a}{h} </mrow>
+                <mrow> &amp; = \lim_{h\to0}\frac{6ah+3h^{2} - 5h}{h} </mrow>
+                <mrow> &amp; = \lim_{h\to0}(6a+3h-5) </mrow>
+                <mrow> &amp; = 6a-5. </mrow>
+            </md>
+            <p>
+                So the velocity at <m>t=a</m> of the particle modeled by <m>s(t)</m> is given by <m>6a-5</m>.
+                So we can represent the velocity, or rate of change or slope of the tangent line, by a function.
+                We call this the <term>derivative</term>.
+            </p>
+            <definition xml:id="definition-definition-of-the-derivative">
+                <title>Definition of the Derivative</title>
+                <idx><h>derivative</h><h>definition</h></idx>
+                <idx><h>functions</h><h>differentiable</h></idx>
+                <statement>
+                    <p>
+                        Let <m>f(x)</m> be a function.
+                        Then its derivative at <m>x=a</m> is given by
+                        <me>\lim_{h\to0}\frac{f(a+h)-f(a)}{h}</me>
+                        assuming the limit exists.
+                        If this limit exists, we say that the function <m>f(x)</m> is <term>differentiable</term> at <m>a</m>.
+                    </p>
+                </statement>
+            </definition>
+            <aside>
+                <p>
+                    We could also define the derivative by 
+                    <me>\lim_{x\to a}\frac{f(x)-f(a)}{x-a}.</me>
+                    These two limits are equivalent.
+                </p>
+            </aside>
         </subsection>
     </section>
 </chapter>
