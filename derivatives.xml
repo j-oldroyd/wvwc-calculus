@@ -180,8 +180,8 @@
                 <statement>
                     <p>
                         Let <m>f(x)</m> be a function.
-                        Then its derivative at <m>x=a</m> is given by
-                        <me>\lim_{h\to0}\frac{f(a+h)-f(a)}{h}</me>
+                        Then its derivative at <m>x=a</m> is the number <m>f'(a)</m> given by
+                        <me>f'(a) = \lim_{h\to0}\frac{f(a+h)-f(a)}{h}</me>
                         assuming the limit exists.
                         If this limit exists, we say that the function <m>f(x)</m> is <term>differentiable</term> at <m>a</m>.
                     </p>
@@ -194,6 +194,39 @@
                     These two limits are equivalent.
                 </p>
             </aside>
+            <p>
+                The derivative of a function <m>f(x)</m> at a point <m>a</m> represents two things: the slope of the tangent line to <m>f(x)</m> at <m>a</m> and the instantaneous rate of change of <m>f(x)</m> at <m>a</m>.
+            </p>
+            <example xml:id="example-slope-of-the-sine-function">
+                <title>Slope of the sine function</title>
+                <statement>
+                    <p>
+                        Let <m>f(x) = \sin x</m>.
+                        Find its slope at <m>0</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        The slope at <m>0</m> is exactly <m>f'(0)</m>, which is
+                        <me>\lim_{h\to0}\frac{\sin(0+h)-\sin(0)}{h} = \lim_{h\to0}\frac{\sin h}{h} = 1.</me>
+                    </p>
+                </solution>
+            </example>
+            <example xml:id="example-tangent-line-of-the-sine-function">
+                <title>Tangent line of the sine function</title>
+                <statement>
+                    <p>
+                        Find the equation of the tangent line to <m>f(x) = \sin x</m> at <m>0</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        The tangent line must pass through <m>(0,0)</m> and must have slope <m>f'(0) = 1</m>, so its equation is
+                        <me>y-0 = 1(x-0)</me>
+                        or just <m>y=x</m>.
+                    </p>
+                </solution>
+            </example>
         </subsection>
     </section>
 </chapter>
