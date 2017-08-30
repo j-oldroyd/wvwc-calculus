@@ -93,13 +93,25 @@
                 <title>Velocity from position</title>
                 <statement>
                     <p>
-                        The displacement (i.e. position) of a particle moving in a straight line is described by the function <m>s(t) = 3t^{2} - 5t</m>.
+                        The displacement (i.e. position) of a particle moving in a straight line is described by the function <m>s(t) = 3t^{2} - 5t</m>, where <m>t</m> is in seconds and <m>s</m> is in meters.
                         Find the velocity, or instantaneous rate of change, of the particle at <m>t=3</m>.
                     </p>
                 </statement>
                 <solution>
                     <p>
-                        
+                        The velocity is just the slope of the tangent line to <m>s(t)</m> at <m>t=3</m>, which we can find as follows:
+                    </p>
+                    <md>
+                        <mrow>\lim_{t\to3}\frac{s(t) - s(3)}{t-3} &amp; = \lim_{t\to3}\frac{(3t^{2} - 5t) - 12}{t-3} </mrow>
+                        <mrow> &amp; = \lim_{t\to3}\frac{3t^{2} - 5t - 12}{t-3} </mrow>
+                    </md>
+                    <p>
+                        At this step it's a little unclear where to go next, so we'll try long division.
+                        If we do so, we get
+                        <me>\frac{3t^{2} - 5t - 12}{t-3} = 3t+4.</me>
+                        Hence the velocity must be
+                        <me>\lim_{t\to3}(3t+4) = 13</me>
+                        meters per second.
                     </p>
                 </solution>
             </example>
