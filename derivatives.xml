@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+
+*********************************************************************-->
+<!-- This file was originally part of the book     -->
+<!-- (as copied on 2015/07/12)                     -->
+<!--                                               -->
+<!--   Abstract Algebra: Theory and Applications   -->
+<!--                                               -->
+<!-- Copyright (C) 1997-2014  Thomas W. Judson     -->
+
+<chapter xml:id="derivatives" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Derivatives</title>
+    <introduction>
+        <p>
+            There are two problems that inspired the creation of calculus.
+            The first is the tangent line problem, or rate of change problem.
+            This problem is concerned with determining how a quantity <m>f(x)</m> changes as <m>x</m> varies.
+            We will focus on this problem and its solution, derivatives, for the next two chapters.
+            Afterwards, we will focus on the area problem, the second problem that inspired the creation of calculus.
+        </p>
+    </introduction>
+    <section xml:id="section-the-definition-of-the-derivative">
+        <title>The Definition of the Derivative</title>
+        <subsection xml:id="subsection-tangent-lines">
+            <title>Tangent Lines</title>
+            <p>
+                Consider <m>f(x) = x^{2}</m>.
+                If we graph this, we get a parabola.
+                What we'd like to do is to find a way to describe how quickly this parabola is changing at a point, i.e. find the "slope" of the parabola.
+                One way to try to deal with this is to use <term>secant lines</term>.
+                Recall that the secant line through the points <m>(a,f(a))</m> and <m>(b,f(b))</m> has slope <m>\frac{f(b) - f(a)}{b-a}</m>, which is just the average rate of change of <m>f</m> from <m>x=a</m> to <m>x=b</m>.
+                If <m>b</m> is very close to <m>a</m>, then the slope of the secant line through these points should be a good approximation to the "slope" of <m>f(x) = x^{2}</m> at the point <m>x=a</m>.
+            </p>
+            <example xml:id="example-secant-lines-on-a-parabola">
+                <title>Secant lines on a parabola</title>
+                <statement>
+                    <p>
+                        Let <m>f(x) = x^{2}</m>.
+                        Find the slope of the secant line through <m>(2,f(2))</m> and <m>(x,f(x))</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Since the slope of the secant line is the average rate of change, we get that the slope must be equal to
+                        <me>\frac{f(x) - f(2)}{x-2} = \frac{x^{2} - 4}{x-2} = x+2.</me>
+                    </p>
+                </solution>
+            </example>
+            <p>
+                What <xref ref="example-secant-lines-on-a-parabola" text="type-global" /> is telling us is that if <m>x\approx2</m>, then the slope of <m>f(x) = x^{2}</m> at <m>x=2</m> should be very close to <m>x+2</m>, the slope of the secant line.
+                Now we'll do a trick that shows up everywhere in calculus, and is the entire reason we introduced limits in the first place. 
+                We'll make this approximation exact by taking a limit.
+                In particular, we'll say that the slope of <m>f(x) = x^{2}</m> should be equal to
+                <me>\lim_{x\to2}\frac{f(x)-f(2)}{x-2} = \lim_{x\to2}(x+2) = 4.</me>
+                This is the slope of the <term>tangent line</term> to <m>f(x) = x^{2}</m> at <m>x=2</m>.
+                Instead of an average rate of change over an interval <m>[2,x]</m>, we now have an <term>instantaneous rate of change</term> at a point <m>x=2</m>.
+            </p>
+            <definition xml:id="definition-tangent-lines">
+                <title>Tangent Lines</title>
+                <statement>
+                    <p>
+                        The tangent line to a curve <m>y=f(x)</m> through a point <m>(a,f(a))</m> is the line passing through <m>(a,f(a))</m> with slope given by
+                        <me>\lim_{x\to a}\frac{f(x)-f(a)}{x-a},</me>
+                        assuming this limit exists.
+                        The slope of the tangent line represents the slope of the graph of <m>f(x)</m> at <m>a</m> and gives the instantaneous rate of change of <m>f(x)</m> at <m>x=a</m>.
+                    </p>
+                </statement>
+            </definition>
+            <example xml:id="example-tangent-line-to-a-root">
+                <title>Tangent line to a root</title>
+                <statement>
+                    <p>
+                        Find the equation of the tangent line to <m>y=\sqrt{x}</m> through the point <m>(4,2)</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        We need two things to find the equation of a line: the slope of the line and a point on the line.
+                        Since we know the tangent line has to pass through <m>(4,2)</m>, we just need to find the slope.
+                        The slope is given by
+                        <me>\lim_{x\to 4}\frac{\sqrt{x}-2}{x-4} = \lim_{x\to4}\frac{x-4}{(x-4)(\sqrt{x}+2)} = \frac{1}{4}.</me>
+                        Hence the equation of the tangent line through <m>(4,2)</m> is
+                        <me>y-2 = \frac{1}{4}(x-4).</me>
+                    </p>
+                </solution>
+            </example>
+            <p>
+                As a reminder, the slope of the tangent line represents the slope, or instantaneous rate of change, of the function.
+            </p>
+            <example xml:id="example-velocity-from-position">
+                <title>Velocity from position</title>
+                <statement>
+                    <p>
+                        The displacement (i.e. position) of a particle moving in a straight line is described by the function <m>s(t) = 3t^{2} - 5t</m>.
+                        Find the velocity, or instantaneous rate of change, of the particle at <m>t=3</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        
+                    </p>
+                </solution>
+            </example>
+        </subsection>
+    </section>
+</chapter>
