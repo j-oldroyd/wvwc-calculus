@@ -293,7 +293,7 @@
                                             ymin = -10,
                                             ymax = 10,
                                             xlabel={$t$},
-                                            ylabel={$t$},
+                                            ylabel={$y$},
                                             grid=both
                                             ]
                                             \addplot[blue, samples=50, smooth, ultra thick] {.25*x^4 - x^2};
