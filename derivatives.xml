@@ -243,12 +243,34 @@
                 <statement>
                     <p>
                         Let <m>f(x)</m> be a function.
-                        The <term>derivative function</term>, or more simply <term>derivative</term>, of <m>f(x)</m> is the function defined by
+                        The <term>derivative function</term>, or more simply <term>derivative</term>, of <m>f(x)</m> is the function <m>f'(x)</m> defined by
                         <me>f'(x) = \lim_{h\to0}\frac{f(x+h) - f(x)}{h}</me>
                         assuming this limit exists.
+                        This is also often denoted by <m>\dv{}{x}(f)</m> or <m>\dv{f}{x}</m>.
+                        If this limit exists for all <m>x</m> in some interval <m>I</m>, we say that <m>f</m> is <term>differentiable on <m>I</m></term>, or more simply <term>differentiable</term> if we do not wish to specify the interval.
                     </p>
                 </statement>
             </definition>
+            <example xml:id="example-computing-a-derivative">
+                <title>Computing a derivative</title>
+                <statement>
+                    <p>
+                        Compute the derivative of <m>f(x) = x - 3x^{2}</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Using <xref ref="definition-the-derivative-function" text="type-global" />, we have
+                        <md>
+                            <mrow>f'(x) &amp; = \lim_{h\to0}\frac{[(x+h)-3(x+h)^{2}] - x + 3x^{2}}{h} </mrow>
+                            <mrow> &amp; = \lim_{h\to0}\frac{[x+h-3x^{2}-6xh-3h^{2}] - x + 3x^{2}}{h} </mrow>
+                            <mrow> &amp; = \lim_{h\to0}\frac{h-6xh-3h^{2}}{h} </mrow>
+                            <mrow> &amp; = \lim_{h\to0}(1-6x-3h) </mrow>
+                            <mrow> &amp; = 1-6x. </mrow>
+                        </md>
+                    </p>
+                </solution>
+            </example>
             <p>
                 If <m>f(x)</m> is a function, then its derivative <m>f'(x)</m> (assuming it exists!) is a function that gives the rate of change of <m>f</m> at <m>x</m>, or equivalently the slope of the tangent line to <m>f</m> at <m>x</m>.
             </p>
@@ -271,12 +293,12 @@
                                             ymin = -10,
                                             ymax = 10,
                                             xlabel={$t$},
-                                            ylabel={$g$},
+                                            ylabel={$t$},
                                             grid=both
                                             ]
                                             \addplot[blue, samples=50, smooth, ultra thick] {.25*x^4 - x^2};
                                             }
-                                            \addlegendentry{$g(t)$};
+                                            \addlegendentry{$y = g(t)$};
                                         \end{axis}
                                     \end{tikzpicture}]]>
                                 </latex-image-code>
@@ -284,14 +306,14 @@
                         </figure>
                     </p>
                     <p>
-                        Sketch <m>g'(t)</m>.
+                        Sketch <m>\dv{g}{t}</m>.
                     </p>
                 </statement>
                 <solution>
                     <p>
-                        Remember that <m>g'(t)</m> represents the slope of <m>g(t)</m>, so sketching <m>g'(t)</m> amounts to sketching the different values that the slopes of <m>g(t)</m> can take.
+                        Remember that <m>\dv{g}{t}</m> represents the slope of <m>g(t)</m>, so sketching <m>\dv{g}{t}</m> amounts to sketching the different values that the slopes of <m>g(t)</m> can take.
                         We can eyeball these values from <xref ref="figure-derivative-graph-1" text="type-global" />.
-                        A rough sketch of <m>g'(t)</m>, added to the original graph, may look like the following:
+                        A rough sketch of <m>\dv{g}{t}</m>, added to the original graph, may look like the following:
                         <figure xml:id="figure-derivative-graph-2">
                             <image width="50%">
                                 <latex-image-code><![CDATA[
@@ -306,14 +328,14 @@
                                             ymin = -10,
                                             ymax = 10,
                                             xlabel={$t$},
-                                            ylabel={$g$},
+                                            ylabel={$y$},
                                             grid=both
                                             ]
                                             \addplot[blue, samples=50, smooth, ultra thick] {.25*x^4 - x^2};
                                             \addplot[red, samples=50, smooth, dashed, ultra thick] {x^3 - 2*x};
                                             }
-                                            \addlegendentry{$g(t)$};
-                                            \addlegendentry{$g'(t)$};
+                                            \addlegendentry{$y = g(t)$};
+                                            \addlegendentry{$y = \dv{g}{t}$};
                                         \end{axis}
                                     \end{tikzpicture}]]>
                                 </latex-image-code>
@@ -322,6 +344,80 @@
                     </p>
                 </solution>
             </example>
+            <p>
+                We've mentioned before that continuous functions are functions whose graphs can be drawn without lifting your pencil off of the page.
+                Likewise, differentiable functions are functions whose graphs can be drawn "smoothly", without any sudden movements or cusps, and without drawing a vertical tangent line.
+                If we think about these two concepts, we may suspect that a differentiable function is also continuous.
+                If we can draw a graph smoothly, we certainly can't lift our pencil off the page to draw it.
+                The next theorem makes this precise.
+            </p>
+            <theorem xml:id="theorem-differentiable-functions-are-continuous">
+                <title>Differentiable Functions Are Continuous</title>
+                <statement>
+                    <p>
+                        Let <m>f(x)</m> be a function that is differentiable at <m>x=a</m>.
+                        Then <m>f(x)</m> is continuous at <m>x=a</m>.
+                    </p>
+                </statement>
+                <proof>
+                    <p>
+                        We need to show that <m>\lim_{x\to a}f(x)</m> exists and is equal to <m>f(a)</m>.
+                        To do this, we'll start by considering (somewhat counterintuitively) <m>\lim_{x\to a}[f(x)-f(a)]</m>:
+                        <md>
+                            <mrow>\lim_{x\to a}[f(x)-f(a)] &amp; = \lim_{x\to a}\frac{f(x)-f(a)}{x-a}(x-a) </mrow>
+                            <mrow> &amp; = \lim_{x\to a}f'(a)(x-a) </mrow>
+                            <mrow> &amp; = 0. </mrow>
+                        </md>
+                        Note that we are using our alternate definition of the derivative here.
+                    </p>
+                    <p>
+                        Now we can prove that <m>\lim_{x\to a}f(x) = f(a)</m> as follows:
+                        <md>
+                            <mrow>\lim_{x\to a}f(x) &amp; = \lim_{x\to a}[f(x) - f(a) + f(a)] </mrow>
+                            <mrow> &amp; = \lim_{x\to a}[f(x)-f(a)] + \lim_{x\to a}f(a) </mrow>
+                            <mrow> &amp; = 0 + f(a). </mrow>
+                        </md>
+                        So <m>\lim_{x\to a}f(x) = f(a)</m>, which means that <m>f(x)</m> is continuous at <m>a</m>.
+                    </p>
+                </proof>
+            </theorem>
+            <p>
+                At this point we might think that a continuous function should also be differentiable, but this is not the case.
+            </p>
+            <example xml:id="example-a-continuous-function-that-is-not-differentiable-at-a-point">
+                <title>A continuous function that is not differentiable at a point</title>
+                <statement>
+                    <p>
+                        Let <m>f(x) = |x|</m>.
+                        Show that <m>f</m> is <em>not</em> differentiable at <m>0</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        If we graph <m>f(x)</m> it looks like it shouldn't be differentiable at <m>0</m> because of the cusp.
+                        We'll try to prove this mathematically by showing that the limit in <xref ref="definition-the-derivative-function" text="type-global" /> doesn't exist if <m>x=0</m>.
+                        First, we'll compute the left hand limit:
+                        <me>\lim_{h\to0^{-}}\frac{f(0+h)-f(0)}{h} = \lim_{h\to0^{-}}\frac{-h}{h} = -1.</me>
+                        Now, the right hand limit:
+                        <me>\lim_{h\to0^{+}}\frac{f(0+h)-f(0)}{h} = \lim_{h\to0^{+}}\frac{h}{h} = 1.</me>
+                        Since these limits are different, <m>\lim_{h\to0}\frac{f(0+h)-f(0)}{h}</m> does not exist.
+                        Hence <m>f</m> is not differentiable at <m>0</m>.
+                    </p>
+                </solution>
+            </example>
+            <aside>
+                <p>
+                    You may think that a continuous function must at least be differentiable "almost everywhere" at this point.
+                    After all, how could it be possible to draw a graph without lifting your pencil off the paper that still has a cusp or a vertical tangent line <em>everywhere</em>?
+                    Most mathematicians before the <m>19^{\text{th}}</m> century thought this as well, until Weierstrass came up with a function, the <url href="https://en.wikipedia.org/wiki/Weierstrass_function">Weierstrass function</url>, that is continuous everywhere but differentiable <em>nowhere</em>.
+                </p>
+            </aside>
+        </subsection>
+        <subsection xml:id="subsection-higher-order-derivatives">
+            <title>Higher Order Derivatives</title>
+            <p>
+                Now that we can take a derivative, there's nothing to stop us from taking more derivatives of any given function.
+            </p>
         </subsection>
     </section>
 </chapter>
