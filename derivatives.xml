@@ -287,7 +287,7 @@
                                             axis x line = center,
                                             axis y line = center,
                                             xtick={-3,...,3},
-                                            ytick={-10,-5,..,10},
+                                            ytick={-10,-5,...,10},
                                             xmin = -4,
                                             xmax = 4,
                                             ymin = -10,
@@ -297,7 +297,6 @@
                                             grid=both
                                             ]
                                             \addplot[blue, samples=50, smooth, ultra thick] {.25*x^4 - x^2};
-                                            }
                                             \addlegendentry{$y = g(t)$};
                                         \end{axis}
                                     \end{tikzpicture}]]>
@@ -322,7 +321,7 @@
                                             axis x line = center,
                                             axis y line = center,
                                             xtick={-3,...,3},
-                                            ytick={-10,-5,..,10},
+                                            ytick={-10,-5,...,10},
                                             xmin = -4,
                                             xmax = 4,
                                             ymin = -10,
@@ -331,9 +330,8 @@
                                             ylabel={$y$},
                                             grid=both
                                             ]
-                                            \addplot[blue, samples=50, smooth, ultra thick] {.25*x^4 - x^2};
+                                            \addplot[blue, samples=50, smooth, ultra thick] {0.25*x^4 - x^2};
                                             \addplot[red, samples=50, smooth, dashed, ultra thick] {x^3 - 2*x};
-                                            }
                                             \addlegendentry{$y = g(t)$};
                                             \addlegendentry{$y = \dv{g}{t}$};
                                         \end{axis}
