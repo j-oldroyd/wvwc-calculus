@@ -229,4 +229,99 @@
             </example>
         </subsection>
     </section>
+    <section xml:id="section-the-derivative-as-a-function">
+        <title>The Derivative as a Function</title>
+        <subsection xml:id="subsection-the-derivative-function">
+            <title>The Derivative Function</title>
+            <p>
+                There's no reason we can't look at an arbitrary value for <m>a</m> in the definition of <m>f'(a)</m> given in <xref ref="definition-definition-of-the-derivative" text="type-global" />.
+                If we do this, we can define the <em>derivative function</em>.
+            </p>
+            <definition xml:id="definition-the-derivative-function">
+                <title>The Derivative Function</title>
+                <idx><h>derivative</h><h>derivative function</h></idx>
+                <statement>
+                    <p>
+                        Let <m>f(x)</m> be a function.
+                        The <term>derivative function</term>, or more simply <term>derivative</term>, of <m>f(x)</m> is the function defined by
+                        <me>f'(x) = \lim_{h\to0}\frac{f(x+h) - f(x)}{h}</me>
+                        assuming this limit exists.
+                    </p>
+                </statement>
+            </definition>
+            <p>
+                If <m>f(x)</m> is a function, then its derivative <m>f'(x)</m> (assuming it exists!) is a function that gives the rate of change of <m>f</m> at <m>x</m>, or equivalently the slope of the tangent line to <m>f</m> at <m>x</m>.
+            </p>
+            <example xml:id="example-sketching-a-derivative">
+                <title>Sketching a derivative</title>
+                <statement>
+                    <p>
+                        A function <m>g(t)</m> is given by the following graph:
+                        <figure xml:id="figure-derivative-graph-1">
+                            <image width="50%">
+                                <latex-image-code><![CDATA[
+                                    \begin{tikzpicture}
+                                        \begin{axis}[%
+                                            axis x line = center,
+                                            axis y line = center,
+                                            xtick={-3,...,3},
+                                            ytick={-10,-5,..,10},
+                                            xmin = -4,
+                                            xmax = 4,
+                                            ymin = -10,
+                                            ymax = 10,
+                                            xlabel={$t$},
+                                            ylabel={$g$},
+                                            grid=both
+                                            ]
+                                            \addplot[blue, samples=50, smooth, ultra thick] {.25*x^4 - x^2};
+                                            }
+                                            \addlegendentry{$g(t)$};
+                                        \end{axis}
+                                    \end{tikzpicture}]]>
+                                </latex-image-code>
+                            </image>
+                        </figure>
+                    </p>
+                    <p>
+                        Sketch <m>g'(t)</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Remember that <m>g'(t)</m> represents the slope of <m>g(t)</m>, so sketching <m>g'(t)</m> amounts to sketching the different values that the slopes of <m>g(t)</m> can take.
+                        We can eyeball these values from <xref ref="figure-derivative-graph-1" text="type-global" />.
+                        A rough sketch of <m>g'(t)</m>, added to the original graph, may look like the following:
+                        <figure xml:id="figure-derivative-graph-2">
+                            <image width="50%">
+                                <latex-image-code><![CDATA[
+                                    \begin{tikzpicture}
+                                        \begin{axis}[%
+                                            axis x line = center,
+                                            axis y line = center,
+                                            xtick={-3,...,3},
+                                            ytick={-10,-5,..,10},
+                                            xmin = -4,
+                                            xmax = 4,
+                                            ymin = -10,
+                                            ymax = 10,
+                                            xlabel={$t$},
+                                            ylabel={$g$},
+                                            grid=both
+                                            ]
+                                            \addplot[blue, samples=50, smooth, ultra thick] {.25*x^4 - x^2};
+                                            \addplot[red, samples=50, smooth, dashed, ultra thick] {x^3 - 2*x};
+                                            }
+                                            \addlegendentry{$g(t)$};
+                                            \addlegendentry{$g'(t)$};
+                                        \end{axis}
+                                    \end{tikzpicture}]]>
+                                </latex-image-code>
+                            </image>
+                        </figure>
+                    </p>
+                </solution>
+            </example>
+        </subsection>
+    </section>
 </chapter>
