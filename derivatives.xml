@@ -605,6 +605,11 @@
                     </p>
                 </statement>
             </theorem>
+            <p>
+                Note that if <m>x</m> is in degrees instead of radians these formulas don't work.
+                Instead, they become
+                <me>\dv{}{x}\sin x = \frac{\pi}{180}\cos x\quad\text{ and }\quad\dv{}{x}\cos x = -\frac{\pi}{180}\sin x.</me>
+            </p>
             <example xml:id="example-concavity-of-the-sine-function">
                 <title>Concavity of the sine function</title>
                 <statement>
