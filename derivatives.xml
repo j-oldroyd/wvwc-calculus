@@ -545,7 +545,7 @@
             <p>
                 Now we start to find methods that allow us to compute derivatives without going back to <xref ref="definition-the-derivative-function" text="type-global" />.
                 Perhaps the easiest rule is the <term>constant rule</term>, which just says that the derivative of a constant is <m>0</m>.
-                We'll derive more complicated rules in this section and the next.
+                We'll derive more complicated rules in this section and the next two.
             </p>
         </introduction>
         <subsection xml:id="subsection-the-power-rule-and-trigonometric-derivatives">
@@ -627,6 +627,48 @@
                     </p>
                 </solution>
             </example>
+        </subsection>
+        <subsection xml:id="subsection-derivatives-of-sums-and-constant-multiples">
+            <title>Derivatives of Sums and Constant Multiples</title>
+            <p>
+                Now that we have derivative formulas for some basic functions, we want to extend these to more complicated functions.
+                For this section we'll look at what happens when we multiply a function by a constant or add it to another function.
+                In the next two sections we'll consider more advanced rules.
+            </p>
+            <theorem xml:id="theorem-constant-multiple-rule">
+                <title>Constant Multiple Rule</title>
+                <idx><h>derivative</h><h>differentiation formulas</h><h>constant multiple rule</h></idx>
+                <statement>
+                    <p>
+                        Let <m>f(x)</m> be differentiable function and let <m>c</m> be some constant.
+                        Then <m>\dv{}{x}[cf(x)] = cf'(x)</m>.
+                    </p>
+                </statement>
+                <proof>
+                    <p>
+                        To prove this, we go back to <xref ref="definition-the-derivative-function" text="type-global" />:
+                        <md>
+                            <mrow>\dv{}{x}[cf(x)] &amp; = \lim_{h\to0}\frac{cf(x+h) - cf(x)}{h} </mrow>
+                            <mrow> &amp; = c\lim_{h\to0}\frac{f(x+h) - f(x)}{h} </mrow>
+                            <mrow> &amp; = cf'(x). </mrow>
+                        </md>
+                        Hence the derivative of <m>cf(x)</m> is <m>cf'(x)</m>.
+                    </p>
+                </proof>
+            </theorem>
+            <p>
+                We can find the derivative of the sum of two functions just as easily.
+            </p>
+            <theorem xml:id="theorem-sum-rule">
+                <title>Sum Rule</title>
+                <idx><h>derivative</h><h>differentiation formulas</h><h>sum rule</h></idx>
+                <statement>
+                    <p>
+                        Let <m>f(x)</m> and <m>g(x)</m> be two differentiable functions.
+                        Then <m>[f(x)+g(x)]' = f'(x) + g'(x)</m>.
+                    </p>
+                </statement>
+            </theorem>
         </subsection>
     </section>
 </chapter>
