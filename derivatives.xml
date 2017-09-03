@@ -443,14 +443,22 @@
             <p>
                 In <xref ref="example-acceleration-from-position" text="type-global" />, we had to take two derivatives of the original function <m>s(t)</m> in order to get the acceleration <m>a(t)</m>.
                 In other words, <em>acceleration is the second derivative of position</em>.
-                So <m>a(t) = \dv{}{t}\dv{s}{t}</m>, which we also write as <m>\dv[2]{s}{t}</m>.
+                So <m>a(t) = \dv{}{t}\dv{s}{t}</m>, which we also write as <m>\dv[2]{s}{t}</m> or <m>s''(t)</m>.
                 This is an example of a <term>second-order derivative</term>.
                 In general, we have the following definition.
             </p>
             <definition xml:id="definition-nth-order-derivatives">
                 <title><m>n^{\text{th}}</m>-order Derivatives</title>
                 <idx><h>derivative</h><h><m>n^{\text{th}}</m>-order derivative</h></idx>
-                <statement></statement>
+                <statement>
+                    <p>
+                        Let <m>f(x)</m> be a function.
+                        The <term><m>n^{\text{th}}</m>-order derivative</term> of <m>f(x)</m> is the function obtained by differentiating <m>f(x)</m> <m>n</m> times.
+                        This function is denoted by
+                        <me>f^{(n)}(x)\quad\text{or}\quad\dv[n]{f}{x}.</me>
+                        If <m>n=1, 2</m> or <m>3</m>, we typically write <m>f'(x), f''(x)</m>, and <m>f'''(x)</m> instead of <m>f^{(1)}(x), f^{(2)}(x)</m> or <m>f^{(3)}(x)</m>.
+                    </p>
+                </statement>
             </definition>
         </subsection>
     </section>
