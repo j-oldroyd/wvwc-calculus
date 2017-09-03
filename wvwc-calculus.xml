@@ -47,7 +47,8 @@
 				xlabel=$x$, xlabel style={at=(current axis.right of origin), anchor=west},
 				ylabel=$y$, ylabel style={at=(current axis.above origin), anchor=south},
 		        grid=both,
-		        vector/.style={-stealth,blue,very thick}, 
+		        vector/.style={-stealth,blue,very thick}
+		        , 
                 vector guide/.style={dashed,red,thick}
 		        }}
 

@@ -539,4 +539,89 @@
             </figure>
         </subsection>
     </section>
+    <section xml:id="section-differentiation-formulas">
+        <title>Differentiation Formulas</title>
+        <introduction>
+            <p>
+                Now we start to find methods that allow us to compute derivatives without going back to <xref ref="definition-the-derivative-function" text="type-global" />.
+                Perhaps the easiest rule is the <term>constant rule</term>, which just says that the derivative of a constant is <m>0</m>.
+                We'll derive more complicated rules in this section and the next.
+            </p>
+        </introduction>
+        <subsection xml:id="subsection-the-power-rule-and-trigonometric-derivatives">
+            <title>The Power Rule and Trigonometric Derivatives</title>
+            <p>
+                Our first goal will be to determine a general formula for the derivative of <m>x^{n}</m> for some power <m>n</m>.
+                If <m>n\geq0</m> is a whole number, then we can find the derivative of <m>x^{n}</m> without too much trouble.
+                In fact, from the <xref ref="definition-the-derivative-function" text="type-global" /> it's not too hard to show that the derivative of <m>x</m> is <m>1</m>, the derivative of <m>x^{2}</m> is <m>2x</m>, the derivative of <m>x^{3}</m> is <m>3x^{2}</m>, and so on.
+                This suggests our first derivative rule, the <term>power rule</term>.
+            </p>
+            <theorem xml:id="theorem-the-power-rule">
+                <title>The Power Rule</title>
+                <idx><h>derivative</h><h>differentiation formulas</h><h>power rule</h></idx>
+                <statement>
+                    <p>
+                        Let <m>f(x) = x^{n}</m> where <m>n</m> is some real number.
+                        Then <m>f'(x) = nx^{n-1}</m>.
+                    </p>
+                </statement>
+            </theorem>
+            <p>
+                Note that <xref ref="theorem-the-power-rule" text="type-global" /> is actually quite general: it works for all powers of <m>x</m>!
+                This includes negative powers and fractional powers.
+            </p>
+            <example xml:id="example-derivatives-using-the-power-rule">
+                <title>Derivatives using the power rule</title>
+                <statement>
+                    <p>
+                        Find the derivatives of the following functions:
+                        <ol>
+                            <li><m>f(x) = x^{7}</m>.</li>
+                            <li><m>g(x) = \frac{1}{\sqrt[5]{x^{11}}}</m>.</li>
+                            <li><m>h(x) = x^{\pi}</m>.</li>
+                        </ol>
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        The derivative of <m>f(x)</m> isn't too hard to find using the power rule, and we quickly get <m>f'(x) = 7x^{6}</m>.
+                        For <m>g(x)</m>, first rewrite it as <m>g(x) = x^{-\frac{11}{5}}</m>.
+                        Then <m>g'(x) = -\frac{11}{5}x^{-16}{5}</m>.
+                        Finally, <m>h'(x) = \pi x^{\pi-1}</m>.
+                    </p>
+                </solution>
+            </example>
+            <p>
+                With a little bit of geometry and the squeeze theorem, we can get the derivatives of the basic trigonometric functions <m>\sin x</m> and <m>\cos x</m>.
+            </p>
+            <theorem xml:id="theorem-derivatives-of-sine-and-cosine">
+                <title>Derivatives of Sine and Cosine</title>
+                <idx><h>derivatives</h><h>differentiation formulas</h><h>sine and cosine</h></idx>
+                <statement>
+                    <p>
+                        Let <m>x</m> be in radians.
+                        Then
+                        <me>\dv{}{x}\sin x = \cos x\quad\text{ and }\quad\dv{}{x}\cos x = -\sin x.</me>
+                    </p>
+                </statement>
+            </theorem>
+            <example xml:id="example-concavity-of-the-sine-function">
+                <title>Concavity of the sine function</title>
+                <statement>
+                    <p>
+                        On which intervals is <m>f(x) = \sin x</m> concave up?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        We need to find where <m>f''(x)</m> is positive.
+                        Since <m>f''(x) = -\sin x</m>, this means we need to figure out where <m>\sin x</m> is <em>negative</em>.
+                        If we go back to the unit circle definition of sine, then we can see that <m>\sin x &lt; 0</m> on the following intervals:
+                        <me>\ldots, (-3\pi,-2\pi), (-\pi,0),(\pi,2\pi), (3\pi,4\pi),\ldots</me>
+                        So <m>\sin x</m> is concave up on every open interval of the form <m>((2k-1)\pi, 2k\pi)</m> where <m>k</m> is some integer.
+                    </p>
+                </solution>
+            </example>
+        </subsection>
+    </section>
 </chapter>
