@@ -467,6 +467,20 @@
                 Therefore <m>f''(x)</m> represents the rate of change of the slope, i.e. how quickly the slope is increasing or decreasing.
                 If <m>f''(x) &gt;0</m> then the slope of <m>f(x)</m> should be increasing, leading to a u-shaped graph.
                 Conversely, if <m>f''(x) &lt;0</m> then the slope of <m>f(x)</m> should be decreasing, leading to an upside down u-shaped graph.
+                This leads to the following definition.
+            </p>
+            <definition xml:id="definition-concavity">
+                <title>Concavity</title>
+                <statement>
+                    <p>
+                        Let <m>f(x)</m> be a function with second derivative <m>f''(x)</m>.
+                        We say that <m>f(x)</m> is <term>concave up</term> (respectively, <term>concave down</term>) on an interval if <m>f''(x)&gt;0</m> (respectively, <m>f''(x) &lt;0</m>) on that interval.
+                    </p>
+                </statement>
+            </definition>
+            <p>
+                So functions that are concave up on an interval tend to be u-shaped on that interval, and functions that are concave down tend to be upside down u-shaped.
+                See <xref ref="figure-concavity-graphs" text="type-global" />.
             </p>
             <figure xml:id="figure-concavity-graphs">
                 <caption>Concavity</caption>
