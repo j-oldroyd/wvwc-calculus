@@ -413,9 +413,45 @@
         </subsection>
         <subsection xml:id="subsection-higher-order-derivatives">
             <title>Higher Order Derivatives</title>
+            <example xml:id="example-acceleration-from-position">
+                <title>Acceleration from position</title>
+                <statement>
+                    <p>
+                        The position of some particle moving in a line is given by <m>s(t) = 3t-5t^{3}</m>, where <m>t</m> is in seconds and <m>s</m> is in meters.
+                        Find <m>a(t)</m>, the acceleration of the particle at time <m>t</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Acceleration is the rate of change of velocity, and velocity is the rate of change of position.
+                        So we should probably find the velocity first!
+                        Let's call it <m>v(t)</m>.
+                        We have
+                        <md>
+                            <mrow>v(t) &amp; = \lim_{h\to0}\frac{s(t+h) - s(t)}{h} </mrow>
+                            <mrow> &amp; = \lim_{h\to0}\frac{3(t+h) - 5(t+h)^{3} - 3t + 5t^{3}}{h} </mrow>
+                            <mrow> &amp; = \lim_{h\to0}\frac{3h + 5[t^{3} - (t+h)^{3}]}{h} </mrow>
+                            <mrow> &amp; = \lim_{h\to0}\frac{3h + 5[(-h)(t^{2} + t(t+h) + (t+h)^{2})]}{h} </mrow>
+                            <mrow> &amp; = \lim_{h\to0}(3 - 5[t^{2} + t(t+h) + (t+h)^{2}]) </mrow>
+                            <mrow> &amp; = 3 - 15t^{2} </mrow>
+                        </md>
+                        Now we can get the acceleration as well:
+                        <me>a(t) = \lim_{h\to0}\frac{v(t+h) - v(t)}{h} = -30t.</me>
+                    </p>
+                </solution>
+            </example>
             <p>
-                Now that we can take a derivative, there's nothing to stop us from taking more derivatives of any given function.
+                In <xref ref="example-acceleration-from-position" text="type-global" />, we had to take two derivatives of the original function <m>s(t)</m> in order to get the acceleration <m>a(t)</m>.
+                In other words, <em>acceleration is the second derivative of position</em>.
+                So <m>a(t) = \dv{}{t}\dv{s}{t}</m>, which we also write as <m>\dv[2]{s}{t}</m>.
+                This is an example of a <term>second-order derivative</term>.
+                In general, we have the following definition.
             </p>
+            <definition xml:id="definition-nth-order-derivatives">
+                <title><m>n^{\text{th}}</m>-order Derivatives</title>
+                <idx><h>derivative</h><h><m>n^{\text{th}}</m>-order derivative</h></idx>
+                <statement></statement>
+            </definition>
         </subsection>
     </section>
 </chapter>
