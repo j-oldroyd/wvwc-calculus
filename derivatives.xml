@@ -460,6 +460,69 @@
                     </p>
                 </statement>
             </definition>
+            <p>
+                Although it gets more difficult to assign a physical or geometric significance to higher order derivatives, we can still derive meaning from the second derivative.
+                One interpretation of the second derivative is as acceleration, as shown in <xref ref="example-acceleration-from-position" text="type-global" />, and it turns out there's a nice geometric interpretation as well.
+                Recall that if <m>f(x)</m> is a function then <m>f'(x)</m> represents the slope, or rate of change, of the graph of <m>f(x)</m> at <m>x</m>.
+                Therefore <m>f''(x)</m> represents the rate of change of the slope, i.e. how quickly the slope is increasing or decreasing.
+                If <m>f''(x) &gt;0</m> then the slope of <m>f(x)</m> should be increasing, leading to a u-shaped graph.
+                Conversely, if <m>f''(x) &lt;0</m> then the slope of <m>f(x)</m> should be decreasing, leading to an upside down u-shaped graph.
+            </p>
+            <figure xml:id="figure-concavity-graphs">
+                <caption>Concavity</caption>
+                <sidebyside widths="50% 50%" margins="auto">
+                    <figure xml:id="subfigure-concave-up">
+                        <caption><m>f''(x) &gt; 0</m></caption>
+                        <image>
+                            <latex-image-code><![CDATA[
+                                \begin{tikzpicture}
+                                    \begin{axis}[%
+                                        axis x line = center,
+                                        axis y line = center,
+                                        xtick={-3,...,3},
+                                        ytick={-10,-5,...,10},
+                                        xmin = -4,
+                                        xmax = 4,
+                                        ymin = -10,
+                                        ymax = 10,
+                                        xlabel={$x$},
+                                        ylabel={$y$},
+                                        grid=both
+                                        ]
+                                        \addplot[blue, samples=50, smooth, ultra thick] {x^2};
+                                        \addlegendentry{$y = f(x)$};
+                                    \end{axis}
+                                \end{tikzpicture}]]>
+                            </latex-image-code>
+                        </image>
+                    </figure>
+                    <figure xml:id="subfigure-concave-down">
+                        <caption><m>f''(x) &lt; 0</m></caption>
+                        <image>
+                            <latex-image-code><![CDATA[
+                                \begin{tikzpicture}
+                                    \begin{axis}[%
+                                        axis x line = center,
+                                        axis y line = center,
+                                        xtick={-3,...,3},
+                                        ytick={-10,-5,...,10},
+                                        xmin = -4,
+                                        xmax = 4,
+                                        ymin = -10,
+                                        ymax = 10,
+                                        xlabel={$x$},
+                                        ylabel={$y$},
+                                        grid=both
+                                        ]
+                                        \addplot[blue, samples=50, smooth, ultra thick] {-x^2};
+                                        \addlegendentry{$y = f(x)$};
+                                    \end{axis}
+                                \end{tikzpicture}]]>
+                            </latex-image-code>
+                        </image>
+                    </figure>
+                </sidebyside>
+            </figure>
         </subsection>
     </section>
 </chapter>
