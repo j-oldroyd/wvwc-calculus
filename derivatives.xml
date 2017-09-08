@@ -727,7 +727,10 @@
                 <title>The Quotient Rule</title>
                 <statement>
                     <p>
-                        INSERT RULE HERE
+                        Let <m>f(x)</m> and <m>g(x)</m> be differentiable functions. 
+                        Then
+                        <me>\dv{}{x}\left[\frac{f(x)}{g(x)}\right] = \frac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^{2}}</me>
+                        wherever <m>g(x)\neq0</m>.
                     </p>
                 </statement>
             </theorem>
@@ -741,10 +744,14 @@
                 </statement>
                 <solution>
                     <p>
-                        Use quotient rule.
+                        Since <m>\tan x = \frac{\sin x}{\cos x}</m>, then we can apply the quotient rule to get the derivative of <m>\tan x</m>:
+                        <me>\dv{}{x}\tan x = \frac{\cos^{2}x + \sin^{2}x}{\cos^{2}x} = \sec^{2}x.</me>
                     </p>
                 </solution>
             </example>
+            <p>
+                The derivatives for <m>\sec x, \csc x</m> and <m>\cot x</m> may also be computed using the quotient rule and the facts that <m>\dv{}{x}\sin x = \cos x</m> and <m>\dv{}{x}\cos x = -\sin x</m>.
+            </p>
         </subsection>
     </section>
 </chapter>
