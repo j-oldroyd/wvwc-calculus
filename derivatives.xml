@@ -671,4 +671,80 @@
             </theorem>
         </subsection>
     </section>
+    <section xml:id="section-product-and-quotient-rules">
+        <title>Product and Quotient Rules</title>
+        <subsection xml:id="subsection-product-rule">
+            <title>Product Rule</title>
+            <p>
+                Many functions can be written in the form <m>f(x)g(x)</m>, where <m>f(x),g(x)</m> may each have previously known derivatives.
+                What we want to do now is to find a way to get the derivative of <m>f(x)g(x)</m> from the derivatives of <m>f(x)</m> and <m>g(x)</m>.
+                We do this using the <term>product rule</term>.
+            </p>
+            <theorem xml:id="theorem-the-product-rule">
+                <title>The Product Rule</title>
+                <idx><h>derivative</h><h>differentiation formulas</h><h>product rule</h></idx>
+                <statement>
+                    <p>
+                        Let <m>f(x)</m> and <m>g(x)</m> be differentiable functions.
+                        Then 
+                        <me>\dv{}{x}[f(x)g(x)] = f(x)g'(x) + f'(x)g(x).</me>
+                    </p>
+                </statement>
+                <proof>
+                    <p>
+                        We prove this using the definition of the derivative:
+                        <md>
+                            <mrow>\dv{}{x}[f(x)g(x)] &amp; = \lim_{h\to0}\frac{f(x+h)g(x+h) - f(x)g(x)}{h} </mrow>
+                            <mrow> &amp; = \lim_{h\to0}\frac{f(x+h)g(x+h) - f(x+h)g(x) + f(x+h)g(x) - f(x)g(x)}{h} </mrow>
+                            <mrow> &amp; = \lim_{h\to0}\frac{f(x+h)[g(x+h) - g(x)] + g(x)[f(x+h) - f(x)]}{h} </mrow>
+                            <mrow> &amp; = \lim_{h\to0}f(x+h)\lim_{h\to0}\frac{g(x+h) - g(x)}{h} + g(x)\lim_{h\to0}\frac{f(x+h) - f(x)}{h} </mrow>
+                            <mrow> &amp; = f(x)g'(x) + g(x)f'(x). </mrow>
+                        </md>
+                    </p>
+                </proof>
+            </theorem>
+            <example xml:id="example-using-the-product-rule">
+                <title>Using the product rule</title>
+                <statement>
+                    <p>
+                        Let <m>J(v) = (v^{10} - 2\sin v)(\cos v + \frac{1}{\sqrt[3]{x^{4}}})</m>.
+                        Find <m>J'(v)</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        We could foil this out and take derivatives, but it will be easier to use the product rule.
+                    </p>
+                </solution>
+            </example>
+        </subsection>
+        <subsection xml:id="subsection-the-quotient-rule">
+            <title>The Quotient Rule</title>
+            <p>
+                Now that we know how to differentiate products, we move on to quotients.
+            </p>
+            <theorem xml:id="theorem-the-quotient-rule">
+                <title>The Quotient Rule</title>
+                <statement>
+                    <p>
+                        INSERT RULE HERE
+                    </p>
+                </statement>
+            </theorem>
+            <example xml:id="example-derivative-of-tangent">
+                <title>Derivative of tangent</title>
+                <statement>
+                    <p>
+                        Let <m>f(x) = \tan x</m>.
+                        Find <m>f'(x)</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Use quotient rule.
+                    </p>
+                </solution>
+            </example>
+        </subsection>
+    </section>
 </chapter>
