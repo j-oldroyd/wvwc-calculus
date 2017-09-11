@@ -754,4 +754,49 @@
             </p>
         </subsection>
     </section>
+    <section xml:id="section-the-chain-rule">
+        <title>The Chain Rule</title>
+        <p>
+            At this point, we can take derivatives of sums, differences, products and quotients of functions.
+            However, these rules aren't very useful for differentiating functions like <m>f(x) = (3x^{2} + \sin x)^{50}</m>.
+            We could technically evaluate <m>f'(x)</m> using these rules but it would be an awful way to spend your weekend.
+            But if we make the substitution <m>u = 3x^{2} + \sin x</m>, then we can rewrite <m>f(x)</m> as <m>f(u) = u^{50}</m>, which is <em>much</em> easier to differentiate: <m>\dv{f}{u} = 50u^{49}</m>.
+            At this step we might be tempted to say that <m>f'(x) = 50u^{49} = 50(3x^{2} + \sin x)^{49}</m>, but this isn't quite right.
+            To get the actual derivative we need to consider how the new variable <m>u</m> depends on <m>x</m> as well.
+            The <term>Chain Rule</term> is what we need.
+        </p>
+        <theorem xml:id="theorem-the-chain-rule">
+            <title>The Chain Rule</title>
+            <idx><h>derivative</h><h>differentiation formulas</h><h>chain rule</h></idx>
+            <statement>
+                <p>
+                    Let <m>y = f(u)</m> and <m>u = g(x)</m> be differentiable functions.
+                    Then
+                    <me>\dv{y}{x} = \dv{y}{u}\dv{u}{x}.</me>
+                    Equivalently, if we set <m>F(x) = f(g(x))</m> we have
+                    <me>F'(x) = f'(g(x))g'(x).</me>
+                </p>
+            </statement>
+        </theorem>
+        <example xml:id="example-using-the-chain-rule">
+            <title>Using the chain rule</title>
+            <statement>
+                <p>
+                    Let <m>f(x) = (3x^{2} + \sin x)^{50}</m>.
+                    Find <m>f'(x)</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We'll try the same trick we used before and we'll set <m>u = 3x^{2} + \sin x</m>.
+                    Then the chain rule says that
+                    <md>
+                        <mrow>f'(x) &amp; =\dv{f}{u}\dv{u}{x} </mrow>
+                        <mrow> &amp; = (50u^{49})(6x+\cos x) </mrow>
+                        <mrow> &amp; = 50(3x^{2} + \sin x)^{49}(6x + \cos x). </mrow>
+                    </md>
+                </p>
+            </solution>
+        </example>
+    </section>
 </chapter>
