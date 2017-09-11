@@ -854,7 +854,7 @@
             <statement>
                 <p>
                     Consider the curve given by the equation <m>x^{3} - y^{2} + \sin y = 3</m>.
-                    Find the slope of this curve at the point <m>(1,\pi)</m>.
+                    Find the slope of this curve at the point <m>(\sqrt[3]{3},0)</m>.
                 </p>
             </statement>
             <solution>
@@ -866,8 +866,7 @@
                     <me>3x^{2} - 2y\dv{y}{x} + \cos y \dv{y}{x} = 0</me>
                     and so
                     <me>\dv{y}{x} = -\frac{3x^{2}}{\cos y - 2y}.</me>
-                    So the slope of the curve at <m>(1,\pi)</m> is just
-                    <me>-\frac{3}{-1 - 2\pi} = \frac{3}{1+\pi}.</me>
+                    So the slope of the curve at <m>(\sqrt[3]{3},0)</m> is just <m>-3\sqrt[3]{3}^{2}</m>.
                 </p>
             </solution>
         </example>
