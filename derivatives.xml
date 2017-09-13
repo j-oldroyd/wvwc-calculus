@@ -870,5 +870,81 @@
                 </p>
             </solution>
         </example>
+        <p>
+            The method we used to get <m>\dv{y}{x}</m> in <xref ref="example-derivative-of-an-implicit-function" text="type-global" /> is called <term>implicit differentiation</term>.
+            It's extremely useful if we want to solve for <m>\dv{y}{x}</m> without first solving for <m>y</m>.
+            Even if we can solve for <m>y</m> without too much trouble, it's often easier to find <m>\dv{y}{x}</m> implicitly as the next example shows.
+        </p>
+        <example xml:id="example-implicit-differentiation-to-save-algebra">
+            <title>Implicit differentiation to save algebra</title>
+            <statement>
+                <p>
+                    Let <m>f(x) = \sqrt{1-x^{2}}</m>.
+                    Find <m>f'(x)</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    If we let <m>y=f(x)</m>, then <m>x^{2} + y^{2} = 1</m>.
+                    Then
+                    <me>2x + 2yy' = 0</me>
+                    which means that
+                    <me>y' = -\frac{x}{y} = -\frac{x}{\sqrt{1-x^{2}}}.</me>
+                </p>
+            </solution>
+        </example>
+        <p>
+            We must also be aware of when to use appropriate derivative rules when doing implicit differentiation.
+        </p>
+        <example xml:id="example-chain-and-quotient-rule">
+            <title>Chain and quotient rule</title>
+            <statement>
+                <p>
+                    Suppose <m>y</m> is defined implicitly by <m>\tan(x-y) = \frac{y}{1+x^{2}}</m>.
+                    Find <m>y'</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We start by taking the derivative with respect to <m>x</m> of each side of the equation:
+                    <md>
+                        <mrow>\dv{}{x}\tan(x-y) &amp; = (1-y')\sec^{2}(x-y) </mrow>
+                        <mrow>\dv{}{x}\frac{y}{1+x^{2}} &amp; = \frac{y'(1+x^{2}) - 2xy}{(1+x^{2})^{2}}. </mrow>
+                    </md>
+                </p>
+                <p>
+                    Therefore
+                    <me>(1-y')\sec^{2}(x-y) = \frac{y'(1+x^{2}) - 2xy}{(1+x^{2})^{2}},</me>
+                    and we can solve this for <m>y'</m>:
+                    <me>(1+x^{2})^{2}\sec^{2}(x-y) + 2xy = y'(1+x^{2}) + (1+x^{2})^{2}y'\sec^{2}(x-y)</me>
+                    or just
+                    <me>y' = \frac{(1+x^{2})^{2}\sec^{2}(x-y) + 2xy}{(1+x^{2})+(1+x^{2})^{2}\sec^{2}(x-y)}</me>
+                </p>
+            </solution>
+        </example>
+        <example xml:id="example-a-differential-equation">
+            <title>A differential equation</title>
+            <statement>
+                <p>
+                    Let <m>P(t)</m> denote the population of the United States, where <m>P</m> is in millions and <m>t</m> is the number of years after 1990.
+                    Then the growth of <m>P(t)</m> can be modeled by the <term>differential equation</term>
+                    <me>P' = \frac{1}{23500}P(532-P).</me>
+                    According to this model, it's not too hard to see that <m>P'</m> should be positive given the current population of the US, so the model predicts the population to increase.
+                    Is this rate of growth increasing or decreasing?
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We need to find <m>P''</m>, which is the rate of change of <m>P'</m>.
+                    This means we need to differentiate both sides of the differential equation <m>P' = \frac{1}{23500}P(532-P)</m> with respect to <m>t</m>:
+                    <me>P'' = \frac{1}{23500}P'(532-P) - \frac{1}{23500}P(P').</me>
+                    The current population is about 323.1 million, so we can take <m>P=323.1</m>, which also gives
+                    <me>P' = \frac{1}{23500}(323.1)(532-323.1) = 11.8,</me>
+                    and so 
+                    <me>P'' = \frac{1}{23500}(11.8)(532-323.1) - \frac{1}{23500}(323.1)(11.8) &lt; 0.</me>
+                    Hence it appears that the rate of population increase is itself decreasing, which implies that the population growth of the US is slowing down.
+                </p>
+            </solution>
+        </example>
     </section>
 </chapter>
