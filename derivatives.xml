@@ -939,9 +939,9 @@
                     This means we need to differentiate both sides of the differential equation <m>P' = \frac{1}{23500}P(532-P)</m> with respect to <m>t</m>:
                     <me>P'' = \frac{1}{23500}P'(532-P) - \frac{1}{23500}P(P').</me>
                     The current population is about 323.1 million, so we can take <m>P=323.1</m>, which also gives
-                    <me>P' = \frac{1}{23500}(323.1)(532-323.1) = 11.8,</me>
+                    <me>P' = \frac{1}{23500}(323.1)(532-323.1) = 2.9,</me>
                     and so 
-                    <me>P'' = \frac{1}{23500}(11.8)(532-323.1) - \frac{1}{23500}(323.1)(11.8) &lt; 0.</me>
+                    <me>P'' = \frac{1}{23500}(2.9)(532-323.1) - \frac{1}{23500}(323.1)(2.9) &lt; 0.</me>
                     Hence it appears that the rate of population increase is itself decreasing, which implies that the population growth of the US is slowing down.
                 </p>
             </solution>
@@ -1024,6 +1024,98 @@
                     <me>C = V' + 10000 = \frac{800000\pi}{9} + 10000,</me>
                     or just <quantity><mag>289252.68</mag><unit base="meter" prefix="centi" exp="3"/><per base="minute"/></quantity>.
                     In terms of meters this is <quantity><mag>.29</mag><unit base="meter" exp="3"/><per base="minute"/></quantity>, which perhaps looks a bit more reasonable.
+                </p>
+            </solution>
+        </example>
+    </section>
+    <section xml:id="section-linear-approximations">
+        <title>Linear Approximations</title>
+        <p>
+            Suppose we graph the tangent line to <m>y=\sqrt{x}</m> at <m>x=4</m>.
+            The equation of this line will be
+            <me>y-2 = \frac{x-4}{4}\quad\text{or}\quad y= 2 + \frac{x-4}{4}.</me>
+            If we look at the tangent line next to the graph, we'll see that the line is very close to the graph of <m>y=\sqrt{x}</m> if <m>x</m> is very close to <m>4</m>.
+            So we can use the equation of the tangent line to approximate <m>y=\sqrt{x}</m> when <m>x</m> is near <m>4</m>.
+            For example, we can say that
+            <me>\sqrt{4.2} \approx 2 + \frac{4.2 - 4}{4} = 2.05.</me>
+            We call this the <term>linear approximation</term> of <m>\sqrt{x}</m> at <m>4</m>.
+        </p>
+        <definition xml:id="definition-linear-approximation">
+            <title>Linear Approximation</title>
+            <idx><h>derivative</h><h>linear approximation</h></idx>
+            <statement>
+                <p>
+                    Let <m>f(x)</m> be a function that is differentiable at <m>x=a</m>.
+                    The linear approximation (or <term>linearization</term>) of <m>f</m> at <m>a</m> is the function <m>L(x)</m> given by
+                    <me>L(x) = f(a) + f'(a)(x-a).</me>
+                </p>
+            </statement>
+        </definition>
+        <p>
+            The formula of the linear approximation to a function <m>f</m> at <m>a</m> is nothing more than the equation of the tangent line to <m>f</m> at <m>a</m>.
+        </p>
+        <example xml:id="example-linear-approximation-of-sine">
+            <title>Linear approximation of sine</title>
+            <statement>
+                <p>
+                    Find the linear approximation of <m>f(\theta) = \sin\theta</m> at <m>\theta=0</m> and use this to estimate <m>\sin(-.02)</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    The linear approximation is given by
+                    <me>L(\theta) = f(0) + f'(0)(\theta - 0) = \sin0 + \cos0 (\theta - 0),</me>
+                    so <m>L(\theta) = \theta</m>.
+                    Therefore
+                    <me>\sin(-.02)\approx-.02</me>
+                    since <m>-.02</m> is very close to <m>0</m>.
+                </p>
+            </solution>
+        </example>
+        <example xml:id="example-estimating-a-tangent">
+            <title>Estimating a tangent</title>
+            <statement>
+                <p>
+                    Estimate <m>\tan(\pi+\frac{3}{49})</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We want to estimate this using a linear approximation, and we want to make sure the linear approximation is easy to set up.
+                    This means we want to base the linear approximation at a value of <m>a</m> that both tangent and its derivative are relatively easy to compute at, and is also close to <m>\pi+\frac{3}{49}</m>.
+                    So we'll pick <m>a=\pi</m> and find the linear approximation to <m>\tan x</m> at <m>a = \pi</m>:
+                    Set <m>f(x) = \tan x</m>.
+                    Then
+                    <md>
+                        <mrow>L(x) &amp; = f(a) + f'(a)(x-a)</mrow>
+                        <mrow> &amp; = \tan\pi + \sec^{2}(\pi)(x-\pi) </mrow>
+                        <mrow> &amp; = x-\pi. </mrow>
+                    </md>
+                    So
+                    <me>\tan(\pi+\frac{3}{49}) \approx (\pi+\frac{3}{49}) - \pi = \frac{3}{49}.</me>
+                </p>
+            </solution>
+        </example>
+        <example xml:id="example-estimating-the-population-of-the-united-states-in-2020">
+            <title>Estimating the population of the United States in 2020</title>
+            <statement>
+                <p>
+                    Use the differential equation from <xref ref="example-a-differential-equation" text="type-global" /> and the fact that the current population of the US is about 323.1 million to estimate the population of the US in 2020.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Recall that <m>P(t)</m> in <xref ref="example-a-differential-equation" text="type-global" /> represented the population of the US (in millions) <m>t</m> years after 1990.
+                    To estimate the population in 2020, we want to find the linearization of <m>P</m> at <m>t = 27</m>.
+                    This is given by
+                    <me>L(t) = P(27) + P'(27)(t - 27).</me>
+                    Since <m>P(27) = 323.1</m> and 
+                    <me>P'(27) = \frac{1}{23500}P(532-P) = \frac{1}{23500}(323.1)(532-323.1) = 2.9,</me>
+                    we have
+                    <me>L(t) = 323.1 + 2.9(t-27).</me>
+                    Hence the population of the US in 2020 should be
+                    <me>L(30) = 323.1 + 2.9\cdot3 = 331.8,</me>
+                    or about 331.8 million people.
                 </p>
             </solution>
         </example>
