@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+
+*********************************************************************-->
+<!-- This file was originally part of the book     -->
+<!-- (as copied on 2015/07/12)                     -->
+<!--                                               -->
+<!--   Abstract Algebra: Theory and Applications   -->
+<!--                                               -->
+<!-- Copyright (C) 1997-2014  Thomas W. Judson     -->
+
+<chapter xml:id="inverse-functions" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Inverse Functions</title>
+    <introduction>
+        <p>
+            Recall that a function <m>f(x)</m> is <term>invertible</term> if it's one-to-one.
+            In this case, there's an inverse function <m>f^{-1}(x)</m> that undoes <m>f(x)</m>.
+            In symbols, <m>f^{-1}(f(x)) = x</m> and <m>f(f^{-1}(y)) = y</m>.
+        </p>
+    </introduction>
+    <section xml:id="section-exponential-functions">
+        <title>Exponential Functions</title>
+        <p>
+            Many changing quantities can be modeled by using <term>exponential functions</term>, which are functions of the form <m>f(x) = a^{x}</m> where <m>a &gt; 0</m>.
+            Exponential functions have several important properties which we list below.
+        </p>
+        <theorem xml:id="theorem-properties-of-exponential-functions">
+            <title>Properties of Exponential Functions</title>
+            <idx><h>exponential functions</h><h>properties</h></idx>
+            <statement>
+                <p>
+                    Let <m>a &gt; 0</m> and <m>x,y</m> be real numbers.
+                    Then
+                    <ul>
+                        <li><m>a^{0} = 1</m> and <m>a^{1} = a</m>.</li>
+                        <li><m>a^{-x} = \frac{1}{a^{x}}</m>.</li>
+                        <li><m>a^{x+y} = a^{x}a^{y}</m> and <m>a^{x-y} = \frac{a^{x}}{a^{y}}</m>.</li>
+                        <li><m>a^{x/y} = \sqrt[y]{a^{x}}</m> is <m>y &gt; 0</m>.</li>
+                        <li><m>(a^{x})^{y} = a^{xy}</m>.</li>
+                    </ul>
+                    Finally, if <m>b &gt; 0</m> as well, then <m>(ab)^{x} = a^{x}b^{x}</m>.
+                </p>
+            </statement>
+        </theorem>
+        <example xml:id="example-limit-of-an-exponential-function">
+            <title>Limit of an exponential function</title>
+            <statement>
+                <p>
+                    Let <m>f(x) = 2^{-x}</m>.
+                    Find <m>\lim_{x\to\infty}f(x)</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    First, note that
+                    <me>f(x) = \frac{1}{2^{x}}.</me>
+                    So as <m>x\to\infty</m>, the denominator <m>2^{x}\to\infty</m> as well.
+                    Hence the fraction as a whole should decrease to <m>0</m>, and so
+                    <me>\lim_{x\to\infty}2^{-x} = 0.</me>
+                </p>
+            </solution>
+        </example>
+        <p>
+            In general, we have the following:
+            <md>
+                <mrow>a &gt; 1 &amp; \Rightarrow \lim_{x\to\infty}a^{x} = \infty\quad\text{and}\lim_{x\to-\infty}\quad a^{x} = 0 </mrow>
+                <mrow>a &lt; 0 &amp; \Rightarrow \lim_{x\to\infty}a^{x} = 0\quad\text{and}\quad\lim_{x\to-\infty}\quad a^{x} = \infty </mrow>
+            </md>
+        </p>
+        <p>
+            Every exponential function <m>f(x) = a^{x}</m> is continuous everywhere.
+            In fact, they are differentiable everywhere, though we'll see more about that later.
+            We can also say the following: if <m>a &gt; 1</m> then <m>a^{x}</m> is an increasing function, and if <m>0 &lt; a &lt; 1</m> then <m>a^{x}</m> is a decreasing function.
+            In neither case will <m>a^{x}</m> have any local maxima or minima.
+        </p>
+        <p>
+            Of all the different exponential functions, the most important one is the so-called <term>natural exponential function</term>, denoted <m>e^{x}</m> where
+            <me>e = 2.71828...</me>
+            This is the unique exponential function by the property that its derivative at <m>0</m> is <m>1</m>.
+            In fact, as we will see later <m>e^{x}</m> is its own derivative.
+        </p>
+        <example xml:id="example-exponential-derivative">
+            <title>Exponential derivative</title>
+            <statement>
+                <p>
+                    Using the fact that <m>\dv{}{x}e^{x} = e^{x}</m>, compute <m>\dv{}{x}e^{5x - x^{4} + \cos x}</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We'll have to use the chain rule.
+                    If we do so, we get
+                    <me>\dv{}{x}e^{5x - x^{4} + \cos x} = (5 - 4x^{3} - \sin x)e^{5x - x^{4} + \cos x}.</me>
+                </p>
+            </solution>
+        </example>
+        <p>
+            Since <m>e^{x}</m> is its own derivative, this makes computing derivatives of functions of the form <m>e^{f(x)}</m> relatively straightforward:
+            <me>\dv{}{x}e^{f(x)} = f'(x)e^{f(x)}.</me>
+        </p>
+        <p>
+            Technically, we have worked with the natural exponential function before in this class.
+            Recall from <xref ref="example-a-differential-equation" text="type-global" /> that if <m>P(t)</m> represents the population of the USA (in millions) <m>t</m> years after 1990, then we said that <m>P</m> satisfied the differential equation
+            <me>\dv{P}{t} = \frac{1}{23500}P(532 - P).</me>
+            If we say the population of the US in 1990 was 250 million (i.e. <m>P(0) = 250</m>), then 
+            <me>P(t) = \frac{133000}{250 + 282e^{-.023t}}.</me>
+            Now, in <xref ref="example-estimating-the-population-of-the-united-states-in-2020" text="type-global" /> we used linear approximation to estimate the population of the US using this model in the year 2020, where we got 331.8 million people.
+            If we use the above formula for <m>P(t)</m>, we get that the population of the US in 2020 should be about
+            <me>P(30) = 339.8,</me>
+            or 339.8 million people.
+        </p>
+        <aside>
+            <p>
+                The Census Bureau predicted in 2014 that the population in 2020 would be 334.5 million.
+                So our simple predictions before actually aren't too far off from what the Census Bureau is expecting.
+                This suggests that the differential equation <m>P' - \frac{1}{23500}P(532-P)</m> is a reasonable model for the growth of the US.
+            </p>
+        </aside>
+    </section>
+</chapter>
