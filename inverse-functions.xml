@@ -209,6 +209,165 @@
                     </p>
                 </statement>
             </theorem>
+            <example xml:id="example-finding-the-derivative-of-an-inverse-function">
+                <title>Finding the derivative of an inverse function</title>
+                <statement>
+                    <p>
+                        Let <m>f(x) = \sqrt{x-1}</m> and note that <m>f</m> is invertible.
+                        Find the derivative of <m>f^{-1}</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        One way to do this is just start by finding <m>f^{-1}</m>.
+                        So we'll set <m>y = \sqrt{x-1}</m>, solve for <m>x</m> and then switch <m>x</m> and <m>y</m>.
+                        If we do this, we get
+                        <me>y = x^{2} + 1</me>
+                        so <m>f^{-1}(x) = x^{2} + 1</m> (and note that the domain of <m>f^{-1}</m> is <m>[0,\infty)</m> since this is the range of <m>f</m>!).
+                        Hence
+                        <me>\dv{}{x}f^{-1}(x) = 2x.</me>
+                    </p>
+                </solution>
+            </example>
+            <p>
+                The method used in <xref ref="example-finding-the-derivative-of-an-inverse-function" text="type-global" /> will certainly work in simple cases.
+                But what do we do if we can't (or don't want to) find an explicit formula for the inverse function?
+                The following formula will help us to do this.
+            </p>
+            <theorem xml:id="theorem-derivative-of-an-inverse-function">
+                <title>Derivative of an Inverse Function</title>
+                <idx><h>functions</h><h>inverse functions</h><h>derivatives</h></idx>
+                <statement>
+                    <p>
+                        Let <m>f(x)</m> be a differentiable function with inverse <m>f^{-1}(x)</m>.
+                        Assume that <m>f^{-1}</m> is itself differentiable.
+                        Then 
+                        <me>(f^{-1})'(x) = \frac{1}{f'(f^{-1}(x))}.</me>
+                    </p>
+                </statement>
+                <proof>
+                    <p>
+                        First, let <m>y = f^{-1}(x)</m>, so that we need to find <m>y'</m>.
+                        Then we can say that <m>f(y) = x</m>.
+                        Now differentiate this equation implicitly to get
+                        <me>f'(y)y' = 1</me>
+                        or just
+                        <me>y' = \frac{1}{f'(y)} = \frac{1}{f'(f^{-1}(x))}.</me>
+                    </p>
+                </proof>
+            </theorem>
+            <example xml:id="example-exponential-inverse-revisited">
+                <title>Exponential inverse revisited</title>
+                <statement>
+                    <p>
+                        Using the fact that the derivative of <m>e^{x}</m> is itself, find the derivative of its inverse.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Let <m>f(x) = e^{x}</m>.
+                        Then by <xref ref="theorem-derivative-of-an-inverse-function" text="type-global" /> we have
+                        <me>(f^{-1})'(x) = \frac{1}{f'(f^{-1}(x))} = \frac{1}{f(f^{-1}(x))} = \frac{1}{x}.</me>
+                        So the derivative of the inverse of <m>e^{x}</m> is <m>\frac{1}{x}</m>.
+                    </p>
+                </solution>
+            </example>
+            <example xml:id="example-derivative-at-a-point">
+                <title>Derivative at a point</title>
+                <statement>
+                    <p>
+                        Let <m>f(x) = x^{3} + 3\sin x + 2\cos x</m>.
+                        Find <m>(f^{-1})'(2)</m>
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        By <xref ref="theorem-derivative-of-an-inverse-function" text="type-global" />, we know that
+                        <me>(f^{-1})'(2) = \frac{1}{f'(f^{-1}(2))}.</me>
+                        By inspection, <m>f(0) = 2</m> which means <m>f^{-1}(2) = 0</m>.
+                        Since 
+                        <me>f'(x) = 3x^{2} + 3\cos x - 2\sin x,</me>
+                        this gives
+                        <me>(f^{-1})'(2) = \frac{1}{f'(f^{-1}(2))} = \frac{1}{f'(0)} = \frac{1}{3}.</me>
+                    </p>
+                </solution>
+            </example>
+        </subsection>
+        <subsection xml:id="subsection-logarithms">
+            <title>Logarithms</title>
+            <p>
+                Since exponential functions are important in mathematics and its applications, their inverses are important as well.
+                Each exponential function <m>f(x) = a^{x}</m> (<m>a&gt; 0</m>) has an inverse function that we call the <term>logarithm with base <m>a</m></term>, and denote by <m>f^{-1}(x) = \log_{a}x</m>.
+                The domain of each logarithm is <m>(0,\infty)</m> and the range is <m>(-\infty,\infty)</m>.
+                The defining properties of the logarithm function are as follows:
+                <md>
+                    <mrow>\log_{a}a^{x} &amp; = x </mrow>
+                    <mrow>a^{\log_{a}x} &amp; = x. </mrow>
+                </md>
+                Essentially, logarithms and exponentials cancel each other out.
+                To put this another way, <m>\log_{a}x</m> is the <em>exponent</em> needed to turn <m>a</m> into <m>x</m>.
+            </p>
+            <p>
+                We can say a few things about logarithms just from looking at graphs of exponentials.
+                Suppose that <m>a&gt;1</m>.
+                Then <m>\log_{a}x</m> is both continuous and differentiable for all <m>x&gt;0</m>,
+                <md>
+                    <mrow>\log_{a}1 &amp; = 0 </mrow>
+                    <mrow>\lim_{x\to0^{+}}\log_{a}x &amp; = -\infty </mrow>
+                    <mrow>\lim_{x\to\infty}\log_{a}x &amp; = \infty </mrow>
+                </md>
+                and the derivative of <m>\log_{a}x</m> approaches <m>0</m> as <m>x\to\infty</m>.
+            </p>
+            <p>
+                The properties of the exponential listed in <xref ref="theorem-properties-of-exponential-functions" text="type-global" /> have corresponding properties for logarithms.
+            </p>
+            <theorem xml:id="theorem-properties-of-logarithm-functions">
+                <title>Properties of Logarithm Functions</title>
+                <idx><h>logarithm functions</h><h>properties</h></idx>
+                <statement>
+                    <p>
+                        Let <m>a&gt;0</m> with <m>a\neq1</m>.
+                        Let <m>x,y</m> be positive real numbers, and let <m>r</m> be any real number.
+                        Then
+                        <ul>
+                            <li><m>\log_{a}1 = 0</m> and <m>\log_{a}a = 1</m>.</li>
+                            <li><m>\log_{a}(xy) = \log_{a}x + \log_{a}y</m>.</li>
+                            <li><m>\log_{a}\frac{x}{y} = \log_{a}x - \log_{a}y</m>.</li>
+                            <li><m>\log_{a}x^{r} = r\log_{a}x</m>.</li>
+                        </ul>
+                    </p>
+                </statement>
+            </theorem>
+            <p>
+                An important takeaway from <xref ref="theorem-properties-of-logarithm-functions" text="type-global" /> is that logarithms turn the complicated operations of multiplication and division into the simpler operations of addition and subtraction.
+            </p>
+            <p>
+                Since every exponential function has a corresponding logarithm, the natural exponential function <m>e^{x}</m> has a logarithm as well.
+                We call this inverse the <term>natural logarithm</term> and denote it by <m>\ln x</m>.
+                Note that <m>\dv{}{x}\ln x = \frac{1}{x}</m> by <xref ref="example-exponential-inverse-revisited" text="type-global" />.
+            </p>
+            <example xml:id="example-simplifying-an-exponential">
+                <title>Simplifying an exponential</title>
+                <statement>
+                    <p>
+                        Simplify <m>e^{-4\ln x}</m> and <m>e^{x\ln3}</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        We'll simplify by using the cancellation property <m>e^{\ln y} = y</m>.
+                        First, we need to put the entire exponent inside of the natural log:
+                        <me>e^{-4\ln x} = e^{\ln x^{-4}} = x^{-4}</me>
+                        and 
+                        <me>e^{x\ln3} = 3^{x}.</me>
+                    </p>
+                </solution>
+            </example>
+            <p>
+                <xref ref="example-simplifying-an-exponential" text="type-global" /> shows us that <em>every</em> exponential function can be written in terms of the natural exponential: <m>a^{x} = e^{x\ln a}</m>.
+                Similarly, every logarithm can be written in terms of the natural logarithm by using the change of base formula:
+                <me>\log_{a}x = \frac{\ln x}{\ln a}.</me>
+            </p>
         </subsection>
     </section>
 </chapter>
