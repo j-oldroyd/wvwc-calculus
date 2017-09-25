@@ -370,4 +370,36 @@
             </p>
         </subsection>
     </section>
+    <section xml:id="section-derivatives-of-exponential-and-logarithmic-functions">
+        <title>Derivatives of Exponential and Logarithmic Functions</title>
+        <subsection xml:id="subsection-derivatives-of-exponentials">
+            <title>Derivatives of Exponentials</title>
+            <p>
+                We've already mentioned that <m>\dv{}{x}e^{x} = e^{x}</m>, but we've said nothing about differentiating functions such as <m>3^{x}</m> or <m>(\frac{1}{\pi})^{-x}</m>.
+                However, it turns out that we can get these derivatives from the derivative of <m>e^{x}</m> without too much trouble.
+            </p>
+            <theorem xml:id="theorem-derivatives-of-exponential-functions">
+                <title>Derivatives of Exponential Functions</title>
+                <idx><h>exponential functions</h><h>derivatives</h></idx>
+                <statement>
+                    <p>
+                        Let <m>a &gt; 0</m> and set <m>f(x) = a^{x}</m>.
+                        Then <m>f'(x) = a^{x}\ln a</m>.
+                    </p>
+                </statement>
+                <proof>
+                    <p>
+                        To prove this, we need to use what's available to us: the derivative of <m>e^{x}</m>.
+                        From <xref ref="example-simplifying-an-exponential" text="type-global" /> we say that <m>e^{x\ln 3} = 3^{x}</m>.
+                        More generally, we can also say that <m>e^{x\ln a} = a^{x}</m>.
+                        Hence
+                        <md>
+                            <mrow>\dv{}{x}a^{x} &amp; = \dv{}{x}e^{x\ln a} </mrow>
+                            <mrow> &amp; = (\ln a)e^{x\ln a} </mrow>
+                            <mrow> &amp; = (\ln a)a^{x}. </mrow>
+                        </md>
+                    </p>
+            </theorem>
+        </subsection>
+    </section>
 </chapter>
