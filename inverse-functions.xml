@@ -399,7 +399,139 @@
                             <mrow> &amp; = (\ln a)a^{x}. </mrow>
                         </md>
                     </p>
+                </proof>
             </theorem>
+            <example xml:id="example-differentiating-an-exponential">
+                <title>Differentiating an exponential</title>
+                <statement>
+                    <p>
+                        Let <m>g(t) = 2.6^{3t - \sin t}</m>.
+                        Find <m>g'(t)</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        If we set <m>u = 3t - \sin t</m>, then <m>g(t) = g(u) = 2.6^{u}</m>.
+                        By the chain rule,
+                        <m>g'(t) = g'(u)\dv{u}{t} = (\ln2.6)2.6^{u}(3-\cos t) = (\ln2.6)2.6^{3t-\sin t}(3-\cos t).</m>
+                    </p>
+                </solution>
+            </example>
+            <p>
+                Although we certainly want to know the derivative of <m>a^{x}</m>, or at least how to find it, most applications involving exponential functions use the natural exponential function <m>e^{x}</m> instead.
+                The derivative of <m>e^{x}</m> is probably the most important derivative in this course.
+            </p>
+            <example xml:id="example-solutions-of-a-differential-equation">
+                <title>Solutions of a differential equation</title>
+                <statement>
+                    <p>
+                        Show that <m>x(t) = Ae^{-t} + Bte^{-t}</m> satisfies the differential equation <m>x'' + 2x' + x = 0</m>, where <m>A,B</m> are arbitrary constants.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        We need to show that if we compute <m>x'</m> and <m>x''</m> and plug these expressions into the differential equation, this will simplify out to <m>0</m>.
+                        Since
+                        <md>
+                            <mrow>x' &amp; = -Ae^{-t} +Be^{-t} - Bte^{-t} </mrow>
+                            <mrow>x'' &amp; = Ae^{-t} - Be^{-t} - (Be^{-t} - Bte^{-t}) </mrow>
+                            <mrow> &amp; = Ae^{-t} - 2Be^{-t} + Bte^{-t}, </mrow>
+                        </md>
+                        it follows that
+                        <md>
+                            <mrow>x'' + 2x' + x &amp; = (Ae^{-t} - 2Be^{-t} + Bte^{-t}) + 2(-Ae^{-t} + Be^{-t} - Bte^{-r}) + Ae^{-t} + Bte^{-t} </mrow>
+                            <mrow> &amp; = 0. </mrow>
+                        </md>
+                    </p>
+                </solution>
+            </example>
+            <p>
+                Exponential functions often appear in the solutions of differential equations, which are themselves often viewed as mathematical models of physical systems.
+                Hence exponential functions play a significant role in predicting physical quantities, which goes a long way towards justifying their importance.
+            </p>
+        </subsection>
+        <subsection xml:id="subsection-derivatives-of-logarithms">
+            <title>Derivatives of Logarithms</title>
+            <p>
+                Just as we can get the derivative of every exponential function <m>a^{x}</m> just by knowing the derivative of <m>e^{x}</m>, we can get the derivative of every logarithmic function <m>\log_{a}x</m> just by knowing that <m>\dv{}{x}\ln x = \frac{1}{x}</m>.
+            </p>
+            <theorem xml:id="theorem-derivatives-of-logarithmic-functions">
+                <title>Derivatives of Logarithmic Functions</title>
+                <idx><h>logarithm functions</h><h>derivatives</h></idx>
+                <statement>
+                    <p>
+                        Let <m>a &gt; 0, a\neq 1</m> and set <m>f(x) = \log_{a}x</m>.
+                        Then
+                        <me>f'(x) = \frac{1}{x\ln a}.</me>
+                    </p>
+                </statement>
+            </theorem>
+            <example xml:id="example-differentiating-nested-logarithms">
+                <title>Differentiating nested logarithms</title>
+                <statement>
+                    <p>
+                        Let <m>f(x) = \log_{2}(\log_{5} x)</m>.
+                        Find <m>f'(x)</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        By the chain rule, we have
+                        <me>f'(x) = \frac{1}{(\log_{5}x)\ln 2}\dv{}{x}\log_{5}x = \frac{1}{(\log_{5} x)\ln 2}\frac{1}{x\ln 5},</me>
+                    </p>
+                </solution>
+            </example>
+            <p>
+                Logarithms can be used to greatly simplify derivatives involving products, division or exponentiation using a technique known as <term>logarithmic differentiation</term>.
+            </p>
+            <example xml:id="example-a-simple-fraction">
+                <title>A simple fraction</title>
+                <statement>
+                    <p>
+                        Let <m>f(x) = \frac{e^{-x}\cos x}{x^{2} + 4x + 4}</m>.
+                        Find <m>f'(x)</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        We can find <m>f'(x)</m> without resorting to logarithms, but this would require using the product, quotient and chain rules.
+                        The algebra would be awful.
+                        So we'll using logarithms instead!
+                        Set <m>y = f(x)</m>.
+                        Then
+                        <me>\ln y = \ln e^{-x} + \ln\cos x - \ln (x^{2} + 4x + 4) = -x + \ln\cos x - 2\ln(x+2).</me>
+                        Now we differentiate both sides implicitly to obtain
+                        <me>\frac{y'}{y} = -1 - \frac{\sin x}{\cos x} - \frac{2}{x+2}.</me>
+                    </p>
+                    <p>
+                        Hence
+                        <me>y' = y\left(-1 - \tan x - \frac{2}{x+2}\right) = \frac{e^{-x}\cos x}{x^{2} + 4x + 4}\left(-1 - \tan x - \frac{2}{x+2}\right).</me>
+                    </p>
+                </solution>
+            </example>
+            <p>
+                Logarithmic differentiation is useful for finding derivatives of expressions containing complicated quotients, products or powers.
+            </p>
+            <example xml:id="example-a-simple-exponent">
+                <title>A simple exponent</title>
+                <statement>
+                    <p>
+                        Let <m>h(z) = z^{z}</m>.
+                        Find <m>h'(z)</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        We'll use logarithmic differentiation again to simplify <m>h</m> and remove the exponent.
+                        Set <m>y = h(z)</m>, which gives
+                        <me>\ln y = z\ln z.</me>
+                        So
+                        <me>\frac{y'}{y} = \ln z + 1,</me>
+                        which means that
+                        <me>y' = y(\ln z + 1) = z^{z}(\ln z + 1).</me>
+                    </p>
+                </solution>
+            </example>
         </subsection>
     </section>
 </chapter>
