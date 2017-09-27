@@ -585,5 +585,51 @@
                 </solution>
             </example>
         </subsection>
+        <subsection xml:id="subsection-exponential-decay">
+            <title>Exponential Decay</title>
+            <p>
+                Closely related to the concept of exponential growth is that of <term>exponential decay</term>.
+                A quantity <m>M(t)</m> undergoes exponential decay if it satisfies the differential equation
+                <me>\dv{M}{t} = kM,</me>
+                where <m>k &lt; 0</m>.
+                Every solution of this differential equation looks like <m>M(t) = Ce^{kt} = M(0)e^{kt}</m>.
+            </p>
+            <aside>
+                <p>
+                    We often write the decay constant <m>k</m> as positive, and then rewrite the ODE for <m>M(t)</m> as <m>\dv{M}{t} = -kM</m>.
+                    The solution becomes <m>M(t) = M(0)e^{-kt}</m>.
+                    This has the effect of highlighting the negative growth rate inherent to this system.
+                </p>
+            </aside>
+            <p>
+                Perhaps the most important example of exponential decay is that of radioactive decay.
+                If <m>m(t)</m> represents the mass of some radioactive substance, then experiments show that substance decays at a rate proportional to the amount of the substance remaining.
+                In symbols, <m>\dv{m}{t} = km</m> where <m>k &lt; 0</m>.
+                If we let <m>m_{0} = m(0)</m> denote the initial mass of the substance, then we can say that <m>m(t) = m_{0}e^{kt}</m>.
+                The rate of decay is often expressed in terms of <term>half-life</term>: the amount of time it will take for precisely half of the mass to decay.
+            </p>
+            <example xml:id="example-decay-from-half-life">
+                <title>Decay from Half-Life</title>
+                <statement>
+                    <p>
+                        A radioactive substance has a half-life of <m>28</m> days.
+                        If we start with a <quantity><mag>50</mag><unit base="gram" prefix="milli"/></quantity> sample, how much of the mass will remain after <m>t</m> days?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        If we let <m>m(t)</m> denote the mass of the sample at time <m>t</m>, and let <m>t=0</m> denote the first day we have the sample, then
+                        <me>m(t) = m_{0}e^{kt} = 50e^{kt}.</me>
+                        We still need to find <m>k</m>, but we can do this using the fact that the half-life is <m>28</m> days.
+                        This means that 
+                        <me>m(28) = \frac{m(0)}{2} = 25.</me>
+                        So
+                        <me>25 = 50e^{28k}\Rightarrow \ln\frac{1}{2} = 28k\Rightarrow k = -\frac{\ln2}{28}.</me>
+                        Hence
+                        <me>m(t) = 50e^{-\frac{\ln2}{28}t} = 50\cdot2^{-\frac{t}{28}}.</me>
+                    </p>
+                </solution>
+            </example>
+        </subsection>
     </section>
 </chapter>
