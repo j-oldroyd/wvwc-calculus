@@ -632,4 +632,154 @@
             </example>
         </subsection>
     </section>
+    <section xml:id="section-inverse-trigonometric-functions">
+        <title>Inverse Trigonometric Functions</title>
+        <p>
+            Recall that <m>\sin x</m> is not a one-to-one function since it fails the horizontal line test.
+            Hence it has no inverse function.
+            However, we can <em>restrict</em> the domain of <m>\sin x</m> so that what's left over passes the horizontal line test.
+            For example, if we define <m>f(x) = \sin x</m> but restrict the domain to the interval <m>[-\frac{\pi}{2},\frac{\pi}{2}]</m>, then <m>f(x)</m> <em>is</em> one-to-one and so has an inverse function.
+            We call this function <term>inverse sine</term> or <term>arcsine</term>.
+        </p>
+        <definition xml:id="definition-inverse-sine">
+            <title>Inverse Sine</title>
+            <idx><h>inverse trigonometric functions</h><h>inverse sine</h></idx>
+            <statement>
+                <p>
+                    Let <m>f(x) = \sin x</m> and have domain <m>[-\frac{\pi}{2},\frac{\pi}{2}]</m>.
+                    Then <m>f^{-1}(x)</m> is called the inverse sine or arcsine of <m>x</m>, and is denoted by <m>\sin^{-1}x</m> or <m>\arcsin x</m>.
+                    The domain is the interval <m>[-1,1]</m> and the range is <m>[-\frac{\pi}{2},\frac{\pi}{2}]</m>.
+                </p>
+            </statement>
+        </definition>
+        <p>
+            We can think of <m>\sin^{-1}x = \arcsin x</m> as the angle required to turn sine into <m>x</m>.
+            <aside>
+                <p>
+                    Note that <m>\sin^{-1}x</m> does <em>not</em> mean <m>\frac{1}{\sin x}</m>, which is <m>\csc x</m>.
+                    It's an unfortunate, though standard, choice of notation.
+                </p>
+            </aside>
+        </p>
+        <example xml:id="example-finding-inverse-sine">
+            <title>Finding inverse sine</title>
+            <statement>
+                <p>
+                    Find <m>\sin^{-1}(\frac{\sqrt{3}}{2})</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    This is the angle between <m>-\frac{\pi}{2}</m> and <m>\frac{\pi}{2}</m> that turns sine into <m>\frac{\sqrt{3}}{2}</m>.
+                    So <m>\sin^{-1}(\frac{\sqrt{3}}{2}) = \frac{\pi}{3}</m>.
+                </p>
+            </solution>
+        </example>
+        <example xml:id="example-simplifying-cosine-and-inverse-sine">
+            <title>Simplifying cosine and inverse sine</title>
+            <statement>
+                <p>
+                    Simplify <m>\cos(\arcsin x)</m>, where <m>-1\leq x\leq 1</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    By definition, <m>\sin(\arcsin x) = x</m> as long as <m>-1\leq x\leq 1</m>.
+                    So we want to try to rewrite <m>\cos(\arcsin x)</m> to make use of this cancellation property.
+                    We can do this using the Pythagorean identity <m>\cos \theta = \pm\sqrt{1-\sin^{2}\theta}</m>.
+                    Hence
+                    <me>\cos(\arcsin x) = \sqrt{1-(\sin(\arcsin x))^{2}} = \sqrt{1 - x^{2}}</me>
+                    whenever <m>-1\leq x\leq 1</m>.
+                </p>
+            </solution>
+        </example>
+        <p>
+            Since <m>\sin x</m> is differentiable, this means <m>\arcsin x</m> is also differentiable.
+        </p>
+        <theorem xml:id="theorem-derivative-of-inverse-sine">
+            <title>Derivative of Inverse Sine</title>
+            <statement>
+                <p>
+                    Let <m>-1 &lt; x &lt; 1</m>.
+                    Then <m>\dv{}{x}\sin^{-1}x = \frac{1}{\sqrt{1-x^{2}}}</m>.
+                </p>
+            </statement>
+            <proof>
+                <p>
+                    If we set <m>y = \sin^{-1}x</m>, then we get <m>\sin y = x</m>.
+                    Differentiating this gives <m>y'\cos y = 1</m> or just
+                    <me>y' = \frac{1}{\cos y} = \frac{1}{\sqrt{1-x^{2}}}.</me>
+                </p>
+            </proof>
+        </theorem>
+        <p>
+            We can also define the <term>inverse cosine function</term> in much the same way as the inverse sine function.
+            The idea once again is to restrict the domain of <m>\cos x</m> to <m>[0,\pi]</m> to get an invertible function.
+            We call the inverse of this function the inverse cosine, or arccosine, function.
+            We denote this function by <m>\cos^{-1}x</m> or <m>\arccos x</m>.
+        </p>
+        <example xml:id="example-inverse-cosine-value">
+            <title>Inverse cosine value</title>
+            <statement>
+                <p>
+                    Find <m>\csc(\cos^{-1}(-\frac{1}{2})</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    First, note that <m>\cos^{-1}(-\frac{1}{2}) = \frac{4\pi}{3}</m>.
+                    So
+                    <me>\csc(\cos^{-1}(-\frac{1}{2})) = \csc(\frac{4\pi}{3}) = \frac{2}{\sqrt{3}}.</me>
+                </p>
+            </solution>
+        </example>
+        <p>
+            Inverse cosine behaves in much the same way as inverse sine.
+            However, this function won't be as useful to us as the inverse sine function or the next function we will look at: the inverse tangent.
+        </p>
+        <p>
+            If we restrict the domain of <m>\tan x</m> to <m>(-\frac{\pi}{2}, \frac{\pi}{2})</m>, then we get an  invertible function.
+            We call the inverse of this function the <term>inverse tangent</term> or <term>arctangent</term>, and denote it by <m>\tan^{-1}x</m> or <m>\arctan x</m>.
+            The domain of <m>\arctan x</m> is <m>(-\infty,\infty)</m> and the range is <m>(-\frac{\pi}{2},\frac{\pi}{2})</m>.
+            <m>\tan^{-1}x</m> can be thought of as the angle between <m>-\frac{\pi}{2}</m> and <m>\frac{\pi}{2}</m> that makes tangent equal to <m>x</m>.
+            It satisfies the following cancellation properties: <m>\tan(\tan^{-1}x) = x</m> for all <m>x</m> and <m>\tan^{-1}(\tan y) = y</m> for all <m>y</m> in <m>(-\frac{\pi}{2},\frac{\pi}{2})</m>.
+        </p>
+        <example xml:id="example-simplifying-an-inverse-tangent">
+            <title>Simplifying an inverse tangent</title>
+            <statement>
+                <p>
+                    Simplify <m>\sin(2\arctan x)</m> using the formula <m>\sin2x = 2\sin x\cos x</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    If we use the double-angle formula given, we get
+                    <me>\sin(2\arctan x) = 2\sin(\arctan x)\cos(\arctan x).</me>
+                    So we just need to find <m>\sin(\arctan x)</m> and <m>\cos(\arctan x)</m>.
+                </p>
+                <p>
+                    Set <m>\theta = \arctan x</m>, so that <m>\tan\theta = x</m>.
+                    Then we can find <m>\sin\theta</m> and <m>\cos\theta</m> using triangles, which gives
+                    <md>
+                        <mrow>\sin\theta &amp; = \frac{x}{\sqrt{1+x^{2}}} </mrow>
+                        <mrow>\cos\theta &amp; = \frac{1}{\sqrt{1+x^{2}}} </mrow>
+                    </md>
+                    Hence
+                    <md>
+                        <mrow>\sin(2\arctan x) &amp; = \sin2\theta </mrow>
+                        <mrow> &amp; = 2\sin\theta\cos\theta </mrow>
+                        <mrow> &amp; = \frac{2x}{1+x^{2}}. </mrow>
+                    </md>
+                </p>
+            </solution>
+        </example>
+        <theorem xml:id="theorem-derivative-of-inverse-tangent">
+            <title>Derivative of Inverse Tangent</title>
+            <statement>
+                <p>
+                    The derivative of <m>\tan^{-1}x</m> is <m>\frac{1}{1+x^{2}}</m>.
+                </p>
+            </statement>
+        </theorem>
+    </section>
 </chapter>
