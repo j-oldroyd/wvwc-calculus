@@ -910,7 +910,123 @@
                         <mrow> &amp; = \lim_{x\to\infty}\frac{2a}{e^{x}} </mrow>
                         <mrow> &amp; = 0. </mrow>
                     </md>
-                    In other words,  the exponential function grows faster than <em>any</em> quadratic function.
+                    In other words, the exponential function grows faster than <em>any</em> quadratic function.
+                </p>
+            </solution>
+        </example>
+        <example xml:id="example-another-limit-involving-exponentials">
+            <title>Another limit involving exponentials</title>
+            <statement>
+                <p>
+                    Find <m>\lim_{t\to1^{+}}\frac{9^{t-1} - 4^{t-1}}{t-1}</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    This is a <m>\frac{0}{0}</m> indeterminate form, so L'Hospital's Rule applies.
+                    We get
+                    <md>
+                        <mrow>\lim_{t\to1^{+}}\frac{9^{t-1} - 4^{t-1}}{t-1} &amp; = \lim_{t\to1^{+}}\frac{9^{t-1}\ln9 - 4^{t-1}\ln4}{1} </mrow>
+                        <mrow> &amp; = \ln\frac{9}{4}. </mrow>
+                    </md>
+                </p>
+            </solution>
+        </example>
+        <p>
+            L'Hospital's Rule only applies <em>directly</em> to the indeterminate forms <m>\frac{0}{0}</m> and <m>\frac{\infty}{\infty}</m>, but these are not the only problems when L'Hospital's Rule proves useful.
+        </p>
+        <example xml:id="example-a-different-indeterminate-form">
+            <title>A different indeterminate form</title>
+            <statement>
+                <p>
+                    Find <m>\lim_{x\to\infty}xe^{-3x - x^{2}}</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    If we try to evaluate the limit, we get the expression <m>\infty\cdot0</m>.
+                    This is another indeterminate form, but is not one that we can apply L'Hospital's Rule to without doing some algebra first.
+                    We can write
+                    <me>\lim_{x\to\infty}xe^{-3x-x^{2}} = \lim_{x\to\infty}\frac{x}{e^{3x+x^{2}}}</me>
+                    which is a <m>\frac{\infty}{\infty}</m> indeterminate form.
+                    We <em>can</em> use L'Hospital's on this expression!
+                </p>
+                <p>
+                    If we do so, we get
+                    <md>
+                        <mrow>\lim_{x\to\infty}\frac{x}{e^{3x+x^{2}}} &amp; = \lim_{x\to\infty}\frac{1}{(3+2x)e^{3x+x^{2}}} </mrow>
+                        <mrow> &amp; = 0. </mrow>
+                    </md>
+                    So <m>\lim_{x\to\infty}xe^{-3x-x^{2}} = 0</m>.
+                </p>
+            </solution>
+        </example>
+        <p>
+            <xref ref="example-a-different-indeterminate-form" text="type-global" /> shows that <m>0\cdot\infty</m> indeterminate forms can be dealt with by rewriting them in the form <m>\frac{0}{0}</m> or <m>\frac{\infty}{\infty}</m> and then applying L'Hospital's Rule.
+            It's trickier, but we can also deal with <m>\infty-\infty</m> indeterminate forms by rewriting them in this way.
+        </p>
+        <example xml:id="example---infty-infty--indeterminate-form">
+            <title><m>\infty-\infty</m> indeterminate form</title>
+            <statement>
+                <p>
+                    Find <m>\lim_{x\to\frac{\pi}{2}^{-1}}(\sec x-\tan x)</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    As <m>x\to\frac{\pi}{2}^{-}</m>, <m>\sec x\to\infty</m> and <m>\tan x\to\infty</m>.
+                    So this limit is the indeterminate form <m>\infty-\infty</m>.
+                    We can't sue L'Hospital's Rule yet, but we can try to rewrite this limit as a <m>\frac{0}{0}</m> or <m>\frac{\infty}{\infty}</m> indeterminate form.
+                    We'll try to do this by replacing <m>\sec x,\tan x</m> with <m>\sin x,\cos x</m> to get
+                    <md>
+                        <mrow>\lim_{x\to\frac{\pi}{2}^{-}}(\sec x - \tan x) &amp; =\lim_{x\to\frac{\pi}{2}^{-}}\frac{1-\sin x}{\cos x} </mrow>
+                        <mrow> &amp; = \lim_{x\to\frac{\pi}{2}^{-}}\frac{-\cos x}{-\sin x} </mrow>
+                        <mrow> &amp; = 0. </mrow>
+                    </md>
+                </p>
+            </solution>
+        </example>
+        <example xml:id="example-limit-involving-radicals">
+            <title>Limit involving radicals</title>
+            <statement>
+                <p>
+                    Find <m>\lim_{x\to\infty}(\sqrt{2x^{2} - x} - \sqrt{2x^{2}+1})</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    This is another <m>\infty-\infty</m> form, so we'll try to rewrite it into a form we can use L'Hospital's Rule on.
+                    The trick here is to factor an <m>x</m> out so we can get a <m>0\cdot\infty</m> form, which we've already seen how to handle:
+                    <md>
+                        <mrow>\lim_{x\to\infty}(\sqrt{2x^{2} - x} - \sqrt{2x^{2} + 1}) &amp; = \lim_{x\to\infty}(x\sqrt{2 - x^{-1}} - x\sqrt{2+x^{-2}}) </mrow>
+                        <mrow> &amp; = \lim_{x\to\infty}\frac{\sqrt{2 - x^{-1}} - \sqrt{2+x^{-2}}}{\frac{1}{x}} </mrow>
+                        <mrow> &amp; = \lim_{x\to\infty}\frac{\frac{1}{2}(2-x^{-1})^{-1/2}(x^{-2}) - \frac{1}{2}(2+x^{-2})^{-1/2}(-2x^{-3})}{-x^{-2}} </mrow>
+                        <mrow> &amp; = \lim_{x\to\infty}\frac{\frac{1}{2}(2 - x^{-1})^{-1/2} - \frac{1}{2}(2+x^{-2})^{-1/2}(-2x^{-1})}{-1} </mrow>
+                        <mrow> &amp; = -\frac{1}{2\sqrt{2}}.</mrow>
+                    </md>
+                </p>
+            </solution>
+        </example>
+        <p>
+            There are three other indeterminate forms that L'Hospital's Rule can help us with (after some algebra): <m>1^{\infty}, \infty^{0}</m> and <m>0^{0}</m>.
+            All of these can be found by first using logarithms.
+        </p>
+        <example xml:id="example-a-natural-limit">
+            <title>A natural limit</title>
+            <statement>
+                <p>
+                    Find <m>\lim_{x\to\infty}\left(1+\frac{1}{x}\right)^{x}</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    This limit is a <m>1^{\infty}</m> indeterminate form.
+                    We'll try taking logarithms to rewrite it as a <m>0\cdot\infty</m> form, so set <m>y = \lim_{x\to\infty}\left(1+\frac{1}{x}\right)^{x}</m>.
+                    Then 
+                    <me>\ln y = \lim_{x\to\infty}x\ln\left(1+\frac{1}{x}\right)</me>
+                    is a <m>0\cdot\infty</m> form.
+                    We can use L'Hospital's by rewriting this limit at a <m>\frac{0}{0}</m> form or <m>\frac{\infty}{\infty}</m>.
+                    Either way, we get <m>\ln y = 1</m> and so the original limit is <m>y = e</m>.
                 </p>
             </solution>
         </example>
