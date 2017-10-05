@@ -14,10 +14,96 @@
     <title>Applications of Differentiation</title>
     <introduction>
         <p>
-            Recall that a function <m>f(x)</m> is <term>invertible</term> if it's one-to-one.
-            In this case, there's an inverse function <m>f^{-1}(x)</m> that undoes <m>f(x)</m>.
-            In symbols, <m>f^{-1}(f(x)) = x</m> and <m>f(f^{-1}(y)) = y</m>.
+            If a function is differentiable, then its derivative gives us information about how that function is changing.
+            This information is important in many different applications of calculus.
         </p>
     </introduction>
-    
+    <section xml:id="section-extreme-values-of-functions">
+        <title>Extreme Values of Functions</title>
+        <p>
+            It's often of interest to determine how large or small some quantity can get.
+        </p>
+        <definition xml:id="definition-absolute-extrema">
+            <title>Absolute Extrema</title>
+            <idx><h>functions</h><h>absolute extrema</h></idx>
+            <statement>
+                <p>
+                    Let <m>f(x)</m> be a function defined on some domain <m>D</m>.
+                    Let <m>c</m> be in <m>D</m>.
+                    Then
+                    <ul>
+                        <li><m>f(c)</m> is an <term>absolute maximum</term> of <m>f</m> on <m>D</m> if <m>f(c)\geq f(x)</m> for all <m>x</m> in <m>D</m>.</li>
+                        <li><m>f(c)</m> is an <term>absolute minimum</term> of <m>f</m> on <m>D</m> if <m>f(c)\leq f(x)</m> for all <m>x</m> in <m>D</m>.</li>
+                    </ul>
+                    These values, if they exist, are <term>extreme values</term>.
+                </p>
+            </statement>
+        </definition>
+        <example>
+            <statement>
+                <p>
+                    List the extreme values, if any, of the following functions:
+                    <ol>
+                        <li><m>f(x) = e^{-x}</m>.</li>
+                        <li><m>g(x) = x^{2}</m>.</li>
+                        <li><m>h(x) = \sin x</m>.</li>
+                    </ol>
+                </p>
+            </statement>
+        </example>
+        <p>
+            Some functions may not have extreme values, but they could have values that are smaller or larger than all other values of the function "nearby".
+        </p>
+        <definition xml:id="definition-local-extrema">
+            <title>Local extrema</title>
+            <idx><h>functions</h><h>local extrema</h></idx>
+            <statement>
+                <p>
+                    Let <m>f(x)</m> be a function and let <m>c</m> be in the domain of <m>f</m>.
+                    Then
+                    <ul>
+                        <li><m>f(c)</m> is a <term>local maximum</term> if <m>f(c)\geq f(x)</m> for all <m>x</m> near <m>c</m>.</li>
+                        <li><m>f(c)</m> is a <term>local minimum</term> if <m>f(c)\leq f(x)</m> for all <m>x</m> near <m>c</m>.</li>
+                    </ul>
+                    Roughly, local maxima correspond to "hilltops" whereas local minima correspond to "valleys" in the graph of <m>f(x)</m>.
+                </p>
+            </statement>
+        </definition>
+        <p>
+            In general, local extrema and absolute extrema can be different.
+            However, the following theorem does provide a relationship between the two on <em>closed, bounded</em> intervals.
+        </p>
+        <theorem xml:id="theorem-extreme-value-theorem">
+            <title>Extreme Value Theorem</title>
+            <idx>Extreme Value Theorem</idx>
+            <statement>
+                <p>
+                    Let <m>f(x)</m> be a continuous function defined on the interval <m>[a,b]</m>
+                    Then <m>f(x)</m> has both an absolute maximum and absolute minimum on <m>[a,b]</m>.
+                    Furthermore, these values occur at either an endpoint or a local extrema.
+                </p>
+            </statement>
+        </theorem>
+        <p>
+            What <xref ref="theorem-extreme-value-theorem" text="type-global" /> tells us is that we can find the extreme values of any continuous function defined on a closed, bounded interval by just checking the function at the endpoint and at its local extrema.
+        </p>
+        <example xml:id="example-finding-extreme-values">
+            <title>Finding extreme values</title>
+            <statement>
+                <p>
+                    Let <m>f(x) = (x^{2}-1)^{2}</m>.
+                    Given that <m>f</m> has local extrema at <m>x=-1,0,1</m>, find the extreme values of <m>f</m> on the interval <m>[\frac{1}{2},6]</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    <xref ref="theorem-extreme-value-theorem" text="type-global" /> tells us that we can find the extreme values by checking local extrema and the endpoints of our interval.
+                    Since <m>x=1</m> is the only local extreme value inside of our interval, that's the only one we need to check.
+                    We have
+                    <me>f(\frac{1}{2}) = \frac{9}{16}, f(1) = 0\quad\text{and}\quad f(6) = 35^{2}.</me>
+                    So the absolute minimum of <m>f</m> on <m>[\frac{1}{2},6]</m> is <m>0</m> and the absolute maximum is <m>35^{2}.</m>
+                </p>
+            </solution>
+        </example>
+    </section>
 </chapter>
