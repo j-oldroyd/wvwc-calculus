@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+
+*********************************************************************-->
+<!-- This file was originally part of the book     -->
+<!-- (as copied on 2015/07/12)                     -->
+<!--                                               -->
+<!--   Abstract Algebra: Theory and Applications   -->
+<!--                                               -->
+<!-- Copyright (C) 1997-2014  Thomas W. Judson     -->
+
+<chapter xml:id="applications-differentiation" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Applications of Differentiation</title>
+    <introduction>
+        <p>
+            Recall that a function <m>f(x)</m> is <term>invertible</term> if it's one-to-one.
+            In this case, there's an inverse function <m>f^{-1}(x)</m> that undoes <m>f(x)</m>.
+            In symbols, <m>f^{-1}(f(x)) = x</m> and <m>f(f^{-1}(y)) = y</m>.
+        </p>
+    </introduction>
+    
+</chapter>
