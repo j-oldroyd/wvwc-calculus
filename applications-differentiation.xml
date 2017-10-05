@@ -105,5 +105,53 @@
                 </p>
             </solution>
         </example>
+        <p>
+            So if we can find where a function has local extrema, then finding absolute extrema won't be too much more difficult.
+            Thankfully, this is relatively straightforward if the function is differentiable.
+        </p>
+        <theorem xml:id="theorem-fermat-s-theorem">
+            <title>Fermat's Theorem</title>
+            <idx>Fermat's Theorem</idx>
+            <statement>
+                <p>
+                    Let <m>f(x)</m> be a function and let <m>c</m> be a local extreme value of <m>f</m>.
+                    If <m>f'(c)</m> exists, then <m>f'(c) = 0</m>.
+                </p>
+            </statement>
+        </theorem>
+        <p>
+            So finding local extrema of <m>f(x)</m> often amounts to finding where <m>f'(x) = 0</m>, i.e., where it has a root.
+            However, we also need to worry about where <m>f'(x)</m> doesn't exist (just think about <m>y = |x|</m>).
+            This leads to the following definition.
+        </p>
+        <definition xml:id="definition-critical-points">
+            <title>Critical Points</title>
+            <statement>
+                <p>
+                    Let <m>f(x)</m> be a differentiable function.
+                    The <term>critical points</term> of <m>f(x)</m> are the points where <m>f'(x) = 0</m> or <m>f'(x)</m> does not exist.
+                </p>
+            </statement>
+        </definition>
+        <p>
+            Our method for finding extreme values on a closed interval will proceed as follows: find all the critical points, and then compare the values of our function at the critical points and the endpoints of the interval.
+        </p>
+        <example xml:id="example-extreme-values-of-tangent">
+            <title>Extreme values of tangent</title>
+            <statement>
+                <p>
+                    Let <m>f(\theta) = \frac{4}{3}\theta - \tan\theta</m>.
+                    Find the extreme values of <m>f</m> on the interval <m>[-\frac{\pi}{3},\frac{\pi}{3}]</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We need to find the critical points first.
+                    We have
+                    <me>f'(\theta) = \frac{4}{3} - \sec^{2}\theta.</me>
+                    This is <m>0</m> if <m>\cos\theta = \frac{\sqrt{3}}{2}</m>, which occurs in our interval only if <m>\theta = \pm\frac{\pi}{6}</m>.
+                </p>
+            </solution>
+        </example>
     </section>
 </chapter>
