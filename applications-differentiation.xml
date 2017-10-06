@@ -211,15 +211,127 @@
                 <title>Rolle's Theorem and Traffic</title>
                 <statement>
                     <p>
-                        A car enters a highway going at <quantity><mag>45</mag><unit base="mile"/><per base="hour"/></quantity>
+                        A car enters a highway going at <quantity><mag>45</mag><unit base="mile"/><per base="hour"/></quantity> and leaves the highway going at the same speed.
+                        Was the car's acceleration ever <m>0</m>?
                     </p>
                 </statement>
                 <solution>
                     <p>
-                        
+                        The speed of the car can be represented by a velocity function <m>v(t)</m>.
+                        If we assume that the car entered the highway at time <m>t_{\text{in}}</m> and left at some future time <m>t_{\text{out}}</m>, then we know that
+                        <me>v(t_{\text{in}}) = v(t_{\text{out}}) = 45.</me>
+                        By <xref ref="theorem-rolle-s-theorem" text="type-global" />, there must be some time <m>t_{1}</m> between <m>t_{\text{in}}</m> and <m>t_{\text{out}}</m> for which <m>v'(t_{1}) = 0</m>.
+                        Since <m>v'</m> is exactly the acceleration, we know that the car had to stop accelerating somewhere on the highway.
                     </p>
                 </solution>
             </example>
+        </subsection>
+        <subsection xml:id="subsection-the-mean-value-theorem">
+            <title>The Mean Value Theorem</title>
+            <p>
+                <xref ref="theorem-rolle-s-theorem" text="title" /> is powerful because it has very general conditions for its use.
+                However, it does require the function in question to take on the same values at the endpoints of <m>[a,b]</m>, and this is a condition we'd like to try to relax.
+                However, we'll try to be clever about this and use <xref ref="theorem-rolle-s-theorem" text="title" />
+                to do most of the heavy lifting for us.
+            </p>
+            <p>
+                If we imagine graphing some differentiable function <m>f(x)</m> on some interval <m>[a,b]</m>, but <m>f(a)\neq f(b)</m>, then we can't apply <xref ref="theorem-rolle-s-theorem" text="title" />.
+                But maybe we can adjust it just a little bit so that we can?
+                In particular, the only reason we can't use <xref ref="theorem-rolle-s-theorem" text="type-global" /> is that <m>f(a)\neq f(b)</m>.
+                But if we subtract the line through these points from <m>f(x)</m>, we should get a new function for which <xref ref="theorem-rolle-s-theorem" text="type-global" /> applies.
+            </p>
+            <p>
+                The line through these points has equation
+                <me>y = f(a) + \frac{f(b) - f(a)}{b-a}(x-a).</me>
+                So define 
+                <me>g(x) = f(x) - y = f(x) - f(a) - \frac{f(b) - f(a)}{b-a}(x-a).</me>
+                Then 
+                <me>g(a) = g(b) = 0,</me>
+                So <xref ref="theorem-rolle-s-theorem" text="type-global" /> <em>does</em> apply to this function.
+                Hence there exists some number <m>c</m> between <m>a</m> and <m>b</m> for which <m>g'(c) = 0</m>.
+            </p>
+            <p>
+                But 
+                <me>g'(c) = f'(c) - \frac{f(b) - f(a)}{b-a}},</me>
+                and if this is <m>0</m> then we can solve <m>g'(c) = 0</m> for <m>f'(c)</m> to get
+                <me>f'(c) = \frac{f(b) - f(a)}{b-a}.</me>
+                This gives us the <term>Mean Value Theorem</term>.
+            </p>
+            <theorem xml:id="theorem-mean-value-theorem">
+                <title>Mean Value Theorem</title>
+                <idx>Mean Value Theorem</idx>
+                <statement>
+                    <p>
+                        Let <m>f(x)</m> be differentiable on some interval <m>[a,b]</m>.
+                        Then there exists a number <m>c</m> in <m>(a,b)</m> such that
+                        <me>f'(c) = \frac{f(b) - f(a)}{b-a},</me>
+                        or equivalently
+                        <me>f(b) - f(a) = f'(c)(b-a).</me>
+                    </p>
+                </statement>
+            </theorem>
+            <p>
+                The <xref ref="theorem-mean-value-theorem" text="title" /> essentially says that there is at least one point inside of <m>(a,b)</m> for which the slope <m>f'(c)</m> at that point matches the "average slope" <m>\frac{f(b) - f(a)}{b-a}.</m>
+                Like <xref ref="theorem-rolle-s-theorem" text="title" />, this is an existence theorem.
+                However, it's slightly more general, and so is applicable in more situations.
+                It's also useful in deriving error estimates.
+            </p>
+            <example xml:id="example-estimating-error-in-a-linear-approximation">
+                <title>Estimating error in a linear approximation</title>
+                <statement>
+                    <p>
+                        Let <m>f(x) = \sqrt{x}</m> and let <m>L(x)</m> denote the linear approximation to <m>f(x)</m> at <m>a=9</m>.
+                        Find the largest possible error between <m>f(x)</m> and <m>L(x)</m> on the interval <m>[9,16]</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        First, we should find <m>L(x)</m>, which from <xref ref="section-linear-approximations" text="type-global" /> is just
+                        <me>L(x) = 3 + \frac{1}{6}(x-9).</me>
+                        The error we need to estimate is <m>|f(x) - L(x)|</m>, for <m>x</m> in <m>[9,16]</m>.
+                        So we'll set <m>g(x) = f(x) - L(x)</m> and let <m>x</m> be some number in <m>[9,16]</m>.
+                        By <xref ref="theorem-mean-value-theorem" text="type-global" />, there exists some number <m>c</m> in <m>(9,x)</m> such that 
+                        <me>g(x) - g(9) = g'(c)(x-9).</me>
+                        Now, <m>g(9) = 0</m> and <m>g'(c) = \frac{1}{2\sqrt{c}} - \frac{1}{6}</m>.
+                        So the above equation becomes
+                        <me>f(x) - L(x) = \left(\frac{1}{2\sqrt{c}} - \frac{1}{6})(x-9).</me>
+                    </p>
+                    <p>
+                        Now, we don't know anything about <m>c</m> aside from the fact that it lives in <m>(9,16)</m>.
+                        However, we do have an expression for <m>|f(x) - L(x)|</m> now:
+                        <md>
+                            <mrow>|f(x) - L(x)| &amp; = \left|\left(\frac{1}{2\sqrt{c}} - \frac{1}{6})(x-9)\right|</mrow>
+                            <mrow> &amp; \leq \left(\frac{1}{6} - \frac{1}{8}\right)7. </mrow>
+                        </md>
+                        So if <m>x</m> is in <m>[9,16]</m>, then the error <m>|f(x) - L(x)|</m> is <em>at most</em> <m>\frac{7}{24}</m>.
+                        In other words,
+                        <me>L(x) - \frac{7}{24} \leq f(x) \leq L(x) + \frac{7}{24}.</me>
+                    </p>
+                </solution>
+            </example>
+            <p>
+                Perhaps the most important example of <xref ref="theorem-mean-value-theorem" text="type-global" /> in this course will be the following theorem.
+            </p>
+            <theorem xml:id="theorem-zero-derivative-theorem">
+                <title>Zero Derivative Theorem</title>
+                <statement>
+                    <p>
+                        Let <m>f(x)</m> be differentiable on <m>(a,b)</m>.
+                        If <m>f'(x) = 0</m> for all <m>x</m> in <m>(a,b)</m>, then <m>f(x)</m> has to be a constant.
+                    </p>
+                </statement>
+                <proof>
+                    <p>
+                        The idea of the proof is to use <xref ref="theorem-mean-value-theorem" text="type-global" /> to show that <m>f(x_{2}) - f(x_{1}) = 0</m> for any points <m>x_{1},x_{2}</m> in <m>(a,b)</m>.
+                        Now, by <xref ref="theorem-mean-value-theorem" text="type-global" /> we have
+                        <me>f(x_{2}) - f(x_{1}) = f'(c)(x_{2}-x_{1})</me>
+                        for some <m>c</m> in <m>(a,b)</m>.
+                        However, <m>f'(c) = 0</m> by assumption, and so <m>f(x_{2}) - f(x_{1}) = 0</m>.
+                        In other words, <m>f(x_{2}) = f(x_{1})</m>.
+                        Hence <m>f</m> must be constant.
+                    </p>
+                </proof>
+            </theorem>
         </subsection>
     </section>
 </chapter>
