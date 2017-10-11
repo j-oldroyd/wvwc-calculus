@@ -252,7 +252,7 @@
             </p>
             <p>
                 But 
-                <me>g'(c) = f'(c) - \frac{f(b) - f(a)}{b-a}},</me>
+                <me>g'(c) = f'(c) - \frac{f(b) - f(a)}{b-a},</me>
                 and if this is <m>0</m> then we can solve <m>g'(c) = 0</m> for <m>f'(c)</m> to get
                 <me>f'(c) = \frac{f(b) - f(a)}{b-a}.</me>
                 This gives us the <term>Mean Value Theorem</term>.
@@ -294,13 +294,13 @@
                         <me>g(x) - g(9) = g'(c)(x-9).</me>
                         Now, <m>g(9) = 0</m> and <m>g'(c) = \frac{1}{2\sqrt{c}} - \frac{1}{6}</m>.
                         So the above equation becomes
-                        <me>f(x) - L(x) = \left(\frac{1}{2\sqrt{c}} - \frac{1}{6})(x-9).</me>
+                        <me>f(x) - L(x) = \left(\frac{1}{2\sqrt{c}} - \frac{1}{6}\right)(x-9).</me>
                     </p>
                     <p>
                         Now, we don't know anything about <m>c</m> aside from the fact that it lives in <m>(9,16)</m>.
                         However, we do have an expression for <m>|f(x) - L(x)|</m> now:
                         <md>
-                            <mrow>|f(x) - L(x)| &amp; = \left|\left(\frac{1}{2\sqrt{c}} - \frac{1}{6})(x-9)\right|</mrow>
+                            <mrow>|f(x) - L(x)| &amp; = \left|\left(\frac{1}{2\sqrt{c}} - \frac{1}{6}\right)(x-9)\right|</mrow>
                             <mrow> &amp; \leq \left(\frac{1}{6} - \frac{1}{8}\right)7. </mrow>
                         </md>
                         So if <m>x</m> is in <m>[9,16]</m>, then the error <m>|f(x) - L(x)|</m> is <em>at most</em> <m>\frac{7}{24}</m>.
@@ -333,5 +333,82 @@
                 </proof>
             </theorem>
         </subsection>
+    </section>
+    <section xml:id="section-derivatives-and-graphs">
+        <title>Derivatives and Graphs</title>
+        <p>
+            Recall that if <m>f(x)</m> is a function and <m>f'(x)</m> exists, then <m>f'(c) &gt; 0</m> for some <m>c</m> means that <m>f</m> is increasing at <m>c</m>, while <m>f'(c) &lt; 0</m> means that <m>f</m> is decreasing at <m>c</m>.
+            Now, suppose that <m>c</m> is a critical point of <m>f(x)</m>.
+            Then <m>f'(c) = 0</m>.
+            If <m>f'</m> changes sign from negative to positive, then <m>f'(c)</m> is a local minimum.
+            Conversely, if <m>f'</m> changes sign from positive to negative, then <m>f'(c)</m> is a local maximum.
+            This is the <term>first derivative test</term>.
+        </p>
+        <example xml:id="example-local-maxima-and-minima-using-the-first-derivative-test">
+            <title>Local maxima and minima using the first derivative test</title>
+            <statement>
+                <p>
+                    Let <m>f(x) = x^{4}e^{-x}</m>.
+                    Find where <m>f</m> is increasing, decreasing, and any local maxima or minima.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We can answer all of these questions by setting up a sign chart for 
+                    <me>f'(x) = x^{3}e^{-x}(4-x)</me>.
+                    The critical points are <m>x=0,4</m>, and <m>f' &lt; 0</m> on <m>(-\infty,0)\cup(4,\infty)</m> and <m>f' &gt; 0</m> on <m>(0,4)</m>.
+                    So <m>f</m> is decreasing on the first set of intervals, increasing on <m>(0,4)</m>, <m>f</m> has a local maximum at <m>x=4</m> and a local minimum at <m>x=0</m>.
+                </p>
+            </solution>
+        </example>
+        <example xml:id="example-first-derivative-test-and-a-discontinuous-function">
+            <title>First derivative test and a discontinuous function</title>
+            <statement>
+                <p>
+                    Find any local maxima or minima of <m>G(x) = \frac{x^{2}}{x-1}</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We need to find the critical points, which means we need to find <m>G'(x)</m>:
+                    <me>G'(x) = \frac{(x-1)(2x) - x^{2}}{(x-1)^{2}} = \frac{x(x-2)}{(x-1)^{2}}.</me>
+                    So the critical points are <m>x=0,1,2</m>.
+                    Note that <m>x=1</m> <em>cannot</em> be a local extreme value of <m>G</m> since it's not in the domain of <m>G</m>.
+                    However, we still need to include it in our sign chart.
+                    If we do so, we find that <m>G</m> has a local minimum at <m>x=2</m> and a local maximum at <m>x=0</m> by the first derivative test.
+                </p>
+            </solution>
+        </example>
+        <p>
+            One benefit of the first derivative test is that we only need to compute first derivatives to use it.
+            However, if a function has a second derivative, then it's often easier to use the concavity of the graph at a critical point to determine whether a critical point is a local maximum or minimum.
+            In particular, if <m>f(x)</m> is a function and <m>f''(x)</m> is continuous near the critical point <m>c</m> (so <m>f'(c) = 0</m>), then <m>f(c)</m> is a local minimum if <m>f''(c) &gt; 0</m> and <m>f(c)</m> is a local maximum if <m>f''(c) &lt; 0</m>.
+            This is the <term>second derivative test</term>.
+        </p>
+        <example xml:id="example-using-the-second-derivative-test">
+            <title>Using the second derivative test</title>
+            <statement>
+                <p>
+                    Find any local extrema of <m>h(x) = 5x^{3} - 3x^{5}</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    First, we find the critical points:
+                    <me>h'(x) = 15x^{2} - 15x^{4} = 0</me>
+                    forces <m>x=0,\pm1</m>.
+                    Now we check these critical points in <m>h''(x) = 30x - 60x^{3}:</m>
+                    <md>
+                        <mrow>h''(0) &amp; = 0 </mrow>
+                        <mrow>h''(-1) &amp; = 30 </mrow>
+                        <mrow>h''(1) &amp; = -30. </mrow>
+                    </md>
+                    So <m>h</m> has a local minimum at <m>-1</m> and a local maximum at <m>1</m>.
+                </p>
+            </solution>
+        </example>
+        <p>
+            The point <m>x=0</m> in <xref ref="example-using-the-second-derivative-test" text="type-global" /> is an example of an <term>inflection point</term> of <m>h(x)</m>: a place where the concavity of <m>h</m> changes, or equivalently a point where the second derivative changes sign.
+        </p>
     </section>
 </chapter>
