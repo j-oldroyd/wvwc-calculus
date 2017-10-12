@@ -416,12 +416,30 @@
         <p>
             Now that we can use derivatives to find local maxima and minima, we can solve <term>optimization problems</term>.
         </p>
+        <example xml:id="example-minimizing-a-product">
+            <title>Minimizing a product</title>
+            <statement>
+                <p>
+                    Find two numbers that differ by <m>100</m> and whose product is a minimum.  
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Call our numbers <m>x,y</m> and suppose <m>x &gt; y</m>.
+                    Then <m>x-y = 100</m> and we need to choose <m>x,y</m> in such a way that <m>xy</m> is as small as possible.
+                    If we replace <m>x</m> with <m>100+y</m>, then this means we need to minimize 
+                    <me>f(y) = 100y + y^{2}.</me>
+                    The critical point of <m>f(y)</m> is <m>y = -50</m>, and since <m>f</m> is a parabola we know that this must be the location of the absolute minimum value on the graph.
+                    So the numbers we need are <m>50,-50</m>.
+                </p>
+            </solution>
+        </example>
         <example xml:id="example-minimizing-material-costs">
             <title>Minimizing material costs</title>
             <statement>
                 <p>
-                    A box with an open top and a square base is to be built using material that costs $5 per square meter.
-                    The box must have a volume of <quantity><mag>32000</mag><unit base="meter" prefix="centi" exp="2"/></quantity>.
+                    A box with an open top and a square base is to be built using material that costs \$5 per square meter.
+                    The box must have a volume of <quantity><mag>32000</mag><unit base="meter" prefix="centi" exp="3"/></quantity>.
                     Find the dimensions of the box that will be cheapest to build to these specifications.
                 </p>
             </statement>
