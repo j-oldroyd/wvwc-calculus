@@ -696,6 +696,7 @@
                     Hence <m>G(x) - F(x) = C</m> for some constant <m>C</m>, or equivalently <m>G(x) = F(x)+C</m>.
                     Therefore <em>every</em> antiderivative of <m>f(x)</m> can be written as <m>F(x) + C</m>.
                 </p>
+            </proof>
         </theorem>
         <p>
             It might seem superfluous, but typically when dealing with models requiring us to find antiderivatives we'll want to find the most general antiderivative somewhere along the way.
@@ -757,7 +758,7 @@
             <title>Falling objects</title>
             <statement>
                 <p>
-                    An object is dropped from a height of <quantity><mag>100</mag><unit base="meter"/> above sea level and falls with downward acceleration equal to <quantity><mag>9.8</mag><unit base="meter"/><per base="second" exp="2"/></quantity>.
+                    An object is dropped from a height of <quantity><mag>100</mag><unit base="meter"/></quantity> above sea level and falls with downward acceleration equal to <quantity><mag>9.8</mag><unit base="meter"/><per base="second" exp="2"/></quantity>.
                     Find the height <m>h(t)</m> of the object <m>t</m> seconds after it's dropped.
                 </p>
             </statement>
