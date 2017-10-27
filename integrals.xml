@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+
+*********************************************************************-->
+<!-- This file was originally part of the book     -->
+<!-- (as copied on 2015/07/12)                     -->
+<!--                                               -->
+<!--   Abstract Algebra: Theory and Applications   -->
+<!--                                               -->
+<!-- Copyright (C) 1997-2014  Thomas W. Judson     -->
+
+<chapter xml:id="integrals" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Applications of Differentiation</title>
+    <introduction>
+        <p>
+            If a function is differentiable, then its derivative gives us information about how that function is changing.
+            This information is important in many different applications of calculus.
+        </p>
+    </introduction>
+</chapter>
