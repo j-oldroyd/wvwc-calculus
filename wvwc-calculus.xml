@@ -76,6 +76,7 @@
 		<xi:include href="./derivatives.xml" /> <!-- Introduction to derivatives -->
 		<xi:include href="./inverse-functions.xml" /> <!-- Introduction to derivatives of invertible functions -->
 		<xi:include href="./applications-differentiation.xml" /> <!-- Applications of differentiation -->
+		<xi:include href="./integrals.xml" /> <!-- Introduction to integrals -->
 		<xi:include href="./parametric-equations-polar-coordinates.xml" /> 	<!-- Introduction to parametric/polar coordinates -->
 		<xi:include href="./vectors-space-geometry.xml" /> <!-- Introduction to geometry in Euclidean space -->
 		<xi:include href="./partial-derivatives.xml" /> <!-- Introduction to partial derivatives -->
