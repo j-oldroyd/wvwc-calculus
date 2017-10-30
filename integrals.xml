@@ -193,6 +193,7 @@
                         <mrow>\sum_{i=a}^{b}cx_{i} &amp; = c\sum_{i=a}^{b}x_{i} = cX </mrow>
                         <mrow>\sum_{i=a}^{b}(x_{i}+y_{i}) &amp; = \sum_{i=a}^{b}x_{i} + \sum_{i=a}^{b}y_{i} = X + Y </mrow>
                         <mrow>\sum_{i=a}^{b}(x_{i} - y_{i}) &amp; = \sum_{i=a}^{b}x_{i} - \sum_{i=a}^{b}y_{i} = X - Y </mrow>
+                        <mrow>\sum_{i=a}^{k}a_{i} + \sum_{i=k+1}^{b}a_{i} &amp; = \sum_{i=a}^{b}a_{i}. </mrow>
                     </md>
                     In other words, we can break sigma notation up over addition and subtraction, and we can move constants outside of it.
                 </p>
@@ -230,6 +231,107 @@
                     Now we have everything we need to write our limit.
                     Hence the area under <m>\sin x</m> from <m>1</m> to <m>3</m> is given by
                     <me>\lim_{n\to\infty}\sum_{i=1}^{n}\sin\left(\frac{n+2i}{n}\right)\frac{2}{n}.</me>
+                </p>
+            </solution>
+        </example>
+        <p>
+            Just as the problem of finding the slope of a tangent line can be viewed as a rate of change problem, the problem of finding areas can be viewed as an <em>accumulation problem</em>.
+        </p>
+        <example xml:id="example-finding-work-done">
+            <title>Finding work done</title>
+            <statement>
+                <p>
+                    In physics, the work done by a constant force <m>F</m> on some particle that moves a displacement <m>d</m> is given by the formula
+                    <me>W = Fd.</me>
+                    How should we define the work done by a variable force?
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    The main idea here is to treat the variable force as the combination of several constant forces.
+                    To be specific, let <m>F(x)</m> denote our force (which depends on position <m>x</m>) and suppose it acts on a particle moving from <m>x=a</m> to <m>x=b</m>.
+                    <m>F(x)</m> itself may not be constant, but if we break <m>[a,b]</m> up into <m>n</m> subintervals of the form <m>[x_{i-1},x_{i}]</m> each of length <m>\Delta x = \frac{b-a}{n}</m>, then <m>F(x)</m> should be nearly constant on each subinterval.
+                    So we can pick points <m>x_{i}^{*}</m> from each subinterval and say that <m>F(x)\approx F(x_{i}^{*})</m> for all <m>x</m> in <m>[x_{i-1},x_{i}]</m>.
+                </p>
+                <p>
+                    Now we can approximate the work done by <m>F</m> as the particle moves through the subinterval <m>[x_{i-1},x_{i}]</m>.
+                    The work done should be about equal to <me>F(x_{i}^{*})\Delta x</me>.
+                    Now, if we add up these estimates for each subinterval, we see that the total work done should be approximated by 
+                    <me>\sum_{i=1}^{n}F(x_{i}^{*})\Delta x,</me>
+                    which suggests that we should define the exact work done to be 
+                    <me>W = \lim_{n\to\infty}\sum_{i=1}^{n}F(x_{i}^{*})\Delta x.</me>
+                </p>
+            </solution>
+        </example>
+        <p>
+            Note that <xref ref="example-finding-work-done" text="type-global" /> was not written in terms of finding areas, but still involved the limit from <xref ref="definition-area" text="type-global" />.
+            This tells us that the ideas in this section have a wider use than in just finding areas under curves.
+        </p>
+    </section>
+    <section xml:id="section-the-definite-integral">
+        <title>The Definite Integral</title>
+        <p>
+            The process used in <xref ref="section-areas-under-curves" text="type-global" /> can be generalized quite a bit.
+            Start with a function <m>f(x)</m> defined on some interval <m>[a,b]</m>, and divide <m>[a,b]</m> into <m>n</m> subintervals 
+            <me>[x_{0},x_{1}], [x_{1},x_{2}],\ldots,[x_{n-1},x_{n}]</me>
+            where <m>x_{0} = a, x_{n} = b</m> and each subinterval has length <m>\Delta x_{i}</m> (i.e. $\Delta x_{i} = x_{i} - x_{i-1}).
+            This is known as a <term>partition</term> of <m>[a,b]</m>.
+            Then we can choose sample points <m>x_{1}^{*}</m> from <m>[x_{0},x_{1}]</m>, <m>x_{2}^{*}</m> from <m>[x_{1},x_{2}]</m>, all the way up to <m>x_{n}^{*}</m> from <m>[x_{n-1},x_{n}]</m>.
+            Note that the only restriction we're placing on the sample point <m>x_{i}^{*}</m> is that is must come from the interval <m>[x_{i-1},x_{i}]</m>, but it may be <em>any</em> point in this interval.
+        </p>
+        <p>
+            Using all of this, we can define the <term>Riemann sum</term> associated to <m>f</m> on this partition:
+            <me>\sum_{i=1}^{n}f(x_{i}^{*})\Delta x_{i}.</me>
+            Although this can be more complicated than our definition in <xref ref="definition-area" text="type-global" />, it still approximates the area under <m>f(x)</m> from <m>x=a</m> to <m>x=b</m>.
+            And as each subinterval in this partition gets smaller (i.e. as <m>\Delta x_{i}\to0</m> or equivalently as <m>n\to\infty</m>), then this approximation should become exact, at least if <m>f(x)</m> is nice enough.
+        </p>
+        <definition xml:id="definition-the-definite-integral">
+            <title>The Definite Integral</title>
+            <statement>
+                <p>
+                    Let <m>f(x)</m> be a function defined on <m>[a,b]</m>.
+                    Then the <term>definite integral of <m>f(x)</m> from <m>a</m> to <m>b</m></term> is the number
+                    <me>\int_{a}^{b}f(x)\,dx = \lim_{n\to\infty}\sum_{i=1}^{n}f(x_{i}^{*})\Delta x_{i},</me>
+                    provided that the limit exists (and that <m>\Delta x_{i}\to0</m>).
+                    If this limit exists, we say that <m>f(x)</m> is <term>integrable</term> on <m>[a,b]</m>.
+                </p>
+            </statement>
+        </definition>
+        <p>
+            We can use <xref ref="definition-the-definite-integral" text="type-global" /> to rewrite our area definition: the area under <m>y=f(x)</m> from <m>x=a</m> to <m>x=b</m> is defined to be the definite integral of <m>f</m> on <m>[a,b]</m>, assuming it exists.
+            For a function to be integrable, the particular partition of <m>[a,b]</m> that we use <em>cannot affect the limit</em> in <xref ref="definition-the-definite-integral" text="type-global" />.
+            This gives us a great deal of freedom in approximating the definite integral/area under a curve: when choosing sample points, we can use left endpoints; right endpoints; midpoints and more.
+            However, if <m>f</m> is integrable then we lose nothing by just using right endpoints and subintervals of equal length, as in <xref ref="definition-area" text="type-global" />.
+        </p>
+        <theorem xml:id="theorem-integrability-of-piecewise-continuous-functions">
+            <title>Integrability of Piecewise Continuous Functions</title>
+            <statement>
+                <p>
+                    Let <m>f(x)</m> be a piecewise function on <m>[a,b]</m> with finitely many jump discontinuities.
+                    Then <m>f</m> is integrable on <m>[a,b]</m>.
+                </p>
+            </statement>
+        </theorem>
+        <example xml:id="example-expressing-work-done">
+            <title>Expressing work done</title>
+            <statement>
+                <p>
+                    A particle moving from <m>x=-1</m> to <m>x=3</m> is acted upon by the force <m>F(x) = 3x</m>.
+                    Find the work done by the force on this particle.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Using <xref ref="example-finding-work-done" text="type-global" />, we see that the work done should be
+                    <me>W = \lim_{n\to\infty}\sum_{i=1}^{n}3x_{i}^{*}\cdot\frac{4}{n}</me>
+                    which we can rewrite as 
+                    <me>W = \int_{-1}^{3}3x\,dx.</me>
+                    So work is a definite integral.
+                </p>
+                <p>
+                    In this case, we can also find the work done.
+                    Since the definite integral represents area, and the definite integral of <m>3x</m> exists (since this is continuous), then we can say that
+                    <me>W = \int_{-1}^{3}3x\,dx = \frac{1}{2}(1)(-3) + \frac{1}{2}(3)(9) = 12.</me>
                 </p>
             </solution>
         </example>
