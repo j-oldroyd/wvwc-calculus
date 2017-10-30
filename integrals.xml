@@ -274,7 +274,7 @@
             The process used in <xref ref="section-areas-under-curves" text="type-global" /> can be generalized quite a bit.
             Start with a function <m>f(x)</m> defined on some interval <m>[a,b]</m>, and divide <m>[a,b]</m> into <m>n</m> subintervals 
             <me>[x_{0},x_{1}], [x_{1},x_{2}],\ldots,[x_{n-1},x_{n}]</me>
-            where <m>x_{0} = a, x_{n} = b</m> and each subinterval has length <m>\Delta x_{i}</m> (i.e. $\Delta x_{i} = x_{i} - x_{i-1}).
+            where <m>x_{0} = a, x_{n} = b</m> and each subinterval has length <m>\Delta x_{i}</m> (i.e. <me>\Delta x_{i} = x_{i} - x_{i-1}</me>).
             This is known as a <term>partition</term> of <m>[a,b]</m>.
             Then we can choose sample points <m>x_{1}^{*}</m> from <m>[x_{0},x_{1}]</m>, <m>x_{2}^{*}</m> from <m>[x_{1},x_{2}]</m>, all the way up to <m>x_{n}^{*}</m> from <m>[x_{n-1},x_{n}]</m>.
             Note that the only restriction we're placing on the sample point <m>x_{i}^{*}</m> is that is must come from the interval <m>[x_{i-1},x_{i}]</m>, but it may be <em>any</em> point in this interval.
@@ -335,5 +335,27 @@
                 </p>
             </solution>
         </example>
+        <p>
+            Since the definite integral is defined as a limit of sums, it shares many properties with sums.
+            In particular, we have the following version of <xref ref="theorem-properties-of-sigma-notation" text="type-global" />
+        </p>
+        <theorem xml:id="theorem-properties-of-the-definite-integral">
+            <title>Properties of the Definite Integral</title>
+            <statement>
+                <p>
+                    Let <m>f(x)</m> and <m>g(x)</m> be integrable on <m>[a,b]</m> and let <m>c</m> be a constant.
+                    Let <m>t</m> be any number in <m>[a,b]</m>.
+                    Then the following are true:
+                    <md>
+                        <mrow>\int_{a}^{b}c\,dx &amp; = c(b-a) </mrow>
+                        <mrow>\int_{a}^{b}cf(x)\,dx &amp; = c\int_{a}^{b}f(x)\,dx </mrow>
+                        <mrow>\int_{a}^{b}(f(x)+g(x))\,dx &amp; = \int_{a}^{b}f(x)\,dx + \int_{a}^{b}g(x)\,dx</mrow>
+                        <mrow>\int_{a}^{b}(f(x) - g(x))\,dx &amp; = \int_{a}^{b}f(x)\,dx - \int_{a}^{b}g(x)\,dx </mrow>
+                        <mrow>\int_{a}^{t}f(x)\,dx + \int_{t}^{b}f(x)\,dx &amp; = \int_{a}^{b}f(x)\,dx. </mrow>
+                    </md>
+                    In other words, we can break definite integrals up over addition and subtraction, and we can move constants outside of it.
+                </p>
+            </statement>
+        </theorem>
     </section>
 </chapter>
