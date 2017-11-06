@@ -442,8 +442,155 @@
                         <li><m>\int_{a}^{a}f(x)\,dx = 0</m></li>
                         <li>If <m>f(x)\geq g(x)</m> on <m>[a,b]</m>, then <m>\int_{a}^{b}f(x)\,dx \geq \int_{a}^{b}g(x)\,dx</m>.</li>
                         <li>If <m>m\leq f(x)\leq M</m> on <m>[a,b]</m>, then <m>m(b-a)\leq \int_{a}^{b}f(x)\,dx\leq M(b-a)</m>.</li>
+                    </ol>
                 </p>
             </statement>
         </theorem>
+    </section>
+    <section xml:id="section-evaluating-integrals">
+        <title>Evaluating Integrals</title>
+        <p>
+            Just as we did with derivatives, we want to find a way to calculate integrals without having to compute limits every time.
+        </p>
+        <theorem xml:id="theorem-evaluation-theorem">
+            <title>Evaluation Theorem</title>
+            <statement>
+                <p>
+                    Let <m>f(x)</m> be continuous on <m>[a,b]</m> and let <m>F(x)</m> be a single antiderivative of <m>f(x)</m> on this interval.
+                    Then 
+                    <me>\int_{a}^{b}f(x)\,dx = F(a) - F(b).</me>
+                </p>
+            </statement>
+            <proof>
+                <p>
+                    First, partition <m>[a,b]</m> into <m>[x_{0},x_{1}],\ldots,[x_{n-1},x_{n}]</m>.
+                    Then we can say that
+                    <md>
+                        <mrow>F(b) - F(a) &amp; = F(x_{n}) - F(x_{0}) </mrow>
+                        <mrow> &amp; = F(x_{n}) - F(x_{n-1}) + F(x_{n-1}) - F(x_{n-2}) + \cdots + F(x_{1}) - F(x_{0}) </mrow>
+                        <mrow> &amp; = \sum_{i=1}^{n}[F(x_{i}) - F(x_{i-1})]. </mrow>
+                    </md>
+                    By the Mean Value Theorem, we can rewrite each term in the sum using <m>F'</m>:
+                    <me>F(x_{i}) - F(x_{i-1}) = F'(x_{i}^{*})(x_{i} - x_{i-1})</me>
+                    where <m>x_{i}^{*}</m> is just some point in <m>[x_{i-1},x_{i}]</m>.
+                    So we have
+                    <md>
+                        <mrow>F(b) - F(a) &amp; = \sum_{i=1}^{n}F'(x_{i}^{*})(x_{i} - x_{i-1}) </mrow>
+                        <mrow> &amp; = \sum_{i=1}^{n}f(x_{i}^{*})\Delta x. </mrow>
+                    </md>
+                    If we now send <m>n\to\infty</m> (i.e,, <m>\Delta x\to 0</m>), then the above becomes
+                    <me>F(b) - F(a) = \int_{a}^{b}f(x)\,dx.</me>
+                </p>
+            </proof>
+        </theorem>
+        <p>
+            <xref ref="theorem-evaluation-theorem" text="type-global" /> tells us that if we want to evaluate the definite integral of a continuous function, we need to first find an antiderivative.
+            We can also think of this result as follows: the definite integral of a rate of change is just the net change of the antiderivative.
+        </p>
+        <example xml:id="example-modeling-a-population">
+            <title>Modeling a population</title>
+            <statement>
+                <p>
+                    A honeybee population starts with <m>100</m> members and grows at a rate of <m>n'(t)</m> per week.
+                    Find the total population after <m>15</m> weeks in terms of <m>n'(t)</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    The total population after <m>15 weeks</m> should be given by
+                    <md>
+                        <mrow>(\text{total population}) &amp; = (\text{initial population}) + (\text{net change}) </mrow>
+                        <mrow> &amp; = 100 + \int_{0}^{15}n'(t)\,dt </mrow>
+                    </md>
+                </p>
+            </solution>
+        </example>
+        <p>
+            As a useful shorthand, we introduce the notation <m>F(b) - F(a) = F(x)\big]_{a}^{b}.</m>
+            So if <m>F</m> is an antiderivative of <m>f</m>, we can say that
+            <me>\int_{a}^{b}f(x)\,dx = F(x)\big]_{a}^{b}.</me>
+        </p>
+        <example xml:id="example-area-under-a-rational-function">
+            <title>Area under a rational function</title>
+            <statement>
+                <p>
+                    Find the area under <m>f(t) = \frac{t^{2}-1}{t^{4}-1}\,dt</m> from <m>t=0</m> to <m>t=\frac{1}{\sqrt{3}}</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    The area is just the definite integral, which is
+                    <md>
+                        <mrow>\int_{0}^{\frac{1}{\sqrt{3}}}f(t)\,dt &amp; = \int_{0}^{\frac{1}{\sqrt{3}}}\frac{t^{2}-1}{t^{4}-1}\,dt </mrow>
+                        <mrow> &amp; = \int_{0}^{\frac{1}{\sqrt{3}}}\frac{1}{t^{2}+1}\,dt </mrow>
+                        <mrow> &amp; = \tan^{-1}t\big]_{0}^{\frac{1}{\sqrt{3}}} </mrow>
+                        <mrow> &amp; = \tan^{-1}\left(\frac{1}{\sqrt{3}}) - \tan^{-1}(0)\right) </mrow>
+                        <mrow> &amp; = \frac{\pi}{6}. </mrow>
+                    </md>
+                </p>
+            </solution>
+        </example>
+        <p>
+            The <term>average value</term> of a continuous function <m>f(x)</m> on an interval <m>[a,b]</m> is defined to be
+            <me>\frac{1}{b-a}\int_{a}^{b}f(x)\,dx.</me>
+        </p>
+        <example xml:id="example-average-force">
+            <title>Average force</title>
+            <statement>
+                <p>
+                    An object of mass <quantity><mag>3</mag><unit base="gram" prefix="kilo"/></quantity> is acted upon by several forces that combine to give it an acceleration of <m>a(t) = 4e^{-t} + \sin t</m>, where <m>a(t)</m> is in units of <quantity><unit base="meter"/><per base="second" exp="2"/></quantity> and <m>t</m> is in seconds.
+                    Find the average force acting on the mass from <m>t=1</m> to <m>t=3</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We first need to find the net force acting on the particle.
+                    By Newton's Second Law, this is <m>F_{\text{net}} = ma = 12e^{-t} + 4\sin t</m>.
+                    So the average force should be
+                    <md>
+                        <mrow>\frac{1}{2}\int_{1}^{3}(12e^{-t} + 4\sin t)\,dt &amp; =  \frac{1}{2}\big[-12e^{-t} - 4\cos t\big]_{1}^{3}</mrow>
+                        <mrow> &amp; = \frac{-12e^{-3} - 4\cos 3 + 12e^{-1} + 4\cos1}{2}. </mrow>
+                    </md>
+                </p>
+            </solution>
+        </example>
+        <p>
+            Because of the relationship between definite integrals and antiderivatives, we introduce a notation for antiderivatives that reinforces this connect.
+        </p>
+        <definition xml:id="definition-indefinite-integral">
+            <title>Indefinite Integral</title>
+            <statement>
+                <p>
+                    Let <m>f(x)</m> be a continuous function.
+                    The <term>indefinite integral</term> of <m>f(x)</m>, denoted <m>\int f(x)\,dx</m>, is the general antiderivative of <m>f(x)</m>.
+                    In symbols, if <m>F(x)</m> is an antiderivative of <m>f(x)</m> then
+                    <me>\int f(x)\,dx = F(x) + C.</me>
+                </p>
+            </statement>
+        </definition>
+        <example xml:id="example-finding-an-indefinite-integral">
+            <title>Finding an indefinite integral</title>
+            <statement>
+                <p>
+                    Given that 
+                    <me>\dv{}{x}[xe^{x} - e^{x}] = xe^{x},</me>
+                    find <m>\int [xe^{x}+\sec^{2}x]\,dx</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We can find this integral by splitting it up, since the antiderivative of a sum is just the sum of the antiderivatives.
+                    So
+                    <md>
+                        <mrow>\int[xe^{x} + \sec^{2}x]\,dx &amp; = \int xe^{x}\,dx + \int\sec^{2}x\,dx </mrow>
+                        <mrow> &amp; = xe^{x}-e^{x} + \tan x + C. </mrow>
+                    </md>
+                </p>
+            </solution>
+        </example>
+        <p>
+            Note that using <xref ref="theorem-evaluation-theorem" text="type-global" /> to find definite integrals relies on having a particular antiderivative of a function <m>f(x)</m>, but we've said nothing about whether or not such an antiderivative can exist.
+            In the next section, we'll see how to use integrals to construct antiderivatives.
+        </p>
     </section>
 </chapter>
