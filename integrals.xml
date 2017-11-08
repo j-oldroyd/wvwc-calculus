@@ -657,6 +657,7 @@
                     <me>\lim_{h\to0}\frac{g(x+h)-g(x)}{h} = \lim_{h\to0}\frac{f(x)h}{h} = f(x),</me>
                     and so <m>g'(x) = f(x)</m>.
                 </p>
+            </proof>
         </theorem>
         <p>
             The second part of <xref ref="theorem-fundamental-theorem-of-calculus" text="type-global" /> is something we've seen before in <xref ref="theorem-evaluation-theorem" text="type-global" />, but the first part is new.

@@ -28,6 +28,7 @@
 			    \begin{bmatrix}#1\end{bmatrix}%
 			  }
 			\newcommand{\proj}[2]{\operatorname{proj}_{#1} #2}
+			\newcommand{\erf}[1]{\operatorname{erf} #1}
 		</macros>
 		<latex-preamble>
 			\usepackage{physics}
