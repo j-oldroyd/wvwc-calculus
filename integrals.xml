@@ -593,4 +593,112 @@
             In the next section, we'll see how to use integrals to construct antiderivatives.
         </p>
     </section>
+    <section xml:id="section-the-fundamental-theorem-of-calculus">
+        <title>The Fundamental Theorem of Calculus</title>
+        <p>
+            The previous section used antiderivatives to find definite integrals.
+            Now we'll go the other direction and use integrals to define antiderivatives.
+            We can do this as follows.
+        </p>
+        <p>
+            Let <m>f</m> be some function continuous on <m>[a,b]</m>.
+            Then we can say that <m>f</m> must be continuous on every interval of the form <m>[a,x]</m> for <m>x</m> in <m>[a,b]</m>.
+            This means that the definite integrals <m>\int_{a}^{x}f(t)\,dt</m> exist, and so we can use these to define a function, say <m>g(x)</m>.
+        </p>
+        <example xml:id="example-functions-from-integrals">
+            <title>Functions from integrals</title>
+            <statement>
+                <p>
+                    Let <m>f(x) = 2 - x^{2}</m> and define <m>g(x) = \int_{1}^{x}f(t)\,dt</m>.
+                    Find <m>g(x)</m>.
+                    Where is <m>g(x)</m> the largest?
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    First, note that we can compute <m>\int_{1}^{x}f(t)\,dt</m> by finding an antiderivative of <m>f(t) = 2 - t^{2}</m>.
+                    So
+                    <me>g(x) = \int_{1}^{x}(2-t^{2})\,dt = \left[2t-\frac{1}{3}t^{3}\right]_{t=1}^{x}</me>
+                    or just
+                    <me>g(x) = 2x - \frac{1}{3}x^{3} - \frac{5}{3}.</me>
+                </p>
+                <p>
+                    We can find where <m>g</m> is largest by using a derivative test or just geometry.
+                    Since <m>g</m> represents the area under <m>f</m> from <m>1</m> to <m>x</m>, it follows that this area will be largest at <m>x=\sqrt{2}</m>, since this is where <m>f</m> crosses the axis.
+                </p>
+            </solution>
+        </example>
+        <p>
+            There's one important thing to take away from the previous example.
+            The function <m>g(x) = \int_{1}^{x}f(t)\,dt</m> turned out to be an antiderivative of <m>f(x)</m>, so in particular <m>g'(x) = f(x)</m>.
+            This is not a coincidence.
+        </p>
+        <theorem xml:id="theorem-fundamental-theorem-of-calculus">
+            <title>Fundamental Theorem of Calculus</title>
+            <statement>
+                <p>
+                    Let <m>f(x)</m> be a continuous function defined on <m>[a,b]</m>.
+                </p>
+                <ol>
+                    <li>Define <m>g(x) = \int_{a}^{x}f(t)\,dt</m> for <m>x</m> in <m>[a,x]</m>.
+                    Then <m>g'(x) = f(x)</m>, i.e., <m>g</m> is an antiderivative of <m>f</m>.</li>
+                    <li>Let <m>F</m> be a particular antiderivative of <m>f</m>.
+                    Then <m>\int_{a}^{b}f(x)\,dx = F(b) - F(a).</m></li>
+                </ol>
+            </statement>
+            <proof>
+                <p>
+                    We'll sketch the proof of the first part.
+                    First, assume that <m>g(x) = \int_{a}^{x}f(t)\,dt</m>.
+                    Then
+                    <me>\frac{g(x+h)-g(x)}{h} = \frac{1}{h}\int_{x}^{x+h}f(t)\,dt.</me>
+                    Now, if <m>h</m> is small and if <m>x\leq t\leq x+h</m>, then <m>\int_{x}^{x+h}f(t)\,dt</m> should be approximately equal to <m>f(x)h</m> since <m>f</m> is continuous.
+                    Therefore
+                    <me>\lim_{h\to0}\frac{g(x+h)-g(x)}{h} = \lim_{h\to0}\frac{f(x)h}{h} = f(x),</me>
+                    and so <m>g'(x) = f(x)</m>.
+                </p>
+        </theorem>
+        <p>
+            The second part of <xref ref="theorem-fundamental-theorem-of-calculus" text="type-global" /> is something we've seen before in <xref ref="theorem-evaluation-theorem" text="type-global" />, but the first part is new.
+            Essentially, this result says that integration and differentiation are <em>inverses</em> of each other.
+        </p>
+        <example xml:id="example-error-function">
+            <title>Error function</title>
+            <statement>
+                <p>
+                    The <term>error function</term>, defined by
+                    <me>erf(x) = \frac{2}{\sqrt{\pi}}\int_{0}^{x}e^{-t^{2}}\,dt,</me>
+                    is one of the most important functions in statistics and other applications of mathematics (such as modeling the spread of a virus or the spread of heat).
+                    Find the derivative of <m>\erf(x)</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    By the Fundamental Theorem of Calculus, we have
+                    <me>erf'(x) = \frac{2}{\sqrt{\pi}}e^{-x^{2}}.</me>
+                    Note that <m>\erf'(x)\to0</m> as <m>x\to\infty</m>, which suggests that the error function "levels out" as <m>x</m> increases, which is in fact true.
+                </p>
+            </solution>
+        </example>
+        <example xml:id="example-computing-derivatives">
+            <title>Computing derivatives</title>
+            <statement>
+                <p>
+                    Let <m>f(x) = \int_{\sin x}^{1}\sqrt{t^{2} + e^{-t}}\,dt.</m>
+                    Find <m>f'(x)</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We have
+                    <md>
+                        <mrow>f'(x) &amp; = \dv{}{x}\int_{\sin x}^{1}\sqrt{t^{2} + e^{-t}}\,dt </mrow>
+                        <mrow> &amp; = -\dv{}{x}\int_{1}^{\sin x}\sqrt{t^{2} + e^{-t}}\,dt </mrow>
+                        <mrow> &amp; = -\sqrt{\sin^{2}x+e^{-\sin x}}\cos x. </mrow>
+                    </md>
+                    Here, <m>\sin x</m> acts like an inside function so we must use the chain rule in addition to the Fundamental Theorem of Calculus to find this derivative.
+                </p>
+            </solution>
+        </example>
+    </section>
 </chapter>
