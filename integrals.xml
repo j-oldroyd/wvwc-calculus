@@ -701,5 +701,44 @@
                 </p>
             </solution>
         </example>
+        <example xml:id="example-a-business-problem">
+            <title>A business problem</title>
+            <statement>
+                <p>
+                    A company purchases equipment that depreciates at a rate <m>f(t)</m> and accumulates maintenance costs at a rate <m>g(t)</m>, where <m>t</m> denotes the number of months after purchase.
+                    The company wants to minimize the cost per month of the equipment due to depreciation and maintenance. 
+                    After how much time should the company replace the equipment?
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    First, we need to figure out the cost per month due to depreciation and maintenance, call it <m>C(t)</m>.
+                    Then
+                    <me>C(t) = \frac{\text{total depreciation} - \text{total maintenance}}{t}.</me>
+                    Now, the total depreciation after <m>t</m> months is <m>\int_{0}^{t}f(s)\,ds</m>, and the total maintenance cost after <m>t</m> months is <m>\int_{0}^{t}g(s)\,ds</m>.
+                    So
+                    <me>C(t) = \frac{1}{t}\int_{0}^{t}[f(s) + g(s)]\,ds.</me>
+                    This is the function we need to minimize.
+                </p>
+                <p>
+                    To minimize <m>C(t)</m>, we'll start by finding its critical points.
+                    Assuming that each of these functions is differentiable, we have
+                    <me>C'(t) = -\frac{1}{t^{2}}\int_{0}^{t}[f(s)+g(s)]\,ds + \frac{f(t) + g(t)}{t}</me>
+                    which reduces to
+                    <me>C'(t) = -\frac{1}{t}C(t) + \frac{f(t) + g(t)}{t}.</me>
+                    So the critical points occur at any value <m>t = T</m> for which <m>C(T) = f(T) + g(T)</m>, i.e., the cost per month due to depreciation and maintenance equals the rate of depreciation plus the rate of maintenance costs.
+                </p>
+                <p>
+                    Now we need to see if we have a minimum or a maximum.
+                    To do so, we can use the second derivative test.
+                    After some algebra, we get that
+                    <me>C''(t) = 2\frac{C(t) - (f(t) + g(t))}{t^{2}} + \frac{f'(t) + g'(t)}{t^{2}},</me>
+                    and so
+                    <me>C''(T) = \frac{f'(T) + g'(T)}{T^{2}} &gt;0.</me>
+                    Therefore <m>T</m> gives a local minimum.
+                    If we assume that <m>C(t)</m> is differentiable everywhere, then this local minimum should also be an absolute minimum since it's the only critical point.
+                </p>
+            </solution>
+        </example>
     </section>
 </chapter>
