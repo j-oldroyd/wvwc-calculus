@@ -741,4 +741,171 @@
             </solution>
         </example>
     </section>
+    <section xml:id="section-substitution">
+        <title>Substitution</title>
+        <p>
+            By <xref ref="theorem-fundamental-theorem-of-calculus" text="type-global" />, we know that integration and differentiation are inverse operations.
+            This means that differentiation rules, such as the chain rule and product rule, have corresponding <em>integration</em> rules.
+            In this section we look at the integration rule corresponding to the chain rule, known as <m>u</m>-substitution, and in Calculus 2 you'll see the integration rule corresponding to the product rule.
+        </p>
+        <p>
+            To see how the chain rule leads to an integration rule, suppose we have an expression <m>F(g(x))</m> where <m>F,g</m> are differentiable.
+            Then the chain rule says that
+            <m>\dv{}{x}F(g(x)) = F'(g(x))g'(x).</m>
+            Now, write <m>F' = f</m> and make the substitution <m>u = g(x)</m>.
+            Then we get
+            <me>f(g(x))g'(x) = f(u)\dv{u}{x}.</me>
+            Now we can integrate both sides of this equation with respect to <m>x</m> to get
+            <me>\int f(g(x))g'(x)\,dx = \int f(u)\dv{u}{x}\,dx = \int f(u)\,du.</me>
+            This method is known as <term><m>u</m>-substitution</term>.
+        </p>
+        <theorem xml:id="theorem--u--substitution">
+            <title><m>u</m>-Substitution</title>
+            <statement>
+                <p>
+                    Let <m>u = g(x)</m> be a differentiable function whose range is an interval <m>I</m>.
+                    Let <m>f(x)</m> be a continuous function on <m>I</m>.
+                    Then 
+                    <me>\int f(g(x))g'(x)\,dx = \int f(u)\,du.</me>
+                </p>
+            </statement>
+        </theorem>
+        <p>
+            Solving an integral <m>\int f(x)\,dx</m> by <m>u</m>-substitution typically proceeds as follows:
+            <ol>
+                <li>Choose some substitution <m>u</m> to simplify your integral. Your choice for <m>u</m> will most likely be an "inside function".</li>
+                <li>Rewrite your integral in terms of <m>u</m> and <m>du</m> instead of <m>x</m> and <m>dx</m>.</li>
+                <li>Solve the resulting integral in terms of <m>u</m> if possible, and then rewrite your answer in terms of the original variable <m>x</m>.</li>
+            </ol>
+        </p>
+        <example xml:id="example-a-simple-substitution">
+            <title>A simple substitution</title>
+            <statement>
+                <p>
+                    Determine <m>\int e^{3x - 2}\,dx</m> by using the substitution <m>u = 3x - 2</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We need to rewrite the integral in terms of <m>u</m>.
+                    An easy way to start is to replace <m>3x-2</m> with <m>u</m>:
+                    <me>\int e^{3x-2}\,dx = \int e^{u}\,dx.</me>
+                    However, <em>we can't integrate yet</em>.
+                    This is because the integral needs to be written entirely in terms of <m>u</m> and <m>du</m>; no terms involving <m>x</m>, including <m>dx</m>, can remain.
+                    to rewrite <m>dx</m> in terms of <m>du</m>, we'll find <m>\dv{u}{x}</m> and then "solve" for <m>dx</m>:
+                    <me>\dv{u}{x} = 3 \Rightarrow du = 3\,dx \Rightarrow dx = \frac{du}{3}.</me>
+                    So our integral turns into
+                    <md>
+                        <mrow>\int e^{3x-2}\,dx &amp; = \int e^{u}\left(\frac{du}{3}\right) </mrow>
+                        <mrow> &amp; = \frac{1}{3}\int e^{u}\,du </mrow>
+                        <mrow> &amp; = \frac{1}{3}e^{u} + C. </mrow>
+                    </md>
+                    The last step is to replace <m>u</m> with <m>3x-2</m>, and so
+                    <me>\int e^{3x-2}\,dx = \frac{1}{3}e^{3x-2} + C.</me>
+                    We can also check this by differentiating.
+                </p>
+            </solution>
+        </example>
+        <example xml:id="example-simplifying-an-integral-with-substitution">
+            <title>Simplifying an integral with substitution</title>
+            <statement>
+                <p>
+                    Determine <m>\int(2 - 5t)^{-\frac{3}{2}}\,dt</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We can find <m>\int u^{-\frac{3}{2}}\,du</m> without too much trouble, but this integral is more complicated.
+                    However, we can use <m>u</m>-substitution to get our integral into this form.
+                    So we'll let <m>u = 2 - 5t</m>.
+                    Then <m>du = -5\,dt</m>, which means <m>dt = -\frac{du}{5}</m> and so
+                    <md>
+                        <mrow>\int(2-5t)^{-\frac{3}{2}}\,dt &amp; = \int u^{-\frac{3}{2}}\left(-\frac{1}{5}\,du\right) </mrow>
+                        <mrow> &amp; = -\frac{1}{5}\int u^{-\frac{3}{2}}\,du </mrow>
+                        <mrow> &amp; = \frac{1}{5}\frac{2}{1}u^{-\frac{1}{2}} + C </mrow>
+                        <mrow> &amp; = \frac{2}{5}(2 - 5t)^{-\frac{1}{2}} + C. </mrow>
+                    </md>
+                </p>
+            </solution>
+        </example>
+        <p>
+            <m>u</m>-substitution is often useful if one part of an integral can be written as the derivative of another part of the integral.
+        </p>
+        <example xml:id="example-integral-of-tangent">
+            <title>Integral of tangent</title>
+            <statement>
+                <p>
+                    Find the general antiderivative of <m>\tan x</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We need to find <m>\int\tan x\,dx</m>.
+                    If we rewrite <m>\tan x</m> in terms of sine and cosine, we get
+                    <me>\int\tan x = \int\frac{\sin x}{\cos x}\,dx.</me>
+                    It's not obvious, but we can solve this using <m>u</m>-substitution since <m>\sin x</m> looks a lot like the derivative of <m>\cos x</m>.
+                    So we'll let <m>u = \cos x</m>, giving <m>du = -\sin x\,dx</m> or just <m>dx = -\frac{du}{\sin x}</m>.
+                    This simplifies our integral to
+                    <me>\int\tan x\,dx = \int-\frac{du}{u} = -\ln|u| + C = -\ln|\cos x|+C.</me>
+                    Since <m>-\ln|\cos x| = \ln|\cos x|^{-1} = \ln|\sec x|</m>, this shows that the general antiderivative of <m>\tan x</m> is
+                    <me>\int \tan x\,dx = \ln|\sec x| + C.</me>
+                    Note that <m>u = \sin x</m> <em>would not work</em> in this example, at least not without some nasty algebra.
+                </p>
+            </solution>
+        </example>
+        <p>
+            We can also use <m>u</m>-substitution to find definite integrals.
+        </p>
+        <example xml:id="example-integrating-with-a-natural-log">
+            <title>Integrating with a natural log</title>
+            <statement>
+                <p>
+                    Determine <m>\int_{e^{2}}^{e^{4}}\frac{dx}{x\sqrt{\ln x}}</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    This integral looks awful, but the integrand contains <m>\ln x</m> and its derivative <m>\frac{1}{x}</m>, which suggests that the substitution <m>u = \ln x</m> might simplify things.
+                    So let <m>u = \ln x</m>.
+                    Then <m>du = \frac{1}{x}\,dx</m>, or <m>dx = x\,du</m>, and the integral becomes
+                    <md>
+                        <mrow>\int_{e^{2}}^{e^{4}}\frac{dx}{x\sqrt{\ln x}} &amp; \int_{x=e^{2}}^{x=e^{4}}\frac{x\,du}{x\sqrt{u}} </mrow>
+                        <mrow> &amp; = \int_{x=e^{2}}^{x=e^{4}}\frac{du}{\sqrt{u}} </mrow>
+                        <mrow> &amp; = \Big[u\Big]_{x=e^{2}}^{x=e^{4}} </mrow>
+                        <mrow> &amp; = \Big[\ln x\Big]_{e^{2}}^{e^{4}} </mrow>
+                        <mrow> &amp; = 2. </mrow>
+                    </md>
+                </p>
+            </solution>
+        </example>
+        <p>
+            In the last example we had to be careful about our limits of integration since they applied to <m>x</m> but not <m>u</m>.
+            We can simplify the process a little by converting the <m>x</m> limits to <m>u</m> limits, as shown in the next example.
+        </p>
+        <example xml:id="example-area-under-sine">
+            <title>Area under <m>x\sin x^{2}</m></title>
+            <statement>
+                <p>
+                    Find the area under the graph of <m>y = x\sin x^{2}</m> from <m>x=0</m> to <m>x = \sqrt{\pi}</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    The area is given by <m>\int_{0}^{\sqrt{\pi}}x\sin x^{2}\,dx</m>.
+                    We can solve this by <m>u</m>-substitution.
+                    Let <m>u = x^{2}</m>, our inside function.
+                    Then <m>du = 2x\,dx</m>, so <m>dx = \frac{du}{2x}</m> and our integral turns into
+                    <me>\int_{x=0}^{x=\sqrt{\pi}}\frac{1}{2}\sin u\,du.</me>
+                    Now we change the limits to be in terms of <m>u</m>, giving us <m>u = 0</m> and <m>u = \pi</m>.
+                    So the area is just
+                    <md>
+                        <mrow>\int_{0}^{\sqrt{\pi}}x\sin x^{2}\,dx &amp; = \int_{0}^{\pi}\frac{1}{2}\sin u\,du </mrow>
+                        <mrow> &amp; = \frac{1}{2}[-\cos u]_{0}^{\pi} </mrow>
+                        <mrow> &amp; = \frac{1}{2}(\cos0 - \cos\pi) </mrow>
+                        <mrow> &amp; = 1. </mrow>
+                    </md>
+                </p>
+            </solution>
+        </example>
+    </section>
 </chapter>
