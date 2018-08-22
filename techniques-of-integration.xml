@@ -163,7 +163,7 @@
                     So we'll try integration by parts on the new integral as well, with <m>u = e^{t}, du = e^{t}\,dt, dv = \sin t\,dt</m> and <m>v = -\cos t</m>.
                     Then
                 </p>
-                <me>\int e^{t}\sin t\,dt &amp; -e^{t}\cos t + \int e^{t}\cos t\,dt.</me>
+                <me>\int e^{t}\sin t\,dt = -e^{t}\cos t + \int e^{t}\cos t\,dt.</me>
                 <p>
                     So we have
                 </p>
