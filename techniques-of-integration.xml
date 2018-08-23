@@ -212,4 +212,96 @@
             </solution>
         </example>
     </section>
+    <section xml:id="section-trigonometric-integrals-and-substitution">
+        <title>Trigonometric Integrals and Substitution</title>
+        <p>
+            In this section we determine how to evaluate integrals involving powers of trigonometric functions (such as <m>\sin</m>, <m>\sec</m> and others), as well as integrals involving certain radicals.
+            Much of our work will follow from the important identity <m>\sin^{2}x + \cos^{2}x = 1</m>, as well as the <em>half-angle formulas</em>
+            <md>
+                <mrow>\sin^{2}x &amp; = \frac{1 - \cos2x}{2} </mrow>
+                <mrow>\cos^{2}x &amp; = \frac{1 + \cos2x}{2} </mrow>
+            </md>
+        </p>
+        <example xml:id="example-integrating-an-odd-power-of-cosine">
+            <title>Integrating an Odd Power of Cosine</title>
+            <statement>
+                <p>
+                    Determine <m>\int_{0}^{\frac{\pi}{6}}\cos^{5}(3x)\,dx</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Although it's not obvious, we can actually solve this integral with substitution.
+                    First, we'll separate a power of <m>\cos3x</m> from the rest in order to act as our <m>du</m>:
+                    <me>\int_{0}^{\frac{\pi}{6}}\cos^{4}(3x)\cos3x\,dx.</me>
+                    Now, if we want <m>\cos3x</m> to act as <m>du</m> in a substitution, then we need <m>u</m> to look like <m>\sin3x</m>.
+                    We can do this by using the Pythagorean Identity and writing <m>\cos^{4}(3x) = (1 - \sin^{2}(3x))^{2}</m>.
+                </p>
+                <p>
+                    Now we'll set <m>u = \sin3x</m>, which gives <m>du = 3\cos3x\,dx</m> and
+                </p>
+                <md>
+                    <mrow>\int_{0}^{\frac{\pi}{6}}\cos^{4}(3x)\cos3x\,dx &amp; = \int_{0}^{\frac{\pi}{6}}(1-\sin^{2}(3x))^{2}\cos3x\,dx </mrow>
+                    <mrow> &amp; = \frac{1}{3}\int_{0}^{\frac{1}{2}}(1 - u^{2})^{2}\,du </mrow>
+                    <mrow> &amp; = \int_{0}^{\frac{1}{2}}(1 - 2u^{2} + u^{4})\,du, </mrow>
+                </md>
+                <p>
+                    which we can finish integrating without much trouble.
+                </p>
+            </solution>
+        </example>
+        <p>
+            The trick we used above only worked because we had an odd power of cosine.
+            In general, when integrating <m>\int\sin^{m}x\cos^{n}x\,dx</m>, you want to separate a factor from an odd power (if there is one).
+            Then finish by using substitution.
+        </p>
+        <example xml:id="example-odd-powers-of-sine-and-cosine">
+            <title>Odd Powers of Sine and Cosine</title>
+            <statement>
+                <p>
+                    Determine <m>\int\sin^{3}t\cos^{5}t\,dt</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Remember: we want to separate a factor off of an odd power if there is one.
+                    Thankfully, we have two!
+                    We'll pick sine this time:
+                </p>
+                <md>
+                    <mrow>\int\sin^{3}t\cos^{5}t\,dt &amp; = \int\sin^{2}t\cos^{5}t\sin t\,dt </mrow>
+                    <mrow> &amp; = \int(1 - \cos^{2}t)\cos^{5}t\sin t\,dt </mrow>
+                    <mrow> &amp; = -\int(1 - u^{2})u^{5}\,du </mrow>
+                    <mrow> &amp; = -\int (u^{5} - u^{7})\,du. </mrow>
+                </md>
+                <p>
+                    At this point, the integral isn't too difficult to complete.
+                </p>
+            </solution>
+        </example>
+        <p>
+            If integrating even powers of sine and cosine, the algebra gets a little worse since the substitution trick applied above no longer works.
+        </p>
+        <example xml:id="example-integrating-even-powers-of-cosine">
+            <title>Integrating Even Powers of Cosine</title>
+            <statement>
+                <p>
+                    The integral <m>\int_{0}^{\frac{\pi}{2}}\cos^{2}\theta\,d\theta</m> appears when finding the area of the circle using integration.
+                    Find the value of this integral.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Since we have an even power to work with, we'll try the half-angle formula.
+                    This lets us reduce the power on the cosine, at the expense of multiplying <m>\theta</m> by <m>2</m>, which greatly works in our favor:
+                </p>
+                <md>
+                    <mrow>\int_{0}^{\frac{\pi}{2}}\cos^{2}\theta\,d\theta &amp; =\int_{0}^{1}\frac{1 + \cos2\theta}{2}\,d\theta </mrow>
+                    <mrow> &amp; = \frac{1}{2}\int_{0}^{\frac{\pi}{2}}(1 + \cos2\theta)\,d\theta </mrow>
+                    <mrow> &amp; = \frac{1}{2}\left[\theta + \frac{1}{2}\sin2\theta\right]_{0}^{\frac{\pi}{2}} </mrow>
+                    <mrow> &amp; = \frac{\pi}{4}. </mrow>
+                </md>
+            </solution>
+        </example>
+    </section>
 </chapter>
