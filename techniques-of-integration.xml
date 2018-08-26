@@ -310,12 +310,193 @@
             <title>Integrals Involving Powers of Secant and Tangent</title>
             <p>
                 In contrast to those involving sine and cosine, all of the integrals here involving secant and tangent are solvable using substitution.
-                However, we will need to make use of two integral formulas:
+                Generally, we'll attack these problems by separating a factor of <m>\sec^{2}x</m> (in which case we use <m>u = \tan x</m>) or a factor of <m>\sec x\tan x</m> (in which case we use <m>u = \sec x</m>).
+                This will often be done using the <em>Pythagorean identity</em>
+                <me>\tan^{2}x = \sec^{2}x - 1 </me>
+                We will occasionally need to make use of two integral formulas:
                 <md>
                     <mrow>\int\sec x\,dx &amp; = \ln|\sec x + \tan x| + C </mrow>
                     <mrow>\int\tan x\,dx &amp; = \ln|\sec x| + C </mrow>
                 </md>
             </p>
+            <example xml:id="example-integrating-a-power-of-tangent">
+                <title>Integrating a Power of Tangent</title>
+                <statement>
+                    <p>
+                        Determine <m>\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\tan^{6}w\,dw</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Our goal is to separate a factor of either <m>\sec^{2}w</m> or <m>\sec w\tan w</m> to serve as our <m>du</m>.
+                        Since neither appears, we'll use the Pythagorean identity to introduce a <m>\sec^{2}w</m> into our integral:
+                        <me>\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\tan^{6}w\,dw = \int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\tan^{4}w\sec^{2}w\,dw - \int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\tan^{4}w\,dw.</me>
+                    </p>
+                    <p>
+                        At this point the first integral can be solved using substitution, but the second integral needs to be rewritten again.
+                        However, the same trick we applied before works here too: just use the Pythagorean identity to introduce a factor of <m>\sec^{2}w</m>.
+                        This gives
+                        <md>
+                            <mrow>\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\tan^{6}w\,dw &amp; = \int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\tan^{4}w\sec^{2}w\,dw - \int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\tan^{2}w\sec^{2}w\,dw + \int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\tan^{2}w\,dw.</mrow>
+                            <mrow> &amp; = \int_{-1}^{1}u^{4}\,du - \int_{-1}^{1}u^{2}\,du + \int_{-1}^{1}\,du - \int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\,dw </mrow>
+                            <mrow> &amp; = \frac{2}{5} - \frac{2}{3} + 2 - \frac{\pi}{2}. </mrow>
+                        </md>
+                        So
+                        <me>\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\tan^{6}w\,dw = \frac{2}{5} - \frac{2}{3} + 2 - \frac{\pi}{2}.</me>
+                    </p>
+                </solution>
+            </example>
+            <example xml:id="example-integrating-a-product-of-tangent-and-secant">
+                <title>Integrating a Product of Tangent and Secant</title>
+                <statement>
+                    <p>
+                        Determine <m>\int\tan x\sec^{3} x\,dx</m>
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Here, we see that we can separate a factor of <m>\tan x\sec x</m> from the integrand, so we'll do that and use <m>u = \sec x</m>:
+                    </p>
+                    <md>
+                        <mrow>\int\tan x\sec^{3}x\,dx &amp; = \int \sec^{2}x \sec x\tan x\,dx </mrow>
+                        <mrow> &amp; = \int u^{2}\,du </mrow>
+                        <mrow> &amp; = \frac{\sec^{3}x}{3} + C. </mrow>
+                    </md>
+                </solution>
+            </example>
+            <p>
+                In general, try to follow the guidelines below when integrating products of secant and tangent:
+                <ul>
+                    <li>If the power of secant is <em>even</em>, then separate a factor of <m>\sec^{2}x</m> and use <m>u = \tan x</m>, along with the Pythagorean identity if necessary.</li>
+                    <li>If the power of tangent is <em>odd</em>, then separate a factor of <m>\sec x\tan x</m> and use <m>u = \sec x</m>, along with the Pythagorean identity if necessary.</li>
+                </ul>
+            </p>
+            <p>
+                Now, for an example that does not fall into the above guidelines.
+            </p>
+            <example xml:id="example-integrating-secant-cubed">
+                <title>Integrating Secant Cubed</title>
+                <statement>
+                    <p>
+                        Determine <m>\int\sec^{3}x\,dx</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        We're dealing with an odd power of secant, so splitting off a factor of <m>\sec^{2}x</m> won't help here.
+                        We also lack a <m>\tan x</m> term, so splitting off a factor of <m>\sec x\tan x</m> is tricky as well.
+                        We'll try integrating by parts instead, with
+                        <md>
+                            <mrow>u &amp; = \sec x &amp; du &amp; = \sec x\tan x\,dx</mrow>
+                            <mrow>dv &amp; = \sec^{2}x\,dx &amp; v &amp; = \tan x </mrow>
+                        </md>
+                        This gives
+                    </p>
+                    <md>
+                        <mrow>\int\sec^{3}x\,dx &amp; = \sec x\tan x - \int \sec x\tan^{2}x\,dx </mrow>
+                        <mrow> &amp; = \sec x\tan x - \int\sec^{3}x\,dx + \int\sec x\,dx </mrow>
+                        <mrow> &amp; = \sec x\tan x - \int\sec^{3}x\,dx + \ln|\sec x + \tan x| </mrow>
+                    </md>
+                    <p>
+                        Therefore
+                        <me>\int\sec^{3}x\,dx = \frac{1}{2}(\sec x\tan x + \ln|\sec x + \tan x|) + C.</me>
+                    </p>
+                </solution>
+            </example>
+        </subsection>
+        <subsection xml:id="subsection-trigonometric-substitutions">
+            <title>Trigonometric Substitutions</title>
+            <p>
+                An ellipse with horizontal axis length <m>a</m> and vertical axis length <m>b</m> centered at the origin is given by
+                <me>\frac{x^{2}}{a^{2}} + \frac{y^{2}}{b^{2}} = 1.</me>
+                If we want to find the area of this ellipse, then we can compute the following integral and multiply it by <m>4</m>:
+                <me>\int_{0}^{a}\sqrt{b^{2} - (\frac{b}{a})^{2}x^{2}}\,dx = \int_{0}^{a}\frac{b}{a}\sqrt{a^{2} - x^{2}}\,dx.</me>
+                This integral is difficult to solve due to the square root in the integrand; it's tough to imagine what an antiderivative might be.
+                So what we'll try to do is to use a "reverse substitution" that simplifies the square root.
+            </p>
+            <p>
+                To do so, notice that the Pythagorean identity gives <m>\cos^{2}\theta = 1 - \sin^{2}\theta</m>.
+                Taking the square root of the left hand side is much easier here than taking a root of the right hand side.
+                So we'll try that substitution here: let
+                <md>
+                    <mrow>x &amp; = a\sin\theta </mrow>
+                    <mrow>dx &amp; = a\cos\theta\,d\theta </mrow>
+                </md>
+                Then
+                <md>
+                    <mrow>\int_{0}^{a}\sqrt{a^{2} - x^{2}}\,dx &amp; = \int_{x = 0}^{x = a}\sqrt{a^{2} - a^{2}\sin^{2}\theta}a\cos\theta\,d\theta </mrow>
+                    <mrow> &amp; = a^{2}\int_{x = 0}^{x = a}\cos^{2}\theta\,d\theta </mrow>
+                </md>
+                Before we go further, let's figure out what our new limits are.
+                Since <m>x = a\sin\theta</m>, we have <m>\theta = \sin^{-1}\frac{x}{a}</m>, and so <m>-\frac{\pi}{2} \lt \theta \lt \frac{\pi}{2}</m>.
+                Hence we need our limits for <m>\theta</m> to be <m>\theta = 0</m> and <m>\theta = \frac{\pi}{2}</m>, and so we get
+                <me>\int_{0}^{a}\sqrt{a^{2} - x^{2}}\,dx = a^{2}\int_{0}^{\frac{\pi}{2}}\cos^{2}\theta\,d\theta.</me>
+                We've seen how to integrate a function like this in <xref ref="example-integrating-even-powers-of-cosine" text="type-global" />.
+                Hence the area of this ellipse is
+                <me>4\int_{0}^{a}\frac{b}{a}\sqrt{a^{2} - x^{2}}\,dx = 4ab\int_{0}^{\frac{\pi}{2}}\cos^{2}\theta\,d\theta = ab\pi.</me>
+            </p>
+            <p>
+                This method is known as <term>trigonometric substitution</term>, and is useful for simplifying radicals.
+                <xref ref="table-trig-substitutions" text="type-global" /> shows the various substitutions that can be used.
+            </p>
+            <table xml:id="table-trig-substitutions">
+                <caption>Trigonometric substitutions</caption>
+                <tabular halign="center" top="major">
+                    <row top="major" bottom="minor">
+                        <cell>radical</cell>
+                        <cell>substitution</cell>
+                        <cell>identity</cell>
+                    </row>
+                    <row>
+                        <cell><m>\sqrt{a^{2} - x^{2}}</m></cell>
+                        <cell><m>x = a\sin\theta</m></cell>
+                        <cell><m>\cos^{2}\theta = 1-\sin^{2}\theta</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>\sqrt{x^{2} - a^{2}}</m></cell>
+                        <cell><m>x = a\sec\theta</m></cell>
+                        <cell><m>\tan^{2}\theta = \sec^{2}\theta - 1</m></cell>
+                    </row>
+                    <row bottom="major">
+                        <cell><m>\sqrt{a^{2} + x^{2}}</m></cell>
+                        <cell><m>x = a\tan\theta</m></cell>
+                        <cell><m>\sec^{2}\theta = 1+\tan^{2}\theta</m></cell>
+                    </row>
+                </tabular>
+            </table>
+            <example xml:id="example-an-exponential-integral">
+                <title>An Exponential Integral</title>
+                <statement>
+                    <p>
+                        Determine <m>\displaystyle\int\frac{e^{t}}{(4 + e^{2t})^{3/2}}\,dt.</m>
+                    </p>
+                    <aside>
+                        <p>
+                            This is adapted from <em>Thomas' Calculus, <m>11^{\text{th}}</m> edition, exercise 30 on page 591.</em>
+                        </p>
+                    </aside>
+                </statement>
+                <solution>
+                    <p>
+                        Even though this integral involves only exponentials, we can simplify it using trigonometric substitution due to the presence of the radical.
+                        First, we'll use <m>u</m>-substitution to rewrite the integral into a form more suitable for trigonometric substitution: with <m>u = e^{t}</m> and <m>du = e^{t}\,dt</m>, we get
+                        <me>\int\frac{e^{t}}{(4 + e^{2t})^{3/2}}\,dt = \int\frac{du}{(4 + u^{2})^{3/2}}.</me>
+                    </p>
+                    <p>
+                        The appearance of <m>4 + u^{2}</m> in the denominator suggests that we use a tangent substitution, namely, <m>u = 2\tan\theta</m>.
+                        Then <m>du = 2\sec^{2}\theta\,d\theta</m>, and we get
+                        <md>
+                            <mrow>\int\frac{du}{(4 + u^{2})^{3/2}} &amp; = \int\frac{2\sec^{2}\theta}{4^{3/2}(1 + \tan^{2}\theta)^{3/2}}\,d\theta </mrow>
+                            <mrow> &amp; = \frac{1}{4}\int\cos\theta\,d\theta </mrow>
+                            <mrow> &amp; = \frac{1}{4}\sin\theta + C </mrow>
+                            <mrow> &amp; = \frac{1}{4}\sin\arctan\frac{u}{2} + C </mrow>
+                            <mrow> &amp; = \frac{1}{4}\sin\arctan\frac{e^{t}}{2} + C </mrow>
+                        </md>
+                        Using triangles, we can simplify this further to get
+                        <me>\int\frac{e^{t}}{(4 + e^{2t})^{3/2}}\,dt = \frac{e^{t}}{4\sqrt{4 + e^{2t}}} + C.</me>
+                    </p>
+                </solution>
+            </example>
         </subsection>
     </section>
 </chapter>
