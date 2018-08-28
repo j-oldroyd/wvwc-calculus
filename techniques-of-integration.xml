@@ -499,4 +499,136 @@
             </example>
         </subsection>
     </section>
+    <section xml:id="section-partial-fractions">
+        <title>Partial Fractions</title>
+        <p>
+            At this point we have tools available to us that allow us to compute integrals of products (<xref ref="section-integration-by-parts" text="type-global" />), and trigonometric functions and certain radicals(<xref ref="section-trigonometric-integrals-and-substitution" text="type-global" />).
+            Now we'll move on to a tool that will help us integrate rational functions (quotients of polynomials).
+            The idea behind this method is to write a rational function, such as <m>\frac{1}{x^{2} - 1}</m>, in terms of simpler fractions.
+            We'll demonstrate by example.
+        </p>
+        <example xml:id="example-integrating-a-rational-function">
+            <title>Integrating a Rational Function</title>
+            <statement>
+                <p>
+                    Let
+                    <me>f(x) = \frac{1}{x^{2} - 1}.</me>
+                    Find <m>\int f(x)\,dx</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We could try secant substitution, but that we'll instead focus on simplifying this fraction.
+                    First, factor the denominator:
+                    <me>\frac{1}{x^{2} - 1} = \frac{1}{(x-1)(x+1)}.</me>
+                </p>
+                <p>
+                    Now, assume that we can find constants <m>A_{1}, A_{2}</m> such that
+                    <me>\frac{1}{x^{2} - 1} = \frac{A_{1}}{x-1} + \frac{A_{2}}{x + 1}.</me>
+                    If we could find such constants, we could integrate the right hand side instead of the left hand side.
+                    There are a few ways to find these constants, but the easiest might be to just clear fractions by multiplying both sides by <m>x^{2} - 1</m>:
+                    <men xml:id="equation-partial-fraction-1">1 = A_{1}(x + 1) + A_{2}(x - 1).</men>
+                </p>
+                <p>
+                    So <m>A_{1},A_{2}</m> need to satisfy this equation <em>for all possible values of</em> <m>x</m>.
+                    We'll pick values for <m>x</m> that make it easy to find <m>A_{1}</m> and <m>A_{2}</m>.
+                    If <m>x = -1</m>, then <xref ref="equation-partial-fraction-1" text="type-global" /> becomes
+                    <me>1 = -2A_{2} \Rightarrow A_{2} = -\frac{1}{2}.</me>
+                    Similarly, <m>A_{1} = \frac{1}{2}.</m>
+                    Therefore
+                </p>
+                <md>
+                    <mrow>\int\frac{1}{x^{2}-1}\,dx &amp; = \int\left(\frac{1}{2}\frac{1}{x-1} - \frac{1}{2}\frac{1}{x+1}\right)\,dx </mrow>
+                    <mrow> &amp; = \frac{1}{2}\ln\left|\frac{x-1}{x+1}\right| + C. </mrow>
+                </md>
+            </solution>
+        </example>
+        <p>
+            Finding partial fraction decompositions as in <xref ref="example-integrating-a-rational-function" text="type-global" /> isn't too bad as long as the denominator can be factored into distinct (i.e. non-repeated) <em>linear factors</em>.
+            The situation is more complicated if the factors are repeated or are quadratics (or both).
+        </p>
+        <example xml:id="example-finding-a-partial-fraction-decomposition-with-repeated-powers">
+            <title>Finding a Partial Fraction Decomposition with Repeated Powers</title>
+            <statement>
+                <p>
+                    Find the partial fraction decomposition for <m>\frac{1}{(x^{2} - 1)^{2}}</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Since <m>\frac{1}{(x^{2} - 1)^{2}} = \frac{1}{(x-1)^{2}(x+1)^{2}}</m>, it's tempting to write
+                    <me>\frac{1}{(x^{2}-1)^{2}} = \frac{A_{1}}{x-1} + \frac{A_{2}}{x+1}.</me>
+                    Unfortunately, doing so gives <m>A_{1} = A_{2} = 0</m>, which obviously won't work.
+                    If we instead use
+                    <me>\frac{1}{(x^{2}-1)^{2}} = \frac{A_{1}}{(x-1)^{2}} + \frac{A_{2}}{(x+1)^{2}},</me>
+                    we get <m>A_{1} = A_{2} = \frac{1}{4}</m>.
+                    However,
+                    <me>\frac{1}{(x^{2}-1)^{2}} \neq \frac{\frac{1}{4}}{(x-1)^{2}} + \frac{\frac{1}{4}}{(x+1)^{2}}.</me>
+                </p>
+                <p>
+                    What we need to do is assume
+                    <me>\frac{1}{(x^{2}-1)^{2}} = \frac{A_{1}}{x-1} + \frac{A_{2}}{x+1} + \frac{A_{3}}{(x-1)^{2}} + \frac{A_{4}}{(x+1)^{2}}.</me>
+                    If we don't account for <em>each</em> power, we're not guaranteed a partial fraction decomposition.
+                    Now let's clear fractions:
+                    <men xml:id="equation-partial-fraction-2"> 1 = A_{1}(x-1)(x+1)^{2} + A_{2}(x+1)(x-1)^{2} + A_{3}(x+1)^{2} + A_{4}(x-1)^{2}.</men>
+                    Quickly, using <m>x=-1</m> we find that <m>A_{4} = \frac{1}{4}</m>, and using <m>x = 1</m> we find that <m>A_{3} = \frac{1}{4}</m>.
+                </p>
+                <p>
+                    At this point there are no nice values left to plug into the right hand side of <xref ref="equation-partial-fraction-2" text="type-global" />, so we need to find <m>A_{1}</m> and <m>A_{2}</m> another way.
+                    One possibility is to differentiate both sides to make the right hand side simpler, which gives
+                    <men xml:id="equation-partial-fraction-3">0 = A_{1}(x+1)^{2} + 2A_{1}(x^{2}-1) + A_{2}(x-1)^{2} + 2A_{2}(x^{2} - 1) + 2A_{3}(x+1) + 2A_{4}(x-1).</men>
+                    Now, entering <m>x = -1</m> into <xref ref="equation-partial-fraction-3" text="type-global" /> gives
+                    <me>0 = 4A_{2} - 4A_{4}</me>
+                    and so <m>A_{2} = A_{4} = \frac{1}{4}</m>.
+                    Similarly, <m>A_{1} = - A_{3} = -\frac{1}{4}</m>.
+                    Therefore
+                    <me>\frac{1}{(x^{2} - 1)}^{2} = \frac{1}{4}\left[-\frac{1}{x-1} + \frac{1}{x+1} + \frac{1}{(x-1)^{2}} + \frac{1}{(x+1)^{2}}\right].</me>
+                </p>
+            </solution>
+        </example>
+        <p>
+            In order to find partial fraction decompositions when the denominator contains a quadratic, we must allow for the possibility of the numerator being <em>linear</em>.
+        </p>
+        <example xml:id="example-partial-fraction-decomposition-with-a-quadratic">
+            <title>Partial Fraction Decomposition with a Quadratic</title>
+            <statement>
+                <p>
+                    Determine 
+                    <me>\int\frac{5x^{2} + x^{3}}{x^{5} + 3x^{3}}\,dx.</me>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    First, we can simplify:
+                    <me>\frac{x^{3} + 5x^{2}}{x^{5} + 3x^{3}} = \frac{x + 5}{x(x^{2} + 3)}.</me>
+                    Now that we've factored the denominator, we can attempt to find the partial fraction decomposition.
+                    So assume that
+                    <me>\frac{x + 5}{x(x^{2} + 3)} = \frac{A_{1}}{x} + \frac{A_{2}x + A_{3}}{x^{2} + 3}</me>
+                    Note the linear term <m>A_{2}x + A_{3}</m> above the quadratic!
+                </p>
+                <p>
+                    The rest of this computation goes like it did before.
+                    If we clear fractions, we get
+                    <me>x + 5 = A_{1}(x^{2} + 3) + A_{2}x^{2} + A_{3}x.</me>
+                    If we plug in <m>x = 0</m>, we obtain <m>A_{1} = \frac{5}{3}</m>.
+                    At this point, we could plug in <m>x = \sqrt{3}i</m> (which would be okay!) or differentiate both sides, but it might be easier to take the following approach: expand the right hand side and collect like terms to get
+                    <me>x + 5 = (A_{1} + A_{2})x^{2} + A_{3}x + 3A_{1}.</me>
+                </p>
+                <p>
+                    For the right hand side to equal the left hand side, <m>A_{1} + A_{2}</m> <em>must be zero</em>.
+                    Hence <m>A_{2} = -A_{1} = -\frac{5}{3}</m>.
+                    Similarly, <m>A_{3}</m> <em>must equal one</em>.
+                    Therefore
+                    <md>
+                        <mrow>\int\frac{x^{3} + 5x^{2}}{x^{5} + 3x^{3}}\,dx &amp; = \int\left[\frac{5/3}{x} + \frac{1 - \frac{5}{3}x}{x^{2} + 3}\right]\,dx </mrow>
+                        <mrow> &amp; = \frac{5}{3}\int\frac{1}{x}\,dx + \int\frac{1}{x^{2} + 3}\,dx - \frac{5}{3}\int\frac{x}{x^{2} + 3}\,dx </mrow>
+                        <mrow> &amp; = \frac{5}{3}\ln|x| + \frac{1}{\sqrt{3}}\tan^{-1}\frac{x}{\sqrt{3}} - \frac{5}{6}\ln(x^{2} + 3). </mrow>
+                    </md>
+                </p>
+            </solution>
+        </example>
+        <p>
+            The method of partial fractions works <em>as long as the degree of the numerator is strictly less than that of the denominator.</em>
+        </p>
+    </section>
 </chapter>
