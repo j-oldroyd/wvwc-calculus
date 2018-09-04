@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+
+*********************************************************************-->
+<!-- This file was originally part of the book     -->
+<!-- (as copied on 2015/07/12)                     -->
+<!--                                               -->
+<!--   Abstract Algebra: Theory and Applications   -->
+<!--                                               -->
+<!-- Copyright (C) 1997-2014  Thomas W. Judson     -->
+
+<chapter xml:id="techniques-of-integration" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <title>Techniques of Integration</title>
+    <introduction>
+        <p>
+            This chapter focuses on several techniques for evaluating complicated integrals.
+            As the tools in this chapter are in general more complicated than those that appeared in <xref ref="integrals" text="type-global" />, you should only use these if algebraic simplification or substitution are insufficient to compute an integral.
+        </p>
+    </introduction>
+    <section xml:id="section-integration-by-parts">
+        <title>Integration by Parts</title>
+        <p>
+            Suppose we want to integrate <m>f(x) = x\sin x</m>.
+            This can't be simplified using algebra (since integrals don't split up over products!) and substitution probably won't be very helpful, since <m>f(x)</m> does not already contain an "inside function" that we could replace.
+            The integration tools that we have are unable to compute this integral, so we need to develop more tools!
+        </p>
+        <p>
+            Recall that the substitution method for solving integrals from <xref ref="section-substitution" text="type-global" /> is derived from the chain rule.
+            In fact, by <xref ref="theorem-fundamental-theorem-of-calculus" text="type-global" /> every derivative rule available to us also provides a corresponding integration rule.
+            So perhaps the integration rule corresponding to the product rule can help us to integrate products. 
+            We call this method <em>integration by parts</em>.
+        </p>
+        <theorem xml:id="theorem-integration-by-parts">
+            <title>Integration by Parts</title>
+            <idx><h>integration techniques</h><h>integration by parts</h></idx>
+            <statement>
+                <p>
+                    Let <m>f(x)</m> and <m>g(x)</m> be continuous functions, with <m>g(x)</m> differentiable.
+                    Then
+                </p>
+                <me>\int f(x)g'(x)\,dx = f(x)g(x) - \int g(x)f'(x)\,dx.</me>
+            </statement>
+            <proof>
+                <p>
+                    By the product rule, we have <m>\dv{}{x}[f(x)g(x)] = f(x)g'(x) + f'(x)g(x)</m>.
+                    Rearranging this, we have
+                    <me>f(x)g'(x) = [f(x)g(x)]' - f'(x)g(x).</me>
+                    Finally, we can integrate both sides to get
+                    <me>\int f(x)g'(x)\,dx = f(x)g(x) - \int g(x)f'(x)\,dx.</me>
+                </p>
+            </proof>
+        </theorem>
+        <p>
+            A useful way to remember the integration by parts method is as follows:
+            <men xml:id="equation-integration-by-parts">\int u\,dv = uv - \int v\,du.</men>
+            Integration by parts can be used to integrate products of functions <em>that can't already be evaluated by simpler means</em>.
+        </p>
+        <example xml:id="example-using-the-integration-by-parts-formula">
+            <title>Using the Integration by Parts Formula</title>
+            <statement>
+                <p>
+                    Compute <m>\int x\sin x\,dx</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    To use <xref ref="equation-integration-by-parts" text="type-global" />, we need to write <m>\int x\sin x\,dx</m> in the form <m>\int u\,dv</m>.
+                    Once we have <m>u</m> and <m>dv</m>, then we can set up the rest of the formula.
+                    One thing that can make this method tricky is the fact that we can have many different choices for <m>u</m> and <m>dv</m>; the only thing we need for certain is for <m>u\,dv = x\sin x</m> here.
+                    However, if we look at the formula <xref ref="equation-integration-by-parts" text="type-global" /> then we'll see two new terms on the right hand side: <m>du</m> and <m>v</m>, together in the second integral.
+                    This means that we'll need to differentiate <m>u</m> and integrate <m>v</m>, and this will suggest what both should be.
+                </p>
+                <p>
+                    Since we need to compute <m>du</m>, then we want <m>u</m> to be easy to differentiate.
+                    Similarly, we want <m>dv</m> to be easy to integrate.
+                    And since we'd like to be able to compute this integral, we'd also like <m>v\,du</m> to be simpler than <m>u\,dv</m>.
+                    Now return to <m>x\sin x</m>.
+                    Since <m>x</m> gets simpler if we differentiate it by <m>\sin x</m> doesn't, this suggests that we should set <m>u = x</m>.
+                    And since <m>u = x</m>, we must have <m>dv = \sin x\,dx</m> (since <m>dv</m> automatically becomes whatever is left over).
+                    With these choices, we have
+                </p>
+                <md>
+                    <mrow>du &amp; = \,dx </mrow>
+                    <mrow>v &amp; = -\cos x </mrow>
+                </md>
+                <p>
+                    Therefore
+                </p>
+                <md>
+                    <mrow>\int x\sin x\,dx &amp; = \int u\,dv </mrow>
+                    <mrow> &amp; = uv - \int v\,du </mrow>
+                    <mrow> &amp; = -x\cos x - \int (-\cos x)\,dx </mrow>
+                    <mrow> &amp; = -x\cos x + \int\cos x\,dx </mrow>
+                    <mrow> &amp; = -x\cos x + \sin x + C. </mrow>
+                </md>
+            </solution>
+        </example>
+        <aside>
+            <p>
+                You may be wondering why we didn't include an arbitrary constant when we found <m>v</m> in <xref ref="example-using-the-integration-by-parts-formula" text="type-global" />.
+                This is because including an arbitrary constant here doesn't affect the final answer.
+                It's certainly not incorrect to include one here, but it adds more work than is already necessary.
+            </p>
+        </aside>
+        <p>
+            When using the integration by parts method, it's usually a good idea to choose <m>u</m> to be the polynomial portion of your integrand if there is one.
+            This is because polynomials become simpler when they're differentiated.
+            However, there are examples where <m>u</m> should be something else.
+        </p>
+        <example xml:id="example-integrals-involving-the-natural-logarithm">
+            <title>Integrals Involving the Natural Logarithm</title>
+            <statement>
+                <p>
+                    Determine <m>\int 3x^{2}\ln x\,dx</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Since we need to integrate a product, and we can't easily do so with <m>u</m>-substitution or algebra, we'll try integration by parts.
+                    We could pick <m>u = 3x^{2}</m>, and this is certainly easy to differentiate so we can find <m>du</m>.
+                    However, doing so leaves us with <m>dv = \ln x</m>, which is tricky to integrate, but is easy to differentiate.
+                    So we'll try setting <m>u = \ln x</m> and <m>dv = 3x^{2}\,dx</m>.
+                    Then
+                </p>
+                <md>
+                    <mrow>du &amp; = \frac{1}{x}\,dx </mrow>
+                    <mrow>v &amp; = x^{3} </mrow>
+                </md>
+                <p>
+                    and so
+                </p>
+                <md>
+                    <mrow>\int 3x^{2}\ln x\,dx &amp; = uv - \int v\,du </mrow>
+                    <mrow> &amp; = x^{3}\ln x - \int \frac{x^{3}}{x}\,dx </mrow>
+                    <mrow> &amp; = x^{3}\ln x - \frac{1}{3}x^{3} + C. </mrow>
+                </md>
+            </solution>
+        </example>
+        <example xml:id="example-an-integral-from-differential-equations">
+            <title>An Integral from Differential Equations</title>
+            <statement>
+                <p>
+                    An important concept in the field of differential equations is that of the <em>Laplace transform</em>.
+                    In the process of computing the Laplace transform of <m>\cos t</m>, an integral similar to <m>\int e^{t}\cos t\,dt</m> appears.
+                    Determine this integral.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Here, it doesn't make much difference what we select for <m>u</m> or <m>dv</m>, since both <m>e^{t}</m> and <m>\cos t</m> are easy to differentiate and integrate, while neither becomes simpler.
+                    But since we're integrating a product, we'll try to use integration by parts anyway and hope for the best.
+                    To that end, let <m>u = e^{t}</m> and <m>dv = \cos t</m>.
+                    Then <m>du = e^{t}\,dt</m> and <m>v = \sin t</m>, which gives
+                </p>
+                <md>
+                    <mrow>\int e^{t}\cos t\,dt &amp; = uv - \int v\,du </mrow>
+                    <mrow> &amp; = e^{t}\sin t - \int e^{t}\sin t\,dt. </mrow>
+                </md>
+                <p>
+                    As expected, the new integral isn't any simpler than the one that we started with.
+                    However, it's not any more <em>complicated</em> either.
+                    So we'll try integration by parts on the new integral as well, with <m>u = e^{t}, du = e^{t}\,dt, dv = \sin t\,dt</m> and <m>v = -\cos t</m>.
+                    Then
+                </p>
+                <me>\int e^{t}\sin t\,dt = -e^{t}\cos t + \int e^{t}\cos t\,dt.</me>
+                <p>
+                    So we have
+                </p>
+                <md>
+                    <mrow>\int e^{t}\cos t\,dt &amp; = e^{t}\sin t - (-e^{t}\cos t + \int e^{t}\cos t\,dt) </mrow>
+                    <mrow> &amp; = e^{t}\sin t + e^{t}\cos t - \int e^{t}\cos t\,dt </mrow>
+                </md>
+                <p>
+                    There is something very strange about this equation: <em>the same integral appears on both sides</em>.
+                    This is no longer a calculus problem, it's an algebra problem!
+                    Solving for the integral algebraically (and including the arbitrary constant!) gives
+                    <me>\int e^{t}\cos t\,dt = \frac{e^{t}\sin t + e^{t}\cos t}{2} + C.</me>
+                </p>
+            </solution>
+        </example>
+        <p>
+            Integrals with integrands of the form <m>P(x)e^{x}</m>, <m>P(x)\sin x</m> or <m>P(x)\cos x</m> (where <m>P(x)</m> is a polynomials) can be successfully evaluated using the <em>tabular method</em>.
+        </p>
+        <example xml:id="example-the-tabular-method">
+            <title>The Tabular Method</title>
+            <statement>
+                <p>
+                    Evaluate <m>\int (3x^{2} - 2x)\cos3x\,dx</m>.
+                </p>
+            </statement>
+        </example>
+        <p>
+            Integration by parts also applies to definite integrals.
+            You only need to remember to carry the limits through.
+        </p>
+        <example xml:id="example-sign-of-a-sine">
+            <title>Sign of a Sine</title>
+            <statement>
+                <p>
+                    Let <m>f(x) = x^{2}\sin x</m>.
+                    Does <m>f(x)</m> tend to be positive or negative along <m>[0,2\pi]</m>?
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We need to check the sign of <m>\int_{0}^{2\pi}x^{2}\sin x\,dx</m>.
+                    Using the tabular method, we get
+                    <me>\int_{0}^{2\pi}x^{2}\sin x\,dx = [-x^{2}\cos x + 2x\sin x + 2\cos x]_{0}^{2\pi} = -4\pi^{2} + 4\pi - 2.</me>
+                    Since this is negative, <m>f(x)</m> tends to be negative along <m>[0,2\pi]</m>.
+                </p>
+            </solution>
+        </example>
+    </section>
+    <section xml:id="section-trigonometric-integrals-and-substitution">
+        <title>Trigonometric Integrals and Substitution</title>
+        <p>
+            In this section we determine how to evaluate integrals involving powers of trigonometric functions (such as <m>\sin</m>, <m>\sec</m> and others), as well as integrals involving certain radicals.
+            Much of our work will follow from the important identity <m>\sin^{2}x + \cos^{2}x = 1</m>, as well as the <em>half-angle formulas</em>
+            <md>
+                <mrow>\sin^{2}x &amp; = \frac{1 - \cos2x}{2} </mrow>
+                <mrow>\cos^{2}x &amp; = \frac{1 + \cos2x}{2} </mrow>
+            </md>
+        </p>
+        <subsection xml:id="subsection-integrals-involving-powers-of-sine-and-cosine">
+            <title>Integrals Involving Powers of Sine and Cosine</title>
+            <example xml:id="example-integrating-an-odd-power-of-cosine">
+                <title>Integrating an Odd Power of Cosine</title>
+                <statement>
+                    <p>
+                        Determine <m>\int_{0}^{\frac{\pi}{6}}\cos^{5}(3x)\,dx</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Although it's not obvious, we can actually solve this integral with substitution.
+                        First, we'll separate a power of <m>\cos3x</m> from the rest in order to act as our <m>du</m>:
+                        <me>\int_{0}^{\frac{\pi}{6}}\cos^{4}(3x)\cos3x\,dx.</me>
+                        Now, if we want <m>\cos3x</m> to act as <m>du</m> in a substitution, then we need <m>u</m> to look like <m>\sin3x</m>.
+                        We can do this by using the Pythagorean Identity and writing <m>\cos^{4}(3x) = (1 - \sin^{2}(3x))^{2}</m>.
+                    </p>
+                    <p>
+                        Now we'll set <m>u = \sin3x</m>, which gives <m>du = 3\cos3x\,dx</m> and
+                    </p>
+                    <md>
+                        <mrow>\int_{0}^{\frac{\pi}{6}}\cos^{4}(3x)\cos3x\,dx &amp; = \int_{0}^{\frac{\pi}{6}}(1-\sin^{2}(3x))^{2}\cos3x\,dx </mrow>
+                        <mrow> &amp; = \frac{1}{3}\int_{0}^{\frac{1}{2}}(1 - u^{2})^{2}\,du </mrow>
+                        <mrow> &amp; = \int_{0}^{\frac{1}{2}}(1 - 2u^{2} + u^{4})\,du, </mrow>
+                    </md>
+                    <p>
+                        which we can finish integrating without much trouble.
+                    </p>
+                </solution>
+            </example>
+            <p>
+                The trick we used above only worked because we had an odd power of cosine.
+                In general, when integrating <m>\int\sin^{m}x\cos^{n}x\,dx</m>, you want to separate a factor from an odd power (if there is one).
+                Then finish by using substitution.
+            </p>
+            <example xml:id="example-odd-powers-of-sine-and-cosine">
+                <title>Odd Powers of Sine and Cosine</title>
+                <statement>
+                    <p>
+                        Determine <m>\int\sin^{3}t\cos^{5}t\,dt</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Remember: we want to separate a factor off of an odd power if there is one.
+                        Thankfully, we have two!
+                        We'll pick sine this time:
+                    </p>
+                    <md>
+                        <mrow>\int\sin^{3}t\cos^{5}t\,dt &amp; = \int\sin^{2}t\cos^{5}t\sin t\,dt </mrow>
+                        <mrow> &amp; = \int(1 - \cos^{2}t)\cos^{5}t\sin t\,dt </mrow>
+                        <mrow> &amp; = -\int(1 - u^{2})u^{5}\,du </mrow>
+                        <mrow> &amp; = -\int (u^{5} - u^{7})\,du. </mrow>
+                    </md>
+                    <p>
+                        At this point, the integral isn't too difficult to complete.
+                    </p>
+                </solution>
+            </example>
+            <p>
+                If integrating even powers of sine and cosine, the algebra gets a little worse since the substitution trick applied above no longer works.
+            </p>
+            <example xml:id="example-integrating-even-powers-of-cosine">
+                <title>Integrating Even Powers of Cosine</title>
+                <statement>
+                    <p>
+                        The integral <m>\int_{0}^{\frac{\pi}{2}}\cos^{2}\theta\,d\theta</m> appears when finding the area of the circle using integration.
+                        Find the value of this integral.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Since we have an even power to work with, we'll try the half-angle formula.
+                        This lets us reduce the power on the cosine, at the expense of multiplying <m>\theta</m> by <m>2</m>, which greatly works in our favor:
+                    </p>
+                    <md>
+                        <mrow>\int_{0}^{\frac{\pi}{2}}\cos^{2}\theta\,d\theta &amp; =\int_{0}^{1}\frac{1 + \cos2\theta}{2}\,d\theta </mrow>
+                        <mrow> &amp; = \frac{1}{2}\int_{0}^{\frac{\pi}{2}}(1 + \cos2\theta)\,d\theta </mrow>
+                        <mrow> &amp; = \frac{1}{2}\left[\theta + \frac{1}{2}\sin2\theta\right]_{0}^{\frac{\pi}{2}} </mrow>
+                        <mrow> &amp; = \frac{\pi}{4}. </mrow>
+                    </md>
+                </solution>
+            </example>
+        </subsection>
+        <subsection xml:id="subsection-integrals-involving-powers-of-secant-and-tangent">
+            <title>Integrals Involving Powers of Secant and Tangent</title>
+            <p>
+                In contrast to those involving sine and cosine, all of the integrals here involving secant and tangent are solvable using substitution.
+                Generally, we'll attack these problems by separating a factor of <m>\sec^{2}x</m> (in which case we use <m>u = \tan x</m>) or a factor of <m>\sec x\tan x</m> (in which case we use <m>u = \sec x</m>).
+                This will often be done using the <em>Pythagorean identity</em>
+                <me>\tan^{2}x = \sec^{2}x - 1 </me>
+                We will occasionally need to make use of two integral formulas:
+                <md>
+                    <mrow>\int\sec x\,dx &amp; = \ln|\sec x + \tan x| + C </mrow>
+                    <mrow>\int\tan x\,dx &amp; = \ln|\sec x| + C </mrow>
+                </md>
+            </p>
+            <example xml:id="example-integrating-a-power-of-tangent">
+                <title>Integrating a Power of Tangent</title>
+                <statement>
+                    <p>
+                        Determine <m>\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\tan^{6}w\,dw</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Our goal is to separate a factor of either <m>\sec^{2}w</m> or <m>\sec w\tan w</m> to serve as our <m>du</m>.
+                        Since neither appears, we'll use the Pythagorean identity to introduce a <m>\sec^{2}w</m> into our integral:
+                        <me>\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\tan^{6}w\,dw = \int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\tan^{4}w\sec^{2}w\,dw - \int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\tan^{4}w\,dw.</me>
+                    </p>
+                    <p>
+                        At this point the first integral can be solved using substitution, but the second integral needs to be rewritten again.
+                        However, the same trick we applied before works here too: just use the Pythagorean identity to introduce a factor of <m>\sec^{2}w</m>.
+                        This gives
+                        <md>
+                            <mrow>\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\tan^{6}w\,dw &amp; = \int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\tan^{4}w\sec^{2}w\,dw - \int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\tan^{2}w\sec^{2}w\,dw + \int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\tan^{2}w\,dw.</mrow>
+                            <mrow> &amp; = \int_{-1}^{1}u^{4}\,du - \int_{-1}^{1}u^{2}\,du + \int_{-1}^{1}\,du - \int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\,dw </mrow>
+                            <mrow> &amp; = \frac{2}{5} - \frac{2}{3} + 2 - \frac{\pi}{2}. </mrow>
+                        </md>
+                        So
+                        <me>\int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\tan^{6}w\,dw = \frac{2}{5} - \frac{2}{3} + 2 - \frac{\pi}{2}.</me>
+                    </p>
+                </solution>
+            </example>
+            <example xml:id="example-integrating-a-product-of-tangent-and-secant">
+                <title>Integrating a Product of Tangent and Secant</title>
+                <statement>
+                    <p>
+                        Determine <m>\int\tan x\sec^{3} x\,dx</m>
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Here, we see that we can separate a factor of <m>\tan x\sec x</m> from the integrand, so we'll do that and use <m>u = \sec x</m>:
+                    </p>
+                    <md>
+                        <mrow>\int\tan x\sec^{3}x\,dx &amp; = \int \sec^{2}x \sec x\tan x\,dx </mrow>
+                        <mrow> &amp; = \int u^{2}\,du </mrow>
+                        <mrow> &amp; = \frac{\sec^{3}x}{3} + C. </mrow>
+                    </md>
+                </solution>
+            </example>
+            <p>
+                In general, try to follow the guidelines below when integrating products of secant and tangent:
+                <ul>
+                    <li>If the power of secant is <em>even</em>, then separate a factor of <m>\sec^{2}x</m> and use <m>u = \tan x</m>, along with the Pythagorean identity if necessary.</li>
+                    <li>If the power of tangent is <em>odd</em>, then separate a factor of <m>\sec x\tan x</m> and use <m>u = \sec x</m>, along with the Pythagorean identity if necessary.</li>
+                </ul>
+            </p>
+            <p>
+                Now, for an example that does not fall into the above guidelines.
+            </p>
+            <example xml:id="example-integrating-secant-cubed">
+                <title>Integrating Secant Cubed</title>
+                <statement>
+                    <p>
+                        Determine <m>\int\sec^{3}x\,dx</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        We're dealing with an odd power of secant, so splitting off a factor of <m>\sec^{2}x</m> won't help here.
+                        We also lack a <m>\tan x</m> term, so splitting off a factor of <m>\sec x\tan x</m> is tricky as well.
+                        We'll try integrating by parts instead, with
+                        <md>
+                            <mrow>u &amp; = \sec x &amp; du &amp; = \sec x\tan x\,dx</mrow>
+                            <mrow>dv &amp; = \sec^{2}x\,dx &amp; v &amp; = \tan x </mrow>
+                        </md>
+                        This gives
+                    </p>
+                    <md>
+                        <mrow>\int\sec^{3}x\,dx &amp; = \sec x\tan x - \int \sec x\tan^{2}x\,dx </mrow>
+                        <mrow> &amp; = \sec x\tan x - \int\sec^{3}x\,dx + \int\sec x\,dx </mrow>
+                        <mrow> &amp; = \sec x\tan x - \int\sec^{3}x\,dx + \ln|\sec x + \tan x| </mrow>
+                    </md>
+                    <p>
+                        Therefore
+                        <me>\int\sec^{3}x\,dx = \frac{1}{2}(\sec x\tan x + \ln|\sec x + \tan x|) + C.</me>
+                    </p>
+                </solution>
+            </example>
+        </subsection>
+        <subsection xml:id="subsection-trigonometric-substitutions">
+            <title>Trigonometric Substitutions</title>
+            <p>
+                An ellipse with horizontal axis length <m>a</m> and vertical axis length <m>b</m> centered at the origin is given by
+                <me>\frac{x^{2}}{a^{2}} + \frac{y^{2}}{b^{2}} = 1.</me>
+                If we want to find the area of this ellipse, then we can compute the following integral and multiply it by <m>4</m>:
+                <me>\int_{0}^{a}\sqrt{b^{2} - (\frac{b}{a})^{2}x^{2}}\,dx = \int_{0}^{a}\frac{b}{a}\sqrt{a^{2} - x^{2}}\,dx.</me>
+                This integral is difficult to solve due to the square root in the integrand; it's tough to imagine what an antiderivative might be.
+                So what we'll try to do is to use a "reverse substitution" that simplifies the square root.
+            </p>
+            <p>
+                To do so, notice that the Pythagorean identity gives <m>\cos^{2}\theta = 1 - \sin^{2}\theta</m>.
+                Taking the square root of the left hand side is much easier here than taking a root of the right hand side.
+                So we'll try that substitution here: let
+                <md>
+                    <mrow>x &amp; = a\sin\theta </mrow>
+                    <mrow>dx &amp; = a\cos\theta\,d\theta </mrow>
+                </md>
+                Then
+                <md>
+                    <mrow>\int_{0}^{a}\sqrt{a^{2} - x^{2}}\,dx &amp; = \int_{x = 0}^{x = a}\sqrt{a^{2} - a^{2}\sin^{2}\theta}a\cos\theta\,d\theta </mrow>
+                    <mrow> &amp; = a^{2}\int_{x = 0}^{x = a}\cos^{2}\theta\,d\theta </mrow>
+                </md>
+                Before we go further, let's figure out what our new limits are.
+                Since <m>x = a\sin\theta</m>, we have <m>\theta = \sin^{-1}\frac{x}{a}</m>, and so <m>-\frac{\pi}{2} \lt \theta \lt \frac{\pi}{2}</m>.
+                Hence we need our limits for <m>\theta</m> to be <m>\theta = 0</m> and <m>\theta = \frac{\pi}{2}</m>, and so we get
+                <me>\int_{0}^{a}\sqrt{a^{2} - x^{2}}\,dx = a^{2}\int_{0}^{\frac{\pi}{2}}\cos^{2}\theta\,d\theta.</me>
+                We've seen how to integrate a function like this in <xref ref="example-integrating-even-powers-of-cosine" text="type-global" />.
+                Hence the area of this ellipse is
+                <me>4\int_{0}^{a}\frac{b}{a}\sqrt{a^{2} - x^{2}}\,dx = 4ab\int_{0}^{\frac{\pi}{2}}\cos^{2}\theta\,d\theta = ab\pi.</me>
+            </p>
+            <p>
+                This method is known as <term>trigonometric substitution</term>, and is useful for simplifying radicals.
+                <xref ref="table-trig-substitutions" text="type-global" /> shows the various substitutions that can be used.
+            </p>
+            <table xml:id="table-trig-substitutions">
+                <caption>Trigonometric substitutions</caption>
+                <tabular halign="center" top="major">
+                    <row top="major" bottom="minor">
+                        <cell>radical</cell>
+                        <cell>substitution</cell>
+                        <cell>identity</cell>
+                    </row>
+                    <row>
+                        <cell><m>\sqrt{a^{2} - x^{2}}</m></cell>
+                        <cell><m>x = a\sin\theta</m></cell>
+                        <cell><m>\cos^{2}\theta = 1-\sin^{2}\theta</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>\sqrt{x^{2} - a^{2}}</m></cell>
+                        <cell><m>x = a\sec\theta</m></cell>
+                        <cell><m>\tan^{2}\theta = \sec^{2}\theta - 1</m></cell>
+                    </row>
+                    <row bottom="major">
+                        <cell><m>\sqrt{a^{2} + x^{2}}</m></cell>
+                        <cell><m>x = a\tan\theta</m></cell>
+                        <cell><m>\sec^{2}\theta = 1+\tan^{2}\theta</m></cell>
+                    </row>
+                </tabular>
+            </table>
+            <example xml:id="example-an-exponential-integral">
+                <title>An Exponential Integral</title>
+                <statement>
+                    <p>
+                        Determine <m>\displaystyle\int\frac{e^{t}}{(4 + e^{2t})^{3/2}}\,dt.</m>
+                    </p>
+                    <aside>
+                        <p>
+                            This is adapted from <em>Thomas' Calculus, <m>11^{\text{th}}</m> edition, exercise 30 on page 591.</em>
+                        </p>
+                    </aside>
+                </statement>
+                <solution>
+                    <p>
+                        Even though this integral involves only exponentials, we can simplify it using trigonometric substitution due to the presence of the radical.
+                        First, we'll use <m>u</m>-substitution to rewrite the integral into a form more suitable for trigonometric substitution: with <m>u = e^{t}</m> and <m>du = e^{t}\,dt</m>, we get
+                        <me>\int\frac{e^{t}}{(4 + e^{2t})^{3/2}}\,dt = \int\frac{du}{(4 + u^{2})^{3/2}}.</me>
+                    </p>
+                    <p>
+                        The appearance of <m>4 + u^{2}</m> in the denominator suggests that we use a tangent substitution, namely, <m>u = 2\tan\theta</m>.
+                        Then <m>du = 2\sec^{2}\theta\,d\theta</m>, and we get
+                        <md>
+                            <mrow>\int\frac{du}{(4 + u^{2})^{3/2}} &amp; = \int\frac{2\sec^{2}\theta}{4^{3/2}(1 + \tan^{2}\theta)^{3/2}}\,d\theta </mrow>
+                            <mrow> &amp; = \frac{1}{4}\int\cos\theta\,d\theta </mrow>
+                            <mrow> &amp; = \frac{1}{4}\sin\theta + C </mrow>
+                            <mrow> &amp; = \frac{1}{4}\sin\arctan\frac{u}{2} + C </mrow>
+                            <mrow> &amp; = \frac{1}{4}\sin\arctan\frac{e^{t}}{2} + C </mrow>
+                        </md>
+                        Using triangles, we can simplify this further to get
+                        <me>\int\frac{e^{t}}{(4 + e^{2t})^{3/2}}\,dt = \frac{e^{t}}{4\sqrt{4 + e^{2t}}} + C.</me>
+                    </p>
+                </solution>
+            </example>
+        </subsection>
+    </section>
+    <section xml:id="section-partial-fractions">
+        <title>Partial Fractions</title>
+        <p>
+            At this point we have tools available to us that allow us to compute integrals of products (<xref ref="section-integration-by-parts" text="type-global" />), and trigonometric functions and certain radicals(<xref ref="section-trigonometric-integrals-and-substitution" text="type-global" />).
+            Now we'll move on to a tool that will help us integrate rational functions (quotients of polynomials).
+            The idea behind this method is to write a rational function, such as <m>\frac{1}{x^{2} - 1}</m>, in terms of simpler fractions.
+            We'll demonstrate by example.
+        </p>
+        <example xml:id="example-integrating-a-rational-function">
+            <title>Integrating a Rational Function</title>
+            <statement>
+                <p>
+                    Let
+                    <me>f(x) = \frac{1}{x^{2} - 1}.</me>
+                    Find <m>\int f(x)\,dx</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    We could try secant substitution, but that we'll instead focus on simplifying this fraction.
+                    First, factor the denominator:
+                    <me>\frac{1}{x^{2} - 1} = \frac{1}{(x-1)(x+1)}.</me>
+                </p>
+                <p>
+                    Now, assume that we can find constants <m>A_{1}, A_{2}</m> such that
+                    <me>\frac{1}{x^{2} - 1} = \frac{A_{1}}{x-1} + \frac{A_{2}}{x + 1}.</me>
+                    If we could find such constants, we could integrate the right hand side instead of the left hand side.
+                    There are a few ways to find these constants, but the easiest might be to just clear fractions by multiplying both sides by <m>x^{2} - 1</m>:
+                    <men xml:id="equation-partial-fraction-1">1 = A_{1}(x + 1) + A_{2}(x - 1).</men>
+                </p>
+                <p>
+                    So <m>A_{1},A_{2}</m> need to satisfy this equation <em>for all possible values of</em> <m>x</m>.
+                    We'll pick values for <m>x</m> that make it easy to find <m>A_{1}</m> and <m>A_{2}</m>.
+                    If <m>x = -1</m>, then <xref ref="equation-partial-fraction-1" text="type-global" /> becomes
+                    <me>1 = -2A_{2} \Rightarrow A_{2} = -\frac{1}{2}.</me>
+                    Similarly, <m>A_{1} = \frac{1}{2}.</m>
+                    Therefore
+                </p>
+                <md>
+                    <mrow>\int\frac{1}{x^{2}-1}\,dx &amp; = \int\left(\frac{1}{2}\frac{1}{x-1} - \frac{1}{2}\frac{1}{x+1}\right)\,dx </mrow>
+                    <mrow> &amp; = \frac{1}{2}\ln\left|\frac{x-1}{x+1}\right| + C. </mrow>
+                </md>
+            </solution>
+        </example>
+        <p>
+            Finding partial fraction decompositions as in <xref ref="example-integrating-a-rational-function" text="type-global" /> isn't too bad as long as the denominator can be factored into distinct (i.e. non-repeated) <em>linear factors</em>.
+            The situation is more complicated if the factors are repeated or are quadratics (or both).
+        </p>
+        <example xml:id="example-finding-a-partial-fraction-decomposition-with-repeated-powers">
+            <title>Finding a Partial Fraction Decomposition with Repeated Powers</title>
+            <statement>
+                <p>
+                    Find the partial fraction decomposition for <m>\frac{1}{(x^{2} - 1)^{2}}</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Since <m>\frac{1}{(x^{2} - 1)^{2}} = \frac{1}{(x-1)^{2}(x+1)^{2}}</m>, it's tempting to write
+                    <me>\frac{1}{(x^{2}-1)^{2}} = \frac{A_{1}}{x-1} + \frac{A_{2}}{x+1}.</me>
+                    Unfortunately, doing so gives <m>A_{1} = A_{2} = 0</m>, which obviously won't work.
+                    If we instead use
+                    <me>\frac{1}{(x^{2}-1)^{2}} = \frac{A_{1}}{(x-1)^{2}} + \frac{A_{2}}{(x+1)^{2}},</me>
+                    we get <m>A_{1} = A_{2} = \frac{1}{4}</m>.
+                    However,
+                    <me>\frac{1}{(x^{2}-1)^{2}} \neq \frac{\frac{1}{4}}{(x-1)^{2}} + \frac{\frac{1}{4}}{(x+1)^{2}}.</me>
+                </p>
+                <p>
+                    What we need to do is assume
+                    <me>\frac{1}{(x^{2}-1)^{2}} = \frac{A_{1}}{x-1} + \frac{A_{2}}{x+1} + \frac{A_{3}}{(x-1)^{2}} + \frac{A_{4}}{(x+1)^{2}}.</me>
+                    If we don't account for <em>each</em> power, we're not guaranteed a partial fraction decomposition.
+                    Now let's clear fractions:
+                    <men xml:id="equation-partial-fraction-2"> 1 = A_{1}(x-1)(x+1)^{2} + A_{2}(x+1)(x-1)^{2} + A_{3}(x+1)^{2} + A_{4}(x-1)^{2}.</men>
+                    Quickly, using <m>x=-1</m> we find that <m>A_{4} = \frac{1}{4}</m>, and using <m>x = 1</m> we find that <m>A_{3} = \frac{1}{4}</m>.
+                </p>
+                <p>
+                    At this point there are no nice values left to plug into the right hand side of <xref ref="equation-partial-fraction-2" text="type-global" />, so we need to find <m>A_{1}</m> and <m>A_{2}</m> another way.
+                    One possibility is to differentiate both sides to make the right hand side simpler, which gives
+                    <men xml:id="equation-partial-fraction-3">0 = A_{1}(x+1)^{2} + 2A_{1}(x^{2}-1) + A_{2}(x-1)^{2} + 2A_{2}(x^{2} - 1) + 2A_{3}(x+1) + 2A_{4}(x-1).</men>
+                    Now, entering <m>x = -1</m> into <xref ref="equation-partial-fraction-3" text="type-global" /> gives
+                    <me>0 = 4A_{2} - 4A_{4}</me>
+                    and so <m>A_{2} = A_{4} = \frac{1}{4}</m>.
+                    Similarly, <m>A_{1} = - A_{3} = -\frac{1}{4}</m>.
+                    Therefore
+                    <me>\frac{1}{(x^{2} - 1)}^{2} = \frac{1}{4}\left[-\frac{1}{x-1} + \frac{1}{x+1} + \frac{1}{(x-1)^{2}} + \frac{1}{(x+1)^{2}}\right].</me>
+                </p>
+            </solution>
+        </example>
+        <p>
+            In order to find partial fraction decompositions when the denominator contains a quadratic, we must allow for the possibility of the numerator being <em>linear</em>.
+        </p>
+        <example xml:id="example-partial-fraction-decomposition-with-a-quadratic">
+            <title>Partial Fraction Decomposition with a Quadratic</title>
+            <statement>
+                <p>
+                    Determine 
+                    <me>\int\frac{5x^{2} + x^{3}}{x^{5} + 3x^{3}}\,dx.</me>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    First, we can simplify:
+                    <me>\frac{x^{3} + 5x^{2}}{x^{5} + 3x^{3}} = \frac{x + 5}{x(x^{2} + 3)}.</me>
+                    Now that we've factored the denominator, we can attempt to find the partial fraction decomposition.
+                    So assume that
+                    <me>\frac{x + 5}{x(x^{2} + 3)} = \frac{A_{1}}{x} + \frac{A_{2}x + A_{3}}{x^{2} + 3}</me>
+                    Note the linear term <m>A_{2}x + A_{3}</m> above the quadratic!
+                </p>
+                <p>
+                    The rest of this computation goes like it did before.
+                    If we clear fractions, we get
+                    <me>x + 5 = A_{1}(x^{2} + 3) + A_{2}x^{2} + A_{3}x.</me>
+                    If we plug in <m>x = 0</m>, we obtain <m>A_{1} = \frac{5}{3}</m>.
+                    At this point, we could plug in <m>x = \sqrt{3}i</m> (which would be okay!) or differentiate both sides, but it might be easier to take the following approach: expand the right hand side and collect like terms to get
+                    <me>x + 5 = (A_{1} + A_{2})x^{2} + A_{3}x + 3A_{1}.</me>
+                </p>
+                <p>
+                    For the right hand side to equal the left hand side, <m>A_{1} + A_{2}</m> <em>must be zero</em>.
+                    Hence <m>A_{2} = -A_{1} = -\frac{5}{3}</m>.
+                    Similarly, <m>A_{3}</m> <em>must equal one</em>.
+                    Therefore
+                    <md>
+                        <mrow>\int\frac{x^{3} + 5x^{2}}{x^{5} + 3x^{3}}\,dx &amp; = \int\left[\frac{5/3}{x} + \frac{1 - \frac{5}{3}x}{x^{2} + 3}\right]\,dx </mrow>
+                        <mrow> &amp; = \frac{5}{3}\int\frac{1}{x}\,dx + \int\frac{1}{x^{2} + 3}\,dx - \frac{5}{3}\int\frac{x}{x^{2} + 3}\,dx </mrow>
+                        <mrow> &amp; = \frac{5}{3}\ln|x| + \frac{1}{\sqrt{3}}\tan^{-1}\frac{x}{\sqrt{3}} - \frac{5}{6}\ln(x^{2} + 3). </mrow>
+                    </md>
+                </p>
+            </solution>
+        </example>
+        <p>
+            Comparing like terms as in <xref ref="example-partial-fraction-decomposition-with-a-quadratic" text="type-global" /> is a useful technique even beyond partial fractions.
+        </p>
+        <p>
+            The method of partial fractions works <em>as long as the degree of the numerator is strictly less than that of the denominator.</em>
+        </p>
+        <algorithm xml:id="algorithm-partial-fractions-algorithm">
+            <title>Partial Fractions Algorithm</title>
+            <idx><h>partial fractions</h><h>algorithm</h></idx>
+            <statement>
+                <p>
+                    To find the partial fraction decomposition for the rational function <m>\frac{P(x)}{Q(x)}</m>, do the following:
+                    <ol>
+                        <li>Simplify <m>\frac{P(x)}{Q(x)}</m> as much as possible, using long division if necessary when <m>\deg P(x) \geq \deg Q(x)</m>.</li>
+                        <li>Factor <m>Q(x)</m>.</li>
+                        <li>Based on the factors of <m>Q(x)</m>, determine the proper form of the partial fraction decomposition.</li>
+                        <li>Clear fractions.</li>
+                        <li>Find the unknown constants of the decomposition by plugging values for <m>x</m> that simplify the equation, differentiating both sides, and/or comparing like terms.</li>
+                    </ol>
+                </p>
+            </statement>
+        </algorithm>
+        <example xml:id="example-using-long-division">
+            <title>Using Long Division</title>
+            <statement>
+                <p>
+                    Determine <m>\int\frac{2y^{4}}{y^{3} - y^{2} + y - 1}\,dy</m>.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Before setting up partial fractions, we should simplify the integrand as much as possible.
+                    Here, we can use long division since the degree of the numerator is greater than or equal to the degree of the denominator.
+                    Doing so, we get
+                    <me>\frac{2y^{4}}{y^{3} - y^{2} + y - 1} = 2y + 2 + \frac{2}{y^{3} - y^{2} + y - 1}.</me>
+                    We can integrate the first two terms on the right hand side easily, but we'll use partial fractions to rewrite the fraction:
+                    <md>
+                        <mrow>\frac{2}{y^{3} - y^{2} + y - 1} &amp; = \frac{2}{y^{2}(y - 1) + (y - 1)} </mrow>
+                        <mrow> &amp; = \frac{2}{y^{2}(y - 1)} </mrow>
+                        <mrow> &amp; = \frac{A_{1}}{y} + \frac{A_{2}}{y^{2}} + \frac{A_{3}}{y - 1} </mrow>
+                    </md>
+                </p>
+                <p>
+                    Now clear fractions to get
+                    <me>2 = A_{1}y(y-1) + A_{2}(y-1) + A_{3}y^{2}.</me>
+                    Setting <m>y = 0</m> gives <m>A_{2} = -2</m>, and setting <m>y = 1</m> gives <m>A_{3} = 2</m>.
+                    To find <m>A_{1}</m>, we can expand the right hand side to write
+                    <me>2 = A_{1}y^{2} - A_{1}y + A_{2}y - A_{2} + A_{3}y^{2}.</me>
+                    Hence <m>A_{1} = -A_{3} = -2</m>.
+                </p>
+                <p>
+                    Therefore
+                    <md>
+                        <mrow>\int\frac{2y^{4}}{y^{3} - y^{2} + y - 1}\,dy &amp; = \int\left[2y + 2 - \frac{2}{y} - \frac{2}{y^{2}} + \frac{2}{y - 1}\right]\,dy  </mrow>
+                        <mrow> &amp; = y^{2} + 2y - 2\ln|y| + \frac{2}{y} + 2\ln|y-1| + C. </mrow>
+                    </md>
+                </p>
+            </solution>
+        </example>
+        <p>
+            The next example shows a substitution that may occasionally work when partial fractions fails.
+        </p>
+        <example xml:id="example-twisty-substitution">
+            <title>Twisty Substitution</title>
+            <statement>
+                <p>
+                    Determine <m>\int_{\frac{1}{3}}^{3}\frac{\sqrt{x}}{x^{2} + x}\,dx.</m>
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    Once again we have a radical causing problems, and it's not in any of the three trigonometric substitution forms we can use either.
+                    We want it to go away, so we'll try just that: set <m>u = \sqrt{x}</m>, which gives <m>du = \frac{1}{2\sqrt{x}}\,dx</m>.
+                    Then
+                    <me>\int_{\frac{1}{3}}^{3}\frac{\sqrt{x}}{x^{2} + x}\,dx = \int_{\frac{1}{\sqrt{3}}}^{\sqrt{3}}\frac{2x}{x^{2} + x}\,du.</me>
+                    Now, we use the fact that <m>x = u^{2}</m> to write
+                    <me>\int_{\frac{1}{\sqrt{3}}}^{\sqrt{3}}\frac{2x}{x^{2} + x}\,du = \int_{\frac{1}{\sqrt{3}}}^{\sqrt{3}}\frac{2u^{2}}{u^{4} + u^{2}}\,du</me>
+                    which simplifies to
+                    <me>\int_{\frac{1}{\sqrt{3}}}^{\sqrt{3}}\frac{2}{u^{2} + 1}\,du = 2\tan^{-1}(\sqrt{3}) - 2\tan^{-1}\left(\frac{1}{\sqrt{3}}\right) = \frac{\pi}{3}.</me>
+                </p>
+            </solution>
+        </example>
+    </section>
+</chapter>
