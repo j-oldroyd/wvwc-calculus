@@ -214,14 +214,16 @@
     </section>
     <section xml:id="section-trigonometric-integrals-and-substitution">
         <title>Trigonometric Integrals and Substitution</title>
-        <p>
-            In this section we determine how to evaluate integrals involving powers of trigonometric functions (such as <m>\sin</m>, <m>\sec</m> and others), as well as integrals involving certain radicals.
-            Much of our work will follow from the important identity <m>\sin^{2}x + \cos^{2}x = 1</m>, as well as the <em>half-angle formulas</em>
-            <md>
-                <mrow>\sin^{2}x &amp; = \frac{1 - \cos2x}{2} </mrow>
-                <mrow>\cos^{2}x &amp; = \frac{1 + \cos2x}{2} </mrow>
-            </md>
-        </p>
+        <introduction>
+            <p>
+                In this section we determine how to evaluate integrals involving powers of trigonometric functions (such as <m>\sin</m>, <m>\sec</m> and others), as well as integrals involving certain radicals.
+                Much of our work will follow from the important identity <m>\sin^{2}x + \cos^{2}x = 1</m>, as well as the <em>half-angle formulas</em>
+                <md>
+                    <mrow>\sin^{2}x &amp; = \frac{1 - \cos2x}{2} </mrow>
+                    <mrow>\cos^{2}x &amp; = \frac{1 + \cos2x}{2} </mrow>
+                </md>
+            </p>
+        </introduction>
         <subsection xml:id="subsection-integrals-involving-powers-of-sine-and-cosine">
             <title>Integrals Involving Powers of Sine and Cosine</title>
             <example xml:id="example-integrating-an-odd-power-of-cosine">
@@ -593,7 +595,7 @@
             <title>Partial Fraction Decomposition with a Quadratic</title>
             <statement>
                 <p>
-                    Determine 
+                    Determine
                     <me>\int\frac{5x^{2} + x^{3}}{x^{5} + 3x^{3}}\,dx.</me>
                 </p>
             </statement>
@@ -727,16 +729,16 @@
                 where <m>m_{E}</m> is the mass of the Earth, <m>m_{O}</m> is still the mass of the object, <m>r</m> is the distance from the center of mass of the Earth to the center of mass of the object, and <m>G</m> is the gravitational constant.
                 Now assume that the Earth is a sphere of radius <m>R_{0}</m>, and that the object has enough velocity to move it a distance of <m>R_{1}</m> units from the surface of the Earth.
                 Then the total work done in moving the object this distance is
-                <me>\int_{R_{0}}^{R_{1}}F(r)\,dr = \frac{m_{E}m_{O}G}\int_{R_{0}}^{R_{1}}\frac{1}{r^{2}}\,dr.</me>
+                <me>\int_{R_{0}}^{R_{1}}F(r)\,dr = m_{E}m_{O}G\int_{R_{0}}^{R_{1}}\frac{1}{r^{2}}\,dr.</me>
                 Now let's think about should happen if the object is at escape velocity.
                 In this case, theoretically at least, there should be no limit to the distance the object can travel if given enough time.
                 So what's the total work done?
             </p>
             <p>
-                Let's try to compute <m>\frac{m_{E}m_{O}G}\int_{R_{0}}^{R_{1}}\frac{1}{r^{2}}\,dr.</m>
+                Let's try to compute <m>m_{E}m_{O}G\int_{R_{0}}^{R_{1}}\frac{1}{r^{2}}\,dr.</m>
                 We get
                 <md>
-                    <mrow>\frac{m_{E}m_{O}G}\int_{R_{0}}^{R_{1}}\frac{1}{r^{2}}\,dr &amp; = -\frac{m_{E}m_{O}G}{r}\big]_{R_{0}}^{R_{1}} </mrow>
+                    <mrow>m_{E}m_{O}G\int_{R_{0}}^{R_{1}}\frac{1}{r^{2}}\,dr &amp; = -\frac{m_{E}m_{O}G}{r}\big]_{R_{0}}^{R_{1}} </mrow>
                     <mrow> &amp; = \frac{m_{E}m_{O}G}{R_{0}} - \frac{m_{E}m_{O}G}{R_{1}}. </mrow>
                 </md>
                 Note that this is still an underestimate for the total work theoretically done, since <m>R_{1}</m> can increase without bound.
@@ -806,6 +808,218 @@
                 In <xref ref="example-a-divergent-integral" text="type-global" />, note that <m>\frac{1}{x}\to0</m> as <m>x\to\infty</m>.
                 However, it doesn't go to <m>0</m> <em>fast enough</em> for the integral to converge.
             </p>
+            <example xml:id="example-convergent-improper-integral">
+                <statement>
+                    <p>
+                        Is <m>\int_{1}^{\infty}\frac{1}{x^{2}}\,dx</m> convergent?
+                    </p>
+                </statement>
+            </example>
+            <p>
+                The convergence of <m>\int_{1}^{\infty}\frac{1}{x^{p}}\,dx</m> depends on the value of <m>p</m>.
+            </p>
+            <theorem xml:id="theorem-integral-p-test">
+                <title>Integral <m>p</m>-test</title>
+                <statement>
+                    <p>
+                        The integral <m>\int_{1}^{\infty}\frac{1}{x^{p}}\,dx</m> converges if and only if <m>p \gt 1</m>.
+                    </p>
+                </statement>
+            </theorem>
+            <example xml:id="example-area-under-a-graph">
+                <title>Area Under a Graph</title>
+                <statement>
+                    <p>
+                        Find the area under <m>f(x) = xe^{-x^{2}}</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        The area under <m>f(x)</m> is given by <m>\int_{-\infty}^{\infty}xe^{-x^{2}}</m>.
+                        To evaluate this integral, we must split it into two improper integrals:
+                        <md>
+                            <mrow>\int_{-\infty}^{\infty}xe^{-x^{2}}\,dx &amp; = \int_{-\infty}^{0}xe^{-x^{2}}\,dx + \int_{0}^{\infty}xe^{-x^{2}}\,dx </mrow>
+                            <mrow> &amp; = \lim_{a\to\-\infty}\int_{a}^{0}xe^{-x^{2}}\,dx + \lim_{b\to\infty}\int_{0}^{b}xe^{-x^{2}}\,dx </mrow>
+                        </md>
+                    </p>
+                    <p>
+                        At this point, we can use <m>u</m>-substitution to find each integral, using <m>u = -x^{2}</m> and <m>du = -2x\,dx</m>.
+                        So we get
+                        <md>
+                            <mrow>\lim_{a\to\-\infty}\int_{a}^{0}xe^{-x^{2}}\,dx + \lim_{b\to\infty}\int_{0}^{b}xe^{-x^{2}} &amp; = \lim_{a\to\-\infty}\int_{-a^{2}}^{0}\frac{-e^{u}}{2}\,du + \lim_{b\to\infty}\int_{0}^{-b^{2}}\frac{-e^{u}}{2}\,du </mrow>
+                            <mrow> &amp; = \lim_{a\to-\infty}\left[-\frac{1}{2} + \frac{e^{-a^{2}}}{2}\right] + \lim_{b\to\infty}\left[-\frac{e^{-b^{2}}}{2} + \frac{1}{2}\right]</mrow>
+                            <mrow> &amp; = \lim_{a\to\infty}\frac{e^{-a^{2}}}{2} - \lim_{b\to\infty}\frac{e^{-b^{2}}}{2} </mrow>
+                            <mrow> &amp; = 0. </mrow>
+                        </md>
+                    </p>
+                    <p>
+                        Hence the area under <m>f(x)</m> is <m>0</m> (which might not be so surprising if you graph <m>f(x)</m>).
+                    </p>
+                </solution>
+            </example>
+            <example xml:id="example-radioactive-decay">
+                <title>Radioactive Decay</title>
+                <statement>
+                    <p>
+                        A radioactive substance undergoes decay, and has mass <m>m(t)</m> at time <m>t</m> given by
+                        <me>m(t) = m_{0}e^{-kt}</me>
+                        for some <m>k\gt0</m>.
+                        The <em>expected lifetime</em> of a particle is given by
+                        <me>k\int_{0}^{\infty}te^{-kt}\,dt.</me>
+                        Find this value.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        We can solve this using integration by parts.
+                        Doing so, we get
+                        <md>
+                            <mrow>k\int_{0}^{\infty}te^{-kt}\,dt &amp; = -\lim_{b\to\infty}\left[te^{-kt} + \frac{1}{k}e^{-kt}\right]_{0}^{b} </mrow>
+                            <mrow> &amp; = \frac{1}{k} </mrow>
+                        </md>
+                        This can be verified using the code cell below.
+                    </p>
+                </solution>
+            </example>
+            <sage>
+                <input language="python">
+                    from sympy import *
+                    init_printing()
+
+                    # We need to assume that k is positive for the integral to converge.
+                    # This will also make SymPy assume that t is positive, but that's not a problem for us
+                    # since we're integrating over [0,oo).
+                    k,t = symbols('k t', positive=True)
+                    m = k*t*exp(-k*t)
+
+                    m.integrate((t, 0, oo))
+                </input>
+            </sage>
+        </subsection>
+        <subsection xml:id="subsection-improper-integrals-with-discontinuous-integrands">
+            <title>Improper Integrals with Discontinuous Integrands</title>
+            <p>
+                The second type of improper integral we'll consider involves integrands with "divide-by-zero" problems.
+            </p>
+            <definition xml:id="definition-type-2-improper-integral">
+                <title>Type 2 Improper Integral</title>
+                <statement>
+                    <p>
+                        If <m>f(x)</m> is continuous on <m>[a,b)</m> and is discontinuous at <m>b</m>, then
+                        <me>\int_{a}^{b}f(x)\,dx = \lim_{c\to b^{-}}\int_{a}^{c}f(x)\,dx</me>
+                        assuming this limit exists.
+                    </p>
+                    <p>
+                        If <m>f(x)</m> is continuous on <m>(a,b]</m> and is discontinuous at <m>a</m>, then
+                        <me>\int_{a}^{b}f(x)\,dx = \lim_{c\to a^{+}}\int_{c}^{b}f(x)\,dx</me>
+                        assuming this limit exists.
+                    </p>
+                    <p>
+                        If <m>f(x)</m> is at <m>c</m> where <m>a \lt c\lt b</m>, then
+                        <me>\int_{a}^{b}f(x)\,dx = \int_{a}^{c}f(x)\,dx + \int_{c}^{b}f(x)\,dx</me>
+                        assuming these integrals are convergent.
+                    </p>
+                </statement>
+            </definition>
+            <example xml:id="example-logarithmic-discontinuity">
+                <title>Logarithmic Discontinuity</title>
+                <statement>
+                    <p>
+                        Determine if <m>\int_{0}^{1}\ln x\,dx</m> is convergent.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        This integral is improper since <m>\ln x</m> is discontinuous at <m>x = 0</m>.
+                        To evaluate it, we'll use limits:
+                        <md>
+                            <mrow>\int_{0}^{1}\ln x\,dx &amp; = \lim_{c\to0^{+}}\int_{c}^{1}\ln x\,dx </mrow>
+                            <mrow> &amp; = \lim_{c\to0^{+}}\left[x\ln x - x\right]_{c}^{1} </mrow>
+                            <mrow> &amp; = -1 - \lim_{c\to0^{+}}c\ln c </mrow>
+                            <mrow> &amp; = -1, </mrow>
+                        </md>
+                        where we used the fact that <m>c\ln c\to 0</m> as <m>c\to0</m> by L'Hopital's Rule.
+                    </p>
+                </solution>
+            </example>
+        </subsection>
+        <subsection xml:id="subsection-comparison-tests-for-improper-integrals">
+            <title>Comparison Tests for Improper Integrals</title>
+            <p>
+                For integrals, we have two comparison tests that allow us to determine if an improper integral converges by comparing it with a simpler integral.
+                First, we'll look at the <term>direct comparison test</term>.
+            </p>
+            <theorem xml:id="theorem-direct-comparison-test">
+                <title>Direct Comparison Test</title>
+                <idx><h>integral convergence tests</h><h>direct comparison test</h></idx>
+                <statement>
+                    <p>
+                        Suppose that <m>f(x)</m> and <m>g(x)</m> are continuous functions and that
+                        <me>f(x) \geq g(x) \geq 0</me>
+                        for <m>x\geq a</m>, for some real number <m>a</m>.
+                        Then if <m>\int_{a}^{\infty}f(x)\,dx</m> converges, so goes <m>\int_{a}^{\infty}g(x)\,dx</m>.
+                        Likewise, if <m>\int_{a}^{\infty}g(x)\,dx</m> diverges, then so does <m>\int_{a}^{\infty}f(x)\,dx</m>.
+                    </p>
+                </statement>
+            </theorem>
+            <example>
+                <statement>
+                    <p>
+                        Does <m>\int_{1}^{\infty}\frac{1}{\sqrt{e^{x} - x}}\,dx</m> converge?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        This integrand looks pretty awful.
+                        However, we can say that
+                        <me>\frac{1}{\sqrt{e^{x} - x}} \leq \frac{1}{\sqrt{e^{x}}} = e^{-\frac{x}{2}}.</me>
+                        Since
+                        <md>
+                            <mrow>\int_{1}^{\infty}e^{-\frac{x}{2}}\,dx &amp; = 2\sqrt{e}, </mrow>
+                        </md>
+                        <xref ref="theorem-direct-comparison-test" text="type-global" /> implies that the original integral must converge as well.
+                        Note that we don't know <em>what</em> it converges to, only that it does.
+                    </p>
+                </solution>
+            </example>
+            <p>
+                To use <xref ref="theorem-direct-comparison-test" text="type-global" /> successfully, we need to choose a simpler function that's related to the integrand and then use algebra to justify a specific inequality.
+                It is sometimes more straightforward to apply the <term>limit comparison test</term>.
+            </p>
+            <theorem xml:id="theorem-limit-comparison-test">
+                <title>Limit Comparison Test</title>
+                <idx><h>integral convergence tests</h><h>limit comparison test</h></idx>
+                <statement>
+                    <p>
+                        Let <m>f(x)</m> and <m>g(x)</m> be positive, continuous functions on <m>[a,\infty)</m> for some constant <m>a</m>.
+                        If
+                        <me>\lim_{x\to\infty}\frac{f(x)}{g(x)}</me>
+                        exists and is positive, then the integrals
+                        <me>\int_{a}^{\infty}f(x)\,dx\quad\text{and}\quad\int_{a}^{\infty}g(x)\,dx</me>
+                        must both converge or both diverge.
+                    </p>
+                </statement>
+            </theorem>
+            <example>
+                <statement>
+                    <p>
+                        Determine if <m>\displaystyle\int_{1}^{\infty}\frac{3x^{3} + 2x^{5}}{5x^{7} + 4x^{2}}\,dx</m> converges.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        The integrand is awful again, but if <m>x</m> is very large then we can say that
+                        <me>\frac{3x^{3} + 2x^{5}}{5x^{7} + 4x^{2}} \approx \frac{1}{x^{2}}.</me>
+                        Since <m>\int_{1}^{\infty}\frac{1}{x^{2}}\,dx</m> converges, this suggests that maybe the original integral does as well.
+                        We can prove this using <xref ref="theorem-limit-comparison-test" text="type-global" />.
+                    </p>
+                    <p>
+                        In fact, we have
+                        <me>\lim_{x\to\infty}\frac{\frac{3x^{3} + 2x^{5}}{5x^{7} + 4x^{2}}}{\frac{1}{x^{2}}} = \frac{2}{5}.</me>
+                        Since this limit exists and is positive, then the original integral must also converge by the Limit Comparison Test.
+                    </p>
+                </solution>
+            </example>
         </subsection>
     </section>
 </chapter>

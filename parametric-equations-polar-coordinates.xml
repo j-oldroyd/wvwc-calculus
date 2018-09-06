@@ -27,7 +27,7 @@
         <p>produce the following parametric curve in the <m>xy</m>-plane.</p>
         <figure xml:id="figure-parametric-parabola">
             <image xml:id="image-parametric-parabola">
-                <latex-image-code><![CDATA[
+                <latex-image><![CDATA[
                     \begin{tikzpicture}
                     \draw[->] (-3cm,0cm) -- (8cm,0cm) node[right,fill=white] {$x$};     % Creates x and
                     \draw[->] (0cm,-2cm) -- (0cm,4cm) node[above,fill=white] {$y$};     % y axes.
@@ -59,7 +59,7 @@
                     % connect points
                     \draw [red] plot [smooth] coordinates {(A)(B)(C)(D)(E)};
                 \end{tikzpicture}]]>
-            </latex-image-code>
+            </latex-image>
         </image>
         <caption>The graph of <m>x = 2t^2-1, y=t+1</m> for <m>-2\leq t\leq 2</m>.</caption>
     </figure>
@@ -141,182 +141,209 @@
                         <mrow> &amp; = e^{3}-e^{-3}.</mrow>
                     </md>
                 </example>
+                <p>SUGGESTED PROBLEMS: 1, 3, 13, 37</p>
             </subsection>
-            <p>SUGGESTED PROBLEMS: 1, 3, 13, 37</p>
     </section>
     <section xml:id="section-polar-coordinates">
         <title>Polar Coordinates</title>
-        <p>We typically use <term>Cartesian</term> or <term>rectangular</term> coordinates to plot points. However, this can lead to issues if we have a graph that isn't rectangular. For example, the circle has a simple geometric description based on its center and radius, but in Cartesian coordinates it can be difficult to work with since every point on the (unit) circle takes the form <m>(x,\pm\sqrt{1-x^{2}})</m>. This square root makes integrals and derivatives complicated. The main problem lies in the fact that we are trying to describe a circle using a rectangular coordinate system. So our goal in this section is to find a more suitable coordinate system for circles.</p>
-        <p>A circle can be described as the set of all points some fixed distance <m>r</m> from a given point, and we can specify any point on the circle by using an angle <m>\theta</m>:</p>
-        <figure xml:id="figure-polar-coords">
-            <image xml:id="image-polar-coords">
-                <latex-image-code><![CDATA[
-                    \begin{tikzpicture}[scale=.6]
-    
-                    % Draw circle.
-                    \draw[thick] (0,0) circle (3);
-                    
-                    % Mark points.
-                    \coordinate (A) at (48:3);
-                    \coordinate (B) at (0,0);
-                    \coordinate (C) at (3,0);
-                    
-                    \fill[blue] (A) circle [radius=2pt];
-                    \node at (A) [above right]{$P$};
-                    
-                    % Label radius and angle \( \theta \).
-                    \draw[decorate,decoration={brace,amplitude=5pt},xshift=-1pt,yshift=2pt] 
-                        (B) -- (A) node[midway, above,xshift=-5pt]{$r$};
-                    \draw (B) -- (A);
-                    \draw (B) -- (C);
-                    
-                    \path[clip] (A) -- (B) -- (C);
-                    \draw[fill=red!40] (B) circle (1);
-                    \node at ($ (B) + (27:.6) $) {$\theta$};
-                    
-                \end{tikzpicture}]]>
-            </latex-image-code>
-        </image>
-        <caption>Using distance and angle to specify a point.</caption>
-    </figure>
-    <p>Any point <m>P</m> on the circle can be described solely using the distance <m>r</m> and the direction <m>\theta</m>. This leads directly to the idea of polar coordinates. In polar coordinates, the <m>xy</m>-plane is replaced with an <m>r\theta</m>-plane, or <term>polar plane</term>. Each point in the polar plane has the form <m>(r,\theta)</m>, where the <term>radial coordinate</term> <m>r</m> denotes the distance from the origin, or <term> pole</term>, and the <term>angular coordinate</term> <m>\theta</m> determines the angle the point makes with the horizontal <term>polar axis</term>. The polar axis replaces the positive <m>x</m>-axis from Cartesian coordinates:</p>
-    <figure xml:id="figure-polar-plane">
-        <image xml:id="image-polar-plane">
-            <latex-image-code><![CDATA[
-                \begin{tikzpicture}[scale=.6]
-    
-                % Draw polar angles.
-                \foreach \A in {0,30,...,360}
-                    \draw[thick, gray!40] (0,0) -- (\A:5.3);
-                \foreach \B in {0,30,...,330}
-                    \draw (\B:5.8) node[black]{$\B^\circ$};
-                    
-                \foreach \C in {45,135,225,315}
-                    \draw[thick,gray!40] (0,0) -- (\C:5.3);
-                \foreach \D in {45,135,225,315}
-                    \draw (\D:5.8) node[black]{$\D^\circ$};
-                    
-                % Draw polar cricles.
-                \foreach \r in {1,2,...,5}
-                    \draw[thick, gray!40] (0,0) circle (\r);
-                \foreach \s in {0,1,...,5}
-                    \draw (\s,0) node[below right]{$\s$};
-                \foreach \s in {0,1,...,5}
-                    \fill[black] (\s,0) circle [radius=2pt];
-                    
-                % Draw polar axis.
-                \draw[thick,<->] (-5.3,0) -- (5.3,0);
-                
-            \end{tikzpicture}
-                ]]>
-            </latex-image-code>
-        </image>
-        <caption>The polar plane.</caption>
-    </figure>
-    <p>In polar coordinates, positive <m>\theta</m> correspond to counterclockwise direction, and negative <m>\theta</m> correspond to clockwise direction. We also allow for <m>r</m> to be negative: this just means go in the direction opposite of <m>\theta</m>.</p>
-    <example xml:id="example-plotting-polar-coordinates">
-        <title>Plotting polar coordinates</title>
-        <p>Suppose we want to plot the points <m>(3,\pi), (-2,\frac{\pi}{4})</m> and <m>(2,\frac{5\pi}{4}).</m> We can do so in the polar plane by remembering that the first coordinate is distance from the pole, and the second coordinate is direction from the polar axis. If we plot these points, we see that <m>(-2,\frac{\pi}{4})</m> and <m>(2,\frac{5\pi}{4})</m> actually represent the same point. This is typical of polar coordinates: every point has, in general, infinitely many representations.</p>
-    </example>
-    <figure xml:id="figure-example-polar-coords">
-        <image xml:id="image-example-polar-coords">
-            <latex-image-code><![CDATA[
-                \begin{tikzpicture}[scale=.6]
+        <subsection xml:id="subsection-introducing-polar-coordinates">
+            <title>Introducing Polar Coordinates</title>
+            <p>
+                We typically use <term>Cartesian</term> or <term>rectangular</term> coordinates to plot points. 
+                However, this can lead to issues if we have a graph that isn't rectangular. 
+                For example, the circle has a simple geometric description based on its center and radius, but in Cartesian coordinates it can be difficult to work with since every point on the (unit) circle takes the form <m>(x,\pm\sqrt{1-x^{2}})</m>. 
+                This square root makes integrals and derivatives complicated. The main problem lies in the fact that we are trying to describe a circle using a rectangular coordinate system. 
+                So our goal in this section is to find a more suitable coordinate system for circles.
+            </p>
+            <p>
+                A circle can be described as the set of all points some fixed distance <m>r</m> from a given point, and we can specify any point on the circle by using an angle <m>\theta</m>:
+            </p>
+            <figure xml:id="figure-polar-coords">
+                <image xml:id="image-polar-coords">
+                    <latex-image><![CDATA[
+                        \begin{tikzpicture}[scale=.6]
         
-                % Draw polar angles.
-                \foreach \A in {0,30,...,360}
-                    \draw[thick, gray!40] (0,0) -- (\A:5.3);
-                \foreach \B in {0,30,...,330}
-                    \draw (\B:5.8) node[black]{$\B^\circ$};
-                    
-                \foreach \C in {45,135,225,315}
-                    \draw[thick,gray!40] (0,0) -- (\C:5.3);
-                \foreach \D in {45,135,225,315}
-                    \draw (\D:5.8) node[black]{$\D^\circ$};
+                        % Draw circle.
+                        \draw[thick] (0,0) circle (3);
+                        
+                        % Mark points.
+                        \coordinate (A) at (48:3);
+                        \coordinate (B) at (0,0);
+                        \coordinate (C) at (3,0);
+                        
+                        \fill[blue] (A) circle [radius=2pt];
+                        \node at (A) [above right]{$P$};
+                        
+                        % Label radius and angle \( \theta \).
+                        \draw[decorate,decoration={brace,amplitude=5pt},xshift=-1pt,yshift=2pt] 
+                            (B) -- (A) node[midway, above,xshift=-5pt]{$r$};
+                        \draw (B) -- (A);
+                        \draw (B) -- (C);
+                        
+                        \path[clip] (A) -- (B) -- (C);
+                        \draw[fill=red!40] (B) circle (1);
+                        \node at ($ (B) + (27:.6) $) {$\theta$};
+                        \end{tikzpicture}]]>
+                    </latex-image>
+                </image>
+                <caption>Using distance and angle to specify a point.</caption>
+            </figure>
+            <p>
+                Any point <m>P</m> on the circle can be described solely using the distance <m>r</m> and the direction <m>\theta</m>.
+                This leads directly to the idea of polar coordinates. In polar coordinates, the <m>xy</m>-plane is replaced with an <m>r\theta</m>-plane, or <term>polar plane</term>.
+                Each point in the polar plane has the form <m>(r,\theta)</m>, where the <term>radial coordinate</term> <m>r</m> denotes the distance from the origin, or <term> pole</term>, and the <term>angular coordinate</term> <m>\theta</m> determines the angle the point makes with the horizontal <term>polar axis</term>.
+                The polar axis replaces the positive <m>x</m>-axis from Cartesian coordinates:
+            </p>
+            <figure xml:id="figure-polar-plane">
+                <image xml:id="image-polar-plane">
+                    <latex-image><![CDATA[
+                        \begin{tikzpicture}[scale=.6]
                 
-                % Draw polar cricles.
-                \foreach \r in {1,2,...,5}
-                    \draw[thick,gray!40] (0,0) circle (\r);
-                \foreach \s in {0,1,...,5}
-                    \draw (\s,0) node[below right]{$\s$};
-                \foreach \s in {0,1,...,5}
-                    \fill[black] (\s,0) circle [radius=2pt];
-                    
-                % Draw polar axis.
-                \draw[thick,<->] (-5.3,0) -- (5.3,0);
+                            % Draw polar angles.
+                            \foreach \A in {0,30,...,360}
+                                \draw[thick, gray!40] (0,0) -- (\A:5.3);
+                            \foreach \B in {0,30,...,330}
+                                \draw (\B:5.8) node[black]{$\B^\circ$};
+                                
+                            \foreach \C in {45,135,225,315}
+                                \draw[thick,gray!40] (0,0) -- (\C:5.3);
+                            \foreach \D in {45,135,225,315}
+                                \draw (\D:5.8) node[black]{$\D^\circ$};
+                                
+                            % Draw polar cricles.
+                            \foreach \r in {1,2,...,5}
+                                \draw[thick, gray!40] (0,0) circle (\r);
+                            \foreach \s in {0,1,...,5}
+                                \draw (\s,0) node[below right]{$\s$};
+                            \foreach \s in {0,1,...,5}
+                                \fill[black] (\s,0) circle [radius=2pt];
+                                
+                            % Draw polar axis.
+                            \draw[thick,<->] (-5.3,0) -- (5.3,0);
+                            
+                            \end{tikzpicture}
+                                ]]>
+                            </latex-image>
+                        </image>
+                        <caption>The polar plane.</caption>
+                    </figure>
+            <p>
+                In polar coordinates, positive <m>\theta</m> correspond to counterclockwise direction, and negative <m>\theta</m> correspond to clockwise direction.
+                We also allow for <m>r</m> to be negative: this just means go in the direction opposite of <m>\theta</m>.
+            </p>
+            <example xml:id="example-plotting-polar-coordinates">
+                <title>Plotting polar coordinates</title>
+                <p>
+                    Suppose we want to plot the points <m>(3,\pi), (-2,\frac{\pi}{4})</m> and <m>(2,\frac{5\pi}{4}).</m>
+                    We can do so in the polar plane by remembering that the first coordinate is distance from the pole, and the second coordinate is direction from the polar axis.
+                    If we plot these points, we see that <m>(-2,\frac{\pi}{4})</m> and <m>(2,\frac{5\pi}{4})</m> actually represent the same point. This is typical of polar coordinates: every point has, in general, infinitely many representations.
+                </p>
+            </example>
+            <figure xml:id="figure-example-polar-coords">
+                <image xml:id="image-example-polar-coords">
+                    <latex-image><![CDATA[
+                        \begin{tikzpicture}[scale=.6]
                 
-                % Plot points.
-                \fill[blue] (180:3) circle [radius=3pt];
-                    \node at (180:3) [above left,fill=white,yshift=2pt]{\footnotesize $(3,\pi)$};
-                
-                \fill[blue] (45:-2) circle [radius=3pt];
-                    \node at (45:-2) [below,fill=white,yshift=-2pt]{\footnotesize $(-2,\pi/4),                      (2,5\pi/4)$};
-            \end{tikzpicture}]]>
-        </latex-image-code>
-    </image>
-    <caption>The plot from <xref ref="example-plotting-polar-coordinates" autoname="yes" />.</caption>
-    </figure>
-
-    <subsection xml:id="subsection-converting-coordinates">
-        <title>Converting Coordinates</title>
-        <p>If we want to use polar coordinates, then it'd be helpful to know how to convert between Cartesian (rectangular) coordinates and polar coordinates. The following diagram will help us to make these conversions.</p>
-        <figure xml:id="figure-cartesian-to-polar">
-            <image xml:id="image-cartesian-to-polar">
-                <latex-image-code><![CDATA[
-                    \begin{tikzpicture}
-                    % Label axes.
-                    \draw[->] (0,-.5) -- (0,3) node[above]{$y$};
-                    \draw[->] (-.5,0) -- (3,0) node[right]{$x$}; 
-                    
-                    % Draw and label polar/rectangular.
-                    \draw[blue] (0,0) -- (2,2) node[midway,above,black]{$r$};
-                    \node at (2,2) [above right]{$P$};
-                    
-                    \draw[red,dashed] (2,2) -- (2,0) node[midway,right,black]{$y$};
-                    \draw (0,0) -- (2,0) node[midway,below]{$x$};
-
-                    % Denote right angle.
-                    \draw[red!40,thin] (1.7,0) -- (1.7,.3) -- (2,.3); 
-
-                    % Draw arc.
-                    \draw[red,->] (0:1) arc (0:45:1) node[below right,black,xshift=5pt]{$\theta$};
-                    
-                    % Label point $P$.
-                    \fill[black] (2,2) circle [radius=2pt];
-
-                \end{tikzpicture}]]>
-                </latex-image-code>
+                        % Draw polar angles.
+                        \foreach \A in {0,30,...,360}
+                            \draw[thick, gray!40] (0,0) -- (\A:5.3);
+                        \foreach \B in {0,30,...,330}
+                            \draw (\B:5.8) node[black]{$\B^\circ$};
+                            
+                        \foreach \C in {45,135,225,315}
+                            \draw[thick,gray!40] (0,0) -- (\C:5.3);
+                        \foreach \D in {45,135,225,315}
+                            \draw (\D:5.8) node[black]{$\D^\circ$};
+                        
+                        % Draw polar cricles.
+                        \foreach \r in {1,2,...,5}
+                            \draw[thick,gray!40] (0,0) circle (\r);
+                        \foreach \s in {0,1,...,5}
+                            \draw (\s,0) node[below right]{$\s$};
+                        \foreach \s in {0,1,...,5}
+                            \fill[black] (\s,0) circle [radius=2pt];
+                            
+                        % Draw polar axis.
+                        \draw[thick,<->] (-5.3,0) -- (5.3,0);
+                        
+                        % Plot points.
+                        \fill[blue] (180:3) circle [radius=3pt];
+                            \node at (180:3) [above left,fill=white,yshift=2pt]{\footnotesize $(3,\pi)$};
+                        
+                        \fill[blue] (45:-2) circle [radius=3pt];
+                            \node at (45:-2) [below,fill=white,yshift=-2pt]{\footnotesize $(-2,\pi/4),                      (2,5\pi/4)$};
+                    \end{tikzpicture}]]>
+                </latex-image>
             </image>
-        </figure>
-        <p>So in terms of <m>r,\theta</m>, we have</p>
-        <md>
-            <mrow>x &amp; = r\cos\theta </mrow>
-            <mrow>y &amp; = r\sin\theta </mrow>
-        </md>
-        <p>Going in the other direction, the Pythagorean theorem tells us that <m>r = \sqrt{x^{2}+y^{2}}</m>, while <m>\tan\theta = \frac{y}{x}</m>.</p>
-        <example xml:id="example-converting-polar-to-cartesian">
-            <title>Converting polar to Cartesian</title>
-            <p>Suppose we want to convert the point <m>(3,\frac{\pi}{3})</m> in polar coordinates to Cartesian coordinates <m>(x,y)</m>. Then we have</p>
+            <caption>The plot from <xref ref="example-plotting-polar-coordinates" autoname="yes" />.</caption>
+            </figure>
+        </subsection>
+
+        <subsection xml:id="subsection-converting-coordinates">
+            <title>Converting Coordinates</title>
+            <p>
+                If we want to use polar coordinates, then it'd be helpful to know how to convert between Cartesian (rectangular) coordinates and polar coordinates.
+                The following diagram will help us to make these conversions.
+            </p>
+            <figure xml:id="figure-cartesian-to-polar">
+                <image xml:id="image-cartesian-to-polar">
+                    <latex-image><![CDATA[
+                        \begin{tikzpicture}
+                        % Label axes.
+                        \draw[->] (0,-.5) -- (0,3) node[above]{$y$};
+                        \draw[->] (-.5,0) -- (3,0) node[right]{$x$}; 
+                        
+                        % Draw and label polar/rectangular.
+                        \draw[blue] (0,0) -- (2,2) node[midway,above,black]{$r$};
+                        \node at (2,2) [above right]{$P$};
+                        
+                        \draw[red,dashed] (2,2) -- (2,0) node[midway,right,black]{$y$};
+                        \draw (0,0) -- (2,0) node[midway,below]{$x$};
+
+                        % Denote right angle.
+                        \draw[red!40,thin] (1.7,0) -- (1.7,.3) -- (2,.3); 
+
+                        % Draw arc.
+                        \draw[red,->] (0:1) arc (0:45:1) node[below right,black,xshift=5pt]{$\theta$};
+                        
+                        % Label point $P$.
+                        \fill[black] (2,2) circle [radius=2pt];
+
+                    \end{tikzpicture}]]>
+                    </latex-image>
+                </image>
+            </figure>
+            <p>So in terms of <m>r,\theta</m>, we have</p>
             <md>
-                <mrow>x &amp; = 3\cos\frac{\pi}{3} </mrow>
-                <mrow>y &amp; = 3\sin\frac{\pi}{3} </mrow>
+                <mrow>x &amp; = r\cos\theta </mrow>
+                <mrow>y &amp; = r\sin\theta </mrow>
             </md>
-            <p>and so the Cartesian point is <m>(\frac{3}{2},\frac{3\sqrt{3}}{2}).</m></p>
-        </example>
+            <p>
+                Going in the other direction, the Pythagorean theorem tells us that <m>r = \sqrt{x^{2}+y^{2}}</m>, while <m>\tan\theta = \frac{y}{x}</m>.
+            </p>
+            <example xml:id="example-converting-polar-to-cartesian">
+                <title>Converting polar to Cartesian</title>
+                <p>Suppose we want to convert the point <m>(3,\frac{\pi}{3})</m> in polar coordinates to Cartesian coordinates <m>(x,y)</m>. Then we have</p>
+                <md>
+                    <mrow>x &amp; = 3\cos\frac{\pi}{3} </mrow>
+                    <mrow>y &amp; = 3\sin\frac{\pi}{3} </mrow>
+                </md>
+                <p>and so the Cartesian point is <m>(\frac{3}{2},\frac{3\sqrt{3}}{2}).</m></p>
+            </example>
 
-        <example xml:id="example-converting-cartesian-to-polar">
-            <title>Converting Cartesian to polar</title>
-            <p>Suppose we now want to convert the point <m>(-\sqrt{3},1)</m> in Cartesian coordinates to polar coordinates. Then finding <m>r</m> is relatively straightforward: </p>
-            <me>r = \sqrt{3+1} = 2.</me>
-            <p>Finding <m>\theta</m> requires a bit more care. We know that <m>\theta</m> has to satisfy <m>\tan\theta = -\frac{1}{\sqrt{3}}</m>. One choice that makes this work is <m>\theta = -\frac{\pi}{6}</m>. However, this is incorrect! Whatever <m>\theta</m> is needs to be consistent with the fact that our point lies in the second quadrant. So we'll pick <m>\theta = \frac{5\pi}{6}</m> instead. Hence one way to write the point in polar coordinates is given by <m>(2,\frac{5\pi}{6}).</m></p>
-        </example>
+            <example xml:id="example-converting-cartesian-to-polar">
+                <title>Converting Cartesian to polar</title>
+                <p>Suppose we now want to convert the point <m>(-\sqrt{3},1)</m> in Cartesian coordinates to polar coordinates. Then finding <m>r</m> is relatively straightforward: </p>
+                <me>r = \sqrt{3+1} = 2.</me>
+                <p>Finding <m>\theta</m> requires a bit more care. We know that <m>\theta</m> has to satisfy <m>\tan\theta = -\frac{1}{\sqrt{3}}</m>. One choice that makes this work is <m>\theta = -\frac{\pi}{6}</m>. However, this is incorrect! Whatever <m>\theta</m> is needs to be consistent with the fact that our point lies in the second quadrant. So we'll pick <m>\theta = \frac{5\pi}{6}</m> instead. Hence one way to write the point in polar coordinates is given by <m>(2,\frac{5\pi}{6}).</m></p>
+            </example>
 
-        <example xml:id="example-converting-equations">
-            <title>Converting equations</title>
-            <p>Consider the polar equation <m>r\cos\theta = 2\sin\theta\cos\theta</m>. We can convert this into a Cartesian equation using the above formulas. In particular, we use <m>r\cos\theta = x</m> and <m>r\sin\theta = y</m>. So <m>\cos\theta = \frac{x}{r}, \sin\theta = \frac{y}{r}</m> and the equation becomes</p>
-            <me>x = \frac{2xy}{r^{2}} = \frac{2xy}{x^{2}+y^{2}}.</me>
-        </example>
-    </subsection>
+            <example xml:id="example-converting-equations">
+                <title>Converting equations</title>
+                <p>Consider the polar equation <m>r\cos\theta = 2\sin\theta\cos\theta</m>. We can convert this into a Cartesian equation using the above formulas. In particular, we use <m>r\cos\theta = x</m> and <m>r\sin\theta = y</m>. So <m>\cos\theta = \frac{x}{r}, \sin\theta = \frac{y}{r}</m> and the equation becomes</p>
+                <me>x = \frac{2xy}{r^{2}} = \frac{2xy}{x^{2}+y^{2}}.</me>
+            </example>
+        </subsection>
 
     <subsection xml:id="subsection-polar-curves">
         <title>Polar Curves</title>
@@ -339,7 +366,7 @@
         </example>
         <figure xml:id="figure-cosine-polar-circle">
             <image xml:id="image-cosine-polar-circle">
-                <latex-image-code><![CDATA[
+                <latex-image><![CDATA[
                     \begin{tikzpicture}[scale=.5]
                     % Draw polar angles.
                     \foreach \A in {0,30,...,360}
@@ -366,7 +393,7 @@
                     % Draw $r=-3\cos\theta$.
                     \draw[red] (-1.5,0) circle (1.5);
                 \end{tikzpicture}]]>
-                </latex-image-code>
+                </latex-image>
             </image>
             <caption>The circle from <xref ref="example-another-circle" autoname="yes" />.</caption>
         </figure>
@@ -374,13 +401,19 @@
 
     <subsection xml:id="subsection-cartesian-to-polar-method">
         <title>Cartesian to Polar Method</title>
-        <p>Graphing polar equations can be tricky, because it's easy to miss aspects of the graph unless you're careful. A useful method for graphing polar equations involves treating them as Cartesian equations first to get a better sense of how the graph behaves.</p>
+        <p>
+            Graphing polar equations can be tricky, because it's easy to miss aspects of the graph unless you're careful.
+            A useful method for graphing polar equations involves treating them as Cartesian equations first to get a better sense of how the graph behaves.
+        </p>
         <example xml:id="example-three-leaf-rose">
             <title>Three leaf rose</title>
-            <p>Suppose we want to graph <m>r = \cos3\theta</m>. We don't know what this looks like in the polar plane yet, but we have a pretty good idea of how it looks when treated as a Cartesian equation in the <m>r\theta</m>-plane (which we view as different from the polar plane!):</p>
+            <p>
+                Suppose we want to graph <m>r = \cos3\theta</m>.
+                We don't know what this looks like in the polar plane yet, but we have a pretty good idea of how it looks when treated as a Cartesian equation in the <m>r\theta</m>-plane (which we view as different from the polar plane!):
+            </p>
             <figure xml:id="figure-cosine-cartesian">
                 <image xml:id="image-cosine-cartesian">
-                    <latex-image-code><![CDATA[
+                    <latex-image><![CDATA[
                         \begin{tikzpicture}[yscale=1.5]
                             % Draw $theta$-axis points.
                             \foreach \T in {0,.5*pi,pi,1.5*pi,2*pi}
@@ -406,25 +439,27 @@
                             \draw[red,domain=0:1/3*pi,samples=100,smooth] plot (\x,{cos(3*\x r)});
                             \node at (0,1) [black,above right]{$A$};
                             \node at (1/3*pi,-1) [black,below]{$B$};
-                            \draw[blue,domain=1/3*pi:2/3*pi,samples=100,smooth] plot (\x,{cos(3*\x                  r)});
+                            \draw[blue,domain=1/3*pi:2/3*pi,samples=100,smooth] plot (\x,{cos(3*\x r)});
                             \node at (2/3*pi,1) [black, above]{$C$};
-                            \draw[green,domain=2/3*pi:pi,samples=100,smooth] plot (\x,{cos(3*\x     r)});
+                            \draw[green,domain=2/3*pi:pi,samples=100,smooth] plot (\x,{cos(3*\x r)});
                             \node at (pi,-1) [black,below]{$D$};
-                            \draw[yellow,domain=pi:4/3*pi,samples=100,smooth] plot (\x,{cos(3*\x                        r)});
+                            \draw[yellow,domain=pi:4/3*pi,samples=100,smooth] plot (\x,{cos(3*\x r)});
                             \node at (4/3*pi,1) [black,above]{$E$};
-                            \draw[purple,domain=4/3*pi:5/3*pi,samples=100,smooth] plot (\x,{cos(3*\x                r)});
+                            \draw[purple,domain=4/3*pi:5/3*pi,samples=100,smooth] plot (\x,{cos(3*\x r)});
                             \node at (5/3*pi,-1) [black,below]{$F$};
-                            \draw[orange,domain=5/3*pi:2*pi,samples=100,smooth] plot (\x,{cos(3*\x                  r)});
+                            \draw[orange,domain=5/3*pi:2*pi,samples=100,smooth] plot (\x,{cos(3*\x r)});
                             \node at (2*pi,1) [black,above]{$G$};
                         \end{tikzpicture}]]>
-                    </latex-image-code>
+                    </latex-image>
                 </image>
                 <caption>The graph of <m>r=\cos3\theta</m> as a Cartesian equation.</caption>
             </figure>
-            <p>So we see that at <m>\theta</m> goes from <m>0</m> to <m>\frac{\pi}{3}</m>, <m>r</m> decreases from <m>1</m> to <m>-1</m>, hitting <m>0</m> along the way at <m>\theta=\frac{\pi}{6}</m>.</p>
+            <p>
+                So we see that at <m>\theta</m> goes from <m>0</m> to <m>\frac{\pi}{3}</m>, <m>r</m> decreases from <m>1</m> to <m>-1</m>, hitting <m>0</m> along the way at <m>\theta=\frac{\pi}{6}</m>.
+            </p>
             <figure xml:id="figure-cosine-cartesian-1">
                 <image xml:id="image-cosine-cartesian-1">
-                    <latex-image-code><![CDATA[
+                    <latex-image><![CDATA[
                         \begin{tikzpicture}
                             % Draw polar angles.
                             \foreach \A in {0,30,...,360}
@@ -456,13 +491,15 @@
                             \fill[black] (1/3*pi r: -1) circle [radius=2pt];
                             \node at (1/3*pi r:-1) [black,below]{$B$};
                         \end{tikzpicture}]]>
-                    </latex-image-code>
+                    </latex-image>
                 </image>
             </figure>
-            <p>Now, as <m>\theta</m> goes from <m>\frac{\pi}{3}</m> to <m>\frac{2\pi}{3}</m> <m>r</m> will go from <m>-1</m> to <m>1</m>, hitting <m>0</m> at <m>\theta = \frac{\pi}{2}</m>:</p>
+            <p>
+                Now, as <m>\theta</m> goes from <m>\frac{\pi}{3}</m> to <m>\frac{2\pi}{3}</m> <m>r</m> will go from <m>-1</m> to <m>1</m>, hitting <m>0</m> at <m>\theta = \frac{\pi}{2}</m>:
+            </p>
             <figure xml:id="figure-cosine-cartesian-2">
                 <image xml:id="image-cosine-cartesian-2">
-                    <latex-image-code><![CDATA[
+                    <latex-image><![CDATA[
                         \begin{tikzpicture}
                             % Draw polar angles.
                             \foreach \A in {0,30,...,360}
@@ -500,13 +537,15 @@
                             \fill[black] (2/3*pi r: 1) circle [radius=2pt];
                             \node at (2/3*pi r:1) [black,above right]{$C$};
                         \end{tikzpicture}]]>
-                    </latex-image-code>
+                    </latex-image>
                 </image>
             </figure>
-            <p>Continuing in this manner lets us complete the graph:</p>
+            <p>
+                Continuing in this manner lets us complete the graph:
+            </p>
             <figure xml:id="figure-cosine-cartesian-3">
                 <image xml:id="image-cosine-cartesian-3">
-                    <latex-image-code><![CDATA[
+                    <latex-image><![CDATA[
                         \begin{tikzpicture}
                             % Draw polar angles.
                             \foreach \A in {0,30,...,360}
@@ -548,24 +587,30 @@
                             \draw[thick,color=green,domain=2/3*pi:pi,samples=200,smooth] plot (xy polar
                                 cs:angle=\x r,radius=      {cos(3*\x r)});
                         \end{tikzpicture}]]>
-                    </latex-image-code>
+                    </latex-image>
                 </image>
                 <caption>The graph of <m>r=\cos3\theta</m> in the polar plane.</caption>
             </figure>
         </example>
-        <p>SUGGESTED PROBLEMS: 1, 3, 11, 23, 37</p>
+        <p>
+            SUGGESTED PROBLEMS: 1, 3, 11, 23, 37
+        </p>
     </subsection>
     </section>
     <section xml:id="section-calculus-and-polar-coordinates">
         <title>Calculus and Polar Coordinates</title>
-        <p>Our goal now is to do calculus with polar coordinates.</p>
         <subsection xml:id="subsection-areas-of-polar-curves">
             <title>Areas of Polar Curves</title>
-            <p>To find the area of a region swept out by a polar curve, we need to reinvent the integral so to speak. In Cartesian coordinates, the integral was based on using rectangles to approximate areas. For polar coordinates, it makes more sense to use circular sectors.</p>
-            <p>Consider a region <m>R</m> bounded by the polar curve <m>r = f(\theta)</m>:</p>
+            <p>
+                To find the area of a region swept out by a polar curve, we need to reinvent the integral so to speak.
+                In Cartesian coordinates, the integral was based on using rectangles to approximate areas. For polar coordinates, it makes more sense to use circular sectors.
+            </p>
+            <p>
+                Consider a region <m>R</m> bounded by the polar curve <m>r = f(\theta)</m>:
+            </p>
             <figure xml:id="figure-polar-region">
                 <image xml:id="image-polar-region">
-                    <latex-image-code><![CDATA[
+                    <latex-image><![CDATA[
                         \begin{tikzpicture}[scale=1.5]
                             
                             \draw[thick,->] (0,0) -- (5,0);     
@@ -603,14 +648,17 @@
                             % Label $f(\theta)$
                             \node at (4,2) [black]{$f(\theta)$};
                         \end{tikzpicture}]]>
-                    </latex-image-code>
+                    </latex-image>
                 </image>
             </figure>
-            <p>To find the area of this region, we'll approximate it using circular sectors. Since we want to find the area between <m>\theta=\alpha</m> and <m>\theta=\beta</m>, we'll break the interval <m>[\alpha,\beta]</m> into <m>n</m> subintervals <m>[\theta_{i},\theta_{i+1}]</m> of equal length <m>\Delta\theta</m>, with</p>
+            <p>
+                To find the area of this region, we'll approximate it using circular sectors.
+                Since we want to find the area between <m>\theta=\alpha</m> and <m>\theta=\beta</m>, we'll break the interval <m>[\alpha,\beta]</m> into <m>n</m> subintervals <m>[\theta_{i},\theta_{i+1}]</m> of equal length <m>\Delta\theta</m>, with
+            </p>
             <me>\alpha = \theta_{0} &lt; \theta_{1} &lt; \dots &lt; \theta_{n} = \beta.</me>
             <figure xml:id="figure-polar-region-1">
                 <image xml:id="image-polar-region-1">
-                    <latex-image-code><![CDATA[
+                    <latex-image><![CDATA[
                         \begin{tikzpicture}[scale=1.5]
 
                             \draw[thick,->] (0,0) -- (5,0);     
@@ -672,7 +720,7 @@
                             % Label $f(\theta)$
                             \node at (5,1) [black]{$f(\theta)$};
                         \end{tikzpicture}]]>
-                    </latex-image-code>
+                    </latex-image>
                 </image>
                 <caption>Approximating the region with circular sectors.</caption>
             </figure>
@@ -703,7 +751,7 @@
                 <p>To find this, we'll need to figure out the limits of integration. For polar plots, the best way to do this is by graphing. We'll graph <m>r=4+4\cos\theta</m> by using the Cartesian to polar methods described in <xref ref="subsection-cartesian-to-polar-method" autoname="yes" />. First, we treat this as a Cartesian curve in the <m>r\theta</m>-plane and graph it to get</p>
                 <figure xml:id="figure-cardioid">
                     <image xml:id="image-cardioid">
-                        <latex-image-code><![CDATA[
+                        <latex-image><![CDATA[
                             \begin{tikzpicture}[scale=.6]
 
                                 % Draw $theta$-axis points.
@@ -727,16 +775,16 @@
                                 \draw[->] (.05,0) -- (2.1*pi,0) node[black,above right]{$\theta$};
                                 
                                 % Plot graph of $r=4+4*\cos\theta$.
-                                \draw[red,domain=0:2*pi,samples=100,smooth,thick] plot (\x,                                 {4+4*cos(\x r)});   
+                                \draw[red,domain=0:2*pi,samples=100,smooth,thick] plot (\x, {4+4*cos(\x r)});   
 
                             \end{tikzpicture}]]>
-                        </latex-image-code>
+                        </latex-image>
                     </image>
                 </figure>
                 <p>Now we can plot the corresponding polar curve:</p>
                 <figure xml:id="figure-cardioid-1">
                     <image xml:id="image-cardioid-1">
-                        <latex-image-code><![CDATA[
+                        <latex-image><![CDATA[
                             \begin{tikzpicture}[scale=.6]
 
                                 % Draw polar angles.
@@ -765,7 +813,7 @@
                                 \draw[thick,color=red,domain=0:2*pi,samples=200,smooth] plot (xy polar
                                     cs:angle=\x r,radius= {4+4*cos(\x r)});
                             \end{tikzpicture}]]>
-                        </latex-image-code>
+                        </latex-image>
                     </image>
                 </figure>
                 <p>The important thing to notice is that we trace out the curve exactly once as <m>\theta</m> goes from <m>0</m> to <m>2\pi</m>, so our limits should be <m>0</m> and <m>2\pi</m>. Hence the area of this region is given by</p>
@@ -781,7 +829,7 @@
                 <p>As another example of the use of <xref ref="theorem-area-in-polar-coordinates" autoname="yes" />, we'll find the area of the region contained by the polar curves <m>r = 4\cos2\theta</m> and outside the circle <m>r=2</m>. Again, a great way to start this problem is to graph the region under consideration.</p>
                 <figure xml:id="figure-rose-circle">
                     <image xml:id="image-rose-circle">
-                        <latex-image-code><![CDATA[
+                        <latex-image><![CDATA[
                             \begin{tikzpicture}[scale=.5]
 
                                 % Shades regions.
@@ -822,7 +870,7 @@
                                 \draw[thick,red] (0,0) circle (2);
 
                             \end{tikzpicture}]]>
-                        </latex-image-code>
+                        </latex-image>
                     </image>
                 </figure>
                 <p>With a little bit of work, we can see that the area of one of these shaded regions is given by</p>
@@ -850,7 +898,7 @@
                 <p>Let <m>r = \cos2\theta</m>. Then this gives a four-leaf rose in the polar plane. We want to find the length of one leaf of this rose. As usual, it's a good idea to graph this curve first.</p>
                 <figure xml:id="figure-rose">
                     <image xml:id="image-rose">
-                        <latex-image-code><![CDATA[
+                        <latex-image><![CDATA[
                             \begin{tikzpicture}[scale=.5]
                                 % Prevents overshading.
                                 \fill[white] (0,0) circle (2);
@@ -881,15 +929,19 @@
                                 \draw[thick,color=red,domain=0:2*pi,samples=200,smooth] plot (xy polar
                                     cs:angle=\x r,radius= {cos(2*\x r)});
                             \end{tikzpicture}]]>
-                        </latex-image-code>
+                        </latex-image>
                     </image>
                     <caption>The four leaf rose <m>r=\cos2\theta</m>.</caption>
                 </figure>
-                <p>One leaf of the rose should be captured as <m>\theta</m> varies from <m>-\frac{\pi}{4}</m> to <m>\frac{\pi}{4}</m>, so using <xref ref="theorem-arc-length-of-a-polar-curve" autoname="yes" /> we can find the length of this leaf:</p>
+                <p>
+                    One leaf of the rose should be captured as <m>\theta</m> varies from <m>-\frac{\pi}{4}</m> to <m>\frac{\pi}{4}</m>, so using <xref ref="theorem-arc-length-of-a-polar-curve" autoname="yes" /> we can find the length of this leaf:
+                </p>
                 <me>L = \int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\sqrt{\cos^{2}2\theta + 4\sin^{2}2\theta}\,d\theta = \int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\sqrt{1 + 3\sin^{2}2\theta}\,d\theta.</me>
             </example>
+            <p>
+                SUGGESTED PROBLEMS: 1, 3, 7, 9, 15, 19, 35
+            </p>
         </subsection>
-        <p>SUGGESTED PROBLEMS: 1, 3, 7, 9, 15, 19, 35</p>
     </section>
 <!-- I'm keeping these here for now in case I need to see how this is done later. -->
 <!--     <xi:include href="./sage/integers-sage.xml" />
