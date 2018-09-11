@@ -991,14 +991,14 @@
             <example>
                 <statement>
                     <p>
-                        Does <m>\int_{1}^{\infty}\frac{1}{\sqrt{e^{x} - x}}\,dx</m> converge?
+                        Does <m>\int_{1}^{\infty}\frac{1}{\sqrt{e^{x} + x}}\,dx</m> converge?
                     </p>
                 </statement>
                 <solution>
                     <p>
                         This integrand looks pretty awful.
                         However, we can say that
-                        <me>\frac{1}{\sqrt{e^{x} - x}} \leq \frac{1}{\sqrt{e^{x}}} = e^{-\frac{x}{2}}.</me>
+                        <me>\frac{1}{\sqrt{e^{x} + x}} \leq \frac{1}{\sqrt{e^{x}}} = e^{-\frac{x}{2}}.</me>
                         Since
                         <md>
                             <mrow>\int_{1}^{\infty}e^{-\frac{x}{2}}\,dx &amp; = 2\sqrt{e}, </mrow>
@@ -1029,9 +1029,20 @@
                             <mrow> &amp; \lt \infty.</mrow>
                         </md>
                         Hence the original integral must also be convergent.
+                        It's value is actually known, and SymPy can be used to compute the integral, as below.
                     </p>
                 </solution>
             </example>
+            <sage>
+                <input language="python">
+                    # Computing the Gaussian with SymPy.
+                    import sympy as sp
+                    sp.init_printing()
+                    
+                    x = sp.Symbol('x')
+                    sp.integrate(sp.exp(-x**2), (x, 0, oo))
+                </input>
+            </sage>
             <p>
                 To use <xref ref="theorem-direct-comparison-test" text="type-global" /> successfully, we need to choose a simpler function that's related to the integrand and then use algebra to justify a specific inequality.
                 It is sometimes more straightforward to apply the <term>limit comparison test</term>.
