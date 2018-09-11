@@ -942,6 +942,32 @@
                     </p>
                 </solution>
             </example>
+            <example xml:id="example-another-integral-p-test">
+                <title>Another Integral <m>p</m>-Test</title>
+                <statement>
+                    <p>
+                        For what values of <m>p</m> is the integral <m>\int_{0}^{1}\frac{1}{\sqrt[p]{x}}\,dx</m> convergent?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        We could try to compute this as is, but we can save ourselves some work by making use of <xref ref="theorem-integral-p-test" text="type-global" />.
+                        First, we'll use the substitution <m>u = x^{-\frac{1}{p}}</m>.
+                        Then <m>du = -\frac{1}{p}x^{-\frac{1}{p} - 1}</m> and
+                        <md>
+                            <mrow>u\to\infty &amp; \quad\text{as}\quad x\to0^{+}</mrow>
+                            <mrow>u = 1 &amp; \quad\text{if}\quad x = 1.</mrow>
+                        </md>
+                        Therefore
+                        <md>
+                            <mrow>\int_{0}^{1}\frac{1}{\sqrt[p]{x}}\,dx &amp;= \int_{\infty}^{1}u\left[-pu^{-1 - p}\right]\,du</mrow>
+                            <mrow> &amp; = p\int_{1}^{\infty}\frac{1}{u^{p}}\,du</mrow>
+                        </md>
+                        which we know converges if and only if <m>p \gt 1</m>.
+                        Hence the original integral converges if and only if <m>p\gt1</m>.
+                    </p>
+                </solution>
+            </example>
         </subsection>
         <subsection xml:id="subsection-comparison-tests-for-improper-integrals">
             <title>Comparison Tests for Improper Integrals</title>
@@ -979,6 +1005,30 @@
                         </md>
                         <xref ref="theorem-direct-comparison-test" text="type-global" /> implies that the original integral must converge as well.
                         Note that we don't know <em>what</em> it converges to, only that it does.
+                    </p>
+                </solution>
+            </example>
+            <example xml:id="example-the-gaussian-integral">
+                <title>The Gaussian Integral</title>
+                <statement>
+                    <p>
+                        Show that the integral <m>\int_{0}^{\infty}e^{-x^{2}}\,dx</m> is convergent.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        We can do this by breaking the integral into two parts:
+                        <m>\int_{0}^{\infty}e^{-x^{2}}\,dx = \int_{0}^{1}e^{-x^{2}}\,dx + \int_{1}^{\infty}e^{-x^{2}}\,dx.</m>
+                        If <m>x</m> is between <m>0</m> and <m>1</m>, then <m>e^{-x^{2}} \leq e^{0} = 1</m>.
+                        On the other hand, if <m>1\leq x\lt \infty</m>, then <m>e^{-x^{2}} \leq e^{-x}</m>.
+                        Therefore
+                        <md>
+                            <mrow>\int_{0}^{\infty}e^{-x^{2}}\,dx &amp; = \int_{0}^{\infty}e^{-x^{2}}\,dx = \int_{0}^{1}e^{-x^{2}}\,dx + \int_{1}^{\infty}e^{-x^{2}}\,dx</mrow>
+                            <mrow> &amp; \leq \int_{0}^{1}\,dx + \int_{1}^{\infty}e^{-x}\,dx </mrow>
+                            <mrow> &amp; = 1 + \frac{1}{e} </mrow>
+                            <mrow> &amp; \lt \infty.</mrow>
+                        </md>
+                        Hence the original integral must also be convergent.
                     </p>
                 </solution>
             </example>
