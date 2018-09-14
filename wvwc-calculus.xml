@@ -39,7 +39,8 @@
 			\usepackage{pgfplots}
 			\usepackage{tikz-qtree}
 			\pgfplotsset{compat=newest}
-			\usetikzlibrary{decorations.markings,decorations.pathreplacing,arrows,calc}
+			\usetikzlibrary{decorations.markings,decorations.pathreplacing,arrows,calc,patterns}
+			\usepgfplotslibrary{fillbetween}
 			% These are the TikZ-PGFPlots settings I need.
 			\pgfplotsset{mystyle/.style={%
 				view={120}{30},
@@ -79,6 +80,7 @@
 		<xi:include href="./applications-differentiation.xml" /> <!-- Applications of differentiation -->
 		<xi:include href="./integrals.xml" /> <!-- Introduction to integrals -->
 		<xi:include href="./techniques-of-integration.xml" /> <!-- Integration by parts, trigonometric substitution, etc. -->
+		<xi:include href="./applications-of-integration.xml" /> <!-- Applications of integration, such as areas, volumes, etc. -->
 		<xi:include href="./parametric-equations-polar-coordinates.xml" /> 	<!-- Introduction to parametric/polar coordinates -->
 		<xi:include href="./vectors-space-geometry.xml" /> <!-- Introduction to geometry in Euclidean space -->
 		<xi:include href="./partial-derivatives.xml" /> <!-- Introduction to partial derivatives -->
