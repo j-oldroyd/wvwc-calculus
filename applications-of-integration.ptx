@@ -682,6 +682,78 @@
       </solution>
     </example>
   </section>
+  <section xml:id="section-applications-to-physics-and-engineering">
+      <title>Applications to Physics and Engineering</title>
+      <introduction>
+        <p>
+          The primary use of integrals in physics and engineering is to measure the accumulation of continuously varying quantities.
+          The running theme in this section:
+        </p>
+        <ol>
+          <li><p>Measure the accumulation of some quantity by approximating it as a (finite) sum of "small" values.</p></li>
+          <li><p>Improve the approximation by taking more and more values.</p></li>
+          <li><p>Introduce a limit to make the approximation exact, resulting in an integral.</p></li>
+        </ol>
+      </introduction>
+      <subsection xml:id="subsection-work">
+          <title>Work</title>
+          <p>
+            We introduced a formula for work in <xref ref="section-improper-integrals" text="type-global" />, and now we'll actually derive it.
+            First, recall that <term>work</term> (very roughly) represents the net effect of a <term>force</term> <m>F</m> acting on a mass over some displacement <m>d</m>.
+            If the force is constant (in both magnitude and direction), then we can simply define the work <m>W</m> accomplished by a force <m>F</m> as a particle is displaced by <m>d</m> units by the formula
+            <me>W = Fd.</me>
+          </p>
+          <p>
+            So with this definition, work is proportional to the magnitude of the force <m>F</m> as well as the displacement <m>d</m> over which the force acts.
+            If <m>F</m> is measured in units of
+            <quantity>
+              <unit base="meter" />
+              <per base="second" exp="2"/>
+            </quantity>
+            or more simply
+            <quantity>
+              <unit base="newton" />
+            </quantity>,
+            and <m>d</m> is measured in units of
+            <quantity>
+              <unit base="meter" />
+            </quantity>
+            the <m>W</m> takes on units of
+            <quantity>
+              <unit base="newton" />
+              <unit base="meter" />
+            </quantity>
+            or just
+            <quantity>
+              <unit base="joule" />
+            </quantity>.
+          </p>
+          <p>
+            Although there are important forces that are reasonably approximated by constants, such as the force due to gravity, this isn't reasonable for every force of interest.
+            For example, consider the force due to drag against an object moving through the atmosphere, which should increase as velocity increases.
+            For these non-constant forces, our old formula doesn't work so well.
+            To be precise, how can we measure the work done by a non-constant force <m>F(x)</m> on a particle as it moves from <m>x = a</m> to <m>x = b</m>?
+          </p>
+          <p>
+            As you might guess from this section's running theme, we'll start by <em>approximating</em> the work done by measuring work in small displacements as the particle moves from <m>a</m> to <m>b</m>.
+            Over small enough intervals, even variable forces will look almost constant, which makes <m>W = Fd</m> a reasonable estimate of the work done (on this small interval!).
+            So let's start by breaking up <m>[a,b]</m> into <m>n</m> smaller subintervals
+            <me>[x_{0}, x_{1}], [x_{1}, x_{2}], \ldots, [x_{n-1}, x_{n}],</me>
+            where <m>a = x_{0} \lt x_{1} \lt \ldots \lt x_{n} = b</m>, and let <m>\Delta x_{i} = x_{i} - x_{i-1}</m> be the width of each subinterval.
+            Now choose sample points <m>x_{i}^{*}</m> from each subinterval.
+            Once again, if <m>\Delta x_{i}</m> is small enough, then the work done by the force over <m>[x_{i-1}, x_{i}]</m> should be approximately
+            <me> F(x_{i}^{*})\Delta x_{i}.</me>
+          </p>
+          <p>
+            This is the approximate work for one subinterval, so adding in the approximations from the other subintervals also provides an estimate of the total work <m>W</m> done by <m>F(x)</m> over <m>[a,b]</m>.
+            That is,
+            <me>W \approx F(x_{1}^{*})\Delta x_{1} + \cdots + F(x_{n}^{*})\Delta x_{n} = \sum_{i=1}^{n}F(x_{i}^{*})\Delta x_{i}.</me>
+            As <m>\Delta x_{i}\to 0</m>, the approximation becomes exact.
+            Therefore
+            <men xml:id="equation-work-integral"> W = \lim_{\Delta x_{i}\to 0}\sum_{i=1}^{n}F(x_{i}^{*})\Delta x_{i} = \int_{a}^{b}F(x)\,dx.</men>
+          </p>
+      </subsection>
+  </section>
   <exercises>
     <title>MyOpenMath problems</title>
     <introduction>
