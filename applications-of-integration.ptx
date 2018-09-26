@@ -731,6 +731,7 @@
           <p>
             Although there are important forces that are reasonably approximated by constants, such as the force due to gravity, this isn't reasonable for every force of interest.
             For example, consider the force due to drag against an object moving through the atmosphere, which should increase as velocity increases.
+            Another basic example is the <term>Hooke's Law</term>, which states that the force a spring exerts on an attached mass is proportional to the displacement of the mass from the spring's equilibrium position.
             For these non-constant forces, our old formula doesn't work so well.
             To be precise, how can we measure the work done by a non-constant force <m>F(x)</m> on a particle as it moves from <m>x = a</m> to <m>x = b</m>?
           </p>
@@ -751,6 +752,33 @@
             As <m>\Delta x_{i}\to 0</m>, the approximation becomes exact.
             Therefore
             <men xml:id="equation-work-integral"> W = \lim_{\Delta x_{i}\to 0}\sum_{i=1}^{n}F(x_{i}^{*})\Delta x_{i} = \int_{a}^{b}F(x)\,dx.</men>
+          </p>
+          <example xml:id="example-a-mass-attached-to-a-spring">
+              <title>A mass attached to a spring</title>
+              <statement>
+                <p>
+                  A mass attached to a spring is acted upon by a <term>spring force</term> given by <m>F(t) = -2x</m>, where <m>x</m> is the displacement of the mass from the equilibrium position of the spring.
+                  Suppose that the mass is held
+                  <quantity>
+                    <mag>1</mag>
+                    <unit base="meter" />
+                  </quantity>
+                  to the right of the spring's equilibrium position (so that the spring will try to pull the mass back towards its equilibrium which we'll say occurs at <m>x = 0</m>).
+                  What is the work done by the spring on the mass in moving the mass from its current position back to equilibrium?
+                </p>
+              </statement>
+              <solution>
+                <p>
+                  Since equilibrium occurs at <m>x = 0</m>, the work done should be
+                  <me>W = \int_{1}^{0}(-2x)\,dx = \int_{0}^{1}2x\,dx = 1.</me>
+                </p>
+              </solution>
+          </example>
+          <p>
+            In <xref ref="example-a-mass-attached-to-a-spring" text="type-global" />, the reason the work done was positive was because the force and the direction the mass was moving tended to align.
+            Once the mass moves past equilibrium and to the left, the force will begin acting against the motion of the mass resulting in negative work over that particular interval.
+            The spring force itself is an example of a <term>restoring force</term>, since it's always trying to pull the mass back to equilibrium.
+            To highlight this, we often write the spring force as <m>F_{S} = -kx</m> for some positive <m>k</m>.
           </p>
       </subsection>
   </section>
