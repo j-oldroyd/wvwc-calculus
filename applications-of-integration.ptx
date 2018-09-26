@@ -792,215 +792,222 @@
     <figure>
       <image>
         <latex-image><![CDATA[
-  \begin{tikzpicture}[%
-  triangle/.style = {fill=black!60, regular polygon, regular polygon sides=3 },
-  node rotated/.style = {rotate=180},
-  border rotated/.style = {shape border rotate=180}]
-  \draw[|-|] (-2,0) -- (4,0);
-  \node (m1) at (-1,0) {$\bullet$};
-  \node[below] at (m1) {$x = x_{1}$};
-  \node[above right] at (m1) {$m_{1}$};
+            \begin{tikzpicture}[%
+            triangle/.style = {fill=black!60, regular polygon, regular polygon sides=3 },
+            node rotated/.style = {rotate=180},
+            border rotated/.style = {shape border rotate=180}]
+            \draw[|-|] (-2,0) -- (4,0);
+            \node (m1) at (-1,0) {$\bullet$};
+            \node[below] at (m1) {$x = x_{1}$};
+            \node[above right] at (m1) {$m_{1}$};
 
-  \node (m2) at (2.5,0) {$\bullet$};
-  \node[below] at (m2) {$x = x_{2}$};
-  \node[above right] at (m2) {$m_{2}$};
+            \node (m2) at (2.5,0) {$\bullet$};
+            \node[below] at (m2) {$x = x_{2}$};
+            \node[above right] at (m2) {$m_{2}$};
 
-  \node (fulc) at (1.5,0) {$\bullet$};
-  \node[above] at (fulc) {$x=c$};
-  \node[triangle, below] at (fulc) {};
-  \end{tikzpicture}]]>
-</latex-image>
-</image>
-</figure>
-<p>
-  Our goal is to find the center of mass of the rod.
-</p>
+            \node (fulc) at (1.5,0) {$\bullet$};
+            \node[above] at (fulc) {$x=c$};
+            \node[triangle, below] at (fulc) {};
+            \end{tikzpicture}]]>
+          </latex-image>
+        </image>
+      </figure>
+      <p>
+        Our goal is to find the center of mass of the rod.
+      </p>
 
-<p>
-  Suppose that the first mass is <m>d_{1}</m> units away from the fulcrum, and that the second mass is <m>d_{2}</m> units away.
-  Archimedes' Law of the Lever states that the rod will balance if <m>m_{1}d_{1} = m_{2}d_{2}</m>.
-  Since <m>d_{1} = c - x_{1}</m> and <m>d_{2} = x_{2} - c</m>,\sidenote{Since <m>d_{1},d_{2}</m> are positive!} we can rewrite this as
-  <md>
-    <mrow>m_{1}d_{1} \amp= m_{2}d_{2}</mrow>
-    <mrow>\amp\Rightarrow</mrow>
-    <mrow>m_{1}(c-x_{1}) \amp= m_{2}(x_{2}-c)</mrow>
-    <mrow>\amp\Rightarrow</mrow>
-    <mrow>m_{1}c-m_{1}x_{1} \amp= m_{2}x_{2} - m_{2}c</mrow>
-    <mrow>\amp\Rightarrow</mrow>
-    <mrow>m_{1}c+m_{2}c \amp= m_{1}x_{1}+m_{2}x_{2}</mrow>
-  </md>
-  which simplifies down to
-  <me>c = \frac{m_{1}x_{1}+m_{2}x_{2}}{m_{1}+m_{2}}.</me>
-  Hence <m>c</m> is the location of the center of mass of the rod if this equation is true!
-</p>
+      <p>
+        Suppose that the first mass is <m>d_{1}</m> units away from the fulcrum, and that the second mass is <m>d_{2}</m> units away.
+        Archimedes' Law of the Lever states that the rod will balance if <m>m_{1}d_{1} = m_{2}d_{2}</m>.
+        Since <m>d_{1} = c - x_{1}</m> and <m>d_{2} = x_{2} - c</m>,\sidenote{Since <m>d_{1},d_{2}</m> are positive!} we can rewrite this as
+        <md>
+          <mrow>m_{1}d_{1} \amp= m_{2}d_{2}</mrow>
+          <mrow>\amp\Rightarrow</mrow>
+          <mrow>m_{1}(c-x_{1}) \amp= m_{2}(x_{2}-c)</mrow>
+          <mrow>\amp\Rightarrow</mrow>
+          <mrow>m_{1}c-m_{1}x_{1} \amp= m_{2}x_{2} - m_{2}c</mrow>
+          <mrow>\amp\Rightarrow</mrow>
+          <mrow>m_{1}c+m_{2}c \amp= m_{1}x_{1}+m_{2}x_{2}</mrow>
+        </md>
+        which simplifies down to
+        <me>c = \frac{m_{1}x_{1}+m_{2}x_{2}}{m_{1}+m_{2}}.</me>
+        Hence <m>c</m> is the location of the center of mass of the rod if this equation is true!
+      </p>
 
-<p>
-  More generally, if <m>n</m> point masses <m>m_{i}</m> at position <m>x=x_{i}</m> are connected by a rod of negligible mass, then the center of mass <m>\overline{x}</m> of the resulting system is given by
+      <p>
+        More generally, if <m>n</m> point masses <m>m_{i}</m> at position <m>x=x_{i}</m> are connected by a rod of negligible mass, then the center of mass <m>\overline{x}</m> of the resulting system is given by
 
-  <me>
-  \overline{x} = \frac{m_{1}x_{1}+m_{2}x_{2}+\cdots+m_{n}x_{n}}{m_{1}+m_{2}+\cdots+m_{n}} = \frac{\sum_{i=1}^{n}m_{i}x_{i}}{m},
-</me>
-where <m>m = \sum_{j=1}^{n}m_{j}</m> is the total mass of the system and
-<me>
-M = \sum_{i=1}^{n}m_{i}x_{i}
-</me>
-is called the \textbf{moment of the system about the origin}.
-</p>
+        <me>
+        \overline{x} = \frac{m_{1}x_{1}+m_{2}x_{2}+\cdots+m_{n}x_{n}}{m_{1}+m_{2}+\cdots+m_{n}} = \frac{\sum_{i=1}^{n}m_{i}x_{i}}{m},
+      </me>
+      where <m>m = \sum_{j=1}^{n}m_{j}</m> is the total mass of the system and
+      <me>
+      M = \sum_{i=1}^{n}m_{i}x_{i}
+    </me>
+    is called the <term>moment of the system about the origin</term>.
+  </p>
 
-<example>
+  <example>
+    <statement>
+      <p>
+        Consider the following system of three point masses <m>m_{1},m_{2},m_{3}</m> at positions <m>x_{1},x_{2},x_{3}</m> given as follows:
+      </p>
+      <p>
+        Find the following:
+        <ol>
+          <li><p>The moment of the system about the origin.</p></li>
+          <li><p> The center of mass.</p></li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <ol>
+        <li><p>The moment of the system about the origin is defined to be
+          <md>
+            <mrow>M \amp= \sum_{i=1}^{3}m_{i}x_{i}</mrow>
+            <mrow>\amp= 25\cdot(-2)+20\cdot(3)+10\cdot(7)</mrow>
+            <mrow>\amp= 80.</mrow>
+          </md>
+          So the moment is <m>M = 80</m>.</p></li>
 
-  <statement>
-    <p>
-      Consider the following system of three point masses <m>m_{1},m_{2},m_{3}</m> at positions <m>x_{1},x_{2},x_{3}</m> given as follows:
-    </p>
+          <li><p> The center of mass is just the moment divided by the total mass <m>m</m> of the system:
+          <md>
+            <mrow>\overline{x}\amp= \frac{M}{m}</mrow>
+            <mrow>\amp= \frac{80}{25+20+10}</mrow>
+            <mrow>\amp= \frac{80}{55}</mrow>
+            <mrow>\amp= \frac{16}{11}.</mrow>
+          </md>
+          So the center of mass of the rod is at the point <m>\overline{x} = \frac{16}{11}</m>.</p></li>
+        </ol>
+      </solution>
+    </example>
     <figure>
       <image>
         <latex-image><![CDATA[
-\begin{tikzpicture}[%
-triangle/.style = {fill=black!60, regular polygon, regular polygon sides=3 },
-node rotated/.style = {rotate=180},
-border rotated/.style = {shape border rotate=180}]
-\draw[|-|] (-4,0) -- (9,0);
-\node (m1) at (-2,0) {$\bullet$};
-\node[below] at (m1) {$x_{1} = -2$};
-\node[above] at (m1) {$m_{1} = 25$};
+              \begin{tikzpicture}[%
+              triangle/.style = {fill=black!60, regular polygon, regular polygon sides=3 },
+              node rotated/.style = {rotate=180},
+              border rotated/.style = {shape border rotate=180}]
+              \draw[|-|] (-4,0) -- (9,0);
+              \node (m1) at (-2,0) {$\bullet$};
+              \node[below] at (m1) {$x_{1} = -2$};
+              \node[above] at (m1) {$m_{1} = 25$};
 
-\node (m2) at (3,0) {$\bullet$};
-\node[below] at (m2) {$x_{2} = 3$};
-\node[above] at (m2) {$m_{2} = 20$};
+              \node (m2) at (3,0) {$\bullet$};
+              \node[below] at (m2) {$x_{2} = 3$};
+              \node[above] at (m2) {$m_{2} = 20$};
 
-\node (m3) at (7,0) {$\bullet$};
-\node[below] at (m3) {$x_{3} = 7$};
-\node[above] at (m3) {$m_{3} = 10$};
-\end{tikzpicture}.]]>
-</latex-image>
-</image>
-</figure>
-<p>
-  Find the following:
-  <ol>
-    <li><p>The moment of the system about the origin.</p></li>
-    <li><p> The center of mass.</p></li>
-  </ol>
-</p>
-</statement>
-<solution>
-  <ol>
-    <li><p>The moment of the system about the origin is defined to be
-      <md>
-        <mrow>M \amp= \sum_{i=1}^{3}m_{i}x_{i}</mrow>
-        <mrow>\amp= 25\cdot(-2)+20\cdot(3)+10\cdot(7)</mrow>
-        <mrow>\amp= 80.</mrow>
-      </md>
-      So the moment is <m>M = 80</m>.</p></li>
+              \node (m3) at (7,0) {$\bullet$};
+              \node[below] at (m3) {$x_{3} = 7$};
+              \node[above] at (m3) {$m_{3} = 10$};
+              \end{tikzpicture}]]>
+            </latex-image>
+          </image>
+        </figure>
+        <p>
+          We now move from one dimension to two.
+          Consider a system of point masses <m>m_{1},\ldots,m_{n}</m> at the points <m>(x_{1},y_{1}),\ldots,(x_{n},y_{n})</m>, and suppose that these masses are connected by a thin plate of negligible mass.
+          The <term>moment of the system about the <m>\boldsymbol{y}</m>-axis</term> is the number <m>M_{y}</m> given by
+        </p>
+        <me>M_{y} = \sum_{i=1}^{n}m_{i}x_{i}.</me>
+        <p>
+          This can be thought of as tendency of the system to rotate <em>about</em> the <m>y</m>-axis.
+          Increasing the mass or the distance from the <m>y</m>-axis increases this tendency.
+        </p>
+        <p>
+          The <term>moment of the system about the <m>\boldsymbol{x}</m>-axis</term> is the number <m>M_{x}</m> given by
+          <me>
+          M_{x} = \sum_{i=1}^{n}m_{i}y_{i}.
+        </me>
+        Just as in the one-dimensional case, the center of mass for this system will be determined by the total mass and the above moments.
+        In particular, the center of mass of this system is located at the point <m>(\overline{x},\overline{y})</m> with coordinates
+        <me>
+        \overline{x} = \frac{M_{y}}{m}\quad\text{and}\quad\overline{y} = \frac{M_{x}}{m},
+      </me>
+      where <m>m</m> is the total mass <m>m_{1}+\cdots+m_{n} = \sum_{i=1}^{n}m_{i}</m>.
+    </p>
 
-      <li><p> The center of mass is just the moment divided by the total mass <m>m</m> of the system:
-      <md>
-        <mrow>\overline{x}\amp= \frac{M}{m}</mrow>
-        <mrow>\amp= \frac{80}{25+20+10}</mrow>
-        <mrow>\amp= \frac{80}{55}</mrow>
-        <mrow>\amp= \frac{16}{11}.</mrow>
-      </md>
-      So the center of mass of the rod is at the point <m>\overline{x} = \frac{16}{11}</m>.</p></li>
+    <example>
+      <statement>
+        <p>
+          Four point masses <m>m_{1} = 6,m_{2} = 5,m_{3} = 1,m_{4} = 4</m> are located in the plane at the points <m>(1,-2),(3,4),(-3,-7)</m> and <m>(6,-1)</m>.
+
+          <ol>
+            <li><p>Find the moments of the system about the <m>y</m>-axis and the <m>x</m>-axis.</p></li>
+
+            <li><p>Find the center of mass of this system.</p></li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <ol>
+          <li><p>The moment about the <m>y</m>-axis is
+          <md>
+            <mrow>M_{y}\amp= \sum_{i=1}^{4}m_{i}x_{i}</mrow>
+            <mrow>\amp= 6\cdot1+5\cdot3+1\cdot(-3)+4\cdot6</mrow>
+            <mrow>\amp= 42.</mrow>
+          </md></p>
+          <p>Similarly, the moment about the <m>x</m>-axis is given by
+          <md>
+            <mrow>M_{x}\amp= \sum_{i=1}^{4}m_{i}y_{i}</mrow>
+            <mrow>\amp= 6\cdot(-2)+5\cdot4+1\cdot(-7)+4\cdot(-1)</mrow>
+            <mrow>\amp= -3.</mrow>
+          </md></p></li>
+
+          <li><p>The center of mass is the point <m>(\overline{x},\overline{y})</m> where
+          <me>
+          \overline{x} = \frac{M_{y}}{m} = \frac{42}{16}\quad\text{and}\quad\overline{y}=\frac{M_{x}}{m} = \frac{-3}{16}
+        </me>
+        and <m>m</m> is the total mass of the system.
+      </p></li>
     </ol>
   </solution>
-</example>
-
-<p>
-  We now move from one dimension to two.
-Consider a system of point masses <m>m_{1},\ldots,m_{n}</m> at the points <m>(x_{1},y_{1}),\ldots,(x_{n},y_{n})</m>, and suppose that these masses are connected by a thin plate of negligible mass.
-The \textbf{moment of the system about the <m>\boldsymbol{y}</m>-axis}\sidenote{The moment about the <m>y</m>-axis can be thought of as the tendency of the system to rotate \textit{about} the <m>y</m>-axis. Increasing the mass or the distance from the <m>y</m>-axis increases this tendency.} is the number <m>M_{y}</m> given by
-</p>
-<me>M_{y} = \sum_{i=1}^{n}m_{i}x_{i}.</me>
-
-<p>
-  The \textbf{moment of the system about the <m>\boldsymbol{x}</m>-axis} is the number <m>M_{x}</m> given by
-<me>
-M_{x} = \sum_{i=1}^{n}m_{i}y_{i}.
-</me>
-Just as in the one-dimensional case, the center of mass for this system will be determined by the total mass and the above moments.
-In particular, the center of mass of this system is located at the point <m>(\overline{x},\overline{y})</m> with coordinates
-<me>
-\overline{x} = \frac{M_{y}}{m}\quad\text{and}\quad\overline{y} = \frac{M_{x}}{m},
-</me>
-where <m>m</m> is the total mass <m>m_{1}+\cdots+m_{n} = \sum_{i=1}^{n}m_{i}</m>.
-</p>
-
-<example>
-<statement>
-  <p>
-  Four point masses <m>m_{1} = 6,m_{2} = 5,m_{3} = 1,m_{4} = 4</m> are located in the plane at the points <m>(1,-2),(3,4),(-3,-7)</m> and <m>(6,-1)</m>.
-
-<ol>
-  <li><p>Find the moments of the system about the <m>y</m>-axis and the <m>x</m>-axis.</p></li>
-
-<li><p>Find the center of mass of this system.</p></li>
-</ol>
-</p>
-</statement>
-<solution>
-<ol>
-  <li><p>The moment about the <m>y</m>-axis is
-<md>
-<mrow>M_{y}\amp= \sum_{i=1}^{4}m_{i}x_{i}</mrow>
-<mrow>\amp= 6\cdot1+5\cdot3+1\cdot(-3)+4\cdot6</mrow>
-<mrow>\amp= 42.</mrow>
-</md></p>
-<p>Similarly, the moment about the <m>x</m>-axis is given by
-<md>
-<mrow>M_{x}\amp= \sum_{i=1}^{4}m_{i}y_{i}</mrow>
-<mrow>\amp= 6\cdot(-2)+5\cdot4+1\cdot(-7)+4\cdot(-1)</mrow>
-<mrow>\amp= -3.</mrow>
-</md></p></li>
-
-<li><p>The center of mass is the point <m>(\overline{x},\overline{y})</m> where
-<me>
-\overline{x} = \frac{M_{y}}{m} = \frac{42}{16}\quad\text{and}\quad\overline{y}=\frac{M_{x}}{m} = \frac{-3}{16}
-</me>
-and <m>m</m> is the total mass of the system.
-</p></li>
-</ol>
-</solution>
 </example>}
 
 <p>
   We now consider a more complicated situation than the above.
-Suppose that we have a thin, flat plate (or \textit{lamina}) <m>R</m> of uniform density in the plane.
-Our goal now is to find the center of mass, or \textbf{centroid}, of the plate.
-To do so, we will use the following fact: <em>the centroid of a rectangular lamina of uniform density is just the center of the rectangle.</em>
-Now consider a lamina <m>R</m> with uniform density <m>\rho</m> in the <m>xy</m>-plane and bounded between <m>x=a,x=b</m> and the functions <m>f(x)</m> and <m>g(x)</m>:
+  Suppose that we have a thin, flat plate (or <em>lamina</em>) <m>R</m> of uniform density in the plane.
+  Our goal now is to find the center of mass, or <term>centroid</term>, of the plate.
+  To do so, we will use the following fact: <em>the centroid of a rectangular lamina of uniform density is just the center of the rectangle.</em>
+  Now consider a lamina <m>R</m> with uniform density <m>\rho</m> in the <m>xy</m>-plane and bounded between <m>x=a,x=b</m> and the functions <m>f(x)</m> and <m>g(x)</m>:
 </p>
 <figure>
   <image>
     <latex-image><![CDATA[
-\begin{tikzpicture}
-% Tikz drawings from Gonzalo Medina on tex.stackexchange.
-\begin{axis}[
-axis lines=middle,
-xmin=-0.5,
-xmax=8,
-ymin=-5,
-ymax=7,
-domain=0.5:7.5,
-xtick={0.75,6.25},
-xticklabels={$a$,$b$},
-ytick={0},
-axis on top
-]
+    \begin{tikzpicture}
+    % Tikz drawings from Gonzalo Medina on tex.stackexchange.
+    \begin{axis}[
+    axis lines=middle,
+    xmin=-0.5,
+    xmax=8,
+    ymin=-5,
+    ymax=7,
+    domain=0.5:7.5,
+    xtick={0.75,6.25},
+    xticklabels={$a$,$b$},
+    ytick={0},
+    axis on top
+    ]
 
-\addplot[name path = A,thick,no marks,red!70!black,samples=200]   
-{curvei(x)};
-\addlegendentry{$f(x)$};
-\addplot[name path = B,thick,no marks,cyan,samples=200] 
-{curveii(x)};
-\addlegendentry{$g(x)$};
-\addplot[cyan!60,fill opacity=0.4] 
-fill between[of=A and B,soft clip={domain=0.75:6.25}];
-\end{axis}
-\end{tikzpicture}
-\end{center}
+    \addplot[name path = A,thick,no marks,red!70!black,samples=200]   
+    {curvei(x)};
+    \addlegendentry{$f(x)$};
+    \addplot[name path = B,thick,no marks,cyan,samples=200] 
+    {curveii(x)};
+    \addlegendentry{$g(x)$};
+    \addplot[cyan!60,fill opacity=0.4] 
+    fill between[of=A and B,soft clip={domain=0.75:6.25}];
+    \end{axis}
+    \end{tikzpicture}]]>
+  </latex-image>
+</image>
+</figure>
+<p>
 To find the centroid of this lamina we will break it up into (vertical) approximating rectangles <m>R_{0},R_{1},\ldots,R_{n}</m>, each of which has width <m>\Delta x</m> and centroid <m>(x_{i},y_{i})</m>:
-\begin{center}
+</p>
+<figure>
+  <image>
+    <latex-image><![CDATA[
 \begin{tikzpicture}
 \begin{axis}[
 axis lines=middle,
@@ -1038,105 +1045,104 @@ axis on top
 </figure>
 <p>
   Then the lamina may be approximated by a system of point masses <m>m_{0},\ldots,m_{n}</m>, with <m>m_{i}</m> located at the centroid rectangle <m>R_{i}</m> and having the mass of the corresponding rectangle.
-To find the center of mass of the lamina, we will approximate it with the center of mass of the system of point masses.
+  To find the center of mass of the lamina, we will approximate it with the center of mass of the system of point masses.
 </p>
 
 <p>
   To do so, we will need:
-<md>
-<mrow>m \amp= \sum_{i=0}^{n}m_{i}</mrow>
-<mrow>M_{y} \amp= \sum_{i=0}^{n}m_{i}x_{i}</mrow>
-<mrow>M_{x} \amp= \sum_{i=0}^{n}m_{i}y_{i}</mrow>
-</md>
+  <md>
+    <mrow>m \amp= \sum_{i=0}^{n}m_{i}</mrow>
+    <mrow>M_{y} \amp= \sum_{i=0}^{n}m_{i}x_{i}</mrow>
+    <mrow>M_{x} \amp= \sum_{i=0}^{n}m_{i}y_{i}</mrow>
+  </md>
 </p>
 <p>
-Consider a single rectangle <m>R_{i}</m>:
+  Consider a single rectangle <m>R_{i}</m>:
+</p>
 <figure>
   <image>
-    <latex-code><![CDATA[
-\begin{tikzpicture}
-\begin{axis}[
-axis lines=middle,
-xmin=-0.5,
-xmax=8,
-ymin=-5.5,
-ymax=7,
-domain=0.5:7.5,
-xtick={0.75,6.25},
-xticklabels={$a$,$b$},
-ytick={0},
-]
+    <latex-image><![CDATA[
+    \begin{tikzpicture}
+    \begin{axis}[
+    axis lines=middle,
+    xmin=-0.5,
+    xmax=8,
+    ymin=-5.5,
+    ymax=7,
+    domain=0.5:7.5,
+    xtick={0.75,6.25},
+    xticklabels={$a$,$b$},
+    ytick={0},
+    ]
 
-\addplot[thick,no marks,red!70!black,samples=200,name path=curveA]   
-{curvei(x)};
-\addlegendentry{$f(x)$};
-\addplot[thick,no marks,cyan,samples=200,name path=curveB] 
-{curveii(x)};
-\addlegendentry{$g(x)$};
-\addplot[cyan!60,fill opacity=0.4] 
-fill between[of=curveA and curveB,soft clip={domain=0.75:6.25}];
+    \addplot[thick,no marks,red!70!black,samples=200,name path=curveA]   
+    {curvei(x)};
+    \addlegendentry{$f(x)$};
+    \addplot[thick,no marks,cyan,samples=200,name path=curveB] 
+    {curveii(x)};
+    \addlegendentry{$g(x)$};
+    \addplot[cyan!60,fill opacity=0.4] 
+    fill between[of=curveA and curveB,soft clip={domain=0.75:6.25}];
 
-\addplot[name path=line,draw=none,forget plot] 
-coordinates {(3,-7) (3,7)};
-\path[name intersections={of=curveA and line,by={top}}];  
-\path[name intersections={of=curveB and line,by={bottom}}];
+    \addplot[name path=line,draw=none,forget plot] 
+    coordinates {(3,-7) (3,7)};
+    \path[name intersections={of=curveA and line,by={top}}];  
+    \path[name intersections={of=curveB and line,by={bottom}}];
 
-\filldraw[gray!100!cyan,opacity=0.5]
-([xshift=-10pt]top) rectangle ([xshift=10pt]bottom);  
-\draw[decorate,decoration=brace]
-([xshift=12pt]top) -- node[right=4pt] {$h = \frac{f(x_{i})-g(x_{i})}{2}$} ([xshift=12pt]bottom);  
-\draw[decorate,decoration={brace,raise=3pt}]
-([xshift=10pt]bottom) -- node[below=4pt] {$\Delta x$} ([xshift=-10pt]bottom);  
-\node[above,red!70!black] at (1.5,4.8) {$y_{T}$};
-\node[above,cyan] at (1.5,-4.8) {$y_{B}$};
-\end{axis}
-\end{tikzpicture}]]>
-</latex-code>
+    \filldraw[gray!100!cyan,opacity=0.5]
+    ([xshift=-10pt]top) rectangle ([xshift=10pt]bottom);  
+    \draw[decorate,decoration=brace]
+    ([xshift=12pt]top) -- node[right=4pt] {$h = \frac{f(x_{i})-g(x_{i})}{2}$} ([xshift=12pt]bottom);  
+    \draw[decorate,decoration={brace,raise=3pt}]
+    ([xshift=10pt]bottom) -- node[below=4pt] {$\Delta x$} ([xshift=-10pt]bottom);  
+    \node[above,red!70!black] at (1.5,4.8) {$y_{T}$};
+    \node[above,cyan] at (1.5,-4.8) {$y_{B}$};
+    \end{axis}
+    \end{tikzpicture}]]>
+  </latex-image>
 </image>
 </figure>
+<p>
+  Then we have
+  <md>
+    <mrow>m_{i} \amp= (\text{density})(\text{area of }R_{i}) = \rho\frac{f(x_{i})-g(x_{i})}{2}\Delta x</mrow>
+    <mrow>y_{i} \amp= \frac{f(x_{i})+g(x_{i})}{2}.</mrow>
+  </md>
 </p>
 <p>
-Then we have 
-<md>
-<mrow>m_{i} \amp= \text{(density)(area of <m>R_{i}</m>)} = \rho\frac{f(x_{i})-g(x_{i})}{2}\Delta x</mrow>
-<mrow>y_{i} \amp= \frac{f(x_{i})+g(x_{i})}{2}.</mrow>
-</md>
-</p>
-<p>
-We can now fill in the following table:
+  We can now fill in the following table:
 </p>
 <table>
   <tabular top="major">
-<row bottom="major">
-  <cell></cell>
-  <cell>System of point masses</cell>
-  <cell>Lamina</cell>
-</row>
-<row>
-  <cell><m>m</m></cell> 
-  <cell><m>\sum_{i=0}^{n}m_{i} = \sum_{i=0}^{n}\rho[f(x_{i})-g(x_{i})]\Delta x</m></cell>
-  <cell><m>\rho\int_{a}^{b}[f(x)-g(x)]\,dx</m></cell>
-</row>
-<row>
-  <cell><m>M_{y}</m></cell> 
-  <cell><m>\sum_{i=0}^{n}m_{i}x_{i} = \sum_{i=0}^{n}\rho x_{i}[f(x_{i})-g(x_{i})]\Delta x</m></cell>
-  <cell><m>\rho\int_{a}^{b}x[f(x)-g(x)]\,dx</m></row></cell>
-</row>
-<row>
-  <cell><m>M_{x}</m></cell>
-  <cell><m>\sum_{i=0}^{n}m_{i}y_{i} = \sum_{i=0}^{n}\rho[f(x_{i})-g(x_{i})]\frac{f(x_{i})+g(x_{i})}{2}\Delta x</m></cell>
-  <cell><m>\frac{\rho}{2}\int_{a}^{b}[f(x)^{2}-g(x)^{2}]\,dx</m></cell>
-</row>
-</tabular>
+    <row bottom="major">
+      <cell></cell>
+      <cell>System of point masses</cell>
+      <cell>Lamina</cell>
+    </row>
+    <row>
+      <cell><m>m</m></cell>
+      <cell><m>\sum_{i=0}^{n}m_{i} = \sum_{i=0}^{n}\rho[f(x_{i})-g(x_{i})]\Delta x</m></cell>
+      <cell><m>\rho\int_{a}^{b}[f(x)-g(x)]\,dx</m></cell>
+    </row>
+    <row>
+      <cell><m>M_{y}</m></cell>
+      <cell><m>\sum_{i=0}^{n}m_{i}x_{i} = \sum_{i=0}^{n}\rho x_{i}[f(x_{i})-g(x_{i})]\Delta x</m></cell>
+      <cell><m>\rho\int_{a}^{b}x[f(x)-g(x)]\,dx</m></cell>
+    </row>
+    <row bottom="major">
+      <cell><m>M_{x}</m></cell>
+      <cell><m>\sum_{i=0}^{n}m_{i}y_{i} = \sum_{i=0}^{n}\rho[f(x_{i})-g(x_{i})]\frac{f(x_{i})+g(x_{i})}{2}\Delta x</m></cell>
+      <cell><m>\frac{\rho}{2}\int_{a}^{b}[f(x)^{2}-g(x)^{2}]\,dx</m></cell>
+    </row>
+  </tabular>
 </table>
-</p>
-
 <p>
-  The center of mass for this lamina is then the point <m>(\overline{x},\overline{y})</m>> where
-<md>
-<mrow>\overline{x} \amp= \frac{M_{y}}{m} = \frac{\int_{a}^{b}x[f(x)-g(x)]\,dx}{\int_{a}^{b}[f(x)-g(x)]\,dx}</mrow>
-<mrow>\overline{y} \amp= \frac{M_{x}}{m} = \frac{1}{2}\frac{\int_{a}^{b}[f(x)^{2}-g(x)^{2}]\,dx}{\int_{a}^{b}[f(x)-g(x)]\,dx}</mrow>
-</md>
+  The center of mass for this lamina is then the point <m>(\overline{x},\overline{y})</m> where
+  <md>
+    <mrow>\overline{x} \amp= \frac{M_{y}}{m} = \frac{\int_{a}^{b}x[f(x)-g(x)]\,dx}{\int_{a}^{b}[f(x)-g(x)]\,dx}</mrow>
+    <mrow>\overline{y} \amp= \frac{M_{x}}{m} = \frac{1}{2}\frac{\int_{a}^{b}[f(x)^{2}-g(x)^{2}]\,dx}{\int_{a}^{b}[f(x)-g(x)]\,dx}</mrow>
+  </md>
+</p>
 </subsection>
 </section>
 <exercises>

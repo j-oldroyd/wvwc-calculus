@@ -39,8 +39,17 @@
 			\usepackage{pgfplots}
 			\usepackage{tikz-qtree}
 			\pgfplotsset{compat=newest}
-			\usetikzlibrary{decorations.markings,decorations.pathreplacing,arrows,calc,patterns}
+			\usetikzlibrary{decorations.markings,decorations.pathreplacing,arrows,calc,patterns,shapes.geometric, positioning}
 			\usepgfplotslibrary{fillbetween}
+
+			% Functions for point mass examples in 7.6
+			\pgfmathdeclarefunction{curvei}{1}{%
+			  \pgfmathparse{0.05*#1*(#1-7)*(#1-12)}%
+			}
+			\pgfmathdeclarefunction{curveii}{1}{%
+			  \pgfmathparse{-0.03*(#1)*(#1-6)*(#1-18)}%
+			}
+			
 			% These are the TikZ-PGFPlots settings I need.
 			\pgfplotsset{mystyle/.style={%
 				view={120}{30},
