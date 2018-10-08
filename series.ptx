@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+
+*********************************************************************-->
+<!-- This file was originally part of the book     -->
+<!-- (as copied on 2015/07/12)                     -->
+<!--                                               -->
+<!--   Abstract Algebra: Theory and Applications   -->
+<!--                                               -->
+<!-- Copyright (C) 1997-2014  Thomas W. Judson     -->
+
+<chapter xml:id="series" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <introduction>
+    <p>
+      In physics, the motion of a simple pendulum can be modeled using the second-order differential equation
+      <me>\dv[2]{\theta}{t} + \frac{g}{l}\sin\theta = 0</me>
+      where 
+    </chapter>
