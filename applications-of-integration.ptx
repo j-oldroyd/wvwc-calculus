@@ -1154,7 +1154,7 @@
           <p>
             A <term>differential equation</term> is an equation relating some function with its derivatives.
             A differential equation that involves a function of only one independent variable is called an <term>ordinary differential equation</term>, or ODE.
-            A differential equation that involves a function of more than one independent variable (which you see a lot of in Calculus 3) is called a <term>partial differential equation</term>, or PDE, and will be studied in more detail in <xref ref="partial-differential-equations" autoname="yes" />.
+            A differential equation that involves a function of more than one independent variable (which you see a lot of in Calculus 3) is called a <term>partial differential equation</term>, or PDE.
             The <term>order</term> of a differential equation is the highest derivative that appears in the equation.
           </p>
         </statement>
@@ -1339,7 +1339,7 @@
                     <me>P(t) = \frac{100}{1 - 25t}.</me>
                 </p>
                 <p>
-                    So we have a solution, and furthermore <xref ref="theorem-existence-and-uniqueness-theorem" text="type-global" /> guarantees that the solution is unique.
+                    So we have a solution, and it can be shown that the solution is unique.
                     But if you stare at this for a bit, you might see that it has a divide-by-zero problem.
                     In particular, 
                     <me>\lim_{t\to(\frac{1}{25})^{+}}P(t) = \infty.</me>
@@ -1432,7 +1432,7 @@
             </solution>
         </example>
     </subsection>
-    <subsection xml:id="section-stability-of-solutions">
+    <subsection xml:id="subsection-stability-of-solutions">
         <title>Stability of Solutions</title>
         <p>
             The logistic equation
@@ -1755,6 +1755,36 @@
       </exercise>
       <exercise>
         <myopenmath problem="15198" />
+      </exercise>
+    </exercisegroup>
+    <exercisegroup>
+      <title>Exercises for <xref ref="section-applications-to-physics-and-engineering" text="type-global" /></title>
+      <exercise>
+        <myopenmath problem="5656" />
+      </exercise>
+      <exercise>
+        <myopenmath problem="5665" />
+      </exercise>
+      <exercise>
+        <myopenmath problem="5666" />
+      </exercise>
+      <exercise>
+        <myopenmath problem="5669" />
+      </exercise>
+      <exercise>
+        <myopenmath problem="5680" />
+      </exercise>
+    </exercisegroup>
+    <exercisegroup>
+      <title>Exercises for <xref ref="section-differential-equations" text="type-global" /></title>
+      <exercise>
+        <myopenmath problem="5731" />
+      </exercise>
+      <exercise>
+        <myopenmath problem="5730" />
+      </exercise>
+      <exercise>
+        <myopenmath problem="5732" />
       </exercise>
     </exercisegroup>
   </exercises>

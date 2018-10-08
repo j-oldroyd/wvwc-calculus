@@ -11,9 +11,149 @@
 <!-- Copyright (C) 1997-2014  Thomas W. Judson     -->
 
 <chapter xml:id="series" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Series</title>
   <introduction>
     <p>
       In physics, the motion of a simple pendulum can be modeled using the second-order differential equation
       <me>\dv[2]{\theta}{t} + \frac{g}{l}\sin\theta = 0</me>
-      where 
+      where <m>g</m> is the acceleration due to gravity,<m>l</m> is the length of the pendulum rod and <m>\theta</m> is the angular displacement of the pendulum.
+      Unfortunately, it turns out that this ODE is impossible to solve exactly in terms of <q>elementary functions</q>.
+      The sine term is, surprisingly, too complicated to handle by standard methods for solving ODEs.
+    </p>
+    <p>
+      However, we can <em>replace</em> the sine term with a reasonable approximation, namely the linear approximations from <xref ref="section-linear-approximations" text="type-global" />.
+      The linear approximation <m>L(\theta)</m> to <m>\sin\theta</m> at <m>\theta = 0</m> is given by
+      <me>L(\theta) = \sin0 + \dv{}{\theta}\sin\theta\Big|_{\theta= 0}(\theta - 0),</me>
+      or just <m>L(\theta) = \theta</m> (see <xref ref="figure-sine-linear-approximation" text="type-global" />).
+      This replaces the pendulum ODE with the approximation
+      <me>\dv[2]{\theta}{t} + \frac{g}{l}\theta = 0,</me>
+      which is much simpler and can be easily solved (using methods from differential equations) to get
+      <me>\theta(t) = c_{1}\cos\sqrt{\frac{g}{l}}t + c_{2}\sin\sqrt{\frac{g}{l}}t.</me>
+    </p>
+    <figure xml:id="figure-sine-linear-approximation">
+      <image>
+        <latex-image><![CDATA[
+          \begin{tikzpicture}
+          \begin{axis}[%
+          mystyle,
+          xmin = -1.2*pi, xmax = 1.2*pi,
+          ymin = -2, ymax = 2,
+          xlabel={$\theta$},
+          xtick={-pi, pi},
+          xticklabels={$-\pi$, $\pi$},
+          ytick={-1, 1},
+          legend style={at={(axis cs:1,-1)}, anchor={west}}]
+          \addplot[thick, smooth, blue]{sin(deg(x))};
+          \addlegendentry{$\sin \theta$};
+
+          \addplot[thick, red, smooth]{x};
+          \addlegendentry{$\theta$};
+          \end{axis}
+          \end{tikzpicture}]]>
+        </latex-image>
+      </image>
+      <caption><m>\sin\theta</m> and its linear approximation at <m>\theta=0</m>.</caption>
+    </figure>
+    <p>
+      As we can see from <xref ref="figure-sine-linear-approximation" text="type-global" />, the linear approximation serves as a reasonable estimate of <m>\sin\theta</m> if <m>\theta</m> is small, but loses accuracy quickly as <m>\theta</m> moves away from <m>0</m>.
+      A reasonable question then is how we can improve the accuracy of our approximation.
+      One way to do so is to find a <em>quadratic</em> approximation to <m>\sin\theta</m>, the idea being that allowing higher powers of <m>\theta</m> in our approximation will remove some of the error.
+    </p>
+    <p>
+      To find the <q>best</q> quadratic approximation to <m>f(\theta) = \sin\theta</m> at <m>\theta = 0</m>, we want to find the quadratic function <m>g(\theta) = a\theta^{2} + b\theta + c</m> that satisfies the following:
+    </p>
+    <ul>
+      <li>
+        <m>f(0) = g(0).</m>
+      </li>
+      <li>
+        <m>f'(0) = g'(0).</m>
+      </li>
+      <li>
+        <m>f''(0) = g''(0).</m>
+      </li>
+    </ul>
+    <p>
+      These three conditions give
+    </p>
+    <ul>
+      <li>
+        <m>0 = c</m>
+      </li>
+      <li>
+        <m>1 = b</m>
+      </li>
+      <li>
+        <m>0 = 2a</m>
+      </li>
+    </ul>
+    <p>
+      So the best quadratic approximation to <m>\sin\theta</m> (in the sense of matching derivatives up to the second order) is given by
+      <me>g(\theta) = 0\theta^{2} + \theta + 0 = \theta.</me>
+      This is the same as the linear approximation, so we'll go one more step up to get the best cubic approximation to <m>f(\theta) = \sin\theta</m>, <ie />, the best approximation of the form <m>h(\theta) = a\theta^{3} + b\theta^{2} + c\theta + d</m> in the sense that
+    </p>
+    <ul>
+      <li>
+        <m>f(0) = h(0)</m>
+      </li>
+      <li>
+        <m>f'(0) = h'(0)</m>
+      </li>
+      <li>
+        <m>f''(0)</m>
+      </li>
+      <li>
+        <m>f'''(0) = g'''(0)</m>
+      </li>
+    </ul>
+    <p>
+      This simplifies to
+    </p>
+    <ul>
+      <li>
+        <m>0 = d</m>
+      </li>
+      <li>
+        <m>1 = c</m>
+      </li>
+      <li>
+        <m>0 = 2b</m>
+      </li>
+      <li>
+        <m>-1 = 6a</m>
+      </li>
+    </ul>
+    <p>
+      So the best cubic approximation to <m>\sin\theta</m> is given by
+      <me>h(\theta) = -\frac{1}{6}\theta^{3} + 0\theta^{2} + \theta - 0 = \theta  -\frac{1}{6}\theta^{3}.</me>
+      Plotting this against <m>\sin \theta</m> and <m>\theta</m> as in <xref ref="figure-sine-linear-approximation" text="type-global" /> gives <xref ref="figure-sine-cubic-approximation" text="type-global" />:
+    </p>
+      <figure xml:id="figure-sine-cubic-approximation">
+        <image>
+          <latex-image><![CDATA[
+            \begin{tikzpicture}
+            \begin{axis}[%
+            mystyle,
+            xmin = -1.2*pi, xmax = 1.2*pi,
+            ymin = -2, ymax = 2,
+            xlabel={$\theta$},
+            xtick={-pi, pi},
+            xticklabels={$-\pi$, $\pi$},
+            ytick={-1, 1},
+            legend style={at={(axis cs:1,-1)}, anchor={west}}]
+            \addplot[thick, smooth, blue]{sin(deg(x))};
+            \addlegendentry{$\sin \theta$};
+
+            \addplot[thick, red, smooth]{x};
+            \addlegendentry{$\theta$};
+
+            \addplot[thick,teal,smooth]{x - (x^3)/6};
+            \addlegendentry{$\theta - \frac{1}{6}\theta^{3}$};
+            \end{axis}
+            \end{tikzpicture}]]>
+          </latex-image>
+        </image>
+        <caption><m>\sin\theta</m> and its linear and cubic approximations at <m>\theta=0</m>.</caption>
+      </figure>
+    </introduction>
     </chapter>
