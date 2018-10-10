@@ -155,5 +155,126 @@
         </image>
         <caption><m>\sin\theta</m> and its linear and cubic approximations at <m>\theta=0</m>.</caption>
       </figure>
+      <p>
+        It turns out that this process can be continued indefinitely, giving us
+        <me>\sin x = \sum_{n=0}^{\infty}a_{n}x^{n}.</me>
+        The expression on the right is known as a <term>power series</term>, and provides many advantages for performing calculus with the sine function.
+        The list of coefficients <m>\{a_{n}\}_{n=0}^{\infty}</m> is known as a <term>sequence</term>, and completely determines the properties of sine.
+      </p>
     </introduction>
-    </chapter>
+    <section xml:id="section-sequences">
+        <title>Sequences</title>
+        <p>
+          A <term>sequence</term> is a list of numbers:
+          <me>a_{0}, a_{1}, a_{2}, \ldots,</me>
+          often written <m>\{a_{n}\}_{n=0}^{\infty}</m>.
+          We call <m>a_{n}</m> the <m>\mathbf{n}^{\text{\textbf{th}}}</m> term of the sequence, and <m>n</m> itself the <term>index</term>.
+        </p>
+        <p>
+          Sequences are usually specified in one of two ways: as an <term>explicit formula</term> such as
+          <me>a_{n} = \frac{1}{1 - 2n}</me>,
+          or recursively by means of a <term>recurrence relation</term>, such as
+          <me>F_{n} = F_{n-1} + F_{n-2}, \quad f_{0} = f_{1} = 1.</me>
+          Note that for recurrence relations, we need to specify <q>base cases</q>.
+        </p>
+        <example xml:id="example-an-alternating-sequence">
+            <title>An Alternating Sequence</title>
+            <statement>
+              <p>
+                Find the first few terms of the sequence <m>\{\cos(n\pi)\}_{n=2}^{\infty}</m>.
+              </p>
+            </statement>
+            <solution>
+              <p>
+                This sequence simplifies down to <m>\{1, -1, 1, -1, 1, \ldots\}</m>.
+              </p>
+            </solution>
+        </example>
+        <p>
+          Sequences have limits just as functions do.
+        </p>
+        <definition xml:id="definition-limit-of-a-sequence">
+            <title>Limit of a Sequence</title>
+            <statement>
+              <p>
+                A sequence <m>\{a_{n}\}</m> has limit <m>L</m>, denoted
+                <me>\lim_{n\to\infty}a_{n} = L \quad \text{or} \quad a_{n}\to L</me>,
+                if <m>a_{n}</m> gets arbitrarily close to <m>L</m> as <m>n</m> increases.
+                If a sequence has a limit, we say the sequence is <term>convergent</term> and <term>converges</term>.
+                Otherwise, we say the sequence is <term>divergent</term> and <term>diverges</term>.
+              </p>
+            </statement>
+        </definition>
+        <p>
+          One of the most important sequential limits is the following:
+          <me>\frac{1}{n^{p}}\to 0\quad\text{as}\quad n\to\infty</me>
+          if <m>p > 0</m>.
+        </p>
+        <example>
+          <statement>
+            <p>
+              Find the limit of the sequence
+              <me>a_{n} = \frac{3n - n^{3}}{5n^{3} + 2n^{2}}.</me>
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We can try dividing the numerator and denominator by the highest power of <m>n</m> that appears: <m>n^{3}</m>.
+              This gives
+              <me>a_{n} = \frac{3n^{-2} - 1}{5 + 2n^{-1}}</me>.
+              Now we can take the limit as <m>n\to\infty</m> to get <m>a_{n}\to\frac{-1}{5}</m>.
+            </p>
+          </solution>
+        </example>
+        <p>
+          We can also apply Calculus 1 limits to sequences by using the following theorem.
+        </p>
+        <theorem xml:id="theorem-sequential-and-functional-limits">
+            <title>Sequential and Functional Limits</title>
+            <statement>
+              <p>
+                Let <m>f(x)</m> be a function and suppose that
+                <me>lim_{x\to\infty}f(x) = L</me>.
+                Then
+                <me>\lim_{n\to\infty}f(n) = L</me>
+                also.
+              </p>
+            </statement>
+        </theorem>
+        <p>
+          One immediate advantage of <xref ref="theorem-sequential-and-functional-limits" text="type-global" /> is that L'Hospital's Rule from <xref ref="section-l-hospital-s-rule" text="type-global" /> applies to sequential limits as well, <em>as long as the sequence consists of values from a differential function</em>.
+        </p>
+        <example xml:id="example-finding-a-sequential-limit-using-l-hospital-s-rule">
+            <title>Finding a Sequential Limit Using L'Hospital's Rule</title>
+            <statement>
+              <p>
+                Let <m>a_{n} = n^{2}e^{-n}</m>.
+                Find <m>\lim_{n\to\infty}a_{n}</m>.
+              </p>
+            </statement>
+            <solution>
+              <p>
+                First, note that <m>a_{n} = f(n)</m> where
+                <me>f(x) = \frac{x^{2}}{e^{x}}</me>.
+                Therefore
+              </p>
+              <md>
+                <mrow>\lim_{n\to\infty}a_{n} \amp = \lim_{x\to\infty}\frac{x^{2}}{e^{x}} </mrow>
+                <mrow> \amp = \lim_{x\to\infty}\frac{2x}{e^{x}} </mrow>
+                <mrow> \amp = \lim_{x\to\infty}\frac{2}{e^{x}} </mrow>
+                <mrow> \amp = 0 </mrow>
+              </md>.
+            </solution>
+        </example>
+        <definition xml:id="definition-infinite-limits">
+            <title>Infinite Limits</title>
+            <statement>
+              <p>
+                Let <m>a_{n}</m> be a sequence.
+                If the terms of <m>a_{n}</m> grow without bound as <m>n</m> increases, we say that <m>a_{n}\to\infty</m>.
+                If the terms of <m>a_{n}</m> decrease without bound as <m>n</m> increases, we say that <m>a_{n}\to-\infty</m>.
+              </p>
+            </statement>
+        </definition>
+    </section>
+  </chapter>
