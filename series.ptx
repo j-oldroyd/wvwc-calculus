@@ -864,9 +864,86 @@
     </section>
     <section xml:id="section-the-integral-and-comparison-tests">
         <title>The Integral and Comparison Tests</title>
-        <introduction xml:id="introduction-hey">
-            <title>hey</title>
-            <p>hey</p>
+        <introduction xml:id="introduction-convergence-tests">
+            <title>Convergence Tests</title>
+            <p>
+              The Divergence Test proven in <xref ref="theorem-divergence-test" text="type-global" /> is our first example of a <term>convergence test</term>: a test that determines if a given series converges or diverges.
+              In this section we'll introduce two more such tests.
+              It's important to remember that convergence tests <em>usually cannot be used to evaluate a series</em>.
+              Their primary importance is to check if a given series converges.
+            </p>
         </introduction>
+        <subsection xml:id="subsection-the-integral-test">
+            <title>The Integral Test</title>
+            <p>
+              The main idea behind the <term>integral test</term> is to relate the value of a series to the value of a certain (improper) integral.
+              This is useful since integrals are often easier to compute than series.
+            </p>
+            <theorem xml:id="theorem-integral-test">
+                <title>Integral Test</title>
+                <statement>
+                  <p>
+                    Suppose that <m>f(x)</m> is a positive, decreasing function on <m>[1,\infty)</m> and let <m>a_{n} = f(n)</m>.
+                    Then
+                    <me>\int_{1}^{\infty}f(x)\,dx\quad\text{and}\quad \sum_{n=1}^{\infty}a_{n}</me>
+                    must both converge or both diverge.
+                  </p>
+                </statement>
+            </theorem>
+            <remark>
+              <p>
+                Remember that the Integral Test usually <em>cannot</em> determine the value of a series.
+                It can only be used to determine convergence.
+              </p>
+            </remark>
+            <example xml:id="example-determining-convergence-using-the-integral-test">
+                <title>Determining Convergence Using the Integral Test</title>
+                <statement>
+                  <p>
+                    Determine if the series <m>\sum_{k=0}^{\infty}\frac{1}{1 + k^{2}}</m> converges or diverges.
+                  </p>
+                </statement>
+                <solution>
+                  <p>
+                    We can use the Integral Test here since <m>\frac{1}{1 + k^{2}}</m> is positive and decreasing.
+                    If we define <m>f(x) = \frac{1}{1 + x^{2}}</m>, then <m>\frac{1}{1 + k^{2}} = f(k)</m>.
+                    Now we'll compute <m>\int_{0}^{\infty}f(x)\,dx</m>:
+                    <md>
+                      <mrow>\int_{0}^{\infty}\frac{1}{1 + x^{2}}\,dx \amp = \lim_{b\to\infty}\int_{0}^{b}\frac{1}{1 + x^{2}}\,dx </mrow>
+                      <mrow> \amp = \lim_{b\to\infty}\tan^{-1}b </mrow>
+                      <mrow> \amp = \frac{\pi}{2} </mrow>
+                    </md>.
+                    Since the integral converges, so does the series.
+                    In fact, the value of the series is
+                    <me>\frac{\pi\coth\pi + 1}{2}</me>.
+                  </p>
+                </solution>
+            </example>
+            <example xml:id="example-the-alternating-harmonic-series">
+                <title>The Alternating Harmonic Series</title>
+                <statement>
+                  <p>
+                    Explain why <xref ref="theorem-integral-test" text="type-global" /> cannot be applied to the <term>alternating harmonic series</term>
+                    <me>\sum_{k=1}^{\infty}\frac{(-1)^{k + 1}}{k}</me>.
+                  </p>
+                </statement>
+                <solution>
+                  <p>
+                    Since <m>\frac{(-1)^{k+1}}{k}</m> is neither decreasing nor positive, the Integral Test doesn't apply here.
+                  </p>
+                </solution>
+            </example>
+            <p>
+              An important corollary to <xref ref="theorem-integral-test" text="type-global" /> is that the integral <m>p</m>-test from <xref ref="section-improper-integrals" text="type-global" /> applies to series as well.
+            </p>
+            <theorem xml:id="theorem-series-p--test">
+                <title>Series <m>p</m>-Test</title>
+                <statement>
+                  <p>
+                    The series <m>\sum_{n=1}^{\infty}\frac{1}{n^{p}}</m> converges if and only if <m>p \gt 1</m>.
+                  </p>
+                </statement>
+            </theorem>
+        </subsection>
     </section>
   </chapter>
