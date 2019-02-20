@@ -719,7 +719,7 @@
         </p>
     </section>
     <section xml:id="section-cylindrical-coordinates">
-        <title>Cylindrical Coordinates</title>
+        <title>Triple Integrals in Cylindrical Coordinates</title>
         <p>
             In <xref ref="section-polar-coordinates" text="type-global" />, we saw that introducing a new coordinate system made certain double integrals much easier to work with.
             The same idea works with triple integrals.
@@ -743,6 +743,49 @@
                         <mrow>\iiint_{D}f(x,y,z)\,dV &amp; = \int_{0}^{2}\int_{0}^{\pi}\int_{0}^{4}\frac{r}{1+r^{2}}\,dr\,d\theta\,dz </mrow>
                         <mrow> &amp; = \pi\ln17 </mrow>
                     </md>
+                </p>
+            </solution>
+        </example>
+        <example xml:id="example-cylindrical-volume">
+            <title>Cylindrical Volume</title>
+            <statement>
+                <p>
+                    Find the volume of the region below the inverted cone <m>z = 9 - 3\sqrt{x^{2} + y^{2}}</m> and in the first and second octants.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    First, let <m>D</m> denote the region in question.
+                    Then
+                    <me>D = \left\{(x,y,z) : 0\leq z\leq 9 - 3\sqrt{x^{2} + y^{2}}, 0\leq y \leq \sqrt{9 - x^{2}}, -3\leq x\leq 3\right\}.</me>
+                    However, this region is much easier to describe in cylindrical coorindates:
+                    <me>D = \left\{(r,\theta,z) : 0\leq z\leq 9 - 3r, 0\leq r\leq 3, 0\leq \theta\leq \pi\right\}</me>.
+
+                    Hence the volume is
+                    <md>
+                        <mrow>\iiint_{D}\,dV \amp = \int_{0}^{\pi}\int_{0}^{3}\int_{0}^{9-3r}r\,dz\,dr\,d\theta </mrow>
+                        <mrow> \amp = \int_{0}^{\pi}\int_{0}^{3}(9r - 3r^{2})\,dr\,d\theta </mrow>
+                        <mrow> \amp = \int_{0}^{\pi}\left(\frac{81}{2} - 27\right)\,d\theta </mrow>
+                        <mrow> \amp = \frac{27\pi}{2} </mrow>
+                    </md>.
+                </p>
+            </solution>
+        </example>
+        <example xml:id="example-finding-the-volume-of-the-unit-sphere">
+            <title>Finding the Volume of the Unit Sphere</title>
+            <statement>
+                <p>
+                    Find the volume of the unit sphere; that is, the sphere of radius <m>1</m> centered at the origin.
+                </p>
+            </statement>
+            <solution>
+                <p>
+                    The unit sphere is specified by the inequalities
+                    <me>-\sqrt{1 - x^{2} - y^{2}} \leq z \leq \sqrt{1 - x^{2} - y^{2}}, -\sqrt{1 - x^{2}} \leq y \leq \sqrt{1 - x^{2}} \qq{and} -1\leq x\leq 1</me>.
+                    It's much easier to describe this region using cylindrical coordinates:
+                    <me>-\sqrt{1 - r^{2}}\leq z\leq \sqrt{1 - r^{2}}, 0\leq r\leq 1\qq{and} 0\leq \theta\leq 2\pi</me>.
+                    By symmetry, the volume must be
+                    <me>2\int_{0}^{2\pi}\int_{0}^{1}\int_{0}^{\sqrt{1 - r^{2}}}r\,dz\,dr\,d\theta = \frac{4}{3}\pi</me>.
                 </p>
             </solution>
         </example>
