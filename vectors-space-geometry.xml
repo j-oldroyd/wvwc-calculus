@@ -1195,11 +1195,14 @@
             <example xml:id="example-limit-of-a-vector-function">
                 <title>Limit of a vector function</title>
                 <p>Let</p>
-                <me>\vv{r}(t) = \frac{t^{2}-t}{t-1}\vv{i} + \sqrt{t+8}\vv{j} - \frac{\sin\pi t}{\ln t}\vv{k}.</me>
+                <me>\vv{r}(t) = \frac{t^{2}-1}{t-1}\vv{i} + \sqrt{t+8}\vv{j} - \frac{\sin\pi t}{\ln t}\vv{k}.</me>
                 <p>Suppose we want to find <m>\lim_{t\to 1}\vv{r}(t)</m>. Then we just need to take the limit of each component. So</p>
                 <me>\lim_{t\to1}\vv{r}(t) = 2\vv{i}+3\vv{j} -\pi\vv{k}.</me>
             </example>
-            <p>Just as in Calculus I, we say that a vector function <m>\vv{r}(t)</m> is <term>continuous</term> at <m>t=a</m> if <m>\lim_{t\to a}\vv{r}(t) = \vv{r}(a)</m>. In general, a vector function is continuous wherever <em>all</em> of its components functions are continuous.</p>
+            <p>
+                Just as in Calculus I, we say that a vector function <m>\vv{r}(t)</m> is <term>continuous</term> at <m>t=a</m> if <m>\lim_{t\to a}\vv{r}(t) = \vv{r}(a)</m>.
+                In general, a vector function is continuous wherever <em>all</em> of its components functions are continuous.
+            </p>
             <example xml:id="example-a-horiztonal-helix">
                 <title>A horiztonal helix</title>
                 <p>Let <m>\vv{r}(t) = \dotprod{\sin\pi t, t, \cos\pi t}</m>, and suppose we want to sketch this function. One way to do so is to plug in values for <m>t</m> and connect the resulting points with a curve, but we can also do the following to get an idea of what this looks like. First, note that we have <m>x = \sin\pi t</m> and <m>z=\cos\pi t</m>. So <m>x^{2}+z^{2} = 1</m>, which means that this looks like the unit circle in the <m>xz</m>-plane, traced <em>clockwise</em>. Since we also have <m>y=t</m>, this curve moves farther along the <m>y</m>-axis as <m>t</m> increases. If we trace this out, we get a helix (see the below plot). We can also see from the graph that it has no jumps or gaps, so <m>\vv{r}(t)</m> is continuous everywhere.</p>
