@@ -312,7 +312,7 @@
             To figure out what <m>dA</m> should be in polar coordinates, i.e. in terms of <m>r</m> and <m>\theta</m>, consider the following "polar rectangle":
             <figure xml:id="figure-polar-rectangle">
                 <image xml:id="image-polar-rectangle">
-                    <latex-image-code><![CDATA[
+                    <latex-image><![CDATA[
                         \begin{tikzpicture}[scale=1.5]
 
                             \draw[thick,->] (0,0) -- (5,0);     
@@ -364,7 +364,7 @@
                             \node at (40:1.5) [black]{$\Delta\theta$};
                             \end{tikzpicture}
                         ]]>
-                    </latex-image-code>
+                    </latex-image>
                 </image>
                 <caption>A polar grid.</caption>
             </figure>
