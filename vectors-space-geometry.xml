@@ -18,89 +18,92 @@
     </introduction>
     <section xml:id="section-coordinates-in-3-space">
         <title>Coordinates in 3-Space</title>
-        <p>
-            We're used to Cartesian coordinates in the plane: each point in the plane can be represented by an <m>x</m>-coordinate and a <m>y</m>-coordinate. 
-            This representation is determined by the <term>coordinate axes</term> (the <m>x</m>- and <m>y</m>-axes). 
-            There's nothing preventing us from doing the same for three dimensions. 
-            We'll just need three coordinate axes: the <m>x</m>-, <m>y</m>- and <m>z</m>-axes. 
-            We typically view the <m>xy</m>-plane as horizontal, and the <m>z</m>-axis as vertical, but there's no mathematical preference either way.
-        </p>
-        <p>
-            Just as the <m>x</m>- and <m>y</m>-axes determined the <m>xy</m>-plane, we can also get the <m>xz</m>- and <m>yz</m>-planes. 
-            These planes divide space into eight <term>octants</term>. 
-            And just as any point in the <m>xy</m>-plane can be represented by measuring along the <m>x</m>-axis and <m>y</m>-axis to get a point <m>(x,y)</m>, we can do the same in space to get a point <m>(x,y,z)</m>. 
-            The set of all points like this is denoted by <m>\RR^{3}</m>, and is the <term>three-dimensional coordinate system</term>.
-        </p>
-        <p>
-            Given any point <m>(a,b,c)</m> in <m>\RR^{3}</m>, we can find its <term>projections</term> onto any of the coordinate axes or coordinate planes without too much trouble. 
-            The projection onto a line or plane is the point on that line or plane that is closest to the original point <m>(a,b,c)</m>.
-        </p>
-        <example xml:id="example-projection">
-            <title>Projection</title>
-            <statement>
-                <p>
-                    Find the projection of the point <m>(-1,3,4)</m> onto the <m>yz</m>-plane.
-                </p>
-            </statement>
-            <solution>
-                <p>
-                    Here's how we can find the projection of the point <m>(-1,3,4)</m> onto the <m>yz</m>-plane. 
-                    Note that the <m>yz</m>-plane is just the set of all points with <m>x</m>-coordinate equation to <m>0</m>, so the projection of <m>(-1,3,4)</m> onto the <m>yz</m>-plane is the point <m>(0,3,4)</m>.
-                </p>
-            </solution>
-        </example>
-
-        <example xml:id="example-equations-in-space">
-            <title>Equations in space</title>
-            <statement>
-                <p>
-                    Sketch <m>y=1</m> in <m>\RR^{3}</m>. 
-                </p>
-            </statement>
-            <solution>
-                <p>
-                    This is just the set of all points in <m>\RR^{3}</m> of the form <m>(x,1,z)</m>. 
-                    This forms a <term>plane</term> in <m>\RR^{3}</m>.
-                </p>
-            </solution>
-        </example>
-        <sage>
-            <input>
-                x,z = var('x,z')
-                parametric_plot3d((x,1,z), (x,-4,4), (z,-4,4))
-            </input>
-        </sage>
-
-        <example xml:id="example-more-equations-in-space">
-            <title>More equations in space</title>
-            <statement>
-                <p>
-                    Sketch <m>x+y=2</m> in <m>\RR^{3}</m>.
-                </p>
-            </statement> 
-            <solution>
-                <p>
-                    We can do so as follows. 
-                    First, sketch <m>x+y=2</m> in the <m>xy</m>-plane, which will just be the line <m>y = 2-x</m>. 
-                    Then the surface in <m>\RR^{3}</m> represented by <m>x+y=2</m> is actually the surface consisting of all points directly above and directly below the line <m>y=2-x</m> in the <m>xy</m>-plane.
-                </p>
-            </solution>
-        </example>
-
-        <example xml:id="example-intersection-of-a-sphere-and-a-plane">
-            <title>Intersection of a sphere and a plane</title>
-            <statement>
-                <p>
-                    Describe the intersection of the sphere given by the equation <m>(x+2)^{2} + (y-3)^{2} + z^{2} = 9</m> with the <m>xz</m>-plane. 
-                </p>
-            </statement>
-            <solution>
+        <subsection xml:id="xyz-coordinates">
+            <title><m>xyz</m>-coordinates</title>
             <p>
-                We can do this without too much trouble if we remember that the <m>xz</m>-plane is just the set of all points with <m>y</m>-coordinate equal to <m>0</m>. 
-                So the intersection of this sphere with the <m>xz</m>-plane traces out the curve <m>(x+2)^{2} + (0-3)^{2} + z^{2} = 9</m> in the <m>xz</m>-plane, which is a circle of radius <m>\sqrt{18}</m> centered at the point <m>(-2,0,0)</m>.
+                We're used to Cartesian coordinates in the plane: each point in the plane can be represented by an <m>x</m>-coordinate and a <m>y</m>-coordinate.
+                This representation is determined by the <term>coordinate axes</term> (the <m>x</m>- and <m>y</m>-axes).
+                There's nothing preventing us from doing the same for three dimensions.
+                We'll just need three coordinate axes: the <m>x</m>-, <m>y</m>- and <m>z</m>-axes.
+                We typically view the <m>xy</m>-plane as horizontal, and the <m>z</m>-axis as vertical, but there's no mathematical preference either way.
             </p>
-        </solution>
-        </example>
+            <p>
+                Just as the <m>x</m>- and <m>y</m>-axes determined the <m>xy</m>-plane, we can also get the <m>xz</m>- and <m>yz</m>-planes. 
+                These planes divide space into eight <term>octants</term>. 
+                And just as any point in the <m>xy</m>-plane can be represented by measuring along the <m>x</m>-axis and <m>y</m>-axis to get a point <m>(x,y)</m>, we can do the same in space to get a point <m>(x,y,z)</m>. 
+                The set of all points like this is denoted by <m>\RR^{3}</m>, and is the <term>three-dimensional coordinate system</term>.
+            </p>
+            <p>
+                Given any point <m>(a,b,c)</m> in <m>\RR^{3}</m>, we can find its <term>projections</term> onto any of the coordinate axes or coordinate planes without too much trouble. 
+                The projection onto a line or plane is the point on that line or plane that is closest to the original point <m>(a,b,c)</m>.
+            </p>
+            <example xml:id="example-projection">
+                <title>Projection</title>
+                <statement>
+                    <p>
+                        Find the projection of the point <m>(-1,3,4)</m> onto the <m>yz</m>-plane.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Here's how we can find the projection of the point <m>(-1,3,4)</m> onto the <m>yz</m>-plane. 
+                        Note that the <m>yz</m>-plane is just the set of all points with <m>x</m>-coordinate equation to <m>0</m>, so the projection of <m>(-1,3,4)</m> onto the <m>yz</m>-plane is the point <m>(0,3,4)</m>.
+                    </p>
+                </solution>
+            </example>
+
+            <example xml:id="example-equations-in-space">
+                <title>Equations in space</title>
+                <statement>
+                    <p>
+                        Sketch <m>y=1</m> in <m>\RR^{3}</m>. 
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        This is just the set of all points in <m>\RR^{3}</m> of the form <m>(x,1,z)</m>. 
+                        This forms a <term>plane</term> in <m>\RR^{3}</m>.
+                    </p>
+                </solution>
+            </example>
+            <sage>
+                <input>
+                    x,z = var('x,z')
+                    parametric_plot3d((x,1,z), (x,-4,4), (z,-4,4))
+                </input>
+            </sage>
+
+            <example xml:id="example-more-equations-in-space">
+                <title>More equations in space</title>
+                <statement>
+                    <p>
+                        Sketch <m>x+y=2</m> in <m>\RR^{3}</m>.
+                    </p>
+                </statement> 
+                <solution>
+                    <p>
+                        We can do so as follows. 
+                        First, sketch <m>x+y=2</m> in the <m>xy</m>-plane, which will just be the line <m>y = 2-x</m>. 
+                        Then the surface in <m>\RR^{3}</m> represented by <m>x+y=2</m> is actually the surface consisting of all points directly above and directly below the line <m>y=2-x</m> in the <m>xy</m>-plane.
+                    </p>
+                </solution>
+            </example>
+
+            <example xml:id="example-intersection-of-a-sphere-and-a-plane">
+                <title>Intersection of a sphere and a plane</title>
+                <statement>
+                    <p>
+                        Describe the intersection of the sphere given by the equation <m>(x+2)^{2} + (y-3)^{2} + z^{2} = 9</m> with the <m>xz</m>-plane. 
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        We can do this without too much trouble if we remember that the <m>xz</m>-plane is just the set of all points with <m>y</m>-coordinate equal to <m>0</m>. 
+                        So the intersection of this sphere with the <m>xz</m>-plane traces out the curve <m>(x+2)^{2} + (0-3)^{2} + z^{2} = 9</m> in the <m>xz</m>-plane, which is just the point <m>(-2,0,0)</m>.
+                    </p>
+                </solution>
+            </example>
+        </subsection>
 
         <subsection xml:id="subsection-the-distance-formula">
             <title>The Distance Formula</title>
@@ -145,32 +148,34 @@
                 <title>Spherical shells</title>
                 <p>We can also use inequalities to describe regions in addition to equalities. For example, <m>3\leq x^{2}+y^{2}+z^{2}\leq 16</m> describes the region contained between the sphere of radius <m>\sqrt{3}</m> and the sphere of radius <m>4</m>, both centered at the origin.</p>
             </example>
+            <p>SUGGESTED PROBLEMS: 1, 3, 11, 13</p>
         </subsection>
-        <p>SUGGESTED PROBLEMS: 1, 3, 11, 13</p>
     </section>
     <section xml:id="section-vectors">
         <title>Vectors</title>
-        <p>
-            One of our goals in this chapter is to adequately describe motion in space. 
-            A useful way to do this uses the concept of <term>vector</term>, which we think of as a quantity that has both direction and magnitude/length. 
-            A simple example would be velocity: velocity in space has a direction and also a magnitude (speed). 
-            We will typically denote vectors by using boldface letters such as <m>\vv{x}</m> or letters with a bar overhead such as <m>\bar{x}</m>. 
-            We represent vectors as arrows with an <term>initial point</term> and a <term>terminal point</term>:
-        </p>
-        <figure xml:id="figure-vector-representation">
-            <image xml:id="image-vector-representation" width="20%">
-                <latex-image-code><![CDATA[
-                    \begin{tikzpicture}
-                        \draw[->] (0,0) node[below left]{$A$} -- (3,2) node[right]{$B$};
-                    \end{tikzpicture}
-                    ]]>
-                </latex-image-code>
-            </image>
-            <caption>A vector.</caption>
-        </figure>
-        <p>
-            We say that two vectors <m>\vv{x},\vv{y}</m> are <term>equivalent</term>, or <term>equal</term>, if they have the same magnitude and direction. We write this as <m>\vv{x} = \vv{y}</m>.
-        </p>
+        <introduction>
+            <p>
+                One of our goals in this chapter is to adequately describe motion in space. 
+                A useful way to do this uses the concept of <term>vector</term>, which we think of as a quantity that has both direction and magnitude/length. 
+                A simple example would be velocity: velocity in space has a direction and also a magnitude (speed). 
+                We will typically denote vectors by using boldface letters such as <m>\vv{x}</m> or letters with a bar overhead such as <m>\bar{x}</m>. 
+                We represent vectors as arrows with an <term>initial point</term> and a <term>terminal point</term>:
+            </p>
+            <figure xml:id="figure-vector-representation">
+                <image xml:id="image-vector-representation" width="20%">
+                    <latex-image><![CDATA[
+                        \begin{tikzpicture}
+                            \draw[->] (0,0) node[below left]{$A$} -- (3,2) node[right]{$B$};
+                        \end{tikzpicture}
+                        ]]>
+                    </latex-image>
+                </image>
+                <caption>A vector.</caption>
+            </figure>
+            <p>
+                We say that two vectors <m>\vv{x},\vv{y}</m> are <term>equivalent</term>, or <term>equal</term>, if they have the same magnitude and direction. We write this as <m>\vv{x} = \vv{y}</m>.
+            </p>
+        </introduction>
         <subsection xml:id="subsection-addition-and-scalar-multiplication">
             <title>Addition and Scalar Multiplication</title>
             <p>Given two vectors <m>\vv{x} = \overrightarrow{AB},\vv{y}=\overrightarrow{BC}</m>, we can add them to get the new vector</p>
@@ -178,7 +183,7 @@
             <p>So the vector <m>\vv{x}+\vv{y}</m> is obtained by moving the tail of <m>\vv{y}</m> to the tip of <m>\vv{x}</m> and then drawing a vector from the tail of <m>\vv{x}</m> to the tip of <m>\vv{y}</m>.</p>
             <figure xml:id="figure-vector-addition">
                 <image xml:id="image-vector-addition" width="40%">
-                    <latex-image-code><![CDATA[
+                    <latex-image><![CDATA[
                         \begin{tikzpicture}
                             \begin{axis}[xmin=-7,ymin=-7,xmax=7,ymax=10, hide axis]
                             \coordinate (O) at (0,0);
@@ -193,7 +198,7 @@
                             \end{axis}
                         \end{tikzpicture}
                         ]]>
-                    </latex-image-code>
+                    </latex-image>
                 </image>
                 <caption>Vector addition.</caption>
             </figure>
@@ -290,7 +295,7 @@
             <p>These vectors are essentially designed to capture the "coordinate directions", and are plotted below.</p>
             <figure xml:id="figure-standard-basis">
                 <image xml:id="image-standard-basis" width="60%">
-                    <latex-image-code><![CDATA[
+                    <latex-image><![CDATA[
                         \begin{tikzpicture} [axis/.style={->,blue,thick}, 
                             vector/.style={-stealth,red,very thick}, 
                             vector guide/.style={dashed,red,thick}]
@@ -339,7 +344,7 @@
                             \end{axis}
                             \end{tikzpicture}
                         ]]>
-                    </latex-image-code>
+                    </latex-image>
                 </image>
                 <caption>The standard basis.</caption>
             </figure>
@@ -392,17 +397,23 @@
                 </md>
                 <p>Therefore the chain weighs <m>43\sqrt{2}</m><quantity><unit base="newton"/></quantity>.</p>
             </example>
+            <p>
+                SUGGESTED PROBLEMS: 1--17 odd, 23, 25, 27
+            </p>
         </subsection>
-        SUGGESTED PROBLEMS: 1--17 odd, 23, 25, 27
     </section>
     <section xml:id="section-the-dot-product">
         <title>The Dot Product</title>
         <subsection xml:id="subsection-definition-and-properties-of-the-dot-product">
             <title>Definition and Properties of the Dot Product</title>
-            <p>Suppose we're given two vectors. What we'd like to do is to come up with a measure of how much these vectors overlap. Such a measure may be useful for determining if forces are too close together, for example. So consider two vectors <m>\vv{x} = \dotprod{x_{1},y_{1},z_{1}}</m> and <m>\vv{y} = \dotprod{x_{2},y_{2},z_{2}}</m> as in the following diagram.</p>
+            <p>
+                Suppose we're given two vectors. What we'd like to do is to come up with a measure of how much these vectors overlap.
+                Such a measure may be useful for determining if forces are too close together, for example.
+                So consider two vectors <m>\vv{x} = \dotprod{x_{1},y_{1},z_{1}}</m> and <m>\vv{y} = \dotprod{x_{2},y_{2},z_{2}}</m> as in the following diagram.
+            </p>
             <figure xml:id="figure-vector-dot-product">
                 <image xml:id="image-vector-dot-product" width="40%">
-                    <latex-image-code><![CDATA[
+                    <latex-image><![CDATA[
                         \begin{tikzpicture}
                             \begin{axis}[xmin=-7,ymin=-7,xmax=7,ymax=7, hide axis]
                             \coordinate (O) at (0,0);
@@ -414,7 +425,7 @@
                             \end{axis}
                         \end{tikzpicture}
                         ]]>
-                    </latex-image-code>
+                    </latex-image>
                 </image>
             </figure>
             <p>One way we can measure how much <m>\vv{x}</m> and <m>\vv{y}</m> overlap is to find <m>|\vv{x}+\vv{y}|</m>, or equivalently <m>|\vv{x}+\vv{y}|^{2},</m> since this is larger if <m>\vv{x}</m> and <m>\vv{y}</m> are more closely aligned.<fn>We are carefully ignoring the case where <m>\vv{x}</m> and <m>\vv{y}</m> point in opposite directions...</fn> From <xref ref="subsection-vector-components" text="type-global" />, we know that</p>
@@ -468,7 +479,7 @@
                 <p>Place both vectors <m>\vv{a}</m> and <m>\vv{b}</m> at the origin, and then draw the vector <m>\vv{a}-\vv{b}</m> from the tip of <m>\vv{b}</m> to the tip of <m>\vv{a}</m>, like so:</p>
                 <figure xml:id="figure-dot-product-geometry">
                     <image xml:id="image-dot-product-geometry" width="60%">
-                        <latex-image-code><![CDATA[
+                        <latex-image><![CDATA[
                             \begin{tikzpicture} [axis/.style={->,blue,thick}, 
                                 vector/.style={-stealth,red,very thick}, 
                                 vector guide/.style={dashed,red,thick}]
@@ -504,7 +515,7 @@
                                 \end{axis}
                                 \end{tikzpicture}
                             ]]>
-                        </latex-image-code>
+                        </latex-image>
                     </image>
                 </figure>
                 <p>Then <m>\vv{a},\vv{b}</m> and <m>\vv{a}-\vv{b}</m> form a triangle. We want to relate the dot product <m>\vv{a}\cdot\vv{b}</m> with the angle <m>\theta</m>, so we'll start by using the Law of Cosines to get an equation involving <m>\theta</m>. The Law of Cosines states that</p>
@@ -528,7 +539,7 @@
                 <p>Consider the lines <m>x+2y = 7</m> and <m>5x-y = 2</m> in <m>\RR^{2}</m>, plotted below:</p>
                 <figure xml:id="figure-angle-between-lines">
                     <image xml:id="image-angle-between-lines" width="80%">
-                        <latex-image-code><![CDATA[
+                        <latex-image><![CDATA[
                             \begin{tikzpicture}
                             \begin{axis}[mystyle, xmin = -6, xmax = 6, ymin = -6, ymax = 6, legend pos = south east]
                                 \addplot[blue]{(7-x)/2};
@@ -549,7 +560,7 @@
                             \end{axis}
                             \end{tikzpicture}
                             ]]>
-                        </latex-image-code>
+                        </latex-image>
                     </image>
                 </figure>
                 <p>Suppose we want to find the acute angle <m>\theta</m> these lines make with each other. We can do so by finding vectors <m>\vv{a}</m> and <m>\vv{b}</m> that point in the same directions as these lines. We'll start by finding the vector <m>\vv{a}</m> which points in the same direction as the line <m>x+2y=7</m>. To do so, we need two points on this line: <m>A_{1} = (7,0)</m> and <m>A_{2} = (5,1)</m>. So we can take <m>\vv{a}</m> to be</p>
@@ -567,7 +578,7 @@
             <p>Consider two vectors <m>\vv{a}</m> and <m>\vv{b}</m> arranged as follows:</p>
             <figure xml:id="figure-orthogonal-projection-1">
                 <image xml:id="image-orthogonal-projection-1" width="60%">
-                    <latex-image-code><![CDATA[
+                    <latex-image><![CDATA[
                         \begin{tikzpicture}[vector/.style={-stealth,blue,very thick}]
                         \begin{axis}[xmin = -6, xmax = 6, ymin = -6, ymax = 6, hide axis]
                             
@@ -580,13 +591,13 @@
                         \end{axis}
                         \end{tikzpicture}
                         ]]>
-                    </latex-image-code>
+                    </latex-image>
                 </image>
             </figure>
             <p>Now draw a line from the tip of <m>\vv{a}</m> to the point on <m>\vv{b}</m> that is closest to the tip of <m>\vv{a}</m>; such a line must be orthogonal to <m>\vv{b}</m>. This point on <m>\vv{b}</m> defines a new vector that we call the <term>projection of <m>\vv{a}</m> onto <m>\vv{b}</m></term>; we denote this vector by <m>\proj{\vv{b}}{\vv{a}}</m>.</p>
             <figure xml:id="figure-orthogonal-projection-2">
                 <image xml:id="image-orthogonal-projection-2" width="60%">
-                    <latex-image-code><![CDATA[
+                    <latex-image><![CDATA[
                         \begin{tikzpicture}[vector/.style={-stealth,blue,very thick}]
                         \begin{axis}[xmin = -6, xmax = 6, ymin = -6, ymax = 6, hide axis]
                             
@@ -605,7 +616,7 @@
                         \end{axis}
                         \end{tikzpicture}
                         ]]>
-                    </latex-image-code>
+                    </latex-image>
                 </image>
             </figure>
             <p>The projection <m>\proj{\vv{b}}{\vv{a}}</m> can be thought of as the vector parallel to <m>\vv{b}</m> that best approximates <m>\vv{a}</m>. What we'd like to do now is to actually find a formula for this projection. If we let <m>\theta</m> denote the acute angle between the vectors <m>\vv{a}</m> and <m>\vv{b}</m>, then</p>
@@ -635,8 +646,8 @@
                 <me>W = \vv{F}\cdot\vv{D} = -2+9-2 = 5</me>
                 <p>joules.</p>
             </example>
+            <p>SUGGESTED PROBLEMS: 1--19 odd, 35, 39</p>
         </subsection>
-        <p>SUGGESTED PROBLEMS: 1--19 odd, 35, 39</p>
     </section>
     <section xml:id="section-the-cross-product">
         <title>The Cross Product</title>
@@ -831,7 +842,7 @@
             <p>First, suppose we have a line <m>L</m> in <m>\RR^{3}</m> as follows:</p>
             <figure xml:id="figure-line-in-space">
                 <image xml:id="image-line-in-space" width="90%">
-                    <latex-image-code><![CDATA[
+                    <latex-image><![CDATA[
                         \begin{tikzpicture} [axis/.style={->,blue,thick}, 
                             vector/.style={-stealth,red,very thick}, 
                             vector guide/.style={dashed,red,thick}]
@@ -863,13 +874,13 @@
                             \end{axis}
                         \end{tikzpicture}
                         ]]>
-                    </latex-image-code>
+                    </latex-image>
                 </image>
             </figure>
             <p>Our goal is to find an equation that describes this line. Imagine that we have a vector <m>\vv{r}_{0}</m> pointing from the origin to the point <m>A</m>, like so:</p>
             <figure xml:id="figure-line-in-space-1">
                 <image xml:id="image-line-in-space-1" width="90%">
-                    <latex-image-code><![CDATA[
+                    <latex-image><![CDATA[
                         \begin{tikzpicture} [axis/.style={->,blue,thick}, 
                             vector/.style={-stealth,red,very thick}, 
                             vector guide/.style={dashed,red,thick}]
@@ -904,13 +915,13 @@
                             \end{axis}
                         \end{tikzpicture}
                         ]]>
-                    </latex-image-code>
+                    </latex-image>
                 </image>
             </figure>
             <p>Then we can get to every other point on the line by starting from <m>\vv{r}_{0}</m>. In particular, if <m>\vv{u}</m> is any vector parallel to <m>\vec{AB}</m>, then <m>\vv{r} = \vv{r}_{0}+\vv{u}</m> must also be on the line <m>L</m>:</p>
             <figure xml:id="figure-line-in-space-2">
                 <image xml:id="image-line-in-space-2" width="90%">
-                    <latex-image-code><![CDATA[
+                    <latex-image><![CDATA[
                         \begin{tikzpicture} [axis/.style={->,blue,thick}, 
                             vector/.style={-stealth,red,very thick}, 
                             vector guide/.style={dashed,red,thick}]
@@ -947,7 +958,7 @@
                             \end{axis}
                         \end{tikzpicture}
                         ]]>
-                    </latex-image-code>
+                    </latex-image>
                 </image>
             </figure>
             <p>So to get all possible points on <m>L</m>, we just need to look at all possible vectors <m>\vv{r} = \vv{r}_{0}+\vv{u}</m>, where <m>\vv{u}</m> is any vector parallel to <m>\vec{AB}</m>. If we set <m>\vv{v} = \vec{AB}</m>,<fn>We don't actually have to pick <m>\vv{v} = \vec{AB}</m>, we just need <m>\vv{v}</m> to be parallel to <m>\vec{AB}</m>.</fn> then</p>
@@ -1162,11 +1173,19 @@
     </section>
     <section xml:id="section-vector-functions">
         <title>Vector Functions</title>
-        <p>Recall from <xref ref="subsection-equations-of-lines" text="type-global" /> that the equation of a line can be written as</p>
-        <me>\vv{r} = \vv{r}_{0}+t\vv{v} = \dotprod{x_{0}+at, y_{0}+bt, z_{0}+ct}.</me>
-        <p>This is our first example of a <term>vector function</term>. Vector functions are functions of the form</p>
-        <me>\vv{r}(t) = \dotprod{f(t),g(t),h(t)},</me>
-        <p>and graphs of vector functions are called <term>space curves</term>. We call <m>f,g,h</m> the <term>component functions</term> of <m>\vv{r}</m>. We're interested in how these curves change, which means we're interested in how to do calculus on space curves. Although these curves live in <m>\RR^{3}</m>, there's still only one independent variable: <m>t</m>. So much of what we learned in Calculus I applies to space curves.</p>
+        <introduction>
+            <p>
+                Recall from <xref ref="subsection-equations-of-lines" text="type-global" /> that the equation of a line can be written as
+                <me>\vv{r} = \vv{r}_{0}+t\vv{v} = \dotprod{x_{0}+at, y_{0}+bt, z_{0}+ct}.</me>
+                This is our first example of a <term>vector function</term>. Vector functions are functions of the form
+                <me>\vv{r}(t) = \dotprod{f(t),g(t),h(t)},</me>
+                and graphs of vector functions are called <term>space curves</term>.
+                We call <m>f,g,h</m> the <term>component functions</term> of <m>\vv{r}</m>.
+                We're interested in how these curves change, which means we're interested in how to do calculus on space curves.
+                Although these curves live in <m>\RR^{3}</m>, there's still only one independent variable: <m>t</m>.
+                So much of what we learned in Calculus I applies to space curves.
+            </p>
+        </introduction>
         <subsection xml:id="limits-with-space-curves">
             <title>Limits with Space Curves</title>
             <p>We can take limits with vector functions just as we can with regular functions.</p>
@@ -1176,11 +1195,14 @@
             <example xml:id="example-limit-of-a-vector-function">
                 <title>Limit of a vector function</title>
                 <p>Let</p>
-                <me>\vv{r}(t) = \frac{t^{2}-t}{t-1}\vv{i} + \sqrt{t+8}\vv{j} - \frac{\sin\pi t}{\ln t}\vv{k}.</me>
+                <me>\vv{r}(t) = \frac{t^{2}-1}{t-1}\vv{i} + \sqrt{t+8}\vv{j} - \frac{\sin\pi t}{\ln t}\vv{k}.</me>
                 <p>Suppose we want to find <m>\lim_{t\to 1}\vv{r}(t)</m>. Then we just need to take the limit of each component. So</p>
                 <me>\lim_{t\to1}\vv{r}(t) = 2\vv{i}+3\vv{j} -\pi\vv{k}.</me>
             </example>
-            <p>Just as in Calculus I, we say that a vector function <m>\vv{r}(t)</m> is <term>continuous</term> at <m>t=a</m> if <m>\lim_{t\to a}\vv{r}(t) = \vv{r}(a)</m>. In general, a vector function is continuous wherever <em>all</em> of its components functions are continuous.</p>
+            <p>
+                Just as in Calculus I, we say that a vector function <m>\vv{r}(t)</m> is <term>continuous</term> at <m>t=a</m> if <m>\lim_{t\to a}\vv{r}(t) = \vv{r}(a)</m>.
+                In general, a vector function is continuous wherever <em>all</em> of its components functions are continuous.
+            </p>
             <example xml:id="example-a-horiztonal-helix">
                 <title>A horiztonal helix</title>
                 <p>Let <m>\vv{r}(t) = \dotprod{\sin\pi t, t, \cos\pi t}</m>, and suppose we want to sketch this function. One way to do so is to plug in values for <m>t</m> and connect the resulting points with a curve, but we can also do the following to get an idea of what this looks like. First, note that we have <m>x = \sin\pi t</m> and <m>z=\cos\pi t</m>. So <m>x^{2}+z^{2} = 1</m>, which means that this looks like the unit circle in the <m>xz</m>-plane, traced <em>clockwise</em>. Since we also have <m>y=t</m>, this curve moves farther along the <m>y</m>-axis as <m>t</m> increases. If we trace this out, we get a helix (see the below plot). We can also see from the graph that it has no jumps or gaps, so <m>\vv{r}(t)</m> is continuous everywhere.</p>
@@ -1307,12 +1329,11 @@
             <title>Integrals with Space Curves</title>
             <p>We can also integrate vector functions without too much trouble. Just as taking the derivative of a vector function reduces down to differentiating each component, integrating a vector function reduces down to integrating each component. If <m>\vv{r}(t) = \dotprod{f(t),g(t),h(t)},</m> then</p>
             <men xml:id="equation-vector-function-integration">\int_{a}^{b}\vv{r}(t)\,dt = \dotprod{\int_{a}^{b}f(t)\,dt,\int_{a}^{b}g(t)\,dt,\int_{a}^{b}h(t)\,dt}.</men>
+            <p>SUGGESTED PROBLEMS: 1, 3, 5, 7, 17, 21, 23, 37, 41, 45, 59, 61</p>
         </subsection>
-        <p>SUGGESTED PROBLEMS: 1, 3, 5, 7, 17, 21, 23, 37, 41, 45, 59, 61</p>
     </section>
     <section xml:id="section-arc-length-and-curvature">
         <title>Arc Length and Curvature</title>
-        <p>We now move on to describing properties of space curves given by some vector function <m>\vv{r}(t)</m> that will be useful in the next section.</p>
         <subsection xml:id="subsection-arc-length">
             <title>Arc Length</title>
             <p>Suppose some particle travels along the space curve given by <m>\vv{r}(t)</m> for <m>a\leq t\leq b</m>. What we'd like to do is determine how far the particle travels over this time interval. Recall that distance is just speed multiplied by time, and the speed of this particle is given by <m>|\vv{r}'(t)|</m>. So we can imagine that the distance traveled by this particle over some infinitesimal time interval <m>dt</m> to be given by <m>|\vv{r}'(t)|\,dt</m>. So adding up all of these distances from <m>t=a</m> to <m>t=b</m> should give us the arc length. This suggests (but does not prove!) the following formula for arc length:</p>
@@ -1414,19 +1435,19 @@
                 </statement>
             </theorem>
             <p>The formula in <xref ref="theorem-alternative-curvature-formula" text="type-global" /> may look worse than the formula given in <xref ref="definition-curvature" text="type-global" />, but it has one significant advantage: we don't need to differentiate any magnitudes, which is required in the previous formula to compute <m>\vv{T}'(t)</m>.</p>
+            <example xml:id="example-using-the-alternative-formula">
+                <title>Using the alternative formula</title>
+                <statement>
+                    <p>Let <m>\vv{r}(t) = t\vv{i}+t^{2}\vv{j}+e^{t}\vv{k}</m>. We'll make use of <xref ref="theorem-alternative-curvature-formula" text="type-global" /> to find <m>\kappa(t).</m> We have</p>
+                    <md>
+                        <mrow>\vv{r}'(t) &amp; = \dotprod{1,2t,e^{t}} </mrow>
+                        <mrow>\vv{r}''(t) &amp; = \dotprod{0,2,e^{t}} </mrow>
+                    </md>
+                    <p>and so</p>
+                    <me>\kappa(t) = \frac{|\dotprod{2e^{t}(t-1),-e^{t},2}|}{|\dotprod{1,2t,e^{t}}|^{3}} = \frac{\sqrt{4e^{2t}(t-1)^{2}+e^{2t}+4}}{(1+4t^{2}+e^{2t})^{3/2}}.</me>
+                </statement>
+            </example>
         </subsection>
-        <example xml:id="example-using-the-alternative-formula">
-            <title>Using the alternative formula</title>
-            <statement>
-                <p>Let <m>\vv{r}(t) = t\vv{i}+t^{2}\vv{j}+e^{t}\vv{k}</m>. We'll make use of <xref ref="theorem-alternative-curvature-formula" text="type-global" /> to find <m>\kappa(t).</m> We have</p>
-                <md>
-                    <mrow>\vv{r}'(t) &amp; = \dotprod{1,2t,e^{t}} </mrow>
-                    <mrow>\vv{r}''(t) &amp; = \dotprod{0,2,e^{t}} </mrow>
-                </md>
-                <p>and so</p>
-                <me>\kappa(t) = \frac{|\dotprod{2e^{t}(t-1),-e^{t},2}|}{|\dotprod{1,2t,e^{t}}|^{3}} = \frac{\sqrt{4e^{2t}(t-1)^{2}+e^{2t}+4}}{(1+4t^{2}+e^{2t})^{3/2}}.</me>
-            </statement>
-        </example>
         <subsection xml:id="subsection-normal-and-binormal-vectors">
             <title>Normal and Binormal Vectors</title>
             <p>Consider a curve <m>\vv{r}(t)</m>. Then the direction of the curve is given by the unit tangent vector <m>\vv{T}(t) = \frac{\vv{r}'(t)}{|\vv{r}'(t)|}</m>. If we differentiate <m>\vv{T}(t)</m> to get <m>\vv{T}'(t)</m>, we can view this vector as telling us the direction the curve is turning. This leads us to the concept of <term>unit normal vectors</term> to a space curve.</p>
@@ -1463,8 +1484,8 @@
                     <me>\vv{B}(t) = \vv{T}(t)\times\vv{N}(t).</me>
                 </statement>
             </definition>
+            <p>SUGGESTED PROBLEMS: 1, 3, 11-19 odd, 39</p>
         </subsection>
-        <p>SUGGESTED PROBLEMS: 1, 3, 11-19 odd, 39</p>
     </section>
     <section xml:id="section-motion-in-space">
         <title>Motion in Space</title>
