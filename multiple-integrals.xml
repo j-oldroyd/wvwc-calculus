@@ -821,6 +821,11 @@
           </p>
       </statement>
     </example>
+    <p>
+      If we wish to compute integrals using spherical coordinates, then we must alter <m>dV</m> just as we did in <xref ref="section-cylindrical-coordinates" text="type-global" />.
+      In particular, we use
+      <me>dV = \rho^{2}\sin\varphi\,d\rho\,d\varphi\,d\theta</me>.
+    </p>
     <example xml:id="example-volume-of-the-unit-sphere">
       <title>Volume of the Unit Sphere</title>
       <statement>
