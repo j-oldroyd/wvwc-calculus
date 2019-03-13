@@ -876,4 +876,21 @@
       </solution>
     </example>
   </section>
+  <section xml:id="section-change-of-variables">
+      <title>Change of Variables</title>
+      <introduction>
+        <p>
+          The goal now is to determine a general method to change coordinates in multiple integrals.
+          We'll start with double integrals.
+        </p>
+      </introduction>
+      <subsection xml:id="subsection-change-of-variables-in-double-integrals">
+          <title>Change of Variables in Double Integrals</title>
+          <p>
+            Any change of coordinates involves a transformation between new variables <m>u,v</m> and the original variables <m>x,y</m>.
+            We indicate this as follows:
+            <me>x = g(u,v) \qq{and} y = h(u,v)</me>.
+          </p>
+      </subsection>
+  </section>
 </chapter>
