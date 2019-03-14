@@ -813,12 +813,12 @@
       Just as constant limits in Cartesian coordinates correspond to rectangular regions of integration, constant limits in spherical coordinates give rise to spherical regions of integration.
     </p>
     <example xml:id="example-sketching-a-spherical-region">
-        <title>Sketching a Spherical Region</title>
-        <statement>
-          <p>
-            Sketch the region determined by the spherical inequalities
-            <me>2\leq \rho\leq 3, 0\leq \varphi\leq \frac{\pi}{4} \qq{and} \frac{3\pi}{2}\leq \theta\leq 2\pi</me>.
-          </p>
+      <title>Sketching a Spherical Region</title>
+      <statement>
+        <p>
+          Sketch the region determined by the spherical inequalities
+          <me>2\leq \rho\leq 3, 0\leq \varphi\leq \frac{\pi}{4} \qq{and} \frac{3\pi}{2}\leq \theta\leq 2\pi</me>.
+        </p>
       </statement>
     </example>
     <p>
@@ -851,12 +851,12 @@
       In particular, integrands depending on <m>x^{2} + y^{2} + x^{2}</m> are often made easier by converting to spherical.
     </p>
     <example xml:id="example-average-value-inside-of-the-unit-sphere">
-        <title>Average Value Inside of the Unit Sphere</title>
-        <statement>
-          <p>
-            Let <m>f(x,y,z) = e^{-(x^{2} + y^{2} + z^{2})^{3/2}}</m>.
-            Find the average value of <m>f</m> over the unit sphere.
-          </p>
+      <title>Average Value Inside of the Unit Sphere</title>
+      <statement>
+        <p>
+          Let <m>f(x,y,z) = e^{-(x^{2} + y^{2} + z^{2})^{3/2}}</m>.
+          Find the average value of <m>f</m> over the unit sphere.
+        </p>
       </statement>
       <solution>
         <p>
@@ -877,59 +877,113 @@
     </example>
   </section>
   <section xml:id="section-change-of-variables">
-      <title>Change of Variables</title>
-      <introduction>
-        <p>
-          The goal now is to determine a general method to change coordinates in multiple integrals.
-          We'll start with double integrals.
-        </p>
-      </introduction>
-      <subsection xml:id="subsection-change-of-variables-in-double-integrals">
-          <title>Change of Variables in Double Integrals</title>
+    <title>Change of Variables</title>
+    <introduction>
+      <p>
+        The goal now is to determine a general method to change coordinates in multiple integrals.
+        We'll start with double integrals.
+      </p>
+    </introduction>
+    <subsection xml:id="subsection-change-of-variables-in-double-integrals">
+      <title>Change of Variables in Double Integrals</title>
+      <p>
+        Any change of coordinates involves a transformation between new variables <m>u,v</m> and the original variables <m>x,y</m>.
+        We indicate this as follows:
+        <me>x = g(u,v) \qq{and} y = h(u,v)</me>.
+        In <xref ref="section-double-integrals-in-polar-coordinates" text="type-global" />, the transformation was just
+        <me>x = g(r,\theta) = r\cos\theta \qq{and} y = h(r,\theta) = r\sin\theta</me>.
+      </p>
+      <p>
+        So the goal behind integrating with change of variables is to find relate the integral <m>\iint_{D}f(x,y)\,dA</m>, where <m>D</m> is in the <m>xy</m>-plane, to a new integral <m>\iint_{R}f(g(u,v),h(u,v))\,dA</m>, where <m>R</m> is in the <m>uv</m>-plane.
+        The main issue with such a transformation is one that we're familiar with from working with polar coordinates: <m>dA = dx\,dy</m> in the first set of coordinates is not necessarily equal to <m>du\,dv</m> in the new set of coordinates.
+        In general we'll need a scaling factor that depends on <m>u</m> and <m>v</m>.
+        As it turns out, the proper scaling factor comes from a determinant.
+      </p>
+      <definition xml:id="definition-jacobian">
+        <title>Jacobian</title>
+        <idx><h>Jacobian</h></idx>
+        <statement>
           <p>
-            Any change of coordinates involves a transformation between new variables <m>u,v</m> and the original variables <m>x,y</m>.
-            We indicate this as follows:
-            <me>x = g(u,v) \qq{and} y = h(u,v)</me>.
-            In <xref ref="section-double-integrals-in-polar-coordinates" text="type-global" />, the transformation was just
-            <me>x = g(r,\theta) = r\cos\theta \qq{and} y = h(r,\theta) = r\sin\theta</me>.
+            The <term>Jacobian determinant</term> or <term>Jacobian</term> of the coordinate transformation <m>x = g(u,v)</m> and <m>y = h(u,v)</m> is the quantity
+            <me>J(u,v) = \left|\begin{array}{cc} x_{u} \amp x_{v} \\ y_{u} \amp y_{v}\end{array}\right|</me>.
+          </p>
+        </statement>
+      </definition>
+      <example xml:id="example-jacobian-in-polar-coordinates">
+        <title>Jacobian in Polar Coordinates</title>
+        <statement>
+          <p>
+            Determine <m>J(r,\theta)</m> for the transformation to polar coordinates.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We have
+            <md>
+              <mrow>x_{r} \amp = \cos\theta </mrow>
+              <mrow>x_{\theta} \amp = -r\sin\theta </mrow>
+              <mrow>y_{r} \amp = \sin\theta </mrow>
+              <mrow>y_{\theta} \amp = r\cos\theta </mrow>
+            </md>.
+            Hence
+            <me>J(r,\theta) = r\cos^{2}\theta + r\sin^{2}\theta = r</me>.
+          </p>
+        </solution>
+      </example>
+      <p>
+        The Jacobian helps us in the following way: when making the change of variables <m>x = g(u,v), y= h(u,v)</m>, the area element <m>dA</m> becomes <m>dA = |J(u,v)|\,du\,dv</m>.
+      </p>
+      <example xml:id="example-">
+        <statement>
+          <p>
+            Compute <m>J(u,v)</m> for the transformation
+            <me>u = x + 4y \qq{and} v = 3x + 2y</me>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We need to get <m>x</m> and <m>y</m> in terms of <m>u</m> and <m>v</m> first.
+            Since
+            <me>3u - v = 10y \qq{and} 2v - u = 5x</me>,
+            it follows that
+            <me>x = \frac{2v - u}{5} \qq{and} y = \frac{3u - v}{10}</me>.
+            Hence
+            <me>J(u,v) = -\frac{1}{10}</me>.
+          </p>
+        </solution>
+      </example>
+      <example xml:id="example-change-of-variables-in-two-dimensions">
+        <title>Change of Variables in Two Dimensions</title>
+        <statement>
+          <p>
+            Find the volume of the region under the surface <m>z = \sqrt{y^{2} - x^{2}}</m> and over the region <m>R</m> bounded by <m>y - x = 0, y - x = 2, y + x = 0</m>, and <m>y + x = 2</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Both the integrand and the region of integration are awful here, but if we set <m>u = y - x</m> and <m>v = y + x</m> then the limits of integration become very simple:
+            <me>0 \leq u,v \leq 2</me>.
+            The integrand gets better too: <m>\sqrt{y^{2} - x^{2}} = \sqrt{uv}</m>.
+            So we can write
+            <me>\iint_{R}\sqrt{y^{2} - x^{2}}\,dA = \int_{0}^{2}\int_{0}^{2}\sqrt{uv}|J(u,v)|\,du\,dv</me>.
+            Essentially, we're moving from integrating over a diamond in the <m>xy</m>-plane to integrating over a square in the <m>uv</m>-plane.
+            If we can find <m>J(u,v)</m>, we can start computing the integral.
           </p>
           <p>
-            So the goal behind integrating with change of variables is to find relate the integral <m>\iint_{D}f(x,y)\,dA</m>, where <m>D</m> is in the <m>xy</m>-plane, to a new integral <m>\iint_{R}f(g(u,v),h(u,v))\,dA</m>, where <m>R</m> is in the <m>uv</m>-plane.
-            The main issue with such a transformation is one that we're familiar with from working with polar coordinates: <m>dA = dx\,dy</m> in the first set of coordinates is not necessarily equal to <m>du\,dv</m> in the new set of coordinates.
-            In general we'll need a scaling factor that depends on <m>u</m> and <m>v</m>.
-            As it turns out, the proper scaling factor comes from a determinant.
+            To find <m>J(u,v)</m>, we need to get <m>x,y</m> in terms of <m>u,v</m> in order to use <xref ref="definition-jacobian" text="type-global" />.
+            Since <m>u + v = 2y</m> and <m>u - v = -2x</m>, we get
+            <me>x = \frac{v - u}{2} \qq{and} y = \frac{v + u}{2}</me>.
+            Hence
+            <me>J(u,v) = \left|\begin{array}{cc}-\frac{1}{2} \amp \frac{1}{2} \\ \frac{1}{2} \amp \frac{1}{2}\end{array} = -\frac{1}{2}</me>,
+            and we have
+            <md>
+              <mrow>\iint_{R}\sqrt{y^{2} - x^{2}}\,dA \amp = \frac{1}{2}\int_{0}^{2}\int_{0}^{2}\sqrt{uv}\,du\,dv </mrow>
+              <mrow> \amp = \frac{1}{2}\left(\int_{0}^{2}\sqrt{u}\,du\right)^{2} </mrow>
+              <mrow> \amp = \frac{16}{9} </mrow>
+            </md>.
           </p>
-          <definition xml:id="definition-jacobian">
-              <title>Jacobian</title>
-              <idx><h>Jacobian</h></idx>
-              <statement>
-                <p>
-                  The <term>Jacobian determinant</term> or <term>Jacobian</term> of the coordinate transformation <m>x = g(u,v)</m> and <m>y = h(u,v)</m> is the quantity
-                  <me>J(u,v) = \left|\begin{array}{cc} x_{u} \amp x_{v} \\ y_{u} \amp y_{v}\end{array}\right|</me>.
-                </p>
-              </statement>
-          </definition>
-          <example xml:id="example-jacobian-in-polar-coordinates">
-              <title>Jacobian in Polar Coordinates</title>
-              <statement>
-                <p>
-                  Determine <m>J(r,\theta)</m> for the transformation to polar coordinates.
-                </p>
-            </statement>
-            <solution>
-              <p>
-                We have
-                <md>
-                  <mrow>x_{r} \amp = \cos\theta </mrow>
-                  <mrow>x_{\theta} \amp = -r\sin\theta </mrow>
-                  <mrow>y_{r} \amp = \sin\theta </mrow>
-                  <mrow>y_{\theta} \amp = r\cos\theta </mrow>
-                </md>.
-                Hence
-                <me>J(r,\theta) = r\cos^{2}\theta + r\sin^{2}\theta = r</me>.
-              </p>
-            </solution>
-          </example>
-      </subsection>
+        </solution>
+      </example>
+    </subsection>
   </section>
 </chapter>
