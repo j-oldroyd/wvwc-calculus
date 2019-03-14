@@ -890,7 +890,46 @@
             Any change of coordinates involves a transformation between new variables <m>u,v</m> and the original variables <m>x,y</m>.
             We indicate this as follows:
             <me>x = g(u,v) \qq{and} y = h(u,v)</me>.
+            In <xref ref="section-double-integrals-in-polar-coordinates" text="type-global" />, the transformation was just
+            <me>x = g(r,\theta) = r\cos\theta \qq{and} y = h(r,\theta) = r\sin\theta</me>.
           </p>
+          <p>
+            So the goal behind integrating with change of variables is to find relate the integral <m>\iint_{D}f(x,y)\,dA</m>, where <m>D</m> is in the <m>xy</m>-plane, to a new integral <m>\iint_{R}f(g(u,v),h(u,v))\,dA</m>, where <m>R</m> is in the <m>uv</m>-plane.
+            The main issue with such a transformation is one that we're familiar with from working with polar coordinates: <m>dA = dx\,dy</m> in the first set of coordinates is not necessarily equal to <m>du\,dv</m> in the new set of coordinates.
+            In general we'll need a scaling factor that depends on <m>u</m> and <m>v</m>.
+            As it turns out, the proper scaling factor comes from a determinant.
+          </p>
+          <definition xml:id="definition-jacobian">
+              <title>Jacobian</title>
+              <idx><h>Jacobian</h></idx>
+              <statement>
+                <p>
+                  The <term>Jacobian determinant</term> or <term>Jacobian</term> of the coordinate transformation <m>x = g(u,v)</m> and <m>y = h(u,v)</m> is the quantity
+                  <me>J(u,v) = \left|\begin{array}{cc} x_{u} \amp x_{v} \\ y_{u} \amp y_{v}\end{array}\right|</me>.
+                </p>
+              </statement>
+          </definition>
+          <example xml:id="example-jacobian-in-polar-coordinates">
+              <title>Jacobian in Polar Coordinates</title>
+              <statement>
+                <p>
+                  Determine <m>J(r,\theta)</m> for the transformation to polar coordinates.
+                </p>
+            </statement>
+            <solution>
+              <p>
+                We have
+                <md>
+                  <mrow>x_{r} \amp = \cos\theta </mrow>
+                  <mrow>x_{\theta} \amp = -r\sin\theta </mrow>
+                  <mrow>y_{r} \amp = \sin\theta </mrow>
+                  <mrow>y_{\theta} \amp = r\cos\theta </mrow>
+                </md>.
+                Hence
+                <me>J(r,\theta) = r\cos^{2}\theta + r\sin^{2}\theta = r</me>.
+              </p>
+            </solution>
+          </example>
       </subsection>
   </section>
 </chapter>
