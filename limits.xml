@@ -105,6 +105,7 @@
                                 <cell><m>-.002</m></cell>
                             </row>
                         </tabular>
+                        <caption>Estimating <m>\lim_{x\to\pi}f(x)</m>.</caption>
                     </table>
                     <p>
                         We can even let <m>x</m> approach <m>\pi</m> from the other direction as well (i.e. "from the right") and <m>f(x)</m> will still approach <m>0</m> as <m>x</m> gets closer and closer to <m>\pi</m>.
@@ -169,7 +170,7 @@
                     </p>
                     <figure>
                         <image width="50%">
-                            <latex-image-code><![CDATA[
+                            <latex-image><![CDATA[
                                 \pgfmathdeclarefunction{MyFunction}{1}{%
                                   \pgfmathparse{%
                                     (and(   1,    #1<-1)*(0)            +%
@@ -202,8 +203,9 @@
                                         \addlegendentry{$y = f(x)$};
                                     \end{axis}
                                 \end{tikzpicture}]]>
-                            </latex-image-code>
+                            </latex-image>
                         </image>
+                        <caption>Graphing <m>f(x)</m>.</caption>
                     </figure>
                     <p>
                         The graph shows us that <m>\lim_{x\to-1^{-}}f(x) = 0</m>, while <m>\lim_{x\to-1^{+}}f(x) = 1</m>.
@@ -393,7 +395,7 @@
                 </p>
                 <figure>
                     <image width="50%">
-                        <latex-image-code><![CDATA[
+                        <latex-image><![CDATA[
                             \pgfmathdeclarefunction{MyFunction}{1}{%
                               \pgfmathparse{%
                                 (and(#1>=1,  #1< 2)*(3*#1-1)   +%
@@ -422,8 +424,9 @@
                                     \addlegendentry{$y = f(x)$};
                                 \end{axis}
                             \end{tikzpicture}]]>
-                        </latex-image-code>
+                        </latex-image>
                     </image>
+                    <caption>Graphing <m>f(x)</m> over <m>[1,4]</m>.</caption>
                 </figure>
                 <p>
                     So from the graph it appears that <m>f(x)</m> is continuous on this interval.
