@@ -876,8 +876,8 @@
           We'll follow the same strategy we used in <xref ref="example-volume-of-the-unit-sphere" text="type-global" /> to compute this integral.
           If we convert to spherical coordinates, we get
           <md>
-            <mrow>\frac{3}{4\pi}\int_{0}^{2\pi}\int_{0}^{\pi}\int_{0}^{1}\rho^{2}e^{-\rho^{3}}\sin\varphi \,d\rho\,d\var\phi\,d\theta \amp = \frac{3}{2}\int_{0}^{\pi}\int_{0}^{1}\rho^{2}e^{-\rho^{3}}\sin\varphi \,d\rho\,d\var\phi </mrow>
-            <mrow> \amp = \frac{1}{2}\int_{0}^{\pi}\int_{-1}^{0}e^{u}\sin\varphi \,du\,d\var\phi </mrow>
+            <mrow>\frac{3}{4\pi}\int_{0}^{2\pi}\int_{0}^{\pi}\int_{0}^{1}\rho^{2}e^{-\rho^{3}}\sin\varphi \,d\rho\,d\varphi\,d\theta \amp = \frac{3}{2}\int_{0}^{\pi}\int_{0}^{1}\rho^{2}e^{-\rho^{3}}\sin\varphi \,d\rho\,d\varphi </mrow>
+            <mrow> \amp = \frac{1}{2}\int_{0}^{\pi}\int_{-1}^{0}e^{u}\sin\varphi \,du\,d\varphi </mrow>
             <mrow> \amp = 1 - \frac{1}{e} </mrow>
           </md>.
         </p>
@@ -985,7 +985,7 @@
             Since <m>u + v = 2y</m> and <m>u - v = -2x</m>, we get
             <me>x = \frac{v - u}{2} \qq{and} y = \frac{v + u}{2}</me>.
             Hence
-            <me>J(u,v) = \left|\begin{array}{cc}-\frac{1}{2} \amp \frac{1}{2} \\ \frac{1}{2} \amp \frac{1}{2}\end{array} = -\frac{1}{2}</me>,
+            <me>J(u,v) = \left|\begin{array}{cc}-\frac{1}{2} \amp \frac{1}{2} \\ \frac{1}{2} \amp \frac{1}{2}\end{array}\right| = -\frac{1}{2}</me>,
             and we have
             <md>
               <mrow>\iint_{R}\sqrt{y^{2} - x^{2}}\,dA \amp = \frac{1}{2}\int_{0}^{2}\int_{0}^{2}\sqrt{uv}\,du\,dv </mrow>
