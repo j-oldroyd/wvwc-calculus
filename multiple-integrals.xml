@@ -944,7 +944,7 @@
       <p>
         The Jacobian helps us in the following way: when making the change of variables <m>x = g(u,v), y= h(u,v)</m>, the area element <m>dA</m> becomes <m>dA = |J(u,v)|\,du\,dv</m>.
       </p>
-      <example xml:id="example-">
+      <example xml:id="example-finding-jacobian">
         <statement>
           <p>
             Compute <m>J(u,v)</m> for the transformation
