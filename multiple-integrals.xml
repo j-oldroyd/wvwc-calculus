@@ -765,7 +765,7 @@
               variant="minimal" 
               width="90%">
               <static>
-                <image source="images/example-cylindrical-volume.png" width="50%" />
+                <image source="images/interactive-1-preview.png" width="50%" />
               </static>
             </interactive>
           </figure>
