@@ -87,7 +87,7 @@
       ymax=0}}
 
       \tikzset{
-      jumpdot/.style={mark=*,solid},
+      jumpdot/.style={mark=*,solid,only marks},
       excl/.append style={jumpdot,fill=white},
       incl/.append style={jumpdot,fill=black},
       }
