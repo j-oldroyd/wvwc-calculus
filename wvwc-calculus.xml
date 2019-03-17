@@ -54,10 +54,10 @@
       \pgfmathparse{-0.03*(#1)*(#1-6)*(#1-18)}%
       }
 
-      \pgfplotsset{myplot/.style={color=blue,mark=none,line width=1pt,&lt;-&gt;,solid}} % primary style for curves
 
       % These are the TikZ-PGFPlots settings I need.
       % Partially inspired by ORCCA Calc 1 lab manual.
+      \pgfplotsset{myplot/.style={color=blue,mark=none,line width=1pt,&lt;-&gt;,solid,samples=100}} % primary style for curves
       \pgfplotsset{mystyle/.style={%
       view={120}{30},
       axis lines=center,
