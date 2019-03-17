@@ -50,7 +50,7 @@
             </example>
             <p>
                 What <xref ref="example-secant-lines-on-a-parabola" text="type-global" /> is telling us is that if <m>x\approx2</m>, then the slope of <m>f(x) = x^{2}</m> at <m>x=2</m> should be very close to <m>x+2</m>, the slope of the secant line.
-                Now we'll do a trick that shows up everywhere in calculus, and is the entire reason we introduced limits in the first place. 
+                Now we'll do a trick that shows up everywhere in calculus, and is the entire reason we introduced limits in the first place.
                 We'll make this approximation exact by taking a limit.
                 In particular, we'll say that the slope of <m>f(x) = x^{2}</m> should be equal to
                 <me>\lim_{x\to2}\frac{f(x)-f(2)}{x-2} = \lim_{x\to2}(x+2) = 4.</me>
@@ -160,7 +160,7 @@
             <title>The Derivative</title>
             <p>
                 Suppose we go back to <xref ref="example-velocity-from-position" text="type-global" /> one more time, but now we want to find the velocity of <m>s(t)</m> at an arbitrary number <m>a</m>.
-                Then we could still use our limit formulas, which would give us 
+                Then we could still use our limit formulas, which would give us
             </p>
             <md>
                 <mrow>\lim_{h\to0}\frac{s(a+h)-s(a)}{h} &amp; = \lim_{h\to0}\frac{3(a^{2}+2ah+h^{2})-5(a+h) - 3a^{2} + 5a}{h} </mrow>
@@ -189,7 +189,7 @@
             </definition>
             <aside>
                 <p>
-                    We could also define the derivative by 
+                    We could also define the derivative by
                     <me>\lim_{x\to a}\frac{f(x)-f(a)}{x-a}.</me>
                     These two limits are equivalent.
                 </p>
@@ -281,7 +281,7 @@
                         A function <m>g(t)</m> is given by the following graph:
                         <figure xml:id="figure-derivative-graph-1">
                             <image width="50%">
-                                <latex-image-code><![CDATA[
+                                <latex-image><![CDATA[
                                     \begin{tikzpicture}
                                         \begin{axis}[%
                                             axis x line = center,
@@ -300,7 +300,7 @@
                                             \addlegendentry{$y = g(t)$};
                                         \end{axis}
                                     \end{tikzpicture}]]>
-                                </latex-image-code>
+                                </latex-image>
                             </image>
                         </figure>
                     </p>
@@ -315,7 +315,7 @@
                         A rough sketch of <m>\dv{g}{t}</m>, added to the original graph, may look like the following:
                         <figure xml:id="figure-derivative-graph-2">
                             <image width="50%">
-                                <latex-image-code><![CDATA[
+                                <latex-image><![CDATA[
                                     \begin{tikzpicture}
                                         \begin{axis}[%
                                             axis x line = center,
@@ -336,7 +336,7 @@
                                             \addlegendentry{$y = \dv{g}{t}$};
                                         \end{axis}
                                     \end{tikzpicture}]]>
-                                </latex-image-code>
+                                </latex-image>
                             </image>
                         </figure>
                     </p>
@@ -488,7 +488,7 @@
                     <figure xml:id="subfigure-concave-up">
                         <caption><m>f''(x) &gt; 0</m></caption>
                         <image>
-                            <latex-image-code><![CDATA[
+                            <latex-image><![CDATA[
                                 \begin{tikzpicture}
                                     \begin{axis}[%
                                         axis x line = center,
@@ -507,13 +507,13 @@
                                         \addlegendentry{$y = f(x)$};
                                     \end{axis}
                                 \end{tikzpicture}]]>
-                            </latex-image-code>
+                            </latex-image>
                         </image>
                     </figure>
                     <figure xml:id="subfigure-concave-down">
                         <caption><m>f''(x) &lt; 0</m></caption>
                         <image>
-                            <latex-image-code><![CDATA[
+                            <latex-image><![CDATA[
                                 \begin{tikzpicture}
                                     \begin{axis}[%
                                         axis x line = center,
@@ -532,7 +532,7 @@
                                         \addlegendentry{$y = f(x)$};
                                     \end{axis}
                                 \end{tikzpicture}]]>
-                            </latex-image-code>
+                            </latex-image>
                         </image>
                     </figure>
                 </sidebyside>
@@ -686,7 +686,7 @@
                 <statement>
                     <p>
                         Let <m>f(x)</m> and <m>g(x)</m> be differentiable functions.
-                        Then 
+                        Then
                         <me>\dv{}{x}[f(x)g(x)] = f(x)g'(x) + f'(x)g(x).</me>
                     </p>
                 </statement>
@@ -727,7 +727,7 @@
                 <title>The Quotient Rule</title>
                 <statement>
                     <p>
-                        Let <m>f(x)</m> and <m>g(x)</m> be differentiable functions. 
+                        Let <m>f(x)</m> and <m>g(x)</m> be differentiable functions.
                         Then
                         <me>\dv{}{x}\left[\frac{f(x)}{g(x)}\right] = \frac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^{2}}</me>
                         wherever <m>g(x)\neq0</m>.
@@ -1020,7 +1020,7 @@
                 </p>
                 <p>
                     Now, <em>finally</em>, we can answer the original question.
-                    The rate that water is flowing into the tank is 
+                    The rate that water is flowing into the tank is
                     <me>C = V' + 10000 = \frac{800000\pi}{9} + 10000,</me>
                     or just <quantity><mag>289252.68</mag><unit base="meter" prefix="centi" exp="3"/><per base="minute"/></quantity>.
                     In terms of meters this is <quantity><mag>.29</mag><unit base="meter" exp="3"/><per base="minute"/></quantity>, which perhaps looks a bit more reasonable.
@@ -1109,7 +1109,7 @@
                     To estimate the population in 2020, we want to find the linearization of <m>P</m> at <m>t = 27</m>.
                     This is given by
                     <me>L(t) = P(27) + P'(27)(t - 27).</me>
-                    Since <m>P(27) = 323.1</m> and 
+                    Since <m>P(27) = 323.1</m> and
                     <me>P'(27) = \frac{1}{23500}P(532-P) = \frac{1}{23500}(323.1)(532-323.1) = 2.9,</me>
                     we have
                     <me>L(t) = 323.1 + 2.9(t-27).</me>
