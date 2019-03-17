@@ -179,7 +179,7 @@
             <p>
                 The linear approximations we came up with in <xref ref="section-linear-approximations" text="type-global" /> are useful for estimating complicated functions with simpler, linear models.
                 In essence, we use the derivative of a function to tell us how much to change a given value of the function in order to estimate that function.
-                There is one problem with this approach, at least currently. 
+                There is one problem with this approach, at least currently.
                 We have good reason to suspect that our approximations are close to the exact values in certain circumstances, but we don't know how close.
                 The goal of this section is to derive an estimate for the derivative that can help us to find more precise approximations.
             </p>
@@ -243,15 +243,15 @@
             <p>
                 The line through these points has equation
                 <me>y = f(a) + \frac{f(b) - f(a)}{b-a}(x-a).</me>
-                So define 
+                So define
                 <me>g(x) = f(x) - y = f(x) - f(a) - \frac{f(b) - f(a)}{b-a}(x-a).</me>
-                Then 
+                Then
                 <me>g(a) = g(b) = 0,</me>
                 So <xref ref="theorem-rolle-s-theorem" text="type-global" /> <em>does</em> apply to this function.
                 Hence there exists some number <m>c</m> between <m>a</m> and <m>b</m> for which <m>g'(c) = 0</m>.
             </p>
             <p>
-                But 
+                But
                 <me>g'(c) = f'(c) - \frac{f(b) - f(a)}{b-a},</me>
                 and if this is <m>0</m> then we can solve <m>g'(c) = 0</m> for <m>f'(c)</m> to get
                 <me>f'(c) = \frac{f(b) - f(a)}{b-a}.</me>
@@ -290,7 +290,7 @@
                         <me>L(x) = 3 + \frac{1}{6}(x-9).</me>
                         The error we need to estimate is <m>|f(x) - L(x)|</m>, for <m>x</m> in <m>[9,16]</m>.
                         So we'll set <m>g(x) = f(x) - L(x)</m> and let <m>x</m> be some number in <m>[9,16]</m>.
-                        By <xref ref="theorem-mean-value-theorem" text="type-global" />, there exists some number <m>c</m> in <m>(9,x)</m> such that 
+                        By <xref ref="theorem-mean-value-theorem" text="type-global" />, there exists some number <m>c</m> in <m>(9,x)</m> such that
                         <me>g(x) - g(9) = g'(c)(x-9).</me>
                         Now, <m>g(9) = 0</m> and <m>g'(c) = \frac{1}{2\sqrt{c}} - \frac{1}{6}</m>.
                         So the above equation becomes
@@ -354,7 +354,7 @@
             </statement>
             <solution>
                 <p>
-                    We can answer all of these questions by setting up a sign chart for 
+                    We can answer all of these questions by setting up a sign chart for
                     <me>f'(x) = x^{3}e^{-x}(4-x)</me>.
                     The critical points are <m>x=0,4</m>, and <m>f' &lt; 0</m> on <m>(-\infty,0)\cup(4,\infty)</m> and <m>f' &gt; 0</m> on <m>(0,4)</m>.
                     So <m>f</m> is decreasing on the first set of intervals, increasing on <m>(0,4)</m>, <m>f</m> has a local maximum at <m>x=4</m> and a local minimum at <m>x=0</m>.
@@ -420,14 +420,14 @@
             <title>Minimizing a product</title>
             <statement>
                 <p>
-                    Find two numbers that differ by <m>100</m> and whose product is a minimum.  
+                    Find two numbers that differ by <m>100</m> and whose product is a minimum.
                 </p>
             </statement>
             <solution>
                 <p>
                     Call our numbers <m>x,y</m> and suppose <m>x &gt; y</m>.
                     Then <m>x-y = 100</m> and we need to choose <m>x,y</m> in such a way that <m>xy</m> is as small as possible.
-                    If we replace <m>x</m> with <m>100+y</m>, then this means we need to minimize 
+                    If we replace <m>x</m> with <m>100+y</m>, then this means we need to minimize
                     <me>f(y) = 100y + y^{2}.</me>
                     The critical point of <m>f(y)</m> is <m>y = -50</m>, and since <m>f</m> is a parabola we know that this must be the location of the absolute minimum value on the graph.
                     So the numbers we need are <m>50,-50</m>.
@@ -463,7 +463,7 @@
                 <p>
                     To minimize this, we find the critical points by solving <m>f'(x) = 0</m>.
                     This gives, after some algebra, <m>x = 40</m>.
-                    Now we need to be careful here! We only have a critical point at this step. 
+                    Now we need to be careful here! We only have a critical point at this step.
                     We need to make an argument now as to why this critical point should be an absolute minimum of <m>f(x)</m>.
                     One way to do this is by setting up a sign chart for <m>f'(x)</m>.
                     If we do this, then we see that <m>f' &lt; 0</m> for <m>x</m> in <m>(0,40)</m>, while <m>f' &gt; 0</m> for <m>x</m> in <m>(40,\infty)</m>.
@@ -488,7 +488,7 @@
                         <li>Find the extrema.</li>
                     </ol>
                     The function we need to optimize is just the distance function.
-                    In particular, if <m>(x,y)</m> is a point on the ellipse then we need to maximize 
+                    In particular, if <m>(x,y)</m> is a point on the ellipse then we need to maximize
                     <me>d = \sqrt{(x-1)^{2} + (y-0)^{2}}.</me>
                 </p>
                 <p>
@@ -496,7 +496,7 @@
                     This means that <m>y^{2} = 4 - 4x^{2}</m>, and if we plug this into our distance function we get
                     <me>d = \sqrt{(x-1)^{2} + (y-0)^{2}} = \sqrt{(x-1)^{2} + 4 - 4x^{2}}.</me>
                     Now here's a trick we can use: maximizing <m>d</m> is the same thing as maximizing <m>d^{2}</m>, but <m>d^{2}</m> is <em>much</em> nicer to work with algebraically.
-                    So instead of maximizing <m>d</m>, we'll maximize the function 
+                    So instead of maximizing <m>d</m>, we'll maximize the function
                     <me>f(x) = d^{2} = (x-1)^{2} + 4 - 4x^{2}.</me>
                 </p>
                 <p>
@@ -599,9 +599,9 @@
                 <p>
                     To use Newton's method, we need to come up with a function <m>f(x)</m> whose root is <m>\sqrt{a}</m>.
                     A simple choice for this is <m>f(x) = x^{2} - a</m>, since <m>f(\sqrt{a}) = 0</m>.
-                    Now, if we're getting some sequence <m>x_{1},\ldots,x_{n}</m> from Newton's method then the next term in the sequence is 
+                    Now, if we're getting some sequence <m>x_{1},\ldots,x_{n}</m> from Newton's method then the next term in the sequence is
                     <me>x_{n+1} = x_{n} - \frac{f(x_{n})}{f'(x_{n})} = x_{n} - \frac{x_{n}^{2} - a}{2x_{n}}.</me>
-                    After some algebra, we can rewrite this as 
+                    After some algebra, we can rewrite this as
                     <me>x_{n+1} = \frac{1}{2}\left(x_{n} + \frac{a}{x_{n}}\right).</me>
                 </p>
                 <p>
@@ -664,7 +664,7 @@
             <solution>
                 <p>
                     An antiderivative of <m>\cos x</m> is any function whose derivative is <m>\cos x</m>.
-                    So three antiderivatives could be 
+                    So three antiderivatives could be
                     <me>F_{1}(x) = \sin x, F_{2}(x) = \sin x + 4, F_{3}(x) = \sin x - 100.</me>
                 </p>
             </solution>
@@ -690,7 +690,7 @@
                     We can check very easily that every function of the form <m>F(x)+C</m> is an antiderivative of <m>f(x)</m>, but how do we know every antiderivative takes this form?
                     To prove this, let <m>G(x)</m> be an arbitrary antiderivative of <m>f(x)</m>.
                     Then we need to show that <m>G(x) = F(x) + C</m>, or equivalently that <m>G(x) - F(x) = C</m>.
-                    We can do this by taking the derivative of <m>G(x) - F(x)</m> to get 
+                    We can do this by taking the derivative of <m>G(x) - F(x)</m> to get
                     <me>G'(x) - F'(x) = f(x) - f(x) = 0,</me>
                     and so by <xref ref="theorem-zero-derivative-theorem" text="type-global" /> we know that <m>G(x) - F(x)</m> must be constant on <m>I</m>.
                     Hence <m>G(x) - F(x) = C</m> for some constant <m>C</m>, or equivalently <m>G(x) = F(x)+C</m>.
@@ -853,7 +853,7 @@
             <title>A tricky antiderivative</title>
             <statement>
                 <p>
-                    Find the most general antiderivative of 
+                    Find the most general antiderivative of
                     <me>f(x) = \frac{2+x^{2}}{1+x^{2}}.</me>
                 </p>
             </statement>
@@ -861,7 +861,7 @@
                 <p>
                     It's tough to think of a function whose derivative is <m>f(x)</m>, though since the denominator is <m>1+x^{2}</m> it seems likely that this antiderivative will involve <m>\tan^{-1}x</m> in some way.
                     In order to actually find the antiderivative, we'll rewrite <m>f(x)</m> into a more convenient form.
-                    First, note that the numerator is very close to the denominator, which means we can almost cancel it out. 
+                    First, note that the numerator is very close to the denominator, which means we can almost cancel it out.
                     So we'll split up the numerator as follows:
                     <me>\frac{2+x^{2}}{1+x^{2}} = \frac{1+(1+x^{2})}{1+x^{2}} = \frac{1}{1+x^{2}} + 1.</me>
                 </p>
@@ -875,7 +875,7 @@
             At this point, it's natural to think about what an antiderivative means geometrically since the derivative of a function has such a nice interpretation.
             One approach to this is to think about <term>net change</term> of the antiderivative.
             Let <m>F(x)</m> be an antiderivative of <m>f(x)</m> on some interval containing <m>a,b</m>.
-            The net change of <m>F(x)</m> from <m>x=a</m> to <m>x=b</m> is given by 
+            The net change of <m>F(x)</m> from <m>x=a</m> to <m>x=b</m> is given by
             <me>F(b) - F(a).</me>
             Now, <m>F'(x) = f(x)</m> represents instantaneous rate of change, not net change.
             However, if we can somehow add these instantaneous changes from <m>x=a</m> to <m>x=b</m>, they should accumulate until they give the net change of <m>F</m> from <m>a</m> to <m>b</m>.

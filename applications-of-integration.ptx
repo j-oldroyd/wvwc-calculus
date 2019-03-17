@@ -1226,7 +1226,7 @@
         </solution>
       </example>
       <p>
-        In <xref ref="example-verifying-solutions" autoname="yes" />, <m>y = 5e^{x^{2}}</m> is not the only solution of <m>y' = 2xy</m>.
+        In <xref ref="example-verifying-solutions" text="type-global" />, <m>y = 5e^{x^{2}}</m> is not the only solution of <m>y' = 2xy</m>.
         You can check that <m>y = 3e^{x^{2}}</m> and <m>y = -10e^{x^{2}}</m> are also solutions.
         In fact, <em>any</em> function of the form <m>Ce^{x^{2}}</m> where <m>C</m> is a constant is a solution of <m>y' = 2xy</m>.
       </p>
