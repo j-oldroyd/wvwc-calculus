@@ -487,6 +487,7 @@
             \end{tikzpicture}]]>
           </latex-image>
         </image>
+        <caption>Converting between Cartesian and polar coordinates.</caption>
       </figure>
       <p>So in terms of <m>r,\theta</m>, we have</p>
       <md>
@@ -668,6 +669,7 @@
               \end{tikzpicture}]]>
             </latex-image>
           </image>
+          <caption><m>\theta = 0</m> to <m>\theta = \frac{\pi}{3}</m>.</caption>
         </figure>
         <p>
           Now, as <m>\theta</m> goes from <m>\frac{\pi}{3}</m> to <m>\frac{2\pi}{3}</m> <m>r</m> will go from <m>-1</m> to <m>1</m>, hitting <m>0</m> at <m>\theta = \frac{\pi}{2}</m>:
@@ -714,6 +716,7 @@
               \end{tikzpicture}]]>
             </latex-image>
           </image>
+          <caption><m>\theta = \frac{\pi}{3}</m> to <m>\theta = \frac{2\pi}{3}</m>.</caption>
         </figure>
         <p>
           Continuing in this manner lets us complete the graph:
@@ -825,6 +828,7 @@
             \end{tikzpicture}]]>
           </latex-image>
         </image>
+        <caption>The polar region <m>r = f(\theta)</m>.</caption>
       </figure>
       <p>
         To find the area of this region, we'll approximate it using circular sectors.
@@ -955,6 +959,7 @@
               \end{tikzpicture}]]>
             </latex-image>
           </image>
+          <caption><m>r = 4 + 4\cos\theta</m> as a Cartesian equation.</caption>
         </figure>
         <p>Now we can plot the corresponding polar curve:</p>
         <figure xml:id="figure-cardioid-1">
@@ -990,6 +995,7 @@
               \end{tikzpicture}]]>
             </latex-image>
           </image>
+          <caption><m>r = 4 + 4\cos\theta</m> as a polar equation.</caption>
         </figure>
         <p>The important thing to notice is that we trace out the curve exactly once as <m>\theta</m> goes from <m>0</m> to <m>2\pi</m>, so our limits should be <m>0</m> and <m>2\pi</m>. Hence the area of this region is given by</p>
         <md>
@@ -1047,6 +1053,7 @@
               \end{tikzpicture}]]>
             </latex-image>
           </image>
+          <caption>Region contained between polar curves.</caption>
         </figure>
         <p>With a little bit of work, we can see that the area of one of these shaded regions is given by</p>
         <me>\int_{-\frac{\pi}{6}}^{\frac{\pi}{6}} \frac{1}{2}[(4\cos2\theta)^{2}-4]\,d\theta</me>

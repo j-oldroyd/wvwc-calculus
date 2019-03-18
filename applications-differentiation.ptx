@@ -647,7 +647,7 @@
         </p>
         <definition xml:id="definition-antiderivatives">
             <title>Antiderivatives</title>
-            <index><h>Antiderivatives</h></index>
+            <idx><h>antiderivatives</h></idx>
             <statement>
                 <p>
                     A function <m>F(x)</m> is called an antiderivative of the function <m>f(x)</m> if <m>F'(x) = f(x)</m> for all <m>x</m> in an interval <m>I</m>.

@@ -540,7 +540,7 @@
             <me>\dv{}{x}f(g(x)) = \dv{f}{g}\dv{g}{x} = f'(g(x))g'(x).</me>
             This is just the the chain rule, which tells us how to differentiate functions that depend on other functions.
             Or to think of it another way, it tells us how to differentiate <em>variables</em> like <m>f</m> that depend on other variables like <m>g</m> and <m>x</m>.
-            What we'd like to do now is to extend the chain rule to more complicated situations. 
+            What we'd like to do now is to extend the chain rule to more complicated situations.
             We'll start with the following formula.
         </p>
         <theorem xml:id="theorem-chain-rule-for-one-independent-variable">
@@ -590,7 +590,7 @@
                         <mrow> &amp; = \cos t\sin t </mrow>
                         <mrow> &amp; = \frac{1}{2}\sin2t </mrow>
                     </md>
-                    So 
+                    So
                     <me>\dv{f}{t}\bigg]_{t=0} = 0.</me>
                 </p>
             </solution>
@@ -627,7 +627,7 @@
             </image>
             <caption>The chain rule for two independent variables.</caption>
         </figure>
-        <example xml:id="example-">
+        <example xml:id="example-chain-rule-two-variables">
             <title>Chain rule with two independent variables</title>
             <statement>
                 <p>
@@ -640,7 +640,7 @@
                 <p>
                     A good way to tackle these problems is to set up a tree diagram like <xref ref="figure-chain-rule-two-independent-variables" text="type-global" /> to list the dependencies between all of the variables.
                     For <m>f(x,y,z)</m>, we get
-                    <figure>
+                    <figure xml:id="figure-chain-rule-two-variables">
                         <image width="30%">
                             <latex-image><![CDATA[
                                 \begin{tikzpicture}[scale=.15]
@@ -654,6 +654,7 @@
                                 ]]>
                             </latex-image>
                         </image>
+                        <caption>Tree diagram for <m>f(x,y,z)</m>.</caption>
                     </figure>
                     So we can say that
                     <md>

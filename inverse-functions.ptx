@@ -189,6 +189,7 @@
                                 \end{tikzpicture}]]>
                             </latex-image>
                         </image>
+                        <caption>The inverse of <m>e^{x}</m>.</caption>
                     </figure>
                 </solution>
             </example>

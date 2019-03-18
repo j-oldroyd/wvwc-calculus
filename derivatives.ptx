@@ -302,6 +302,7 @@
                                     \end{tikzpicture}]]>
                                 </latex-image>
                             </image>
+                            <caption>Graph of <m>g(t)</m>.</caption>
                         </figure>
                     </p>
                     <p>
@@ -338,6 +339,7 @@
                                     \end{tikzpicture}]]>
                                 </latex-image>
                             </image>
+                            <caption>Graph of <m>g'(t)</m>.</caption>
                         </figure>
                     </p>
                 </solution>

@@ -427,6 +427,7 @@
                         ]]>
                     </latex-image>
                 </image>
+                <caption>Vector overlap.</caption>
             </figure>
             <p>One way we can measure how much <m>\vv{x}</m> and <m>\vv{y}</m> overlap is to find <m>|\vv{x}+\vv{y}|</m>, or equivalently <m>|\vv{x}+\vv{y}|^{2},</m> since this is larger if <m>\vv{x}</m> and <m>\vv{y}</m> are more closely aligned.<fn>We are carefully ignoring the case where <m>\vv{x}</m> and <m>\vv{y}</m> point in opposite directions...</fn> From <xref ref="subsection-vector-components" text="type-global" />, we know that</p>
             <me>|\vv{x}+\vv{y}|^{2} = (x_{1}+x_{2})^{2} + (y_{1}+y_{2})^{2} + (z_{1}+z_{2})^{2}.</me>
@@ -517,6 +518,7 @@
                             ]]>
                         </latex-image>
                     </image>
+                    <caption>Geometry of the dot product.</caption>
                 </figure>
                 <p>Then <m>\vv{a},\vv{b}</m> and <m>\vv{a}-\vv{b}</m> form a triangle. We want to relate the dot product <m>\vv{a}\cdot\vv{b}</m> with the angle <m>\theta</m>, so we'll start by using the Law of Cosines to get an equation involving <m>\theta</m>. The Law of Cosines states that</p>
                 <men xml:id="equation-law-of-cosines">|\vv{a}-\vv{b}|^{2} = |\vv{a}|^{2}+|\vv{b}|^{2} -2|\vv{a}||\vv{b}|\cos\theta.</men>
@@ -562,6 +564,7 @@
                             ]]>
                         </latex-image>
                     </image>
+                    <caption>Angle between lines.</caption>
                 </figure>
                 <p>Suppose we want to find the acute angle <m>\theta</m> these lines make with each other. We can do so by finding vectors <m>\vv{a}</m> and <m>\vv{b}</m> that point in the same directions as these lines. We'll start by finding the vector <m>\vv{a}</m> which points in the same direction as the line <m>x+2y=7</m>. To do so, we need two points on this line: <m>A_{1} = (7,0)</m> and <m>A_{2} = (5,1)</m>. So we can take <m>\vv{a}</m> to be</p>
                 <me>\vv{a} = \overrightarrow{A_{1}A_{2}} = \dotprod{-2,1}.</me>
@@ -593,6 +596,7 @@
                         ]]>
                     </latex-image>
                 </image>
+                <caption>The vectors <m>\vv{a}</m> and <m>\vv{b}</m>.</caption>
             </figure>
             <p>Now draw a line from the tip of <m>\vv{a}</m> to the point on <m>\vv{b}</m> that is closest to the tip of <m>\vv{a}</m>; such a line must be orthogonal to <m>\vv{b}</m>. This point on <m>\vv{b}</m> defines a new vector that we call the <term>projection of <m>\vv{a}</m> onto <m>\vv{b}</m></term>; we denote this vector by <m>\proj{\vv{b}}{\vv{a}}</m>.</p>
             <figure xml:id="figure-orthogonal-projection-2">
@@ -618,6 +622,7 @@
                         ]]>
                     </latex-image>
                 </image>
+                <caption>The projection of <m>\vv{a}</m> onto <m>\vv{b}</m>.</caption>
             </figure>
             <p>The projection <m>\proj{\vv{b}}{\vv{a}}</m> can be thought of as the vector parallel to <m>\vv{b}</m> that best approximates <m>\vv{a}</m>. What we'd like to do now is to actually find a formula for this projection. If we let <m>\theta</m> denote the acute angle between the vectors <m>\vv{a}</m> and <m>\vv{b}</m>, then</p>
             <me>|\proj{\vv{b}}{\vv{a}}| = |\vv{a}|\cos\theta.</me>
@@ -876,6 +881,7 @@
                         ]]>
                     </latex-image>
                 </image>
+                <caption>A line in <m>\mathbb{R}^{3}</m>.</caption>
             </figure>
             <p>Our goal is to find an equation that describes this line. Imagine that we have a vector <m>\vv{r}_{0}</m> pointing from the origin to the point <m>A</m>, like so:</p>
             <figure xml:id="figure-line-in-space-1">
@@ -917,6 +923,7 @@
                         ]]>
                     </latex-image>
                 </image>
+                <caption>Tracing out <m>L</m> using vectors.</caption>
             </figure>
             <p>Then we can get to every other point on the line by starting from <m>\vv{r}_{0}</m>. In particular, if <m>\vv{u}</m> is any vector parallel to <m>\vec{AB}</m>, then <m>\vv{r} = \vv{r}_{0}+\vv{u}</m> must also be on the line <m>L</m>:</p>
             <figure xml:id="figure-line-in-space-2">
@@ -960,6 +967,7 @@
                         ]]>
                     </latex-image>
                 </image>
+                <caption>Tracing out <m>L</m> using vectors.</caption>
             </figure>
             <p>So to get all possible points on <m>L</m>, we just need to look at all possible vectors <m>\vv{r} = \vv{r}_{0}+\vv{u}</m>, where <m>\vv{u}</m> is any vector parallel to <m>\vec{AB}</m>. If we set <m>\vv{v} = \vec{AB}</m>,<fn>We don't actually have to pick <m>\vv{v} = \vec{AB}</m>, we just need <m>\vv{v}</m> to be parallel to <m>\vec{AB}</m>.</fn> then</p>
             <me>\vv{r} = \vv{r}_{0}+t\vv{v}</me>
