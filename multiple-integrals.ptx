@@ -33,7 +33,7 @@
     <subsection xml:id="subsection-riemann-sums">
       <title>Riemann Sums</title>
       <p>
-        Given a continuous function <m>f(x,y)</m> defined over the rectangle 
+        Given a continuous function <m>f(x,y)</m> defined over the rectangle
         <me>R = \{(x,y) : a\leq x\leq b, c\leq y\leq d\}</me>
         to approximate the volume under <m>f</m> and above <m>R</m> we'll divide the rectangle up into smaller rectangles.
         In particular, let's divide the intervals <m>[a,b]</m> and <m>[c,d]</m> into subintervals <m>[x_{i},x_{i+1}], [y_{j},y_{j+1}],</m> where
@@ -130,7 +130,7 @@
         </solution>
       </example>
       <p>
-        The double integral, like the Calculus I integral, derivative and partial derivatives, is <em>linear</em>. 
+        The double integral, like the Calculus I integral, derivative and partial derivatives, is <em>linear</em>.
         This means that you can break it up over addition and pull constants outside of it.
         In other words, if <m>f</m> and <m>g</m> are integrable and if <m>c</m> is a constant, then
         <md>
@@ -376,7 +376,7 @@
         <mrow>\Delta A &amp; \approx \frac{1}{2}[r\cos(\Delta\theta)][r\sin(\Delta\theta)] - \frac{1}{2}[(r-\Delta r)\cos(\Delta\theta)][(r-\Delta r)\sin(\Delta\theta)] </mrow>
         <mrow> &amp; = r\Delta r\cos(\Delta\theta)\sin(\Delta\theta) - \frac{1}{2}(\Delta r)^{2}\cos(\Delta\theta)\sin(\Delta\theta)</mrow>
       </md>
-      If we assume that <m>\Delta r</m> and <m>\Delta\theta</m> are both small (which means the polar grid in <xref ref="figure-polar-rectangle" text="type-global" /> is very fine), then 
+      If we assume that <m>\Delta r</m> and <m>\Delta\theta</m> are both small (which means the polar grid in <xref ref="figure-polar-rectangle" text="type-global" /> is very fine), then
       <md>
         <mrow>\cos(\Delta\theta) &amp; \approx 1 </mrow>
         <mrow>\sin(\Delta\theta) &amp; \approx \Delta\theta </mrow>
