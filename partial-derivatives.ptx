@@ -568,8 +568,8 @@
             </image>
             <caption>The chain rule for one independent variable.</caption>
         </figure>
-        <example xml:id="example-using-the-chain-rule">
-            <title>Using the chain rule</title>
+        <example xml:id="example-using-multivariable-chain-rule">
+            <title>Using the multivariable chain rule</title>
             <statement>
                 <p>
                     Let <m>f(x,y,z) = \ln\sqrt{x^{2}+y^{2}+z^{2}}</m> where
@@ -1026,8 +1026,8 @@
                 So this means we can't use critical points alone to find absolute maxima and minima, in general.
                 However, the following theorem says that they'll get us most of the way there.
             </p>
-            <theorem xml:id="theorem-extreme-value-theorem">
-                <idx><h>maxima and minima</h><h>Extreme Value Theorem</h></idx>
+            <theorem xml:id="theorem-extreme-value-multivariable">
+                <idx><h>Extreme Value Theorem</h><h>functions of several variables</h></idx>
                 <title>Extreme Value Theorem</title>
                 <statement>
                     <p>
@@ -1051,9 +1051,9 @@
                         We'll start off by finding any critical points.
                         Since <m>\grad f = \dotprod{1-y, 1-x}</m>, we see that the only critical point is <m>(1,1)</m>.
                         Now we need to see what happens to <m>f(x,y)</m> on the edges of the triangle, and to do that we need to find equations for the edges.
-                        Let <m>l_{1}</m> denote the edge from <m>(0,0)</m> to <m>(0,2)</m>, <m>l_{2}</m> the edge from <m>(0,2)</m> to <m>(4,0)</m> and <m>l_{3}</m> the edge from <m>(0,0)</m> to <m>(4,0)</m>. 
+                        Let <m>l_{1}</m> denote the edge from <m>(0,0)</m> to <m>(0,2)</m>, <m>l_{2}</m> the edge from <m>(0,2)</m> to <m>(4,0)</m> and <m>l_{3}</m> the edge from <m>(0,0)</m> to <m>(4,0)</m>.
                         Then <m>l_{1}</m> is given by the equation <m>x = 0</m>, <m>l_{2}</m> is given by <m>y = -\frac{1}{2}(x-4)</m> and <m>l_{3}</m> is given by <m>y = 0</m>.
-                        So on <m>l_{1}</m> we have <m>f(x,y) = f(0,y) = y</m>, on <m>l_{2}</m> we have 
+                        So on <m>l_{1}</m> we have <m>f(x,y) = f(0,y) = y</m>, on <m>l_{2}</m> we have
                         <me>f(x,y) = f\left(x,-\frac{1}{2}(x-4)\right) = \frac{1}{2}\left[\left(x-\frac{3}{2}\right)^{2} + \frac{7}{4}\right]</me>
                         and on <m>l_{3}</m> we have <m>f(x,y) = f(x,0) = x</m>.
                         We can then set up the following table:

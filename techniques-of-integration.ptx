@@ -975,9 +975,9 @@
                 For integrals, we have two comparison tests that allow us to determine if an improper integral converges by comparing it with a simpler integral.
                 First, we'll look at the <term>direct comparison test</term>.
             </p>
-            <theorem xml:id="theorem-direct-comparison-test">
+            <theorem xml:id="theorem-direct-comparison-test-integral">
+                <idx><h>convergence tests</h><h>integrals</h><h>direct comparison test</h></idx>
                 <title>Direct Comparison Test</title>
-                <idx><h>integral convergence tests</h><h>direct comparison test</h></idx>
                 <statement>
                     <p>
                         Suppose that <m>f(x)</m> and <m>g(x)</m> are continuous functions and that
@@ -1003,7 +1003,7 @@
                         <md>
                             <mrow>\int_{1}^{\infty}e^{-\frac{x}{2}}\,dx &amp; = 2\sqrt{e}, </mrow>
                         </md>
-                        <xref ref="theorem-direct-comparison-test" text="type-global" /> implies that the original integral must converge as well.
+                        <xref ref="theorem-direct-comparison-test-integral" text="type-global" /> implies that the original integral must converge as well.
                         Note that we don't know <em>what</em> it converges to, only that it does.
                     </p>
                 </solution>
@@ -1044,12 +1044,12 @@
                 </input>
             </sage>
             <p>
-                To use <xref ref="theorem-direct-comparison-test" text="type-global" /> successfully, we need to choose a simpler function that's related to the integrand and then use algebra to justify a specific inequality.
+                To use <xref ref="theorem-direct-comparison-test-integral" text="type-global" /> successfully, we need to choose a simpler function that's related to the integrand and then use algebra to justify a specific inequality.
                 It is sometimes more straightforward to apply the <term>limit comparison test</term>.
             </p>
-            <theorem xml:id="theorem-limit-comparison-test">
+            <theorem xml:id="theorem-limit-comparison-test-integral">
+                <idx><h>convergence tests</h><h>integrals</h><h>limit comparison test</h></idx>
                 <title>Limit Comparison Test</title>
-                <idx><h>integral convergence tests</h><h>limit comparison test</h></idx>
                 <statement>
                     <p>
                         Let <m>f(x)</m> and <m>g(x)</m> be positive, continuous functions on <m>[a,\infty)</m> for some constant <m>a</m>.
@@ -1072,7 +1072,7 @@
                         The integrand is awful again, but if <m>x</m> is very large then we can say that
                         <me>\frac{3x^{3} + 2x^{5}}{5x^{7} + 4x^{2}} \approx \frac{1}{x^{2}}.</me>
                         Since <m>\int_{1}^{\infty}\frac{1}{x^{2}}\,dx</m> converges, this suggests that maybe the original integral does as well.
-                        We can prove this using <xref ref="theorem-limit-comparison-test" text="type-global" />.
+                        We can prove this using <xref ref="theorem-limit-comparison-test-integral" text="type-global" />.
                     </p>
                     <p>
                         In fact, we have

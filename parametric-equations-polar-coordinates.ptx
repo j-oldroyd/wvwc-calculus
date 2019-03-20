@@ -223,8 +223,8 @@
 
   <section xml:id="section-calculus-and-parametric-curves">
     <title>Calculus and Parametric Curves</title>
-    <subsection xml:id="subsection-tangent-lines">
-      <title>Tangent Lines</title>
+    <subsection xml:id="subsection-tangent-lines-parametric-curves">
+      <title>Tangent Lines to Parametric Curves</title>
       <p>
         We have an idea of how to represent curves in the <m>xy</m>-plane using parametric equations.
         What we'd like to do now is to figure out how to do calculus with parametric equations.
@@ -295,8 +295,8 @@
       </example>
     </subsection>
 
-    <subsection xml:id="subsection-arc-length">
-      <title>Arc Length</title>
+    <subsection xml:id="subsection-arc-length-parametric-curves">
+      <title>Arc Length of Parametric Curves</title>
       <p>Now we move on to finding lengths of parametric curves. We won't derive the formula here, but it essentially follows from the Pythagorean theorem. We'll see a motivation of the formula later using vector calculus. But for now, suppose we have</p>
       <md>
         <mrow>x \amp = f(t) </mrow>
@@ -1063,7 +1063,7 @@
     </subsection>
     <subsection xml:id="subsection-arc-length-in-polar-coordinates">
       <title>Arc Length in Polar Coordinates</title>
-      <p>Our goal now is to find the length of a polar curve <m>r=f(\theta)</m>. From <xref ref="subsection-arc-length" text="type-global" /> we know how to find the length of a parametric curve, and a polar curve is really just a parametric curve with parametric equations</p>
+      <p>Our goal now is to find the length of a polar curve <m>r=f(\theta)</m>. From <xref ref="subsection-arc-length-parametric-curves" text="type-global" /> we know how to find the length of a parametric curve, and a polar curve is really just a parametric curve with parametric equations</p>
       <me>x = r\cos\theta = f(\theta)\cos\theta \quad\text{and}\quad y = r\sin\theta = f(\theta)\sin\theta.</me>
       <p>Using the formula <m>L = \int_{a}^{b}\sqrt{(\dv{x}{\theta})^{2}+(\dv{y}{\theta})^{2}}\,d\theta</m> and simplifying, we get the following result.</p>
       <theorem xml:id="theorem-arc-length-of-a-polar-curve">
