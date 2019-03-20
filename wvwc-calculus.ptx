@@ -97,8 +97,7 @@
   <book xml:id="wvwc-calculus">
     <title>Calculus Notes</title>
     <subtitle>West Virginia Wesleyan College</subtitle>
-    <!-- <xi:include href="./frontmatter.ptx" />   Title, authors, etc. -->
-
+    <xi:include href="./frontmatter.ptx" />   Title, authors, etc.
     <xi:include href="./limits.ptx" />  <!-- Introduction to parametric/polar coordinates -->
     <xi:include href="./derivatives.ptx" /> <!-- Introduction to derivatives -->
     <xi:include href="./inverse-functions.ptx" /> <!-- Introduction to derivatives of invertible functions -->
