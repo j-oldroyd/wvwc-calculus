@@ -1115,5 +1115,30 @@
         </solution>
       </example>
     </subsection>
+    <subsection xml:id="subsection-change">
+        <title>Change of Variables in Triple Integrals</title>
+        <p>
+          What we did in <xref ref="subsection-change-of-variables-in-double-integrals" text="type-global" /> carries over directly to triple integrals and beyond.
+          We just need to compute <m>3\times3</m> determinants instead of <m>2\times2</m>.
+        </p>
+        <example xml:id="example-volume-of-a-region-between-planes">
+            <title>Volume of a Region Between Planes</title>
+            <statement>
+              <p>
+                Find the volume of the region bounded by the planes <m>y - 2x = 0</m>, <m>y - 2x = 1</m>, <m>z - 3y = 0</m>, <m>z - 3y = 1</m>, <m>z - 4x = 0</m> and <m>z - 4x = 3</m>.
+              </p>
+          </statement>
+          <solution>
+            <p>
+              If we let <m>D</m> denote the region we're trying to find the volume of, then the volume of this region is just
+              <md>
+                <mrow>\iiint_{D}\,dV \amp = \int_{0}^{3}\int_{0}^{1}\int_{0}^{1}\abs{J(u,v,w)}\,du\,dv\,dw </mrow>
+                <mrow> \amp = \frac{1}{2}\int_{0}^{3}\int_{0}^{1}\int_{0}^{1}\,du\,dv\,dw </mrow>
+              </md>,
+              where <m>u = y - 2x</m>, <m>v = z - 3y</m> and <m>w = z - 4x</m>.
+            </p>
+          </solution>
+        </example>
+    </subsection>
   </section>
 </chapter>
