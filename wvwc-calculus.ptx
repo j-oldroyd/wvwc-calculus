@@ -111,6 +111,7 @@
     <xi:include href="./vectors-space-geometry.ptx" /> <!-- Introduction to geometry in Euclidean space -->
     <xi:include href="./partial-derivatives.ptx" /> <!-- Introduction to partial derivatives -->
     <xi:include href="./multiple-integrals.ptx" /> <!-- Introduction to multiple integrals -->
+    <xi:include href="./vector-calculus.ptx" /> <!-- Introduction to vector calculus concepts -->
     <xi:include href="./backmatter.ptx" /> <!-- Index and whatnot. -->
   </book>
 </mathbook>
