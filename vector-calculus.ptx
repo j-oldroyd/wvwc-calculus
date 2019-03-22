@@ -17,4 +17,47 @@
       In this chapter, we reach the culmination of our work in <xref first="vectors-space-geometry" last="multiple-integrals" text="global">Chapters</xref>, obtaining a unified picture of calculus in higher dimensions.
     </p>
   </introduction>
+  <section xml:id="section-vector-fields">
+    <title>Vector Fields</title>
+    <introduction>
+      <p>
+        Consider the function <m>f(x,y) = \frac{1}{2}(x^{2} + y^{2})</m>.
+        The gradient of this function is <m>\grad f = \dotprod{-y, x}</m>.
+        We can view the gradient as a <em>function</em> that assigns the vector <m>\grad f(x,y)</m> to each point <m>(x,y)</m> in the plane.
+        <figure xml:id="figure-the-gradient-field-for--grad-f-">
+          <caption>The gradient field for <m>\grad f</m></caption>
+          <image xml:id="image-the-gradient-field-for--grad-f-">
+            <asymptote>
+              import graph;
+              import slopefield;
+              import fontsize;
+              defaultpen(fontsize(9pt));
+              size(200);
+              real xmin=-2.1, xmax=2.1;
+              real ymin=-2.1, ymax=2.1;
+
+              //hopefully changes vectorfield settings...
+              picture vectorfield(path vector(real), path g, int n, bool truesize=false,
+                    pen p=currentpen, arrowbar arrow=Arrow(TeXHead));
+
+              pair a=(-2,-2);
+              pair b=(2,2);
+
+              //Define gradient field
+              path vector(pair z) {return (0,0)--(z.x,z.y);}
+
+              add(vectorfield(vector,a,b,deepblue+1bp));
+
+              xaxis("$x$",YEquals(0),xmin,xmax,LeftTicks(),arrow=Arrow(TeXHead));
+              //xaxis(YEquals(ymax),xmin,xmax);
+              yaxis("$y$",XEquals(0),ymin,ymax,RightTicks());
+              //yaxis(XEquals(xmax),ymin,ymax);
+
+              attach(legend(),point(E),20E,UnFill);
+            </asymptote>
+          </image>
+        </figure>
+      </p>
+    </introduction>
+  </section>
 </chapter>
