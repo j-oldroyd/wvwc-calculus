@@ -57,7 +57,21 @@
             </asymptote>
           </image>
         </figure>
+        Such functions are the main object of this section.
       </p>
     </introduction>
+    <definition xml:id="definition-vector-fields">
+      <idx><h>vector fields</h></idx>
+      <title>Vector Fields</title>
+      <statement>
+        <p>
+          A <term>vector field</term> is a function <m>\vv{F}</m> that assigns vectors to points.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      A vector field on <m>\RR^{2}</m> would look like
+      <me>\vv{F}(x,y) = \dotprod{P(x,y), Q(x,y)} = P(x,y)\vv{i} + Q(x,y)\vv{j} = P\vv{i} + Q\vv{j}</me>.
+    </p>
   </section>
 </chapter>
