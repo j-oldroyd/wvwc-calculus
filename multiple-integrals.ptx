@@ -1108,8 +1108,8 @@
             Therefore
             <md>
               <mrow>\iint_{R}e^{xy}\,dA \amp = \int_{1}^{3}\int_{1}^{4}\frac{1}{2v}e^{u}\,du\,dv </mrow>
-              <mrow> \amp = frac{e^{4} - e}{2}\int_{1}^{3}\frac{1}{v}\,dv </mrow>
-              <mrow> \amp = frac{e^{4} - e}{2}\ln 3 </mrow>
+              <mrow> \amp = \frac{e^{4} - e}{2}\int_{1}^{3}\frac{1}{v}\,dv </mrow>
+              <mrow> \amp = \frac{e^{4} - e}{2}\ln 3 </mrow>
             </md>.
           </p>
         </solution>
@@ -1136,6 +1136,44 @@
                 <mrow> \amp = \frac{1}{2}\int_{0}^{3}\int_{0}^{1}\int_{0}^{1}\,du\,dv\,dw </mrow>
               </md>,
               where <m>u = y - 2x</m>, <m>v = z - 3y</m> and <m>w = z - 4x</m>.
+            </p>
+          </solution>
+        </example>
+        <example xml:id="example-transforming-to-a-spherical-region">
+            <title>Transforming to a Spherical Region</title>
+            <statement>
+              <p>
+                Evaluate
+                <me>\iiint_{D}\abs{xyz}\,dV</me>
+                where
+                <me>D = \set{(x,y,z) : x^{2} + \frac{y^{2}}{9} + \frac{z^{2}}{4} \leq 1}</me>.
+              </p>
+              <aside>
+                <p>
+                  Problem adapted from Exercise 21 on page 1137 in <em>Thomas' Calculus</em>, <m>11^{\text{th}}</m> edition.
+                </p>
+              </aside>
+          </statement>
+          <solution>
+            <p>
+              The region of integration is an ellipsoid, but if we can change this to a sphere then we can use spherical coordinates to help us.
+              A quick fix is to set
+              <me>u = x, v = \frac{y}{3} \qq{and} w = \frac{z}{2}</me>.
+              Then these new variables satisfy
+              <me>u^{2} + v^{2} + w^{2} \leq 1</me>
+              and so the corresponding region <m>S</m> in <m>uvw</m>-space is the unit sphere.
+            </p>
+            <p>
+              Now we need to find <m>J(u,v,w)</m>.
+              Thankfully, this is straightforward and we get <m>\abs{J(u,v,w)} = \frac{1}{6}</m>.
+              Therefore
+              <md>
+                <mrow>\iiint_{D}\abs{xyz}\,dV \amp = \iiint_{S}\abs{uvw}\,du\,dv\,dw </mrow>
+                <mrow> \amp = 8\iiint_{S'}\abs{uvw}\,du\,dv\,dw </mrow>
+                <mrow> \amp = 8\int_{0}^{\frac{\pi}{2}}\int_{0}^{\frac{\pi}{2}}\int_{0}^{1}(\rho^{3}\sin^{2}\varphi\cos\varphi\sin\theta\cos\theta)\rho^{2}\sin\varphi\,d\rho\,d\varphi\,d\theta </mrow>
+                <mrow> \amp = 8\int_{0}^{\frac{\pi}{2}}\int_{0}^{\frac{\pi}{2}}\int_{0}^{1}\rho^{5}\sin^{3}\varphi\cos\varphi\sin\theta\cos\theta\,d\rho\,d\varphi\,d\theta</mrow>
+              </md>,
+              which we can actually integrate without too much trouble.
             </p>
           </solution>
         </example>

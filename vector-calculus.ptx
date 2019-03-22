@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--********************************************************************
+
+*********************************************************************-->
+<!-- This file was originally part of the book     -->
+<!-- (as copied on 2015/07/12)                     -->
+<!--                                               -->
+<!--   Abstract Algebra: Theory and Applications   -->
+<!--                                               -->
+<!-- Copyright (C) 1997-2014  Thomas W. Judson     -->
+
+<chapter xml:id="vector-calculus" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Vector Calculus</title>
+  <introduction>
+    <p>
+      In this chapter, we reach the culmination of our work in <xref first="vectors-space-geometry" last="multiple-integrals" text="global">Chapters</xref>, obtaining a unified picture of calculus in higher dimensions.
+    </p>
+  </introduction>
+</chapter>
