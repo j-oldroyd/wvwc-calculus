@@ -22,40 +22,79 @@
     <introduction>
       <p>
         Consider the function <m>f(x,y) = \frac{1}{2}(x^{2} + y^{2})</m>.
-        The gradient of this function is <m>\grad f = \dotprod{-y, x}</m>.
+        The gradient of this function is <m>\grad f = \dotprod{x,y}</m>.
         We can view the gradient as a <em>function</em> that assigns the vector <m>\grad f(x,y)</m> to each point <m>(x,y)</m> in the plane.
+        We often draw these vectors so that they're normalized.
         <figure xml:id="figure-the-gradient-field-for--grad-f-">
-          <caption>The gradient field for <m>\grad f</m></caption>
-          <image xml:id="image-the-gradient-field-for--grad-f-">
-            <asymptote>
-              import graph;
-              import slopefield;
-              import fontsize;
-              defaultpen(fontsize(9pt));
-              size(200);
-              real xmin=-2.1, xmax=2.1;
-              real ymin=-2.1, ymax=2.1;
+          <caption></caption>
+          <sidebyside>
+            <figure>
+              <caption>Gradient field for <m>\grad f = \dotprod{x,y}</m>.</caption>
+              <image xml:id="image-the-gradient-field-for--grad-f-">
+                <asymptote>
+                  import graph;
+                  import slopefield;
+                  import fontsize;
+                  defaultpen(fontsize(9pt));
+                  size(200);
+                  real xmin=-2, xmax=2;
+                  real ymin=-2, ymax=2;
+                  real eps = .2;
 
-              //hopefully changes vectorfield settings...
-              picture vectorfield(path vector(real), path g, int n, bool truesize=false,
-                    pen p=currentpen, arrowbar arrow=Arrow(TeXHead));
+                  pair a=(-2,-2);
+                  pair b=(2,2);
 
-              pair a=(-2,-2);
-              pair b=(2,2);
+                  //Define gradient field
+                  path vector(pair z) {return (0,0)--(z.x,z.y);}
 
-              //Define gradient field
-              path vector(pair z) {return (0,0)--(z.x,z.y);}
+                  add(vectorfield(vector,a,b,20,deepblue+0.4bp));
 
-              add(vectorfield(vector,a,b,deepblue+1bp));
+                  //plot annotations
+                  arrowbar axisarrow = Arrow(TeXHead);
+                  Label xlabel = Label("$x$", position = EndPoint, align = 2E);
+                  Label ylabel = Label("$y$", position = EndPoint, align = 2N);
 
-              xaxis("$x$",YEquals(0),xmin,xmax,LeftTicks(),arrow=Arrow(TeXHead));
-              //xaxis(YEquals(ymax),xmin,xmax);
-              yaxis("$y$",XEquals(0),ymin,ymax,RightTicks());
-              //yaxis(XEquals(xmax),ymin,ymax);
+                  xaxis(YEquals(0),xmin - eps,xmax + eps, LeftTicks(NoZeroFormat), L=xlabel, arrow=axisarrow);
+                  yaxis(XEquals(0),ymin - eps,ymax + eps,RightTicks(NoZeroFormat), L = ylabel, arrow = axisarrow);
+                  // "Nice" labeling for origin.
+                  label("$0$", (0,0), NW);
+                </asymptote>
+              </image>
+            </figure>
+            <figure>
+              <caption>Normalized gradient field <m>\frac{\grad f}{\norm{\grad f}}</m>.</caption>
+              <image>
+                <asymptote>
+                  import graph;
+                  import slopefield;
+                  import fontsize;
+                  defaultpen(fontsize(9pt));
+                  size(200);
+                  real xmin=-2, xmax=2;
+                  real ymin=-2, ymax=2;
+                  real eps = .2;
 
-              attach(legend(),point(E),20E,UnFill);
-            </asymptote>
-          </image>
+                  pair a=(-2,-2);
+                  pair b=(2,2);
+
+                  //Define gradient field
+                  path vector(pair z) {return (0,0)--unit((z.x,z.y));}
+
+                  add(vectorfield(vector,a,b,20,deepblue+0.4bp));
+
+                  //plot annotations
+                  arrowbar axisarrow = Arrow(TeXHead);
+                  Label xlabel = Label("$x$", position = EndPoint, align = 2E);
+                  Label ylabel = Label("$y$", position = EndPoint, align = 2N);
+
+                  xaxis(YEquals(0),xmin - eps,xmax + eps, LeftTicks(NoZeroFormat), L=xlabel, arrow=axisarrow);
+                  yaxis(XEquals(0),ymin - eps,ymax + eps,RightTicks(NoZeroFormat), L = ylabel, arrow = axisarrow);
+                  // "Nice" labeling for origin.
+                  label("$0$", (0,0), NW);
+                </asymptote>
+              </image>
+            </figure>
+          </sidebyside>
         </figure>
         Such functions are the main object of this section.
       </p>
