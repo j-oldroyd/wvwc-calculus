@@ -24,12 +24,12 @@
         Consider the function <m>f(x,y) = \frac{1}{2}(x^{2} + y^{2})</m>.
         The gradient of this function is <m>\grad f = \dotprod{x,y}</m>.
         We can view the gradient as a <em>function</em> that assigns the vector <m>\grad f(x,y)</m> to each point <m>(x,y)</m> in the plane.
-        We often draw these vectors so that they're normalized.
+        We often draw these vectors so that they're rescaled or normalized.
         <figure xml:id="figure-the-gradient-field-for--grad-f-">
           <caption></caption>
           <sidebyside>
             <figure>
-              <caption>Gradient field for <m>\grad f = \dotprod{x,y}</m>.</caption>
+              <caption>Rescaled gradient field for <m>\grad f = \dotprod{x,y}</m>.</caption>
               <image xml:id="image-the-gradient-field-for--grad-f-">
                 <asymptote>
                   import graph;
@@ -99,18 +99,79 @@
         Such functions are the main object of this section.
       </p>
     </introduction>
-    <definition xml:id="definition-vector-fields">
-      <idx><h>vector fields</h></idx>
-      <title>Vector Fields</title>
-      <statement>
-        <p>
-          A <term>vector field</term> is a function <m>\vv{F}</m> that assigns vectors to points.
-        </p>
-      </statement>
-    </definition>
-    <p>
-      A vector field on <m>\RR^{2}</m> would look like
-      <me>\vv{F}(x,y) = \dotprod{P(x,y), Q(x,y)} = P(x,y)\vv{i} + Q(x,y)\vv{j} = P\vv{i} + Q\vv{j}</me>.
-    </p>
+    <subsection xml:id="subsection-vector-fields-in--rr-2-m-and--rr-3-m-">
+      <title>Vector Fields in <m>\RR^{2}</m> and <m>\RR^{3}</m></title>
+      <definition xml:id="definition-vector-fields">
+        <idx><h>vector fields</h></idx>
+        <title>Vector Fields</title>
+        <statement>
+          <p>
+            A <term>vector field</term> is a function <m>\vv{F}</m> that assigns vectors to points.
+          </p>
+        </statement>
+      </definition>
+      <p>
+        A vector field on <m>\RR^{2}</m> would look like
+        <me>\vv{F}(x,y) = \dotprod{P(x,y), Q(x,y)} = P(x,y)\vv{i} + Q(x,y)\vv{j} = P\vv{i} + Q\vv{j}</me>.
+        Similarly, a vector field on <m>\RR^{3}</m> would be
+        <me>\vb{F}(x,y,z) = P\vb{i} + Q\vb{j} + R\vb{k}</me>.
+      </p>
+      <example xml:id="example-sketching-a-vector-field">
+        <title>Sketching a Vector Field</title>
+        <statement>
+          <p>
+            Sketch <m>\vb{F} = \dotprod{x, e^{-y}}</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Our sketch looks like
+            <figure xml:id="figure---vb-f-x-vb-i-e-y-vb-j-m">
+              <caption><m>\vb{F} = x\vb{i} + e^{-y}\vb{j}</m></caption>
+              <image xml:id="image---vb-f-x-vb-i-e-y-vb-j-m">
+                <asymptote><![CDATA[
+                  import graph;
+                  import slopefield;
+                  import fontsize;
+                  defaultpen(fontsize(9pt));
+                  size(200);
+                  real xmin=-2, xmax=2;
+                  real ymin=-2, ymax=2;
+                  real eps = .2;
+
+                  pair a=(-2,-2);
+                  pair b=(2,2);
+
+                  //Define gradient field
+                  path vector(pair z) {return (0,0)--(z.x, exp(-z.y));}
+
+                  add(vectorfield(vector,a,b,20,deepblue+0.4bp));
+
+                  //plot annotations
+                  arrowbar axisarrow = Arrow(TeXHead);
+                  Label xlabel = Label("$x$", position = EndPoint, align = 2E);
+                  Label ylabel = Label("$y$", position = EndPoint, align = 2N);
+
+                  xaxis(YEquals(0),xmin - eps,xmax + eps, LeftTicks(NoZeroFormat), L=xlabel, arrow=axisarrow);
+                  yaxis(XEquals(0),ymin - eps,ymax + eps,RightTicks(NoZeroFormat), L = ylabel, arrow = axisarrow);
+                  // "Nice" labeling for origin.
+                  label("$0$", (0,0), NW);]]>
+                </asymptote>
+              </image>
+            </figure>
+            Note that the vectors in <xref ref="figure---vb-f-x-vb-i-e-y-vb-j-m" text="type-global" /> get extremely small as <m>y</m> increases, so it may be better to represent the vector field using normalized vectors instead.
+          </p>
+        </solution>
+      </example>
+      <example xml:id="example-a-vector-field-in--rr-3-m-">
+        <title>A Vector Field in <m>\RR^{3}</m></title>
+        <statement>
+          <p>
+            Sketch
+            <me>\vb{F} = \dotprod{-y, x, z}</me>.
+          </p>
+        </statement>
+      </example>
+    </subsection>
   </section>
 </chapter>
