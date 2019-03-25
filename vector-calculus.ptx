@@ -219,5 +219,29 @@
         By sketching <m>\vb{V}</m>, we see that every streamline of <m>\vb{V}</m> is parallel to <m>y = x</m>.
       </p>
     </subsection>
+    <subsection xml:id="subsection-gradient-fields-and-potential-functions">
+      <title>Gradient Fields and Potential Functions</title>
+        <p>
+          Recall that the gradient of a function <m>f(x,y)</m> is a kind of derivative of that function.
+          Hence we can view the original scalar function <m>f(x,y)</m>, also known as the <term>potential function</term>, as a kind of antiderivative for the gradient <m>\grad f</m>.
+          Since the gradient <m>\grad f</m> is also a vector field, called the <term>gradient field</term>, this means that vector fields that have a corresponding potential function should obey familiar rules from calculus.
+          In particular, they obey a version of the Fundamental Theorem of Calculus (see <xref provisional="section-fundamental-theorem-of-line-integrals" text="type-global" />).
+        </p>
+        <example xml:id="example-gradient-field-for-gravitational-potential">
+          <title>Gradient Field for Gravitational Potential</title>
+          <statement>
+            <p>
+              Find the gradient field associated to
+              <me>\varphi(x,y,z) = \frac{mMG}{\sqrt{x^{2} + y^{2} + z^{2}}}</me>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We can find the gradient field right away:
+              <me>\grad\varphi = \frac{-mMG}{(x^{2} + y^{2} + z^{2})^{3/2}}\dotprod{x,y,z}</me>.
+            </p>
+          </solution>
+        </example>
+    </subsection>
   </section>
 </chapter>
