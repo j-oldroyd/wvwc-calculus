@@ -183,8 +183,41 @@
               </interactive>
             </figure>
           </p>
+          <p>
+            The vector field rotates about the <m>z</m>-axis in the counterclockwise direction, flowing upwards if <m>z \gt 0</m> and flowing downwards if <m>z \lt 0</m>.
+          </p>
         </solution>
       </example>
+      <p>
+        A <term>velocity field</term> is just a vector field that assigns velocities to points.
+      </p>
+      <example xml:id="example-particle-in-velocity-field">
+        <title>Particle Trapped in a Velocity Field</title>
+        <statement>
+          <p>
+            At time <m>t = 0</m> seconds, a particle is at position <m>(1,2)</m>.
+            The particle is within the velocity field
+            <me>\vb{V}(x,y) = \frac{\dotprod{1,1}}{\sqrt{x^{2} + y^{2}}}</me>.
+            Estimate the particle's position at <m>t = 0.5</m> seconds.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Since the particle starts at <m>\dotprod{1,2}</m>, its velocity at time <m>t = 0</m> is given by
+            <me>\vb{V}(1,2) = \frac{1}{\sqrt{5}}\dotprod{1,1}</me>.
+            Hence the displacement of the particle from <m>t = 0</m> to <m>t = 0.5</m> seconds should be approximately
+            <me>0.5\vb{V}(1,2) = \frac{1}{2\sqrt{5}}\dotprod{1,1}</me>,
+            which gives the new position as roughly
+            <me>\dotprod{1,2} + \frac{1}{2\sqrt{5}}\dotprod{1,1}</me>.
+          </p>
+        </solution>
+      </example>
+      <p>
+        In <xref ref="example-particle-in-velocity-field" text="type-global" />, we're actually attempting to approximate the <term>integral curve</term> for <m>\vb{V}</m> that passes through <m>(1,2)</m>.
+        For velocity fields these are also known as <term>streamlines</term>, while for magnetic fields these can be known as <term>field lines</term>.
+        For a velocity field, streamlines represent the valid paths a particle subject to the field can travel.
+        By sketching <m>\vb{V}</m>, we see that every streamline of <m>\vb{V}</m> is parallel to <m>y = x</m>.
+      </p>
     </subsection>
   </section>
 </chapter>
