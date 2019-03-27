@@ -253,4 +253,42 @@
       </p>
     </conclusion>
   </section>
+  <section xml:id="section-line-integrals">
+      <title>Line Integrals</title>
+      <introduction>
+        <p>
+          In this section we move on to computing integrals over curves in <m>\RR^{2}</m> and <m>\RR^{3}</m>.
+        </p>
+      </introduction>
+      <subsection xml:id="subsection-scalar-line-integrals">
+          <title>Scalar Line Integrals</title>
+          <p>
+            Suppose we wish to find the mass of a wire given by a curve <m>C</m> in the <m>xy</m>-plane.
+            If the density is a constant <m>\rho</m> then this is simple: the mass is just <m>\rho L</m> where <m>L</m> denotes the length of the wire.
+          </p>
+          <p>
+            Now suppose that the density varies, and is now a function <m>\rho(x,y)</m>.
+            Then we can estimate the mass of the wire by chopping the wire into <m>k</m> smaller segments, each of length <m>\Delta s</m>, choosing points <m>(x_{i},y_{i})</m> from each segment, and then computing
+            <me>\sum_{j=1}^{k}\rho(x_{j}, y_{j})\Delta s</me>.
+            If we send <m>\Delta s\to 0</m>the approximation becomes exact, and defines the <term>scalar line integral</term> of <m>\rho</m> along <m>C</m>.
+          </p>
+          <definition xml:id="definition-scalar-line-integral">
+              <idx><h>line integrals</h><h>scalar</h></idx>
+              <title>Scalar Line Integral</title>
+              <statement>
+                <p>
+                  Suppose that <m>C</m> is a smooth curve in <m>\RR^{2}</m> and that the function <m>f(x,y)</m> is continuous on <m>C</m>.
+                  The scalar line integral of <m>f</m> along <m>C</m> is the number <m>\int_{C}f(x,y)\,ds</m> defined to be
+                  <me>\int_{C}f(x,y)\,ds = \lim_{\Delta s\to 0}\sum_{j=1}^{k}f(x_{j},y_{j})\Delta s</me>.
+                </p>
+                <aside>
+                  <p>
+                    An analogous definition holds for curves in <m>\RR^{3}</m>.
+                    We can also replace the assumption that <m>C</m> is smooth with the assumption that <m>C</m> is <em>rectifiable</em>, which (roughly) means it has a well-defined length.
+                  </p>
+                </aside>
+              </statement>
+          </definition>
+      </subsection>
+  </section>
 </chapter>
