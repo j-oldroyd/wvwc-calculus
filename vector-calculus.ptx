@@ -394,7 +394,7 @@
         <title>Vector Field Line Integrals</title>
         <p>
           Suppose we have a <em>force field</em> <m>\vb{F}</m> in <m>\RR^{2}</m> and some particle that is acted upon by the force.
-          The particle has a trajectory given by a curve <m>C</m>.
+          The particle has a trajectory given by a curve <m>C: \vb{r}(t), 0\leq t\leq 1</m>.
           <figure xml:id="figure-trajectory-in-a-force-field">
             <caption>Trajectory in a force field.</caption>
             <image xml:id="image-trajectory-in-a-force-field">
@@ -446,6 +446,21 @@
             </image>
           </figure>
         </p>
+        <p>
+          We want to determine how the trajectory of the particle aligns with the forcefield <m>\vb{F}</m>.
+          We can do this by picking an arbitrary point along <m>C</m>, finding the unit tangent <m>\vb{T}</m> at this point, and then comparing the direction of <m>\vb{T}</m> and that of <m>\vb{F}</m> by computing the dot product <m>\vb{F}\cdot\vb{T}</m>.
+          This is a measure of how <m>\vb{F}</m> and <m>C</m> align at a specific point, and integrating this along <m>C</m> should tell us how <m>C</m> and <m>\vb{F}</m> align overall.
+        </p>
+        <definition xml:id="definition-line-integral-of-a-vector-field">
+          <idx><h>line integrals</h><h>vector fields</h></idx>
+          <title>Line Integral of a Vector Field</title>
+          <statement>
+            <p>
+              Let <m>C</m> denote a smooth curve and let <m>\vb{F}</m> be a vector field continuous on <m>C</m>.
+              Then we define the <term>line integral of <m>\vb{F}</m> over <m>C</m></term> to be <m>\int_{C}\vb{F}\cdot\vb{T}\,ds</m>.
+            </p>
+          </statement>
+        </definition>
       </subsection>
   </section>
 </chapter>
