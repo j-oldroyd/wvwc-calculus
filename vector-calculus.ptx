@@ -476,6 +476,71 @@
       <p>
         In addition to measuring how well <m>C</m> and <m>\vb{F}</m> align, vector field line integrals can also represent work done.
       </p>
+      <example xml:id="example-flow-along-a-circle">
+        <title>Flow Along a Circle</title>
+        <statement>
+          <p>
+            Let <m>C</m> denote the unit circle traversed once in the counterclockwise direction, and let
+            <me>\vb{F} = \dotprod{y, -x}</me>.
+            Does <m>\vb{F}</m> tend to flow with or against <m>C</m>?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            If we graph <m>\vb{F}</m> and <m>C</m>, we get the following:
+            <figure xml:id="figure-flow-over-the-unit-circle-">
+              <caption>Flow over the unit circle.</caption>
+              <image xml:id="image-flow-over-the-unit-circle-">
+                <asymptote>
+                  import graph;
+                  import fontsize;
+                  size(200);
+                  defaultpen(fontsize(9pt));
+
+
+                  real xmin=-2, xmax=2;
+                  real ymin=-2, ymax=2;
+                  real eps=.2;
+
+                  //plot annotations
+                  arrowbar axisarrow = Arrow(TeXHead);
+                  Label xlabel = Label("$x$", position = EndPoint, align = 2E);
+                  Label ylabel = Label("$y$", position = EndPoint, align = 2N);
+
+                  //define and add vector field
+                  pair a=(-2,-2);
+                  pair b=(2,2);
+                  path vector(pair z) {return (0,0)--(z.y, -z.x);}
+                  add(vectorfield(vector,a,b,10,deepblue+0.4bp));
+
+                  //define and add curve
+                  pair f(real t) {
+                    return (cos(t), sin(t));
+                  }
+                  path curveC = graph(f, 0, 2*pi, operator ..); // "operator .." is for bezier; 0≤t≤2π
+                  Label L = Label("$C$", position=Relative(0.25), align=NE);
+                  draw(curveC, black+0.6bp, L = L, Arrow(arrowhead = SimpleHead,position=Relative(0.45)));
+                  add(arrow(curveC,arrowhead = SimpleHead,position=Relative(.95)));
+
+                  //draw axes
+                  xaxis(YEquals(0),xmin - eps,xmax + eps, LeftTicks(NoZeroFormat), L=xlabel, arrow=axisarrow);
+                  yaxis(XEquals(0),ymin - eps,ymax + eps,RightTicks(NoZeroFormat), L = ylabel, arrow = axisarrow);
+                  // "Nice" labeling for origin.
+                  label("$0$", (0,0), NW);
+                </asymptote>
+              </image>
+            </figure>
+          </p>
+          <p>
+            <xref ref="figure-flow-over-the-unit-circle" text="type-global" /> suggests that <m>\vb{F}</m> flows against <m>C</m>, and we can verify this by computing <m>\int_{C}\vb{F}\cdot d\vb{r}</m>:
+            <md>
+              <mrow>\int_{C}\vb{F}\cdot d\vb{r} \amp = \int_{0}^{2\pi}\dotprod{\sin t, -\cos t}\cdot\dotprod{-\sin t, \cos t}\,dt </mrow>
+              <mrow> \amp = -2\pi </mrow>
+            </md>.
+            Since the result is negative, this tells us that <m>\vb{F}</m> tends to flow against <m>C</m>.
+          </p>
+        </solution>
+      </example>
     </subsection>
   </section>
 </chapter>
