@@ -395,7 +395,7 @@
         <p>
           Suppose we have a <em>force field</em> <m>\vb{F}</m> in <m>\RR^{2}</m> and some particle that is acted upon by the force.
           The particle has a trajectory given by a curve <m>C</m>.
-          <figure xml:id="figure-trajectory-in-a-force-field-">
+          <figure xml:id="figure-trajectory-in-a-force-field">
             <caption>Trajectory in a force field.</caption>
             <image xml:id="image-trajectory-in-a-force-field">
               <asymptote>
@@ -404,8 +404,6 @@
                 size(200);
                 defaultpen(fontsize(9pt));
 
-                pair a=(-2,-2);
-                pair b=(2,2);
 
                 real xmin=-2, xmax=2;
                 real ymin=-2, ymax=2;
@@ -417,22 +415,27 @@
                 Label ylabel = Label("$y$", position = EndPoint, align = 2N);
 
                 //define and add vector field
-                path vector(pair z) {return (0,0)--(z.x*z.y, 3*z.y**2);}
-                add(vectorfield(vector,a,b,20,deepblue+0.4bp));
+                pair a=(-2,-2);
+                pair b=(2,2);
+                path vector(pair z) {return (0,0)--(z.x + cos(z.y), 2 + 3*exp(-z.y**2));}
+                add(vectorfield(vector,a,b,10,deepblue+0.4bp));
 
                 //define and add curve
                 pair f(real t) {
                   return (t*cos(t), exp(-t**3));
                 }
-                path curveC = graph(f, 0, 2, operator ..); // "operator .." should be for bezier curves... 0 \lt t \gt 1
+                path curveC = graph(f, 0, 2, operator ..); // "operator .." is for bezier; 0≤t≤2
                 Label L = Label("$C$", position=Relative(0.25), align=E);
-                draw(curveC, black+0.6bp, L = L);
+                draw(curveC, black+0.6bp, L = L, Arrow(arrowhead = SimpleHead,position=Relative(0.45)));
+
+                // Label beginning and end
                 dot(f(0));
-                Label Lbegin = Label("$t=0$", position=Relative(0), align=NE);
-                Label Lend = Label("$t = 1$", position=Relative(1), align=N);
+                dot(f(2));
+                Label Lbegin = Label("$t = 0$", position=Relative(0), align=NE);
+                Label Lend = Label("$t = 1$", position=Relative(1), align=2N);
                 draw(f(0),L=Lbegin);
                 draw(f(2), L=Lend);
-                dot(f(2));
+
 
                 //draw axes
                 xaxis(YEquals(0),xmin - eps,xmax + eps, LeftTicks(NoZeroFormat), L=xlabel, arrow=axisarrow);
