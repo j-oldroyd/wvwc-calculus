@@ -255,25 +255,25 @@
     <example xml:id="example-vector-addition-with-components">
       <title>Vector addition with components</title>
       <p>
-        Let <m>\vv{a} = \dotprod{-2,1,3}</m> and <m>\vv{b} = \dotprod{0,2,1}</m>. Then 
+        Let <m>\vv{a} = \dotprod{-2,1,3}</m> and <m>\vv{b} = \dotprod{0,2,1}</m>. Then
       </p>
       <me>\vv{b}-3\vv{a} = \dotprod{6,-1,-8}.</me>
     </example>
     <p>
       Finding magnitudes of vectors can also be done by applying the distance formula from <xref ref="section-coordinates-in-3-space" text="type-global" /> to the components of the vectors.
-      The magnitude of a vector <m>\vv{x}</m> is denoted by <m>|\vv{x}|</m> or <m>\|\vv{x}\|</m>.
+      The magnitude of a vector <m>\vv{x}</m> is denoted by <m>|\vv{x}|</m> or <m>\norm{\vv{x}}</m>.
       For example, the magnitude of <m>\vv{b}-3\vv{a}</m> from the previous example is
-      <me>\|\vv{b}-3\vv{a}\| = \sqrt{36+1+64} = \sqrt{101}.</me>
+      <me>\norm{\vv{b}-3\vv{a}} = \sqrt{36+1+64} = \sqrt{101}.</me>
     </p>
     <p>
       Given a vector <m>\vv{x} = \dotprod{x_{1},x_{2},x_{3}},</m>
-      <me>\|\vv{x}\| = \sqrt{x_{1}^{2}+x_{2}^{2}+x_{3}^{2}}.</me>
+      <me>\norm{\vv{x}} = \sqrt{x_{1}^{2}+x_{2}^{2}+x_{3}^{2}}.</me>
     </p>
     <example xml:id="example-a-vector-equation">
       <title>A vector equation</title>
       <p>
         We can use vectors to describe curves and surfaces. For example, let <m>\vv{r} = \dotprod{x,y,z}</m> and <m>\vv{r}_{0} = \dotprod{a,b,c}</m>. Let <m>r\geq0</m>. Then the set of all points <m>(x,y,z)</m> that satisfy the equation
-        <me>\|\vv{r}-\vv{r}_{0}\| = r</me>
+        <me>\norm{\vv{r}-\vv{r}_{0}} = r</me>
         has a very nice description: it's just the sphere of radius <m>r</m> centered at <m>(a,b,c)</m>.
       </p>
     </example>
@@ -345,7 +345,7 @@
     <p>
       As we've seen, every vector <m>\vv{x}</m> in <m>\RR^{3}</m> can be expressed using only these three vectors. The standard basis has two important properties: it is perpendicular (also called <term>orthogonal</term>) and every vector in the collection has magnitude <m>1</m>. In other words,
     </p>
-    <me>\|\vv{i}\| = \|\vv{j}\| = \|\vv{k}\| = 1.</me>
+    <me>\norm{\vv{i}} = \norm{\vv{j}} = \norm{\vv{k}} = 1.</me>
     <p>
       These vectors are essentially designed to capture the "coordinate directions", and are plotted below.
     </p>
@@ -412,7 +412,7 @@
       <idx><h>vectors</h><h>unit vectors</h></idx>
       <statement>
         <p>
-          A vector <m>\vv{x}</m> is a unit vector if <m>\|\vv{x}\| = 1</m>.
+          A vector <m>\vv{x}</m> is a unit vector if <m>\norm{\vv{x}} = 1</m>.
         </p>
       </statement>
     </definition>
@@ -429,7 +429,7 @@
         Then the unit vector that gives the direction from <m>A</m> to <m>B</m> is given by
       </p>
       <md>
-        <mrow>\vv{u} &amp; = \frac{\vv{x}}{\|\vv{x}\|} </mrow>
+        <mrow>\vv{u} &amp; = \frac{\vv{x}}{\norm{\vv{x}}} </mrow>
         <mrow> &amp; = \frac{\dotprod{-1,-5,3}}{\sqrt{1+25+9}} </mrow>
         <mrow> &amp; = \dotprod{-\frac{1}{\sqrt{37}}, -\frac{5}{\sqrt{37}}, \frac{3}{\sqrt{37}}}. </mrow>
       </md>
@@ -439,7 +439,7 @@
       <p>
         Using the concept of a unit vector, we can very easily describe the unit sphere<fn>The sphere of radius <m>1</m> centered at the origin.</fn> using a vector equation. If we set <m>\vv{r} = (x,y,z)</m>, then the unit sphere is just the set of all solutions of
       </p>
-      <me>\|\vv{r}\| = 1.</me>
+      <me>\norm{\vv{r}} = 1.</me>
     </example>
   </subsection>
   <subsection xml:id="subsection-applications">
@@ -461,18 +461,18 @@
       </p>
       <me>\vv{w} = -\vv{T}_{1}-\vv{T}_{2}.</me>
       <p>
-        What we need to find is <m>\|\vv{w}\|</m>, which we can do without too much trouble if we can rewrite the tension vectors in component form. In fact, we have
+        What we need to find is <m>\norm{\vv{w}}</m>, which we can do without too much trouble if we can rewrite the tension vectors in component form. In fact, we have
       </p>
       <md>
-        <mrow>\vv{T}_{1} &amp; = \dotprod{-\|\vv{T}_{1}\|\cos45^{\circ},\|\vv{T}_{1}\|\sin45^{\circ}} </mrow>
-        <mrow>\vv{T}_{2} &amp; = \dotprod{\|\vv{T}_{2}\|\cos45^{\circ},\|\vv{T}_{2}\|\sin45^{\circ}} </mrow>
+        <mrow>\vv{T}_{1} &amp; = \dotprod{-\norm{\vv{T}_{1}}\cos45^{\circ},\norm{\vv{T}_{1}}\sin45^{\circ}} </mrow>
+        <mrow>\vv{T}_{2} &amp; = \dotprod{\norm{\vv{T}_{2}}\cos45^{\circ},\norm{\vv{T}_{2}}\sin45^{\circ}} </mrow>
       </md>
       <p>
         So it follows that
       </p>
       <md>
-        <mrow>\|\vv{w}\| &amp; = \|-\vv{T}_{1}-\vv{T}_{2}\| </mrow>
-        <mrow> &amp; = \left\|\dotprod{0,-2\cdot43\frac{\sqrt{2}}{2}}\right\|</mrow>
+        <mrow>\norm{\vv{w}} &amp; = \norm{-\vv{T}_{1}-\vv{T}_{2}} </mrow>
+        <mrow> &amp; = \norm{\dotprod{0,-2\cdot43\frac{\sqrt{2}}{2}}}</mrow>
         <mrow> &amp; = 43\sqrt{2} </mrow>
       </md>
       <p>
@@ -512,16 +512,16 @@
       <caption>Vector overlap.</caption>
     </figure>
     <p>
-      One way we can measure how much <m>\vv{x}</m> and <m>\vv{y}</m> overlap is to find <m>|\vv{x}+\vv{y}|</m>, or equivalently <m>|\vv{x}+\vv{y}|^{2},</m> since this is larger if <m>\vv{x}</m> and <m>\vv{y}</m> are more closely aligned.<fn>We are carefully ignoring the case where <m>\vv{x}</m> and <m>\vv{y}</m> point in opposite directions...</fn> From <xref ref="subsection-vector-components" text="type-global" />, we know that
+      One way we can measure how much <m>\vv{x}</m> and <m>\vv{y}</m> overlap is to find <m>\norm{\vv{x}+\vv{y}}</m>, or equivalently <m>\norm{\vv{x}+\vv{y}}^{2},</m> since this is larger if <m>\vv{x}</m> and <m>\vv{y}</m> are more closely aligned.<fn>We are carefully ignoring the case where <m>\vv{x}</m> and <m>\vv{y}</m> point in opposite directions...</fn> From <xref ref="subsection-vector-components" text="type-global" />, we know that
     </p>
-    <me>|\vv{x}+\vv{y}|^{2} = (x_{1}+x_{2})^{2} + (y_{1}+y_{2})^{2} + (z_{1}+z_{2})^{2}.</me>
+    <me>\norm{\vv{x}+\vv{y}}^{2} = (x_{1}+x_{2})^{2} + (y_{1}+y_{2})^{2} + (z_{1}+z_{2})^{2}.</me>
     <p>
       This simplifies out to
     </p>
     <md>
-      <mrow>|\vv{x}+\vv{y}|^{2} &amp; = (x_{1}+x_{2})^{2} + (y_{1}+y_{2})^{2} + (z_{1}+z_{2})^{2} </mrow>
+      <mrow>\norm{\vv{x}+\vv{y}}^{2} &amp; = (x_{1}+x_{2})^{2} + (y_{1}+y_{2})^{2} + (z_{1}+z_{2})^{2} </mrow>
       <mrow> &amp; = (x_{1}^{2}+y_{1}^{2}+z_{1}^{2}) + 2(x_{1}x_{2} + y_{1}y_{2} + z_{1}z_{2}) + (x_{2}^{2} + y_{2}^{2} + z_{2}^{2}) </mrow>
-      <mrow> &amp; = |\vv{x}|^{2} + 2(x_{1}x_{2} + y_{1}y_{2} + z_{1}z_{2}) + |\vv{y}|^{2}. </mrow>
+      <mrow> &amp; = \norm{\vv{x}}^{2} + 2(x_{1}x_{2} + y_{1}y_{2} + z_{1}z_{2}) + \norm{\vv{y}}^{2}. </mrow>
     </md>
     <p>
       The only part of this that could possibly depend on how closely <m>\vv{x}</m> and <m>\vv{y}</m> overlap is the middle term <m>2(x_{1}x_{2}+y_{1}y_{2}+z_{1}z_{2})</m>. So we'll (optimistically... for now) take what's inside the parentheses and use it as the measure we're looking for.
@@ -558,7 +558,7 @@
         </p>
         <ol cols="2">
           <li><p>
-            <m>\vv{x}\cdot\vv{x} = |\vv{x}|^{2}.</m>
+            <m>\vv{x}\cdot\vv{x} = \norm{\vv{x}}^{2}.</m>
           </p></li>
           <li><p>
             <m>\vv{x}\cdot\vv{y} = \vv{y}\cdot\vv{x}.</m>
@@ -585,7 +585,7 @@
         <p>
           Let <m>\vv{a}</m> and <m>\vv{b}</m> denote vectors, and let <m>0\leq\theta\leq\pi</m> denote the angle between these vectors if the tails of both are moved to the origin. Then
         </p>
-        <me>\vv{a}\cdot\vv{b} = |\vv{a}||\vv{b}|\cos\theta.</me>
+        <me>\vv{a}\cdot\vv{b} = \norm{\vv{a}}\norm{\vv{b}}\cos\theta.</me>
       </statement>
     </theorem>
     <proof>
@@ -637,19 +637,19 @@
       <p>
         Then <m>\vv{a},\vv{b}</m> and <m>\vv{a}-\vv{b}</m> form a triangle. We want to relate the dot product <m>\vv{a}\cdot\vv{b}</m> with the angle <m>\theta</m>, so we'll start by using the Law of Cosines to get an equation involving <m>\theta</m>. The Law of Cosines states that
       </p>
-      <men xml:id="equation-law-of-cosines">|\vv{a}-\vv{b}|^{2} = |\vv{a}|^{2}+|\vv{b}|^{2} -2|\vv{a}||\vv{b}|\cos\theta.</men>
+      <men xml:id="equation-law-of-cosines">\norm{\vv{a}-\vv{b}}^{2} = \norm{\vv{a}}^{2}+\norm{\vv{b}}^{2} -2\norm{\vv{a}}\norm{\vv{b}}\cos\theta.</men>
       <p>
         Here's where the dot product comes in. Each squared magnitude can be rewritten as a dot product using <xref ref="theorem-properties-of-the-dot-product" text="type-global" />, so in particular we have
       </p>
-      <me>|\vv{a}-\vv{b}|^{2} = (\vv{a}-\vv{b})\cdot(\vv{a}-\vv{b}) = |\vv{a}|^{2}-2(\vv{a}\cdot\vv{b}) + |\vv{b}|^{2}.</me>
+      <me>\norm{\vv{a}-\vv{b}}^{2} = (\vv{a}-\vv{b})\cdot(\vv{a}-\vv{b}) = \norm{\vv{a}}^{2}-2(\vv{a}\cdot\vv{b}) + \norm{\vv{b}}^{2}.</me>
       <p>
         Plugging this into <xref ref="equation-law-of-cosines" /> gives us the following:
       </p>
-      <me>|\vv{a}|^{2}-2(\vv{a}\cdot\vv{b})+|\vv{b}|^{2} = |\vv{a}|^{2}+|\vv{b}|^{2} - 2|\vv{a}||\vv{b}|\cos\theta</me>
+      <me>\norm{\vv{a}}^{2}-2(\vv{a}\cdot\vv{b})+\norm{\vv{b}}^{2} = \norm{\vv{a}}^{2}+\norm{\vv{b}}^{2} - 2\norm{\vv{a}}\norm{\vv{b}}\cos\theta</me>
       <p>
         Which finally simplifies down to
       </p>
-      <me>\vv{a}\cdot\vv{b} = |\vv{a}||\vv{b}|\cos\theta.</me>
+      <me>\vv{a}\cdot\vv{b} = \norm{\vv{a}}\norm{\vv{b}}\cos\theta.</me>
     </proof>
     <remark>
       <p>
@@ -705,7 +705,7 @@
       <p>
         Then by <xref ref="theorem-geometry-of-the-dot-product" text="type-global" /> we know that
       </p>
-      <me>\cos\theta = \frac{\vv{a}\cdot\vv{b}}{|\vv{a}||\vv{b}|} = \frac{3}{\sqrt{5}\sqrt{26}} = \frac{3}{\sqrt{130}}.</me>
+      <me>\cos\theta = \frac{\vv{a}\cdot\vv{b}}{\norm{\vv{a}}\norm{\vv{b}}} = \frac{3}{\sqrt{5}\sqrt{26}} = \frac{3}{\sqrt{130}}.</me>
       <p>
         So the acute angle between these two lines is given by
       </p>
@@ -767,9 +767,9 @@
     <p>
       The projection <m>\proj{\vv{b}}{\vv{a}}</m> can be thought of as the vector parallel to <m>\vv{b}</m> that best approximates <m>\vv{a}</m>. What we'd like to do now is to actually find a formula for this projection. If we let <m>\theta</m> denote the acute angle between the vectors <m>\vv{a}</m> and <m>\vv{b}</m>, then
     </p>
-    <me>|\proj{\vv{b}}{\vv{a}}| = |\vv{a}|\cos\theta.</me>
+    <me>\norm{\proj{\vv{b}}{\vv{a}}} = \norm{\vv{a}}\cos\theta.</me>
     <p>
-      Since the projection must also be parallel to <m>\vv{b}</m>, then this is enough information to state exactly what <m>\proj{\vv{b}}{\vv{a}}</m> should be: <m>\proj{\vv{b}}{\vv{a}} = (|\vv{a}|\cos\theta)\frac{\vv{b}}{|\vv{b}|}.</m> We can simplify this formula somewhat by making use of <xref ref="theorem-geometry-of-the-dot-product" text="type-global" />.
+      Since the projection must also be parallel to <m>\vv{b}</m>, then this is enough information to state exactly what <m>\proj{\vv{b}}{\vv{a}}</m> should be: <m>\proj{\vv{b}}{\vv{a}} = (\norm{\vv{a}}\cos\theta)\frac{\vv{b}}{\norm{\vv{b}}}.</m> We can simplify this formula somewhat by making use of <xref ref="theorem-geometry-of-the-dot-product" text="type-global" />.
     </p>
     <theorem xml:id="theorem-vector-projection-formulas">
       <title>Vector Projection Formulas</title>
@@ -791,7 +791,7 @@
     <p>
       Another example of vector projection is computing work done by a force. In particular, suppose we have a force <m>\vv{F}</m> and some displacement vector <m>\vv{D}</m>. We define the work done by <m>\vv{F}</m> along <m>\vv{D}</m> to be the product of the component of <m>\vv{F}</m> along <m>\vv{D}</m> times the distance moved. If we let <m>\theta</m> denote the acute angle between <m>\vv{F}</m> and <m>\vv{D}</m>, then the work <m>W</m> done is given by
     </p>
-    <me>W = (|\vv{F}|\cos\theta)|\vv{D}|,</me>
+    <me>W = (\norm{\vv{F}}\cos\theta)\norm{\vv{D}},</me>
     <p>
       which is exactly equal to <m>\vv{F}\cdot\vv{D}</m> by <xref ref="theorem-geometry-of-the-dot-product" text="type-global" />.
     </p>
@@ -890,7 +890,7 @@
         <p>
           We would also like to know the magnitude of the cross product. We can just compute it using <xref ref="definition-the-cross-product" text="type-global" /> and find the magnitude using our usual formula. If we do so, we obtain (after a lot of simplifying!)
         </p>
-        <me>|\vv{a}\times\vv{b}|^{2} = |\vv{a}|^{2}|\vv{b}|^{2}\sin^{2}\theta,</me>
+        <me>\norm{\vv{a}\times\vv{b}}^{2} = \norm{\vv{a}}^{2}\norm{\vv{b}}^{2}\sin^{2}\theta,</me>
         <p>
           which reduces to the following result.
         </p>
@@ -901,7 +901,7 @@
             <p>
               Let <m>\theta</m> denote the acute angle between the vectors <m>\vv{a}</m> and <m>\vv{b}</m>, so that <m>0\leq\theta\leq\pi</m>. Then
             </p>
-            <me>|\vv{a}\times\vv{b}| = |\vv{a}||\vv{b}|\sin\theta.</me>
+            <me>\norm{\vv{a}\times\vv{b}} = \norm{\vv{a}}\norm{\vv{b}}\sin\theta.</me>
           </statement>
         </theorem>
         <p>
@@ -920,7 +920,7 @@
         </example>
 
         <p>
-          Another important property of the magnitude of the cross product is the following: <m>|\vv{a}\times\vv{b}|</m> is exactly equal to the area of the parallelogram determined by <m>\vv{a}</m> and <m>\vv{b}</m>.
+          Another important property of the magnitude of the cross product is the following: <m>\norm{\vv{a}\times\vv{b}}</m> is exactly equal to the area of the parallelogram determined by <m>\vv{a}</m> and <m>\vv{b}</m>.
         </p>
 
         <example xml:id="example-areas-of-triangles">
@@ -930,11 +930,11 @@
           </p>
           <me>\vv{u} = \vec{PQ} = \dotprod{1,-2,1}\quad\text{and}\quad\vv{v} = \vec{PR} = \dotprod{0,-3,-1}.</me>
           <p>
-            Now, the triangle determined by <m>\vv{u}</m> and <m>\vv{v}</m> is precisely half of the parallelogram determined by these same vectors, so the area of this triangle is equal to <m>\frac{1}{2}|\vv{u}\times\vv{v}|</m>. We can use Sage as in the cell below to find the cross product of these vectors. Doing so, we get <m>\vv{u}\times\vv{v} = \dotprod{5,1,-3}.</m> So the area of the triangle with vertices <m>P,Q</m> and <m>R</m> is
+            Now, the triangle determined by <m>\vv{u}</m> and <m>\vv{v}</m> is precisely half of the parallelogram determined by these same vectors, so the area of this triangle is equal to <m>\frac{1}{2}\norm{\vv{u}\times\vv{v}}</m>. We can use Sage as in the cell below to find the cross product of these vectors. Doing so, we get <m>\vv{u}\times\vv{v} = \dotprod{5,1,-3}.</m> So the area of the triangle with vertices <m>P,Q</m> and <m>R</m> is
           </p>
           <md>
-            <mrow>\operatorname{area} \triangle PQR &amp; = \frac{1}{2}|\vv{u}\times\vv{v}| </mrow>
-            <mrow> &amp; = \frac{1}{2}|\dotprod{5,1,-3}| </mrow>
+            <mrow>\operatorname{area} \triangle PQR &amp; = \frac{1}{2}\norm{\vv{u}\times\vv{v}} </mrow>
+            <mrow> &amp; = \frac{1}{2}\norm{\dotprod{5,1,-3}} </mrow>
             <mrow> &amp; = \frac{1}{2}\sqrt{35}. </mrow>
           </md>
         </example>
@@ -1647,9 +1647,9 @@
           </statement>
         </definition>
         <p>
-          If <m>\vv{r}(t) = \dotprod{f(t),g(t),h(t)},</m> then <m>\vv{r}</m> is differentiable if and only if <m>f,g,h</m> are, and <m>\vv{r}'(t) = \dotprod{f'(t),g'(t),h'(t)}.</m> Just as in Calculus I, the derivative represents how quickly a space curve is changing at some value of <m>t</m>. However, derivatives of vector functions also carry information about the <em>direction</em> a curve is moving. We call <m>\vv{r}'(t)</m> the <term>tangent vector</term> to <m>\vv{r}(t)</m>. In particular, <m>\vv{r}'(t)</m> is parallel to the space curve <m>\vv{r}</m> at <m>t</m>, and its magnitude <m>|\vv{r}'(t)|</m> represents how quickly the curve is changing at <m>t</m>. If we only care about direction, then we can define the <term>unit tangent</term> <m>\vv{T}(t)</m>, which is given by
+          If <m>\vv{r}(t) = \dotprod{f(t),g(t),h(t)},</m> then <m>\vv{r}</m> is differentiable if and only if <m>f,g,h</m> are, and <m>\vv{r}'(t) = \dotprod{f'(t),g'(t),h'(t)}.</m> Just as in Calculus I, the derivative represents how quickly a space curve is changing at some value of <m>t</m>. However, derivatives of vector functions also carry information about the <em>direction</em> a curve is moving. We call <m>\vv{r}'(t)</m> the <term>tangent vector</term> to <m>\vv{r}(t)</m>. In particular, <m>\vv{r}'(t)</m> is parallel to the space curve <m>\vv{r}</m> at <m>t</m>, and its magnitude <m>\norm{\vv{r}'(t)}</m> represents how quickly the curve is changing at <m>t</m>. If we only care about direction, then we can define the <term>unit tangent</term> <m>\vv{T}(t)</m>, which is given by
         </p>
-        <me>\vv{T}(t) = \frac{\vv{r}'(t)}{|\vv{r}'(t)|}.</me>
+        <me>\vv{T}(t) = \frac{\vv{r}'(t)}{\norm{\vv{r}'(t)}}.</me>
         <p>
           We also have the usual ideas from Calculus I and physics regarding motion: velocity is the derivative of position and acceleration is the derivative of velocity.
         </p>
@@ -1715,9 +1715,9 @@
       <subsection xml:id="subsection-arc-length">
         <title>Arc Length</title>
         <p>
-          Suppose some particle travels along the space curve given by <m>\vv{r}(t)</m> for <m>a\leq t\leq b</m>. What we'd like to do is determine how far the particle travels over this time interval. Recall that distance is just speed multiplied by time, and the speed of this particle is given by <m>|\vv{r}'(t)|</m>. So we can imagine that the distance traveled by this particle over some infinitesimal time interval <m>dt</m> to be given by <m>|\vv{r}'(t)|\,dt</m>. So adding up all of these distances from <m>t=a</m> to <m>t=b</m> should give us the arc length. This suggests (but does not prove!) the following formula for arc length:
+          Suppose some particle travels along the space curve given by <m>\vv{r}(t)</m> for <m>a\leq t\leq b</m>. What we'd like to do is determine how far the particle travels over this time interval. Recall that distance is just speed multiplied by time, and the speed of this particle is given by <m>\norm{\vv{r}'(t)}</m>. So we can imagine that the distance traveled by this particle over some infinitesimal time interval <m>dt</m> to be given by <m>\norm{\vv{r}'(t)}\,dt</m>. So adding up all of these distances from <m>t=a</m> to <m>t=b</m> should give us the arc length. This suggests (but does not prove!) the following formula for arc length:
         </p>
-        <men xml:id="equation-arc-length-formula">L = \int_{a}^{b}|\vv{r}'(t)|\,dt.</men>
+        <men xml:id="equation-arc-length-formula">L = \int_{a}^{b}\norm{\vv{r}'(t)}\,dt.</men>
         <p>
           <xref ref="equation-arc-length-formula" text="type-global" /> gives the length <m>L</m> of the space curve <m>\vv{r}(t)</m> from <m>t=a</m> to <m>t=b</m>, assuming that the integral exists.
         </p>
@@ -1726,12 +1726,12 @@
           <p>
             Suppose we want to find the arc length of the helix <m>\vv{r}(t) = \dotprod{\cos 3t,\sin 3t, t}</m> from <m>t=0</m> to <m>t=1</m>. Then this is given by
           </p>
-          <me>L = \int_{0}^{1}|\dotprod{-3\sin3t, 3\cos3t, 1}|\,dt = \int_{0}^{1}\sqrt{10}\,dt = \sqrt{10}.</me>
+          <me>L = \int_{0}^{1}\norm{\dotprod{-3\sin3t, 3\cos3t, 1}}\,dt = \int_{0}^{1}\sqrt{10}\,dt = \sqrt{10}.</me>
         </example>
         <p>
           One thing we'd like to do now is to parametrize a space curve <m>\vv{r}(t)</m> with respect to arc length. Here's what we mean by this: given some <m>\vv{r}(t)</m> with <m>a\leq t\leq b</m>, we define its <term>arc length function</term> <m>s(t)</m> by
         </p>
-        <me>s(t) = \int_{a}^{t}|\vv{r}'(u)|\,du.</me>
+        <me>s(t) = \int_{a}^{t}\norm{\vv{r}'(u)}\,du.</me>
         <p>
           If we can then solve for <m>t</m> in terms of <m>s</m>, this parametrizes the curve <m>\vv{r}(t)</m> in terms of the arc length variable <m>s</m>.
         </p>
@@ -1745,13 +1745,13 @@
             which starts at <m>(1,0)</m>, (so <m>t</m> starts at <m>0</m>) and we want to find the point that is <m>\frac{\pi}{2}</m> units along the curve in the positive direction. Then we can do this by reparametrizing the curve using arc length. Here's how. First, we find the arc length function <m>s(t)</m>:
           </p>
           <md>
-            <mrow>s(t) &amp; = \int_{0}^{t}|\vv{r}'(u)|\,du </mrow>
+            <mrow>s(t) &amp; = \int_{0}^{t}\norm{\vv{r}'(u)}\,du </mrow>
             <mrow> &amp; = \int_{0}^{t} \sqrt{\frac{4u^{2}+4(u^{2}+1)^{2}-16u^{2}(u^{2}+1)+16u^{4}}{(u^{2}+1)^{4}}}\,du </mrow>
             <mrow> &amp; = \int_{0}^{t} \frac{2}{u^{2}+1}\,du </mrow>
             <mrow> &amp; = 2\tan^{-1}t </mrow>
           </md>
           <p>
-            Since <m>s = 2\tan^{-1}t</m>, we get <m>t = t(s) = \tan\frac{s}{2}</m>. So 
+            Since <m>s = 2\tan^{-1}t</m>, we get <m>t = t(s) = \tan\frac{s}{2}</m>. So
           </p>
           <me>\vv{r}(t(s)) = \left(\frac{2}{\tan^{2}\frac{s}{2}+1}-1\right)\vv{i}+\frac{2\tan\frac{s}{2}}{\tan^{2}\frac{s}{2}+1}\vv{j}</me>
           <p>
@@ -1799,9 +1799,9 @@
             <p>
               Let <m>\vv{r}(t)</m> denote a smooth curve on some interval <m>I</m>. The <term>curvature</term> of <m>\vv{r}(t)</m> on <m>I</m> is defined to be the function <m>\kappa(t)</m> given by
             </p>
-            <me>\kappa(t) = \frac{|\vv{T}'(t)|}{|\vv{r}'(t)|},</me>
+            <me>\kappa(t) = \frac{\norm{\vv{T}'(t)}}{\norm{\vv{r}'(t)}},</me>
             <p>
-              where <m>\vv{T}(t) = \frac{\vv{r}'(t)}{|\vv{r}'(t)|}</m> is the unit tangent to the curve.
+              where <m>\vv{T}(t) = \frac{\vv{r}'(t)}{\norm{\vv{r}'(t)}}</m> is the unit tangent to the curve.
             </p>
           </statement>
         </definition>
@@ -1847,7 +1847,7 @@
             <p>
               The curvature of <m>\vv{r}(t)</m> in <m>\RR^{3}</m> is given by
             </p>
-            <me>\kappa(t) = \frac{|\vv{r}'(t)\times\vv{r}''(t)|}{|\vv{r}'(t)|^{3}}.</me>
+            <me>\kappa(t) = \frac{\norm{\vv{r}'(t)\times\vv{r}''(t)}}{\norm{\vv{r}'(t)}^{3}}.</me>
           </statement>
         </theorem>
         <p>
@@ -1866,14 +1866,14 @@
             <p>
               and so
             </p>
-            <me>\kappa(t) = \frac{|\dotprod{2e^{t}(t-1),-e^{t},2}|}{|\dotprod{1,2t,e^{t}}|^{3}} = \frac{\sqrt{4e^{2t}(t-1)^{2}+e^{2t}+4}}{(1+4t^{2}+e^{2t})^{3/2}}.</me>
+            <me>\kappa(t) = \frac{\norm{\dotprod{2e^{t}(t-1),-e^{t},2}}}{\norm{\dotprod{1,2t,e^{t}}}^{3}} = \frac{\sqrt{4e^{2t}(t-1)^{2}+e^{2t}+4}}{(1+4t^{2}+e^{2t})^{3/2}}.</me>
           </statement>
         </example>
       </subsection>
       <subsection xml:id="subsection-normal-and-binormal-vectors">
         <title>Normal and Binormal Vectors</title>
         <p>
-          Consider a curve <m>\vv{r}(t)</m>. Then the direction of the curve is given by the unit tangent vector <m>\vv{T}(t) = \frac{\vv{r}'(t)}{|\vv{r}'(t)|}</m>. If we differentiate <m>\vv{T}(t)</m> to get <m>\vv{T}'(t)</m>, we can view this vector as telling us the direction the curve is turning. This leads us to the concept of <term>unit normal vectors</term> to a space curve.
+          Consider a curve <m>\vv{r}(t)</m>. Then the direction of the curve is given by the unit tangent vector <m>\vv{T}(t) = \frac{\vv{r}'(t)}{\norm{\vv{r}'(t)}}</m>. If we differentiate <m>\vv{T}(t)</m> to get <m>\vv{T}'(t)</m>, we can view this vector as telling us the direction the curve is turning. This leads us to the concept of <term>unit normal vectors</term> to a space curve.
         </p>
         <definition xml:id="definition-unit-normal-vectors">
           <idx><h>vector functions</h><h>unit normal vector</h></idx>
@@ -1882,7 +1882,7 @@
             <p>
               Consider a space curve given by <m>\vv{r}(t)</m>. The unit normal vector is the vector <m>\vv{N}(t)</m> given by
             </p>
-            <me>\vv{N}(t) = \frac{\vv{T}'(t)}{|\vv{T}'(t)|},</me>
+            <me>\vv{N}(t) = \frac{\vv{T}'(t)}{\norm{\vv{T}'(t)}},</me>
             <p>
               where <m>\vv{T}'</m> is the derivative of the unit tangent vector.
             </p>
@@ -1901,7 +1901,7 @@
               If we think of a particle moving along <m>\vv{r}(t)</m>, then this particle is just moving along the unit circle. So at every point along this path, the particle should be turning toward the origin in order to stay on the unit circle. So at all points of the curve, <m>\vv{N}(t)</m> should point towards the origin. To prove this, we'll use the formula above to find the unit normal:
             </p>
             <md>
-              <mrow>\vv{N}(t) &amp; = \frac{\vv{T}'(t)}{|\vv{T}'(t)|} </mrow>
+              <mrow>\vv{N}(t) &amp; = \frac{\vv{T}'(t)}{\norm{\vv{T}'(t)}} </mrow>
               <mrow> &amp; = \frac{\dotprod{-\cos t, -\sin t}}{1} </mrow>
             </md>
             <p>
@@ -1937,7 +1937,7 @@
         <mrow>\vv{a}(t) &amp; = \vv{v}'(t) = \vv{r}''(t) </mrow>
       </md>
       <p>
-        The speed of the particle is just the magnitude of the velocity: <m>|\vv{v}(t)|</m>.
+        The speed of the particle is just the magnitude of the velocity: <m>\norm{\vv{v}(t)}</m>.
       </p>
       <example xml:id="example-motion-of-a-projectile">
         <title>Motion of a projectile</title>
