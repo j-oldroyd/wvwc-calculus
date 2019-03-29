@@ -459,6 +459,11 @@
             Let <m>C</m> denote a smooth curve and let <m>\vb{F}</m> be a vector field continuous on <m>C</m>.
             Then we define the <term>line integral of <m>\vb{F}</m> over <m>C</m></term> to be <m>\int_{C}\vb{F}\cdot\vb{T}\,ds</m>.
           </p>
+          <aside>
+            <p>
+              This integral is also sometimes called the <term>circulation integral</term> of <m>\vb{F}</m> along <m>C</m>.
+            </p>
+          </aside>
         </statement>
       </definition>
       <p>
@@ -480,8 +485,8 @@
         <title>Flow Along a Circle</title>
         <statement>
           <p>
-            Let <m>C</m> denote the unit circle traversed once in the counterclockwise direction, and let
-            <me>\vb{F} = \dotprod{y, -x}</me>.
+            Let <m>C</m> denote the segment of the parabola <m>y = \cos x</m> traversed once from <m>x = -\frac{\pi}{2}</m> to <m>x = \frac{\pi}{2}</m>, and let
+            <me>\vb{F} = \dotprod{y^{2}, -x}</me>.
             Does <m>\vb{F}</m> tend to flow with or against <m>C</m>?
           </p>
         </statement>
@@ -510,17 +515,17 @@
                   //define and add vector field
                   pair a=(-2,-2);
                   pair b=(2,2);
-                  path vector(pair z) {return (0,0)--(z.y, -z.x);}
+                  path vector(pair z) {return (0,0)--(z.y**2, -z.x);}
                   add(vectorfield(vector,a,b,10,deepblue+0.4bp));
 
                   //define and add curve
                   pair f(real t) {
-                    return (cos(t), sin(t));
+                    return (t, cos(t));
                   }
-                  path curveC = graph(f, 0, 2*pi, operator ..); // "operator .." is for bezier; 0≤t≤2π
-                  Label L = Label("$C$", position=Relative(0.25), align=NE);
-                  draw(curveC, black+0.6bp, L = L, Arrow(arrowhead = SimpleHead,position=Relative(0.45)));
-                  add(arrow(curveC,arrowhead = SimpleHead,position=Relative(.95)));
+                  path curveC = graph(f, -pi/2, pi/2, operator ..); // "operator .." is for bezier; 0≤t≤2π
+                  Label L = Label("$C$", position=Relative(0.25), align=NW);
+                  draw(curveC, black+0.6bp, L = L, Arrow(arrowhead = SimpleHead,position=Relative(0.25)));
+                  add(arrow(curveC,arrowhead = SimpleHead,position=Relative(.75)));
 
                   //draw axes
                   xaxis(YEquals(0),xmin - eps,xmax + eps, LeftTicks(NoZeroFormat), L=xlabel, arrow=axisarrow);
@@ -532,15 +537,130 @@
             </figure>
           </p>
           <p>
-            <xref ref="figure-flow-over-the-unit-circle" text="type-global" /> suggests that <m>\vb{F}</m> flows against <m>C</m>, and we can verify this by computing <m>\int_{C}\vb{F}\cdot d\vb{r}</m>:
+            <xref ref="figure-flow-over-the-unit-circle-" text="type-global" /> suggests that <m>\vb{F}</m> flows with <m>C</m>, and we can verify this by computing <m>\int_{C}\vb{F}\cdot d\vb{r}</m>:
             <md>
-              <mrow>\int_{C}\vb{F}\cdot d\vb{r} \amp = \int_{0}^{2\pi}\dotprod{\sin t, -\cos t}\cdot\dotprod{-\sin t, \cos t}\,dt </mrow>
-              <mrow> \amp = -2\pi </mrow>
+              <mrow>\int_{C}\vb{F}\cdot d\vb{r} \amp = \int_{-\pi/2}^{\pi/2} \dotprod{\cos^{2}t, -t}\cdot\dotprod{1,-\sin t}\,dt</mrow>
+              <mrow> \amp = \int_{-\pi/2}^{\pi/2} \brackets{\cos^{2}t + t\sin t}\,dt</mrow>
+              <mrow> \amp = \int_{-\pi/2}^{\pi/2} \brackets{ \frac{1}{2}\parens{1 + \cos 2t} + t\sin t}\,dt </mrow>
+              <mrow> \amp = \brackets{\frac{1}{2}\parens{ t + \frac{1}{2}\sin 2t} - t\cos t + \sin t}_{-\pi/2}^{\pi/2} </mrow>
+              <mrow> \amp = \frac{\pi}{2} + 2 </mrow>
             </md>.
-            Since the result is negative, this tells us that <m>\vb{F}</m> tends to flow against <m>C</m>.
+            Since the result is positive, this tells us that <m>\vb{F}</m> tends to flow with <m>C</m>.
           </p>
         </solution>
       </example>
+      <example xml:id="example-a-nonconservative-force">
+        <title>A Nonconservative Force</title>
+        <statement>
+          <p>
+            Let <m>\vb{F} = \dotprod{-y, x}</m> denote a force field.
+            Is the force <m>\vb{F}</m> conservative?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            Here we are using the physical definition of a conservative force, namely that the work done must be <em>path independent</em>.
+            So we'll choose two paths between two points and find the work done on each path.
+            Let the first path, <m>C_{1}</m>, denote the top half of the unit circle traversed counterclockwise.
+            Similarly, let the second path, <m>C_{2}</m>, denote the bottom half of the unit circle traversed clockwise.
+            Then both paths have the same initial and terminal points.
+          </p>
+          <p>
+            From <xref ref="figure-a-rotating-force-field" text="type-global" />, it appears as though <m>\int_{C_{2}}\vb{F}\cdot d\vb{r} \lt 0 \lt \int_{C_{1}}\vb{F}\cdot d\vb{r}</m>, which suggests that the vector field is path dependent.
+            <figure xml:id="figure-a-rotating-force-field-">
+              <caption>A rotating force field.</caption>
+              <image xml:id="image-a-rotating-force-field-">
+                <asymptote>
+                  import graph;
+                  import fontsize;
+                  size(200);
+                  defaultpen(fontsize(9pt));
+
+
+                  real xmin=-2, xmax=2;
+                  real ymin=-2, ymax=2;
+                  real eps=.2;
+
+                  //plot annotations
+                  arrowbar axisarrow = Arrow(TeXHead);
+                  Label xlabel = Label("$x$", position = EndPoint, align = 2E);
+                  Label ylabel = Label("$y$", position = EndPoint, align = 2N);
+
+                  //define and add vector field
+                  pair a=(-2,-2);
+                  pair b=(2,2);
+                  path vector(pair z) {return (0,0)--(-z.y, z.x);}
+                  add(vectorfield(vector,a,b,10,deepblue+0.4bp));
+
+                  //define and add curves
+                  pair f(real t) {
+                    return (cos(t), sin(t));
+                  }
+                  path curveC1 = graph(f, 0, pi, operator ..); // "operator .." is for bezier; 0≤t≤2π
+                  Label L1 = Label("$C_{1}$", position=Relative(0.25), align=NE);
+                  draw(curveC1, black+0.6bp, L = L1, Arrow(arrowhead = SimpleHead,position=Relative(0.25)));
+                  add(arrow(curveC1,arrowhead = SimpleHead,position=Relative(.75)));
+
+                  path curveC2 = graph(f, 2*pi, pi, operator ..); // "operator .." is for bezier; 0≤t≤2π
+                  Label L2 = Label("$C_{2}$", position=Relative(0.25), align=SE);
+                  draw(curveC2, black+0.6bp, L = L2, Arrow(arrowhead = SimpleHead,position=Relative(0.25)));
+                  add(arrow(curveC2,arrowhead = SimpleHead,position=Relative(.75)));
+
+                  //draw axes
+                  xaxis(YEquals(0),xmin - eps,xmax + eps, LeftTicks(NoZeroFormat), L=xlabel, arrow=axisarrow);
+                  yaxis(XEquals(0),ymin - eps,ymax + eps,RightTicks(NoZeroFormat), L = ylabel, arrow = axisarrow);
+                  // "Nice" labeling for origin.
+                  label("$0$", (0,0), NW);
+                </asymptote>
+              </image>
+            </figure>
+            To verify this, we'll compute the appropriate line integrals.
+          </p>
+          <p>
+            For <m>C_{1}:\vb{r}_{1}(t) = \dotprod{\cos t,\sin t}, 0\leq t\leq \pi</m>, the total circulation is
+            <md>
+              <mrow>\int_{C_{1}}\vb{F}\cdot\vb{T}\,ds \amp = \int_{0}^{\pi}P\,dx + Q\,dy</mrow>
+              <mrow> \amp = \int_{0}^{\pi}\,dt </mrow>
+              <mrow> \amp = \pi </mrow>
+            </md>.
+            Likewise, the circulation of <m>\vb{F}</m> along <m>C_{2}</m> is
+            <me>\int_{C_{2}}\vb{F}\cdot\vb{T}\,ds = -\pi</me>.
+          </p>
+          <p>
+            Since the work done by <m>\vb{F}</m> between the points <m>(1,0)</m> and <m>(-1,0)</m> clearly depends on the path taken between the points, this means that <m>\vb{F}</m> is path dependent and, therefore, not conservative.
+          </p>
+        </solution>
+      </example>
+      <p>
+        We can also compute vector field line integrals in <m>\RR^{3}</m> with essentially the same formula.
+      </p>
+      <example xml:id="example-circulation-in-R^3">
+        <title>Circulation in <m>\RR^{3}</m></title>
+        <statement>
+          <p>
+            Find the circulation of <m>\vb{F} = x^{2}\vb{i} + \vb{k}</m> along
+            <me>C:\vb{r}(t) = 3t\vb{i} + 4t\vb{j}, 0\leq t\leq 2</me>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We have
+            <md>
+              <mrow>\int_{C}\vb{F}\cdot\vb{T}\,ds \amp = \int_{0}^{2} P\,dx + Q\,dy + R\,dz </mrow>
+              <mrow> \amp = \int_{0}^{2}\brackets{9t^{2}(3) + 0 + 0}\,dt </mrow>
+              <mrow> \amp = 72 </mrow>
+            </md>.
+            Since the circulation is positive, this also shows that <m>\vb{F}</m> tends to flow with <m>C</m>.
+          </p>
+        </solution>
+      </example>
+    </subsection>
+    <subsection xml:id="subsection-flux-integrals">
+      <title>Flux Integrals</title>
+      <p>
+        The circulation integral in <xref ref="definition-line-integral-of-a-vector-field" text="type-global" /> is useful for measuring how much a vector field flows along a given curve.
+        Now, we want to measure how a vector field flows <em>across</em> a curve, at least in <m>\RR^{2}</m>.
+      </p>
     </subsection>
   </section>
 </chapter>
