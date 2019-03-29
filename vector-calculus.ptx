@@ -634,7 +634,7 @@
       <p>
         We can also compute vector field line integrals in <m>\RR^{3}</m> with essentially the same formula.
       </p>
-      <example xml:id="example-circulation-in-R^3">
+      <example xml:id="example-circulation-in-R3">
         <title>Circulation in <m>\RR^{3}</m></title>
         <statement>
           <p>
@@ -661,6 +661,46 @@
         The circulation integral in <xref ref="definition-line-integral-of-a-vector-field" text="type-global" /> is useful for measuring how much a vector field flows along a given curve.
         Now, we want to measure how a vector field flows <em>across</em> a curve, at least in <m>\RR^{2}</m>.
       </p>
+      <p>
+        Given a smooth curve <m>C</m> with unit tangent <m>\vb{T}</m>, recall that <m>\vb{F}\cdot\vb{T}</m> measures how well a vector field <m>\vb{F}</m> and <m>\vb{T}</m> align at a point on <m>C</m>.
+        By integrating this, we get a measure along the entire curve.
+        So if we want to get a sense of how <m>\vb{F}</m> flows across <m>C</m>, we can do so by looking at a single point and then integrating along the curve again.
+      </p>
+      <p>
+        To do this, let <m>\vb{N}</m> be the unit normal vector to <m>C</m>, given in <xref ref="definition-unit-normal-vectors" text="type-global" />.
+        Then <m>\vb{F}\cdot\vb{N}</m> determines how <m>\vb{F}</m> flows across <m>C</m> at a specific point, and integrating <m>\vb{F}\cdot\vb{N}</m> provides a measure along the entire curve.
+        But there's one slight issue: if <m>C</m> is a closed curve then it's possible that <m>\vb{N}</m> points <em>into</em> the region enclosed by <m>C</m>.
+        We would like to measure how <m>\vb{F}</m> flows out of <m>C</m> instead, so we'll replace <m>\vb{N}</m> with <m>\vb{n}</m>, the <term>outward unit normal</term>.
+        This leads us to the <term>flux integral</term>.
+      </p>
+      <definition xml:id="definition-line-integral-flux-integral">
+        <idx><h>line integrals</h><h>flux integral</h></idx>
+        <title>Flux Integral</title>
+        <statement>
+          <p>
+            Let <m>C</m> denote a smooth curve and let <m>\vb{F}</m> be a vector field continuous on <m>C</m>.
+            Then we define the <term>flux integral of <m>\vb{F}</m> across <m>C</m></term> to be <m>\int_{C}\vb{F}\cdot\vb{n}\,ds</m>, where <m>\vb{n}</m> is the outward unit normal vector to <m>C</m>.
+          </p>
+        </statement>
+      </definition>
+      <p>
+        At this point it may be helpful to introduce some new notation.
+        If <m>C</m> is a closed curve, then we often denote line integrals involving <m>C</m> with <m>\oint_{C}</m> instead of <m>\int_{C}</m>.
+      </p>
+      <example xml:id="example-flux-across-the-unit-circle">
+        <title>Flux Across the Unit Circle</title>
+        <statement>
+          <p>
+            Let <m>\vb{F} = \dotprod{-y, x}</m> and let <m>C</m> denote the unit circle, traversed exactly once counterclockwise.
+            What is <m>\oint_{C}\vb{F}\cdot\vb{n}\,ds</m>?
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We should have <m>\varointclockwise_{C}\vb{F}\cdot\vb{n}\,ds = 0</m>.
+          </p>
+        </solution>
+      </example>
     </subsection>
   </section>
 </chapter>
