@@ -3,3 +3,6 @@
 !.gitignore
 !*.xml
 !*.ptx
+!*.pdf
+!*.png
+!*.svg

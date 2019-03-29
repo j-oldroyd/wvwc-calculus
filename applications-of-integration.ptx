@@ -189,6 +189,7 @@
               \end{tikzpicture}]]>
             </latex-image>
           </image>
+          <caption>Region between two parabolas.</caption>
         </figure>
         <p>
           Finding the area by using integrals with respect to <m>x</m> would require setting up and solving three different integrals!
@@ -445,6 +446,7 @@
             \end{tikzpicture}]]>
           </latex-image>
         </image>
+        <caption>Trajectory of our particle.</caption>
       </figure>
     </p>
     <p>
@@ -789,7 +791,7 @@
         These masses are located at the points <m>x_{1},x_{2}</m> on the <m>x</m>-axis.
         The rod is then placed upon a fulcrum at the point <m>x=c</m>, as shown below:
       </p>
-      <figure>
+      <figure xml:id="figure-rod-fulcrum">
         <image>
           <latex-image><![CDATA[
             \begin{tikzpicture}[%
@@ -811,6 +813,7 @@
             \end{tikzpicture}]]>
           </latex-image>
         </image>
+        <caption>Rod on a fulcrum.</caption>
       </figure>
       <p>
         Our goal is to find the center of mass of the rod.
@@ -850,6 +853,30 @@
           <p>
             Consider the following system of three point masses <m>m_{1},m_{2},m_{3}</m> at positions <m>x_{1},x_{2},x_{3}</m> given as follows:
           </p>
+          <figure xml:id="figure-three-point-masses">
+            <image>
+              <latex-image><![CDATA[
+                \begin{tikzpicture}[%
+                triangle/.style = {fill=black!60, regular polygon, regular polygon sides=3 },
+                node rotated/.style = {rotate=180},
+                border rotated/.style = {shape border rotate=180}]
+                \draw[|-|] (-4,0) -- (9,0);
+                \node (m1) at (-2,0) {$\bullet$};
+                \node[below] at (m1) {$x_{1} = -2$};
+                \node[above] at (m1) {$m_{1} = 25$};
+
+                \node (m2) at (3,0) {$\bullet$};
+                \node[below] at (m2) {$x_{2} = 3$};
+                \node[above] at (m2) {$m_{2} = 20$};
+
+                \node (m3) at (7,0) {$\bullet$};
+                \node[below] at (m3) {$x_{3} = 7$};
+                \node[above] at (m3) {$m_{3} = 10$};
+                \end{tikzpicture}]]>
+              </latex-image>
+            </image>
+            <caption>Three point masses.</caption>
+          </figure>
           <p>
             Find the following:
             <ol>
@@ -879,29 +906,6 @@
             </ol>
           </solution>
         </example>
-        <figure>
-          <image>
-            <latex-image><![CDATA[
-              \begin{tikzpicture}[%
-              triangle/.style = {fill=black!60, regular polygon, regular polygon sides=3 },
-              node rotated/.style = {rotate=180},
-              border rotated/.style = {shape border rotate=180}]
-              \draw[|-|] (-4,0) -- (9,0);
-              \node (m1) at (-2,0) {$\bullet$};
-              \node[below] at (m1) {$x_{1} = -2$};
-              \node[above] at (m1) {$m_{1} = 25$};
-
-              \node (m2) at (3,0) {$\bullet$};
-              \node[below] at (m2) {$x_{2} = 3$};
-              \node[above] at (m2) {$m_{2} = 20$};
-
-              \node (m3) at (7,0) {$\bullet$};
-              \node[below] at (m3) {$x_{3} = 7$};
-              \node[above] at (m3) {$m_{3} = 10$};
-              \end{tikzpicture}]]>
-            </latex-image>
-          </image>
-        </figure>
         <p>
           We now move from one dimension to two.
           Consider a system of point masses <m>m_{1},\ldots,m_{n}</m> at the points <m>(x_{1},y_{1}),\ldots,(x_{n},y_{n})</m>, and suppose that these masses are connected by a thin plate of negligible mass.
@@ -969,7 +973,7 @@
         To do so, we will use the following fact: <em>the centroid of a rectangular lamina of uniform density is just the center of the rectangle.</em>
         Now consider a lamina <m>R</m> with uniform density <m>\rho</m> in the <m>xy</m>-plane and bounded between <m>x=a,x=b</m> and the functions <m>f(x)</m> and <m>g(x)</m>:
       </p>
-      <figure>
+      <figure xml:id="figure-lamina">
         <image>
           <latex-image><![CDATA[
             \begin{tikzpicture}
@@ -999,11 +1003,12 @@
             \end{tikzpicture}]]>
           </latex-image>
         </image>
+        <caption>A lamina in <m>\mathbb{R}^{2}</m>.</caption>
       </figure>
       <p>
         To find the centroid of this lamina we will break it up into (vertical) approximating rectangles <m>R_{0},R_{1},\ldots,R_{n}</m>, each of which has width <m>\Delta x</m> and centroid <m>(x_{i},y_{i})</m>:
       </p>
-      <figure>
+      <figure xml:id="figure-approximaing-the-lamina">
         <image>
           <latex-image><![CDATA[
             \begin{tikzpicture}
@@ -1040,6 +1045,7 @@
             \end{tikzpicture}]]>
           </latex-image>
         </image>
+        <caption>Breaking the lamina into subrectangles.</caption>
       </figure>
       <p>
         Then the lamina may be approximated by a system of point masses <m>m_{0},\ldots,m_{n}</m>, with <m>m_{i}</m> located at the centroid rectangle <m>R_{i}</m> and having the mass of the corresponding rectangle.
@@ -1057,7 +1063,7 @@
       <p>
         Consider a single rectangle <m>R_{i}</m>:
       </p>
-      <figure>
+      <figure xml:id="figure-lamina-single-rectangle">
         <image>
           <latex-image><![CDATA[
             \begin{tikzpicture}
@@ -1099,6 +1105,7 @@
             \end{tikzpicture}]]>
           </latex-image>
         </image>
+        <caption>A single rectangle.</caption>
       </figure>
       <p>
         Then we have
@@ -1110,7 +1117,7 @@
       <p>
         We can now fill in the following table:
       </p>
-      <table>
+      <table xml:id="table-center-of-mass-formulas">
         <tabular top="major">
           <row bottom="major">
             <cell></cell>
@@ -1133,6 +1140,7 @@
             <cell><m>\frac{\rho}{2}\int_{a}^{b}[f(x)^{2}-g(x)^{2}]\,dx</m></cell>
           </row>
         </tabular>
+        <caption>Moments and center of mass.</caption>
       </table>
       <p>
         The center of mass for this lamina is then the point <m>(\overline{x},\overline{y})</m> where
@@ -1226,7 +1234,7 @@
         </solution>
       </example>
       <p>
-        In <xref ref="example-verifying-solutions" autoname="yes" />, <m>y = 5e^{x^{2}}</m> is not the only solution of <m>y' = 2xy</m>.
+        In <xref ref="example-verifying-solutions" text="type-global" />, <m>y = 5e^{x^{2}}</m> is not the only solution of <m>y' = 2xy</m>.
         You can check that <m>y = 3e^{x^{2}}</m> and <m>y = -10e^{x^{2}}</m> are also solutions.
         In fact, <em>any</em> function of the form <m>Ce^{x^{2}}</m> where <m>C</m> is a constant is a solution of <m>y' = 2xy</m>.
       </p>
@@ -1341,7 +1349,7 @@
                 <p>
                     So we have a solution, and it can be shown that the solution is unique.
                     But if you stare at this for a bit, you might see that it has a divide-by-zero problem.
-                    In particular, 
+                    In particular,
                     <me>\lim_{t\to(\frac{1}{25})^{+}}P(t) = \infty.</me>
                     In other words, the population becomes infinite in about two weeks!
                 </p>
@@ -1483,7 +1491,7 @@
                     We already know that the critical points are <m>x = 2, 5</m>.
                     We can determine their stability by making use of a <term>phase diagram</term>, which is essentially a sign chart for <m>f(x) = -x^{2} + 7x - 10</m>:
                 </p>
-                    <figure>
+                    <figure xml:id="figure-phase-diagram">
                         <caption>The phase diagram for <m>x' = f(x).</m></caption>
                         <image width="50%">
                             <latex-image><![CDATA[
@@ -1547,7 +1555,7 @@
                         <me>0 \lt c_{1} \lt 15 \lt c_{2} \lt 75.</me>
                         The phase diagram for this situation is
                     </p>
-                    <figure>
+                    <figure xml:id="figure-population-phase-diagram-lt-450">
                         <image width="50%">
                             <latex-image><![CDATA[
                             \begin{tikzpicture}
@@ -1574,6 +1582,7 @@
                             \end{tikzpicture}]]>
                         </latex-image>
                     </image>
+                    <caption>Phase diagram for <m>h \lt 450</m>.</caption>
                 </figure>
                 <p>
                     So we see that <m>c_{1}</m> is unstable while <m>c_{2}</m> is stable.
@@ -1586,7 +1595,7 @@
                         Then we have only one equilibrium solution: <m>c = 15</m>.
                         The corresponding phase diagram is
                     </p>
-                        <figure>
+                        <figure xml:id="figure-phase-diagram-equal-450">
                             <image width="50%">
                                 <latex-image><![CDATA[
                                 \begin{tikzpicture}
@@ -1607,6 +1616,7 @@
                                 ]]>
                             </latex-image>
                         </image>
+                        <caption>Phase diagram for <m>h</m> = 450.</caption>
                     </figure>
                     <p>
                         We interpret the phase diagram as follows: if <m>P</m> is less than <p>15,000</p> then the population will collapse to extinction.
