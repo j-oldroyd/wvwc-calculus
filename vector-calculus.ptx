@@ -566,7 +566,7 @@
             Then both paths have the same initial and terminal points.
           </p>
           <p>
-            From <xref ref="figure-a-rotating-force-field" text="type-global" />, it appears as though <m>\int_{C_{2}}\vb{F}\cdot d\vb{r} \lt 0 \lt \int_{C_{1}}\vb{F}\cdot d\vb{r}</m>, which suggests that the vector field is path dependent.
+            From <xref ref="figure-a-rotating-force-field-" text="type-global" />, it appears as though <m>\int_{C_{2}}\vb{F}\cdot d\vb{r} \lt 0 \lt \int_{C_{1}}\vb{F}\cdot d\vb{r}</m>, which suggests that the vector field is path dependent.
             <figure xml:id="figure-a-rotating-force-field-">
               <caption>A rotating force field.</caption>
               <image xml:id="image-a-rotating-force-field-">
@@ -697,10 +697,60 @@
         </statement>
         <solution>
           <p>
-            We should have <m>\varointclockwise_{C}\vb{F}\cdot\vb{n}\,ds = 0</m>.
+            We should have <m>\oint_{C}\vb{F}\cdot\vb{n}\,ds = 0</m>.
+          </p>
+        </solution>
+      </example>
+      <p>
+        In order to actually compute flux integrals, we need to write <m>\vb{n}</m> using <m>C</m>.
+        So suppose that <m>C</m> is traced out by the vector function <m>\vb{r}(t) = \dotprod{x(t), y(t)}</m>.
+        Then <m>\vb{n}</m> must be perpendicular to the unit tangent
+        <me>\vb{T} = \frac{1}{\sqrt{x^{2} + y^{2}}}\dotprod{x', y'}</me>
+        or equivalently <m>\dotprod{x',y'}</m>.
+        Our primary tool for finding perpendicular vectors, the cross product, only applies in <m>\RR^{3}</m>.
+        So to find <m>\vb{n}</m> we'll (temporarily) move everything into <m>\RR^{3}</m>.
+        Now we need to find a vector orthogonal to <m>\dotprod{x', y', 0}</m> that also lies in the <m>xy</m>-plane.
+        This can be done by computing
+        <me>\dotprod{x',y',0}\times\vb{k} \qq{or} \vb{k}\times \dotprod{x',y',0}</me>.
+      </p>
+      <p>
+        At this point we need to decide which direction we want our normal vector to go.
+        We'll usually choose the first option if <m>C</m> is traversed counterclockwise and the second option otherwise.
+        Assuming counterclockwise orientation, we have
+        <me>\dotprod{x', y', 0}\times \vb{k} = \dotprod{y', -x', 0}</me>.
+        Now moving back down to <m>\RR^{3}</m>, we can write the outward unit normal as
+        <me>\vb{n} = \frac{1}{\sqrt{(x')^{2} + (y')^{2}}}\dotprod{y', -x'} = \frac{1}{\norm{\vb{r}'(t)}}\dotprod{y', -x'}</me>.
+      </p>
+      <p>
+        Therefore
+        <md>
+          <mrow>\int_{C}\vb{F}\cdot\vb{n}\,ds \amp = \int_{C}\vb{F}\cdot\dotprod{y', -x'}\,dt</mrow>
+          <mrow> \amp = \int_{C} P\,dy - Q\,dx </mrow>
+        </md>.
+      </p>
+      <example xml:id="example-verifying-the-flux">
+        <title>Verifying the Flux</title>
+        <statement>
+          <p>
+            Compute the flux integral in <xref ref="example-flux-across-the-unit-circle" text="type-global" />.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We have
+            <md>
+              <mrow>\oint_{C}\vb{F}\cdot\vb{n}\,ds \amp = \int_{0}^{2\pi}P\,dy - Q\,dx </mrow>
+              <mrow> \amp = \int_{0}^{2}\brackets{-\sin t\cos t - \cos t(-\sin t)}\,dt </mrow>
+              <mrow> \amp = 0 </mrow>
+            </md>.
           </p>
         </solution>
       </example>
     </subsection>
+    <conclusion>
+      <p>
+        1, 7, 13, 17, 19, 39.
+      </p>
+    </conclusion>
   </section>
 </chapter>
