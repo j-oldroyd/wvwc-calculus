@@ -766,5 +766,80 @@
         This is the content of the main result in this section: <xref ref="theorem-fundamental-theorem-of-line-integrals" text="type-global" />.
       </p>
     </introduction>
+    <subsection xml:id="subsection-path-independence">
+    <title>Path Independence</title>
+      <p>
+        Unless otherwise mentioned, we'll assume that we're always working with an <term>open, simply connected domain</term> <m>D</m>.
+        This is a region that, roughly, does not contain its boundary and does not contain any holes.
+        A curve <m>C</m> contained in <m>D</m> is <term>closed</term> if its initial and terminal points are the same.
+        We'll denote the <term>boundary</term> of <m>D</m> by <m>\partial D</m>.
+        <aside>
+          <p>
+            Unless mentioned otherwise, we assume <m>\partial D</m> is traversed counterclockwise is <m>D</m> is in the <m>xy</m>-plane.
+          </p>
+        </aside>
+        We often denote line integrals over closed curves using the symbol <m>\oint</m>.
+      </p>
+      <p>
+        The mathematical definition of a conservative vector field is that it's the gradient of some scalar function.
+      </p>
+      <definition xml:id="definition-conservative-vector-fields-mathematical-definition">
+        <idx><h>conservative vector field</h><h>mathematical definition</h></idx>
+        <title>Conservative Vector Fields (Mathematical Definition)</title>
+        <statement>
+          <p>
+            Let <m>\vb{F}</m> be a vector field.
+            We say that <m>\vb{F}</m> is <term>conservative</term> on a domain <m>D</m> if <m>\vb{F} = \grad f</m> on <m>D</m> for some scalar function <m>f</m>.
+          </p>
+        </statement>
+      </definition>
+      <p>
+        However, we also have a physical definition!
+        Which may be useful.
+        This definition relies on the concept of <term>path independence</term>.
+      </p>
+      <definition xml:id="definition-path-independence">
+        <idx><h>vector fields</h><h>path independence</h></idx>
+        <title>Path Independence</title>
+        <statement>
+          <p>
+            A vector field <m>\vb{F}</m> is path independent on a domain <m>D</m> if
+            <me>\int_{C_{1}}\vb{F}\cdotd\vb{r} = \int_{C_{2}}\vb{F}\cdot d\vb{r}</me>
+            for any piecewise smooth paths in <m>D</m> with the same endpoints.
+            Equivalently, <m>\vb{F}</m> is path independent if
+            <me>\oint_{C}\vb{F}\cdot d\vb{r} = 0</me>
+            for any piecewise smooth closed curve <m>C</m> in <m>D</m>.
+          </p>
+        </statement>
+      </definition>
+      <definition xml:id="definition-conservative-vector-fields-physical-definition-">
+        <title>Conservative Vector Fields (Physical Definition)</title>
+        <statement>
+          <p>
+            Let <m>\vb{F}</m> denote a (vector) force field.
+            We say that <m>\vb{F}</m> is conservative on a domain <m>D</m> if <m>\vb{F}</m> is path independent on <m>D</m>.
+          </p>
+        </statement>
+      </definition>
+      <p>
+        In physical terms, <xref ref="definition-conservative-vector-fields-physical-definition" text="type-global" /> says that the work done by a conservative force <m>\vb{F}</m> on a particle moving along a path depends only on the initial and terminal points of the path.
+        Equivalently, the work done on a closed path must always be <m>0</m>.
+      </p>
+      <p>
+        These two definitions are related by <xref ref="theorem-fundamental-theorem-of-line-integrals" text="type-global" />.
+      </p>
+      <theorem xml:id="theorem-fundamental-theorem-line-integrals">
+        <idx><h>line integrals</h><h>Fundamental Theorem of Line Integrals</h></idx>
+        <title>Fundamental Theorem of Line Integrals</title>
+        <statement>
+          <p>
+            Suppose that <m>\vb{F}</m> is a conservative vector field (in the sense of <xref ref="definition-conservative-vector-fields-mathematical-definition" text="type-global" />) with continuous components on an open simply connected region <m>D</m>.
+            Then <m>\vb{F}</m> is path independent.
+            Furthermore, if <m>\vb{F} = \grad f</m> and <m>C</m> is a curve in <m>D</m> with initial point <m>A</m> and terminal point <m>B</m>, then
+            <me>\int_{C}\vb{F}\cdot d\vb{r} = f(B) - f(A)</me>.
+          </p>
+        </statement>
+      </theorem>
+    </subsection>
   </section>
 </chapter>
