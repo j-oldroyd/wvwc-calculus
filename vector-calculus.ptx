@@ -840,6 +840,24 @@
           </p>
         </statement>
       </theorem>
+      <example xml:id="example-an-awful-example">
+        <title>An Awful Example</title>
+        <statement>
+          <p>
+            Let <m>\vb{F} = \grad(x^{2}y^{3})</m> and let <m>C</m> be the path in the <m>xy</m>-plane composed of the line segment from <m>(-1,1)</m> to <m>(0,1)</m> followed by the circular arc from <m>(0,1)</m> to <m>(1,0)</m> followed by the logarithmic arc from <m>(1,0)</m> to <m>(e,1)</m>.
+            Find <m>\int_{C}\vb{F}\cdot\vb{T}\,ds</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <m>C</m> is piecewise smooth and consists of the components
+            <md>
+              <mrow>C_{1} \amp : \vb{r}_{1}(t) = \dotprod{t - 1, 1}, 0\leq t\leq 1 </mrow>
+              <mrow>C_{2} \amp : \vb{r}_{2}(t) = \dotprod{-\cos t, \sin t}, \frac{\pi}{2} \leq t\leq \pi </mrow>
+            </md>
+          </p>
+        </solution>
+      </example>
     </subsection>
   </section>
 </chapter>
