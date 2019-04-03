@@ -753,4 +753,18 @@
       </p>
     </conclusion>
   </section>
+  <section xml:id="section-the-fundamental-theorem-for-line-integrals">
+    <title>The Fundamental Theorem for Line Integrals</title>
+    <introduction>
+      <p>
+        From <xref ref="theorem-fundamental-theorem-of-calculus" text="type-global" />, we know that integrals and derivatives are closely related:
+        <me>\int_{a}^{b}\dv{f}{x}\,dx = f(b) - f(a)</me>.
+        We want to extend this result to line integrals of vector fields over curves.
+        In particular, we want to prove a relationship of the form
+        <me>\int_{C}\grad f\cdot d\vb{r} = \int_{A}^{B}\grad f\cdot d\vb{r} = f(B) - f(A)</me>
+        where <m>A</m> and <m>B</m> are the endpoints of the curve <m>C</m>.
+        This is the content of the main result in this section: <xref ref="theorem-fundamental-theorem-of-line-integrals" text="type-global" />.
+      </p>
+    </introduction>
+  </section>
 </chapter>
