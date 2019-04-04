@@ -763,7 +763,7 @@
         In particular, we want to prove a relationship of the form
         <me>\int_{C}\grad f\cdot d\vb{r} = \int_{A}^{B}\grad f\cdot d\vb{r} = f(B) - f(A)</me>
         where <m>A</m> and <m>B</m> are the endpoints of the curve <m>C</m>.
-        This is the content of the main result in this section: <xref ref="theorem-fundamental-theorem-of-line-integrals" text="type-global" />.
+        This is the content of the main result in this section: <xref ref="theorem-fundamental-theorem-line-integrals" text="type-global" />.
       </p>
     </introduction>
     <subsection xml:id="subsection-path-independence">
@@ -812,7 +812,7 @@
           </p>
         </statement>
       </definition>
-      <definition xml:id="definition-conservative-vector-fields-physical-definition-">
+      <definition xml:id="definition-conservative-vector-fields-physical-definition">
         <title>Conservative Vector Fields (Physical Definition)</title>
         <statement>
           <p>
@@ -826,7 +826,7 @@
         Equivalently, the work done on a closed path must always be <m>0</m>.
       </p>
       <p>
-        These two definitions are related by <xref ref="theorem-fundamental-theorem-of-line-integrals" text="type-global" />.
+        These two definitions are related by <xref ref="theorem-fundamental-theorem-line-integrals" text="type-global" />.
       </p>
       <theorem xml:id="theorem-fundamental-theorem-line-integrals">
         <idx><h>line integrals</h><h>Fundamental Theorem of Line Integrals</h></idx>
@@ -844,7 +844,7 @@
         <title>An Awful Example</title>
         <statement>
           <p>
-            Let <m>\vb{F} = \grad(x^{2}y^{3})</m> and let <m>C</m> be the path in the <m>xy</m>-plane composed of the line segment from <m>(-1,1)</m> to <m>(0,1)</m> followed by the circular arc from <m>(0,1)</m> to <m>(1,0)</m> followed by the logarithmic arc from <m>(1,0)</m> to <m>(e,1)</m>.
+            Let <m>\vb{F} = \grad(x^{2}y^{3})</m> and let <m>C</m> be the path in the <m>xy</m>-plane composed of the line segment from <m>(-1,1)</m> to <m>(0,1)</m> followed by the circular arc from <m>(0,1)</m> to <m>(1,0)</m> followed by the logarithmic arc <m>y = \ln x</m> from <m>(1,0)</m> to <m>(e,1)</m>.
             Find <m>\int_{C}\vb{F}\cdot\vb{T}\,ds</m>.
           </p>
         </statement>
@@ -853,8 +853,35 @@
             <m>C</m> is piecewise smooth and consists of the components
             <md>
               <mrow>C_{1} \amp : \vb{r}_{1}(t) = \dotprod{t - 1, 1}, 0\leq t\leq 1 </mrow>
-              <mrow>C_{2} \amp : \vb{r}_{2}(t) = \dotprod{-\cos t, \sin t}, \frac{\pi}{2} \leq t\leq \pi </mrow>
+              <mrow>C_{2} \amp : \vb{r}_{2}(t) = \dotprod{\sin t, \cos t}, 0\leq t\leq \frac{\pi}{2} </mrow>
+              <mrow>C_{3} \amp : \vb{r}_{3}(t) = \dotprod{t, \ln t}, 1\leq t\leq e </mrow>
+            </md>.
+            To find <m>\int_{C}\vb{F}\cdot\vb{T}\,ds</m>, we can find <m>\int_{C_{i}}\vb{F}\cdot\vb{T}\,ds</m> for <m>1\leq i\leq 3</m> and add the resulting values.
+            So let's do that!
+            <md>
+              <mrow>\int_{C_{1}}\vb{F}\cdot d\vb{r} \amp = \int_{C_{1}} \dotprod{2xy^{3}, 3x^{2}y^{2}}\dr</mrow>
+              <mrow> \amp = \int_{0}^{1}\dotprod{2(t-1), 3(t-1)^{2}}\cdot\dotprod{1, 0}\,dt </mrow>
+              <mrow> \amp = \brackets{t^{2} - 2t}_{0}^{1} </mrow>
+              <mrow> \amp = -1 </mrow>
+            </md>.
+            Similarly,
+            <md>
+              <mrow>\int_{C_{2}} \vb{F}\dr \amp = \int_{0}^{\frac{\pi}{2}}\dotprod{2\sin t\cos^{3}t, 3\sin^{2}t\cos^{2}t}\cdot\dotprod{\cos t, -\sin t}\,dt </mrow>
+              <mrow> \amp = 0</mrow>
             </md>
+            and <em>finally</em>
+            <md>
+              <mrow>\int_{C_{3}}\vb{F}\dr \amp = \int_{1}^{e}\dotprod{2t(\ln t)^{3}, 3t^{2}(\ln t)^{2}}\cdot\dotprod{1, \frac{1}{t}}\,dt </mrow>
+              <mrow> \amp = e^{2}</mrow>
+            </md>.
+            Putting this all together, we get
+            <me>\int_{C}\vb{F}\dr = e^{2} - 1</me>.
+          </p>
+          <p>
+            Now let's compare this approach with using <xref ref="theorem-fundamental-theorem-line-integrals" text="type-global" />.
+            Since <m>\vb{F} = \grad(x^{2}y^{3})</m>, <m>\vb{F}</m> is conservative by definition.
+            Hence <xref ref="theorem-fundamental-theorem-line-integrals" text="type-global" /> applies, and (setting <m>f(x,y) = x^{2}y^{3}</m>) we get
+            <me>\int_{C}\vb{F}\dr = f(e, 1) - f(-1, 1) = e^{2} - 1</me>.
           </p>
         </solution>
       </example>
