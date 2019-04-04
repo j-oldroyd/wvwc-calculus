@@ -804,7 +804,7 @@
         <statement>
           <p>
             A vector field <m>\vb{F}</m> is path independent on a domain <m>D</m> if
-            <me>\int_{C_{1}}\vb{F}\cdotd\vb{r} = \int_{C_{2}}\vb{F}\cdot d\vb{r}</me>
+            <me>\int_{C_{1}}\vb{F}\dr = \int_{C_{2}}\vb{F}\cdot d\vb{r}</me>
             for any piecewise smooth paths in <m>D</m> with the same endpoints.
             Equivalently, <m>\vb{F}</m> is path independent if
             <me>\oint_{C}\vb{F}\cdot d\vb{r} = 0</me>
