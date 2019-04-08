@@ -885,6 +885,143 @@
           </p>
         </solution>
       </example>
+      <example xml:id="example-using-potential-to-find-work-done">
+      <title>Using Potential to Find Work Done</title>
+      <statement>
+        <p>
+          Let <m>\vb{F} = \dotprod{xy^{2}, x^{2}y}</m> be a force field and let <m>C</m> denote the parabolic arc <m>y = x^{2}</m> from <m>(1,1)</m> to <m>(3,9)</m>.
+          Find the work done by <m>\vb{F}</m> along <m>C</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The work done is just <m>\int_{C}\vb{F}\dr</m>.
+          Note that <m>\vb{F} = \grad(\frac{1}{2}x^{2}y^{2})</m>, and so the work done is just
+          <me>\frac{1}{2}3^{2}9^{2} - \frac{1}{2}1^{2}1^{2}</me>
+          by <xref ref="theorem-fundamental-theorem-line-integrals" text="type-global" />.
+        </p>
+      </solution>
+      </example>
+    </subsection>
+    <subsection xml:id="subsection-conservative-vector-fields">
+      <title>Conservative Vector Fields</title>
+      <p>
+        <xref ref="theorem-fundamental-theorem-line-integrals" text="type-global" /> shows that line integrals involving conservative vector fields are straightforward to evaluate if we know a corresponding potential function.
+        So now we want to do two things:
+        <ol>
+          <li>
+            <p>Given a vector field <m>\vb{F}</m>, determine if it's conservative.</p>
+          </li>
+        </ol>
+        <ol>
+          <li>
+            <p>Given a conservative vector field <m>\vb{F}</m>, determine a potential function <m>\varphi</m>.</p>
+          </li>
+        </ol>
+      </p>
+      <p>
+        For the first, we can use our intuition that conservative vector fields shouldn't rotate.
+        So let's assume that <m>\vb{F} = \dotprod{P,Q}</m> is a (differentiable) vector field on <m>\RR^{2}</m> and let <m>(x,y)</m> be a point in the plane.
+        We can estimate the rotation, or <em>circulation</em>, of <m>\vb{F}</m> at <m>(x,y)</m> by constructing a rectangle with length <m>\Delta x</m> and height <m>\Delta y</m> at <m>(x,y)</m> and measuring how <m>\vb{F}</m> flows counterclockwise around the rectangle.
+        If we do so, then we can estimate the circulation along each side as follows:
+        <md>
+          <mrow>\text{Top:} \amp P(x,y + \Delta y)\cdot(-\Delta x\vb{i})</mrow>
+          <mrow>\text{Bottom:} \amp P(x, y)\cdot(\Delta x)\vb{i}</mrow>
+          <mrow>\text{Left:} \amp Q(x,y)\cdot(-\Delta y\vb{j})</mrow>
+          <mrow>\text{Right:} \amp Q(x + \Delta x,y)\cdot(\Delta y\vb{j})</mrow>
+        </md>.
+        Therefore the total circulation near <m>(x,y)</m> should be about
+        <me>\Delta x\vb{i}\brackets{P(x,y) - P(x, y + \Delta y)} + \Delta y\vb{j}\brackets{Q(x + \Delta x, y) - Q(x,y)}</me>.
+        If we divide by <m>\Delta x\Delta y</m> to normalize, then we can say that the circulation is about
+        <me>\pdv{Q}{x} - \pdv{P}{y}</me>.
+      </p>
+      <theorem xml:id="theorem-conservative-vector-fields-are-irrotational">
+        <title>Conservative Vector Fields are Irrotational</title>
+        <statement>
+          <p>
+            Let <m>\vb{F} = \dotprod{P,Q}</m> be a continuously differentiable vector field on an open simply connected region in <m>\RR^{2}</m>.
+            Then <m>\vb{F}</m> is conservative if and only if
+            <me>\pdv{Q}{x} - \pdv{P}{y} = 0</me>.
+          </p>
+        </statement>
+      </theorem>
+      <example xml:id="example-finding-a-line-integral">
+        <title>Finding a Line Integral</title>
+        <statement>
+          <p>
+            Let <m>\vb{F} = (3x^{2} + 2y^{2})\vb{i} + (4xy - e^{-y^{2}})\vb{j}</m> and let <m>C</m> denote the ellipse
+            <me>\frac{(x-1)^{2}}{9} + \frac{3y + 2)^{2}}{10} = 5</me>.
+            Find <m>\oint_{C}\vb{F}\cdot\vb{T}\,ds</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We can parameterize <m>C</m> and then compute <m>\oint_{C}\vb{F}\dr</m> as in <xref ref="section-line-integrals" text="type-global" />, but we'll first check if <m>\vb{F}</m> is conservative.
+            Since <m>\pdv{Q}{x} = 4y = \pdv{P}{y}</m>, it follows that <m>\vb{F}</m> is conservative.
+            Hence <m>\oint_{C}\vb{F}\dr = 0</m>.
+          </p>
+        </solution>
+      </example>
+      <p>
+        The quantity <m>\pdv{Q}{x} - \pdv{P}{y}</m> in <xref ref="theorem-conservative-vector-fields-are-irrotational" text="type-global" /> is called the (two-dimensional) <term>curl</term> of <m>\vb{F}</m> and is denoted by <m>\curlt \vb{F}</m>.
+        This represents the tendency of <m>\vb{F}</m> to rotate counterclockwise around a given point.
+        This can be extended to three dimensions using the following formula:
+        <me>\curlt\vb{F} = \curl\vb{F}</me>
+        where <m>\nabla = \dotprod{\pdv{}{x}, \pdv{}{y}, \pdv{}{z}}</m>.
+        The direction of <m>\curl\vb{F}</m> provides the <em>axis of rotation</em> at a point, and its magnitude is the tendency of <m>\vb{F}</m> to rotate counterclockwise around this axis of rotation (viewed head on).
+      </p>
+      <example xml:id="example-testing-a-vector-field-in-RR3">
+        <title>Testing a Vector Field in <m>\RR^{3}</m></title>
+        <statement>
+          <p>
+            Let <m>\vb{F} = \dotprod{e^{x}\cos y, xz - e^{x}\sin y, xy + z}</m>.
+            Determine if <m>\vb{F}</m> is conservative.
+          </p>
+          <aside>
+            <p>This is taken from Example 2 on page 1165 of <em>Thomas' Calculus</em>, <m>11^{\text{th}}</m> edition.</p>
+          </aside>
+        </statement>
+        <solution>
+          <p>
+            We need to check if <m>\curl\vb{F} = \vb{0}</m>.
+            So we compute this like a cross product, giving <m>\vb{0}</m>.
+            Hence the vector field is irrotational and therefore conservative.
+          </p>
+        </solution>
+      </example>
+      <p>
+        So now we have a good test for if a vector field is conservative.
+        Next, we want to be able to find a corresponding potential function to a conservative vector field.
+      </p>
+      <p>
+        Consider the vector field <m>\vb{F}</m> from <xref ref="example-testing-a-vector-field-in-RR3" text="type-global" />.
+        We know this is conservative, so there must exist a corresponding potential function <m>f(x,y,z)</m> such that <m>\grad f = \vb{F}</m>.
+        To find this, we start by noting that whatever <m>f</m> is, its partial derivatives must be the components of <m>\vb{F}</m>.
+        In particular,
+        <me>\pdv{f}{x} = e^{x}\cos y + yz \implies f = e^{x}\cos y + xyz + g(y,z)</me>.
+        Now we look at <m>\pdv{f}{y}</m> to pin down <m>g(y,z)</m>:
+        <me>\pdv{f}{y} = xz - e^{x}\sin y = -e^{x}\sin y + xz + \pdv{g}{y} \implies \pdv{g}{y} = 0</me>,
+        and so <m>g(y,z) = g(z)</m>.
+        Finally,
+        <me>\pdv{f}{z} = xy + z = xy + g'(z) \implies g'(z) = z</me>
+        and so <m>g(z) = \frac{z^{2}}{2} + C</m>.
+        Therefore a potential function for <m>\vb{F}</m> is
+        <me>f(x,y,z) = e^{x}\cos y + xyz + \frac{z^{2}}{2}</me>.
+      </p>
+      <example xml:id="example-line-integral-along-an-elliptical-arc">
+        <title>Line Integral Along an Elliptical Arc</title>
+        <statement>
+          <p>
+            Compute <m>\int_{C}P\,dx + Q\,dy</m>, where
+            <me>C: \vb{r}(t) = \cos t\vb{i} + 2\sin t\vb{j}, 0\leq t\leq \frac{\pi}{2}</me>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            
+          </p>
+        </solution>
+      </example>
     </subsection>
   </section>
 </chapter>

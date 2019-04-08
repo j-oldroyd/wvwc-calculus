@@ -14,6 +14,11 @@
       \newcommand{\vv}[1]{\mathbf{#1}}
       \newcommand{\vb}[1]{\mathbf{#1}}
       \newcommand{\grad}{\nabla}
+      \newcommand{\curl}{\nabla\times}
+      \newcommand{\curlt}{\operatorname{curl}}
+      \renewcommand{\div}{\nabla\cdot}
+      \newcommand{\divt}{\operatorname{div}}
+      \newcommand{\del}{\nabla}
       \newcommand{\vecm}[1]{\bm{#1}}
       \newcommand{\Sum}[2]{\sum_{#1}^{#2}}
       \newcommand{\Int}[2]{\int_{#1}^{#2}}
