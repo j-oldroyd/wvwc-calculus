@@ -1012,16 +1012,33 @@
         <title>Line Integral Along an Elliptical Arc</title>
         <statement>
           <p>
-            Compute <m>\int_{C}P\,dx + Q\,dy</m>, where
+            Compute <m>\int_{C}(1 + xy)e^{xy}\,dx + x^{2}e^{xy}\,dy</m>, where
             <me>C: \vb{r}(t) = \cos t\vb{i} + 2\sin t\vb{j}, 0\leq t\leq \frac{\pi}{2}</me>.
           </p>
         </statement>
         <solution>
           <p>
-            
+            First, we'll check if <m>\vb{F}</m> is conservative.
+            If it is, we can use <xref ref="theorem-fundamental-theorem-line-integrals" text="type-global" />.
+            Since <m>\pdv{Q}{x} - \pdv{P}{y} = 2xe^{xy} + x^{2}ye^{xy} - \brackets{xe^{xy} + \parens{x + x^{2}y}e^{xy}} = 0</m>,
+            we see that <m>\vb{F}</m> is in fact conservative.
+          </p>
+          <p>
+            Now we need to find a potential function <m>f(x,y)</m>.
+            Since <m>f_{x} = (1 + xy)e^{xy}</m>, we can integrate with respect to <m>x</m> to get
+            <me>f(x,y) = xe^{xy} + g(y)</me>.
+            Now differentiate with respect to <m>y</m> to get
+            <me>x^{2}e^{xy} = x^{2}e^{xy} + g'(y) \implies g(y) = C</me>.
+            Hence a potential function for <m>\vb{F}</m> is <m>f = xe^{xy}</m>, and so
+            <me>\int_{C}(1 + xy)e^{xy}\,dx + x^{2}e^{xy}\,dy = -1</me>.
           </p>
         </solution>
       </example>
     </subsection>
+    <conclusion>
+      <p>
+        SUGGESTED PROBLEMS:3-13 odd, 19, 21
+      </p>
+    </conclusion>
   </section>
 </chapter>
