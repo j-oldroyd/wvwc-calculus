@@ -950,7 +950,7 @@
         <statement>
           <p>
             Let <m>\vb{F} = (3x^{2} + 2y^{2})\vb{i} + (4xy - e^{-y^{2}})\vb{j}</m> and let <m>C</m> denote the ellipse
-            <me>\frac{(x-1)^{2}}{9} + \frac{3y + 2)^{2}}{10} = 5</me>.
+            <me>\frac{(x-1)^{2}}{9} + \frac{(3y + 2)^{2}}{10} = 5</me>.
             Find <m>\oint_{C}\vb{F}\cdot\vb{T}\,ds</m>.
           </p>
         </statement>
