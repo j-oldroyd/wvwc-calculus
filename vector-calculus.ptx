@@ -974,7 +974,7 @@
         <title>Testing a Vector Field in <m>\RR^{3}</m></title>
         <statement>
           <p>
-            Let <m>\vb{F} = \dotprod{e^{x}\cos y, xz - e^{x}\sin y, xy + z}</m>.
+            Let <m>\vb{F} = \dotprod{e^{x}\cos y + yz, xz - e^{x}\sin y, xy + z}</m>.
             Determine if <m>\vb{F}</m> is conservative.
           </p>
           <aside>
