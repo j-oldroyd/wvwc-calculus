@@ -1271,9 +1271,9 @@
       </example>
       <p>
         To see how the Laplacian can arise, consider the following situation explained in Evans' <em>Partial Differential Equations</em>, <m>2^{\text{nd}}</m> edition.
-        We have some <em>density</em> function <m>u</m>; this could be mass density, charge density, etc.
-        Now we'll let <m>\vb{F}</m> denote the flux of <m>u</m>.
-        It's often reasonable to assume that the flux is proportional to the negative of the gradient of <m>u</m>: <m>\vb{F} = -a\grad u</m> where <m>a \gt 0</m>.
+        We have some <em>density</em> function <m>f</m>; this could be mass density, charge density, etc.
+        Now we'll let <m>\vb{F}</m> denote the flux of <m>f</m>.
+        It's often reasonable to assume that the flux is proportional to the negative of the gradient of <m>f</m>: <m>\vb{F} = -a\grad f</m> where <m>a \gt 0</m>.
         This means that the quantity flows from regions of higher concentration to regions of lower concentration.
         If <m>u</m> represents a quantity in equilibrium within some region <m>D</m>, then the net flux across <m>D</m> should be <m>0</m>.
         In terms of <xref ref="theorem-green-s-theorem-for-flux-integrals" text="type-global" />, we have
@@ -1287,8 +1287,13 @@
       </p>
       <p>
         We say that a function is <term>harmonic</term> if its Laplacian is <m>0</m>.
+        The equation <m>\Delta f = 0</m> is known as <term>Laplace's equation</term>.
         Harmonic functions are extremely useful, as they represent quantities in a kind of equilibrium state.
-        They also appear in certain integral identities.
+        If <m>f</m> represents chemical concentration, temperature or electrostatic potential, then Laplace's equation is Fick's law of diffusion, Fourier's law of heat conduction or Ohm's law of electrical conduction, respectively.
+        See Evans text for more.
+      </p>
+      <p>
+        Laplacians also appear in certain integral identities.
       </p>
       <theorem xml:id="theorem-green-s-first-identity">
         <idx>Green's First Identity</idx>
@@ -1305,7 +1310,7 @@
           <p>
             Since the right hand side involves a flux integral, this suggests that <xref ref="theorem-green-s-theorem-for-flux-integrals" text="title" /> may prove useful.
             Applying this to <m>\oint_{\partial D}f(\grad g)\dn</m> gives
-            <me>\oint_{\partial D}f(\grad g)\,dn = \iint_{D}\div(f\grad g)\,dA</me>.
+            <me>\oint_{\partial D}f(\grad g)\dn = \iint_{D}\div(f\grad g)\,dA</me>.
           </p>
           <p>
             Now, recall that <m>\div</m> is a kind of derivative operator.
