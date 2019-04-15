@@ -1440,5 +1440,73 @@
         </solution>
       </example>
     </subsection>
+    <subsection xml:id="subsection-surface-areas">
+      <title>Surface Areas</title>
+      <p>
+        In addition to giving us a normal vector to the surface <m>S</m>, the quantity <m>\vb{r}_{u}\times\vb{r}_{v}</m> can also be used to estimate the area of a small <q>parallelogram</q> on <m>S</m> at a given point <m>\vb{r}(u_{0}, v_{0})</m>.
+        In particular, if
+        <md>
+          <mrow>u_{0} \amp \leq u\leq u_{0} + \Delta u </mrow>
+          <mrow>v_{0} \amp \leq v\leq v_{0} + \Delta v </mrow>
+        </md>,
+        then the area of the surface
+        <me>\vb{r}(u,v)</me>
+        subject to the above restrictions on <m>u</m> and <m>v</m> is approximately
+        <me>\norm{\vb{r}_{u}\times\vb{r}_{v}}\Delta u\Delta v</me>,
+        where the cross product is evaluated at <m>(u_{0}, v_{0})</m>.
+        This suggests the following definition.
+      </p>
+      <definition xml:id="definition-surface-area">
+        <idx><h>parametric surfaces</h><h>surface area</h></idx>
+        <title>Surface Area</title>
+        <statement>
+          <p>
+            Let <m>S</m> be a smooth surface parameterized by <m>\vb{r}(u,v)</m> for <m>(u,v)\in D</m>.
+            Then the <term>surface area</term> of <m>S</m> is defined to be
+            <me>\iint_{D}\norm{\vb{r}_{u}\times\vb{r}_{v}}\,dA</me>.
+          </p>
+        </statement>
+      </definition>
+      <example xml:id="example-area-of-a-cone">
+        <title>Area of a Cone</title>
+        <statement>
+          <p>
+            Find the area of the part of the cone <m>z = \sqrt{x^{2} + y^{2}}</m> bounded by <m>y = x</m> and <m>y = x^{2}</m> in the first octant.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            First, we parameterize the cone using
+            <me>\vb{r}(x,y) = \dotprod{x, y, \sqrt{x^{2} + y^{2}}}, x^{2}\leq y\leq x\qq{and} 0\leq x\leq 1</me>.
+            This gives
+            <me>\norm{\vb{r}_{x}\times\vb{r}_{y}} = 1</me>,
+            and so the area of the conical segment is
+            <me>\int_{0}^{1}\int_{x^{2}}^{x}\,dy\,dx</me>.
+          </p>
+        </solution>
+      </example>
+      <p>
+        The reason we care about smooth surfaces above is that they let us specify a normal vector to that surface.
+        There are typically two choices for such a normal vector (inside vs.<nbsp/> outside), but once we choose a direction the normal vector becomes ambiguous.
+        Such surfaces are said to be <term>orientable</term>, and it's these surfaces that we can do calculus on.
+      </p>
+      <p>
+        As an example of a surface that is not orientable, consider the surface parameterized by
+        <me>\vb{r}(u,v) = \dotprod{2\cos u + v\cos\frac{u}{2}, 2\sin u + v\cos\frac{u}{2}, v\sin\frac{u}{2}}</me>
+        for <m>0\leq u\leq 2\pi</m> and <m>-\frac{1}{2}\leq v\leq \frac{1}{2}</m>.
+        After a <em>lot</em> of algebra, we find that the normal vector <m>\vb{r}_{u}\times\vb{r}_{v}</m> should be
+        <me>(\frac{v}{2} - 2 \sin{\left (\frac{u}{2} \right )} \cos{\left (u \right )})\vb{i} + (- \frac{v}{2} - 2 \sin{\left (\frac{u}{2} \right )} \sin{\left (u \right )})\vb{j} + (2 \sqrt{2} \sin{\left (u + \frac{\pi}{4} \right )} \cos{\left (\frac{u}{2} \right )})\vb{k}</me>.
+      </p>
+      <p>
+        Here's the problem: the normal vector is different at <m>u = v = 0</m> compared with <m>u = 2\pi, v = 0</m> since the <m>\vb{k}</m> component gets its sign flipped.
+        But on the original surface there's no difference between <m>u = v = 0</m> and <m>u = 2\pi, v = 0</m>.
+        Hence this surface is non-orientable.
+      </p>
+    </subsection>
+    <conclusion>
+      <p>
+        SUGGESTED PROBLEMS:1, 3, 15, 19, 33, 43.
+      </p>
+    </conclusion>
   </section>
 </chapter>
