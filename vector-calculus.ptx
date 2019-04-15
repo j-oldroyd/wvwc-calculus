@@ -1332,4 +1332,105 @@
       </p>
     </conclusion>
   </section>
+  <section xml:id="section-parametric-surfaces-and-areas">
+    <title>Parametric Surfaces and Areas</title>
+    <introduction>
+      <p>
+        To extend <xref ref="theorem-green-s-theorem" text="type-global" /> to surfaces in <m>\RR^{3}</m>, we need to parameterize surfaces just as we did curves.
+        As before, our computations depend on the specific parameterization we choose.
+      </p>
+    </introduction>
+    <subsection xml:id="subsection-parameterizing-surfaces">
+      <title>Parameterizing Surfaces</title>
+      <p>
+        A curve is a one-dimensional object, and so our parameterizations typically involved only one independent variable.
+        A surface is fundamentally a two-dimensional object, and so we expect its parameterizations to involve two independent variables<mdash/>even if the surface is in <m>\RR^{3}</m>.
+        We will use vector functions of the form
+        <me>\vb{r}(u,v) = \dotprod{x(u,v), y(u,v), z(u,v)}</me>
+        to represent our parameterizations.
+      </p>
+      <example xml:id="example-finding-a-surface">
+        <title>Finding a Surface</title>
+        <statement>
+          <p>
+            Find the surface traced out by
+            <me>\vb{r}(u,v) = (3u - v)\vb{i} + (u + v)\vb{j} + (2u + 3v)\vb{k}</me>
+            in <m>\RR^{3}</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            For any point <m>(x,y,z)</m> on this surface, we know that <m>x = 3u - v, y = u + v</m> and <m>z = 2u + 3v</m>.
+            We can use these conditions to find an equation in <m>x, y</m> and <m>z</m> that is equivalent to <m>\vb{r}</m>.
+          </p>
+          <p>
+            First, let's solve for <m>u</m> and <m>v</m>, giving
+            <md>
+              <mrow>u \amp = \frac{x + y}{4} </mrow>
+              <mrow>v \amp = \frac{3y - x}{4} </mrow>
+            </md>
+            So
+            <me>x + y + z = 6u + 3v = \frac{3}{4}x + \frac{15}{4}y</me>,
+            which implies that
+            <me>\frac{1}{4}x - \frac{11}{4}y + z = 0</me>.
+          </p>
+        </solution>
+      </example>
+      <p>
+        In general, any plane can be represented using a vector function of the form
+        <me>\vb{r}(u,v) = \vb{r}_{0} + u\vb{a} + v\vb{b}</me>.
+      </p>
+      <example xml:id="example-parameterizing-a-cylinder">
+        <title>Parameterizing a Cylinder</title>
+        <statement>
+          <p>
+            Find a vector function <m>\vb{r}</m> that traces out the portion of the cylinder <m>x^{2} + z^{2} = 1</m> contained in the seventh octant.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The presence of <m>x^{2} + z^{2}</m> in the equation defining this surface suggests something like polar coordinates, except for the <m>xz</m>-plane instead of the <m>xy</m>-plane.
+            So let <m>r = \sqrt{x^{2} + z^{2}}, x = r\cos\theta, y = y</m> and <m>z = r\sin\theta</m>.
+            Then <m>r = 1</m> on our surface, and we can parameterize it using
+            <me>\vb{r}(\theta,y) = \dotprod{\cos\theta, y,\sin\theta}</me>.
+            To place this in the correct octant, we must provide limits for <m>\theta</m> and <m>y</m>:
+            <me>\pi\leq\theta\leq\frac{3\pi}{2}\qq{and} y\leq0</me>.
+          </p>
+        </solution>
+      </example>
+    </subsection>
+    <subsection xml:id="subsection-tangent-planes">
+      <title>Tangent Planes</title>
+      <p>
+        If <m>C:\vb{r}(t)</m>, then <m>\vb{r}'(t)</m> gives the tangent vector to <m>C</m> at the point corresponding to <m>\vb{r}(t)</m>.
+        In the same way, if a surface <m>S</m> is given by <m>\vb{r}(u,v)</m>, then
+        <md>
+          <mrow>\pdv{\vb{r}}{u} \amp = \vb{r}_{u} </mrow>
+          <mrow>\pdv{\vb{r}}{v} \amp = \vb{r}_{v} </mrow>
+        </md>
+        give tangent vectors to <m>S</m> at the point corresponding to <m>\vb{r}(u,v)</m>.
+        <m>\vb{r}_{u}</m> gives the tangent in the direction of increasing <m>u</m>, while <m>\vb{r}_{v}</m> gives the tangent in the direction of increasing <m>v</m>.
+        We say that <m>S</m> is <term>smooth</term> if <m>\vb{r}_{u}</m> and <m>\vb{r}_{v}</m> exist, are continuous and are never <m>\vb{0}</m>.
+        In this case, we can construct the tangent plane to <m>S</m>.
+      </p>
+      <example xml:id="example-tangent-plane-to-a-sphere">
+        <title>Tangent Plane to a Sphere</title>
+        <statement>
+          <p>
+            Let <m>S</m> be the sphere centered at the origin of radius <m>2</m>.
+            Parameterize the tangent plane to <m>S</m> at <m>\parens{\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2}, \sqrt{3}}</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            First, note that <m>\parens{\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2}, \sqrt{3}}</m> actually lies on this sphere so the tangent plane here makes sense.
+            To parameterize the tangent plane, we first need to parameterize <m>S</m>:
+            <me>\vb{r}(\theta,\varphi) = \dotprod{2\cos\theta\sin\varphi, 2\sin\theta\sin\varphi, 2\cos\varphi}</me>.
+            Setting <m>\vb{r}_{0} = \dotprod{\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2}, \sqrt{3}} = \vb{r}(\frac{\pi}{4}, \frac{\pi}{6}), \vb{a} = \vb{r}_{\theta}(\frac{\pi}{4}, \frac{\pi}{6})</m> and <m>\vb{b} = \vb{r}_{\varphi}(\frac{\pi}{4}, \frac{\pi}{6})</m>, it follows that the tangent plane is parameterized by
+            <me>\vb{s}(\theta,\varphi) = \dotprod{\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2}, \sqrt{3}} + \theta\dotprod{-\frac{\sqrt{2}}{2}, \frac{\sqrt{2}}{2}, 0} + \varphi\dotprod{\frac{\sqrt{6}}{2}, \frac{\sqrt{6}}{2}, -1}</me>.
+          </p>
+        </solution>
+      </example>
+    </subsection>
+  </section>
 </chapter>
