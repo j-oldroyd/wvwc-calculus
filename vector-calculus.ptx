@@ -1509,4 +1509,53 @@
       </p>
     </conclusion>
   </section>
+  <section xml:id="section-surface-integrals">
+    <title>Surface Integrals</title>
+    <p>
+      A <term>surface integral</term> of a function <m>f(x,y,z)</m> over a surface <m>S</m> in <m>\RR^{3}</m> will be an integral of the form
+      <me>\iint_{S}f\,dS</me>.
+      This integral represents the net accumulation, or <q>sum</q>, of <m>f</m> on the surface <m>S</m>.
+      We use <m>dS</m> to indicate an <q>infinitesimal surface area</q> on <m>S</m>.
+      Since we already know the surface area from <xref ref="definition-surface-area" text="type-global" />, we can say that
+      <me>dS = \norm{\vb{r}_{u}\times\vb{r}_{v}}\,dA</me>
+      for some vector function <m>\vb{r}(u,v)</m> that parameterizes <m>S</m>.
+      Hence
+      <me>\iint_{S}f\,dS = \iint_{D}f(\vb{r}(u,v))\norm{\vb{r}_{u}\times\vb{r}_{v}}\,dA</me>
+      where <m>D</m> is a corresponding region in the <m>uv</m>-plane.
+      When computing surface integrals, we want to make sure our surface is <term>orientable</term>.
+    </p>
+    <example xml:id="example-mass-of-a-surface">
+      <title>Mass of a Surface</title>
+      <statement>
+        <p>
+          Find the mass of the hemisphere <m>S</m> given by <m>x^{2} + y^{2} + z^{2} = 4, z\geq 0</m> assuming that <m>\rho(x,y,z) = x^{2}z + y^{2}z</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to compute the surface integral <m>\iint_{S}\rho\,dS</m>.
+          First, we need to find a vector function that traces out the hemisphere.
+          Using spherical coordinates for inspiration, we can use
+          <me>\vb{r}(\varphi,\theta) = \dotprod{2\sin\varphi\cos\theta, 2\sin\varphi\sin\theta, 2\cos\varphi}</me>
+          with
+          <md>
+            <mrow>0\leq \varphi \amp \leq \frac{\pi}{2} </mrow>
+            <mrow>0\leq \theta \amp \leq 2\pi </mrow>
+          </md>
+          Then
+          <md>
+            <mrow>\vb{r}_{\varphi}\times\vb{r}_{\theta} \amp= \left|\begin{array}{ccc} \vb{i} \amp \vb{j} \amp \vb{k} \\ 2\cos\varphi\cos\theta \amp 2\cos\varphi\sin\theta \amp -2\sin\varphi \\ -2\sin\varphi\sin\theta \amp 2\sin\varphi\cos\theta \amp 0\end{array}\right|</mrow>
+            <mrow> \amp= \dotprod{4\sin^{2}\varphi\cos\theta, 4\sin^{2}\varphi\sin\theta, 4\cos\varphi\sin\varphi\cos^{2}\theta + 4\cos\varphi\sin\varphi\sin^{2}\theta}</mrow>
+          </md>
+          Now we need to find the magnitude:
+          <me>\norm{\vb{r}_{\varphi}\times\vb{r}_{\theta}} = 4\sqrt{\sin^{4}\varphi\cos^{2}\theta + \sin^{4}\varphi\sin^{2}\theta + \cos^{2}\varphi\sin^{2}\varphi} = 4\sin\varphi</me>.
+          So the mass is
+          <md>
+            <mrow>\iint_{S}\rho\,dS \amp = \int_{0}^{2\pi}\int_{0}^{\frac{\pi}{2}}8\sin^{2}\varphi\cos\varphi(4\sin\varphi)\,d\varphi\,d\theta</mrow>
+            <mrow> \amp = \frac{8\pi}{3} </mrow>
+          </md>.
+        </p>
+      </solution>
+    </example>
+  </section>
 </chapter>
