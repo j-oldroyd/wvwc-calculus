@@ -1557,5 +1557,84 @@
         </p>
       </solution>
     </example>
+    <p>
+      If <m>S</m> is given by the equation <m>z = g(x,y)</m>, then we can use
+      <me>\vb{r}(x,y) = \dotprod{x, y, g(x,y)}</me>
+      to trace out <m>S</m>.
+      This gives
+      <me>\norm{\vb{r}_{x}\times\vb{r}_{y}} = \sqrt{z_{x}^{2} + z_{y}^{2} + 1}</me>.
+    </p>
+    <example xml:id="example-surface-integral-on-a-cone">
+      <title>Surface Integral on a Cone</title>
+      <statement>
+        <p>
+          Set up the surface integral that gives the average value of <m>f(x,y,z) = xy + z^{2}</m> on the part of the cone <m>z = \sqrt{x^{2} + y^{2}}</m> that lies above the unit circle in the third octant.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let <m>S</m> denote the part of the cone in the third octant above the unit circle and let <m>D</m> denote the portion of the unit circle directly under <m>S</m>.
+          The surface area of this part of the cone is <m>\frac{\pi}{4}</m>, so the average value of <m>f</m> on this part of the cone is
+          <md>
+            <mrow>\frac{4}{\pi} \amp \iint_{S}(xy + z^{2})\,dS </mrow>
+            <mrow> \amp = \iint_{D} (xy + x^{2} + y^{2})\sqrt{2}\,dA </mrow>
+            <mrow> \amp = \int_{\pi}^{\frac{3\pi}{2}}\sqrt{2}r^{3}(\cos\theta\sin\theta + 1)\,dr\,d\theta </mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+    <p>
+      We can also talk about surface integrals of vector fields.
+      These are higher dimensional versions of flux integrals.
+    </p>
+    <definition xml:id="definition-surface-integral-of-a-vector-field">
+      <title>Surface Integral of a Vector Field</title>
+      <statement>
+        <p>
+          Let <m>\vb{F}</m> be a continuous vector field on the piecewise smooth, oriented surface <m>S</m>.
+          Then the <term>surface integral of <m>\vb{F}</m> over <m>S</m></term> is the quantity
+          <me>\iint_{S}\vb{F}\cdot d\vb{S} = \iint_{S}\vb{F}\cdot\vb{n}\,dS</me>
+          where <m>\vb{n}</m> is chosen the unit normal vector to <m>S</m>.
+        </p>
+      </statement>
+    </definition>
+    <p>
+      The surface integral above measures how <m>\vb{F}</m> flows across the surface <m>S</m> in the direction of <m>\vb{n}</m>.
+      However, we will always have two possible choices for <m>\vb{n}</m>.
+      If <m>S</m> is orientable, then we know we can specify a consistent choice of direction <m>\vb{n}</m>.
+      We just need to make sure this is done before computing the integral.
+    </p>
+    <p>
+      If <m>S:\vb{r}(u,v)</m>, we can replace <m>\vb{n}</m> with
+      <me>\frac{\vb{r}_{u}\times\vb{r}_{v}}{\norm{\vb{r}_{u}\times\vb{r}_{v}}}</me>,
+      which gives
+      <me>\iint_{S}\vb{F}\cdot d\vb{S} = \iint_{S}\vb{F}\cdot\vb{r}_{u}\times\vb{r}_{v}\,dA</me>.
+    </p>
+    <example xml:id="example-flux-Into-a-sphere">
+      <title>Flux Into a Sphere</title>
+      <statement>
+        <p>
+          Does <m>\vb{F} = x\vb{i} - z\vb{j} + y\vb{k}</m> tend to flow into the sphere <m>S: x^{2} + y^{2} + z^{2} = 4</m>?
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Stealing our work from <xref ref="example-mass-of-a-surface" text="type-global" />, we can parameterize <m>S</m> using
+          <me>\vb{r}(\varphi,\theta) = \dotprod{2\sin\varphi\cos\theta, 2\sin\varphi\sin\theta, 2\cos\varphi}</me>
+          which gives
+          <me>\vb{r}_{\varphi}\times\vb{r}_{\theta} = \dotprod{4\sin^{2}\varphi\cos\theta, 4\sin^{2}\varphi\sin\theta, 4\cos\varphi\sin\varphi}</me>.
+          However, this is <em>not</em> the normal vector we need to use here.
+          Instead, we'll multiply by a negative to get the inward normal.
+          So
+          <md>
+            <mrow>\iint_{S}\vb{F}\cdot d\vb{S} \amp = \iint_{S} \vb{F}\cdot(\vb{r}_{\varphi}\times\vb{r}_{\theta})\,dA </mrow>
+            <mrow> \amp = 8\int_{0}^{\pi}\int_{0}^{2\pi}(\sin^{3}\varphi\cos^{2}\theta + \sin^{2}\varphi\cos\varphi\sin\theta + \sin^{2}\varphi\cos\varphi\sin\theta)\,d\varphi\,d\theta</mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+    <p>
+      SUGGESTED PROBLEMS: 7, 9, 23, 29.
+    </p>
   </section>
 </chapter>
