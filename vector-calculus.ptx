@@ -1637,4 +1637,74 @@
       SUGGESTED PROBLEMS: 7, 9, 23, 29.
     </p>
   </section>
+  <section xml:id="section-stokes-theorem">
+    <title>Stokes' Theorem</title>
+    <p>
+      Suppose we want to find the circulation of a vector field <m>\vb{F}</m> on a surface <m>S</m>.
+      If <m>S</m> lies in the plane, then we can use Green's Theorem to say that
+      <me>\iint_{S}\curlt{\vb{F}}\,dA = \oint_{\partial S}\vb{F}\cdot\vb{T}\,ds</me>.
+      If <m>S</m> is a surface in <m>\RR^{3}</m>, then we must take the dot product of <m>\curlt\vb{F}</m> with the unit normal to <m>S</m>.
+      The corresponding result is known as <term>Stokes' Theorem</term>.
+    </p>
+    <theorem xml:id="theorem-stokes-theorem">
+      <title>Stokes' Theorem</title>
+      <statement>
+        <p>
+          Let <m>S</m> denote a simple, closed, orientable surface with unit normal <m>\vb{n}</m> and let <m>\vb{F}</m> denote a continuously differentiable vector field on <m>S</m>.
+          Then
+          <me>\oint_{\partial S}\vb{F}\cdot\vb{T}\,ds = \iint_{S}\curl\vb{F}\,d\vb{S}</me>,
+          where <m>\partial S</m> is oriented counterclockwise with respect to <m>\vb{n}</m>.
+        </p>
+      </statement>
+    </theorem>
+    <example xml:id="example-circulation-along-a-triangle">
+      <title>Circulation Along a Triangle</title>
+      <statement>
+        <p>
+          Let <m>C</m> denote the triangle formed by the boundary of the plane <m>x + y+ z = 1</m> in the first octant, traversed counterclockwise when viewed from below.
+          Let <m>\vb{F} = \dotprod{y^{2} + z^{2}, x^{2} + z^{2}, x^{2} + y^{2}}</m>.
+          Find <m>\oint_{C}\vb{F}\dr</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          By <xref ref="theorem-stokes-theorem" text="title" />, we can write
+          <me>\oint_{C}\vb{F}\dr = \iint_{S}\curl\vb{F}\cdot\vb{n}\,dS</me>
+          where <m>S</m> is the surface contained by <m>C</m>.
+          To find <m>\vb{n}</m> we'll parameterize <m>S</m> using
+          <me>\vb{r}(u,v) = \dotprod{u, v, 1 - u - v}, 0\leq u \leq 1 - v,  0\leq v\leq 1</me>.
+          Then
+          <me>\vb{r}_{u}\times\vb{r}_{v} = \dotprod{1, 1, 1}</me>.
+          Likewise,
+          <me>\curl\vb{F} = 2\dotprod{y - z, z - x, x - y}</me>.
+          So
+          <me>\oint_{C}\vb{F}\dr = \int_{0}^{1}\int_{0}^{1 - v}-2(0)\,du\,dv = 0</me>.
+        </p>
+      </solution>
+    </example>
+    <p>
+      An easier way to find a normal vector in the last example would be to use our knowledge from <xref ref="section-equations-of-lines-and-planes" text="type-global" />.
+      However, the following approach is more general.
+      If <m>S</m> is described by the equation <m>F(x,y,z) = 0</m>, then <m>\grad\vb{F}</m> is guaranteed to be normal to <m>S</m>.
+      This is especially useful if <m>S</m> can be described by an equation of the form <m>z = f(x,y)</m>, as above.
+      To see how, note that
+      <md>
+        <mrow>x + y + z \amp = 1 </mrow>
+        <mrow> \amp \implies F(x,y,z) = 1 - x - y - z </mrow>
+        <mrow> \amp \implies \grad\vb{F} = \dotprod{-1, -1, -1} </mrow>
+      </md>.
+    </p>
+    <example xml:id="example-circulation-along-a-paraboloid">
+      <title>Circulation Along a Paraboloid</title>
+      <statement>
+        <p>
+          Let <m>\vb{F} = \dotprod{xz, yz, xyz}</m> and let <m>S</m> denote the paraboloid <m>z = x^{2} + y^{2}</m> that lies inside the cylinder <m>x^{2} + y^{2} = 1</m>, oriented upwards.
+          Use Stokes' Theorem to set up the surface integral equal to <m>\oint_{\partial S}\vb{F}\dr</m>.
+        </p>
+      </statement>
+    </example>
+    <p>
+      SUGGESTED PROBLEMS: 1, 3, 5, 7
+    </p>
+  </section>
 </chapter>
