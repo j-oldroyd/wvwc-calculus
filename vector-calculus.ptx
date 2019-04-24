@@ -1707,4 +1707,56 @@
       SUGGESTED PROBLEMS: 1, 3, 5, 7
     </p>
   </section>
+  <section xml:id="section-the-divergence-theorem">
+    <title>The Divergence Theorem</title>
+    <p>
+      So far we've considered several different versions of the <xref ref="theorem-fundamental-theorem-of-calculus" text="title" />.
+      There is the <xref ref="theorem-fundamental-theorem-line-integrals" text="title" /> which applies to the gradient operator <m>\grad</m>, <xref ref="theorem-green-s-theorem" text="title" /> which applies to the two-dimensional curl, <xref ref="theorem-stokes-theorem" text="title" /> which applies to <m>\curl</m>, and also <xref ref="theorem-green-s-theorem-for-flux-integrals" text="title" /> which applies to the two-dimensional divergence.
+      The only remaining generalization is the <term>divergence theorem</term>.
+    </p>
+    <theorem xml:id="theorem-divergence-theorem">
+      <title>Divergence Theorem</title>
+      <statement>
+        <p>
+          Let <m>E</m> be a simple solid region and let <m>S</m> be the boundary surface of <m>E</m> oriented outwards.
+          Let <m>\vb{F}</m> denote a continuously differentiable vector field on <m>E</m>.
+          Then
+          <me>\iint_{S}\vb{F}\cdot d\vb{S} = \iiint_{E}\div\vb{F}\,dV</me>.
+        </p>
+      </statement>
+    </theorem>
+    <example xml:id="example-flux-across-a-spherical-cap">
+      <title>Flux across a spherical cap</title>
+      <statement>
+        <p>
+          Let <m>S</m> denote the top half of the sphere of radius <m>5</m> centered at the origin.
+          Let <m>\vb{F} = \dotprod{x^{3} - y^{3}, y^{3} - z^{3}, z^{3} - x^{3}}</m>.
+          Determine if <m>\vb{F}</m> flows out of or into <m>S</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We need to calculate the flux integral <m>\iint_{S}\vb{F}\cdot d\vb{S}</m>, which is made easier using <xref ref="theorem-divergence-theorem" text="type-global" />.
+          If we let <m>E</m> denote the interior of this region, we get
+          <md>
+            <mrow>\iint_{S}\vb{F}\cdot d\vb{S} \amp \iiint_{E}\div\vb{F}\,dV </mrow>
+            <mrow> \amp = \iiint_{E}3(x^{2} + y^{2} + z^{2})\,dV </mrow>
+            <mrow> \amp = \int_{0}^{2\pi}\int_{0}^{\frac{\pi}{2}}\int_{0}^{5}3\rho^{4}\sin\varphi\,d\rho\,d\varphi\,d\theta </mrow>
+          </md>
+        </p>
+      </solution>
+    </example>
+    <example xml:id="example-flux-across-a-cube">
+      <title>Flux across a cube</title>
+      <statement>
+        <p>
+          Let <m>S</m> denote the surface of the unit cube with vertices at <m>(0,0,0)</m> and <m>(1,1,1)</m> and let <m>\vb{F} = \dotprod{xy, y^{2}z, z^{3}}</m>.
+          Find <m>\iint_{S}\vb{F}\cdot\vb{n}\,dS</m> where <m>\vb{n}</m> is the <em>inward</em> unit normal to <m>S</m>.
+        </p>
+      </statement>
+    </example>
+    <p>
+      SUGGESTED PROBLEMS: 1, 3, 5, 19.
+    </p>
+  </section>
 </chapter>
