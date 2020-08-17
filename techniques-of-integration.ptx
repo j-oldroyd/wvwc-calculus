@@ -28,7 +28,7 @@
         <p>
             Recall that the substitution method for solving integrals from <xref ref="section-substitution" text="type-global" /> is derived from the chain rule.
             In fact, by <xref ref="theorem-fundamental-theorem-of-calculus" text="type-global" /> every derivative rule available to us also provides a corresponding integration rule.
-            So perhaps the integration rule corresponding to the product rule can help us to integrate products. 
+            So perhaps the integration rule corresponding to the product rule can help us to integrate products.
             We call this method <em>integration by parts</em>.
         </p>
         <theorem xml:id="theorem-integration-by-parts">
@@ -896,6 +896,38 @@
                 </input>
             </sage>
         </subsection>
+        <example xml:id="example-a-probability-distribution">
+          <title>A Probability Distribution</title>
+          <statement>
+            <p>
+              In probability, a <term>probability distribution</term> is a function <m>f(x)</m> satisfying
+              <me>\int_{-\infty}^{\infty}f(x)\,dx = 1</me>.
+              Is <m>f(x) = \int_{-\infty}^{\infty}\frac{1}{1 + x^{2}}\,dx</m> a probability distribution?
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We have
+              <md>
+                <mrow>\int_{-\infty}^{\infty}\frac{1}{1 + x^{2}}\,dx \amp = \tan^{-1}x\big]_{-\infty}^{\infty} </mrow>
+                <mrow> \amp = \lim_{b\to\infty}\tan^{-1}x\big]_{0}^{b} + \lim_{c\to-\infty}\tan^{-1}x\big]_{c}^{0} </mrow>
+                <mrow> \amp = \pi </mrow>
+            </md>.
+            So this isn't a probability distribution.
+            </p>
+          </solution>
+        </example>
+        <example xml:id="example-another-laplace-transform">
+          <title>Another Laplace Transform</title>
+          <statement>
+            <p>
+              The <term>Laplace transform</term> of a function <m>f(t)</m> is defined to be
+              <me>\int_{0}^{\infty}f(t)e^{-st}\,st</me>,
+              assuming <m>s</m> is chosen so that the integral converges.
+              Find the Laplace transform of <m>f(t) = t</m>.
+            </p>
+          </statement>
+        </example>
         <subsection xml:id="subsection-improper-integrals-with-discontinuous-integrands">
             <title>Improper Integrals with Discontinuous Integrands</title>
             <p>
