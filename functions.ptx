@@ -153,4 +153,135 @@
             </sage>
         </subsection>
     </section>
+    <section xml:id="section-trigonometric-functions">
+        <title>Trigonometric Functions</title>
+        <subsection xml:id="subsection-the-unit-circle-approach">
+            <title>The Unit Circle Approach</title>
+            <p>
+                The definitions of <m>\sin \theta</m> and <m>\cos \theta</m> in terms of the unit circle are simple: if <m>P</m> is the point <m>\theta</m> units along the unit circle (measured from <m>(1,0)</m>, counterclockwise) then <m>\cos\theta</m> is the <m>x</m>-coordinate of <m>P</m> and <m>\sin\theta</m> is the <m>y</m>-coordinate of <m>P</m>.
+                From geometry, we have the following <q>nice</q> values for <m>\sin</m> and <m>\cos</m>:
+                <table xml:id="table-basic-trig-values">
+                    <tabular halign="center" top="major">
+                        <row top="major" bottom="minor">
+                            <cell>
+                                <m>\theta</m>
+                            </cell>
+                            <cell>
+                                <m>\sin\theta</m>
+                            </cell>
+                            <cell>
+                                <m>\cos\theta</m>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <m>0</m>
+                            </cell>
+                            <cell>
+                                <m>0</m>
+                            </cell>
+                            <cell>
+                                <m>1</m>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <m>\frac{\pi}{6}</m>
+                            </cell>
+                            <cell>
+                                <m>\frac{1}{2}</m>
+                            </cell>
+                            <cell>
+                                <m>\frac{\sqrt{3}}{2}</m>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <m>\frac{\pi}{4}</m>
+                            </cell>
+                            <cell>
+                                <m>\frac{\sqrt{2}}{2}</m>
+                            </cell>
+                            <cell>
+                                <m>\frac{\sqrt{2}}{2}</m>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <m>\frac{\pi}{3}</m>
+                            </cell>
+                            <cell>
+                                <m>\frac{\sqrt{3}}{2}</m>
+                            </cell>
+                            <cell>
+                                <m>\frac{1}{2}</m>
+                            </cell>
+                        </row>
+                        <row>
+                            <cell>
+                                <m>\frac{\pi}{2}</m>
+                            </cell>
+                            <cell>
+                                <m>1</m>
+                            </cell>
+                            <cell>
+                                <m>0</m>
+                            </cell>
+                        </row>
+                    </tabular>
+                    <caption>Values for <m>\sin</m> and <m>\cos</m>.</caption>
+                </table>
+            </p>
+            <p>
+                The unit circle viewpoint clearly illustrates one of the most important identities involving <m>\sin</m> and <m>\cos</m>.
+            </p>
+            <theorem xml:id="theorem-the-pythagorean-identity">
+                <idx>Pythagorean Identity</idx>
+                <title>The Pythagorean Identity</title>
+                <statement>
+                    <p>
+                        Let <m>\theta</m> be a real number.
+                        Then
+                        <me>\sin^{2}\theta + \cos^{2}\theta = 1</me>.
+                    </p>
+                </statement>
+            </theorem>
+            <p>
+                From sine and cosine, we can also define four more basic trigonometric functions: secant, cosecant, tangent and cotangent.
+                These are defined as follows:
+                <md>
+                    <mrow>\sec\theta \amp= \frac{1}{\cos\theta}</mrow>
+                    <mrow>\csc\theta \amp= \frac{1}{\sin\theta}</mrow>
+                    <mrow>\tan\theta \amp= \frac{\sin\theta}{\cos\theta}</mrow>
+                    <mrow>\cot\theta \amp= \frac{\cos\theta}{\sin\theta}</mrow>
+                </md>.
+            </p>
+            <example xml:id="example-finding-sine-from-cosine">
+              <title>Finding Sine from Cosine</title>
+              <statement>
+                <p>
+                  Given that <m>\sin\theta = 0.4</m> and <m>\theta</m> has a terminal point in the third quadrant, find <m>\cos\theta</m>.
+                </p>
+              </statement>
+              <solution>
+                <p>
+                  We don't need to know <m>\theta</m> here.
+                  We can just use <xref ref="theorem-the-pythagorean-identity" text="type-global" /> as follows:
+                  <me>\cos\theta = \pm\sqrt{1 - \sin^{2}\theta} = \pm\sqrt{.84}</me>.
+                  Since the terminal point of <m>\theta</m> is assumed to be in the third quadrant, we know that <m>\cos\theta &lt; 0</m>.
+                  Hence <m>\cos\theta = -\sqrt{.84}</m>.
+                </p>
+              </solution>
+            </example>
+        </subsection>
+        <subsection xml:id="subsection-the-triangle-approach">
+            <title>The Triangle Approach</title>
+            <p>
+                An equally useful viewpoint for trigonometric functions is in terms of right triangles.
+                For a right triangle with opposite side subtended by an angle <m>\theta</m>, we have
+                <me>\cos\theta = \frac{\text{adj}}{\text{hyp}}\text{ and }\sin\theta = \frac{\text{opp}}{\text{hyp}}</me>.
+                This viewpoint is equivalent to the unit circle approach, but in some situations it's easier to work with trigonometric functions using right triangles instead.
+            </p>
+        </subsection>
+    </section>
 </chapter>
