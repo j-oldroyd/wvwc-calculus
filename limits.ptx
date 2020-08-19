@@ -21,6 +21,48 @@
             The language we will need to develop is that of the <em>limit of a function</em>.
         </p>
     </introduction>
+    <section xml:id="section-the-tangent-line-problem-and-fluxions">
+        <title>The Tangent Line Problem and Fluxions</title>
+        <introduction>
+            <p>
+                It's straightforward to find the slope of a line: choose two distinct points <m>(x_{1}, y_{1})</m> and <m>(x_{2}, y_{2})</m> and the compute the rise over run:
+                <me>m = \frac{\Delta y}{\Delta x} = \frac{y_{2} - y_{1}}{x_{2} - x_{1}}</me>.
+                If the line corresponds to some changing physical quantity, then the slope gives us the rate of change of that quantity.
+            </p>
+            <p>
+                But what can we do if we have a nonlinear function such as <m>f(x) = x^{2}</m>?
+                If we graph it, we can say very easily where the slope <q>should be</q> positive or negative, but assigning a specific value to the slope of this parabola at any given point isn't straightforward.
+                However, knowing the rate of change of such a function is still useful information to have.
+                This is the <term>tangent line problem</term>.
+                One approach, introduced by Newton, is the <em>method of fluxions</em>.
+            </p>
+        </introduction>
+        <subsection xml:id="subsection-method-of-fluxions">
+            <title>Method of Fluxions</title>
+            <p>
+                Let's consider <m>f(x) = x^2</m> again and note that <m>(2, 4)</m> is a point on the graph of <m>y = x^{2}</m>.
+                We want to try to find the slope of the parabola at this point.
+                Newton's approach was to consider the rise-over-run on the graph of <m>y = x^{2}</m> between <m>(2,4)</m> and a point <m>(x_{0}, y_{0})</m> on the graph that was <q>infinitely close</q> to <m>(2,4)</m>.
+                Newton handled this by introducing an <em>infinitesimal</em> quantity <m>o</m> and writing
+                <me>x_{0} = 2 + o\quad\text{and}y_{0} = f(2 + o)</me>.
+                The corresponding rise-over-run is then
+                <me>\frac{\Delta y}{\Delta x} = \frac{f(2 + o) - f(2)}{(2+o) - 2} = \frac{(2 +o)^2 - 4}{o}</me>,
+                which simplifies further to
+                <me>\frac{\Delta y}{\Delta x} = \frac{4 + 4o + o^{2} - 4}{o} = 4 + o</me>.
+                At this point, Newton argued that <m>o</m>, being infinitesimal, contributed nothing to this quantity and simply ignored it.
+                This leaves a value of <m>4</m> for the slope of <m>y = x^{2}</m> at <m>(2,4)</m>.
+                This answer is hand-wavy but does agree with our graphical intuition.
+            </p>
+            <p>
+                However, Newton's method of fluxions has some serious drawbacks.
+                The primary issue raised with this approach is that, in ignoring <m>o</m> at the final step of the above calculation, Newton is essentially dividing by <m>0</m>.
+                Mathematically, this method argument isn't rigorous.
+                Newton later addressed this logical gap by treating <m>o</m> as a quantity that approached <m>0</m>, but was not actually infinitesimal.
+                This approach is more mathematically sound as it treats <m>o</m> as a typical nonzero real number instead of some mysterious infinitesimal.
+                Although it requires a bit more justification, this viewpoint leads to the concept of the <em>limit</em> which is at the foundation of modern calculus.
+            </p>
+        </subsection>
+    </section>
     <section xml:id="section-the-limit-of-a-function">
         <title>The Limit of a Function</title>
         <subsection xml:id="subsection-motivating-limits">
@@ -43,7 +85,7 @@
                         real f(real x) {return x^2;}
 
                         draw(graph(f,-2,2), deepblue);
-                        
+
                         dot((-2,f(-2)), red);
                         draw((-2,0)--(-2,f(-2)), red+dashed);
                         dot((-1,f(-1)), red);
@@ -109,6 +151,7 @@
                     <p>
                         We can even let <m>x</m> approach <m>\pi</m> from the other direction as well (i.e. "from the right") and <m>f(x)</m> will still approach <m>0</m> as <m>x</m> gets closer and closer to <m>\pi</m>.
                         So it looks like the limit should be <m>0</m>.
+                        It's important to note here that our estimate for the limit makes no use whatsoever of the value of <m>f(x)</m> at <m>x = \pi</m>!
                     </p>
                 </solution>
             </example>
@@ -213,6 +256,27 @@
                     </p>
                 </solution>
             </example>
+        </subsection>
+        <subsection xml:id="subsection-the--varepsilon--m-delta--definition-of-a-limit">
+            <title>The <m>(\varepsilon, \delta)</m>-Definition of a Limit</title>
+            <p>
+                For completeness, we introduce the formal mathematical definition of a functional limit.
+                This definition was formulated about <m>150</m> years after Newton invented calculus.
+            </p>
+            <definition xml:id="definition-the--varepsilon-delta-m-definition-of-a-limit">
+                <title>The <m>(\varepsilon, \delta)</m>-Definition of a Limit</title>
+                <statement>
+                    <p>
+                        Let <m>f(x)</m> be a function defined on a set <m>D</m> and let <m>c</m> be a <em>limit point</em> of <m>D</m>.
+                        <aside>
+                            <p>
+                                This means that there are points in <m>D</m> distinct from <m>c</m> that get arbitrarily close to <m>c</m>.
+                            </p>
+                        </aside>
+                        Then <m>\lim_{x\to c}f(x) = L</m> if and only if for every <m>\varepsilon gt; 0</m> there exists some <m>\delta &gt; 0</m> such that <m>\abs{f(x) - L} &lt; \varepsilon</m> whenever <m>\abs{x - c} &lt; \delta</m>.
+                    </p>
+                </statement>
+            </definition>
         </subsection>
     </section>
     <section xml:id="section-computing-limits">
