@@ -736,6 +736,24 @@
                     </p>
                 </statement>
             </theorem>
+            <example xml:id="example-differentiating-a-rational-function">
+              <title>Differentiating a Rational Function</title>
+              <statement>
+                <p>
+                  Is
+                  <me>f(x) = \frac{3x^{2} - 5x^{3} + \sin x}{x + \cos x + x^{3}}</me>
+                </p>
+                increasing or decreasing at <m>x = 0</m>?
+              </statement>
+              <solution>
+                <p>
+                  We need to find <m>f'(0)</m>.
+                  We have
+                  <me>f'(x) = \frac{(x + \cos x + x^{3})(6x - 15x^{2} + \cos x) - (3x^{2} - 5x^{3} + \sin x)(1 - \sin x + 3x^{2})}{(x + \cos x + x^{3})^{2}}</me>.
+                  So now we can find <m>f'(0)</m>.
+                </p>
+              </solution>
+            </example>
             <example xml:id="example-derivative-of-tangent">
                 <title>Derivative of tangent</title>
                 <statement>
