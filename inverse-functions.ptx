@@ -120,180 +120,6 @@
     </section>
     <section xml:id="section-logarithms">
         <title>Logarithms</title>
-        <subsection xml:id="subsection-inverse-function-review">
-            <title>Inverse Function Review</title>
-            <p>
-                Suppose we want to solve the equation <m>y = f(x)</m> for <m>x</m>.
-                Then we can only do so unambiguously if <m>f</m> is an <term>invertible function</term>.
-            </p>
-            <definition xml:id="definition-invertible-functions">
-                <title>Invertible Functions</title>
-                <idx><h>functions</h><h>invertible functions</h></idx>
-                <statement>
-                    <p>
-                        A function <m>f(x)</m> is invertible if and only if it is a one-to-one function.
-                        That is, <m>f(x_{1}) = f(x_{2})</m> forces <m>x_{1} = x_{2}</m>.
-                    </p>
-                </statement>
-            </definition>
-            <p>
-                Since a function is one-to-one if and only if its graph passes the horizontal line test, the horizontal line test also gives us a useful way to check if a function is invertible.
-            </p>
-            <example xml:id="example-exponential-inverse">
-                <p>
-                    Let <m>f(x) = e^{x}</m>, the natural exponential function introduced in <xref ref="section-exponential-functions" text="type-global" />.
-                    Then <m>f(x)</m> is an invertible function, since its graph passes the horizontal line test.
-                </p>
-            </example>
-            <p>
-                If a function <m>f</m> is invertible, then there exists an <term>inverse function</term> <m>f^{1}</m> satisfying the following equations:
-                <md>
-                    <mrow>f(f^{-1}(y)) &amp; = y </mrow>
-                    <mrow>f^{-1}(f(x)) &amp; = x. </mrow>
-                </md>
-                Essentially, <m>f^{-1}</m> is the rule that undoes the transformation that <m>f</m> applies to <m>x</m>.
-                The domain of <m>f^{-1}</m> is the range of <m>f</m> and the range of <m>f^{-1}</m> is the domain of <m>f</m>.
-                Note that <m>f^{-1}\neq\frac{1}{f}</m>!.
-            </p>
-            <p>
-                The graph of an inverse function is related to the graph of the original function in a very nice way.
-                To get the graph of <m>f^{-1}</m> from <m>f</m>, just reflect the graph of <m>f</m> across the line <m>y=x</m>.
-            </p>
-            <example xml:id="example-graphing-the-inverse-of-the-natural-exponential">
-                <title>Graphing the inverse of the natural exponential</title>
-                <statement>
-                    <p>
-                        Let <m>f(x) = e^{x}</m>.
-                        Graph <m>f^{-1}(x)</m>.
-                    </p>
-                </statement>
-                <solution>
-                    <p>
-                        If we graph <m>e^{x}</m> and then rotate the graph across the line <m>y=x</m>, we get
-                    </p>
-                    <figure xml:id="figure-exponential">
-                        <image xml:id="image-exponential" width="50%">
-                            <latex-image><![CDATA[
-                                \begin{tikzpicture}
-                                    \begin{axis}[mystyle,
-                                        xmin=-1,xmax=3.5,
-                                        ymin=-1,ymax=5.5,
-                                        legend style={at={(axis cs:3,4)}, anchor=west}]
-                                        \addplot[smooth, blue, thick] {exp(x)};
-                                        \addlegendentry{$f(x) = e^{x}$};
-                                        \addplot[smooth, red, thick, domain = 0.1:3.5] {ln(x)};
-                                        \addlegendentry{$f^{-1}(x)$};
-                                        \addplot[dashed, thick] {x};
-                                        \addlegendentry{$y=x$};
-                                    \end{axis}
-                                \end{tikzpicture}]]>
-                            </latex-image>
-                        </image>
-                        <caption>The inverse of <m>e^{x}</m>.</caption>
-                    </figure>
-                </solution>
-            </example>
-        </subsection>
-        <subsection xml:id="subsection-calculus-with-inverse-functions">
-            <title>Calculus with Inverse Functions</title>
-            <p>
-                There are two important things to notice about the graph of the inverse function in <xref ref="example-exponential-inverse" text="type-global" />: it's continuous and differentiable.
-                This is because the same was true of the original graph, and if we think about it this should be true in general as well since graphing the inverse doesn't add any new gaps or cusps to the graph.
-            </p>
-            <theorem xml:id="theorem-continuity-and-differentiability-of-inverses">
-                <title>Continuity and Differentiability of Inverses</title>
-                <statement>
-                    <p>
-                        Let <m>f(x)</m> be a continuous (respectively, differentiable) function.
-                        Suppose that <m>f(x)</m> is invertible, and has inverse <m>f^{-1}(x)</m>.
-                        Then <m>f^{-1}(x)</m> is continuous (respectively, differentiable).
-                    </p>
-                </statement>
-            </theorem>
-            <example xml:id="example-finding-the-derivative-of-an-inverse-function">
-                <title>Finding the derivative of an inverse function</title>
-                <statement>
-                    <p>
-                        Let <m>f(x) = \sqrt{x-1}</m> and note that <m>f</m> is invertible.
-                        Find the derivative of <m>f^{-1}</m>.
-                    </p>
-                </statement>
-                <solution>
-                    <p>
-                        One way to do this is just start by finding <m>f^{-1}</m>.
-                        So we'll set <m>y = \sqrt{x-1}</m>, solve for <m>x</m> and then switch <m>x</m> and <m>y</m>.
-                        If we do this, we get
-                        <me>y = x^{2} + 1</me>
-                        so <m>f^{-1}(x) = x^{2} + 1</m> (and note that the domain of <m>f^{-1}</m> is <m>[0,\infty)</m> since this is the range of <m>f</m>!).
-                        Hence
-                        <me>\dv{}{x}f^{-1}(x) = 2x.</me>
-                    </p>
-                </solution>
-            </example>
-            <p>
-                The method used in <xref ref="example-finding-the-derivative-of-an-inverse-function" text="type-global" /> will certainly work in simple cases.
-                But what do we do if we can't (or don't want to) find an explicit formula for the inverse function?
-                The following formula will help us to do this.
-            </p>
-            <theorem xml:id="theorem-derivative-of-an-inverse-function">
-                <title>Derivative of an Inverse Function</title>
-                <idx><h>functions</h><h>inverse functions</h><h>derivatives</h></idx>
-                <statement>
-                    <p>
-                        Let <m>f(x)</m> be a differentiable function with inverse <m>f^{-1}(x)</m>.
-                        Assume that <m>f^{-1}</m> is itself differentiable.
-                        Then
-                        <me>(f^{-1})'(x) = \frac{1}{f'(f^{-1}(x))}.</me>
-                    </p>
-                </statement>
-                <proof>
-                    <p>
-                        First, let <m>y = f^{-1}(x)</m>, so that we need to find <m>y'</m>.
-                        Then we can say that <m>f(y) = x</m>.
-                        Now differentiate this equation implicitly to get
-                        <me>f'(y)y' = 1</me>
-                        or just
-                        <me>y' = \frac{1}{f'(y)} = \frac{1}{f'(f^{-1}(x))}.</me>
-                    </p>
-                </proof>
-            </theorem>
-            <example xml:id="example-exponential-inverse-revisited">
-                <title>Exponential inverse revisited</title>
-                <statement>
-                    <p>
-                        Using the fact that the derivative of <m>e^{x}</m> is itself, find the derivative of its inverse.
-                    </p>
-                </statement>
-                <solution>
-                    <p>
-                        Let <m>f(x) = e^{x}</m>.
-                        Then by <xref ref="theorem-derivative-of-an-inverse-function" text="type-global" /> we have
-                        <me>(f^{-1})'(x) = \frac{1}{f'(f^{-1}(x))} = \frac{1}{f(f^{-1}(x))} = \frac{1}{x}.</me>
-                        So the derivative of the inverse of <m>e^{x}</m> is <m>\frac{1}{x}</m>.
-                    </p>
-                </solution>
-            </example>
-            <example xml:id="example-derivative-at-a-point">
-                <title>Derivative at a point</title>
-                <statement>
-                    <p>
-                        Let <m>f(x) = x^{3} + 3\sin x + 2\cos x</m>.
-                        Find <m>(f^{-1})'(2)</m>
-                    </p>
-                </statement>
-                <solution>
-                    <p>
-                        By <xref ref="theorem-derivative-of-an-inverse-function" text="type-global" />, we know that
-                        <me>(f^{-1})'(2) = \frac{1}{f'(f^{-1}(2))}.</me>
-                        By inspection, <m>f(0) = 2</m> which means <m>f^{-1}(2) = 0</m>.
-                        Since
-                        <me>f'(x) = 3x^{2} + 3\cos x - 2\sin x,</me>
-                        this gives
-                        <me>(f^{-1})'(2) = \frac{1}{f'(f^{-1}(2))} = \frac{1}{f'(0)} = \frac{1}{3}.</me>
-                    </p>
-                </solution>
-            </example>
-        </subsection>
         <subsection xml:id="subsection-logarithms">
             <title>Logarithms</title>
             <p>
@@ -628,6 +454,183 @@
                         <me>25 = 50e^{28k}\Rightarrow \ln\frac{1}{2} = 28k\Rightarrow k = -\frac{\ln2}{28}.</me>
                         Hence
                         <me>m(t) = 50e^{-\frac{\ln2}{28}t} = 50\cdot2^{-\frac{t}{28}}.</me>
+                    </p>
+                </solution>
+            </example>
+        </subsection>
+    </section>
+    <section xml:id="section-inverse-functions">
+        <title>Inverse Functions</title>
+        <subsection xml:id="subsection-inverse-function-review">
+            <title>Inverse Function Review</title>
+            <p>
+                Suppose we want to solve the equation <m>y = f(x)</m> for <m>x</m>.
+                Then we can only do so unambiguously if <m>f</m> is an <term>invertible function</term>.
+            </p>
+            <definition xml:id="definition-invertible-functions">
+                <title>Invertible Functions</title>
+                <idx><h>functions</h><h>invertible functions</h></idx>
+                <statement>
+                    <p>
+                        A function <m>f(x)</m> is invertible if and only if it is a one-to-one function.
+                        That is, <m>f(x_{1}) = f(x_{2})</m> forces <m>x_{1} = x_{2}</m>.
+                    </p>
+                </statement>
+            </definition>
+            <p>
+                Since a function is one-to-one if and only if its graph passes the horizontal line test, the horizontal line test also gives us a useful way to check if a function is invertible.
+            </p>
+            <example xml:id="example-exponential-inverse">
+                <p>
+                    Let <m>f(x) = e^{x}</m>, the natural exponential function introduced in <xref ref="section-exponential-functions" text="type-global" />.
+                    Then <m>f(x)</m> is an invertible function, since its graph passes the horizontal line test.
+                </p>
+            </example>
+            <p>
+                If a function <m>f</m> is invertible, then there exists an <term>inverse function</term> <m>f^{1}</m> satisfying the following equations:
+                <md>
+                    <mrow>f(f^{-1}(y)) &amp; = y </mrow>
+                    <mrow>f^{-1}(f(x)) &amp; = x. </mrow>
+                </md>
+                Essentially, <m>f^{-1}</m> is the rule that undoes the transformation that <m>f</m> applies to <m>x</m>.
+                The domain of <m>f^{-1}</m> is the range of <m>f</m> and the range of <m>f^{-1}</m> is the domain of <m>f</m>.
+                Note that <m>f^{-1}\neq\frac{1}{f}</m>!.
+            </p>
+            <p>
+                The graph of an inverse function is related to the graph of the original function in a very nice way.
+                To get the graph of <m>f^{-1}</m> from <m>f</m>, just reflect the graph of <m>f</m> across the line <m>y=x</m>.
+            </p>
+            <example xml:id="example-graphing-the-inverse-of-the-natural-exponential">
+                <title>Graphing the inverse of the natural exponential</title>
+                <statement>
+                    <p>
+                        Let <m>f(x) = e^{x}</m>.
+                        Graph <m>f^{-1}(x)</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        If we graph <m>e^{x}</m> and then rotate the graph across the line <m>y=x</m>, we get
+                    </p>
+                    <figure xml:id="figure-exponential">
+                        <image xml:id="image-exponential" width="50%">
+                            <latex-image><![CDATA[
+                                \begin{tikzpicture}
+                                    \begin{axis}[mystyle,
+                                        xmin=-1,xmax=3.5,
+                                        ymin=-1,ymax=5.5,
+                                        legend style={at={(axis cs:3,4)}, anchor=west}]
+                                        \addplot[smooth, blue, thick] {exp(x)};
+                                        \addlegendentry{$f(x) = e^{x}$};
+                                        \addplot[smooth, red, thick, domain = 0.1:3.5] {ln(x)};
+                                        \addlegendentry{$f^{-1}(x)$};
+                                        \addplot[dashed, thick] {x};
+                                        \addlegendentry{$y=x$};
+                                    \end{axis}
+                                \end{tikzpicture}]]>
+                            </latex-image>
+                        </image>
+                        <caption>The inverse of <m>e^{x}</m>.</caption>
+                    </figure>
+                </solution>
+            </example>
+        </subsection>
+        <subsection xml:id="subsection-calculus-with-inverse-functions">
+            <title>Calculus with Inverse Functions</title>
+            <p>
+                There are two important things to notice about the graph of the inverse function in <xref ref="example-exponential-inverse" text="type-global" />: it's continuous and differentiable.
+                This is because the same was true of the original graph, and if we think about it this should be true in general as well since graphing the inverse doesn't add any new gaps or cusps to the graph.
+            </p>
+            <theorem xml:id="theorem-continuity-and-differentiability-of-inverses">
+                <title>Continuity and Differentiability of Inverses</title>
+                <statement>
+                    <p>
+                        Let <m>f(x)</m> be a continuous (respectively, differentiable) function.
+                        Suppose that <m>f(x)</m> is invertible, and has inverse <m>f^{-1}(x)</m>.
+                        Then <m>f^{-1}(x)</m> is continuous (respectively, differentiable).
+                    </p>
+                </statement>
+            </theorem>
+            <example xml:id="example-finding-the-derivative-of-an-inverse-function">
+                <title>Finding the derivative of an inverse function</title>
+                <statement>
+                    <p>
+                        Let <m>f(x) = \sqrt{x-1}</m> and note that <m>f</m> is invertible.
+                        Find the derivative of <m>f^{-1}</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        One way to do this is just start by finding <m>f^{-1}</m>.
+                        So we'll set <m>y = \sqrt{x-1}</m>, solve for <m>x</m> and then switch <m>x</m> and <m>y</m>.
+                        If we do this, we get
+                        <me>y = x^{2} + 1</me>
+                        so <m>f^{-1}(x) = x^{2} + 1</m> (and note that the domain of <m>f^{-1}</m> is <m>[0,\infty)</m> since this is the range of <m>f</m>!).
+                        Hence
+                        <me>\dv{}{x}f^{-1}(x) = 2x.</me>
+                    </p>
+                </solution>
+            </example>
+            <p>
+                The method used in <xref ref="example-finding-the-derivative-of-an-inverse-function" text="type-global" /> will certainly work in simple cases.
+                But what do we do if we can't (or don't want to) find an explicit formula for the inverse function?
+                The following formula will help us to do this.
+            </p>
+            <theorem xml:id="theorem-derivative-of-an-inverse-function">
+                <title>Derivative of an Inverse Function</title>
+                <idx><h>functions</h><h>inverse functions</h><h>derivatives</h></idx>
+                <statement>
+                    <p>
+                        Let <m>f(x)</m> be a differentiable function with inverse <m>f^{-1}(x)</m>.
+                        Assume that <m>f^{-1}</m> is itself differentiable.
+                        Then
+                        <me>(f^{-1})'(x) = \frac{1}{f'(f^{-1}(x))}.</me>
+                    </p>
+                </statement>
+                <proof>
+                    <p>
+                        First, let <m>y = f^{-1}(x)</m>, so that we need to find <m>y'</m>.
+                        Then we can say that <m>f(y) = x</m>.
+                        Now differentiate this equation implicitly to get
+                        <me>f'(y)y' = 1</me>
+                        or just
+                        <me>y' = \frac{1}{f'(y)} = \frac{1}{f'(f^{-1}(x))}.</me>
+                    </p>
+                </proof>
+            </theorem>
+            <example xml:id="example-exponential-inverse-revisited">
+                <title>Exponential inverse revisited</title>
+                <statement>
+                    <p>
+                        Using the fact that the derivative of <m>e^{x}</m> is itself, find the derivative of its inverse.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Let <m>f(x) = e^{x}</m>.
+                        Then by <xref ref="theorem-derivative-of-an-inverse-function" text="type-global" /> we have
+                        <me>(f^{-1})'(x) = \frac{1}{f'(f^{-1}(x))} = \frac{1}{f(f^{-1}(x))} = \frac{1}{x}.</me>
+                        So the derivative of the inverse of <m>e^{x}</m> is <m>\frac{1}{x}</m>.
+                    </p>
+                </solution>
+            </example>
+            <example xml:id="example-derivative-at-a-point">
+                <title>Derivative at a point</title>
+                <statement>
+                    <p>
+                        Let <m>f(x) = x^{3} + 3\sin x + 2\cos x</m>.
+                        Find <m>(f^{-1})'(2)</m>
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        By <xref ref="theorem-derivative-of-an-inverse-function" text="type-global" />, we know that
+                        <me>(f^{-1})'(2) = \frac{1}{f'(f^{-1}(2))}.</me>
+                        By inspection, <m>f(0) = 2</m> which means <m>f^{-1}(2) = 0</m>.
+                        Since
+                        <me>f'(x) = 3x^{2} + 3\cos x - 2\sin x,</me>
+                        this gives
+                        <me>(f^{-1})'(2) = \frac{1}{f'(f^{-1}(2))} = \frac{1}{f'(0)} = \frac{1}{3}.</me>
                     </p>
                 </solution>
             </example>

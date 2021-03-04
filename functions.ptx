@@ -284,4 +284,24 @@
             </p>
         </subsection>
     </section>
+    <section xml:id="section-inverse-functions">
+        <title>Inverse Functions</title>
+        <p>
+            A function <m>f(x)</m> is a relation that assigns each <m>x</m> in its domain with an unambiguous <m>y</m> in its range.
+            However, it may be the case that several <m>x</m> map to the same <m>y</m>.
+            Graphically, these are functions that fail the <em>horizontal line test</em>.
+            If a function passes this test then we say that it is <em>one-to-one</em>.
+            Such functions have several nice properties.
+        </p>
+        <definition xml:id="definition-invertible-functions">
+            <title>Invertible Functions</title>
+            <statement>
+                <p>
+                    Given a one-to-one function <m>f:X\to Y</m> (where <m>Y</m> is the range), the <term>inverse function</term> is the unique function <m>f^{-1}:Y\to X</m> such that <m>f^{-1}(y) = x</m> if and only if <m>f(x) = y</m>.
+                    Equivalently,
+                    <me>f^{-1}(f(x)) = x \quad\text{for all}x\in X\quad\text{and}f(f^{-1}(y)) = y\quad\text{for all }y\in Y</me>.
+                </p>
+            </statement>
+        </definition>
+    </section>
 </chapter>

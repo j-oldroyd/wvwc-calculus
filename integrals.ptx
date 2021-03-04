@@ -28,7 +28,7 @@
             For example, using rectangles.
         </p>
         <p>
-            A simple way to divide the graph of <m>y=x^{3}</m> using rectangles is to pick several equally spaced points in the interval <m>[0,1]</m>, say 
+            A simple way to divide the graph of <m>y=x^{3}</m> using rectangles is to pick several equally spaced points in the interval <m>[0,1]</m>, say
             <me>x_{0} = 1, x_{1} = \frac{1}{3}, x_{2} = \frac{2}{3}, \quad\text{and}\quad x_{3} = 1,</me>
             and then draw rectangles using these points to determine the base of each rectangle and the height of the graph above the points to determine the height of each rectangle.
             In particular, we will have three rectangles; the first with base <m>[0,\frac{1}{3}]</m>, the second with base <m>[\frac{1}{3},\frac{2}{3}]</m> and the third with base <m>[\frac{2}{3},1]</m>.
@@ -39,13 +39,13 @@
         <p>
             Now, if we add up the areas of these rectangles we get an approximation for the area under the graph.
             Call these areas <m>A_{1},A_{2},A_{3}</m>.
-            So the area under the graph of <m>y = x^{3}</m> from <m>x=0</m> to <m>x=1</m> is about 
+            So the area under the graph of <m>y = x^{3}</m> from <m>x=0</m> to <m>x=1</m> is about
             <me>A_{1} + A_{2} + A_{3} = \frac{4}{9}.</me>
         </p>
         <p>
             There's nothing stopping us from going further here.
             For example, we pick <m>n</m> rectangles, each with base length <m>\frac{1}{n}</m> and heights determined by right endpoints as above, then the area <m>R_{n}</m> of all of the rectangles will be an approximation (in fact, an overestimate) of the area of <m>y = x^{3}</m>.
-            The bases of these rectangles are given by 
+            The bases of these rectangles are given by
             <me>[0,\frac{1}{n}], [\frac{1}{n},\frac{2}{n}],\ldots,[\frac{n-1}{n},\frac{n}{n}].</me>
             So the areas of these rectangles are
             <me>\frac{1}{n}\left(\frac{1}{n}\right)^{3}, \frac{1}{n}\left(\frac{2}{n}\right)^{3},\ldots,\frac{1}{n}\left(\frac{n-1}{n}\right)^{3}, \frac{1}{n}\left(\frac{n}{n}\right)^{3}.</me>
@@ -59,7 +59,7 @@
         </p>
         <p>
             Actually finding this limit requires some trickery.
-            It's not at all obvious, but we can write 
+            It's not at all obvious, but we can write
             <me>1^{3} + 2^{3} + \cdots + n^{3} = \left[\frac{n(n+1)}{2}\right]^{2}.</me>
             Hence
             <md>
@@ -99,7 +99,7 @@
             </statement>
         </definition>
         <p>
-            Although the previous definition used right endpoints to find the height of each rectangle, this doesn't have to be the case. 
+            Although the previous definition used right endpoints to find the height of each rectangle, this doesn't have to be the case.
             We can use left endpoints, midpoints or any other <term>sample points</term> <m>x_{1}^{*}, x_{2}^{*},\ldots,x_{n}^{*}</m>, where each <m>x_{i}^{*}</m> is a point in the interval <m>[x_{i-1},x_{i}].</m>
         </p>
         <p>
@@ -235,9 +235,91 @@
                 </p>
             </solution>
         </example>
+        <example xml:id="example-region-from-a-riemann-sum">
+          <title>Region from a Riemann Sum</title>
+          <statement>
+            <p>
+              Determine a region whose area is given by the limit of Riemann sums
+              <me>\lim_{n\to\infty}\sum_{k=1}^{n}\frac{\pi}{4n}\tan\frac{k\pi}{4n}</me>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We need to identify the Riemann sum inside the limit as an expression of the form <m>\sum f(x_{k}^{*})\Delta x_{k}</m>.
+              We'll guess that <m>f(x_{k}^{*}) = \tan\frac{k\pi}{4n}</m> and <m>\Delta x_{k} = \frac{\pi}{4n}</m>.
+              If we choose <m>x_{0} = 0, x_{1} = \frac{\pi}{4n}, x_{2} = \frac{2\pi}{4n},\ldots, x_{n} = \frac{n\pi}{4n}</m>, we get a partition of the interval <m>[0, \frac{\pi}{4}]</m> satisfying <m>\Delta x_{k} = \frac{\pi}{4n}</m>.
+              Now we just set <m>x_{k}^{*} = \frac{k\pi}{4n}</m> (which corresponds to a right Riemann sum).
+              Therefore the limit corresponds to the area under the graph of <m>f(x) = \tan x</m> over <m>[0,\frac{\pi}{4}]</m>.
+            </p>
+          </solution>
+        </example>
         <p>
-            Just as the problem of finding the slope of a tangent line can be viewed as a rate of change problem, the problem of finding areas can be viewed as an <em>accumulation problem</em>.
+            The concept of a Riemann is useful in any situtation where we're trying to measure <em>accumulation</em>.
         </p>
+        <example xml:id="example-estimating-position-from-velocity">
+          <title>Estimating Position from Velocity</title>
+          <statement>
+            <p>
+              Consider the following table of velocity measurements for a moving object(assume that speed is measured in <quantity><unit base="meter"/><per base="second"/></quantity> and time is measured in seconds):
+              <table xml:id="table-evaluating-a-sum">
+                  <tabular halign="center" top="major">
+                      <row top="major" bottom="minor">
+                        <cell>
+                            <m>t</m>
+                        </cell>
+                        <cell>
+                            <m>v(t)</m>
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <m>0</m>
+                        </cell>
+                        <cell>
+                            <m>3.1</m>
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <m>6.4</m>
+                        </cell>
+                        <cell>
+                            <m>5.5</m>
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <m>12.2</m>
+                        </cell>
+                        <cell>
+                            <m>4</m>
+                        </cell>
+                    </row>
+                    <row>
+                        <cell>
+                            <m>15</m>
+                        </cell>
+                        <cell>
+                            <m>4.5</m>
+                        </cell>
+                    </row>
+                </tabular>
+                <caption>Time and velocity of moving object.</caption>
+              </table>
+            </p>
+            <p>
+                Find the approximate displacement of the object over the time interval <m>[0, 15]</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Using <m>d = st</m>, we have the following estimate for the displacement:
+              <me>d = v(0)(6.4 - 0) + v(6.4)(12.2 - 6.4) + v(12.2)(15 - 12.2)</me>.
+              This is a left Riemann sum, and gives the estimate <quantity><mag>62.94</mag><unit base="meter"/></quantity> for <m>d</m>.
+              The corresponding right Riemann sum gives the estimate <quantity><mag>71.0</mag><unit base="meter"/></quantity> instead.
+            </p>
+          </solution>
+        </example>
         <example xml:id="example-finding-work-done">
             <title>Finding work done</title>
             <statement>
@@ -257,9 +339,9 @@
                 <p>
                     Now we can approximate the work done by <m>F</m> as the particle moves through the subinterval <m>[x_{i-1},x_{i}]</m>.
                     The work done should be about equal to <me>F(x_{i}^{*})\Delta x</me>.
-                    Now, if we add up these estimates for each subinterval, we see that the total work done should be approximated by 
+                    Now, if we add up these estimates for each subinterval, we see that the total work done should be approximated by
                     <me>\sum_{i=1}^{n}F(x_{i}^{*})\Delta x,</me>
-                    which suggests that we should define the exact work done to be 
+                    which suggests that we should define the exact work done to be
                     <me>W = \lim_{n\to\infty}\sum_{i=1}^{n}F(x_{i}^{*})\Delta x.</me>
                 </p>
             </solution>
@@ -273,7 +355,7 @@
         <title>The Definite Integral</title>
         <p>
             The process used in <xref ref="section-areas-under-curves" text="type-global" /> can be generalized quite a bit.
-            Start with a function <m>f(x)</m> defined on some interval <m>[a,b]</m>, and divide <m>[a,b]</m> into <m>n</m> subintervals 
+            Start with a function <m>f(x)</m> defined on some interval <m>[a,b]</m>, and divide <m>[a,b]</m> into <m>n</m> subintervals
             <me>[x_{0},x_{1}], [x_{1},x_{2}],\ldots,[x_{n-1},x_{n}]</me>
             where <m>x_{0} = a, x_{n} = b</m> and each subinterval has length <m>\Delta x_{i}</m> (i.e. <me>\Delta x_{i} = x_{i} - x_{i-1}</me>).
             This is known as a <term>partition</term> of <m>[a,b]</m>.
@@ -325,7 +407,7 @@
                 <p>
                     Using <xref ref="example-finding-work-done" text="type-global" />, we see that the work done should be
                     <me>W = \lim_{n\to\infty}\sum_{i=1}^{n}3x_{i}^{*}\cdot\frac{4}{n}</me>
-                    which we can rewrite as 
+                    which we can rewrite as
                     <me>W = \int_{-1}^{3}3x\,dx.</me>
                     So work is a definite integral.
                 </p>
@@ -458,7 +540,7 @@
             <statement>
                 <p>
                     Let <m>f(x)</m> be continuous on <m>[a,b]</m> and let <m>F(x)</m> be a single antiderivative of <m>f(x)</m> on this interval.
-                    Then 
+                    Then
                     <me>\int_{a}^{b}f(x)\,dx = F(a) - F(b).</me>
                 </p>
             </statement>
@@ -573,7 +655,7 @@
             <title>Finding an indefinite integral</title>
             <statement>
                 <p>
-                    Given that 
+                    Given that
                     <me>\dv{}{x}[xe^{x} - e^{x}] = xe^{x},</me>
                     find <m>\int [xe^{x}+\sec^{2}x]\,dx</m>.
                 </p>
@@ -707,7 +789,7 @@
             <statement>
                 <p>
                     A company purchases equipment that depreciates at a rate <m>f(t)</m> and accumulates maintenance costs at a rate <m>g(t)</m>, where <m>t</m> denotes the number of months after purchase.
-                    The company wants to minimize the cost per month of the equipment due to depreciation and maintenance. 
+                    The company wants to minimize the cost per month of the equipment due to depreciation and maintenance.
                     After how much time should the company replace the equipment?
                 </p>
             </statement>
@@ -908,5 +990,252 @@
                 </p>
             </solution>
         </example>
+    </section>
+    <section xml:id="section-integrals-involving-exponentials-and-logarithms">
+        <title>Integrals Involving Exponentials and Logarithms</title>
+        <subsection xml:id="subsection-exponential-integrals">
+            <title>Exponential Integrals</title>
+            <p>
+                Since <m>\dv{}{x}e^{x} = e^{x}</m>, <xref ref="theorem-fundamental-theorem-of-calculus" text="type-global" /> implies that
+                <me>\int e^{x}\,dx = e^{x} + C</me>.
+                Since exponentials often model changning quantities, integrals of exponentials are often used to represent net change over time for those same quantities.
+            </p>
+            <example xml:id="example-area-under-an-exponential-graph">
+                <title>Area Under an Exponential Graph</title>
+                <statement>
+                    <p>
+                        Find the area under the graph of <m>y = x - e^{-4x}</m> over the interval <m>[1, 4]</m>.
+                    </p>
+                </statement>
+            </example>
+            <example xml:id="example-substitution-involving-an-exponential">
+                <title>Substitution Involving an Exponential</title>
+                <statement>
+                    <p>
+                        Find <m>\int e^{x}\sqrt{1 + e^{x}}\,dx</m>.
+                    </p>
+                </statement>
+            </example>
+            <example xml:id="example-integral-transforms">
+                <title>Integral Transforms</title>
+                <statement>
+                    <p>
+                        Integrals of the form <m>\int_{a}^{b} f(t)e^{st}\,dt</m> are important in engineering and physics.
+                        Here, the variable <m>s</m> represents some parameter (usually complex).
+                        Let <m>f(t)</m> be the piecewise function given by
+                        <me>f(t) = \begin{cases} e^{-t} \amp 0 \leq t \leq 1 \\ 2 \amp 1 &lt; t \leq 5 \\ e^{4t} \amp 7\leq t \leq 10 \\ 0 \amp \text{otherwise.} \end{cases}</me>.
+                        Find <m>\int_{-5}^{8}f(t)e^{st}\,dt</m>.
+                    </p>
+                </statement>
+            </example>
+            <example xml:id="example-radioactive-decay">
+                <title>Radioactive Decay</title>
+                <statement>
+                    <p>
+                        A radioactive substance has decay rate given by <m>n(t) = e^{-2t}</m>.
+                        How much of the substance decays from <m>t = 0</m> to <m>t = 1</m>?
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Since <m>n(t)</m> is the rate of change of the mass of the substance, the mass itself must be an antiderivative of <m>n(t)</m>.
+                        Therefore the mass decreases by
+                        <me>\int_{0}^{1}n(t)\,dt = \frac{1 - e^{-1}}{2}</me>
+                        over the interval <m>[0,1]</m>.
+                    </p>
+                </solution>
+            </example>
+            <example xml:id="example-growth-of-a-species">
+                <title>Growth of a Species</title>
+                <statement>
+                    <p>
+                        A species grows at a rate of <m>r(t) = 2^{3.08t}</m>.
+                        If the population of the species at time <m>t = 0</m> days is <m>100</m> members, find the population function <m>P(t)</m> of the species.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        Since <m>P(t)</m> must be an antiderivative of <m>r(t)</m>, we can write
+                        <me>P(t) = \int r(t)\,dt + C</me>.
+                        However, the given information lets us be a little more specific:
+                        <me>P(t) = \int_{0}^{t}r(s)\,ds + 100</me>.
+                        Note that <m>P(0) = 100</m> as required and <m>P'(t) = r(t)</m> by <xref ref="theorem-fundamental-theorem-of-calculus" text="type-global" />.
+                        Now we just need to find the integral of <m>r(s)</m>, which we can do by rewriting it in terms of the natural exponential:
+                        <me>r(s) = e^{(3.08\ln2)s}</me>,
+                        and so
+                        <me>P(t) = \frac{e^{(3.08\ln2)t} - 1}{3.08\ln2} + 100</me>.
+                    </p>
+                </solution>
+            </example>
+        </subsection>
+        <subsection xml:id="subsection-integrals-involving-logarithms">
+            <title>Integrals Involving Logarithms</title>
+            <p>
+                Since <m>\dv{}{x}\ln x = \frac{1}{x}</m>, we can write
+                <me>\int\frac{1}{x}\,dx = \ln\abs{x} + C</me>.
+            </p>
+            <example xml:id="example-integrating-a-rational-function">
+                <title>Integrating a Rational Function</title>
+                <statement>
+                    <p>
+                        Find <m>\int\frac{x^{2}}{x^{3} + 1}\,dx</m>.
+                    </p>
+                </statement>
+            </example>
+            <example xml:id="example-integral-of-secant">
+                <title>Integral of Secant</title>
+                <statement>
+                    <p>
+                        Find <m>\int\sec x\,dx</m>.
+                    </p>
+                </statement>
+            </example>
+            <example xml:id="example-integration-and-long-division">
+                <title>Integration and Long Division</title>
+                <statement>
+                    <p>
+                        Find <m>\int\frac{x^2 + x - 1}{x^2 + 1}\,dx</m>.
+                    </p>
+                </statement>
+            </example>
+        </subsection>
+    </section>
+    <section xml:id="section-integrals-involving-inverse-trigonometric-functions">
+        <title>Integrals Involving Inverse Trigonometric Functions</title>
+        <subsection xml:id="subsection-integrals-involving-arcsine">
+            <title>Integrals Involving Arcsine</title>
+            <p>
+                Recall that
+                <me>\dv{}{x}\arcsin x = \frac{1}{\sqrt{1 - x^{2}}}</me>.
+                This gives the following important integral formula:
+                <me>\int\frac{1}{\sqrt{1-x^{2}}}\,dx = \arcsin x + C</me>.
+                Note that this integral is only valid for <m>-1\leq x\leq 1</m> (in this class).
+            </p>
+            <example xml:id="example-arcsine-integral">
+                <title>Arcsine Integral</title>
+                <statement>
+                    <p>
+                        Find <m>\int_{-\frac{1}{2}}^{\frac{1}{2}}\frac{1}{\sqrt{1-x^{2}}}\,dx</m>.
+                    </p>
+                </statement>
+            </example>
+            <example xml:id="example-substitution-and-arcsine">
+                <title>Substitution and Arcsine</title>
+                <statement>
+                    <p>
+                        Find <m>\int\frac{1}{\sqrt{9 - x^{2}}}\,dx</m>.
+                    </p>
+                </statement>
+            </example>
+            <p>
+                Another integral that shows up in applications involves <m>\arctan</m>:
+                <me>\int\frac{1}{1+x^{2}}\,dx</me>.
+            </p>
+            <example xml:id="example-arctan-integral">
+                <title>Arctan Integral</title>
+                <statement>
+                    <p>
+                        Evaluate <m>\int_{\ln(1/\sqrt{3})}^{0}\frac{e^{t}}{1 + e^{2t}}\,dt</m>.
+                    </p>
+                </statement>
+            </example>
+            <p>
+                An occasionally useful technique for evaluating integrals of trigonometric functions is <term>half-angle substitution</term>.
+                The idea is to replace a rational function of <m>\sin x</m> and <m>\cos x</m> using <m>t = \tan(\frac{x}{2})</m>.
+            </p>
+            <example xml:id="example-half-angle-substitution">
+                <title>Half-Angle Substitution</title>
+                <statement>
+                    <p>
+                        Find <m>\int\frac{1}{2+\cos(x)}\,dx</m>.
+                    </p>
+                </statement>
+                <solution>
+                    <p>
+                        If we use <m>t = \tan(\frac{x}{2})</m>, then we can solve for <m>x</m> to get
+                        <me>x = 2\arctan t \Rightarrow dx = \frac{2}{1+t^{2}}\,dt</me>.
+                        Therefore
+                        <me>\cos x = \cos(2\arctan t) = \cos^{2}(\arctan t) - \sin^{2}(\arctan t) = \frac{1}{1+t^{2}} - \frac{t^{2}}{1+t^{2}}</me>,
+                        and so
+                        <md>
+                            <mrow>\int\frac{1}{2+\cos x}\,dx \amp = \int\frac{2}{2(1+t^{2}) + (1-t^{2})}\,dt</mrow>
+                            <mrow>\amp = \int\frac{2}{3 + t^{2}}\,dt</mrow>
+                            <mrow>\amp = \frac{2}{3}\int\frac{1}{1 + (t/\sqrt{3})^{2}}\,dt</mrow>
+                            <mrow>\amp = \frac{2}{3}\sqrt{3}\arctan(\frac{t}{\sqrt{3}}) + C</mrow>
+                            <mrow>\amp = \frac{2}{\sqrt{3}}\arctan(\frac{\tan(x/2)}{\sqrt{3}}) + C</mrow>
+                        </md>.
+                    </p>
+                </solution>
+            </example>
+        </subsection>
+    </section>
+    <section xml:id="section-integrals-involving-hyperbolic-trigonometric-functions">
+        <title>Integrals Involving Hyperbolic Trigonometric Functions</title>
+        <subsection xml:id="subsection-antiderivatives-with-hyperbolic-sine-and-cosine">
+            <title>Antiderivatives with Hyperbolic Sine and Cosine</title>
+            <p>
+                Recall that
+                <me>\sinh x = \frac{e^{x} - e^{-x}}{2} \quad \text{and} \quad \cosh x = \frac{e^{x} + e^{-x}}{2}</me>.
+                From here we can define hyperbolic trigonometric functions such as <m>\tanh x, \sech x, \csch x</m> and <m>\coth x</m>.
+                It's also easy to show that <m>\dv{}{x}\sinh x = \cosh x</m> and <m>\dv{}{x}\cosh x = \sinh x</m>, and the quotient rule provides derivatives for the other hyperbolic trigonometric functions.
+            </p>
+            <example xml:id="example-antiderivative-of-hyperbolic-tangent">
+              <title>Antiderivative of Hyperbolic Tangent</title>
+              <statement>
+                <p>
+                  Find <m>\int\tanh x\,dx</m>.
+                </p>
+              </statement>
+            </example>
+            <example xml:id="example-average-value-of-hyperbolic-cosine">
+              <title>Average Value of Hyperbolic Cosine</title>
+              <statement>
+                <p>
+                  Find the average value of <m>\cosh x</m> over the interval <m>[\ln2, \ln4]</m>.
+                </p>
+              </statement>
+            </example>
+        </subsection>
+        <subsection xml:id="subsection-inverse-hyperbolic-trigonometric-functions">
+            <title>Inverse Hyperbolic Trigonometric Functions</title>
+            <p>
+                We can define inverse hyperbolic trigonometric functions just as we did for trigonometric functions.
+                Since <m>f(x) = \sinh x</m> is one-to-one, its inverse function exists for all real numbers.
+                We can find it as follows: if <m>y = \sinh^{-1}x</m>, then <m>\sinh y = x</m>.
+                By definition of <m>\sinh</m> we then have
+                <me>\sinh y = \frac{e^{y} - e^{-y}}{2}</me>
+                which gives us the equation
+                <me>e^{2y} - 2xe^{y} - 1 = 0</me>.
+                This equation is quadratic in <m>e^{y}</m> and solution
+                <me>e^{y} = \frac{2x\pm\sqrt{4x^{2} + 4}}{2} = x \pm \sqrt{x^{2} + 1}</me>.
+                Since exponentials must always be positive, it follows that
+                <me>y = \sinh^{-1}x = \ln(x + \sqrt{x^{2} + 1})</me>.
+                A similar argument also gives
+                <me>\cosh^{-1}x = \ln(x + \sqrt{x^{2} - 1})\quad\text{and}\quad\tanh^{-1}x = \frac{1}{2}\ln\frac{1+x}{1-x}</me>.
+            </p>
+            <p>
+                The identity <m>\cosh^{2}x - \sinh^{2}x = 1</m> can be useful when integrating, and allows us to make some effective substitutions.
+            </p>
+            <example xml:id="example-hyperbolic-substitution">
+              <title>Hyperbolic Substitution</title>
+              <statement>
+                <p>
+                  Find <m>\int\sqrt{x^{2} - 1}\,dx</m> using the substitution <m>x = \cosh t</m>.
+                </p>
+              </statement>
+              <solution>
+                <p>
+                  With this substitution, we have
+                  <md>
+                      <mrow>\int\sqrt{x^{2} - 1}\,dx \amp = \int\sinh^{2}t\,dt</mrow>
+                      <mrow>\amp = \int\frac{e^{2t} - 2 + e^{-2t}}{4}\,dt</mrow>
+                      <mrow>\amp = \int\left[\frac{\sinh(2t) - 1}{2}\right]\,dt</mrow>
+                      <mrow>\amp = \frac{1}{4}\cosh(2t) - \frac{t}{2} + C</mrow>
+                      <mrow>\amp = \frac{1}{4}\cosh(2\cosh^{-1}x) - \frac{1}{2}\cosh^{-1}x + C</mrow>
+                  </md>.
+                </p>
+              </solution>
+            </example>
+        </subsection>
     </section>
 </chapter>
