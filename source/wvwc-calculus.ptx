@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pretext xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US">
+
+  <xi:include href="./bookinfo.ptx" /> <!-- Preamble, etc. -->
+  <book xml:id="wvwc-calculus">
+    <title>Calculus Notes</title>
+    <subtitle>West Virginia Wesleyan College</subtitle>
+    <xi:include href="./frontmatter.ptx" />   <!-- Title, authors, etc. -->
+    <part xml:id="part-differential">
+      <title>Differential Calculus</title>
+      <xi:include href="./functions.ptx" />  <!-- Review of functions -->
+      <xi:include href="./limits.ptx" />  <!-- Introduction to parametric/polar coordinates -->
+      <xi:include href="./derivatives.ptx" /> <!-- Introduction to derivatives -->
+      <xi:include href="./inverse-functions.ptx" /> <!-- Introduction to derivatives of invertible functions -->
+      <xi:include href="./applications-differentiation.ptx" /> <!-- Applications of differentiation -->
+    </part>
+    <part xml:id="part-integral">
+      <title>Integral Calculus</title>
+      <xi:include href="./integrals.ptx" /> <!-- Introduction to integrals -->
+      <xi:include href="./techniques-of-integration.ptx" /> <!-- Integration by parts, trigonometric substitution, etc. -->
+      <xi:include href="./applications-of-integration.ptx" /> <!-- Applications of integration, such as areas, volumes, etc. -->
+      <xi:include href="./series.ptx" /> <!-- Sequences and series. -->
+    </part>
+    <part xml:id="part-multivariable">
+      <title>Multivariable Calculus</title>
+      <xi:include href="./parametric-equations-polar-coordinates.ptx" />  <!-- Introduction to parametric/polar coordinates -->
+      <xi:include href="./vectors-space-geometry.ptx" /> <!-- Introduction to geometry in Euclidean space -->
+      <xi:include href="./partial-derivatives.ptx" /> <!-- Introduction to partial derivatives -->
+      <xi:include href="./multiple-integrals.ptx" /> <!-- Introduction to multiple integrals -->
+      <xi:include href="./vector-calculus.ptx" /> <!-- Introduction to vector calculus concepts -->
+    </part>
+    <xi:include href="./backmatter.ptx" /> <!-- Index and whatnot. -->
+  </book>
+</pretext>
