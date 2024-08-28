@@ -567,6 +567,16 @@
                         Since <m>g(1)</m> also equals <m>5</m>, <m>g(s)</m> is continuous at <m>s=1</m>.
                         So <m>g(s)</m> must be continuous on <m>(-\infty, -1)\cup(-1,\infty)</m>.
                     </p>
+
+                    <p>
+                        Note that we can also verify this result graphically.
+                        For example, see <xref ref="figure-limits-interactive-desmos-piecewise-continuity"/> below produced using <url href="https://www.desmos.com/calculator" visual="desmos.com/calculator">Desmos</url> (you can also produce graphs using the <c>Calc</c> button).
+                    </p>
+
+                    <figure xml:id="figure-limits-interactive-desmos-piecewise-continuity">
+                        <caption>Graph of <m>g(s)</m></caption>
+                        <interactive xml:id="desmos-piecewise-continuity" desmos="jjkpcjxgif" width="60%" aspect="2:3"/>
+                    </figure>
                 </solution>
             </example>
 
