@@ -569,7 +569,7 @@
                     </p>
 
                     <p>
-                        Note that we can also verify this result graphically.
+                        Note that we can also verify this result graphically by looking for jumps in the graph.
                         For example, see <xref ref="figure-limits-interactive-desmos-piecewise-continuity"/> below produced using <url href="https://www.desmos.com/calculator" visual="desmos.com/calculator">Desmos</url> (you can also produce graphs using the <c>Calc</c> button).
                     </p>
 
