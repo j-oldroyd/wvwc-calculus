@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<site xmlns:xi="http://www.w3.org/2001/XInclude">
+    <sitename>WVWC MATH 161</sitename>
+    <sitesubtitle>Lecture notes</sitesubtitle>
+    <ptx-show-targets>yes</ptx-show-targets>
+</site>

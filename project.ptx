@@ -6,6 +6,7 @@
       name="web" 
       format="html"
       source="wvwc-calculus.ptx"
+      deploy-dir="preview/wvwc-calculus"
       output-dir="html">
         <stringparams author.tools="yes"/>
       </target>
@@ -13,6 +14,8 @@
       name="print" 
       format="pdf"
       source="wvwc-calculus.ptx"
+      output-filename="wvwc-calculus.pdf"
+      deploy-dir="preview/wvwc-calculus/print"
       xsl="wvwc-calculus-latex.xsl"/>
     <target
       name="print-dyslexic"
