@@ -327,19 +327,25 @@ true);
 <div class="toc-title-box"><a href="limits.html" class="internal"><span class="codenumber">2</span> <span class="title">Limits of Functions</span></a></div>
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="section-the-limit-of-a-function.html" class="internal"><span class="codenumber">2.1</span> <span class="title">The Limit of a Function</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-the-limit-of-a-function.html#subsection-motivating-limits" class="internal"><span class="title">Motivating Limits</span></a></div></li></ul>
+<div class="toc-title-box"><a href="section-the-limit-of-a-function.html" class="internal"><span class="codenumber">2.1</span> <span class="title">The limit of a function</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-the-limit-of-a-function.html#subsection-motivating-limits" class="internal"><span class="title">Motivating limits</span></a></div></li></ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="section-computing-limits.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Computing Limits</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-computing-limits.html#subsection-the-limit-laws" class="internal"><span class="title">The Limit Laws</span></a></div></li></ul>
+<div class="toc-title-box"><a href="section-computing-limits.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Computing limits</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-computing-limits.html#subsection-the-limit-laws" class="internal"><span class="title">The limit laws</span></a></div></li></ul>
 </li>
-<li class="toc-item toc-section active"><div class="toc-title-box"><a href="section-continuity.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Continuity</span></a></div></li>
-<li class="toc-item toc-section">
-<div class="toc-title-box"><a href="section-limits-involving-infinity.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Limits Involving Infinity</span></a></div>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="section-continuity.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Continuity</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-limits-involving-infinity.html#subsection-limits-involving-vertical-asymptotes" class="internal"><span class="title">Limits Involving Vertical Asymptotes</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-limits-involving-infinity.html#subsection-limits-at-infinity" class="internal"><span class="title">Limits at Infinity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-continuity.html#subsec-Continuous-functions" class="internal"><span class="title">Continuous functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-continuity.html#subsec-Combining-continuous-functions" class="internal"><span class="title">Combining continuous functions</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-limits-involving-infinity.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Limits involving infinity</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-limits-involving-infinity.html#subsection-limits-involving-vertical-asymptotes" class="internal"><span class="title">Limits involving vertical asymptotes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-limits-involving-infinity.html#subsection-limits-at-infinity" class="internal"><span class="title">Limits at infinity</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -775,10 +781,12 @@ true);
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-continuity"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">2.3</span><span class="space"> </span><span class="title">Continuity</span>
 </h2>
-<div class="para" id="section-continuity-2">We saw in <a href="section-computing-limits.html" class="internal" title="Section 2.2: Computing Limits">Section 2.2</a> that for a function like <span class="process-math">\(f(x) = x+3x^{2}\text{,}\)</span> we could evaluate <span class="process-math">\(\lim_{x\to a}f(x)\)</span> by simply plugging in <span class="process-math">\(x=a\text{.}\)</span> In other words, <span class="process-math">\(\lim_{x\to a}f(x) = f(a)\text{.}\)</span> Functions that have this property are extremely important in mathematics, so we give them a name.</div>
-<article class="definition definition-like" id="definition-continuous-functions"><h3 class="heading">
+<section class="introduction" id="section-continuity-2"><div class="para" id="section-continuity-2-1">We saw in <a href="section-computing-limits.html" class="internal" title="Section 2.2: Computing limits">Section 2.2</a> that for a function like <span class="process-math">\(f(x) = x+3x^{2}\text{,}\)</span> we could evaluate <span class="process-math">\(\lim_{x\to a}f(x)\)</span> by simply plugging in <span class="process-math">\(x=a\text{.}\)</span> In other words, <span class="process-math">\(\lim_{x\to a}f(x) = f(a)\text{.}\)</span> Functions that have this property are extremely important in mathematics, so we give them a name.</div></section><section class="subsection" id="subsec-Continuous-functions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Continuous functions</span>
+</h3>
+<article class="definition definition-like" id="definition-continuous-functions"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Continuous Functions.</span>
-</h3>  <div class="para logical" id="definition-continuous-functions-3-1">
+</h4>  <div class="para logical" id="definition-continuous-functions-3-1">
 <div class="para">Let <span class="process-math">\(f(x)\)</span> be a function and suppose that <span class="process-math">\(a\)</span> is in the domain of <span class="process-math">\(f(x)\text{.}\)</span> Then we say that <span class="process-math">\(f(x)\)</span> is <dfn class="terminology">continuous at <span class="process-math">\(a\)</span></dfn> if</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -786,39 +794,42 @@ true);
 \end{equation*}
 </div>
 <div class="para">Otherwise, we say that <span class="process-math">\(f(x)\)</span> is <dfn class="terminology">discontinuous at <span class="process-math">\(a\)</span></dfn>. We say that <span class="process-math">\(f(x)\)</span> is continuous on an interval if it is continuous at every point of an interval. Otherwise, we say that <span class="process-math">\(f(x)\)</span> is discontinuous on the interval.</div>
-</div></article><div class="para" id="section-continuity-4">
+</div></article><div class="para" id="subsec-Continuous-functions-3">
 <a href="section-continuity.html#definition-continuous-functions" class="xref" data-knowl="./knowl/xref/definition-continuous-functions.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 2.3.1: Continuous Functions">Definition 2.3.1</a> says that it is extremely easy to evaluate limits of continuous functions: just plug the value that <span class="process-math">\(x\)</span> is approaching into the function <span class="process-math">\(f(x)\text{.}\)</span> So the limit is then <span class="process-math">\(f(a)\text{.}\)</span> If a function <span class="process-math">\(f(x)\)</span> is continuous on an interval, then this means that the graph of <span class="process-math">\(f(x)\)</span> has no "gaps" over this interval.</div>
-<article class="example example-like" id="example-determining-if-a-function-is-continuous"><h3 class="heading">
+<article class="example example-like" id="example-determining-if-a-function-is-continuous"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Determining if a function is continuous.</span>
-</h3>
+</h4>
 <div class="para" id="example-determining-if-a-function-is-continuous-2-1">Let <span class="process-math">\(f(x) = \frac{1}{x}\text{.}\)</span> Is <span class="process-math">\(f(x)\)</span> continuous on <span class="process-math">\((-\infty,\infty)\text{?}\)</span>
 </div>
 <div class="solutions"><details id="example-determining-if-a-function-is-continuous-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="example-determining-if-a-function-is-continuous-3-1">If we graph <span class="process-math">\(f(x)\text{,}\)</span> then we see that it is discontinuous at <span class="process-math">\(x=0\text{.}\)</span> Therefore <span class="process-math">\(f(x)\)</span> is discontinuous on the interval <span class="process-math">\((-\infty,\infty)\text{.}\)</span>
-</div></div></details></div></article><div class="para" id="section-continuity-6">If we’re dealing with a function on a (bounded) closed interval, we need to introduce some new terminology. We say that a function <span class="process-math">\(f(x)\)</span> is <dfn class="terminology">continuous from the left</dfn> at <span class="process-math">\(x=a\)</span> if <span class="process-math">\(\lim_{x\to a^{-}}f(x) = f(a)\text{.}\)</span> Similarly, we say that <span class="process-math">\(f(x)\)</span> is <dfn class="terminology">continuous from the right</dfn> at <span class="process-math">\(x=a\)</span> if <span class="process-math">\(\lim_{x\to a^{+}}f(x) = f(a)\text{.}\)</span> This is of course assuming that <span class="process-math">\(a\)</span> is in the domain of <span class="process-math">\(f(x)\text{.}\)</span> Finally, we say that <span class="process-math">\(f(x)\)</span> is continuous on the closed interval <span class="process-math">\([a,b]\)</span> if it is continuous on <span class="process-math">\((a,b)\text{,}\)</span> continuous from the right at <span class="process-math">\(a\)</span> and continuous from the left at <span class="process-math">\(b\text{.}\)</span> The main idea is still that the graph contains no gaps over this interval.</div>
-<article class="example example-like" id="example-continuity-over-a-closed-interval"><h3 class="heading">
+</div></div></details></div></article><div class="para" id="subsec-Continuous-functions-5">If we’re dealing with a function on a (bounded) closed interval, we need to introduce some new terminology. We say that a function <span class="process-math">\(f(x)\)</span> is <dfn class="terminology">continuous from the left</dfn> at <span class="process-math">\(x=a\)</span> if <span class="process-math">\(\lim_{x\to a^{-}}f(x) = f(a)\text{.}\)</span> Similarly, we say that <span class="process-math">\(f(x)\)</span> is <dfn class="terminology">continuous from the right</dfn> at <span class="process-math">\(x=a\)</span> if <span class="process-math">\(\lim_{x\to a^{+}}f(x) = f(a)\text{.}\)</span> This is of course assuming that <span class="process-math">\(a\)</span> is in the domain of <span class="process-math">\(f(x)\text{.}\)</span> Finally, we say that <span class="process-math">\(f(x)\)</span> is continuous on the closed interval <span class="process-math">\([a,b]\)</span> if it is continuous on <span class="process-math">\((a,b)\text{,}\)</span> continuous from the right at <span class="process-math">\(a\)</span> and continuous from the left at <span class="process-math">\(b\text{.}\)</span> The main idea is still that the graph contains no gaps over this interval.</div>
+<article class="example example-like" id="example-continuity-over-a-closed-interval"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Continuity over a closed interval.</span>
-</h3>
+</h4>
 <div class="para logical" id="example-continuity-over-a-closed-interval-2-1">
 <div class="para">Let <span class="process-math">\(f(x)\)</span> be given by</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(x) = \begin{cases} 3x-1 &amp; 1\leq x&lt; 2 \\ 9-x^{2} &amp; 2\leq x\leq 4.\end{cases}
+f(x) = \begin{cases} 3x-1 &amp; 1\leq x&lt; 2 \\ 9-x^{2} &amp; 2\leq x\leq 4\end{cases}\text{.}
 \end{equation*}
 </div>
 <div class="para">Is <span class="process-math">\(f(x)\)</span> continuous over <span class="process-math">\([1,4]\text{?}\)</span>
 </div>
 </div>
 <div class="solutions"><details id="example-continuity-over-a-closed-interval-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="example-continuity-over-a-closed-interval-3-1">If we graph <span class="process-math">\(f(x)\)</span> over this interval, we get the following:</div> <figure class="figure figure-like" id="example-continuity-over-a-closed-interval-3-2"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/example-continuity-over-a-closed-interval-3-2-1.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.4<span class="period">.</span></span><span class="space"> </span>Graphing <span class="process-math">\(f(x)\)</span> over <span class="process-math">\([1,4]\text{.}\)</span></figcaption></figure> <div class="para" id="example-continuity-over-a-closed-interval-3-3">So from the graph it appears that <span class="process-math">\(f(x)\)</span> is continuous on this interval.</div>
-</div></details></div></article><div class="para" id="section-continuity-8">Remember that we said a function is continuous over an interval if its graph has no gaps over that interval. This is a very rough explanation of continuity, but it should make the following theorem plausible.</div>
-<article class="theorem theorem-like" id="theorem-continuous-functions"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.5</span><span class="period">.</span><span class="space"> </span><span class="title">Continuous Functions.</span>
+<div class="para" id="example-continuity-over-a-closed-interval-3-1">If we graph <span class="process-math">\(f(x)\)</span> over this interval, we get the following:</div> <figure class="figure figure-like" id="example-continuity-over-a-closed-interval-3-2"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/example-continuity-over-a-closed-interval-3-2-2.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.4<span class="period">.</span></span><span class="space"> </span>Graphing <span class="process-math">\(f(x)\)</span> over <span class="process-math">\([1,4]\)</span></figcaption></figure> <div class="para" id="example-continuity-over-a-closed-interval-3-3">So from the graph it appears that <span class="process-math">\(f(x)\)</span> is continuous on this interval.</div>
+</div></details></div></article><div class="para" id="subsec-Continuous-functions-7">Remember that we said a function is continuous over an interval if its graph has no gaps over that interval. This is a very rough explanation of continuity, but it should make the following theorem plausible.</div>
+<article class="theorem theorem-like" id="theorem-continuous-functions"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.5</span><span class="period">.</span><span class="space"> </span><span class="title">Continuous functions.</span>
+</h4>
+<div class="para" id="theorem-continuous-functions-2-1">Polynomial, rational, root and trigonometric functions are continuous at every point of their domain.</div></article></section><section class="subsection" id="subsec-Combining-continuous-functions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Combining continuous functions</span>
 </h3>
-<div class="para" id="theorem-continuous-functions-2-1">Polynomial, rational, root and trigonometric functions are continuous at every point of their domain.</div></article><div class="para" id="section-continuity-10">Although it doesn’t directly mention piecewise functions, <a href="section-continuity.html#theorem-continuous-functions" class="xref" data-knowl="./knowl/xref/theorem-continuous-functions.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.3.5: Continuous Functions">Theorem 2.3.5</a> is still useful for determining if they are continuous. If a piecewise function is defined using any of the functions from <a href="section-continuity.html#theorem-continuous-functions" class="xref" data-knowl="./knowl/xref/theorem-continuous-functions.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.3.5: Continuous Functions">Theorem 2.3.5</a>, then the only points we really need to check for continuity are the the places where the function "changes rules".</div>
-<article class="example example-like" id="example-another-piecewise-function"><h3 class="heading">
+<div class="para" id="subsec-Combining-continuous-functions-2">Although it doesn’t directly mention piecewise functions, <a href="section-continuity.html#theorem-continuous-functions" class="xref" data-knowl="./knowl/xref/theorem-continuous-functions.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.3.5: Continuous functions">Theorem 2.3.5</a> is still useful for determining if they are continuous. If a piecewise function is defined using any of the functions from <a href="section-continuity.html#theorem-continuous-functions" class="xref" data-knowl="./knowl/xref/theorem-continuous-functions.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.3.5: Continuous functions">Theorem 2.3.5</a>, then the only points we really need to check for continuity are the the places where the function "changes rules".</div>
+<article class="example example-like" id="example-another-piecewise-function"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.6</span><span class="period">.</span><span class="space"> </span><span class="title">Another piecewise function.</span>
-</h3>
+</h4>
 <div class="para logical" id="example-another-piecewise-function-2-1">
 <div class="para">Over what intervals is the function <span class="process-math">\(g(s)\)</span> given by</div>
 <div class="displaymath process-math">
@@ -845,11 +856,11 @@ g(s) = \begin{cases} s^{2} &amp; s&lt;-1 \\ -5\cos (\pi s) &amp; -1\leq s\leq 1 
 <div class="para">it follows that <span class="process-math">\(\lim_{s\to-1}g(s)\)</span> does not exist. So <span class="process-math">\(g(s)\)</span> can’t be continuous at <span class="process-math">\(s=-1\text{.}\)</span>
 </div>
 </div> <div class="para" id="example-another-piecewise-function-3-2">On the other hand, since <span class="process-math">\(\lim_{s\to1^{-1}}g(s) = 5 = \lim_{s\to1^{+}}g(s)\text{,}\)</span> it follows that <span class="process-math">\(\lim_{s\to1}g(s)\)</span> exists and is equal to <span class="process-math">\(5\text{.}\)</span> Since <span class="process-math">\(g(1)\)</span> also equals <span class="process-math">\(5\text{,}\)</span> <span class="process-math">\(g(s)\)</span> is continuous at <span class="process-math">\(s=1\text{.}\)</span> So <span class="process-math">\(g(s)\)</span> must be continuous on <span class="process-math">\((-\infty, -1)\cup(-1,\infty)\text{.}\)</span>
-</div>
-</div></details></div></article><div class="para" id="section-continuity-12">We can also build more complicated continuous functions out of simpler ones.</div>
-<article class="theorem theorem-like" id="theorem-combining-continuous-functions"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.7</span><span class="period">.</span><span class="space"> </span><span class="title">Combining Continuous Functions.</span>
-</h3>
+</div> <div class="para" id="example-another-piecewise-function-3-3">Note that we can also verify this result graphically by looking for jumps in the graph. For example, see <a href="section-continuity.html#figure-limits-interactive-desmos-piecewise-continuity" class="xref" data-knowl="./knowl/xref/figure-limits-interactive-desmos-piecewise-continuity.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 2.3.7">Figure 2.3.7</a> below produced using <a class="external" href="https://www.desmos.com/calculator" target="_blank">Desmos</a><details class="ptx-footnote" aria-live="polite" id="example-another-piecewise-function-3-3-3"><summary class="ptx-footnote__number" title="Footnote 1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="example-another-piecewise-function-3-3-3"><code class="code-inline tex2jax_ignore">desmos.com/calculator</code></div></details> (you can also produce graphs using the <code class="code-inline tex2jax_ignore">Calc</code> button).</div> <figure class="figure figure-like" id="figure-limits-interactive-desmos-piecewise-continuity"><iframe src="https://www.desmos.com/calculator/jjkpcjxgif" id="desmos-piecewise-continuity" width="360" height="540"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.3.7<span class="period">.</span></span><span class="space"> </span>Graph of <span class="process-math">\(g(s)\)</span></figcaption></figure>
+</div></details></div></article><div class="para" id="subsec-Combining-continuous-functions-4">We can also build more complicated continuous functions out of simpler ones.</div>
+<article class="theorem theorem-like" id="theorem-combining-continuous-functions"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.8</span><span class="period">.</span><span class="space"> </span><span class="title">Combining continuous functions.</span>
+</h4>
 <div class="para logical" id="theorem-combining-continuous-functions-2-1">
 <div class="para">Let <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> be continuous at a point <span class="process-math">\(a\text{.}\)</span> Then the following statements are true:</div>
 <ol class="decimal" id="theorem-combining-continuous-functions-2-1-4">
@@ -866,14 +877,14 @@ g(s) = \begin{cases} s^{2} &amp; s&lt;-1 \\ -5\cos (\pi s) &amp; -1\leq s\leq 1 
 <span class="process-math">\(f(g(x))\)</span> is continuous at <span class="process-math">\(a\)</span> if <span class="process-math">\(g(a)\)</span> is in the domain of <span class="process-math">\(f(x)\text{.}\)</span>
 </div></li>
 </ol>
-</div></article><article class="example example-like" id="example-determining-where-functions-are-continuous"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.8</span><span class="period">.</span><span class="space"> </span><span class="title">Determining where functions are continuous.</span>
-</h3>
+</div></article><article class="example example-like" id="example-determining-where-functions-are-continuous"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.9</span><span class="period">.</span><span class="space"> </span><span class="title">Determining where functions are continuous.</span>
+</h4>
 <div class="para" id="example-determining-where-functions-are-continuous-2-1">Let <span class="process-math">\(h(t) = \sqrt{t} + \frac{t}{t-4} - \frac{t+1}{t^{2}-1}\text{.}\)</span> On what intervals is <span class="process-math">\(h(t)\)</span> continuous?</div>
-<div class="solutions"><details id="example-determining-where-functions-are-continuous-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="example-determining-where-functions-are-continuous-3-1">By <a href="section-continuity.html#theorem-combining-continuous-functions" class="xref" data-knowl="./knowl/xref/theorem-combining-continuous-functions.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.3.7: Combining Continuous Functions">Theorem 2.3.7</a>, <span class="process-math">\(h(t)\)</span> should be continuous wherever <span class="process-math">\(\sqrt{t}, \frac{t}{t-4}\)</span> and <span class="process-math">\(\frac{t+1}{t^{2}-1}\)</span> are all defined. Since <span class="process-math">\(\sqrt{t}\)</span> is defined for <span class="process-math">\(t\geq0\text{,}\)</span> <span class="process-math">\(\frac{t}{t-4}\)</span> is defined for <span class="process-math">\(t\neq4\)</span> and <span class="process-math">\(\frac{t+1}{t^{2}-1}\)</span> is defined for <span class="process-math">\(t\neq\pm1\text{,}\)</span> it follows that <span class="process-math">\(h(t)\)</span> is continuous on <span class="process-math">\([0,1)\cup(1,4)\cup(4,\infty)\text{.}\)</span>
-</div></div></details></div></article><article class="example example-like" id="example-using-continuity-to-evaluate-a-limit"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.9</span><span class="period">.</span><span class="space"> </span><span class="title">Using continuity to evaluate a limit.</span>
-</h3>
+<div class="solutions"><details id="example-determining-where-functions-are-continuous-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="example-determining-where-functions-are-continuous-3-1">By <a href="section-continuity.html#theorem-combining-continuous-functions" class="xref" data-knowl="./knowl/xref/theorem-combining-continuous-functions.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.3.8: Combining continuous functions">Theorem 2.3.8</a>, <span class="process-math">\(h(t)\)</span> should be continuous wherever <span class="process-math">\(\sqrt{t}, \frac{t}{t-4}\)</span> and <span class="process-math">\(\frac{t+1}{t^{2}-1}\)</span> are all defined. Since <span class="process-math">\(\sqrt{t}\)</span> is defined for <span class="process-math">\(t\geq0\text{,}\)</span> <span class="process-math">\(\frac{t}{t-4}\)</span> is defined for <span class="process-math">\(t\neq4\)</span> and <span class="process-math">\(\frac{t+1}{t^{2}-1}\)</span> is defined for <span class="process-math">\(t\neq\pm1\text{,}\)</span> it follows that <span class="process-math">\(h(t)\)</span> is continuous on <span class="process-math">\([0,1)\cup(1,4)\cup(4,\infty)\text{.}\)</span>
+</div></div></details></div></article><article class="example example-like" id="example-using-continuity-to-evaluate-a-limit"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.10</span><span class="period">.</span><span class="space"> </span><span class="title">Using continuity to evaluate a limit.</span>
+</h4>
 <div class="para" id="example-using-continuity-to-evaluate-a-limit-2-1">Evaluate <span class="process-math">\(\lim_{x\to\pi}\cos(x+\sin x)\text{.}\)</span>
 </div>
 <div class="solutions"><details id="example-using-continuity-to-evaluate-a-limit-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-using-continuity-to-evaluate-a-limit-3-1">
@@ -883,7 +894,7 @@ g(s) = \begin{cases} s^{2} &amp; s&lt;-1 \\ -5\cos (\pi s) &amp; -1\leq s\leq 1 
 \lim_{x\to\pi}\cos(x+\sin x) = \cos(\pi+\sin\pi) = -1.
 \end{equation*}
 </div>
-</div></div></details></div></article></section></div>
+</div></div></details></div></article></section><section class="conclusion" id="section-continuity-5"><div class="para" id="section-continuity-5-1">We’ve seen that continuous functions are precisely those functions that make limits easy to compute. Since the two primary concepts in calculus, the derivative (<a href="derivatives.html" class="internal" title="Chapter 3: Derivatives">Chapter 3</a>) and the integral (<a href="integrals.html" class="internal" title="Chapter 6: Integrals">Chapter 6</a>), both depend on the concept of a limit, this means that continuous functions themselves will also be extremely important objects going forward.</div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-computing-limits.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="section-limits-involving-infinity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

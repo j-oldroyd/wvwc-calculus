@@ -159,8 +159,8 @@ var ptx_lunr_docs = [
   "url": "section-the-limit-of-a-function.html",
   "type": "Section",
   "number": "2.1",
-  "title": "The Limit of a Function",
-  "body": " The Limit of a Function   Motivating Limits  Imagine creating a mathematical valley out of the graph of , and in this valley walks a mathematical ant. The ant is walking towards the place on the hill directly above . At , the ant is units above the ground. At , the ant is now unit above the ground. As the ant moves towards , its height above the ground gets closer and closer to . To say it more clearly, and because modern calculus is built on this idea, as the ant approaches the point above , its height above the ground approaches the value . In other words, the limit of as approaches is .      A mathematical valley minus a mathematical ant.   Remember that a function of the variable is just a rule that turns one number, , into another number, . So the idea that the limit of a function is trying to express is what happens to the number (the output) as the number (the input) approaches some particular value.   Actually, functions are much more general than this. But for calculus, it won't hurt us to view functions in this way.   We're not quite ready to define the limit of a function precisely, but we can point one thing out right away: the limit of a function requires two pieces of information: the function itself and the number that is approaching. The limit should then be whatever number that is approaching.   Estimating the limit of a trigonometric function   Let . What is the limit of as approaches the number ?    We don't have a lot of tools to find limits yet, so we'll try to estimate it instead. What we'll do is we'll plug numbers that are closer and closer to into . Let's list several values of as gets closer to from the left:   Estimating                     We can even let approach from the other direction as well (i.e. \"from the right\") and will still approach as gets closer and closer to . So it looks like the limit should be .    To keep ourselves from writing \"the limit of as approaches some number \" over and over, let's introduce some notation: .   Limit of a piecewise function   Let   Find .    If we graph this function, we see that at there is a jump in the graph. In particular, if approaches from the left then approaches , whereas if approaches from the right then approaches . So this function does not appear to have an unambiguous limit as approaches . Another way to say this:  does not exist .     shows us something very important about limits: they depend on the two different ways can approach a number. So we introduce two new pieces of notation: the left-hand limit  will stand for the value approaches (if any) as approaches from the left (i.e. as increases to ), and the right-hand limit  will stand for the value approaches (if any) as approaches from the right (i.e. as decreases to ). In , we would say that .  At this point, we can make a rough definition for the limit of a function.   Limit of a Function  limit function of a single variable   Let be a function. Suppose that both the left-hand limit and the right-hand limit exist and are equal to the same number . Then we say that the limit of as approaches exists and is equal to . We denote this by writing .     Piecewise function again   Let be given by Evaluate and .    If we graph , we get the following:      Graphing .   The graph shows us that , while . Therefore does not exist. On the other hand, exists and is equal to .    It's important to note that the value of a function at a point is in general completely independent of the value of , i.e., we can't always expect to be equal to . Functions for which this is true, however, are known as continuous functions and will be very important in and beyond.   "
+  "title": "The limit of a function",
+  "body": " The limit of a function   Motivating limits  Imagine creating a mathematical valley out of the graph of , and in this valley walks a mathematical ant. The ant is walking towards the place on the hill directly above . At , the ant is units above the ground. At , the ant is now unit above the ground. As the ant moves towards , its height above the ground gets closer and closer to . To say it more clearly, and because modern calculus is built on this idea, as the ant approaches the point above , its height above the ground approaches the value . In other words, the limit of as approaches is .   A mathematical valley minus a mathematical ant      Remember that a function of the variable is just a rule that turns one number, , into another number, . So the idea that the limit of a function is trying to express is what happens to the number (the output) as the number (the input) approaches some particular value.   Actually, functions are much more general than this. But for calculus, it won't hurt us to view functions in this way.   We're not quite ready to define the limit of a function precisely, but we can point one thing out right away: the limit of a function requires two pieces of information: the function itself and the number that is approaching. The limit should then be whatever number that is approaching.   Estimating the limit of a trigonometric function   Let . What is the limit of as approaches the number ?    We don't have a lot of tools to find limits yet, so we'll try to estimate it instead. What we'll do is we'll plug numbers that are closer and closer to into . Let's list several values of as gets closer to from the left:   Estimating                     We can even let approach from the other direction as well (i.e. \"from the right\") and will still approach as gets closer and closer to . So it looks like the limit should be .    To keep ourselves from writing \"the limit of as approaches some number \" over and over, let's introduce some notation: .   Limit of a piecewise function   Let Find .    If we graph this function, we see that at there is a jump in the graph. In particular, if approaches from the left then approaches , whereas if approaches from the right then approaches . So this function does not appear to have an unambiguous limit as approaches . Another way to say this:  does not exist .     shows us something very important about limits: they depend on the two different ways can approach a number. So we introduce two new pieces of notation: the left-hand limit  will stand for the value approaches (if any) as approaches from the left (i.e. as increases to ), and the right-hand limit  will stand for the value approaches (if any) as approaches from the right (i.e. as decreases to ). In , we would say that .  At this point, we can make a rough definition for the limit of a function.   Limit of a function  limit function of a single variable   Let be a function. Suppose that both the left-hand limit and the right-hand limit exist and are equal to the same number . Then we say that the limit of as approaches exists and is equal to . We denote this by writing .     Piecewise function again   Let be given by Evaluate and .    If we graph , we get the following:   Graphing      The graph shows us that , while . Therefore does not exist. On the other hand, exists and is equal to .    It's important to note that the value of a function at a point is in general completely independent of the value of , i.e., we can't always expect to be equal to . Functions for which this is true, however, are known as continuous functions and will be very important in and beyond.   "
 },
 {
   "id": "figure-math-valley",
@@ -169,7 +169,7 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "2.1.1",
   "title": "",
-  "body": "    A mathematical valley minus a mathematical ant.  "
+  "body": " A mathematical valley minus a mathematical ant     "
 },
 {
   "id": "example-estimating-the-limit-of-a-trigonometric-function",
@@ -187,7 +187,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "2.1.4",
   "title": "Limit of a piecewise function.",
-  "body": " Limit of a piecewise function   Let   Find .    If we graph this function, we see that at there is a jump in the graph. In particular, if approaches from the left then approaches , whereas if approaches from the right then approaches . So this function does not appear to have an unambiguous limit as approaches . Another way to say this:  does not exist .   "
+  "body": " Limit of a piecewise function   Let Find .    If we graph this function, we see that at there is a jump in the graph. In particular, if approaches from the left then approaches , whereas if approaches from the right then approaches . So this function does not appear to have an unambiguous limit as approaches . Another way to say this:  does not exist .   "
 },
 {
   "id": "subsection-motivating-limits-10",
@@ -204,8 +204,8 @@ var ptx_lunr_docs = [
   "url": "section-the-limit-of-a-function.html#definition-limit-of-a-function",
   "type": "Definition",
   "number": "2.1.5",
-  "title": "Limit of a Function.",
-  "body": " Limit of a Function  limit function of a single variable   Let be a function. Suppose that both the left-hand limit and the right-hand limit exist and are equal to the same number . Then we say that the limit of as approaches exists and is equal to . We denote this by writing .   "
+  "title": "Limit of a function.",
+  "body": " Limit of a function  limit function of a single variable   Let be a function. Suppose that both the left-hand limit and the right-hand limit exist and are equal to the same number . Then we say that the limit of as approaches exists and is equal to . We denote this by writing .   "
 },
 {
   "id": "example-piecewise-function-again",
@@ -214,7 +214,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "2.1.6",
   "title": "Piecewise function again.",
-  "body": " Piecewise function again   Let be given by Evaluate and .    If we graph , we get the following:      Graphing .   The graph shows us that , while . Therefore does not exist. On the other hand, exists and is equal to .   "
+  "body": " Piecewise function again   Let be given by Evaluate and .    If we graph , we get the following:   Graphing      The graph shows us that , while . Therefore does not exist. On the other hand, exists and is equal to .   "
 },
 {
   "id": "section-computing-limits",
@@ -222,8 +222,8 @@ var ptx_lunr_docs = [
   "url": "section-computing-limits.html",
   "type": "Section",
   "number": "2.2",
-  "title": "Computing Limits",
-  "body": " Computing Limits   We've got a handle on how to estimate limits from , but the process is very tedious. It requires either graphing the function in question or laboriously entering values into a calculator. So our first order of business now that we have the concept of a limit is to find an easier way to calculate it. This will be a running theme throughout the course.    The Limit Laws  In many cases of interest, we can use knowledge of simpler limits to obtain more complicated limits. We do this via the Limit Laws . Before we get to them, we'll state two very simple (and hopefully very believable) limits.   Simple Limits   For any value of , the following limits hold: if is a constant and      The Limit Laws   Let be a constant, let be a positive whole number and let and be functions. Suppose that and both exist for some number . Then the following rules hold:   The Limit Laws          (if )         Note that item six in the table above only holds (in this class...) if is odd or if .     gives us the ability to compute a wide variety of limits.   Limit of a rational function   Let Evaluate .    We can evaluate by making use of the appropriate Limit Laws and :     In particular, Limit Laws 1-5 give us the following: if is a polynomial or rational function, then as long as is in the domain of . If is not in the domain, trickery may be required.   Trickery   Evaluate     First, note that we can't use the Limit Laws right away since the denominator is at . What we need to do is use algebra to simplify the expression inside the limit:   Now we can use the Limit Laws to find the limit as approaches , since we no longer have a divide-by-zero problem in the denominator:      "
+  "title": "Computing limits",
+  "body": " Computing limits   We've got a handle on how to estimate limits from , but the process is very tedious. It requires either graphing the function in question or laboriously entering values into a calculator. So our first order of business now that we have the concept of a limit is to find an easier way to calculate it. This will be a running theme throughout the course.    The limit laws  In many cases of interest, we can use knowledge of simpler limits to obtain more complicated limits. We do this via the Limit Laws . Before we get to them, we'll state two very simple (and hopefully very believable) limits.   Simple limits   For any value of , the following limits hold: if is a constant and      The limit laws   Let be a constant, let be a positive whole number and let and be functions. Suppose that and both exist for some number . Then the following rules hold:   The limit laws          (if )         Note that item six in the table above only holds (in this class...) if is odd or if .     gives us the ability to compute a wide variety of limits.   Limit of a rational function   Let Evaluate .    We can evaluate by making use of the appropriate Limit Laws and :     In particular, Limit Laws 1-5 give us the following: if is a polynomial or rational function, then as long as is in the domain of . If is not in the domain, trickery may be required.   Trickery   Evaluate     First, note that we can't use the Limit Laws right away since the denominator is at . What we need to do is use algebra to simplify the expression inside the limit: .  Now we can use the Limit Laws to find the limit as approaches , since we no longer have a divide-by-zero problem in the denominator: .     "
 },
 {
   "id": "subsection-the-limit-laws-2",
@@ -240,8 +240,8 @@ var ptx_lunr_docs = [
   "url": "section-computing-limits.html#proposition-simple-limits",
   "type": "Proposition",
   "number": "2.2.1",
-  "title": "Simple Limits.",
-  "body": " Simple Limits   For any value of , the following limits hold: if is a constant and    "
+  "title": "Simple limits.",
+  "body": " Simple limits   For any value of , the following limits hold: if is a constant and    "
 },
 {
   "id": "theorem-the-limit-laws",
@@ -249,8 +249,8 @@ var ptx_lunr_docs = [
   "url": "section-computing-limits.html#theorem-the-limit-laws",
   "type": "Theorem",
   "number": "2.2.2",
-  "title": "The Limit Laws.",
-  "body": " The Limit Laws   Let be a constant, let be a positive whole number and let and be functions. Suppose that and both exist for some number . Then the following rules hold:   The Limit Laws          (if )         Note that item six in the table above only holds (in this class...) if is odd or if .   "
+  "title": "The limit laws.",
+  "body": " The limit laws   Let be a constant, let be a positive whole number and let and be functions. Suppose that and both exist for some number . Then the following rules hold:   The limit laws          (if )         Note that item six in the table above only holds (in this class...) if is odd or if .   "
 },
 {
   "id": "example-limit-of-a-rational-function",
@@ -268,7 +268,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "2.2.5",
   "title": "Trickery.",
-  "body": " Trickery   Evaluate     First, note that we can't use the Limit Laws right away since the denominator is at . What we need to do is use algebra to simplify the expression inside the limit:   Now we can use the Limit Laws to find the limit as approaches , since we no longer have a divide-by-zero problem in the denominator:    "
+  "body": " Trickery   Evaluate     First, note that we can't use the Limit Laws right away since the denominator is at . What we need to do is use algebra to simplify the expression inside the limit: .  Now we can use the Limit Laws to find the limit as approaches , since we no longer have a divide-by-zero problem in the denominator: .   "
 },
 {
   "id": "section-continuity",
@@ -277,7 +277,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.3",
   "title": "Continuity",
-  "body": " Continuity  We saw in that for a function like , we could evaluate by simply plugging in . In other words, . Functions that have this property are extremely important in mathematics, so we give them a name.   Continuous Functions  continuous functions definition   Let be a function and suppose that is in the domain of . Then we say that is continuous at if . Otherwise, we say that is discontinuous at . We say that is continuous on an interval if it is continuous at every point of an interval. Otherwise, we say that is discontinuous on the interval.     says that it is extremely easy to evaluate limits of continuous functions: just plug the value that is approaching into the function . So the limit is then . If a function is continuous on an interval, then this means that the graph of has no \"gaps\" over this interval.   Determining if a function is continuous   Let . Is continuous on ?    If we graph , then we see that it is discontinuous at . Therefore is discontinuous on the interval .    If we're dealing with a function on a (bounded) closed interval, we need to introduce some new terminology. We say that a function is continuous from the left at if . Similarly, we say that is continuous from the right at if . This is of course assuming that is in the domain of . Finally, we say that is continuous on the closed interval if it is continuous on , continuous from the right at and continuous from the left at . The main idea is still that the graph contains no gaps over this interval.   Continuity over a closed interval   Let be given by Is continuous over ?    If we graph over this interval, we get the following:      Graphing over .   So from the graph it appears that is continuous on this interval.    Remember that we said a function is continuous over an interval if its graph has no gaps over that interval. This is a very rough explanation of continuity, but it should make the following theorem plausible.   Continuous Functions   Polynomial, rational, root and trigonometric functions are continuous at every point of their domain.    Although it doesn't directly mention piecewise functions, is still useful for determining if they are continuous. If a piecewise function is defined using any of the functions from , then the only points we really need to check for continuity are the the places where the function \"changes rules\".   Another piecewise function   Over what intervals is the function given by continuous?    We need to check continuity at and . At , we need to make sure that exists and is equal to . Since and it follows that does not exist. So can't be continuous at .  On the other hand, since , it follows that exists and is equal to . Since also equals , is continuous at . So must be continuous on .    We can also build more complicated continuous functions out of simpler ones.   Combining Continuous Functions   Let and be continuous at a point . Then the following statements are true:  is continuous at .  is continuous at .  is continuous at if .  is continuous at if is in the domain of .       Determining where functions are continuous   Let . On what intervals is continuous?    By , should be continuous wherever and are all defined. Since is defined for , is defined for and is defined for , it follows that is continuous on .     Using continuity to evaluate a limit   Evaluate .    Since and are all continuous, this means that must be continuous as well. Therefore     "
+  "body": " Continuity   We saw in that for a function like , we could evaluate by simply plugging in . In other words, . Functions that have this property are extremely important in mathematics, so we give them a name.    Continuous functions   Continuous Functions  continuous functions definition   Let be a function and suppose that is in the domain of . Then we say that is continuous at if . Otherwise, we say that is discontinuous at . We say that is continuous on an interval if it is continuous at every point of an interval. Otherwise, we say that is discontinuous on the interval.     says that it is extremely easy to evaluate limits of continuous functions: just plug the value that is approaching into the function . So the limit is then . If a function is continuous on an interval, then this means that the graph of has no \"gaps\" over this interval.   Determining if a function is continuous   Let . Is continuous on ?    If we graph , then we see that it is discontinuous at . Therefore is discontinuous on the interval .    If we're dealing with a function on a (bounded) closed interval, we need to introduce some new terminology. We say that a function is continuous from the left at if . Similarly, we say that is continuous from the right at if . This is of course assuming that is in the domain of . Finally, we say that is continuous on the closed interval if it is continuous on , continuous from the right at and continuous from the left at . The main idea is still that the graph contains no gaps over this interval.   Continuity over a closed interval   Let be given by . Is continuous over ?    If we graph over this interval, we get the following:   Graphing over      So from the graph it appears that is continuous on this interval.    Remember that we said a function is continuous over an interval if its graph has no gaps over that interval. This is a very rough explanation of continuity, but it should make the following theorem plausible.   Continuous functions   Polynomial, rational, root and trigonometric functions are continuous at every point of their domain.      Combining continuous functions  Although it doesn't directly mention piecewise functions, is still useful for determining if they are continuous. If a piecewise function is defined using any of the functions from , then the only points we really need to check for continuity are the the places where the function \"changes rules\".   Another piecewise function   Over what intervals is the function given by continuous?    We need to check continuity at and . At , we need to make sure that exists and is equal to . Since and it follows that does not exist. So can't be continuous at .  On the other hand, since , it follows that exists and is equal to . Since also equals , is continuous at . So must be continuous on .  Note that we can also verify this result graphically by looking for jumps in the graph. For example, see below produced using Desmos (you can also produce graphs using the Calc button).   Graph of      We can also build more complicated continuous functions out of simpler ones.   Combining continuous functions   Let and be continuous at a point . Then the following statements are true:   is continuous at .   is continuous at .   is continuous at if .   is continuous at if is in the domain of .       Determining where functions are continuous   Let . On what intervals is continuous?    By , should be continuous wherever and are all defined. Since is defined for , is defined for and is defined for , it follows that is continuous on .     Using continuity to evaluate a limit   Evaluate .    Since and are all continuous, this means that must be continuous as well. Therefore       We've seen that continuous functions are precisely those functions that make limits easy to compute. Since the two primary concepts in calculus, the derivative ( ) and the integral ( ), both depend on the concept of a limit, this means that continuous functions themselves will also be extremely important objects going forward.   "
 },
 {
   "id": "definition-continuous-functions",
@@ -298,9 +298,9 @@ var ptx_lunr_docs = [
   "body": " Determining if a function is continuous   Let . Is continuous on ?    If we graph , then we see that it is discontinuous at . Therefore is discontinuous on the interval .   "
 },
 {
-  "id": "section-continuity-6",
+  "id": "subsec-Continuous-functions-5",
   "level": "2",
-  "url": "section-continuity.html#section-continuity-6",
+  "url": "section-continuity.html#subsec-Continuous-functions-5",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -313,7 +313,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "2.3.3",
   "title": "Continuity over a closed interval.",
-  "body": " Continuity over a closed interval   Let be given by Is continuous over ?    If we graph over this interval, we get the following:      Graphing over .   So from the graph it appears that is continuous on this interval.   "
+  "body": " Continuity over a closed interval   Let be given by . Is continuous over ?    If we graph over this interval, we get the following:   Graphing over      So from the graph it appears that is continuous on this interval.   "
 },
 {
   "id": "theorem-continuous-functions",
@@ -321,8 +321,8 @@ var ptx_lunr_docs = [
   "url": "section-continuity.html#theorem-continuous-functions",
   "type": "Theorem",
   "number": "2.3.5",
-  "title": "Continuous Functions.",
-  "body": " Continuous Functions   Polynomial, rational, root and trigonometric functions are continuous at every point of their domain.   "
+  "title": "Continuous functions.",
+  "body": " Continuous functions   Polynomial, rational, root and trigonometric functions are continuous at every point of their domain.   "
 },
 {
   "id": "example-another-piecewise-function",
@@ -331,23 +331,23 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "2.3.6",
   "title": "Another piecewise function.",
-  "body": " Another piecewise function   Over what intervals is the function given by continuous?    We need to check continuity at and . At , we need to make sure that exists and is equal to . Since and it follows that does not exist. So can't be continuous at .  On the other hand, since , it follows that exists and is equal to . Since also equals , is continuous at . So must be continuous on .   "
+  "body": " Another piecewise function   Over what intervals is the function given by continuous?    We need to check continuity at and . At , we need to make sure that exists and is equal to . Since and it follows that does not exist. So can't be continuous at .  On the other hand, since , it follows that exists and is equal to . Since also equals , is continuous at . So must be continuous on .  Note that we can also verify this result graphically by looking for jumps in the graph. For example, see below produced using Desmos (you can also produce graphs using the Calc button).   Graph of     "
 },
 {
   "id": "theorem-combining-continuous-functions",
   "level": "2",
   "url": "section-continuity.html#theorem-combining-continuous-functions",
   "type": "Theorem",
-  "number": "2.3.7",
-  "title": "Combining Continuous Functions.",
-  "body": " Combining Continuous Functions   Let and be continuous at a point . Then the following statements are true:  is continuous at .  is continuous at .  is continuous at if .  is continuous at if is in the domain of .     "
+  "number": "2.3.8",
+  "title": "Combining continuous functions.",
+  "body": " Combining continuous functions   Let and be continuous at a point . Then the following statements are true:   is continuous at .   is continuous at .   is continuous at if .   is continuous at if is in the domain of .     "
 },
 {
   "id": "example-determining-where-functions-are-continuous",
   "level": "2",
   "url": "section-continuity.html#example-determining-where-functions-are-continuous",
   "type": "Example",
-  "number": "2.3.8",
+  "number": "2.3.9",
   "title": "Determining where functions are continuous.",
   "body": " Determining where functions are continuous   Let . On what intervals is continuous?    By , should be continuous wherever and are all defined. Since is defined for , is defined for and is defined for , it follows that is continuous on .   "
 },
@@ -356,7 +356,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-continuity.html#example-using-continuity-to-evaluate-a-limit",
   "type": "Example",
-  "number": "2.3.9",
+  "number": "2.3.10",
   "title": "Using continuity to evaluate a limit.",
   "body": " Using continuity to evaluate a limit   Evaluate .    Since and are all continuous, this means that must be continuous as well. Therefore    "
 },
@@ -366,8 +366,8 @@ var ptx_lunr_docs = [
   "url": "section-limits-involving-infinity.html",
   "type": "Section",
   "number": "2.4",
-  "title": "Limits Involving Infinity",
-  "body": " Limits Involving Infinity   Limits Involving Vertical Asymptotes  Consider the function . We know from algebra that this function has a vertical asymptote at , and so in particular is undefined there. However, just because it's undefined at doesn't mean that we can't gather important information about the function near . This is because the function behaves in a very specific way as we let approach . For example, if we let approach from the right, then increases without bound. Similarly, decreases without bound as approaches from the left.  Even though is not approaching a specific value as approaches from either direction, this behavior shows up often enough and is important enough that we want to introduce notation to describe it. For this function, we would say and .  Now consider . Then since the function increases without bound when approaches from both directions. In this case, we say that .   It's extremely important to remember that the symbol is not being used to represent a number or variable that we can perform algebra on. It's a symbol indicating how a particular function is behaving at a certain point.   If is a function and , or , then this means that the function has a vertical asymptote at . In this course, this basically corresponds to a divide-by-zero problem.   Infinite limit involving a rational function   Determine .    If we try to plug in into we get , which means we have run into a divide-by-zero problem. This is a good hint that the limit should be , we just need to figure out the correct sign. There are a couple ways we can do this. First, we could set up a sign chart for this function to see where it's positive and negative and then use that to see if it's increasing or decreasing without bound as . Second, we could just plug in values of that are closer and closer to and see how the function behaves. Either way, we see that it's negative for values of that are close to (but less than) . Hence .      Limits at Infinity  The previous subsection involved limits of functions whose values approached . Now we look at what can happen to a function if its input values approach . First, a definition of sorts.   Limit at Infinity   Let be a function. We say that if gets (and stays) arbitrarily close to as is made arbitrarily large. Similarly, we say that if gets (and stays) arbitrarily close to as is made arbitrarily small.     An important limit at infinity   Let . Determine .    As gets arbitrarily large, gets arbitrarily close to . Therefore .     holds for many other reciprocal powers of . In particular, if then .   A limit at infinity involving cosine   Let . Compute .    First, note that . By the previous remark, we know that . Therefore .     The reason we were able to find the limit in was because of the following fact: if exists and if is continuous at , then . Basically, we can swap continuous functions with limits without causing any harm.   For limits at infinity involving powers of a variable, it is the highest power variables that determine the outcome.   Limit at infinity of a rational function   Let Find and .    Let's start with . To figure out what this limit should be, we could try the following. As gets very large the term in the numerator should drown out everything else in the numerator. Similarly, the term in the denominator should drown out everything else in the denominator. So for very large, . Hence should probably go to as goes to . To make this more precise, we'll just divide the numerator and denominator by the largest power of the denominator, , and then take the limit:   We can find using the same idea. Just divide by the highest power in the denominator and then take the limit:     These limits at infinity have a graphical meaning as well. If or exists and is equal to , then the line is a horizontal asymptote of the graph of .   Asymptotic equivalence   Two functions and are said to be asymptotically equivalent , written , if the following is true: Show that .    All we need to do is compute  Therefore .     "
+  "title": "Limits involving infinity",
+  "body": " Limits involving infinity   Limits are used to describe the behavior of a function as approaches some quantity. In this section, we will see how limits can be used to describe singularities of functions (which appear as vertical asymptotes) and long-term behavior of functions (which usually appear as horizontal asymptotes).    Limits involving vertical asymptotes  Consider the function . We know from algebra that this function has a vertical asymptote at , and so in particular is undefined there. However, just because it's undefined at doesn't mean that we can't gather important information about the function near . This is because the function behaves in a very specific way as we let approach . For example, if we let approach from the right, then increases without bound. Similarly, decreases without bound as approaches from the left.  Even though is not approaching a specific value as approaches from either direction, this behavior shows up often enough and is important enough that we want to introduce notation to describe it. For this function, we would say and .  Now consider . Then since the function increases without bound when approaches from both directions. In this case, we say that .   It's extremely important to remember that the symbol is not being used to represent a number or variable that we can perform algebra on. It's a symbol indicating how a particular function is behaving at a certain point.   If is a function and , or , then this means that the function has a vertical asymptote at . In this course, this basically corresponds to a divide-by-zero problem.   Infinite limit involving a rational function   Determine .    If we try to plug in into we get , which means we have run into a divide-by-zero problem. This is a good hint that the limit should be , we just need to figure out the correct sign. There are a couple ways we can do this. First, we could set up a sign chart for this function to see where it's positive and negative and then use that to see if it's increasing or decreasing without bound as . Second, we could just plug in values of that are closer and closer to and see how the function behaves. Either way, we see that it's negative for values of that are close to (but less than) . Hence .      Limits at infinity  The previous subsection involved limits of functions whose values approached . Now we look at what can happen to a function if its input values approach . First, a definition of sorts.   Limit at infinity   Let be a function. We say that if gets (and stays) arbitrarily close to as is made arbitrarily large. Similarly, we say that if gets (and stays) arbitrarily close to as is made arbitrarily small.     An important limit at infinity   Let . Determine .    As gets arbitrarily large, gets arbitrarily close to . Therefore .     holds for many other reciprocal powers of . In particular, if then .   A limit at infinity involving cosine   Let . Compute .    First, note that . By the previous remark, we know that . Therefore .     The reason we were able to find the limit in was because of the following fact: if exists and if is continuous at , then . Basically, we can swap continuous functions with limits without causing any harm.   For limits at infinity involving powers of a variable, it is the highest power variables that determine the outcome.   Limit at infinity of a rational function   Let Find and .    Let's start with . To figure out what this limit should be, we could try the following. As gets very large the term in the numerator should drown out everything else in the numerator. Similarly, the term in the denominator should drown out everything else in the denominator. So for very large, . Hence should probably go to as goes to . To make this more precise, we'll just divide the numerator and denominator by the largest power of the denominator, , and then take the limit: .  We can find using the same idea. Just divide by the highest power in the denominator and then take the limit: .    These limits at infinity have a graphical meaning as well. If or exists and is equal to , then the line is a horizontal asymptote of the graph of .   Asymptotic equivalence   Two functions and are said to be asymptotically equivalent , written , if the following is true: Show that .    All we need to do is compute  . Therefore .      Now that we've used limits to describe function behaviors that we are already familiar with, such as gaps in graphs and asymptotes, we will move on to using limits to define new concepts of importance. In we will introduce the first such concept, and one of the most important concepts in calculus as a whole: that of the derivative of a function.   "
 },
 {
   "id": "example-infinite-limit-involving-a-rational-function",
@@ -384,8 +384,8 @@ var ptx_lunr_docs = [
   "url": "section-limits-involving-infinity.html#definition-limit-at-infinity",
   "type": "Definition",
   "number": "2.4.2",
-  "title": "Limit at Infinity.",
-  "body": " Limit at Infinity   Let be a function. We say that if gets (and stays) arbitrarily close to as is made arbitrarily large. Similarly, we say that if gets (and stays) arbitrarily close to as is made arbitrarily small.   "
+  "title": "Limit at infinity.",
+  "body": " Limit at infinity   Let be a function. We say that if gets (and stays) arbitrarily close to as is made arbitrarily large. Similarly, we say that if gets (and stays) arbitrarily close to as is made arbitrarily small.   "
 },
 {
   "id": "example-an-important-limit-at-infinity",
@@ -412,7 +412,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "2.4.5",
   "title": "Limit at infinity of a rational function.",
-  "body": " Limit at infinity of a rational function   Let Find and .    Let's start with . To figure out what this limit should be, we could try the following. As gets very large the term in the numerator should drown out everything else in the numerator. Similarly, the term in the denominator should drown out everything else in the denominator. So for very large, . Hence should probably go to as goes to . To make this more precise, we'll just divide the numerator and denominator by the largest power of the denominator, , and then take the limit:   We can find using the same idea. Just divide by the highest power in the denominator and then take the limit:    "
+  "body": " Limit at infinity of a rational function   Let Find and .    Let's start with . To figure out what this limit should be, we could try the following. As gets very large the term in the numerator should drown out everything else in the numerator. Similarly, the term in the denominator should drown out everything else in the denominator. So for very large, . Hence should probably go to as goes to . To make this more precise, we'll just divide the numerator and denominator by the largest power of the denominator, , and then take the limit: .  We can find using the same idea. Just divide by the highest power in the denominator and then take the limit: .   "
 },
 {
   "id": "example-asymptotic-equivalence",
@@ -421,7 +421,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "2.4.6",
   "title": "Asymptotic equivalence.",
-  "body": " Asymptotic equivalence   Two functions and are said to be asymptotically equivalent , written , if the following is true: Show that .    All we need to do is compute  Therefore .   "
+  "body": " Asymptotic equivalence   Two functions and are said to be asymptotically equivalent , written , if the following is true: Show that .    All we need to do is compute  . Therefore .   "
 },
 {
   "id": "section-the-definition-of-the-derivative",
