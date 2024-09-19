@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!--********************************************************************
-
-*********************************************************************-->
-<!-- This file was originally part of the book     -->
-<!-- (as copied on 2015/07/12)                     -->
-<!--                                               -->
-<!--   Abstract Algebra: Theory and Applications   -->
-<!--                                               -->
-<!-- Copyright (C) 1997-2014  Thomas W. Judson     -->
-
 <chapter xml:id="inverse-functions" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Inverse Functions</title>
     <introduction>
@@ -20,13 +10,13 @@
         </p>
     </introduction>
     <section xml:id="section-exponential-functions">
-        <title>Exponential Functions</title>
+        <title>Exponential functions</title>
         <p>
             Many changing quantities can be modeled by using <term>exponential functions</term>, which are functions of the form <m>f(x) = a^{x}</m> where <m>a &gt; 0</m>.
             Exponential functions have several important properties which we list below.
         </p>
         <theorem xml:id="theorem-properties-of-exponential-functions">
-            <title>Properties of Exponential Functions</title>
+            <title>Properties of exponential functions</title>
             <idx><h>exponential functions</h><h>properties</h></idx>
             <statement>
                 <p>
@@ -66,7 +56,7 @@
             <md>
                 <mrow>a &gt; 1 &amp; \Rightarrow \lim_{x\to\infty}a^{x} = \infty\quad\text{and}\lim_{x\to-\infty}\quad a^{x} = 0 </mrow>
                 <mrow>a &lt; 0 &amp; \Rightarrow \lim_{x\to\infty}a^{x} = 0\quad\text{and}\quad\lim_{x\to-\infty}\quad a^{x} = \infty </mrow>
-            </md>
+            </md>.
         </p>
         <p>
             Every exponential function <m>f(x) = a^{x}</m> is continuous everywhere.
@@ -121,13 +111,13 @@
     <section xml:id="section-logarithms">
         <title>Logarithms</title>
         <subsection xml:id="subsection-inverse-function-review">
-            <title>Inverse Function Review</title>
+            <title>Inverse function review</title>
             <p>
                 Suppose we want to solve the equation <m>y = f(x)</m> for <m>x</m>.
                 Then we can only do so unambiguously if <m>f</m> is an <term>invertible function</term>.
             </p>
             <definition xml:id="definition-invertible-functions">
-                <title>Invertible Functions</title>
+                <title>Invertible functions</title>
                 <idx><h>functions</h><h>invertible functions</h></idx>
                 <statement>
                     <p>
@@ -169,11 +159,12 @@
                 </statement>
                 <solution>
                     <p>
-                        If we graph <m>e^{x}</m> and then rotate the graph across the line <m>y=x</m>, we get
+                        If we graph <m>e^{x}</m> and then rotate the graph across the line <m>y=x</m>, we get the graph in <xref ref="figure-exponential"/>.
                     </p>
                     <figure xml:id="figure-exponential">
+                        <caption>The inverse of <m>e^{x}</m>.</caption>
                         <image xml:id="image-exponential" width="50%">
-                            <latex-image><![CDATA[
+                            <latex-image>
                                 \begin{tikzpicture}
                                     \begin{axis}[myaxis,
                                         xmin=-1,xmax=3.5,
@@ -186,22 +177,22 @@
                                         \addplot[dashed, thick] {x};
                                         \addlegendentry{$y=x$};
                                     \end{axis}
-                                \end{tikzpicture}]]>
+                                \end{tikzpicture}
                             </latex-image>
                         </image>
-                        <caption>The inverse of <m>e^{x}</m>.</caption>
                     </figure>
                 </solution>
             </example>
         </subsection>
         <subsection xml:id="subsection-calculus-with-inverse-functions">
-            <title>Calculus with Inverse Functions</title>
+            <title>Calculus with inverse functions</title>
             <p>
                 There are two important things to notice about the graph of the inverse function in <xref ref="example-exponential-inverse" text="type-global" />: it's continuous and differentiable.
                 This is because the same was true of the original graph, and if we think about it this should be true in general as well since graphing the inverse doesn't add any new gaps or cusps to the graph.
             </p>
             <theorem xml:id="theorem-continuity-and-differentiability-of-inverses">
-                <title>Continuity and Differentiability of Inverses</title>
+                <title>Continuity and differentiability of inverses</title>
+                <idx><h>functions</h><h>invertible functions</h><h>continuity</h></idx>
                 <statement>
                     <p>
                         Let <m>f(x)</m> be a continuous (respectively, differentiable) function.
@@ -236,8 +227,9 @@
                 The following formula will help us to do this.
             </p>
             <theorem xml:id="theorem-derivative-of-an-inverse-function">
-                <title>Derivative of an Inverse Function</title>
-                <idx><h>functions</h><h>inverse functions</h><h>derivatives</h></idx>
+                <title>Derivative of an inverse function</title>
+                <idx><h>functions</h><h>invertible functions</h><h>derivatives</h></idx>
+                <idx><h>derivative</h><h>differentiation formulas</h><h>invertible functions</h></idx>
                 <statement>
                     <p>
                         Let <m>f(x)</m> be a differentiable function with inverse <m>f^{-1}(x)</m>.
@@ -303,15 +295,15 @@
                 The defining properties of the logarithm function are as follows:
                 <md>
                     <mrow>\log_{a}a^{x} &amp; = x </mrow>
-                    <mrow>a^{\log_{a}x} &amp; = x. </mrow>
-                </md>
+                    <mrow>a^{\log_{a}x} &amp; = x </mrow>
+                </md>.
                 Essentially, logarithms and exponentials cancel each other out.
                 To put this another way, <m>\log_{a}x</m> is the <em>exponent</em> needed to turn <m>a</m> into <m>x</m>.
             </p>
             <p>
                 We can say a few things about logarithms just from looking at graphs of exponentials.
-                Suppose that <m>a&gt;1</m>.
-                Then <m>\log_{a}x</m> is both continuous and differentiable for all <m>x&gt;0</m>,
+                Suppose that <m>a\gt1</m>.
+                Then <m>\log_{a}x</m> is both continuous and differentiable for all <m>x\gt0</m>,
                 <md>
                     <mrow>\log_{a}1 &amp; = 0 </mrow>
                     <mrow>\lim_{x\to0^{+}}\log_{a}x &amp; = -\infty </mrow>
@@ -323,7 +315,7 @@
                 The properties of the exponential listed in <xref ref="theorem-properties-of-exponential-functions" text="type-global" /> have corresponding properties for logarithms.
             </p>
             <theorem xml:id="theorem-properties-of-logarithm-functions">
-                <title>Properties of Logarithm Functions</title>
+                <title>Properties of logarithm functions</title>
                 <idx><h>logarithm functions</h><h>properties</h></idx>
                 <statement>
                     <p>
@@ -372,19 +364,20 @@
         </subsection>
     </section>
     <section xml:id="section-derivatives-of-exponential-and-logarithmic-functions">
-        <title>Derivatives of Exponential and Logarithmic Functions</title>
+        <title>Derivatives of exponential and logarithmic functions</title>
         <subsection xml:id="subsection-derivatives-of-exponentials">
-            <title>Derivatives of Exponentials</title>
+            <title>Derivatives of exponentials</title>
             <p>
                 We've already mentioned that <m>\dv{}{x}e^{x} = e^{x}</m>, but we've said nothing about differentiating functions such as <m>3^{x}</m> or <m>(\frac{1}{\pi})^{-x}</m>.
                 However, it turns out that we can get these derivatives from the derivative of <m>e^{x}</m> without too much trouble.
             </p>
             <theorem xml:id="theorem-derivatives-of-exponential-functions">
-                <title>Derivatives of Exponential Functions</title>
+                <title>Derivatives of exponential functions</title>
                 <idx><h>exponential functions</h><h>derivatives</h></idx>
+                <idx><h>derivative</h><h>differentiation formulas</h><h>exponential functions</h></idx>
                 <statement>
                     <p>
-                        Let <m>a &gt; 0</m> and set <m>f(x) = a^{x}</m>.
+                        Let <m>a \gt 0</m> and set <m>f(x) = a^{x}</m>.
                         Then <m>f'(x) = a^{x}\ln a</m>.
                     </p>
                 </statement>
@@ -397,8 +390,8 @@
                         <md>
                             <mrow>\dv{}{x}a^{x} &amp; = \dv{}{x}e^{x\ln a} </mrow>
                             <mrow> &amp; = (\ln a)e^{x\ln a} </mrow>
-                            <mrow> &amp; = (\ln a)a^{x}. </mrow>
-                        </md>
+                            <mrow> &amp; = (\ln a)a^{x} </mrow>
+                        </md>.
                     </p>
                 </proof>
             </theorem>
@@ -436,13 +429,13 @@
                         <md>
                             <mrow>x' &amp; = -Ae^{-t} +Be^{-t} - Bte^{-t} </mrow>
                             <mrow>x'' &amp; = Ae^{-t} - Be^{-t} - (Be^{-t} - Bte^{-t}) </mrow>
-                            <mrow> &amp; = Ae^{-t} - 2Be^{-t} + Bte^{-t}, </mrow>
-                        </md>
+                            <mrow> &amp; = Ae^{-t} - 2Be^{-t} + Bte^{-t} </mrow>
+                        </md>,
                         it follows that
                         <md>
                             <mrow>x'' + 2x' + x &amp; = (Ae^{-t} - 2Be^{-t} + Bte^{-t}) + 2(-Ae^{-t} + Be^{-t} - Bte^{-r}) + Ae^{-t} + Bte^{-t} </mrow>
-                            <mrow> &amp; = 0. </mrow>
-                        </md>
+                            <mrow> &amp; = 0 </mrow>
+                        </md>.
                     </p>
                 </solution>
             </example>
@@ -452,18 +445,18 @@
             </p>
         </subsection>
         <subsection xml:id="subsection-derivatives-of-logarithms">
-            <title>Derivatives of Logarithms</title>
+            <title>Derivatives of logarithms</title>
             <p>
                 Just as we can get the derivative of every exponential function <m>a^{x}</m> just by knowing the derivative of <m>e^{x}</m>, we can get the derivative of every logarithmic function <m>\log_{a}x</m> just by knowing that <m>\dv{}{x}\ln x = \frac{1}{x}</m>.
             </p>
             <theorem xml:id="theorem-derivatives-of-logarithmic-functions">
-                <title>Derivatives of Logarithmic Functions</title>
+                <title>Derivatives of logarithmic functions</title>
                 <idx><h>logarithm functions</h><h>derivatives</h></idx>
                 <statement>
                     <p>
                         Let <m>a &gt; 0, a\neq 1</m> and set <m>f(x) = \log_{a}x</m>.
                         Then
-                        <me>f'(x) = \frac{1}{x\ln a}.</me>
+                        <me>f'(x) = \frac{1}{x\ln a}</me>.
                     </p>
                 </statement>
             </theorem>
@@ -478,7 +471,7 @@
                 <solution>
                     <p>
                         By the chain rule, we have
-                        <me>f'(x) = \frac{1}{(\log_{5}x)\ln 2}\dv{}{x}\log_{5}x = \frac{1}{(\log_{5} x)\ln 2}\frac{1}{x\ln 5},</me>
+                        <me>f'(x) = \frac{1}{(\log_{5}x)\ln 2}\dv{}{x}\log_{5}x = \frac{1}{(\log_{5} x)\ln 2}\frac{1}{x\ln 5}</me>,
                     </p>
                 </solution>
             </example>
@@ -500,13 +493,13 @@
                         So we'll using logarithms instead!
                         Set <m>y = f(x)</m>.
                         Then
-                        <me>\ln y = \ln e^{-x} + \ln\cos x - \ln (x^{2} + 4x + 4) = -x + \ln\cos x - 2\ln(x+2).</me>
+                        <me>\ln y = \ln e^{-x} + \ln\cos x - \ln (x^{2} + 4x + 4) = -x + \ln\cos x - 2\ln(x+2)</me>.
                         Now we differentiate both sides implicitly to obtain
-                        <me>\frac{y'}{y} = -1 - \frac{\sin x}{\cos x} - \frac{2}{x+2}.</me>
+                        <me>\frac{y'}{y} = -1 - \frac{\sin x}{\cos x} - \frac{2}{x+2}</me>.
                     </p>
                     <p>
                         Hence
-                        <me>y' = y\left(-1 - \tan x - \frac{2}{x+2}\right) = \frac{e^{-x}\cos x}{x^{2} + 4x + 4}\left(-1 - \tan x - \frac{2}{x+2}\right).</me>
+                        <me>y' = y\left(-1 - \tan x - \frac{2}{x+2}\right) = \frac{e^{-x}\cos x}{x^{2} + 4x + 4}\left(-1 - \tan x - \frac{2}{x+2}\right)</me>.
                     </p>
                 </solution>
             </example>
@@ -525,11 +518,11 @@
                     <p>
                         We'll use logarithmic differentiation again to simplify <m>h</m> and remove the exponent.
                         Set <m>y = h(z)</m>, which gives
-                        <me>\ln y = z\ln z.</me>
+                        <me>\ln y = z\ln z</me>.
                         So
-                        <me>\frac{y'}{y} = \ln z + 1,</me>
+                        <me>\frac{y'}{y} = \ln z + 1</me>,
                         which means that
-                        <me>y' = y(\ln z + 1) = z^{z}(\ln z + 1).</me>
+                        <me>y' = y(\ln z + 1) = z^{z}(\ln z + 1)</me>.
                     </p>
                 </solution>
             </example>
@@ -538,14 +531,14 @@
     <section xml:id="section-exponential-models">
         <title>Exponential Models</title>
         <subsection xml:id="subsection-exponential-growth">
-            <title>Exponential Growth</title>
+            <title>Exponential growth</title>
             <p>
                 Suppose we want to predict the spread of some infectious disease through a city.
                 A reasonable, though simplistic, assumption is that the disease will spread quicker if more people are infected.
                 In other words, we'll assume that the rate at which people are infected is proportional to the number of people infected.
                 If we let <m>N(t)</m> denote the number of people infected at time <m>t</m>, then we're basically saying that
                 <me>\dv{N}{t} = kN(t)</me>
-                for some constant <m>k &gt; 0</m>.
+                for some constant <m>k \gt 0</m>.
             </p>
             <p>
                 This differential equation is a <term>mathematical model</term> that allows us to predict the growth of <m>N(t)</m>.
@@ -555,7 +548,7 @@
                 This is an example of <term>exponential growth</term>, and the proportionality constant <m>k</m> is called the <term>relative growth rate</term>.
             </p>
             <example xml:id="example-modeling-an-outbreak">
-                <title>Modeling an Outbreak</title>
+                <title>Modeling an outbreak</title>
                 <statement>
                     <p>
                         A game of Humans vs. Zombies breaks out at WVWC.
@@ -580,14 +573,14 @@
                         If we plug this into <m>N(t) = e^{kt}</m>, we get
                         <me>3 = e^{k} \Rightarrow k = \ln3.</me>
                         So
-                        <me>N(t) = e^{(\ln 3)t} = 3^{t}.</me>
+                        <me>N(t) = e^{(\ln 3)t} = 3^{t}</me>.
                         Hence there will be <m>N(3) = 3^{3} = 27</m> zombies after three hours.
                     </p>
                 </solution>
             </example>
         </subsection>
         <subsection xml:id="subsection-exponential-decay">
-            <title>Exponential Decay</title>
+            <title>Exponential decay</title>
             <p>
                 Closely related to the concept of exponential growth is that of <term>exponential decay</term>.
                 A quantity <m>M(t)</m> undergoes exponential decay if it satisfies the differential equation
@@ -610,7 +603,7 @@
                 The rate of decay is often expressed in terms of <term>half-life</term>: the amount of time it will take for precisely half of the mass to decay.
             </p>
             <example xml:id="example-decay-from-half-life">
-                <title>Decay from Half-Life</title>
+                <title>Decay from half-life</title>
                 <statement>
                     <p>
                         A radioactive substance has a half-life of <m>28</m> days.
@@ -634,7 +627,7 @@
         </subsection>
     </section>
     <section xml:id="section-inverse-trigonometric-functions">
-        <title>Inverse Trigonometric Functions</title>
+        <title>Inverse trigonometric functions</title>
         <p>
             Recall that <m>\sin x</m> is not a one-to-one function since it fails the horizontal line test.
             Hence it has no inverse function.
@@ -643,7 +636,7 @@
             We call this function <term>inverse sine</term> or <term>arcsine</term>.
         </p>
         <definition xml:id="definition-inverse-sine">
-            <title>Inverse Sine</title>
+            <title>Inverse sine</title>
             <idx><h>inverse trigonometric functions</h><h>inverse sine</h></idx>
             <statement>
                 <p>
@@ -655,13 +648,13 @@
         </definition>
         <p>
             We can think of <m>\sin^{-1}x = \arcsin x</m> as the angle required to turn sine into <m>x</m>.
-            <aside>
-                <p>
-                    Note that <m>\sin^{-1}x</m> does <em>not</em> mean <m>\frac{1}{\sin x}</m>, which is <m>\csc x</m>.
-                    It's an unfortunate, though standard, choice of notation.
-                </p>
-            </aside>
         </p>
+        <aside>
+            <p>
+                Note that <m>\sin^{-1}x</m> does <em>not</em> mean <m>\frac{1}{\sin x}</m>, which is <m>\csc x</m>.
+                It's an unfortunate, though standard, choice of notation.
+            </p>
+        </aside>
         <example xml:id="example-finding-inverse-sine">
             <title>Finding inverse sine</title>
             <statement>
@@ -698,7 +691,7 @@
             Since <m>\sin x</m> is differentiable, this means <m>\arcsin x</m> is also differentiable.
         </p>
         <theorem xml:id="theorem-derivative-of-inverse-sine">
-            <title>Derivative of Inverse Sine</title>
+            <title>Derivative of inverse sine</title>
             <statement>
                 <p>
                     Let <m>-1 &lt; x &lt; 1</m>.
@@ -723,7 +716,7 @@
             <title>Inverse cosine value</title>
             <statement>
                 <p>
-                    Find <m>\csc(\cos^{-1}(-\frac{1}{2})</m>.
+                    Find <m>\csc(\cos^{-1}(-\frac{1}{2}))</m>.
                 </p>
             </statement>
             <solution>
@@ -791,7 +784,7 @@
             </solution>
         </example>
         <theorem xml:id="theorem-derivative-of-inverse-tangent">
-            <title>Derivative of Inverse Tangent</title>
+            <title>Derivative of inverse tangent</title>
             <statement>
                 <p>
                     The derivative of <m>\tan^{-1}x</m> is <m>\frac{1}{1+x^{2}}</m>.
