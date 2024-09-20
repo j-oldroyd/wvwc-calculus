@@ -159,6 +159,114 @@
     <section xml:id="section-logarithms">
         <title>Logarithms</title>
 
+        <subsection xml:id="subsection-logarithms">
+            <title>Logarithms</title>
+
+            <p>
+                Since exponential functions are important in mathematics and its applications, their inverses are important as well.
+                Each exponential function <m>f(x) = a^{x}</m> (<m>a&gt; 0</m>) has an inverse function that we call the <term>logarithm with base <m>a</m></term>, and denote by <m>f^{-1}(x) = \log_{a}x</m>.
+                The domain of each logarithm is <m>(0,\infty)</m> and the range is <m>(-\infty,\infty)</m>.
+                The defining properties of the logarithm function are as follows:
+                <md>
+                    <mrow>\log_{a}a^{x} &amp; = x </mrow>
+                    <mrow>a^{\log_{a}x} &amp; = x </mrow>
+                </md>.
+                Essentially, logarithms and exponentials cancel each other out.
+                To put this another way, <m>\log_{a}x</m> is the <em>exponent</em> needed to turn <m>a</m> into <m>x</m>.
+            </p>
+
+            <p>
+                We can say a few things about logarithms just from looking at graphs of exponentials.
+                Suppose that <m>a\gt1</m>.
+                Then <m>\log_{a}x</m> is both continuous and differentiable for all <m>x\gt0</m>,
+                <md>
+                    <mrow>\log_{a}1 &amp; = 0 </mrow>
+                    <mrow>\lim_{x\to0^{+}}\log_{a}x &amp; = -\infty </mrow>
+                    <mrow>\lim_{x\to\infty}\log_{a}x &amp; = \infty </mrow>
+                </md>
+                and the derivative of <m>\log_{a}x</m> approaches <m>0</m> as <m>x\to\infty</m>.
+            </p>
+
+            <p>
+                The properties of the exponential listed in <xref ref="theorem-properties-of-exponential-functions" text="type-global" /> have corresponding properties for logarithms.
+            </p>
+
+            <theorem xml:id="theorem-properties-of-logarithm-functions">
+                <title>Properties of logarithm functions</title>
+
+                <idx><h>logarithm functions</h><h>properties</h></idx>
+                <statement>
+                    <p>
+                        Let <m>a&gt;0</m> with <m>a\neq1</m>.
+                        Let <m>x,y</m> be positive real numbers, and let <m>r</m> be any real number.
+                        Then
+                        <ul>
+                            <li>
+                                <m>\log_{a}1 = 0</m> and <m>\log_{a}a = 1</m>.
+                            </li>
+
+                            <li>
+                                <m>\log_{a}(xy) = \log_{a}x + \log_{a}y</m>.
+                            </li>
+
+                            <li>
+                                <m>\log_{a}\frac{x}{y} = \log_{a}x - \log_{a}y</m>.
+                            </li>
+
+                            <li>
+                                <m>\log_{a}x^{r} = r\log_{a}x</m>.
+                            </li>
+                        </ul>
+                    </p>
+                </statement>
+            </theorem>
+
+            <p>
+                An important takeaway from <xref ref="theorem-properties-of-logarithm-functions" text="type-global" /> is that logarithms turn the complicated operations of multiplication and division into the simpler operations of addition and subtraction.
+            </p>
+
+            <p>
+                Since every exponential function has a corresponding logarithm, the natural exponential function <m>e^{x}</m> has a logarithm as well.
+                We call this inverse the <term>natural logarithm</term> and denote it by <m>\ln x</m>.
+                Note that <m>\dv{}{x}\ln x = \frac{1}{x}</m> by <xref ref="example-exponential-inverse-revisited" text="type-global" />.
+            </p>
+
+            <example xml:id="example-simplifying-an-exponential">
+                <title>Simplifying an exponential</title>
+
+                <statement>
+                    <p>
+                        Simplify <m>e^{-4\ln x}</m> and <m>e^{x\ln3}</m>.
+                    </p>
+                </statement>
+
+                <solution>
+                    <p>
+                        We'll simplify by using the cancellation property <m>e^{\ln y} = y</m>.
+                        First, we need to put the entire exponent inside of the natural log:
+                        <me>
+                            e^{-4\ln x} = e^{\ln x^{-4}} = x^{-4}
+                        </me>
+                        and
+                        <me>
+                            e^{x\ln3} = 3^{x}
+                        </me>.
+                    </p>
+                </solution>
+            </example>
+
+            <p>
+                <xref ref="example-simplifying-an-exponential" text="type-global" /> shows us that <em>every</em> exponential function can be written in terms of the natural exponential: <m>a^{x} = e^{x\ln a}</m>. Similarly, every logarithm can be written in terms of the natural logarithm by using the change of base formula:
+                <me>
+                    \log_{a}x = \frac{\ln x}{\ln a}
+                </me>.
+            </p>
+        </subsection>
+    </section>
+
+    <section xml:id="section-derivatives-of-exponential-and-logarithmic-functions">
+        <title>Derivatives of exponential and logarithmic functions</title>
+
         <subsection xml:id="subsection-inverse-function-review">
             <title>Inverse function review</title>
 
@@ -383,114 +491,6 @@
             </example>
         </subsection>
 
-
-        <subsection xml:id="subsection-logarithms">
-            <title>Logarithms</title>
-
-            <p>
-                Since exponential functions are important in mathematics and its applications, their inverses are important as well.
-                Each exponential function <m>f(x) = a^{x}</m> (<m>a&gt; 0</m>) has an inverse function that we call the <term>logarithm with base <m>a</m></term>, and denote by <m>f^{-1}(x) = \log_{a}x</m>.
-                The domain of each logarithm is <m>(0,\infty)</m> and the range is <m>(-\infty,\infty)</m>.
-                The defining properties of the logarithm function are as follows:
-                <md>
-                    <mrow>\log_{a}a^{x} &amp; = x </mrow>
-                    <mrow>a^{\log_{a}x} &amp; = x </mrow>
-                </md>.
-                Essentially, logarithms and exponentials cancel each other out.
-                To put this another way, <m>\log_{a}x</m> is the <em>exponent</em> needed to turn <m>a</m> into <m>x</m>.
-            </p>
-
-            <p>
-                We can say a few things about logarithms just from looking at graphs of exponentials.
-                Suppose that <m>a\gt1</m>.
-                Then <m>\log_{a}x</m> is both continuous and differentiable for all <m>x\gt0</m>,
-                <md>
-                    <mrow>\log_{a}1 &amp; = 0 </mrow>
-                    <mrow>\lim_{x\to0^{+}}\log_{a}x &amp; = -\infty </mrow>
-                    <mrow>\lim_{x\to\infty}\log_{a}x &amp; = \infty </mrow>
-                </md>
-                and the derivative of <m>\log_{a}x</m> approaches <m>0</m> as <m>x\to\infty</m>.
-            </p>
-
-            <p>
-                The properties of the exponential listed in <xref ref="theorem-properties-of-exponential-functions" text="type-global" /> have corresponding properties for logarithms.
-            </p>
-
-            <theorem xml:id="theorem-properties-of-logarithm-functions">
-                <title>Properties of logarithm functions</title>
-
-                <idx><h>logarithm functions</h><h>properties</h></idx>
-                <statement>
-                    <p>
-                        Let <m>a&gt;0</m> with <m>a\neq1</m>.
-                        Let <m>x,y</m> be positive real numbers, and let <m>r</m> be any real number.
-                        Then
-                        <ul>
-                            <li>
-                                <m>\log_{a}1 = 0</m> and <m>\log_{a}a = 1</m>.
-                            </li>
-
-                            <li>
-                                <m>\log_{a}(xy) = \log_{a}x + \log_{a}y</m>.
-                            </li>
-
-                            <li>
-                                <m>\log_{a}\frac{x}{y} = \log_{a}x - \log_{a}y</m>.
-                            </li>
-
-                            <li>
-                                <m>\log_{a}x^{r} = r\log_{a}x</m>.
-                            </li>
-                        </ul>
-                    </p>
-                </statement>
-            </theorem>
-
-            <p>
-                An important takeaway from <xref ref="theorem-properties-of-logarithm-functions" text="type-global" /> is that logarithms turn the complicated operations of multiplication and division into the simpler operations of addition and subtraction.
-            </p>
-
-            <p>
-                Since every exponential function has a corresponding logarithm, the natural exponential function <m>e^{x}</m> has a logarithm as well.
-                We call this inverse the <term>natural logarithm</term> and denote it by <m>\ln x</m>.
-                Note that <m>\dv{}{x}\ln x = \frac{1}{x}</m> by <xref ref="example-exponential-inverse-revisited" text="type-global" />.
-            </p>
-
-            <example xml:id="example-simplifying-an-exponential">
-                <title>Simplifying an exponential</title>
-
-                <statement>
-                    <p>
-                        Simplify <m>e^{-4\ln x}</m> and <m>e^{x\ln3}</m>.
-                    </p>
-                </statement>
-
-                <solution>
-                    <p>
-                        We'll simplify by using the cancellation property <m>e^{\ln y} = y</m>.
-                        First, we need to put the entire exponent inside of the natural log:
-                        <me>
-                            e^{-4\ln x} = e^{\ln x^{-4}} = x^{-4}
-                        </me>
-                        and
-                        <me>
-                            e^{x\ln3} = 3^{x}
-                        </me>.
-                    </p>
-                </solution>
-            </example>
-
-            <p>
-                <xref ref="example-simplifying-an-exponential" text="type-global" /> shows us that <em>every</em> exponential function can be written in terms of the natural exponential: <m>a^{x} = e^{x\ln a}</m>. Similarly, every logarithm can be written in terms of the natural logarithm by using the change of base formula:
-                <me>
-                    \log_{a}x = \frac{\ln x}{\ln a}
-                </me>.
-            </p>
-        </subsection>
-    </section>
-
-    <section xml:id="section-derivatives-of-exponential-and-logarithmic-functions">
-        <title>Derivatives of exponential and logarithmic functions</title>
 
         <subsection xml:id="subsection-derivatives-of-exponentials">
             <title>Derivatives of exponentials</title>
