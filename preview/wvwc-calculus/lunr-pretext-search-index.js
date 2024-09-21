@@ -429,8 +429,8 @@ var ptx_lunr_docs = [
   "url": "section-the-definition-of-the-derivative.html",
   "type": "Section",
   "number": "3.1",
-  "title": "The Definition of the Derivative",
-  "body": " The Definition of the Derivative   Tangent Lines  Consider . If we graph this, we get a parabola. What we'd like to do is to find a way to describe how quickly this parabola is changing at a point, i.e. find the \"slope\" of the parabola. One way to try to deal with this is to use secant lines . Recall that the secant line through the points and has slope , which is just the average rate of change of from to . If is very close to , then the slope of the secant line through these points should be a good approximation to the \"slope\" of at the point .   Secant lines on a parabola   Let . Find the slope of the secant line through and .    Since the slope of the secant line is the average rate of change, we get that the slope must be equal to     What is telling us is that if , then the slope of at should be very close to , the slope of the secant line. Now we'll do a trick that shows up everywhere in calculus, and is the entire reason we introduced limits in the first place. We'll make this approximation exact by taking a limit. In particular, we'll say that the slope of should be equal to This is the slope of the tangent line to at . Instead of an average rate of change over an interval , we now have an instantaneous rate of change at a point .   Tangent Lines   The tangent line to a curve through a point is the line passing through with slope given by assuming this limit exists. The slope of the tangent line represents the slope of the graph of at and gives the instantaneous rate of change of at .     Tangent line to a root   Find the equation of the tangent line to through the point .    We need two things to find the equation of a line: the slope of the line and a point on the line. Since we know the tangent line has to pass through , we just need to find the slope. The slope is given by Hence the equation of the tangent line through is     As a reminder, the slope of the tangent line represents the slope, or instantaneous rate of change, of the function.   Velocity from position   The displacement (i.e. position) of a particle moving in a straight line is described by the function , where is in seconds and is in meters. Find the velocity, or instantaneous rate of change, of the particle at .    The velocity is just the slope of the tangent line to at , which we can find as follows:   At this step it's a little unclear where to go next, so we'll try long division. If we do so, we get Hence the velocity must be meters per second.     was a little tricky because we needed to compute , and it was unclear how to simplify this at first. This stemmed in large part from how we computed the velocity in the first place, using the formula or more generally .  We want to rewrite this formula to make it a little easier to work with in certain cases. We'll do this by making the denominator easier to handle. In particular, set . Then Either formula can be used to compute the slope of the tangent line.   Velocity revisited   Let be given as in . Find the velocity at .    We know that the velocity should be , but we'll try to find it again using our new formula. So the velocity should also be     Typically, if is easy to factor in terms of we'll want to use the first formula we had for computing rates of change. Otherwise, we'll stick with the new formula involving .    The Derivative  Suppose we go back to one more time, but now we want to find the velocity of at an arbitrary number . Then we could still use our limit formulas, which would give us   So the velocity at of the particle modeled by is given by . So we can represent the velocity, or rate of change or slope of the tangent line, by a function. We call this the derivative .   Definition of the Derivative  derivative definition  functions differentiable   Let be a function. Then its derivative at is the number given by assuming the limit exists. If this limit exists, we say that the function is differentiable at .     We could also define the derivative by These two limits are equivalent.   The derivative of a function at a point represents two things: the slope of the tangent line to at and the instantaneous rate of change of at .   Slope of the sine function   Let . Find its slope at .    The slope at is exactly , which is      Tangent line of the sine function   Find the equation of the tangent line to at .    The tangent line must pass through and must have slope , so its equation is or just .     "
+  "title": "The definition of the derivative",
+  "body": " The definition of the derivative   Tangent lines  Consider . If we graph this, we get a parabola. What we'd like to do is to find a way to describe how quickly this parabola is changing at a point, i.e. find the \"slope\" of the parabola. One way to try to deal with this is to use secant lines . Recall that the secant line through the points and has slope , which is just the average rate of change of from to . If is very close to , then the slope of the secant line through these points should be a good approximation to the \"slope\" of at the point .   Secant lines on a parabola   Let . Find the slope of the secant line through and .    Since the slope of the secant line is the average rate of change, we get that the slope must be equal to     What is telling us is that if , then the slope of at should be very close to , the slope of the secant line. Now we'll do a trick that shows up everywhere in calculus, and is the entire reason we introduced limits in the first place. We'll make this approximation exact by taking a limit. In particular, we'll say that the slope of should be equal to This is the slope of the tangent line to at . Instead of an average rate of change over an interval , we now have an instantaneous rate of change at a point .   Tangent lines   The tangent line to a curve through a point is the line passing through with slope given by assuming this limit exists. The slope of the tangent line represents the slope of the graph of at and gives the instantaneous rate of change of at .     Tangent line to a root   Find the equation of the tangent line to through the point .    We need two things to find the equation of a line: the slope of the line and a point on the line. Since we know the tangent line has to pass through , we just need to find the slope. The slope is given by Hence the equation of the tangent line through is     As a reminder, the slope of the tangent line represents the slope, or instantaneous rate of change, of the function.   Velocity from position   The displacement (i.e. position) of a particle moving in a straight line is described by the function , where is in seconds and is in meters. Find the velocity, or instantaneous rate of change, of the particle at .    The velocity is just the slope of the tangent line to at , which we can find as follows: .  At this step it's a little unclear where to go next, so we'll try long division. If we do so, we get Hence the velocity must be meters per second.     was a little tricky because we needed to compute , and it was unclear how to simplify this at first. This stemmed in large part from how we computed the velocity in the first place, using the formula or more generally .  We want to rewrite this formula to make it a little easier to work with in certain cases. We'll do this by making the denominator easier to handle. In particular, set . Then Either formula can be used to compute the slope of the tangent line.   Velocity revisited   Let be given as in . Find the velocity at .    We know that the velocity should be , but we'll try to find it again using our new formula. So the velocity should also be .    Typically, if is easy to factor in terms of we'll want to use the first formula we had for computing rates of change. Otherwise, we'll stick with the new formula involving .    The derivative  Suppose we go back to one more time, but now we want to find the velocity of at an arbitrary number . Then we could still use our limit formulas, which would give us .  So the velocity at of the particle modeled by is given by . So we can represent the velocity, or rate of change or slope of the tangent line, by a function. We call this the derivative .   Definition of the derivative  derivative definition  functions differentiable   Let be a function. Then its derivative at is the number given by assuming the limit exists. If this limit exists, we say that the function is differentiable at .     We could also define the derivative by These two limits are equivalent.   The derivative of a function at a point represents two things: the slope of the tangent line to at and the instantaneous rate of change of at .   Slope of the sine function   Let . Find its slope at .    The slope at is exactly , which is      Tangent line of the sine function   Find the equation of the tangent line to at .    The tangent line must pass through and must have slope , so its equation is or just .     "
 },
 {
   "id": "subsection-tangent-lines-2",
@@ -465,8 +465,8 @@ var ptx_lunr_docs = [
   "url": "section-the-definition-of-the-derivative.html#definition-tangent-lines",
   "type": "Definition",
   "number": "3.1.2",
-  "title": "Tangent Lines.",
-  "body": " Tangent Lines   The tangent line to a curve through a point is the line passing through with slope given by assuming this limit exists. The slope of the tangent line represents the slope of the graph of at and gives the instantaneous rate of change of at .   "
+  "title": "Tangent lines.",
+  "body": " Tangent lines   The tangent line to a curve through a point is the line passing through with slope given by assuming this limit exists. The slope of the tangent line represents the slope of the graph of at and gives the instantaneous rate of change of at .   "
 },
 {
   "id": "example-tangent-line-to-a-root",
@@ -484,7 +484,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.1.4",
   "title": "Velocity from position.",
-  "body": " Velocity from position   The displacement (i.e. position) of a particle moving in a straight line is described by the function , where is in seconds and is in meters. Find the velocity, or instantaneous rate of change, of the particle at .    The velocity is just the slope of the tangent line to at , which we can find as follows:   At this step it's a little unclear where to go next, so we'll try long division. If we do so, we get Hence the velocity must be meters per second.   "
+  "body": " Velocity from position   The displacement (i.e. position) of a particle moving in a straight line is described by the function , where is in seconds and is in meters. Find the velocity, or instantaneous rate of change, of the particle at .    The velocity is just the slope of the tangent line to at , which we can find as follows: .  At this step it's a little unclear where to go next, so we'll try long division. If we do so, we get Hence the velocity must be meters per second.   "
 },
 {
   "id": "example-velocity-revisited",
@@ -493,12 +493,12 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.1.5",
   "title": "Velocity revisited.",
-  "body": " Velocity revisited   Let be given as in . Find the velocity at .    We know that the velocity should be , but we'll try to find it again using our new formula. So the velocity should also be    "
+  "body": " Velocity revisited   Let be given as in . Find the velocity at .    We know that the velocity should be , but we'll try to find it again using our new formula. So the velocity should also be .   "
 },
 {
-  "id": "subsection-the-derivative-4",
+  "id": "subsection-the-derivative-3",
   "level": "2",
-  "url": "section-the-definition-of-the-derivative.html#subsection-the-derivative-4",
+  "url": "section-the-definition-of-the-derivative.html#subsection-the-derivative-3",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -510,8 +510,8 @@ var ptx_lunr_docs = [
   "url": "section-the-definition-of-the-derivative.html#definition-definition-of-the-derivative",
   "type": "Definition",
   "number": "3.1.6",
-  "title": "Definition of the Derivative.",
-  "body": " Definition of the Derivative  derivative definition  functions differentiable   Let be a function. Then its derivative at is the number given by assuming the limit exists. If this limit exists, we say that the function is differentiable at .   "
+  "title": "Definition of the derivative.",
+  "body": " Definition of the derivative  derivative definition  functions differentiable   Let be a function. Then its derivative at is the number given by assuming the limit exists. If this limit exists, we say that the function is differentiable at .   "
 },
 {
   "id": "example-slope-of-the-sine-function",
@@ -537,8 +537,8 @@ var ptx_lunr_docs = [
   "url": "section-the-derivative-as-a-function.html",
   "type": "Section",
   "number": "3.2",
-  "title": "The Derivative as a Function",
-  "body": " The Derivative as a Function   The Derivative Function  There's no reason we can't look at an arbitrary value for in the definition of given in . If we do this, we can define the derivative function .   The Derivative Function  derivative derivative function   Let be a function. The derivative function , or more simply derivative , of is the function defined by assuming this limit exists. This is also often denoted by or . If this limit exists for all in some interval , we say that is differentiable on , or more simply differentiable if we do not wish to specify the interval.     Computing a derivative   Compute the derivative of .    Using , we have     If is a function, then its derivative (assuming it exists!) is a function that gives the rate of change of at , or equivalently the slope of the tangent line to at .   Sketching a derivative   A function is given by the following graph:     Graph of .    Sketch .    Remember that represents the slope of , so sketching amounts to sketching the different values that the slopes of can take. We can eyeball these values from . A rough sketch of , added to the original graph, may look like the following:     Graph of .      We've mentioned before that continuous functions are functions whose graphs can be drawn without lifting your pencil off of the page. Likewise, differentiable functions are functions whose graphs can be drawn \"smoothly\", without any sudden movements or cusps, and without drawing a vertical tangent line. If we think about these two concepts, we may suspect that a differentiable function is also continuous. If we can draw a graph smoothly, we certainly can't lift our pencil off the page to draw it. The next theorem makes this precise.   Differentiable Functions Are Continuous   Let be a function that is differentiable at . Then is continuous at .    We need to show that exists and is equal to . To do this, we'll start by considering (somewhat counterintuitively) : Note that we are using our alternate definition of the derivative here.  Now we can prove that as follows: So , which means that is continuous at .    At this point we might think that a continuous function should also be differentiable, but this is not the case.   A continuous function that is not differentiable at a point   Let . Show that is not differentiable at .    If we graph it looks like it shouldn't be differentiable at because of the cusp. We'll try to prove this mathematically by showing that the limit in doesn't exist if . First, we'll compute the left hand limit: Now, the right hand limit: Since these limits are different, does not exist. Hence is not differentiable at .     You may think that a continuous function must at least be differentiable \"almost everywhere\" at this point. After all, how could it be possible to draw a graph without lifting your pencil off the paper that still has a cusp or a vertical tangent line everywhere ? Most mathematicians before the century thought this as well, until Weierstrass came up with a function, the Weierstrass function , that is continuous everywhere but differentiable nowhere .     Higher Order Derivatives   Acceleration from position   The position of some particle moving in a line is given by , where is in seconds and is in meters. Find , the acceleration of the particle at time .    Acceleration is the rate of change of velocity, and velocity is the rate of change of position. So we should probably find the velocity first! Let's call it . We have Now we can get the acceleration as well:     In , we had to take two derivatives of the original function in order to get the acceleration . In other words, acceleration is the second derivative of position . So , which we also write as or . This is an example of a second-order derivative . In general, we have the following definition.   -order Derivatives  derivative -order derivative   Let be a function. The -order derivative of is the function obtained by differentiating  times. This function is denoted by If or , we typically write , and instead of or .    Although it gets more difficult to assign a physical or geometric significance to higher order derivatives, we can still derive meaning from the second derivative. One interpretation of the second derivative is as acceleration, as shown in , and it turns out there's a nice geometric interpretation as well. Recall that if is a function then represents the slope, or rate of change, of the graph of at . Therefore represents the rate of change of the slope, i.e. how quickly the slope is increasing or decreasing. If then the slope of should be increasing, leading to a u-shaped graph. Conversely, if then the slope of should be decreasing, leading to an upside down u-shaped graph. This leads to the following definition.   Concavity   Let be a function with second derivative . We say that is concave up (respectively, concave down ) on an interval if (respectively, ) on that interval.    So functions that are concave up on an interval tend to be u-shaped on that interval, and functions that are concave down tend to be upside down u-shaped. See .   Concavity                  "
+  "title": "The derivative as a function",
+  "body": " The derivative as a function   The derivative function  There's no reason we can't look at an arbitrary value for in the definition of given in . If we do this, we can define the derivative function .   The derivative function  derivative derivative function   Let be a function. The derivative function , or more simply derivative , of is the function defined by assuming this limit exists. This is also often denoted by or . If this limit exists for all in some interval , we say that is differentiable on , or more simply differentiable if we do not wish to specify the interval.     Computing a derivative   Compute the derivative of .    Using , we have .    If is a function, then its derivative (assuming it exists!) is a function that gives the rate of change of at , or equivalently the slope of the tangent line to at .   Sketching a derivative   Sketch where is the function whose graph is given in .   Graph of        Remember that represents the slope of , so sketching amounts to sketching the different values that the slopes of can take. We can eyeball these values from . A rough sketch of , added to the original graph, will look similar to .   Graph of        We've mentioned before that continuous functions are functions whose graphs can be drawn without lifting your pencil off of the page. Likewise, differentiable functions are functions whose graphs can be drawn \"smoothly\", without any sudden movements or cusps, and without drawing a vertical tangent line. If we think about these two concepts, we may suspect that a differentiable function is also continuous. If we can draw a graph smoothly, we certainly can't lift our pencil off the page to draw it. The next theorem makes this precise.   Differentiable functions are continuous   Let be a function that is differentiable at . Then is continuous at .    We need to show that exists and is equal to . To do this, we'll start by considering (somewhat counterintuitively) : . Note that we are using our alternate definition of the derivative here.  Now we can prove that as follows: . So , which means that is continuous at .    At this point we might think that a continuous function should also be differentiable, but this is not the case.   A continuous function that is not differentiable at a point   Let . Show that is not differentiable at .    If we graph it looks like it shouldn't be differentiable at because of the cusp. We'll try to prove this mathematically by showing that the limit in doesn't exist if . First, we'll compute the left hand limit: . Now, the right hand limit: . Since these limits are different, does not exist. Hence is not differentiable at .     You may think that a continuous function must at least be differentiable \"almost everywhere\" at this point. After all, how could it be possible to draw a graph without lifting your pencil off the paper that still has a cusp or a vertical tangent line everywhere ? Most mathematicians before the century thought this as well, until Weierstrass came up with a function, the Weierstrass function , that is continuous everywhere but differentiable nowhere .     Higher order derivatives   Acceleration from position   The position of some particle moving in a line is given by , where is in seconds and is in meters. Find , the acceleration of the particle at time .    Acceleration is the rate of change of velocity, and velocity is the rate of change of position. So we should probably find the velocity first! Let's call it . We have . Now we can get the acceleration as well: .    In , we had to take two derivatives of the original function in order to get the acceleration . In other words, acceleration is the second derivative of position . So , which we also write as or . This is an example of a second-order derivative . In general, we have the following definition.   -order derivatives  derivative -order derivative   Let be a function. The -order derivative of is the function obtained by differentiating  times. This function is denoted by . If or , we typically write , and instead of or .    Although it gets more difficult to assign a physical or geometric significance to higher order derivatives, we can still derive meaning from the second derivative. One interpretation of the second derivative is as acceleration, as shown in , and it turns out there's a nice geometric interpretation as well. Recall that if is a function then represents the slope, or rate of change, of the graph of at . Therefore represents the rate of change of the slope, i.e. how quickly the slope is increasing or decreasing. If then the slope of should be increasing, leading to a u-shaped graph. Conversely, if then the slope of should be decreasing, leading to an upside down u-shaped graph. This leads to the following definition.   Concavity   Let be a function with second derivative . We say that is concave up (respectively, concave down ) on an interval if (respectively, ) on that interval.    So functions that are concave up on an interval tend to be u-shaped on that interval, and functions that are concave down tend to be upside down u-shaped. See .   Concavity                  "
 },
 {
   "id": "definition-the-derivative-function",
@@ -546,8 +546,8 @@ var ptx_lunr_docs = [
   "url": "section-the-derivative-as-a-function.html#definition-the-derivative-function",
   "type": "Definition",
   "number": "3.2.1",
-  "title": "The Derivative Function.",
-  "body": " The Derivative Function  derivative derivative function   Let be a function. The derivative function , or more simply derivative , of is the function defined by assuming this limit exists. This is also often denoted by or . If this limit exists for all in some interval , we say that is differentiable on , or more simply differentiable if we do not wish to specify the interval.   "
+  "title": "The derivative function.",
+  "body": " The derivative function  derivative derivative function   Let be a function. The derivative function , or more simply derivative , of is the function defined by assuming this limit exists. This is also often denoted by or . If this limit exists for all in some interval , we say that is differentiable on , or more simply differentiable if we do not wish to specify the interval.   "
 },
 {
   "id": "example-computing-a-derivative",
@@ -556,7 +556,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.2.2",
   "title": "Computing a derivative.",
-  "body": " Computing a derivative   Compute the derivative of .    Using , we have    "
+  "body": " Computing a derivative   Compute the derivative of .    Using , we have .   "
 },
 {
   "id": "example-sketching-a-derivative",
@@ -565,7 +565,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.2.3",
   "title": "Sketching a derivative.",
-  "body": " Sketching a derivative   A function is given by the following graph:     Graph of .    Sketch .    Remember that represents the slope of , so sketching amounts to sketching the different values that the slopes of can take. We can eyeball these values from . A rough sketch of , added to the original graph, may look like the following:     Graph of .     "
+  "body": " Sketching a derivative   Sketch where is the function whose graph is given in .   Graph of        Remember that represents the slope of , so sketching amounts to sketching the different values that the slopes of can take. We can eyeball these values from . A rough sketch of , added to the original graph, will look similar to .   Graph of       "
 },
 {
   "id": "theorem-differentiable-functions-are-continuous",
@@ -573,8 +573,8 @@ var ptx_lunr_docs = [
   "url": "section-the-derivative-as-a-function.html#theorem-differentiable-functions-are-continuous",
   "type": "Theorem",
   "number": "3.2.6",
-  "title": "Differentiable Functions Are Continuous.",
-  "body": " Differentiable Functions Are Continuous   Let be a function that is differentiable at . Then is continuous at .    We need to show that exists and is equal to . To do this, we'll start by considering (somewhat counterintuitively) : Note that we are using our alternate definition of the derivative here.  Now we can prove that as follows: So , which means that is continuous at .   "
+  "title": "Differentiable functions are continuous.",
+  "body": " Differentiable functions are continuous   Let be a function that is differentiable at . Then is continuous at .    We need to show that exists and is equal to . To do this, we'll start by considering (somewhat counterintuitively) : . Note that we are using our alternate definition of the derivative here.  Now we can prove that as follows: . So , which means that is continuous at .   "
 },
 {
   "id": "example-a-continuous-function-that-is-not-differentiable-at-a-point",
@@ -583,7 +583,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.2.7",
   "title": "A continuous function that is not differentiable at a point.",
-  "body": " A continuous function that is not differentiable at a point   Let . Show that is not differentiable at .    If we graph it looks like it shouldn't be differentiable at because of the cusp. We'll try to prove this mathematically by showing that the limit in doesn't exist if . First, we'll compute the left hand limit: Now, the right hand limit: Since these limits are different, does not exist. Hence is not differentiable at .   "
+  "body": " A continuous function that is not differentiable at a point   Let . Show that is not differentiable at .    If we graph it looks like it shouldn't be differentiable at because of the cusp. We'll try to prove this mathematically by showing that the limit in doesn't exist if . First, we'll compute the left hand limit: . Now, the right hand limit: . Since these limits are different, does not exist. Hence is not differentiable at .   "
 },
 {
   "id": "example-acceleration-from-position",
@@ -592,7 +592,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.2.8",
   "title": "Acceleration from position.",
-  "body": " Acceleration from position   The position of some particle moving in a line is given by , where is in seconds and is in meters. Find , the acceleration of the particle at time .    Acceleration is the rate of change of velocity, and velocity is the rate of change of position. So we should probably find the velocity first! Let's call it . We have Now we can get the acceleration as well:    "
+  "body": " Acceleration from position   The position of some particle moving in a line is given by , where is in seconds and is in meters. Find , the acceleration of the particle at time .    Acceleration is the rate of change of velocity, and velocity is the rate of change of position. So we should probably find the velocity first! Let's call it . We have . Now we can get the acceleration as well: .   "
 },
 {
   "id": "subsection-higher-order-derivatives-3",
@@ -609,8 +609,8 @@ var ptx_lunr_docs = [
   "url": "section-the-derivative-as-a-function.html#definition-nth-order-derivatives",
   "type": "Definition",
   "number": "3.2.9",
-  "title": "<span class=\"process-math\">\\(n^{\\text{th}}\\)<\/span>-order Derivatives.",
-  "body": " -order Derivatives  derivative -order derivative   Let be a function. The -order derivative of is the function obtained by differentiating  times. This function is denoted by If or , we typically write , and instead of or .   "
+  "title": "<span class=\"process-math\">\\(n^{\\text{th}}\\)<\/span>-order derivatives.",
+  "body": " -order derivatives  derivative -order derivative   Let be a function. The -order derivative of is the function obtained by differentiating  times. This function is denoted by . If or , we typically write , and instead of or .   "
 },
 {
   "id": "definition-concavity",
@@ -636,8 +636,8 @@ var ptx_lunr_docs = [
   "url": "section-differentiation-formulas.html",
   "type": "Section",
   "number": "3.3",
-  "title": "Differentiation Formulas",
-  "body": " Differentiation Formulas   Now we start to find methods that allow us to compute derivatives without going back to . Perhaps the easiest rule is the constant rule , which just says that the derivative of a constant is . We'll derive more complicated rules in this section and the next two.    The Power Rule and Trigonometric Derivatives  Our first goal will be to determine a general formula for the derivative of for some power . If is a whole number, then we can find the derivative of without too much trouble. In fact, from the it's not too hard to show that the derivative of is , the derivative of is , the derivative of is , and so on. This suggests our first derivative rule, the power rule .   The Power Rule  derivative differentiation formulas power rule   Let where is some real number. Then .    Note that is actually quite general: it works for all powers of ! This includes negative powers and fractional powers.   Derivatives using the power rule   Find the derivatives of the following functions:  .  .  .      The derivative of isn't too hard to find using the power rule, and we quickly get . For , first rewrite it as . Then . Finally, .    With a little bit of geometry and the squeeze theorem, we can get the derivatives of the basic trigonometric functions and .   Derivatives of Sine and Cosine  derivatives differentiation formulas sine and cosine   Let be in radians. Then     Note that if is in degrees instead of radians these formulas don't work. Instead, they become    Concavity of the sine function   On which intervals is concave up?    We need to find where is positive. Since , this means we need to figure out where is negative . If we go back to the unit circle definition of sine, then we can see that on the following intervals: So is concave up on every open interval of the form where is some integer.      Derivatives of Sums and Constant Multiples  Now that we have derivative formulas for some basic functions, we want to extend these to more complicated functions. For this section we'll look at what happens when we multiply a function by a constant or add it to another function. In the next two sections we'll consider more advanced rules.   Constant Multiple Rule  derivative differentiation formulas constant multiple rule   Let be differentiable function and let be some constant. Then .    To prove this, we go back to : Hence the derivative of is .    We can find the derivative of the sum of two functions just as easily.   Sum Rule  derivative differentiation formulas sum rule   Let and be two differentiable functions. Then .      Product Rule and Quotient Rule  Many functions can be written in the form , where may each have previously known derivatives. What we want to do now is to find a way to get the derivative of from the derivatives of and . We do this using the product rule .   The Product Rule  derivative differentiation formulas product rule   Let and be differentiable functions. Then     We prove this using the definition of the derivative:      Using the product rule   Let . Find .    We could foil this out and take derivatives, but it will be easier to use the product rule.      The Quotient Rule  Now that we know how to differentiate products, we move on to quotients.   The Quotient Rule   Let and be differentiable functions. Then wherever .     Derivative of tangent   Let . Find .    Since , then we can apply the quotient rule to get the derivative of :     The derivatives for and may also be computed using the quotient rule and the facts that and .   "
+  "title": "Differentiation formulas",
+  "body": " Differentiation formulas   Now we start to find methods that allow us to compute derivatives without going back to . Perhaps the easiest rule is the constant rule , which just says that the derivative of a constant is . We'll derive more complicated rules in this section and the next two.    The power rule and trigonometric derivatives  Our first goal will be to determine a general formula for the derivative of for some power . If is a whole number, then we can find the derivative of without too much trouble. In fact, from the it's not too hard to show that the derivative of is , the derivative of is , the derivative of is , and so on. This suggests our first derivative rule, the power rule .   The power rule  derivative differentiation formulas power rule   Let where is some real number. Then .    Note that is actually quite general: it works for all powers of ! This includes negative powers and fractional powers.   Derivatives using the power rule   Find the derivatives of the following functions:   .   .   .      The derivative of isn't too hard to find using the power rule, and we quickly get . For , first rewrite it as . Then . Finally, .    With a little bit of geometry and the squeeze theorem, we can get the derivatives of the basic trigonometric functions and .   Derivatives of sine and cosine  derivatives differentiation formulas sine and cosine   Let be in radians. Then .    Note that if is in degrees instead of radians these formulas don't work. Instead, they become .   Concavity of the sine function   On which intervals is concave up?    We need to find where is positive. Since , this means we need to figure out where is negative . If we go back to the unit circle definition of sine, then we can see that on the following intervals: So is concave up on every open interval of the form where is some integer.      Derivatives of sums and constant multiples  Now that we have derivative formulas for some basic functions, we want to extend these to more complicated functions. For this section we'll look at what happens when we multiply a function by a constant or add it to another function. In the next two sections we'll consider more advanced rules.   Constant multiple rule  derivative differentiation formulas constant multiple rule   Let be differentiable function and let be some constant. Then .    To prove this, we go back to : . Hence the derivative of is .    We can find the derivative of the sum of two functions just as easily.   Sum rule  derivative differentiation formulas sum rule   Let and be two differentiable functions. Then .      Product rule and quotient rule  Many functions can be written in the form , where may each have previously known derivatives. What we want to do now is to find a way to get the derivative of from the derivatives of and . We do this using the product rule .   The product rule  derivative differentiation formulas product rule   Let and be differentiable functions. Then .    We prove this using the definition of the derivative: .     Using the product rule   Let . Find .    We could foil this out and take derivatives, but it will be easier to use the product rule.      The quotient rule  Now that we know how to differentiate products, we move on to quotients.   The quotient rule   Let and be differentiable functions. Then wherever .     Derivative of tangent   Let . Find .    Since , then we can apply the quotient rule to get the derivative of :     The derivatives for and may also be computed using the quotient rule and the facts that and .   "
 },
 {
   "id": "section-differentiation-formulas-2-1",
@@ -663,8 +663,8 @@ var ptx_lunr_docs = [
   "url": "section-differentiation-formulas.html#theorem-the-power-rule",
   "type": "Theorem",
   "number": "3.3.1",
-  "title": "The Power Rule.",
-  "body": " The Power Rule  derivative differentiation formulas power rule   Let where is some real number. Then .   "
+  "title": "The power rule.",
+  "body": " The power rule  derivative differentiation formulas power rule   Let where is some real number. Then .   "
 },
 {
   "id": "example-derivatives-using-the-power-rule",
@@ -673,7 +673,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.3.2",
   "title": "Derivatives using the power rule.",
-  "body": " Derivatives using the power rule   Find the derivatives of the following functions:  .  .  .      The derivative of isn't too hard to find using the power rule, and we quickly get . For , first rewrite it as . Then . Finally, .   "
+  "body": " Derivatives using the power rule   Find the derivatives of the following functions:   .   .   .      The derivative of isn't too hard to find using the power rule, and we quickly get . For , first rewrite it as . Then . Finally, .   "
 },
 {
   "id": "theorem-derivatives-of-sine-and-cosine",
@@ -681,8 +681,8 @@ var ptx_lunr_docs = [
   "url": "section-differentiation-formulas.html#theorem-derivatives-of-sine-and-cosine",
   "type": "Theorem",
   "number": "3.3.3",
-  "title": "Derivatives of Sine and Cosine.",
-  "body": " Derivatives of Sine and Cosine  derivatives differentiation formulas sine and cosine   Let be in radians. Then    "
+  "title": "Derivatives of sine and cosine.",
+  "body": " Derivatives of sine and cosine  derivatives differentiation formulas sine and cosine   Let be in radians. Then .   "
 },
 {
   "id": "example-concavity-of-the-sine-function",
@@ -699,8 +699,8 @@ var ptx_lunr_docs = [
   "url": "section-differentiation-formulas.html#theorem-constant-multiple-rule",
   "type": "Theorem",
   "number": "3.3.5",
-  "title": "Constant Multiple Rule.",
-  "body": " Constant Multiple Rule  derivative differentiation formulas constant multiple rule   Let be differentiable function and let be some constant. Then .    To prove this, we go back to : Hence the derivative of is .   "
+  "title": "Constant multiple rule.",
+  "body": " Constant multiple rule  derivative differentiation formulas constant multiple rule   Let be differentiable function and let be some constant. Then .    To prove this, we go back to : . Hence the derivative of is .   "
 },
 {
   "id": "theorem-sum-rule",
@@ -708,8 +708,8 @@ var ptx_lunr_docs = [
   "url": "section-differentiation-formulas.html#theorem-sum-rule",
   "type": "Theorem",
   "number": "3.3.6",
-  "title": "Sum Rule.",
-  "body": " Sum Rule  derivative differentiation formulas sum rule   Let and be two differentiable functions. Then .   "
+  "title": "Sum rule.",
+  "body": " Sum rule  derivative differentiation formulas sum rule   Let and be two differentiable functions. Then .   "
 },
 {
   "id": "subsection-product-rule-quotient-rule-2",
@@ -726,8 +726,8 @@ var ptx_lunr_docs = [
   "url": "section-differentiation-formulas.html#theorem-the-product-rule",
   "type": "Theorem",
   "number": "3.3.7",
-  "title": "The Product Rule.",
-  "body": " The Product Rule  derivative differentiation formulas product rule   Let and be differentiable functions. Then     We prove this using the definition of the derivative:    "
+  "title": "The product rule.",
+  "body": " The product rule  derivative differentiation formulas product rule   Let and be differentiable functions. Then .    We prove this using the definition of the derivative: .   "
 },
 {
   "id": "example-using-the-product-rule",
@@ -744,8 +744,8 @@ var ptx_lunr_docs = [
   "url": "section-differentiation-formulas.html#theorem-the-quotient-rule",
   "type": "Theorem",
   "number": "3.3.9",
-  "title": "The Quotient Rule.",
-  "body": " The Quotient Rule   Let and be differentiable functions. Then wherever .   "
+  "title": "The quotient rule.",
+  "body": " The quotient rule   Let and be differentiable functions. Then wherever .   "
 },
 {
   "id": "example-derivative-of-tangent",
@@ -762,8 +762,8 @@ var ptx_lunr_docs = [
   "url": "section-the-chain-rule.html",
   "type": "Section",
   "number": "3.4",
-  "title": "The Chain Rule",
-  "body": " The Chain Rule  At this point, we can take derivatives of sums, differences, products and quotients of functions. However, these rules aren't very useful for differentiating functions like . We could technically evaluate using these rules but it would be an awful way to spend your weekend. But if we make the substitution , then we can rewrite as , which is much easier to differentiate: . At this step we might be tempted to say that , but this isn't quite right. To get the actual derivative we need to consider how the new variable depends on as well. The Chain Rule is what we need.   The Chain Rule  derivative differentiation formulas chain rule   Let and be differentiable functions. Then Equivalently, if we set we have      Using the chain rule   Let . Find .    We'll try the same trick we used before and we'll set . Then the chain rule says that     As the last example highlighted, we can use the chain rule in combination with any of the other derivative rules we know if the function we're differentiating is complicated.   Combining rules   Let . Find .    We'll let stand in for the \"inside function.\" Then we have and so      Chain rule within a chain rule   Find the slope of at .    We need to compute . First, note that , so let . Now we could try to use the chain rule right here but this would require finding , and is itself a complicated function of . So let , and finally let . Then we can say that We could plug in what are in terms of and then plug in , but it's easier to just find at and enter these values into the above. At we have and , so     "
+  "title": "The chain rule",
+  "body": " The chain rule  At this point, we can take derivatives of sums, differences, products and quotients of functions. However, these rules aren't very useful for differentiating functions like . We could technically evaluate using these rules but it would be an awful way to spend your weekend. But if we make the substitution , then we can rewrite as , which is much easier to differentiate: . At this step we might be tempted to say that , but this isn't quite right. To get the actual derivative we need to consider how the new variable depends on as well. The chain rule is what we need.   The chain rule  derivative differentiation formulas chain rule   Let and be differentiable functions. Then Equivalently, if we set we have      Using the chain rule   Let . Find .    We'll try the same trick we used before and we'll set . Then the chain rule says that .    As the last example highlighted, we can use the chain rule in combination with any of the other derivative rules we know if the function we're differentiating is complicated.   Combining rules   Let . Find .    We'll let stand in for the \"inside function.\" Then we have and so .     Chain rule within a chain rule   Find the slope of at .    We need to compute . First, note that , so let . Now we could try to use the chain rule right here but this would require finding , and is itself a complicated function of . So let , and finally let . Then we can say that . We could plug in what are in terms of and then plug in , but it's easier to just find at and enter these values into the above. At we have and , so .    "
 },
 {
   "id": "section-the-chain-rule-2",
@@ -772,7 +772,7 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Chain Rule "
+  "body": "chain rule "
 },
 {
   "id": "theorem-the-chain-rule",
@@ -780,8 +780,8 @@ var ptx_lunr_docs = [
   "url": "section-the-chain-rule.html#theorem-the-chain-rule",
   "type": "Theorem",
   "number": "3.4.1",
-  "title": "The Chain Rule.",
-  "body": " The Chain Rule  derivative differentiation formulas chain rule   Let and be differentiable functions. Then Equivalently, if we set we have    "
+  "title": "The chain rule.",
+  "body": " The chain rule  derivative differentiation formulas chain rule   Let and be differentiable functions. Then Equivalently, if we set we have    "
 },
 {
   "id": "example-using-the-chain-rule",
@@ -790,7 +790,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.4.2",
   "title": "Using the chain rule.",
-  "body": " Using the chain rule   Let . Find .    We'll try the same trick we used before and we'll set . Then the chain rule says that    "
+  "body": " Using the chain rule   Let . Find .    We'll try the same trick we used before and we'll set . Then the chain rule says that .   "
 },
 {
   "id": "example-combining-rules",
@@ -799,7 +799,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.4.3",
   "title": "Combining rules.",
-  "body": " Combining rules   Let . Find .    We'll let stand in for the \"inside function.\" Then we have and so    "
+  "body": " Combining rules   Let . Find .    We'll let stand in for the \"inside function.\" Then we have and so .   "
 },
 {
   "id": "example-chain-rule-within-a-chain-rule",
@@ -808,7 +808,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.4.4",
   "title": "Chain rule within a chain rule.",
-  "body": " Chain rule within a chain rule   Find the slope of at .    We need to compute . First, note that , so let . Now we could try to use the chain rule right here but this would require finding , and is itself a complicated function of . So let , and finally let . Then we can say that We could plug in what are in terms of and then plug in , but it's easier to just find at and enter these values into the above. At we have and , so    "
+  "body": " Chain rule within a chain rule   Find the slope of at .    We need to compute . First, note that , so let . Now we could try to use the chain rule right here but this would require finding , and is itself a complicated function of . So let , and finally let . Then we can say that . We could plug in what are in terms of and then plug in , but it's easier to just find at and enter these values into the above. At we have and , so .   "
 },
 {
   "id": "section-implicit-differentiation",
@@ -816,8 +816,8 @@ var ptx_lunr_docs = [
   "url": "section-implicit-differentiation.html",
   "type": "Section",
   "number": "3.5",
-  "title": "Implicit Differentiation",
-  "body": " Implicit Differentiation   Derivative of an implicit function   Consider the curve given by the equation . Find the slope of this curve at the point .    We could try to solve for and then differentiate that to find the slope, but we have a slight problem: it's impossible, at least in terms of \"elementary functions\". However, we can still use the chain rule to find , at least in terms of and . We just need to remember that is a function of . If we differentiate with respect to , we get and so So the slope of the curve at is just .    The method we used to get in is called implicit differentiation . It's extremely useful if we want to solve for without first solving for . Even if we can solve for without too much trouble, it's often easier to find implicitly as the next example shows.   Implicit differentiation to save algebra   Let . Find .    If we let , then . Then which means that     We must also be aware of when to use appropriate derivative rules when doing implicit differentiation.   Chain and quotient rule   Suppose is defined implicitly by . Find .    We start by taking the derivative with respect to of each side of the equation:   Therefore and we can solve this for : or just      A differential equation   Let denote the population of the United States, where is in millions and is the number of years after 1990. Then the growth of can be modeled by the differential equation  According to this model, it's not too hard to see that should be positive given the current population of the US, so the model predicts the population to increase. Is this rate of growth increasing or decreasing?    We need to find , which is the rate of change of . This means we need to differentiate both sides of the differential equation with respect to : The current population is about 323.1 million, so we can take , which also gives and so Hence it appears that the rate of population increase is itself decreasing, which implies that the population growth of the US is slowing down.    "
+  "title": "Implicit differentiation",
+  "body": " Implicit differentiation   Derivative of an implicit function   Consider the curve given by the equation . Find the slope of this curve at the point .    We could try to solve for and then differentiate that to find the slope, but we have a slight problem: it's impossible, at least in terms of \"elementary functions\". However, we can still use the chain rule to find , at least in terms of and . We just need to remember that is a function of . If we differentiate with respect to , we get and so . So the slope of the curve at is just .    The method we used to get in is called implicit differentiation . It's extremely useful if we want to solve for without first solving for . Even if we can solve for without too much trouble, it's often easier to find implicitly as the next example shows.   Implicit differentiation to save algebra   Let . Find .    If we let , then . Then which means that .    We must also be aware of when to use appropriate derivative rules when doing implicit differentiation.   Chain and quotient rule   Suppose is defined implicitly by . Find .    We start by taking the derivative with respect to of each side of the equation: .  Therefore and we can solve this for : or just .     A differential equation   Let denote the population of the United States, where is in millions and is the number of years after 1990. Then the growth of can be modeled by the differential equation  According to this model, it's not too hard to see that should be positive given the current population of the US, so the model predicts the population to increase. Is this rate of growth increasing or decreasing?    We need to find , which is the rate of change of . This means we need to differentiate both sides of the differential equation with respect to : . The current population is about 323.1 million, so we can take , which also gives and so . Hence it appears that the rate of population increase is itself decreasing, which implies that the population growth of the US is slowing down.    "
 },
 {
   "id": "example-derivative-of-an-implicit-function",
@@ -826,7 +826,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.5.1",
   "title": "Derivative of an implicit function.",
-  "body": " Derivative of an implicit function   Consider the curve given by the equation . Find the slope of this curve at the point .    We could try to solve for and then differentiate that to find the slope, but we have a slight problem: it's impossible, at least in terms of \"elementary functions\". However, we can still use the chain rule to find , at least in terms of and . We just need to remember that is a function of . If we differentiate with respect to , we get and so So the slope of the curve at is just .   "
+  "body": " Derivative of an implicit function   Consider the curve given by the equation . Find the slope of this curve at the point .    We could try to solve for and then differentiate that to find the slope, but we have a slight problem: it's impossible, at least in terms of \"elementary functions\". However, we can still use the chain rule to find , at least in terms of and . We just need to remember that is a function of . If we differentiate with respect to , we get and so . So the slope of the curve at is just .   "
 },
 {
   "id": "section-implicit-differentiation-3",
@@ -844,7 +844,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.5.2",
   "title": "Implicit differentiation to save algebra.",
-  "body": " Implicit differentiation to save algebra   Let . Find .    If we let , then . Then which means that    "
+  "body": " Implicit differentiation to save algebra   Let . Find .    If we let , then . Then which means that .   "
 },
 {
   "id": "example-chain-and-quotient-rule",
@@ -853,7 +853,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.5.3",
   "title": "Chain and quotient rule.",
-  "body": " Chain and quotient rule   Suppose is defined implicitly by . Find .    We start by taking the derivative with respect to of each side of the equation:   Therefore and we can solve this for : or just    "
+  "body": " Chain and quotient rule   Suppose is defined implicitly by . Find .    We start by taking the derivative with respect to of each side of the equation: .  Therefore and we can solve this for : or just .   "
 },
 {
   "id": "example-a-differential-equation",
@@ -862,88 +862,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "3.5.4",
   "title": "A differential equation.",
-  "body": " A differential equation   Let denote the population of the United States, where is in millions and is the number of years after 1990. Then the growth of can be modeled by the differential equation  According to this model, it's not too hard to see that should be positive given the current population of the US, so the model predicts the population to increase. Is this rate of growth increasing or decreasing?    We need to find , which is the rate of change of . This means we need to differentiate both sides of the differential equation with respect to : The current population is about 323.1 million, so we can take , which also gives and so Hence it appears that the rate of population increase is itself decreasing, which implies that the population growth of the US is slowing down.   "
-},
-{
-  "id": "section-related-rates",
-  "level": "1",
-  "url": "section-related-rates.html",
-  "type": "Section",
-  "number": "3.6",
-  "title": "Related Rates",
-  "body": " Related Rates   Changing volume on a sphere   The radius of a sphere is increasing at a rate of 4 . How fast is the volume increasing when the radius is 13 ?    First, let's assign names to all of the changing quantities in this problem: Note that we're considering and to be functions of time, i.e. and , where is in seconds. Then we're given that and we need to find when . To do this, we had better find some relationship between and . We can find this by looking at the volume formula for a sphere: This equation relates and , and if we take the derivatives of both sides with respect to time (using implicit differentiation) then we get an equation relating and . So let's do that: Now we can plug in our given information to get So the volume is increasing at a rate of 2704\\pi .    Note that we never found what and were in , but we didn't need to. All we needed to find was a relationship between the two changing quantities, i.e. the two derivatives, to answer the question.   A tank problem   Water is leaking out of a conical tank at a rate of 10000 while water is being pumped into the tank at some (unknown) constant rate. The tank has a height of 6 and the diameter of the top is 4 . If the water level is rising at a rate of 20 when the height of the water is 2 , what is the rate at which water is being poured into the tank?    We have a lot of information to process here, so we'll take things a step at a time. The changing quantities are where is in minutes. We need to find the rate at which water is entering the tank, so let's call this mystery number . Then all we know about is that it's related to the rate that the volume is changing. In particular, we should have . So to find we need to find , which means we need to set up a relationship between and the other changing quantities to determine how exactly is changing, using the fact that when (after converting to centimeters).  Using the fact that the water is in a conical tank, we can use the formula for the volume of a cone to say that . If we differentiate both sides with respect to , then we get Unfortunately, we don't have any information on or that we can use, just information on and . So we need to get in terms of . By similar triangles, we can say that , and so and likewise . Hence which boils down to   Now, finally , we can answer the original question. The rate that water is flowing into the tank is or just 289252.68 . In terms of meters this is .29 , which perhaps looks a bit more reasonable.    "
-},
-{
-  "id": "example-changing-volume-on-a-sphere",
-  "level": "2",
-  "url": "section-related-rates.html#example-changing-volume-on-a-sphere",
-  "type": "Example",
-  "number": "3.6.1",
-  "title": "Changing volume on a sphere.",
-  "body": " Changing volume on a sphere   The radius of a sphere is increasing at a rate of 4 . How fast is the volume increasing when the radius is 13 ?    First, let's assign names to all of the changing quantities in this problem: Note that we're considering and to be functions of time, i.e. and , where is in seconds. Then we're given that and we need to find when . To do this, we had better find some relationship between and . We can find this by looking at the volume formula for a sphere: This equation relates and , and if we take the derivatives of both sides with respect to time (using implicit differentiation) then we get an equation relating and . So let's do that: Now we can plug in our given information to get So the volume is increasing at a rate of 2704\\pi .   "
-},
-{
-  "id": "example-a-tank-problem",
-  "level": "2",
-  "url": "section-related-rates.html#example-a-tank-problem",
-  "type": "Example",
-  "number": "3.6.2",
-  "title": "A tank problem.",
-  "body": " A tank problem   Water is leaking out of a conical tank at a rate of 10000 while water is being pumped into the tank at some (unknown) constant rate. The tank has a height of 6 and the diameter of the top is 4 . If the water level is rising at a rate of 20 when the height of the water is 2 , what is the rate at which water is being poured into the tank?    We have a lot of information to process here, so we'll take things a step at a time. The changing quantities are where is in minutes. We need to find the rate at which water is entering the tank, so let's call this mystery number . Then all we know about is that it's related to the rate that the volume is changing. In particular, we should have . So to find we need to find , which means we need to set up a relationship between and the other changing quantities to determine how exactly is changing, using the fact that when (after converting to centimeters).  Using the fact that the water is in a conical tank, we can use the formula for the volume of a cone to say that . If we differentiate both sides with respect to , then we get Unfortunately, we don't have any information on or that we can use, just information on and . So we need to get in terms of . By similar triangles, we can say that , and so and likewise . Hence which boils down to   Now, finally , we can answer the original question. The rate that water is flowing into the tank is or just 289252.68 . In terms of meters this is .29 , which perhaps looks a bit more reasonable.   "
-},
-{
-  "id": "section-linear-approximations",
-  "level": "1",
-  "url": "section-linear-approximations.html",
-  "type": "Section",
-  "number": "3.7",
-  "title": "Linear Approximations",
-  "body": " Linear Approximations  Suppose we graph the tangent line to at . The equation of this line will be If we look at the tangent line next to the graph, we'll see that the line is very close to the graph of if is very close to . So we can use the equation of the tangent line to approximate when is near . For example, we can say that We call this the linear approximation of at .   Linear Approximation  derivative linear approximation   Let be a function that is differentiable at . The linear approximation (or linearization ) of at is the function given by     The formula of the linear approximation to a function at is nothing more than the equation of the tangent line to at .   Linear approximation of sine   Find the linear approximation of at and use this to estimate .    The linear approximation is given by so . Therefore since is very close to .     Estimating a tangent   Estimate .    We want to estimate this using a linear approximation, and we want to make sure the linear approximation is easy to set up. This means we want to base the linear approximation at a value of that both tangent and its derivative are relatively easy to compute at, and is also close to . So we'll pick and find the linear approximation to at : Set . Then So      Estimating the population of the United States in 2020   Use the differential equation from and the fact that the current population of the US is about 323.1 million to estimate the population of the US in 2020.    Recall that in represented the population of the US (in millions) years after 1990. To estimate the population in 2020, we want to find the linearization of at . This is given by Since and we have Hence the population of the US in 2020 should be or about 331.8 million people.    "
-},
-{
-  "id": "section-linear-approximations-2",
-  "level": "2",
-  "url": "section-linear-approximations.html#section-linear-approximations-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "linear approximation "
-},
-{
-  "id": "definition-linear-approximation",
-  "level": "2",
-  "url": "section-linear-approximations.html#definition-linear-approximation",
-  "type": "Definition",
-  "number": "3.7.1",
-  "title": "Linear Approximation.",
-  "body": " Linear Approximation  derivative linear approximation   Let be a function that is differentiable at . The linear approximation (or linearization ) of at is the function given by    "
-},
-{
-  "id": "example-linear-approximation-of-sine",
-  "level": "2",
-  "url": "section-linear-approximations.html#example-linear-approximation-of-sine",
-  "type": "Example",
-  "number": "3.7.2",
-  "title": "Linear approximation of sine.",
-  "body": " Linear approximation of sine   Find the linear approximation of at and use this to estimate .    The linear approximation is given by so . Therefore since is very close to .   "
-},
-{
-  "id": "example-estimating-a-tangent",
-  "level": "2",
-  "url": "section-linear-approximations.html#example-estimating-a-tangent",
-  "type": "Example",
-  "number": "3.7.3",
-  "title": "Estimating a tangent.",
-  "body": " Estimating a tangent   Estimate .    We want to estimate this using a linear approximation, and we want to make sure the linear approximation is easy to set up. This means we want to base the linear approximation at a value of that both tangent and its derivative are relatively easy to compute at, and is also close to . So we'll pick and find the linear approximation to at : Set . Then So    "
-},
-{
-  "id": "example-estimating-the-population-of-the-united-states-in-2020",
-  "level": "2",
-  "url": "section-linear-approximations.html#example-estimating-the-population-of-the-united-states-in-2020",
-  "type": "Example",
-  "number": "3.7.4",
-  "title": "Estimating the population of the United States in 2020.",
-  "body": " Estimating the population of the United States in 2020   Use the differential equation from and the fact that the current population of the US is about 323.1 million to estimate the population of the US in 2020.    Recall that in represented the population of the US (in millions) years after 1990. To estimate the population in 2020, we want to find the linearization of at . This is given by Since and we have Hence the population of the US in 2020 should be or about 331.8 million people.   "
+  "body": " A differential equation   Let denote the population of the United States, where is in millions and is the number of years after 1990. Then the growth of can be modeled by the differential equation  According to this model, it's not too hard to see that should be positive given the current population of the US, so the model predicts the population to increase. Is this rate of growth increasing or decreasing?    We need to find , which is the rate of change of . This means we need to differentiate both sides of the differential equation with respect to : . The current population is about 323.1 million, so we can take , which also gives and so . Hence it appears that the rate of population increase is itself decreasing, which implies that the population growth of the US is slowing down.   "
 },
 {
   "id": "section-exponential-functions",
@@ -951,8 +870,8 @@ var ptx_lunr_docs = [
   "url": "section-exponential-functions.html",
   "type": "Section",
   "number": "4.1",
-  "title": "Exponential Functions",
-  "body": " Exponential Functions  Many changing quantities can be modeled by using exponential functions , which are functions of the form where . Exponential functions have several important properties which we list below.   Properties of Exponential Functions  exponential functions properties   Let and be real numbers. Then  and .  .  and .  is .  .  Finally, if as well, then .     Limit of an exponential function   Let . Find .    First, note that So as , the denominator as well. Hence the fraction as a whole should decrease to , and so     In general, we have the following:   Every exponential function is continuous everywhere. In fact, they are differentiable everywhere, though we'll see more about that later. We can also say the following: if then is an increasing function, and if then is a decreasing function. In neither case will have any local maxima or minima.  Of all the different exponential functions, the most important one is the so-called natural exponential function , denoted where This is the unique exponential function by the property that its derivative at is . In fact, as we will see later is its own derivative.   Exponential derivative   Using the fact that , compute .    We'll have to use the chain rule. If we do so, we get     Since is its own derivative, this makes computing derivatives of functions of the form relatively straightforward:   Technically, we have worked with the natural exponential function before in this class. Recall from that if represents the population of the USA (in millions) years after 1990, then we said that satisfied the differential equation If we say the population of the US in 1990 was 250 million (i.e. ), then Now, in we used linear approximation to estimate the population of the US using this model in the year 2020, where we got 331.8 million people. If we use the above formula for , we get that the population of the US in 2020 should be about or 339.8 million people.   The Census Bureau predicted in 2014 that the population in 2020 would be 334.5 million. So our simple predictions before actually aren't too far off from what the Census Bureau is expecting. This suggests that the differential equation is a reasonable model for the growth of the US.   "
+  "title": "Exponential functions",
+  "body": " Exponential functions  Many changing quantities can be modeled by using exponential functions , which are functions of the form where . Exponential functions have several important properties which we list below.   Properties of exponential functions  exponential functions properties   Let and be real numbers. Then   and .   .   and .   is .   .  Finally, if as well, then .     Limit of an exponential function   Let . Find .    First, note that . So as , the denominator as well. Hence the fraction as a whole should decrease to , and so .    In general, we have the following: .  Every exponential function is continuous everywhere. In fact, they are differentiable everywhere, though we'll see more about that later. We can also say the following: if then is an increasing function, and if then is a decreasing function. In neither case will have any local maxima or minima.  Of all the different exponential functions, the most important one is the so-called natural exponential function , denoted where . This is the unique exponential function by the property that its derivative at is . In fact, as we will see later is its own derivative.   Exponential derivative   Using the fact that , compute .    We'll have to use the chain rule. If we do so, we get .    Since is its own derivative, this makes computing derivatives of functions of the form relatively straightforward: .  Technically, we have worked with the natural exponential function before in this class. Recall from that if represents the population of the USA (in millions) years after 1990, then we said that satisfied the differential equation . If we say the population of the US in 1990 was 250 million (i.e. ), then . Now, in we used linear approximation to estimate the population of the US using this model in the year 2020, where we got 331.8 million people. If we use the above formula for , we get that the population of the US in 2020 should be about , or 339.8 million people.   The Census Bureau predicted in 2014 that the population in 2020 would be 334.5 million. So our simple predictions before actually aren't too far off from what the Census Bureau is expecting. This suggests that the differential equation is a reasonable model for the growth of the US.   "
 },
 {
   "id": "section-exponential-functions-2",
@@ -969,8 +888,8 @@ var ptx_lunr_docs = [
   "url": "section-exponential-functions.html#theorem-properties-of-exponential-functions",
   "type": "Theorem",
   "number": "4.1.1",
-  "title": "Properties of Exponential Functions.",
-  "body": " Properties of Exponential Functions  exponential functions properties   Let and be real numbers. Then  and .  .  and .  is .  .  Finally, if as well, then .   "
+  "title": "Properties of exponential functions.",
+  "body": " Properties of exponential functions  exponential functions properties   Let and be real numbers. Then   and .   .   and .   is .   .  Finally, if as well, then .   "
 },
 {
   "id": "example-limit-of-an-exponential-function",
@@ -979,7 +898,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "4.1.2",
   "title": "Limit of an exponential function.",
-  "body": " Limit of an exponential function   Let . Find .    First, note that So as , the denominator as well. Hence the fraction as a whole should decrease to , and so    "
+  "body": " Limit of an exponential function   Let . Find .    First, note that . So as , the denominator as well. Hence the fraction as a whole should decrease to , and so .   "
 },
 {
   "id": "section-exponential-functions-7",
@@ -997,7 +916,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "4.1.3",
   "title": "Exponential derivative.",
-  "body": " Exponential derivative   Using the fact that , compute .    We'll have to use the chain rule. If we do so, we get    "
+  "body": " Exponential derivative   Using the fact that , compute .    We'll have to use the chain rule. If we do so, we get .   "
 },
 {
   "id": "section-logarithms",
@@ -1006,97 +925,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.2",
   "title": "Logarithms",
-  "body": " Logarithms   Inverse Function Review  Suppose we want to solve the equation for . Then we can only do so unambiguously if is an invertible function .   Invertible Functions  functions invertible functions   A function is invertible if and only if it is a one-to-one function. That is, forces .    Since a function is one-to-one if and only if its graph passes the horizontal line test, the horizontal line test also gives us a useful way to check if a function is invertible.   Let , the natural exponential function introduced in . Then is an invertible function, since its graph passes the horizontal line test.   If a function is invertible, then there exists an inverse function  satisfying the following equations: Essentially, is the rule that undoes the transformation that applies to . The domain of is the range of and the range of is the domain of . Note that !.  The graph of an inverse function is related to the graph of the original function in a very nice way. To get the graph of from , just reflect the graph of across the line .   Graphing the inverse of the natural exponential   Let . Graph .    If we graph and then rotate the graph across the line , we get      The inverse of .       Calculus with Inverse Functions  There are two important things to notice about the graph of the inverse function in : it's continuous and differentiable. This is because the same was true of the original graph, and if we think about it this should be true in general as well since graphing the inverse doesn't add any new gaps or cusps to the graph.   Continuity and Differentiability of Inverses   Let be a continuous (respectively, differentiable) function. Suppose that is invertible, and has inverse . Then is continuous (respectively, differentiable).     Finding the derivative of an inverse function   Let and note that is invertible. Find the derivative of .    One way to do this is just start by finding . So we'll set , solve for and then switch and . If we do this, we get so (and note that the domain of is since this is the range of !). Hence     The method used in will certainly work in simple cases. But what do we do if we can't (or don't want to) find an explicit formula for the inverse function? The following formula will help us to do this.   Derivative of an Inverse Function  functions inverse functions derivatives   Let be a differentiable function with inverse . Assume that is itself differentiable. Then     First, let , so that we need to find . Then we can say that . Now differentiate this equation implicitly to get or just      Exponential inverse revisited   Using the fact that the derivative of is itself, find the derivative of its inverse.    Let . Then by we have So the derivative of the inverse of is .     Derivative at a point   Let . Find     By , we know that By inspection, which means . Since this gives       Logarithms  Since exponential functions are important in mathematics and its applications, their inverses are important as well. Each exponential function ( ) has an inverse function that we call the logarithm with base , and denote by . The domain of each logarithm is and the range is . The defining properties of the logarithm function are as follows: Essentially, logarithms and exponentials cancel each other out. To put this another way, is the exponent needed to turn into .  We can say a few things about logarithms just from looking at graphs of exponentials. Suppose that . Then is both continuous and differentiable for all , and the derivative of approaches as .  The properties of the exponential listed in have corresponding properties for logarithms.   Properties of Logarithm Functions  logarithm functions properties   Let with . Let be positive real numbers, and let be any real number. Then  and .  .  .  .      An important takeaway from is that logarithms turn the complicated operations of multiplication and division into the simpler operations of addition and subtraction.  Since every exponential function has a corresponding logarithm, the natural exponential function has a logarithm as well. We call this inverse the natural logarithm and denote it by . Note that by .   Simplifying an exponential   Simplify and .    We'll simplify by using the cancellation property . First, we need to put the entire exponent inside of the natural log: and      shows us that every exponential function can be written in terms of the natural exponential: . Similarly, every logarithm can be written in terms of the natural logarithm by using the change of base formula:    "
-},
-{
-  "id": "subsection-inverse-function-review-2",
-  "level": "2",
-  "url": "section-logarithms.html#subsection-inverse-function-review-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "invertible function "
-},
-{
-  "id": "definition-invertible-functions",
-  "level": "2",
-  "url": "section-logarithms.html#definition-invertible-functions",
-  "type": "Definition",
-  "number": "4.2.1",
-  "title": "Invertible Functions.",
-  "body": " Invertible Functions  functions invertible functions   A function is invertible if and only if it is a one-to-one function. That is, forces .   "
-},
-{
-  "id": "example-exponential-inverse",
-  "level": "2",
-  "url": "section-logarithms.html#example-exponential-inverse",
-  "type": "Example",
-  "number": "4.2.2",
-  "title": "",
-  "body": " Let , the natural exponential function introduced in . Then is an invertible function, since its graph passes the horizontal line test.  "
-},
-{
-  "id": "subsection-inverse-function-review-6",
-  "level": "2",
-  "url": "section-logarithms.html#subsection-inverse-function-review-6",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "inverse function "
-},
-{
-  "id": "example-graphing-the-inverse-of-the-natural-exponential",
-  "level": "2",
-  "url": "section-logarithms.html#example-graphing-the-inverse-of-the-natural-exponential",
-  "type": "Example",
-  "number": "4.2.3",
-  "title": "Graphing the inverse of the natural exponential.",
-  "body": " Graphing the inverse of the natural exponential   Let . Graph .    If we graph and then rotate the graph across the line , we get      The inverse of .    "
-},
-{
-  "id": "theorem-continuity-and-differentiability-of-inverses",
-  "level": "2",
-  "url": "section-logarithms.html#theorem-continuity-and-differentiability-of-inverses",
-  "type": "Theorem",
-  "number": "4.2.5",
-  "title": "Continuity and Differentiability of Inverses.",
-  "body": " Continuity and Differentiability of Inverses   Let be a continuous (respectively, differentiable) function. Suppose that is invertible, and has inverse . Then is continuous (respectively, differentiable).   "
-},
-{
-  "id": "example-finding-the-derivative-of-an-inverse-function",
-  "level": "2",
-  "url": "section-logarithms.html#example-finding-the-derivative-of-an-inverse-function",
-  "type": "Example",
-  "number": "4.2.6",
-  "title": "Finding the derivative of an inverse function.",
-  "body": " Finding the derivative of an inverse function   Let and note that is invertible. Find the derivative of .    One way to do this is just start by finding . So we'll set , solve for and then switch and . If we do this, we get so (and note that the domain of is since this is the range of !). Hence    "
-},
-{
-  "id": "theorem-derivative-of-an-inverse-function",
-  "level": "2",
-  "url": "section-logarithms.html#theorem-derivative-of-an-inverse-function",
-  "type": "Theorem",
-  "number": "4.2.7",
-  "title": "Derivative of an Inverse Function.",
-  "body": " Derivative of an Inverse Function  functions inverse functions derivatives   Let be a differentiable function with inverse . Assume that is itself differentiable. Then     First, let , so that we need to find . Then we can say that . Now differentiate this equation implicitly to get or just    "
-},
-{
-  "id": "example-exponential-inverse-revisited",
-  "level": "2",
-  "url": "section-logarithms.html#example-exponential-inverse-revisited",
-  "type": "Example",
-  "number": "4.2.8",
-  "title": "Exponential inverse revisited.",
-  "body": " Exponential inverse revisited   Using the fact that the derivative of is itself, find the derivative of its inverse.    Let . Then by we have So the derivative of the inverse of is .   "
-},
-{
-  "id": "example-derivative-at-a-point",
-  "level": "2",
-  "url": "section-logarithms.html#example-derivative-at-a-point",
-  "type": "Example",
-  "number": "4.2.9",
-  "title": "Derivative at a point.",
-  "body": " Derivative at a point   Let . Find     By , we know that By inspection, which means . Since this gives    "
+  "body": " Logarithms   Logarithms  Since exponential functions are important in mathematics and its applications, their inverses are important as well. Each exponential function ( ) has an inverse function that we call the logarithm with base , and denote by . The domain of each logarithm is and the range is . The defining properties of the logarithm function are as follows: . Essentially, logarithms and exponentials cancel each other out. To put this another way, is the exponent needed to turn into .  We can say a few things about logarithms just from looking at graphs of exponentials. Suppose that . Then is both continuous and differentiable for all , and the derivative of approaches as .  The properties of the exponential listed in have corresponding properties for logarithms.   Properties of logarithm functions  logarithm functions properties   Let with . Let be positive real numbers, and let be any real number. Then   and .   .   .   .      An important takeaway from is that logarithms turn the complicated operations of multiplication and division into the simpler operations of addition and subtraction.  Since every exponential function has a corresponding logarithm, the natural exponential function has a logarithm as well. We call this inverse the natural logarithm and denote it by . Note that by .   Simplifying an exponential   Simplify and .    We'll simplify by using the cancellation property . First, we need to put the entire exponent inside of the natural log: and .     shows us that every exponential function can be written in terms of the natural exponential: . Similarly, every logarithm can be written in terms of the natural logarithm by using the change of base formula: .   "
 },
 {
   "id": "subsection-logarithms-2",
@@ -1112,9 +941,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-logarithms.html#theorem-properties-of-logarithm-functions",
   "type": "Theorem",
-  "number": "4.2.10",
-  "title": "Properties of Logarithm Functions.",
-  "body": " Properties of Logarithm Functions  logarithm functions properties   Let with . Let be positive real numbers, and let be any real number. Then  and .  .  .  .     "
+  "number": "4.2.1",
+  "title": "Properties of logarithm functions.",
+  "body": " Properties of logarithm functions  logarithm functions properties   Let with . Let be positive real numbers, and let be any real number. Then   and .   .   .   .     "
 },
 {
   "id": "subsection-logarithms-7",
@@ -1130,9 +959,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-logarithms.html#example-simplifying-an-exponential",
   "type": "Example",
-  "number": "4.2.11",
+  "number": "4.2.2",
   "title": "Simplifying an exponential.",
-  "body": " Simplifying an exponential   Simplify and .    We'll simplify by using the cancellation property . First, we need to put the entire exponent inside of the natural log: and    "
+  "body": " Simplifying an exponential   Simplify and .    We'll simplify by using the cancellation property . First, we need to put the entire exponent inside of the natural log: and .   "
 },
 {
   "id": "section-derivatives-of-exponential-and-logarithmic-functions",
@@ -1140,53 +969,143 @@ var ptx_lunr_docs = [
   "url": "section-derivatives-of-exponential-and-logarithmic-functions.html",
   "type": "Section",
   "number": "4.3",
-  "title": "Derivatives of Exponential and Logarithmic Functions",
-  "body": " Derivatives of Exponential and Logarithmic Functions   Derivatives of Exponentials  We've already mentioned that , but we've said nothing about differentiating functions such as or . However, it turns out that we can get these derivatives from the derivative of without too much trouble.   Derivatives of Exponential Functions  exponential functions derivatives   Let and set . Then .    To prove this, we need to use what's available to us: the derivative of . From we say that . More generally, we can also say that . Hence      Differentiating an exponential   Let . Find .    If we set , then . By the chain rule,     Although we certainly want to know the derivative of , or at least how to find it, most applications involving exponential functions use the natural exponential function instead. The derivative of is probably the most important derivative in this course.   Solutions of a differential equation   Show that satisfies the differential equation , where are arbitrary constants.    We need to show that if we compute and and plug these expressions into the differential equation, this will simplify out to . Since it follows that     Exponential functions often appear in the solutions of differential equations, which are themselves often viewed as mathematical models of physical systems. Hence exponential functions play a significant role in predicting physical quantities, which goes a long way towards justifying their importance.    Derivatives of Logarithms  Just as we can get the derivative of every exponential function just by knowing the derivative of , we can get the derivative of every logarithmic function just by knowing that .   Derivatives of Logarithmic Functions  logarithm functions derivatives   Let and set . Then      Differentiating nested logarithms   Let . Find .    By the chain rule, we have     Logarithms can be used to greatly simplify derivatives involving products, division or exponentiation using a technique known as logarithmic differentiation .   A simple fraction   Let . Find .    We can find without resorting to logarithms, but this would require using the product, quotient and chain rules. The algebra would be awful. So we'll using logarithms instead! Set . Then Now we differentiate both sides implicitly to obtain   Hence     Logarithmic differentiation is useful for finding derivatives of expressions containing complicated quotients, products or powers.   A simple exponent   Let . Find .    We'll use logarithmic differentiation again to simplify and remove the exponent. Set , which gives So which means that      "
+  "title": "Derivatives of exponential and logarithmic functions",
+  "body": " Derivatives of exponential and logarithmic functions   Inverse function review  Suppose we want to solve the equation for . Then we can only do so unambiguously if is an invertible function .   Invertible functions  functions invertible functions   A function is invertible if and only if it is a one-to-one function. That is, forces .    Since a function is one-to-one if and only if its graph passes the horizontal line test, the horizontal line test also gives us a useful way to check if a function is invertible.   Let , the natural exponential function introduced in . Then is an invertible function, since its graph passes the horizontal line test.   If a function is invertible, then there exists an inverse function  satisfying the following equations: Essentially, is the rule that undoes the transformation that applies to . The domain of is the range of and the range of is the domain of . Note that !.  The graph of an inverse function is related to the graph of the original function in a very nice way. To get the graph of from , just reflect the graph of across the line .   Graphing the inverse of the natural exponential   Let . Graph .    If we graph and then rotate the graph across the line , we get the graph in .   The inverse of .          Calculus with inverse functions  There are two important things to notice about the graph of the inverse function in : it's continuous and differentiable. This is because the same was true of the original graph, and if we think about it this should be true in general as well since graphing the inverse doesn't add any new gaps or cusps to the graph.   Continuity and differentiability of inverses  functions invertible functions continuity   Let be a continuous (respectively, differentiable) function. Suppose that is invertible, and has inverse . Then is continuous (respectively, differentiable).     Finding the derivative of an inverse function   Let and note that is invertible. Find the derivative of .    One way to do this is just start by finding . So we'll set , solve for and then switch and . If we do this, we get so (and note that the domain of is since this is the range of !). Hence .    The method used in will certainly work in simple cases. But what do we do if we can't (or don't want to) find an explicit formula for the inverse function? The following formula will help us to do this.   Derivative of an inverse function  functions invertible functions derivatives  derivative differentiation formulas invertible functions   Let be a differentiable function with inverse . Assume that is itself differentiable. Then .    First, let , so that we need to find . Then we can say that . Now differentiate this equation implicitly to get or just .     Exponential inverse revisited   Using the fact that the derivative of is itself, find the derivative of its inverse.    Let . Then by we have . So the derivative of the inverse of is .     Derivative at a point   Let . Find     By , we know that . By inspection, which means . Since , this gives .      Derivatives of exponentials  We've already mentioned that , but we've said nothing about differentiating functions such as or . However, it turns out that we can get these derivatives from the derivative of without too much trouble.   Derivatives of exponential functions  exponential functions derivatives  derivative differentiation formulas exponential functions   Let and set . Then .    To prove this, we need to use what's available to us: the derivative of . From we say that . More generally, we can also say that . Hence .     Differentiating an exponential   Let . Find .    If we set , then . By the chain rule, .    Although we certainly want to know the derivative of , or at least how to find it, most applications involving exponential functions use the natural exponential function instead. The derivative of is probably the most important derivative in this course.   Solutions of a differential equation   Show that satisfies the differential equation , where are arbitrary constants.    We need to show that if we compute and and plug these expressions into the differential equation, this will simplify out to . Since , it follows that .    Exponential functions often appear in the solutions of differential equations, which are themselves often viewed as mathematical models of physical systems. Hence exponential functions play a significant role in predicting physical quantities, which goes a long way towards justifying their importance.    Derivatives of logarithms  Just as we can get the derivative of every exponential function just by knowing the derivative of , we can get the derivative of every logarithmic function just by knowing that .   Derivatives of logarithmic functions  logarithm functions derivatives   Let and set . Then .     Differentiating nested logarithms   Let . Find .    By the chain rule, we have ,    Logarithms can be used to greatly simplify derivatives involving products, division or exponentiation using a technique known as logarithmic differentiation .   A simple fraction   Let . Find .    We can find without resorting to logarithms, but this would require using the product, quotient and chain rules. The algebra would be awful. So we'll using logarithms instead! Set . Then . Now we differentiate both sides implicitly to obtain .  Hence .    Logarithmic differentiation is useful for finding derivatives of expressions containing complicated quotients, products or powers.   A simple exponent   Let . Find .    We'll use logarithmic differentiation again to simplify and remove the exponent. Set , which gives . So , which means that .     "
+},
+{
+  "id": "subsection-inverse-function-review-2",
+  "level": "2",
+  "url": "section-derivatives-of-exponential-and-logarithmic-functions.html#subsection-inverse-function-review-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "invertible function "
+},
+{
+  "id": "definition-invertible-functions",
+  "level": "2",
+  "url": "section-derivatives-of-exponential-and-logarithmic-functions.html#definition-invertible-functions",
+  "type": "Definition",
+  "number": "4.3.1",
+  "title": "Invertible functions.",
+  "body": " Invertible functions  functions invertible functions   A function is invertible if and only if it is a one-to-one function. That is, forces .   "
+},
+{
+  "id": "example-exponential-inverse",
+  "level": "2",
+  "url": "section-derivatives-of-exponential-and-logarithmic-functions.html#example-exponential-inverse",
+  "type": "Example",
+  "number": "4.3.2",
+  "title": "",
+  "body": " Let , the natural exponential function introduced in . Then is an invertible function, since its graph passes the horizontal line test.  "
+},
+{
+  "id": "subsection-inverse-function-review-6",
+  "level": "2",
+  "url": "section-derivatives-of-exponential-and-logarithmic-functions.html#subsection-inverse-function-review-6",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "inverse function "
+},
+{
+  "id": "example-graphing-the-inverse-of-the-natural-exponential",
+  "level": "2",
+  "url": "section-derivatives-of-exponential-and-logarithmic-functions.html#example-graphing-the-inverse-of-the-natural-exponential",
+  "type": "Example",
+  "number": "4.3.3",
+  "title": "Graphing the inverse of the natural exponential.",
+  "body": " Graphing the inverse of the natural exponential   Let . Graph .    If we graph and then rotate the graph across the line , we get the graph in .   The inverse of .       "
+},
+{
+  "id": "theorem-continuity-and-differentiability-of-inverses",
+  "level": "2",
+  "url": "section-derivatives-of-exponential-and-logarithmic-functions.html#theorem-continuity-and-differentiability-of-inverses",
+  "type": "Theorem",
+  "number": "4.3.5",
+  "title": "Continuity and differentiability of inverses.",
+  "body": " Continuity and differentiability of inverses  functions invertible functions continuity   Let be a continuous (respectively, differentiable) function. Suppose that is invertible, and has inverse . Then is continuous (respectively, differentiable).   "
+},
+{
+  "id": "example-finding-the-derivative-of-an-inverse-function",
+  "level": "2",
+  "url": "section-derivatives-of-exponential-and-logarithmic-functions.html#example-finding-the-derivative-of-an-inverse-function",
+  "type": "Example",
+  "number": "4.3.6",
+  "title": "Finding the derivative of an inverse function.",
+  "body": " Finding the derivative of an inverse function   Let and note that is invertible. Find the derivative of .    One way to do this is just start by finding . So we'll set , solve for and then switch and . If we do this, we get so (and note that the domain of is since this is the range of !). Hence .   "
+},
+{
+  "id": "theorem-derivative-of-an-inverse-function",
+  "level": "2",
+  "url": "section-derivatives-of-exponential-and-logarithmic-functions.html#theorem-derivative-of-an-inverse-function",
+  "type": "Theorem",
+  "number": "4.3.7",
+  "title": "Derivative of an inverse function.",
+  "body": " Derivative of an inverse function  functions invertible functions derivatives  derivative differentiation formulas invertible functions   Let be a differentiable function with inverse . Assume that is itself differentiable. Then .    First, let , so that we need to find . Then we can say that . Now differentiate this equation implicitly to get or just .   "
+},
+{
+  "id": "example-exponential-inverse-revisited",
+  "level": "2",
+  "url": "section-derivatives-of-exponential-and-logarithmic-functions.html#example-exponential-inverse-revisited",
+  "type": "Example",
+  "number": "4.3.8",
+  "title": "Exponential inverse revisited.",
+  "body": " Exponential inverse revisited   Using the fact that the derivative of is itself, find the derivative of its inverse.    Let . Then by we have . So the derivative of the inverse of is .   "
+},
+{
+  "id": "example-derivative-at-a-point",
+  "level": "2",
+  "url": "section-derivatives-of-exponential-and-logarithmic-functions.html#example-derivative-at-a-point",
+  "type": "Example",
+  "number": "4.3.9",
+  "title": "Derivative at a point.",
+  "body": " Derivative at a point   Let . Find     By , we know that . By inspection, which means . Since , this gives .   "
 },
 {
   "id": "theorem-derivatives-of-exponential-functions",
   "level": "2",
   "url": "section-derivatives-of-exponential-and-logarithmic-functions.html#theorem-derivatives-of-exponential-functions",
   "type": "Theorem",
-  "number": "4.3.1",
-  "title": "Derivatives of Exponential Functions.",
-  "body": " Derivatives of Exponential Functions  exponential functions derivatives   Let and set . Then .    To prove this, we need to use what's available to us: the derivative of . From we say that . More generally, we can also say that . Hence    "
+  "number": "4.3.10",
+  "title": "Derivatives of exponential functions.",
+  "body": " Derivatives of exponential functions  exponential functions derivatives  derivative differentiation formulas exponential functions   Let and set . Then .    To prove this, we need to use what's available to us: the derivative of . From we say that . More generally, we can also say that . Hence .   "
 },
 {
   "id": "example-differentiating-an-exponential",
   "level": "2",
   "url": "section-derivatives-of-exponential-and-logarithmic-functions.html#example-differentiating-an-exponential",
   "type": "Example",
-  "number": "4.3.2",
+  "number": "4.3.11",
   "title": "Differentiating an exponential.",
-  "body": " Differentiating an exponential   Let . Find .    If we set , then . By the chain rule,    "
+  "body": " Differentiating an exponential   Let . Find .    If we set , then . By the chain rule, .   "
 },
 {
   "id": "example-solutions-of-a-differential-equation",
   "level": "2",
   "url": "section-derivatives-of-exponential-and-logarithmic-functions.html#example-solutions-of-a-differential-equation",
   "type": "Example",
-  "number": "4.3.3",
+  "number": "4.3.12",
   "title": "Solutions of a differential equation.",
-  "body": " Solutions of a differential equation   Show that satisfies the differential equation , where are arbitrary constants.    We need to show that if we compute and and plug these expressions into the differential equation, this will simplify out to . Since it follows that    "
+  "body": " Solutions of a differential equation   Show that satisfies the differential equation , where are arbitrary constants.    We need to show that if we compute and and plug these expressions into the differential equation, this will simplify out to . Since , it follows that .   "
 },
 {
   "id": "theorem-derivatives-of-logarithmic-functions",
   "level": "2",
   "url": "section-derivatives-of-exponential-and-logarithmic-functions.html#theorem-derivatives-of-logarithmic-functions",
   "type": "Theorem",
-  "number": "4.3.4",
-  "title": "Derivatives of Logarithmic Functions.",
-  "body": " Derivatives of Logarithmic Functions  logarithm functions derivatives   Let and set . Then    "
+  "number": "4.3.13",
+  "title": "Derivatives of logarithmic functions.",
+  "body": " Derivatives of logarithmic functions  logarithm functions derivatives   Let and set . Then .   "
 },
 {
   "id": "example-differentiating-nested-logarithms",
   "level": "2",
   "url": "section-derivatives-of-exponential-and-logarithmic-functions.html#example-differentiating-nested-logarithms",
   "type": "Example",
-  "number": "4.3.5",
+  "number": "4.3.14",
   "title": "Differentiating nested logarithms.",
-  "body": " Differentiating nested logarithms   Let . Find .    By the chain rule, we have    "
+  "body": " Differentiating nested logarithms   Let . Find .    By the chain rule, we have ,   "
 },
 {
   "id": "subsection-derivatives-of-logarithms-5",
@@ -1202,18 +1121,18 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-derivatives-of-exponential-and-logarithmic-functions.html#example-a-simple-fraction",
   "type": "Example",
-  "number": "4.3.6",
+  "number": "4.3.15",
   "title": "A simple fraction.",
-  "body": " A simple fraction   Let . Find .    We can find without resorting to logarithms, but this would require using the product, quotient and chain rules. The algebra would be awful. So we'll using logarithms instead! Set . Then Now we differentiate both sides implicitly to obtain   Hence    "
+  "body": " A simple fraction   Let . Find .    We can find without resorting to logarithms, but this would require using the product, quotient and chain rules. The algebra would be awful. So we'll using logarithms instead! Set . Then . Now we differentiate both sides implicitly to obtain .  Hence .   "
 },
 {
   "id": "example-a-simple-exponent",
   "level": "2",
   "url": "section-derivatives-of-exponential-and-logarithmic-functions.html#example-a-simple-exponent",
   "type": "Example",
-  "number": "4.3.7",
+  "number": "4.3.16",
   "title": "A simple exponent.",
-  "body": " A simple exponent   Let . Find .    We'll use logarithmic differentiation again to simplify and remove the exponent. Set , which gives So which means that    "
+  "body": " A simple exponent   Let . Find .    We'll use logarithmic differentiation again to simplify and remove the exponent. Set , which gives . So , which means that .   "
 },
 {
   "id": "section-exponential-models",
@@ -1222,7 +1141,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.4",
   "title": "Exponential Models",
-  "body": " Exponential Models   Exponential Growth  Suppose we want to predict the spread of some infectious disease through a city. A reasonable, though simplistic, assumption is that the disease will spread quicker if more people are infected. In other words, we'll assume that the rate at which people are infected is proportional to the number of people infected. If we let denote the number of people infected at time , then we're basically saying that for some constant .  This differential equation is a mathematical model that allows us to predict the growth of . We can actually use it to get an expression for . This differential equation is saying that is a function whose derivative looks quite a bit like . In fact, the solution of this differential equation is , where is a constant that represents the number of people infected at time . This is an example of exponential growth , and the proportionality constant is called the relative growth rate .   Modeling an Outbreak   A game of Humans vs. Zombies breaks out at WVWC. When the game starts, there is just one zombie. After one hour, there are zombies. How many zombies will there be after three hours assuming that the relative growth rate is constant?    Let denote the number of zombies hours after the game starts. Then we're given that and . We need to find .  Since the relative growth rate is assumed to be constant, we can say that for some constant . As we saw before, the solution of this differential equation is given by . So if we want to find , then we need to figure out what is.  We can do this by using the fact that . If we plug this into , we get So Hence there will be zombies after three hours.      Exponential Decay  Closely related to the concept of exponential growth is that of exponential decay . A quantity undergoes exponential decay if it satisfies the differential equation where . Every solution of this differential equation looks like .   We often write the decay constant as positive, and then rewrite the ODE for as . The solution becomes . This has the effect of highlighting the negative growth rate inherent to this system.   Perhaps the most important example of exponential decay is that of radioactive decay. If represents the mass of some radioactive substance, then experiments show that substance decays at a rate proportional to the amount of the substance remaining. In symbols, where . If we let denote the initial mass of the substance, then we can say that . The rate of decay is often expressed in terms of half-life : the amount of time it will take for precisely half of the mass to decay.   Decay from Half-Life   A radioactive substance has a half-life of days. If we start with a 50 sample, how much of the mass will remain after days?    If we let denote the mass of the sample at time , and let denote the first day we have the sample, then We still need to find , but we can do this using the fact that the half-life is days. This means that So Hence      "
+  "body": " Exponential Models   Exponential growth  Suppose we want to predict the spread of some infectious disease through a city. A reasonable, though simplistic, assumption is that the disease will spread quicker if more people are infected. In other words, we'll assume that the rate at which people are infected is proportional to the number of people infected. If we let denote the number of people infected at time , then we're basically saying that for some constant .  This differential equation is a mathematical model that allows us to predict the growth of . We can actually use it to get an expression for . This differential equation is saying that is a function whose derivative looks quite a bit like . In fact, the solution of this differential equation is , where is a constant that represents the number of people infected at time . This is an example of exponential growth , and the proportionality constant is called the relative growth rate .   Modeling an outbreak   A game of Humans vs. Zombies breaks out at WVWC. When the game starts, there is just one zombie. After one hour, there are zombies. How many zombies will there be after three hours assuming that the relative growth rate is constant?    Let denote the number of zombies hours after the game starts. Then we're given that and . We need to find .  Since the relative growth rate is assumed to be constant, we can say that for some constant . As we saw before, the solution of this differential equation is given by . So if we want to find , then we need to figure out what is.  We can do this by using the fact that . If we plug this into , we get . So . Hence there will be zombies after three hours.      Exponential decay  Closely related to the concept of exponential growth is that of exponential decay . A quantity undergoes exponential decay if it satisfies the differential equation , where . Every solution of this differential equation looks like .   We often write the decay constant as positive, and then rewrite the ODE for as . The solution becomes . This has the effect of highlighting the negative growth rate inherent to this system.   Perhaps the most important example of exponential decay is that of radioactive decay. If represents the mass of some radioactive substance, then experiments show that substance decays at a rate proportional to the amount of the substance remaining. In symbols, where . If we let denote the initial mass of the substance, then we can say that . The rate of decay is often expressed in terms of half-life : the amount of time it will take for precisely half of the mass to decay.   Decay from half-life   A radioactive substance has a half-life of days. If we start with a 50 sample, how much of the mass will remain after days?    If we let denote the mass of the sample at time , and let denote the first day we have the sample, then . We still need to find , but we can do this using the fact that the half-life is days. This means that . So . Hence .     "
 },
 {
   "id": "subsection-exponential-growth-3",
@@ -1239,8 +1158,8 @@ var ptx_lunr_docs = [
   "url": "section-exponential-models.html#example-modeling-an-outbreak",
   "type": "Example",
   "number": "4.4.1",
-  "title": "Modeling an Outbreak.",
-  "body": " Modeling an Outbreak   A game of Humans vs. Zombies breaks out at WVWC. When the game starts, there is just one zombie. After one hour, there are zombies. How many zombies will there be after three hours assuming that the relative growth rate is constant?    Let denote the number of zombies hours after the game starts. Then we're given that and . We need to find .  Since the relative growth rate is assumed to be constant, we can say that for some constant . As we saw before, the solution of this differential equation is given by . So if we want to find , then we need to figure out what is.  We can do this by using the fact that . If we plug this into , we get So Hence there will be zombies after three hours.   "
+  "title": "Modeling an outbreak.",
+  "body": " Modeling an outbreak   A game of Humans vs. Zombies breaks out at WVWC. When the game starts, there is just one zombie. After one hour, there are zombies. How many zombies will there be after three hours assuming that the relative growth rate is constant?    Let denote the number of zombies hours after the game starts. Then we're given that and . We need to find .  Since the relative growth rate is assumed to be constant, we can say that for some constant . As we saw before, the solution of this differential equation is given by . So if we want to find , then we need to figure out what is.  We can do this by using the fact that . If we plug this into , we get . So . Hence there will be zombies after three hours.   "
 },
 {
   "id": "subsection-exponential-decay-2",
@@ -1266,8 +1185,8 @@ var ptx_lunr_docs = [
   "url": "section-exponential-models.html#example-decay-from-half-life",
   "type": "Example",
   "number": "4.4.2",
-  "title": "Decay from Half-Life.",
-  "body": " Decay from Half-Life   A radioactive substance has a half-life of days. If we start with a 50 sample, how much of the mass will remain after days?    If we let denote the mass of the sample at time , and let denote the first day we have the sample, then We still need to find , but we can do this using the fact that the half-life is days. This means that So Hence    "
+  "title": "Decay from half-life.",
+  "body": " Decay from half-life   A radioactive substance has a half-life of days. If we start with a 50 sample, how much of the mass will remain after days?    If we let denote the mass of the sample at time , and let denote the first day we have the sample, then . We still need to find , but we can do this using the fact that the half-life is days. This means that . So . Hence .   "
 },
 {
   "id": "section-inverse-trigonometric-functions",
@@ -1275,8 +1194,8 @@ var ptx_lunr_docs = [
   "url": "section-inverse-trigonometric-functions.html",
   "type": "Section",
   "number": "4.5",
-  "title": "Inverse Trigonometric Functions",
-  "body": " Inverse Trigonometric Functions  Recall that is not a one-to-one function since it fails the horizontal line test. Hence it has no inverse function. However, we can restrict the domain of so that what's left over passes the horizontal line test. For example, if we define but restrict the domain to the interval , then  is one-to-one and so has an inverse function. We call this function inverse sine or arcsine .   Inverse Sine  inverse trigonometric functions inverse sine   Let and have domain . Then is called the inverse sine or arcsine of , and is denoted by or . The domain is the interval and the range is .    We can think of as the angle required to turn sine into .  Note that does not mean , which is . It's an unfortunate, though standard, choice of notation.     Finding inverse sine   Find .    This is the angle between and that turns sine into . So .     Simplifying cosine and inverse sine   Simplify , where .    By definition, as long as . So we want to try to rewrite to make use of this cancellation property. We can do this using the Pythagorean identity . Hence whenever .    Since is differentiable, this means is also differentiable.   Derivative of Inverse Sine   Let . Then .    If we set , then we get . Differentiating this gives or just     We can also define the inverse cosine function in much the same way as the inverse sine function. The idea once again is to restrict the domain of to to get an invertible function. We call the inverse of this function the inverse cosine, or arccosine, function. We denote this function by or .   Inverse cosine value   Find .    First, note that . So     Inverse cosine behaves in much the same way as inverse sine. However, this function won't be as useful to us as the inverse sine function or the next function we will look at: the inverse tangent.  If we restrict the domain of to , then we get an invertible function. We call the inverse of this function the inverse tangent or arctangent , and denote it by or . The domain of is and the range is . can be thought of as the angle between and that makes tangent equal to . It satisfies the following cancellation properties: for all and for all in .   Simplifying an inverse tangent   Simplify using the formula .    If we use the double-angle formula given, we get So we just need to find and .  Set , so that . Then we can find and using triangles, which gives Hence      Limit of inverse tangent   Determine .    Recall that is the angle between and for which tangent is equal to . So finding is equivalent to finding what angle between and we have to approach in order for tangent to blow up to . Either from looking at a graph or by using the definition of tangent, we see that the angle we need to approach is exactly . Hence .     Derivative of Inverse Tangent   The derivative of is .    We can prove this the same way we proved that . All we need to do is to set , and then find by implicit differentiation.     Tangent half-angle substitution   An important substitution in integral calculus is the tangent half-angle substitution defined by . Use this equation to find .    We can find implicitly, but we can also solve for to get Therefore     "
+  "title": "Inverse trigonometric functions",
+  "body": " Inverse trigonometric functions  Recall that is not a one-to-one function since it fails the horizontal line test. Hence it has no inverse function. However, we can restrict the domain of so that what's left over passes the horizontal line test. For example, if we define but restrict the domain to the interval , then  is one-to-one and so has an inverse function. We call this function inverse sine or arcsine .   Inverse sine  inverse trigonometric functions inverse sine   Let and have domain . Then is called the inverse sine or arcsine of , and is denoted by or . The domain is the interval and the range is .    We can think of as the angle required to turn sine into .   Note that does not mean , which is . It's an unfortunate, though standard, choice of notation.    Finding inverse sine   Find .    This is the angle between and that turns sine into . So .     Simplifying cosine and inverse sine   Simplify , where .    By definition, as long as . So we want to try to rewrite to make use of this cancellation property. We can do this using the Pythagorean identity . Hence whenever .    Since is differentiable, this means is also differentiable.   Derivative of inverse sine   Let . Then .    If we set , then we get . Differentiating this gives or just .    We can also define the inverse cosine function in much the same way as the inverse sine function. The idea once again is to restrict the domain of to to get an invertible function. We call the inverse of this function the inverse cosine, or arccosine, function. We denote this function by or .   Inverse cosine value   Find .    First, note that . So .    Inverse cosine behaves in much the same way as inverse sine. However, this function won't be as useful to us as the inverse sine function or the next function we will look at: the inverse tangent.  If we restrict the domain of to , then we get an invertible function. We call the inverse of this function the inverse tangent or arctangent , and denote it by or . The domain of is and the range is . can be thought of as the angle between and that makes tangent equal to . It satisfies the following cancellation properties: for all and for all in .   Simplifying an inverse tangent   Simplify using the formula .    If we use the double-angle formula given, we get . So we just need to find and .  Set , so that . Then we can find and using triangles, which gives Hence      Limit of inverse tangent   Determine .    Recall that is the angle between and for which tangent is equal to . So finding is equivalent to finding what angle between and we have to approach in order for tangent to blow up to . Either from looking at a graph or by using the definition of tangent, we see that the angle we need to approach is exactly . Hence .     Derivative of inverse tangent   The derivative of is .    We can prove this the same way we proved that . All we need to do is to set , and then find by implicit differentiation.     Tangent half-angle substitution   An important substitution in integral calculus is the tangent half-angle substitution defined by . Use this equation to find .    We can find implicitly, but we can also solve for to get . Therefore .    "
 },
 {
   "id": "section-inverse-trigonometric-functions-2",
@@ -1293,8 +1212,8 @@ var ptx_lunr_docs = [
   "url": "section-inverse-trigonometric-functions.html#definition-inverse-sine",
   "type": "Definition",
   "number": "4.5.1",
-  "title": "Inverse Sine.",
-  "body": " Inverse Sine  inverse trigonometric functions inverse sine   Let and have domain . Then is called the inverse sine or arcsine of , and is denoted by or . The domain is the interval and the range is .   "
+  "title": "Inverse sine.",
+  "body": " Inverse sine  inverse trigonometric functions inverse sine   Let and have domain . Then is called the inverse sine or arcsine of , and is denoted by or . The domain is the interval and the range is .   "
 },
 {
   "id": "example-finding-inverse-sine",
@@ -1320,13 +1239,13 @@ var ptx_lunr_docs = [
   "url": "section-inverse-trigonometric-functions.html#theorem-derivative-of-inverse-sine",
   "type": "Theorem",
   "number": "4.5.4",
-  "title": "Derivative of Inverse Sine.",
-  "body": " Derivative of Inverse Sine   Let . Then .    If we set , then we get . Differentiating this gives or just    "
+  "title": "Derivative of inverse sine.",
+  "body": " Derivative of inverse sine   Let . Then .    If we set , then we get . Differentiating this gives or just .   "
 },
 {
-  "id": "section-inverse-trigonometric-functions-9",
+  "id": "section-inverse-trigonometric-functions-10",
   "level": "2",
-  "url": "section-inverse-trigonometric-functions.html#section-inverse-trigonometric-functions-9",
+  "url": "section-inverse-trigonometric-functions.html#section-inverse-trigonometric-functions-10",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1339,12 +1258,12 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "4.5.5",
   "title": "Inverse cosine value.",
-  "body": " Inverse cosine value   Find .    First, note that . So    "
+  "body": " Inverse cosine value   Find .    First, note that . So .   "
 },
 {
-  "id": "section-inverse-trigonometric-functions-12",
+  "id": "section-inverse-trigonometric-functions-13",
   "level": "2",
-  "url": "section-inverse-trigonometric-functions.html#section-inverse-trigonometric-functions-12",
+  "url": "section-inverse-trigonometric-functions.html#section-inverse-trigonometric-functions-13",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1357,7 +1276,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "4.5.6",
   "title": "Simplifying an inverse tangent.",
-  "body": " Simplifying an inverse tangent   Simplify using the formula .    If we use the double-angle formula given, we get So we just need to find and .  Set , so that . Then we can find and using triangles, which gives Hence    "
+  "body": " Simplifying an inverse tangent   Simplify using the formula .    If we use the double-angle formula given, we get . So we just need to find and .  Set , so that . Then we can find and using triangles, which gives Hence    "
 },
 {
   "id": "example-limit-of-inverse-tangent",
@@ -1374,8 +1293,8 @@ var ptx_lunr_docs = [
   "url": "section-inverse-trigonometric-functions.html#theorem-derivative-of-inverse-tangent",
   "type": "Theorem",
   "number": "4.5.8",
-  "title": "Derivative of Inverse Tangent.",
-  "body": " Derivative of Inverse Tangent   The derivative of is .    We can prove this the same way we proved that . All we need to do is to set , and then find by implicit differentiation.   "
+  "title": "Derivative of inverse tangent.",
+  "body": " Derivative of inverse tangent   The derivative of is .    We can prove this the same way we proved that . All we need to do is to set , and then find by implicit differentiation.   "
 },
 {
   "id": "example-tangent-half-angle-substitution",
@@ -1384,14 +1303,95 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "4.5.9",
   "title": "Tangent half-angle substitution.",
-  "body": " Tangent half-angle substitution   An important substitution in integral calculus is the tangent half-angle substitution defined by . Use this equation to find .    We can find implicitly, but we can also solve for to get Therefore    "
+  "body": " Tangent half-angle substitution   An important substitution in integral calculus is the tangent half-angle substitution defined by . Use this equation to find .    We can find implicitly, but we can also solve for to get . Therefore .   "
+},
+{
+  "id": "section-linear-approximations",
+  "level": "1",
+  "url": "section-linear-approximations.html",
+  "type": "Section",
+  "number": "5.1",
+  "title": "Linear approximations",
+  "body": " Linear approximations  Suppose we graph the tangent line to at . The equation of this line will be . If we look at the tangent line next to the graph, we'll see that the line is very close to the graph of if is very close to . So we can use the equation of the tangent line to approximate when is near . For example, we can say that . We call this the linear approximation of at .   Linear approximation  derivative linear approximation   Let be a function that is differentiable at . The linear approximation (or linearization ) of at is the function given by     The formula of the linear approximation to a function at is nothing more than the equation of the tangent line to at .   Linear approximation of sine   Find the linear approximation of at and use this to estimate .    The linear approximation is given by , so . Therefore since is very close to .     Estimating a tangent   Estimate .    We want to estimate this using a linear approximation, and we want to make sure the linear approximation is easy to set up. This means we want to base the linear approximation at a value of that both tangent and its derivative are relatively easy to compute at, and is also close to . So we'll pick and find the linear approximation to at : Set . Then . So .     Estimating the population of the United States in 2020   Use the differential equation from and the fact that the current population of the US is about 323.1 million to estimate the population of the US in 2020.    Recall that in represented the population of the US (in millions) years after 1990. To estimate the population in 2020, we want to find the linearization of at . This is given by . Since and , we have . Hence the population of the US in 2020 should be , or about 331.8 million people.    "
+},
+{
+  "id": "section-linear-approximations-2",
+  "level": "2",
+  "url": "section-linear-approximations.html#section-linear-approximations-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "linear approximation "
+},
+{
+  "id": "definition-linear-approximation",
+  "level": "2",
+  "url": "section-linear-approximations.html#definition-linear-approximation",
+  "type": "Definition",
+  "number": "5.1.1",
+  "title": "Linear approximation.",
+  "body": " Linear approximation  derivative linear approximation   Let be a function that is differentiable at . The linear approximation (or linearization ) of at is the function given by    "
+},
+{
+  "id": "example-linear-approximation-of-sine",
+  "level": "2",
+  "url": "section-linear-approximations.html#example-linear-approximation-of-sine",
+  "type": "Example",
+  "number": "5.1.2",
+  "title": "Linear approximation of sine.",
+  "body": " Linear approximation of sine   Find the linear approximation of at and use this to estimate .    The linear approximation is given by , so . Therefore since is very close to .   "
+},
+{
+  "id": "example-estimating-a-tangent",
+  "level": "2",
+  "url": "section-linear-approximations.html#example-estimating-a-tangent",
+  "type": "Example",
+  "number": "5.1.3",
+  "title": "Estimating a tangent.",
+  "body": " Estimating a tangent   Estimate .    We want to estimate this using a linear approximation, and we want to make sure the linear approximation is easy to set up. This means we want to base the linear approximation at a value of that both tangent and its derivative are relatively easy to compute at, and is also close to . So we'll pick and find the linear approximation to at : Set . Then . So .   "
+},
+{
+  "id": "example-estimating-the-population-of-the-united-states-in-2020",
+  "level": "2",
+  "url": "section-linear-approximations.html#example-estimating-the-population-of-the-united-states-in-2020",
+  "type": "Example",
+  "number": "5.1.4",
+  "title": "Estimating the population of the United States in 2020.",
+  "body": " Estimating the population of the United States in 2020   Use the differential equation from and the fact that the current population of the US is about 323.1 million to estimate the population of the US in 2020.    Recall that in represented the population of the US (in millions) years after 1990. To estimate the population in 2020, we want to find the linearization of at . This is given by . Since and , we have . Hence the population of the US in 2020 should be , or about 331.8 million people.   "
+},
+{
+  "id": "section-related-rates",
+  "level": "1",
+  "url": "section-related-rates.html",
+  "type": "Section",
+  "number": "5.2",
+  "title": "Related Rates",
+  "body": " Related Rates   Changing volume on a sphere   The radius of a sphere is increasing at a rate of 4 . How fast is the volume increasing when the radius is 13 ?    First, let's assign names to all of the changing quantities in this problem: . Note that we're considering and to be functions of time, i.e. and , where is in seconds. Then we're given that and we need to find when . To do this, we had better find some relationship between and . We can find this by looking at the volume formula for a sphere: . This equation relates and , and if we take the derivatives of both sides with respect to time (using implicit differentiation) then we get an equation relating and . So let's do that: Now we can plug in our given information to get . So the volume is increasing at a rate of 2704\\pi .    Note that we never found what and were in , but we didn't need to. All we needed to find was a relationship between the two changing quantities, i.e. the two derivatives, to answer the question.   A tank problem   Water is leaking out of a conical tank at a rate of 10000 while water is being pumped into the tank at some (unknown) constant rate. The tank has a height of 6 and the diameter of the top is 4 . If the water level is rising at a rate of 20 when the height of the water is 2 , what is the rate at which water is being poured into the tank?    We have a lot of information to process here, so we'll take things a step at a time. The changing quantities are where is in minutes. We need to find the rate at which water is entering the tank, so let's call this mystery number . Then all we know about is that it's related to the rate that the volume is changing. In particular, we should have . So to find we need to find , which means we need to set up a relationship between and the other changing quantities to determine how exactly is changing, using the fact that when (after converting to centimeters).  Using the fact that the water is in a conical tank, we can use the formula for the volume of a cone to say that . If we differentiate both sides with respect to , then we get . Unfortunately, we don't have any information on or that we can use, just information on and . So we need to get in terms of . By similar triangles, we can say that , and so and likewise . Hence which boils down to .  Now, finally , we can answer the original question. The rate that water is flowing into the tank is or just 289252.68 . In terms of meters this is .29 , which perhaps looks a bit more reasonable.    "
+},
+{
+  "id": "example-changing-volume-on-a-sphere",
+  "level": "2",
+  "url": "section-related-rates.html#example-changing-volume-on-a-sphere",
+  "type": "Example",
+  "number": "5.2.1",
+  "title": "Changing volume on a sphere.",
+  "body": " Changing volume on a sphere   The radius of a sphere is increasing at a rate of 4 . How fast is the volume increasing when the radius is 13 ?    First, let's assign names to all of the changing quantities in this problem: . Note that we're considering and to be functions of time, i.e. and , where is in seconds. Then we're given that and we need to find when . To do this, we had better find some relationship between and . We can find this by looking at the volume formula for a sphere: . This equation relates and , and if we take the derivatives of both sides with respect to time (using implicit differentiation) then we get an equation relating and . So let's do that: Now we can plug in our given information to get . So the volume is increasing at a rate of 2704\\pi .   "
+},
+{
+  "id": "example-a-tank-problem",
+  "level": "2",
+  "url": "section-related-rates.html#example-a-tank-problem",
+  "type": "Example",
+  "number": "5.2.2",
+  "title": "A tank problem.",
+  "body": " A tank problem   Water is leaking out of a conical tank at a rate of 10000 while water is being pumped into the tank at some (unknown) constant rate. The tank has a height of 6 and the diameter of the top is 4 . If the water level is rising at a rate of 20 when the height of the water is 2 , what is the rate at which water is being poured into the tank?    We have a lot of information to process here, so we'll take things a step at a time. The changing quantities are where is in minutes. We need to find the rate at which water is entering the tank, so let's call this mystery number . Then all we know about is that it's related to the rate that the volume is changing. In particular, we should have . So to find we need to find , which means we need to set up a relationship between and the other changing quantities to determine how exactly is changing, using the fact that when (after converting to centimeters).  Using the fact that the water is in a conical tank, we can use the formula for the volume of a cone to say that . If we differentiate both sides with respect to , then we get . Unfortunately, we don't have any information on or that we can use, just information on and . So we need to get in terms of . By similar triangles, we can say that , and so and likewise . Hence which boils down to .  Now, finally , we can answer the original question. The rate that water is flowing into the tank is or just 289252.68 . In terms of meters this is .29 , which perhaps looks a bit more reasonable.   "
 },
 {
   "id": "section-l-hospital-s-rule",
   "level": "1",
   "url": "section-l-hospital-s-rule.html",
   "type": "Section",
-  "number": "5.1",
+  "number": "5.3",
   "title": "L’Hospital’s Rule",
   "body": " L'Hospital's Rule  Consider the important limit . If we try to plug in , we get , which is undefined. However, we can prove using geometry that the limit is . As another example, consider . Once again, if we try to plug the limit in we get an expression of the form . However, the limit is just , which we can find using algebra.  Limits of the form or are known as indeterminate forms . There is no restriction whatsoever on what value a limit involving an indeterminate form may take, or even that it has to exist at all.   Different indeterminate forms   Find indeterminate forms that, respectively, evaluate to and do not exist.    Let , and . Then and are all indeterminate forms. The first evaluates to , the second does not exist (it's ) while the third appears to be equal to .    The goal of this section is to determine a method that can help us evaluate limits involving indeterminate forms. This method is called L'Hospital's Rule .   L'Hospital's Rule  L'Hospital's Rule   Let and be differentiable functions. If is either one of the indeterminate forms or , then if the limit on the right exists or is .    It's important to note that L'Hospital's Rule does not necessarily ask you to use the quotient rule!   Using L'Hospital's Rule   Let . Find .    We saw in that this limit gives us the indeterminate form , so L'Hospital's Rule applies. Hence and so the limit is indeed .    L'Hospital's Rule also applies for limits approaching .   Exponential and polynomial growth   Let and let , where are arbitrary constants. Find .    This is another example of a indeterminate form, and so L'Hospital's Rule applies. If we use it, we get In other words, the exponential function grows faster than any quadratic function.     Another limit involving exponentials   Find .    This is a indeterminate form, so L'Hospital's Rule applies. We get     L'Hospital's Rule only applies directly to the indeterminate forms and , but these are not the only problems when L'Hospital's Rule proves useful.   A different indeterminate form   Find .    If we try to evaluate the limit, we get the expression . This is another indeterminate form, but is not one that we can apply L'Hospital's Rule to without doing some algebra first. We can write which is a indeterminate form. We can use L'Hospital's on this expression!  If we do so, we get So .     shows that indeterminate forms can be dealt with by rewriting them in the form or and then applying L'Hospital's Rule. It's trickier, but we can also deal with indeterminate forms by rewriting them in this way.   indeterminate form   Find .    As , and . So this limit is the indeterminate form . We can't sue L'Hospital's Rule yet, but we can try to rewrite this limit as a or indeterminate form. We'll try to do this by replacing with to get      Limit involving radicals   Find .    This is another form, so we'll try to rewrite it into a form we can use L'Hospital's Rule on. The trick here is to factor an out so we can get a form, which we've already seen how to handle:     There are three other indeterminate forms that L'Hospital's Rule can help us with (after some algebra): and . All of these can be found by first using logarithms.   A natural limit   Find .    This limit is a indeterminate form. We'll try taking logarithms to rewrite it as a form, so set . Then is a form. We can use L'Hospital's by rewriting this limit at a form or . Either way, we get and so the original limit is .    "
 },
@@ -1409,7 +1409,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-l-hospital-s-rule.html#example-different-indeterminate-forms",
   "type": "Example",
-  "number": "5.1.1",
+  "number": "5.3.1",
   "title": "Different indeterminate forms.",
   "body": " Different indeterminate forms   Find indeterminate forms that, respectively, evaluate to and do not exist.    Let , and . Then and are all indeterminate forms. The first evaluates to , the second does not exist (it's ) while the third appears to be equal to .   "
 },
@@ -1427,7 +1427,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-l-hospital-s-rule.html#theorem-l-hospital-s-rule",
   "type": "Theorem",
-  "number": "5.1.2",
+  "number": "5.3.2",
   "title": "L’Hospital’s Rule.",
   "body": " L'Hospital's Rule  L'Hospital's Rule   Let and be differentiable functions. If is either one of the indeterminate forms or , then if the limit on the right exists or is .   "
 },
@@ -1436,7 +1436,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-l-hospital-s-rule.html#example-using-l-hospital-s-rule",
   "type": "Example",
-  "number": "5.1.3",
+  "number": "5.3.3",
   "title": "Using L’Hospital’s Rule.",
   "body": " Using L'Hospital's Rule   Let . Find .    We saw in that this limit gives us the indeterminate form , so L'Hospital's Rule applies. Hence and so the limit is indeed .   "
 },
@@ -1445,7 +1445,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-l-hospital-s-rule.html#example-exponential-and-polynomial-growth",
   "type": "Example",
-  "number": "5.1.4",
+  "number": "5.3.4",
   "title": "Exponential and polynomial growth.",
   "body": " Exponential and polynomial growth   Let and let , where are arbitrary constants. Find .    This is another example of a indeterminate form, and so L'Hospital's Rule applies. If we use it, we get In other words, the exponential function grows faster than any quadratic function.   "
 },
@@ -1454,7 +1454,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-l-hospital-s-rule.html#example-another-limit-involving-exponentials",
   "type": "Example",
-  "number": "5.1.5",
+  "number": "5.3.5",
   "title": "Another limit involving exponentials.",
   "body": " Another limit involving exponentials   Find .    This is a indeterminate form, so L'Hospital's Rule applies. We get    "
 },
@@ -1463,7 +1463,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-l-hospital-s-rule.html#example-a-different-indeterminate-form",
   "type": "Example",
-  "number": "5.1.6",
+  "number": "5.3.6",
   "title": "A different indeterminate form.",
   "body": " A different indeterminate form   Find .    If we try to evaluate the limit, we get the expression . This is another indeterminate form, but is not one that we can apply L'Hospital's Rule to without doing some algebra first. We can write which is a indeterminate form. We can use L'Hospital's on this expression!  If we do so, we get So .   "
 },
@@ -1472,7 +1472,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-l-hospital-s-rule.html#example---infty-infty--indeterminate-form",
   "type": "Example",
-  "number": "5.1.7",
+  "number": "5.3.7",
   "title": "<span class=\"process-math\">\\(\\infty-\\infty\\)<\/span> indeterminate form.",
   "body": " indeterminate form   Find .    As , and . So this limit is the indeterminate form . We can't sue L'Hospital's Rule yet, but we can try to rewrite this limit as a or indeterminate form. We'll try to do this by replacing with to get    "
 },
@@ -1481,7 +1481,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-l-hospital-s-rule.html#example-limit-involving-radicals",
   "type": "Example",
-  "number": "5.1.8",
+  "number": "5.3.8",
   "title": "Limit involving radicals.",
   "body": " Limit involving radicals   Find .    This is another form, so we'll try to rewrite it into a form we can use L'Hospital's Rule on. The trick here is to factor an out so we can get a form, which we've already seen how to handle:    "
 },
@@ -1490,7 +1490,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-l-hospital-s-rule.html#example-a-natural-limit",
   "type": "Example",
-  "number": "5.1.9",
+  "number": "5.3.9",
   "title": "A natural limit.",
   "body": " A natural limit   Find .    This limit is a indeterminate form. We'll try taking logarithms to rewrite it as a form, so set . Then is a form. We can use L'Hospital's by rewriting this limit at a form or . Either way, we get and so the original limit is .   "
 },
@@ -1499,7 +1499,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "section-extreme-values-of-functions.html",
   "type": "Section",
-  "number": "5.2",
+  "number": "5.4",
   "title": "Extreme Values of Functions",
   "body": " Extreme Values of Functions  It's often of interest to determine how large or small some quantity can get.   Absolute Extrema  functions absolute extrema   Let be a function defined on some domain . Let be in . Then  is an absolute maximum of on if for all in .  is an absolute minimum of on if for all in .  These values, if they exist, are extreme values .      List the extreme values, if any, of the following functions:  .  .  .      Some functions may not have extreme values, but they could have values that are smaller or larger than all other values of the function \"nearby\".   Local extrema  functions local extrema   Let be a function and let be in the domain of . Then  is a local maximum if for all near .  is a local minimum if for all near .  Roughly, local maxima correspond to \"hilltops\" whereas local minima correspond to \"valleys\" in the graph of .    In general, local extrema and absolute extrema can be different. However, the following theorem does provide a relationship between the two on closed, bounded intervals.   Extreme Value Theorem  Extreme Value Theorem   Let be a continuous function defined on the interval Then has both an absolute maximum and absolute minimum on . Furthermore, these values occur at either an endpoint or a local extrema.    What tells us is that we can find the extreme values of any continuous function defined on a closed, bounded interval by just checking the function at the endpoint and at its local extrema.   Finding extreme values   Let . Given that has local extrema at , find the extreme values of on the interval .     tells us that we can find the extreme values by checking local extrema and the endpoints of our interval. Since is the only local extreme value inside of our interval, that's the only one we need to check. We have So the absolute minimum of on is and the absolute maximum is     So if we can find where a function has local extrema, then finding absolute extrema won't be too much more difficult. Thankfully, this is relatively straightforward if the function is differentiable.   Fermat's Theorem  Fermat's Theorem   Let be a function and let be a local extreme value of . If exists, then .    So finding local extrema of often amounts to finding where , i.e., where it has a root. However, we also need to worry about where doesn't exist (just think about ). This leads to the following definition.   Critical Points   Let be a differentiable function. The critical points of are the points where or does not exist.    Our method for finding extreme values on a closed interval will proceed as follows: find all the critical points, and then compare the values of our function at the critical points and the endpoints of the interval.   Extreme values of tangent   Let . Find the extreme values of on the interval .    We need to find the critical points first. We have This is if , which occurs in our interval only if . So we need to check at .     Dealing with a cusp   Let . Find the absolute extrema of on .    First, find the critical points of : This is at and undefined at , so our critical points are . So to find the absolute extrema we need to check at . Doing so, we see that the absolute minimum value is at and the absolute maximum is at .    "
 },
@@ -1508,7 +1508,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-extreme-values-of-functions.html#definition-absolute-extrema",
   "type": "Definition",
-  "number": "5.2.1",
+  "number": "5.4.1",
   "title": "Absolute Extrema.",
   "body": " Absolute Extrema  functions absolute extrema   Let be a function defined on some domain . Let be in . Then  is an absolute maximum of on if for all in .  is an absolute minimum of on if for all in .  These values, if they exist, are extreme values .   "
 },
@@ -1517,7 +1517,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-extreme-values-of-functions.html#section-extreme-values-of-functions-4",
   "type": "Example",
-  "number": "5.2.2",
+  "number": "5.4.2",
   "title": "",
   "body": "  List the extreme values, if any, of the following functions:  .  .  .     "
 },
@@ -1526,7 +1526,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-extreme-values-of-functions.html#definition-local-extrema",
   "type": "Definition",
-  "number": "5.2.3",
+  "number": "5.4.3",
   "title": "Local extrema.",
   "body": " Local extrema  functions local extrema   Let be a function and let be in the domain of . Then  is a local maximum if for all near .  is a local minimum if for all near .  Roughly, local maxima correspond to \"hilltops\" whereas local minima correspond to \"valleys\" in the graph of .   "
 },
@@ -1535,7 +1535,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-extreme-values-of-functions.html#theorem-extreme-value-theorem",
   "type": "Theorem",
-  "number": "5.2.4",
+  "number": "5.4.4",
   "title": "Extreme Value Theorem.",
   "body": " Extreme Value Theorem  Extreme Value Theorem   Let be a continuous function defined on the interval Then has both an absolute maximum and absolute minimum on . Furthermore, these values occur at either an endpoint or a local extrema.   "
 },
@@ -1544,7 +1544,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-extreme-values-of-functions.html#example-finding-extreme-values",
   "type": "Example",
-  "number": "5.2.5",
+  "number": "5.4.5",
   "title": "Finding extreme values.",
   "body": " Finding extreme values   Let . Given that has local extrema at , find the extreme values of on the interval .     tells us that we can find the extreme values by checking local extrema and the endpoints of our interval. Since is the only local extreme value inside of our interval, that's the only one we need to check. We have So the absolute minimum of on is and the absolute maximum is    "
 },
@@ -1553,7 +1553,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-extreme-values-of-functions.html#theorem-fermat-s-theorem",
   "type": "Theorem",
-  "number": "5.2.6",
+  "number": "5.4.6",
   "title": "Fermat’s Theorem.",
   "body": " Fermat's Theorem  Fermat's Theorem   Let be a function and let be a local extreme value of . If exists, then .   "
 },
@@ -1562,7 +1562,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-extreme-values-of-functions.html#definition-critical-points",
   "type": "Definition",
-  "number": "5.2.7",
+  "number": "5.4.7",
   "title": "Critical Points.",
   "body": " Critical Points   Let be a differentiable function. The critical points of are the points where or does not exist.   "
 },
@@ -1571,7 +1571,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-extreme-values-of-functions.html#example-extreme-values-of-tangent",
   "type": "Example",
-  "number": "5.2.8",
+  "number": "5.4.8",
   "title": "Extreme values of tangent.",
   "body": " Extreme values of tangent   Let . Find the extreme values of on the interval .    We need to find the critical points first. We have This is if , which occurs in our interval only if . So we need to check at .   "
 },
@@ -1580,7 +1580,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-extreme-values-of-functions.html#example-dealing-with-a-cusp",
   "type": "Example",
-  "number": "5.2.9",
+  "number": "5.4.9",
   "title": "Dealing with a cusp.",
   "body": " Dealing with a cusp   Let . Find the absolute extrema of on .    First, find the critical points of : This is at and undefined at , so our critical points are . So to find the absolute extrema we need to check at . Doing so, we see that the absolute minimum value is at and the absolute maximum is at .   "
 },
@@ -1589,7 +1589,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "section-the-mean-value-theorem.html",
   "type": "Section",
-  "number": "5.3",
+  "number": "5.5",
   "title": "The Mean Value Theorem",
   "body": " The Mean Value Theorem   The linear approximations we came up with in are useful for estimating complicated functions with simpler, linear models. In essence, we use the derivative of a function to tell us how much to change a given value of the function in order to estimate that function. There is one problem with this approach, at least currently. We have good reason to suspect that our approximations are close to the exact values in certain circumstances, but we don't know how close. The goal of this section is to derive an estimate for the derivative that can help us to find more precise approximations.    Rolle's Theorem  We start with a theorem that is very reasonable, at least geometrically. Let be a differentiable function on some interval , and suppose . Then this means the graph of must \"turn around\" at some point in , i.e., there is a local maximum or minimum contained within the interval. Combining this observation with gives us Rolle's Theorem.    Rolle's Theorem   Let be a differentiable function on and suppose . Then there exists some number in such that .     is an example of an existence theorem . It tells us nothing about how to find the number , or how many such can exist. It only tells us that there is at least one number in for which . This may not seem very useful, but existence theorems can be quite powerful in mathematics.   Rolle's Theorem and Traffic   A car enters a highway going at 45 and leaves the highway going at the same speed. Was the car's acceleration ever ?    The speed of the car can be represented by a velocity function . If we assume that the car entered the highway at time and left at some future time , then we know that By , there must be some time between and for which . Since is exactly the acceleration, we know that the car had to stop accelerating somewhere on the highway.      The Mean Value Theorem   is powerful because it has very general conditions for its use. However, it does require the function in question to take on the same values at the endpoints of , and this is a condition we'd like to try to relax. However, we'll try to be clever about this and use to do most of the heavy lifting for us.  If we imagine graphing some differentiable function on some interval , but , then we can't apply . But maybe we can adjust it just a little bit so that we can? In particular, the only reason we can't use is that . But if we subtract the line through these points from , we should get a new function for which applies.  The line through these points has equation So define Then So  does apply to this function. Hence there exists some number between and for which .  But and if this is then we can solve for to get This gives us the Mean Value Theorem .   Mean Value Theorem  Mean Value Theorem   Let be differentiable on some interval . Then there exists a number in such that or equivalently     The essentially says that there is at least one point inside of for which the slope at that point matches the \"average slope\" Like , this is an existence theorem. However, it's slightly more general, and so is applicable in more situations. It's also useful in deriving error estimates.   Estimating error in a linear approximation   Let and let denote the linear approximation to at . Find the largest possible error between and on the interval .    First, we should find , which from is just The error we need to estimate is , for in . So we'll set and let be some number in . By , there exists some number in such that Now, and . So the above equation becomes   Now, we don't know anything about aside from the fact that it lives in . However, we do have an expression for now: So if is in , then the error is at most  . In other words,     Perhaps the most important example of in this course will be the following theorem.   Zero Derivative Theorem   Let be differentiable on . If for all in , then has to be a constant.    The idea of the proof is to use to show that for any points in . Now, by we have for some in . However, by assumption, and so . In other words, . Hence must be constant.     "
 },
@@ -1607,7 +1607,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-the-mean-value-theorem.html#theorem-rolle-s-theorem",
   "type": "Theorem",
-  "number": "5.3.1",
+  "number": "5.5.1",
   "title": "Rolle’s Theorem.",
   "body": " Rolle's Theorem   Let be a differentiable function on and suppose . Then there exists some number in such that .   "
 },
@@ -1625,7 +1625,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-the-mean-value-theorem.html#example-rolle-s-theorem-and-traffic",
   "type": "Example",
-  "number": "5.3.2",
+  "number": "5.5.2",
   "title": "Rolle’s Theorem and Traffic.",
   "body": " Rolle's Theorem and Traffic   A car enters a highway going at 45 and leaves the highway going at the same speed. Was the car's acceleration ever ?    The speed of the car can be represented by a velocity function . If we assume that the car entered the highway at time and left at some future time , then we know that By , there must be some time between and for which . Since is exactly the acceleration, we know that the car had to stop accelerating somewhere on the highway.   "
 },
@@ -1643,7 +1643,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-the-mean-value-theorem.html#theorem-mean-value-theorem",
   "type": "Theorem",
-  "number": "5.3.3",
+  "number": "5.5.3",
   "title": "Mean Value Theorem.",
   "body": " Mean Value Theorem  Mean Value Theorem   Let be differentiable on some interval . Then there exists a number in such that or equivalently    "
 },
@@ -1652,7 +1652,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-the-mean-value-theorem.html#example-estimating-error-in-a-linear-approximation",
   "type": "Example",
-  "number": "5.3.4",
+  "number": "5.5.4",
   "title": "Estimating error in a linear approximation.",
   "body": " Estimating error in a linear approximation   Let and let denote the linear approximation to at . Find the largest possible error between and on the interval .    First, we should find , which from is just The error we need to estimate is , for in . So we'll set and let be some number in . By , there exists some number in such that Now, and . So the above equation becomes   Now, we don't know anything about aside from the fact that it lives in . However, we do have an expression for now: So if is in , then the error is at most  . In other words,    "
 },
@@ -1661,7 +1661,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-the-mean-value-theorem.html#theorem-zero-derivative-theorem",
   "type": "Theorem",
-  "number": "5.3.5",
+  "number": "5.5.5",
   "title": "Zero Derivative Theorem.",
   "body": " Zero Derivative Theorem   Let be differentiable on . If for all in , then has to be a constant.    The idea of the proof is to use to show that for any points in . Now, by we have for some in . However, by assumption, and so . In other words, . Hence must be constant.   "
 },
@@ -1670,7 +1670,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "section-derivatives-and-graphs.html",
   "type": "Section",
-  "number": "5.4",
+  "number": "5.6",
   "title": "Derivatives and Graphs",
   "body": " Derivatives and Graphs  Recall that if is a function and exists, then for some means that is increasing at , while means that is decreasing at . Now, suppose that is a critical point of . Then . If changes sign from negative to positive, then is a local minimum. Conversely, if changes sign from positive to negative, then is a local maximum. This is the first derivative test .   Local maxima and minima using the first derivative test   Let . Find where is increasing, decreasing, and any local maxima or minima.    We can answer all of these questions by setting up a sign chart for . The critical points are , and on and on . So is decreasing on the first set of intervals, increasing on , has a local maximum at and a local minimum at .     First derivative test and a discontinuous function   Find any local maxima or minima of .    We need to find the critical points, which means we need to find : So the critical points are . Note that  cannot be a local extreme value of since it's not in the domain of . However, we still need to include it in our sign chart. If we do so, we find that has a local minimum at and a local maximum at by the first derivative test.    One benefit of the first derivative test is that we only need to compute first derivatives to use it. However, if a function has a second derivative, then it's often easier to use the concavity of the graph at a critical point to determine whether a critical point is a local maximum or minimum. In particular, if is a function and is continuous near the critical point (so ), then is a local minimum if and is a local maximum if . This is the second derivative test .   Using the second derivative test   Find any local extrema of .    First, we find the critical points: forces . Now we check these critical points in  So has a local minimum at and a local maximum at .    The point in is an example of an inflection point of : a place where the concavity of changes, or equivalently a point where the second derivative changes sign.   Finding Inflection Points   Find the inflection points of .    We need to find the points where changes sign, so our first job is to compute . We'll do so using technology:   We need to find where this is zero, so we'll simplify and then factor:   Therefore , and we can see that is zero when or . Since changes sign at each of these points (as can be seen from a sign chart), all of these are inflection points. This is also indicated on the graph below:     The code used in is the Sage programming language, a variant of Python that is designed for mathematical applications. The Sage computer algebra system (CAS) is very useful for quickly performing tedious algebraic calculations. We could also have used Sage to solve the equation for us with the solve() command, like so:   However, it may be the case that some solutions of are not inflection points. As a simple example, consider . From the graph of this function it's clearly concave up everywhere even though the . The problem here is that doesn't change sign at , and so this point can't be an inflection point.  "
 },
@@ -1688,7 +1688,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-derivatives-and-graphs.html#example-local-maxima-and-minima-using-the-first-derivative-test",
   "type": "Example",
-  "number": "5.4.1",
+  "number": "5.6.1",
   "title": "Local maxima and minima using the first derivative test.",
   "body": " Local maxima and minima using the first derivative test   Let . Find where is increasing, decreasing, and any local maxima or minima.    We can answer all of these questions by setting up a sign chart for . The critical points are , and on and on . So is decreasing on the first set of intervals, increasing on , has a local maximum at and a local minimum at .   "
 },
@@ -1697,7 +1697,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-derivatives-and-graphs.html#example-first-derivative-test-and-a-discontinuous-function",
   "type": "Example",
-  "number": "5.4.2",
+  "number": "5.6.2",
   "title": "First derivative test and a discontinuous function.",
   "body": " First derivative test and a discontinuous function   Find any local maxima or minima of .    We need to find the critical points, which means we need to find : So the critical points are . Note that  cannot be a local extreme value of since it's not in the domain of . However, we still need to include it in our sign chart. If we do so, we find that has a local minimum at and a local maximum at by the first derivative test.   "
 },
@@ -1715,7 +1715,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-derivatives-and-graphs.html#example-using-the-second-derivative-test",
   "type": "Example",
-  "number": "5.4.3",
+  "number": "5.6.3",
   "title": "Using the second derivative test.",
   "body": " Using the second derivative test   Find any local extrema of .    First, we find the critical points: forces . Now we check these critical points in  So has a local minimum at and a local maximum at .   "
 },
@@ -1733,7 +1733,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-derivatives-and-graphs.html#example-finding-inflection-points",
   "type": "Example",
-  "number": "5.4.4",
+  "number": "5.6.4",
   "title": "Finding Inflection Points.",
   "body": " Finding Inflection Points   Find the inflection points of .    We need to find the points where changes sign, so our first job is to compute . We'll do so using technology:   We need to find where this is zero, so we'll simplify and then factor:   Therefore , and we can see that is zero when or . Since changes sign at each of these points (as can be seen from a sign chart), all of these are inflection points. This is also indicated on the graph below:    "
 },
@@ -1742,7 +1742,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "section-optimization-problems.html",
   "type": "Section",
-  "number": "5.5",
+  "number": "5.7",
   "title": "Optimization Problems",
   "body": " Optimization Problems  Now that we can use derivatives to find local maxima and minima, we can solve optimization problems .   Minimizing a product   Find two numbers that differ by and whose product is a minimum.    Call our numbers and suppose . Then and we need to choose in such a way that is as small as possible. If we replace with , then this means we need to minimize The critical point of is , and since is a parabola we know that this must be the location of the absolute minimum value on the graph. So the numbers we need are .     Minimizing material costs   A box with an open top and a square base is to be built using material that costs \\$5 per square meter. The box must have a volume of 32000 . Find the dimensions of the box that will be cheapest to build to these specifications.    There are two things we need to do here:  Find the quantity to be optimize.  Solve the resulting optimization problem.  We need to minimize costs, which means we need to minimize how much material is used to construct this box. Hence we must minimize the surface area of the box. If we let denote the length of the base of the box and the height of the box, then the surface area is given by Now, we can't minimize this yet because we have too many variables. However, we can solve for in terms of by using the volume constraint. Since the volume of the box is this gives So the quantity we need to minimize is   To minimize this, we find the critical points by solving . This gives, after some algebra, . Now we need to be careful here! We only have a critical point at this step. We need to make an argument now as to why this critical point should be an absolute minimum of . One way to do this is by setting up a sign chart for . If we do this, then we see that for in , while for in . If we think about what this tells us of the graph of , we see that must minimize , at least for . So the dimensions that minimize the cost of building this box are .     Distance on an ellipse   Find the point(s) on the ellipse that are farthest from the point .    This is an optimization problem since we're trying to maximize distance. There are two things we need to do:  Find the function we need to optimize.  Find the extrema.  The function we need to optimize is just the distance function. In particular, if is a point on the ellipse then we need to maximize   Now, we have a constraint that must satisfy; namely, this must lie on the ellipse . This means that , and if we plug this into our distance function we get Now here's a trick we can use: maximizing is the same thing as maximizing , but is much nicer to work with algebraically. So instead of maximizing , we'll maximize the function   We'll start by finding it's local extrema, which means we need to find the critical points. These are the solutions of . Since we see that the only critical point is . Since , this means that gives us a local maximum of by the second derivative test. In fact, we can go further: this must be an absolute maximum of , since is always concave down (it's actually a parabola).  So the point on the ellipse farthest from has -coordinate equal to . This means that the corresponding -coordinate is so the points on the ellipse that are the farthest from are the points     "
 },
@@ -1760,7 +1760,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-optimization-problems.html#example-minimizing-a-product",
   "type": "Example",
-  "number": "5.5.1",
+  "number": "5.7.1",
   "title": "Minimizing a product.",
   "body": " Minimizing a product   Find two numbers that differ by and whose product is a minimum.    Call our numbers and suppose . Then and we need to choose in such a way that is as small as possible. If we replace with , then this means we need to minimize The critical point of is , and since is a parabola we know that this must be the location of the absolute minimum value on the graph. So the numbers we need are .   "
 },
@@ -1769,7 +1769,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-optimization-problems.html#example-minimizing-material-costs",
   "type": "Example",
-  "number": "5.5.2",
+  "number": "5.7.2",
   "title": "Minimizing material costs.",
   "body": " Minimizing material costs   A box with an open top and a square base is to be built using material that costs \\$5 per square meter. The box must have a volume of 32000 . Find the dimensions of the box that will be cheapest to build to these specifications.    There are two things we need to do here:  Find the quantity to be optimize.  Solve the resulting optimization problem.  We need to minimize costs, which means we need to minimize how much material is used to construct this box. Hence we must minimize the surface area of the box. If we let denote the length of the base of the box and the height of the box, then the surface area is given by Now, we can't minimize this yet because we have too many variables. However, we can solve for in terms of by using the volume constraint. Since the volume of the box is this gives So the quantity we need to minimize is   To minimize this, we find the critical points by solving . This gives, after some algebra, . Now we need to be careful here! We only have a critical point at this step. We need to make an argument now as to why this critical point should be an absolute minimum of . One way to do this is by setting up a sign chart for . If we do this, then we see that for in , while for in . If we think about what this tells us of the graph of , we see that must minimize , at least for . So the dimensions that minimize the cost of building this box are .   "
 },
@@ -1778,7 +1778,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-optimization-problems.html#example-distance-on-an-ellipse",
   "type": "Example",
-  "number": "5.5.3",
+  "number": "5.7.3",
   "title": "Distance on an ellipse.",
   "body": " Distance on an ellipse   Find the point(s) on the ellipse that are farthest from the point .    This is an optimization problem since we're trying to maximize distance. There are two things we need to do:  Find the function we need to optimize.  Find the extrema.  The function we need to optimize is just the distance function. In particular, if is a point on the ellipse then we need to maximize   Now, we have a constraint that must satisfy; namely, this must lie on the ellipse . This means that , and if we plug this into our distance function we get Now here's a trick we can use: maximizing is the same thing as maximizing , but is much nicer to work with algebraically. So instead of maximizing , we'll maximize the function   We'll start by finding it's local extrema, which means we need to find the critical points. These are the solutions of . Since we see that the only critical point is . Since , this means that gives us a local maximum of by the second derivative test. In fact, we can go further: this must be an absolute maximum of , since is always concave down (it's actually a parabola).  So the point on the ellipse farthest from has -coordinate equal to . This means that the corresponding -coordinate is so the points on the ellipse that are the farthest from are the points    "
 },
@@ -1787,7 +1787,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "section-newton-s-method.html",
   "type": "Section",
-  "number": "5.6",
+  "number": "5.8",
   "title": "Newton’s Method",
   "body": " Newton's Method  Consider a differentiable function , and suppose we want to find a root of , which is a number such that . In some cases this is very easy (like ), but in others this may be more complicated (such as ). So we'd like to find a way to approximate the root .   Newton's Method begins as follows: pick some starting point, or guess, . Then draw the tangent line to the graph of at . Now, the -intercept of this line may not be a root, but hopefully it'll be closer to the root. So call this point . We can solve for (if ) to get Now, at this point is (hopefully!) a better approximation to the root than , and we can run through the same procedure to get a new point .  In general, we can get a sequence of approximations to the root by using the formula as long as .   Approximating a root   Find the third approximation given by Newton's Method for the root of , using .    First, note that . Then so . Now we run through this method again to get : So      Approximating   Approximate using Newton's method.    We need to find a function for which . Perhaps the easiest is . Now, to use Newton's method we also need a starting guess. We'll pick since this is close to . Then so . Similarly, Since these approximations are so close, we estimate that .     A Babylonian problem   Use Newton's method to find an algorithm for computing .    To use Newton's method, we need to come up with a function whose root is . A simple choice for this is , since . Now, if we're getting some sequence from Newton's method then the next term in the sequence is After some algebra, we can rewrite this as   We can actually test this algorithm out. Say we want to approximate . A reasonable guess would be , since this should be close to . Then we get So it looks like , and indeed this is quite close to the actual value of .  We can go one step further for this algorithm. If is the sequence we obtain using Newton's method for approximating , then as we saw earlier Now, assume that exists and is nonzero, and call it . Then becomes which we can rearrange to get or just . Hence .    "
 },
@@ -1814,7 +1814,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-newton-s-method.html#example-approximating-a-root",
   "type": "Example",
-  "number": "5.6.1",
+  "number": "5.8.1",
   "title": "Approximating a root.",
   "body": " Approximating a root   Find the third approximation given by Newton's Method for the root of , using .    First, note that . Then so . Now we run through this method again to get : So    "
 },
@@ -1823,7 +1823,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-newton-s-method.html#example-approximating-pi",
   "type": "Example",
-  "number": "5.6.2",
+  "number": "5.8.2",
   "title": "Approximating <span class=\"process-math\">\\(\\pi\\)<\/span>.",
   "body": " Approximating   Approximate using Newton's method.    We need to find a function for which . Perhaps the easiest is . Now, to use Newton's method we also need a starting guess. We'll pick since this is close to . Then so . Similarly, Since these approximations are so close, we estimate that .   "
 },
@@ -1832,7 +1832,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-newton-s-method.html#example-a-babylonian-problem",
   "type": "Example",
-  "number": "5.6.3",
+  "number": "5.8.3",
   "title": "A Babylonian problem.",
   "body": " A Babylonian problem   Use Newton's method to find an algorithm for computing .    To use Newton's method, we need to come up with a function whose root is . A simple choice for this is , since . Now, if we're getting some sequence from Newton's method then the next term in the sequence is After some algebra, we can rewrite this as   We can actually test this algorithm out. Say we want to approximate . A reasonable guess would be , since this should be close to . Then we get So it looks like , and indeed this is quite close to the actual value of .  We can go one step further for this algorithm. If is the sequence we obtain using Newton's method for approximating , then as we saw earlier Now, assume that exists and is nonzero, and call it . Then becomes which we can rearrange to get or just . Hence .   "
 },
@@ -1841,7 +1841,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "section-antiderivatives.html",
   "type": "Section",
-  "number": "5.7",
+  "number": "5.9",
   "title": "Antiderivatives",
   "body": " Antiderivatives  Suppose we're tracking a moving object, and through experimentation we know its acceleration to be equal to 3 to the right. Say we want to find the velocity of the mass at time . Then if we set equal to the velocity and equal to the acceleration, we know that Therefore is a function whose derivative is . So one possible choice for is . This leads us to the definition of an antiderivative .   Antiderivatives  antiderivatives   A function is called an antiderivative of the function if for all in an interval .     Multiple antiderivatives   Find three different antiderivatives for .    An antiderivative of is any function whose derivative is . So three antiderivatives could be     From we see that any function of the form is an antiderivative of . In fact, this describes all possible antiderivatives of . This suggests the following theorem.   General Antiderivatives   Let be some function with antiderivative on some interval . Then the most general antiderivative of is where is an arbitrary constant.    It might not seem like this statement requires a proof, but it does! We can check very easily that every function of the form is an antiderivative of , but how do we know every antiderivative takes this form? To prove this, let be an arbitrary antiderivative of . Then we need to show that , or equivalently that . We can do this by taking the derivative of to get and so by we know that must be constant on . Hence for some constant , or equivalently . Therefore every antiderivative of can be written as .    It might seem superfluous, but typically when dealing with models requiring us to find antiderivatives we'll want to find the most general antiderivative somewhere along the way. Moral of the story: don't forget to add .    Finding antiderivatives   Find the most general antiderivatives of the following functions:          We have the following:  The general antiderivative of is  The general antiderivative of is  The general antiderivative of is .  The general antiderivative of is       The antiderivative of   Find the general antiderivative of .    We have two cases we need to consider, since the domain of consists of two intervals. First, suppose that is in . Then we know that , so on this interval the most general antiderivative of is .  Now let be in . Then isn't defined here. However, we can write and if then and is defined, and in fact So the most general antiderivative of on is . Putting this all together, we can say that the most general antiderivative of is given by If we know that we're only selecting values of with the same sign, then we can just say that the antiderivative of is .     Antiderivatives involving secant   Find the general antiderivatives of and .    The first antiderivative isn't too hard; it's just . The second is a little more complicated but still not too bad. Since , a good guess for an antiderivative of would be However, the derivative of this is , so we're off by a factor of . So we just need to divide our guess by to correct for this. Hence the general antiderivative of is .     Antidifferentiation Formulas   Let and denote antiderivatives of and , and let be a constant. Then we have the following:  Particular antiderivatives of functions    Function  Antiderivative                            These are by no means the only antiderivatives that you will need to deal with, but they are probably the most common.     Falling objects   An object is dropped from a height of 100 above sea level and falls with downward acceleration equal to 9.8 . Find the height of the object seconds after it's dropped.    Take downward to be the negative direction and sea level to be . Since acceleration is the second derivative of position, then the position (i.e. height) of the object should be the second antiderivative of acceleration. At this step, it's tempting to say that since , we have . And indeed, is a function whose second derivative is . However, we have a slight problem here. We know that and . If , then it's impossible for to equal . The problem here is we forgot about the arbitrary constants.  To get an accurate expression for , we go back to . Then for some constant . Since , this forces . So we have . Now we antidifferentiate one more time to get . Since , this forces . So .    Some functions that do not have an obvious antiderivative can be simplified through algebra into a form that is perhaps more helpful.   A tricky antiderivative   Find the most general antiderivative of     It's tough to think of a function whose derivative is , though since the denominator is it seems likely that this antiderivative will involve in some way. In order to actually find the antiderivative, we'll rewrite into a more convenient form. First, note that the numerator is very close to the denominator, which means we can almost cancel it out. So we'll split up the numerator as follows:   We can find the antiderivative of this term by term, so the most general antiderivative of is     At this point, it's natural to think about what an antiderivative means geometrically since the derivative of a function has such a nice interpretation. One approach to this is to think about net change of the antiderivative. Let be an antiderivative of on some interval containing . The net change of from to is given by Now, represents instantaneous rate of change, not net change. However, if we can somehow add these instantaneous changes from to , they should accumulate until they give the net change of from to . Graphically, adding these instantaneous rates of change looks like it's giving us the area under , which suggests the following geometric interpretation: the area under of from to is just the net change of an antiderivative from to . Much of the next chapter is devoted to making this idea precise.  "
 },
@@ -1859,7 +1859,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-antiderivatives.html#definition-antiderivatives",
   "type": "Definition",
-  "number": "5.7.1",
+  "number": "5.9.1",
   "title": "Antiderivatives.",
   "body": " Antiderivatives  antiderivatives   A function is called an antiderivative of the function if for all in an interval .   "
 },
@@ -1868,7 +1868,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-antiderivatives.html#example-multiple-antiderivatives",
   "type": "Example",
-  "number": "5.7.2",
+  "number": "5.9.2",
   "title": "Multiple antiderivatives.",
   "body": " Multiple antiderivatives   Find three different antiderivatives for .    An antiderivative of is any function whose derivative is . So three antiderivatives could be    "
 },
@@ -1877,7 +1877,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-antiderivatives.html#theorem-general-antiderivatives",
   "type": "Theorem",
-  "number": "5.7.3",
+  "number": "5.9.3",
   "title": "General Antiderivatives.",
   "body": " General Antiderivatives   Let be some function with antiderivative on some interval . Then the most general antiderivative of is where is an arbitrary constant.    It might not seem like this statement requires a proof, but it does! We can check very easily that every function of the form is an antiderivative of , but how do we know every antiderivative takes this form? To prove this, let be an arbitrary antiderivative of . Then we need to show that , or equivalently that . We can do this by taking the derivative of to get and so by we know that must be constant on . Hence for some constant , or equivalently . Therefore every antiderivative of can be written as .   "
 },
@@ -1886,7 +1886,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-antiderivatives.html#example-finding-antiderivatives",
   "type": "Example",
-  "number": "5.7.4",
+  "number": "5.9.4",
   "title": "Finding antiderivatives.",
   "body": " Finding antiderivatives   Find the most general antiderivatives of the following functions:          We have the following:  The general antiderivative of is  The general antiderivative of is  The general antiderivative of is .  The general antiderivative of is     "
 },
@@ -1895,7 +1895,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-antiderivatives.html#example-the-antiderivative-of--frac-1-x-m-",
   "type": "Example",
-  "number": "5.7.5",
+  "number": "5.9.5",
   "title": "The antiderivative of <span class=\"process-math\">\\(\\frac{1}{x}\\)<\/span>.",
   "body": " The antiderivative of   Find the general antiderivative of .    We have two cases we need to consider, since the domain of consists of two intervals. First, suppose that is in . Then we know that , so on this interval the most general antiderivative of is .  Now let be in . Then isn't defined here. However, we can write and if then and is defined, and in fact So the most general antiderivative of on is . Putting this all together, we can say that the most general antiderivative of is given by If we know that we're only selecting values of with the same sign, then we can just say that the antiderivative of is .   "
 },
@@ -1904,7 +1904,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-antiderivatives.html#example-antiderivatives-involving-secant",
   "type": "Example",
-  "number": "5.7.6",
+  "number": "5.9.6",
   "title": "Antiderivatives involving secant.",
   "body": " Antiderivatives involving secant   Find the general antiderivatives of and .    The first antiderivative isn't too hard; it's just . The second is a little more complicated but still not too bad. Since , a good guess for an antiderivative of would be However, the derivative of this is , so we're off by a factor of . So we just need to divide our guess by to correct for this. Hence the general antiderivative of is .   "
 },
@@ -1913,7 +1913,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-antiderivatives.html#theorem-antidifferentiation-formulas",
   "type": "Theorem",
-  "number": "5.7.7",
+  "number": "5.9.7",
   "title": "Antidifferentiation Formulas.",
   "body": " Antidifferentiation Formulas   Let and denote antiderivatives of and , and let be a constant. Then we have the following:  Particular antiderivatives of functions    Function  Antiderivative                            These are by no means the only antiderivatives that you will need to deal with, but they are probably the most common.   "
 },
@@ -1922,7 +1922,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-antiderivatives.html#example-falling-objects",
   "type": "Example",
-  "number": "5.7.9",
+  "number": "5.9.9",
   "title": "Falling objects.",
   "body": " Falling objects   An object is dropped from a height of 100 above sea level and falls with downward acceleration equal to 9.8 . Find the height of the object seconds after it's dropped.    Take downward to be the negative direction and sea level to be . Since acceleration is the second derivative of position, then the position (i.e. height) of the object should be the second antiderivative of acceleration. At this step, it's tempting to say that since , we have . And indeed, is a function whose second derivative is . However, we have a slight problem here. We know that and . If , then it's impossible for to equal . The problem here is we forgot about the arbitrary constants.  To get an accurate expression for , we go back to . Then for some constant . Since , this forces . So we have . Now we antidifferentiate one more time to get . Since , this forces . So .   "
 },
@@ -1931,7 +1931,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-antiderivatives.html#example-a-tricky-antiderivative",
   "type": "Example",
-  "number": "5.7.10",
+  "number": "5.9.10",
   "title": "A tricky antiderivative.",
   "body": " A tricky antiderivative   Find the most general antiderivative of     It's tough to think of a function whose derivative is , though since the denominator is it seems likely that this antiderivative will involve in some way. In order to actually find the antiderivative, we'll rewrite into a more convenient form. First, note that the numerator is very close to the denominator, which means we can almost cancel it out. So we'll split up the numerator as follows:   We can find the antiderivative of this term by term, so the most general antiderivative of is    "
 },
