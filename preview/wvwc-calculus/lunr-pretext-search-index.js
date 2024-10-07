@@ -1585,164 +1585,11 @@ var ptx_lunr_docs = [
   "body": " Dealing with a cusp   Let . Find the absolute extrema of on .    First, find the critical points of : This is at and undefined at , so our critical points are . So to find the absolute extrema we need to check at . Doing so, we see that the absolute minimum value is at and the absolute maximum is at .   "
 },
 {
-  "id": "section-the-mean-value-theorem",
-  "level": "1",
-  "url": "section-the-mean-value-theorem.html",
-  "type": "Section",
-  "number": "5.5",
-  "title": "The Mean Value Theorem",
-  "body": " The Mean Value Theorem   The linear approximations we came up with in are useful for estimating complicated functions with simpler, linear models. In essence, we use the derivative of a function to tell us how much to change a given value of the function in order to estimate that function. There is one problem with this approach, at least currently. We have good reason to suspect that our approximations are close to the exact values in certain circumstances, but we don't know how close. The goal of this section is to derive an estimate for the derivative that can help us to find more precise approximations.    Rolle's Theorem  We start with a theorem that is very reasonable, at least geometrically. Let be a differentiable function on some interval , and suppose . Then this means the graph of must \"turn around\" at some point in , i.e., there is a local maximum or minimum contained within the interval. Combining this observation with gives us Rolle's Theorem.    Rolle's Theorem   Let be a differentiable function on and suppose . Then there exists some number in such that .     is an example of an existence theorem . It tells us nothing about how to find the number , or how many such can exist. It only tells us that there is at least one number in for which . This may not seem very useful, but existence theorems can be quite powerful in mathematics.   Rolle's Theorem and Traffic   A car enters a highway going at 45 and leaves the highway going at the same speed. Was the car's acceleration ever ?    The speed of the car can be represented by a velocity function . If we assume that the car entered the highway at time and left at some future time , then we know that By , there must be some time between and for which . Since is exactly the acceleration, we know that the car had to stop accelerating somewhere on the highway.      The Mean Value Theorem   is powerful because it has very general conditions for its use. However, it does require the function in question to take on the same values at the endpoints of , and this is a condition we'd like to try to relax. However, we'll try to be clever about this and use to do most of the heavy lifting for us.  If we imagine graphing some differentiable function on some interval , but , then we can't apply . But maybe we can adjust it just a little bit so that we can? In particular, the only reason we can't use is that . But if we subtract the line through these points from , we should get a new function for which applies.  The line through these points has equation So define Then So  does apply to this function. Hence there exists some number between and for which .  But and if this is then we can solve for to get This gives us the Mean Value Theorem .   Mean Value Theorem  Mean Value Theorem   Let be differentiable on some interval . Then there exists a number in such that or equivalently     The essentially says that there is at least one point inside of for which the slope at that point matches the \"average slope\" Like , this is an existence theorem. However, it's slightly more general, and so is applicable in more situations. It's also useful in deriving error estimates.   Estimating error in a linear approximation   Let and let denote the linear approximation to at . Find the largest possible error between and on the interval .    First, we should find , which from is just The error we need to estimate is , for in . So we'll set and let be some number in . By , there exists some number in such that Now, and . So the above equation becomes   Now, we don't know anything about aside from the fact that it lives in . However, we do have an expression for now: So if is in , then the error is at most  . In other words,     Perhaps the most important example of in this course will be the following theorem.   Zero Derivative Theorem   Let be differentiable on . If for all in , then has to be a constant.    The idea of the proof is to use to show that for any points in . Now, by we have for some in . However, by assumption, and so . In other words, . Hence must be constant.     "
-},
-{
-  "id": "subsection-rolle-s-theorem-2",
-  "level": "2",
-  "url": "section-the-mean-value-theorem.html#subsection-rolle-s-theorem-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Rolle's Theorem. "
-},
-{
-  "id": "theorem-rolle-s-theorem",
-  "level": "2",
-  "url": "section-the-mean-value-theorem.html#theorem-rolle-s-theorem",
-  "type": "Theorem",
-  "number": "5.5.1",
-  "title": "Rolle’s Theorem.",
-  "body": " Rolle's Theorem   Let be a differentiable function on and suppose . Then there exists some number in such that .   "
-},
-{
-  "id": "subsection-rolle-s-theorem-4",
-  "level": "2",
-  "url": "section-the-mean-value-theorem.html#subsection-rolle-s-theorem-4",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "existence theorem "
-},
-{
-  "id": "example-rolle-s-theorem-and-traffic",
-  "level": "2",
-  "url": "section-the-mean-value-theorem.html#example-rolle-s-theorem-and-traffic",
-  "type": "Example",
-  "number": "5.5.2",
-  "title": "Rolle’s Theorem and Traffic.",
-  "body": " Rolle's Theorem and Traffic   A car enters a highway going at 45 and leaves the highway going at the same speed. Was the car's acceleration ever ?    The speed of the car can be represented by a velocity function . If we assume that the car entered the highway at time and left at some future time , then we know that By , there must be some time between and for which . Since is exactly the acceleration, we know that the car had to stop accelerating somewhere on the highway.   "
-},
-{
-  "id": "subsection-the-mean-value-theorem-5",
-  "level": "2",
-  "url": "section-the-mean-value-theorem.html#subsection-the-mean-value-theorem-5",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Mean Value Theorem "
-},
-{
-  "id": "theorem-mean-value-theorem",
-  "level": "2",
-  "url": "section-the-mean-value-theorem.html#theorem-mean-value-theorem",
-  "type": "Theorem",
-  "number": "5.5.3",
-  "title": "Mean Value Theorem.",
-  "body": " Mean Value Theorem  Mean Value Theorem   Let be differentiable on some interval . Then there exists a number in such that or equivalently    "
-},
-{
-  "id": "example-estimating-error-in-a-linear-approximation",
-  "level": "2",
-  "url": "section-the-mean-value-theorem.html#example-estimating-error-in-a-linear-approximation",
-  "type": "Example",
-  "number": "5.5.4",
-  "title": "Estimating error in a linear approximation.",
-  "body": " Estimating error in a linear approximation   Let and let denote the linear approximation to at . Find the largest possible error between and on the interval .    First, we should find , which from is just The error we need to estimate is , for in . So we'll set and let be some number in . By , there exists some number in such that Now, and . So the above equation becomes   Now, we don't know anything about aside from the fact that it lives in . However, we do have an expression for now: So if is in , then the error is at most  . In other words,    "
-},
-{
-  "id": "theorem-zero-derivative-theorem",
-  "level": "2",
-  "url": "section-the-mean-value-theorem.html#theorem-zero-derivative-theorem",
-  "type": "Theorem",
-  "number": "5.5.5",
-  "title": "Zero Derivative Theorem.",
-  "body": " Zero Derivative Theorem   Let be differentiable on . If for all in , then has to be a constant.    The idea of the proof is to use to show that for any points in . Now, by we have for some in . However, by assumption, and so . In other words, . Hence must be constant.   "
-},
-{
-  "id": "section-derivatives-and-graphs",
-  "level": "1",
-  "url": "section-derivatives-and-graphs.html",
-  "type": "Section",
-  "number": "5.6",
-  "title": "Derivatives and Graphs",
-  "body": " Derivatives and Graphs  Recall that if is a function and exists, then for some means that is increasing at , while means that is decreasing at . Now, suppose that is a critical point of . Then . If changes sign from negative to positive, then is a local minimum. Conversely, if changes sign from positive to negative, then is a local maximum. This is the first derivative test .   Local maxima and minima using the first derivative test   Let . Find where is increasing, decreasing, and any local maxima or minima.    We can answer all of these questions by setting up a sign chart for . The critical points are , and on and on . So is decreasing on the first set of intervals, increasing on , has a local maximum at and a local minimum at .     First derivative test and a discontinuous function   Find any local maxima or minima of .    We need to find the critical points, which means we need to find : So the critical points are . Note that  cannot be a local extreme value of since it's not in the domain of . However, we still need to include it in our sign chart. If we do so, we find that has a local minimum at and a local maximum at by the first derivative test.    One benefit of the first derivative test is that we only need to compute first derivatives to use it. However, if a function has a second derivative, then it's often easier to use the concavity of the graph at a critical point to determine whether a critical point is a local maximum or minimum. In particular, if is a function and is continuous near the critical point (so ), then is a local minimum if and is a local maximum if . This is the second derivative test .   Using the second derivative test   Find any local extrema of .    First, we find the critical points: forces . Now we check these critical points in  So has a local minimum at and a local maximum at .    The point in is an example of an inflection point of : a place where the concavity of changes, or equivalently a point where the second derivative changes sign.   Finding Inflection Points   Find the inflection points of .    We need to find the points where changes sign, so our first job is to compute . We'll do so using technology:   We need to find where this is zero, so we'll simplify and then factor:   Therefore , and we can see that is zero when or . Since changes sign at each of these points (as can be seen from a sign chart), all of these are inflection points. This is also indicated on the graph below:     The code used in is the Sage programming language, a variant of Python that is designed for mathematical applications. The Sage computer algebra system (CAS) is very useful for quickly performing tedious algebraic calculations. We could also have used Sage to solve the equation for us with the solve() command, like so:   However, it may be the case that some solutions of are not inflection points. As a simple example, consider . From the graph of this function it's clearly concave up everywhere even though the . The problem here is that doesn't change sign at , and so this point can't be an inflection point.  "
-},
-{
-  "id": "section-derivatives-and-graphs-2",
-  "level": "2",
-  "url": "section-derivatives-and-graphs.html#section-derivatives-and-graphs-2",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "first derivative test "
-},
-{
-  "id": "example-local-maxima-and-minima-using-the-first-derivative-test",
-  "level": "2",
-  "url": "section-derivatives-and-graphs.html#example-local-maxima-and-minima-using-the-first-derivative-test",
-  "type": "Example",
-  "number": "5.6.1",
-  "title": "Local maxima and minima using the first derivative test.",
-  "body": " Local maxima and minima using the first derivative test   Let . Find where is increasing, decreasing, and any local maxima or minima.    We can answer all of these questions by setting up a sign chart for . The critical points are , and on and on . So is decreasing on the first set of intervals, increasing on , has a local maximum at and a local minimum at .   "
-},
-{
-  "id": "example-first-derivative-test-and-a-discontinuous-function",
-  "level": "2",
-  "url": "section-derivatives-and-graphs.html#example-first-derivative-test-and-a-discontinuous-function",
-  "type": "Example",
-  "number": "5.6.2",
-  "title": "First derivative test and a discontinuous function.",
-  "body": " First derivative test and a discontinuous function   Find any local maxima or minima of .    We need to find the critical points, which means we need to find : So the critical points are . Note that  cannot be a local extreme value of since it's not in the domain of . However, we still need to include it in our sign chart. If we do so, we find that has a local minimum at and a local maximum at by the first derivative test.   "
-},
-{
-  "id": "section-derivatives-and-graphs-5",
-  "level": "2",
-  "url": "section-derivatives-and-graphs.html#section-derivatives-and-graphs-5",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "second derivative test "
-},
-{
-  "id": "example-using-the-second-derivative-test",
-  "level": "2",
-  "url": "section-derivatives-and-graphs.html#example-using-the-second-derivative-test",
-  "type": "Example",
-  "number": "5.6.3",
-  "title": "Using the second derivative test.",
-  "body": " Using the second derivative test   Find any local extrema of .    First, we find the critical points: forces . Now we check these critical points in  So has a local minimum at and a local maximum at .   "
-},
-{
-  "id": "section-derivatives-and-graphs-7",
-  "level": "2",
-  "url": "section-derivatives-and-graphs.html#section-derivatives-and-graphs-7",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "inflection point "
-},
-{
-  "id": "example-finding-inflection-points",
-  "level": "2",
-  "url": "section-derivatives-and-graphs.html#example-finding-inflection-points",
-  "type": "Example",
-  "number": "5.6.4",
-  "title": "Finding Inflection Points.",
-  "body": " Finding Inflection Points   Find the inflection points of .    We need to find the points where changes sign, so our first job is to compute . We'll do so using technology:   We need to find where this is zero, so we'll simplify and then factor:   Therefore , and we can see that is zero when or . Since changes sign at each of these points (as can be seen from a sign chart), all of these are inflection points. This is also indicated on the graph below:    "
-},
-{
   "id": "section-optimization-problems",
   "level": "1",
   "url": "section-optimization-problems.html",
   "type": "Section",
-  "number": "5.7",
+  "number": "5.5",
   "title": "Optimization Problems",
   "body": " Optimization Problems  Now that we can use derivatives to find local maxima and minima, we can solve optimization problems .   Minimizing a product   Find two numbers that differ by and whose product is a minimum.    Call our numbers and suppose . Then and we need to choose in such a way that is as small as possible. If we replace with , then this means we need to minimize The critical point of is , and since is a parabola we know that this must be the location of the absolute minimum value on the graph. So the numbers we need are .     Minimizing material costs   A box with an open top and a square base is to be built using material that costs \\$5 per square meter. The box must have a volume of 32000 . Find the dimensions of the box that will be cheapest to build to these specifications.    There are two things we need to do here:  Find the quantity to be optimize.  Solve the resulting optimization problem.  We need to minimize costs, which means we need to minimize how much material is used to construct this box. Hence we must minimize the surface area of the box. If we let denote the length of the base of the box and the height of the box, then the surface area is given by Now, we can't minimize this yet because we have too many variables. However, we can solve for in terms of by using the volume constraint. Since the volume of the box is this gives So the quantity we need to minimize is   To minimize this, we find the critical points by solving . This gives, after some algebra, . Now we need to be careful here! We only have a critical point at this step. We need to make an argument now as to why this critical point should be an absolute minimum of . One way to do this is by setting up a sign chart for . If we do this, then we see that for in , while for in . If we think about what this tells us of the graph of , we see that must minimize , at least for . So the dimensions that minimize the cost of building this box are .     Distance on an ellipse   Find the point(s) on the ellipse that are farthest from the point .    This is an optimization problem since we're trying to maximize distance. There are two things we need to do:  Find the function we need to optimize.  Find the extrema.  The function we need to optimize is just the distance function. In particular, if is a point on the ellipse then we need to maximize   Now, we have a constraint that must satisfy; namely, this must lie on the ellipse . This means that , and if we plug this into our distance function we get Now here's a trick we can use: maximizing is the same thing as maximizing , but is much nicer to work with algebraically. So instead of maximizing , we'll maximize the function   We'll start by finding it's local extrema, which means we need to find the critical points. These are the solutions of . Since we see that the only critical point is . Since , this means that gives us a local maximum of by the second derivative test. In fact, we can go further: this must be an absolute maximum of , since is always concave down (it's actually a parabola).  So the point on the ellipse farthest from has -coordinate equal to . This means that the corresponding -coordinate is so the points on the ellipse that are the farthest from are the points     "
 },
@@ -1760,7 +1607,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-optimization-problems.html#example-minimizing-a-product",
   "type": "Example",
-  "number": "5.7.1",
+  "number": "5.5.1",
   "title": "Minimizing a product.",
   "body": " Minimizing a product   Find two numbers that differ by and whose product is a minimum.    Call our numbers and suppose . Then and we need to choose in such a way that is as small as possible. If we replace with , then this means we need to minimize The critical point of is , and since is a parabola we know that this must be the location of the absolute minimum value on the graph. So the numbers we need are .   "
 },
@@ -1769,7 +1616,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-optimization-problems.html#example-minimizing-material-costs",
   "type": "Example",
-  "number": "5.7.2",
+  "number": "5.5.2",
   "title": "Minimizing material costs.",
   "body": " Minimizing material costs   A box with an open top and a square base is to be built using material that costs \\$5 per square meter. The box must have a volume of 32000 . Find the dimensions of the box that will be cheapest to build to these specifications.    There are two things we need to do here:  Find the quantity to be optimize.  Solve the resulting optimization problem.  We need to minimize costs, which means we need to minimize how much material is used to construct this box. Hence we must minimize the surface area of the box. If we let denote the length of the base of the box and the height of the box, then the surface area is given by Now, we can't minimize this yet because we have too many variables. However, we can solve for in terms of by using the volume constraint. Since the volume of the box is this gives So the quantity we need to minimize is   To minimize this, we find the critical points by solving . This gives, after some algebra, . Now we need to be careful here! We only have a critical point at this step. We need to make an argument now as to why this critical point should be an absolute minimum of . One way to do this is by setting up a sign chart for . If we do this, then we see that for in , while for in . If we think about what this tells us of the graph of , we see that must minimize , at least for . So the dimensions that minimize the cost of building this box are .   "
 },
@@ -1778,9 +1625,162 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-optimization-problems.html#example-distance-on-an-ellipse",
   "type": "Example",
-  "number": "5.7.3",
+  "number": "5.5.3",
   "title": "Distance on an ellipse.",
   "body": " Distance on an ellipse   Find the point(s) on the ellipse that are farthest from the point .    This is an optimization problem since we're trying to maximize distance. There are two things we need to do:  Find the function we need to optimize.  Find the extrema.  The function we need to optimize is just the distance function. In particular, if is a point on the ellipse then we need to maximize   Now, we have a constraint that must satisfy; namely, this must lie on the ellipse . This means that , and if we plug this into our distance function we get Now here's a trick we can use: maximizing is the same thing as maximizing , but is much nicer to work with algebraically. So instead of maximizing , we'll maximize the function   We'll start by finding it's local extrema, which means we need to find the critical points. These are the solutions of . Since we see that the only critical point is . Since , this means that gives us a local maximum of by the second derivative test. In fact, we can go further: this must be an absolute maximum of , since is always concave down (it's actually a parabola).  So the point on the ellipse farthest from has -coordinate equal to . This means that the corresponding -coordinate is so the points on the ellipse that are the farthest from are the points    "
+},
+{
+  "id": "section-the-mean-value-theorem",
+  "level": "1",
+  "url": "section-the-mean-value-theorem.html",
+  "type": "Section",
+  "number": "5.6",
+  "title": "The Mean Value Theorem",
+  "body": " The Mean Value Theorem   The linear approximations we came up with in are useful for estimating complicated functions with simpler, linear models. In essence, we use the derivative of a function to tell us how much to change a given value of the function in order to estimate that function. There is one problem with this approach, at least currently. We have good reason to suspect that our approximations are close to the exact values in certain circumstances, but we don't know how close. The goal of this section is to derive an estimate for the derivative that can help us to find more precise approximations.    Rolle's Theorem  We start with a theorem that is very reasonable, at least geometrically. Let be a differentiable function on some interval , and suppose . Then this means the graph of must \"turn around\" at some point in , i.e., there is a local maximum or minimum contained within the interval. Combining this observation with gives us Rolle's Theorem.    Rolle's Theorem   Let be a differentiable function on and suppose . Then there exists some number in such that .     is an example of an existence theorem . It tells us nothing about how to find the number , or how many such can exist. It only tells us that there is at least one number in for which . This may not seem very useful, but existence theorems can be quite powerful in mathematics.   Rolle's Theorem and Traffic   A car enters a highway going at 45 and leaves the highway going at the same speed. Was the car's acceleration ever ?    The speed of the car can be represented by a velocity function . If we assume that the car entered the highway at time and left at some future time , then we know that By , there must be some time between and for which . Since is exactly the acceleration, we know that the car had to stop accelerating somewhere on the highway.      The Mean Value Theorem   is powerful because it has very general conditions for its use. However, it does require the function in question to take on the same values at the endpoints of , and this is a condition we'd like to try to relax. However, we'll try to be clever about this and use to do most of the heavy lifting for us.  If we imagine graphing some differentiable function on some interval , but , then we can't apply . But maybe we can adjust it just a little bit so that we can? In particular, the only reason we can't use is that . But if we subtract the line through these points from , we should get a new function for which applies.  The line through these points has equation So define Then So  does apply to this function. Hence there exists some number between and for which .  But and if this is then we can solve for to get This gives us the Mean Value Theorem .   Mean Value Theorem  Mean Value Theorem   Let be differentiable on some interval . Then there exists a number in such that or equivalently     The essentially says that there is at least one point inside of for which the slope at that point matches the \"average slope\" Like , this is an existence theorem. However, it's slightly more general, and so is applicable in more situations. It's also useful in deriving error estimates.   Estimating error in a linear approximation   Let and let denote the linear approximation to at . Find the largest possible error between and on the interval .    First, we should find , which from is just The error we need to estimate is , for in . So we'll set and let be some number in . By , there exists some number in such that Now, and . So the above equation becomes   Now, we don't know anything about aside from the fact that it lives in . However, we do have an expression for now: So if is in , then the error is at most  . In other words,     Perhaps the most important example of in this course will be the following theorem.   Zero Derivative Theorem   Let be differentiable on . If for all in , then has to be a constant.    The idea of the proof is to use to show that for any points in . Now, by we have for some in . However, by assumption, and so . In other words, . Hence must be constant.     "
+},
+{
+  "id": "subsection-rolle-s-theorem-2",
+  "level": "2",
+  "url": "section-the-mean-value-theorem.html#subsection-rolle-s-theorem-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Rolle's Theorem. "
+},
+{
+  "id": "theorem-rolle-s-theorem",
+  "level": "2",
+  "url": "section-the-mean-value-theorem.html#theorem-rolle-s-theorem",
+  "type": "Theorem",
+  "number": "5.6.1",
+  "title": "Rolle’s Theorem.",
+  "body": " Rolle's Theorem   Let be a differentiable function on and suppose . Then there exists some number in such that .   "
+},
+{
+  "id": "subsection-rolle-s-theorem-4",
+  "level": "2",
+  "url": "section-the-mean-value-theorem.html#subsection-rolle-s-theorem-4",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "existence theorem "
+},
+{
+  "id": "example-rolle-s-theorem-and-traffic",
+  "level": "2",
+  "url": "section-the-mean-value-theorem.html#example-rolle-s-theorem-and-traffic",
+  "type": "Example",
+  "number": "5.6.2",
+  "title": "Rolle’s Theorem and Traffic.",
+  "body": " Rolle's Theorem and Traffic   A car enters a highway going at 45 and leaves the highway going at the same speed. Was the car's acceleration ever ?    The speed of the car can be represented by a velocity function . If we assume that the car entered the highway at time and left at some future time , then we know that By , there must be some time between and for which . Since is exactly the acceleration, we know that the car had to stop accelerating somewhere on the highway.   "
+},
+{
+  "id": "subsection-the-mean-value-theorem-5",
+  "level": "2",
+  "url": "section-the-mean-value-theorem.html#subsection-the-mean-value-theorem-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Mean Value Theorem "
+},
+{
+  "id": "theorem-mean-value-theorem",
+  "level": "2",
+  "url": "section-the-mean-value-theorem.html#theorem-mean-value-theorem",
+  "type": "Theorem",
+  "number": "5.6.3",
+  "title": "Mean Value Theorem.",
+  "body": " Mean Value Theorem  Mean Value Theorem   Let be differentiable on some interval . Then there exists a number in such that or equivalently    "
+},
+{
+  "id": "example-estimating-error-in-a-linear-approximation",
+  "level": "2",
+  "url": "section-the-mean-value-theorem.html#example-estimating-error-in-a-linear-approximation",
+  "type": "Example",
+  "number": "5.6.4",
+  "title": "Estimating error in a linear approximation.",
+  "body": " Estimating error in a linear approximation   Let and let denote the linear approximation to at . Find the largest possible error between and on the interval .    First, we should find , which from is just The error we need to estimate is , for in . So we'll set and let be some number in . By , there exists some number in such that Now, and . So the above equation becomes   Now, we don't know anything about aside from the fact that it lives in . However, we do have an expression for now: So if is in , then the error is at most  . In other words,    "
+},
+{
+  "id": "theorem-zero-derivative-theorem",
+  "level": "2",
+  "url": "section-the-mean-value-theorem.html#theorem-zero-derivative-theorem",
+  "type": "Theorem",
+  "number": "5.6.5",
+  "title": "Zero Derivative Theorem.",
+  "body": " Zero Derivative Theorem   Let be differentiable on . If for all in , then has to be a constant.    The idea of the proof is to use to show that for any points in . Now, by we have for some in . However, by assumption, and so . In other words, . Hence must be constant.   "
+},
+{
+  "id": "section-derivatives-and-graphs",
+  "level": "1",
+  "url": "section-derivatives-and-graphs.html",
+  "type": "Section",
+  "number": "5.7",
+  "title": "Derivatives and Graphs",
+  "body": " Derivatives and Graphs  Recall that if is a function and exists, then for some means that is increasing at , while means that is decreasing at . Now, suppose that is a critical point of . Then . If changes sign from negative to positive, then is a local minimum. Conversely, if changes sign from positive to negative, then is a local maximum. This is the first derivative test .   Local maxima and minima using the first derivative test   Let . Find where is increasing, decreasing, and any local maxima or minima.    We can answer all of these questions by setting up a sign chart for . The critical points are , and on and on . So is decreasing on the first set of intervals, increasing on , has a local maximum at and a local minimum at .     First derivative test and a discontinuous function   Find any local maxima or minima of .    We need to find the critical points, which means we need to find : So the critical points are . Note that  cannot be a local extreme value of since it's not in the domain of . However, we still need to include it in our sign chart. If we do so, we find that has a local minimum at and a local maximum at by the first derivative test.    One benefit of the first derivative test is that we only need to compute first derivatives to use it. However, if a function has a second derivative, then it's often easier to use the concavity of the graph at a critical point to determine whether a critical point is a local maximum or minimum. In particular, if is a function and is continuous near the critical point (so ), then is a local minimum if and is a local maximum if . This is the second derivative test .   Using the second derivative test   Find any local extrema of .    First, we find the critical points: forces . Now we check these critical points in  So has a local minimum at and a local maximum at .    The point in is an example of an inflection point of : a place where the concavity of changes, or equivalently a point where the second derivative changes sign.   Finding Inflection Points   Find the inflection points of .    We need to find the points where changes sign, so our first job is to compute . We'll do so using technology:   We need to find where this is zero, so we'll simplify and then factor:   Therefore , and we can see that is zero when or . Since changes sign at each of these points (as can be seen from a sign chart), all of these are inflection points. This is also indicated on the graph below:     The code used in is the Sage programming language, a variant of Python that is designed for mathematical applications. The Sage computer algebra system (CAS) is very useful for quickly performing tedious algebraic calculations. We could also have used Sage to solve the equation for us with the solve() command, like so:   However, it may be the case that some solutions of are not inflection points. As a simple example, consider . From the graph of this function it's clearly concave up everywhere even though the . The problem here is that doesn't change sign at , and so this point can't be an inflection point.  "
+},
+{
+  "id": "section-derivatives-and-graphs-2",
+  "level": "2",
+  "url": "section-derivatives-and-graphs.html#section-derivatives-and-graphs-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "first derivative test "
+},
+{
+  "id": "example-local-maxima-and-minima-using-the-first-derivative-test",
+  "level": "2",
+  "url": "section-derivatives-and-graphs.html#example-local-maxima-and-minima-using-the-first-derivative-test",
+  "type": "Example",
+  "number": "5.7.1",
+  "title": "Local maxima and minima using the first derivative test.",
+  "body": " Local maxima and minima using the first derivative test   Let . Find where is increasing, decreasing, and any local maxima or minima.    We can answer all of these questions by setting up a sign chart for . The critical points are , and on and on . So is decreasing on the first set of intervals, increasing on , has a local maximum at and a local minimum at .   "
+},
+{
+  "id": "example-first-derivative-test-and-a-discontinuous-function",
+  "level": "2",
+  "url": "section-derivatives-and-graphs.html#example-first-derivative-test-and-a-discontinuous-function",
+  "type": "Example",
+  "number": "5.7.2",
+  "title": "First derivative test and a discontinuous function.",
+  "body": " First derivative test and a discontinuous function   Find any local maxima or minima of .    We need to find the critical points, which means we need to find : So the critical points are . Note that  cannot be a local extreme value of since it's not in the domain of . However, we still need to include it in our sign chart. If we do so, we find that has a local minimum at and a local maximum at by the first derivative test.   "
+},
+{
+  "id": "section-derivatives-and-graphs-5",
+  "level": "2",
+  "url": "section-derivatives-and-graphs.html#section-derivatives-and-graphs-5",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "second derivative test "
+},
+{
+  "id": "example-using-the-second-derivative-test",
+  "level": "2",
+  "url": "section-derivatives-and-graphs.html#example-using-the-second-derivative-test",
+  "type": "Example",
+  "number": "5.7.3",
+  "title": "Using the second derivative test.",
+  "body": " Using the second derivative test   Find any local extrema of .    First, we find the critical points: forces . Now we check these critical points in  So has a local minimum at and a local maximum at .   "
+},
+{
+  "id": "section-derivatives-and-graphs-7",
+  "level": "2",
+  "url": "section-derivatives-and-graphs.html#section-derivatives-and-graphs-7",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "inflection point "
+},
+{
+  "id": "example-finding-inflection-points",
+  "level": "2",
+  "url": "section-derivatives-and-graphs.html#example-finding-inflection-points",
+  "type": "Example",
+  "number": "5.7.4",
+  "title": "Finding Inflection Points.",
+  "body": " Finding Inflection Points   Find the inflection points of .    We need to find the points where changes sign, so our first job is to compute . We'll do so using technology:   We need to find where this is zero, so we'll simplify and then factor:   Therefore , and we can see that is zero when or . Since changes sign at each of these points (as can be seen from a sign chart), all of these are inflection points. This is also indicated on the graph below:    "
 },
 {
   "id": "section-newton-s-method",
