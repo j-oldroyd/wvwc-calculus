@@ -2,16 +2,16 @@
 <!-- This file, the project manifest, provides the overall configuration for your PreTeXt project. To edit the content of your document, open `source/main.ptx`. See https://pretextbook.org/doc/guide/html/processing-CLI.html#cli-project-manifest. -->
 <project ptx-version="2">
   <targets>
-    <target 
-      name="web" 
+    <target
+      name="web"
       format="html"
       source="wvwc-calculus.ptx"
       deploy-dir="preview/wvwc-calculus"
       output-dir="html">
         <stringparams author.tools="yes"/>
       </target>
-    <target 
-      name="print" 
+    <target
+      name="print"
       format="pdf"
       source="wvwc-calculus.ptx"
       output-filename="wvwc-calculus.pdf"
@@ -22,8 +22,8 @@
       format="pdf"
       source="wvwc-calculus.ptx"
       xsl="wvwc-calculus-dyslexic-print.xsl"/>
-    <target 
-      name="print-latex" 
+    <target
+      name="print-latex"
       format="latex"
       source="wvwc-calculus.ptx"/>
     <target

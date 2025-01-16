@@ -1,60 +1,90 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<frontmatter xml:id="front" xmlns:xi="http://www.w3.org/2001/XInclude">
+<frontmatter xml:id="front"
+xmlns:xi="http://www.w3.org/2001/XInclude">
 
-    <titlepage>
+    <titlepage-items/>
+    <bibinfo>
 
         <author>
-            <personname>Jesse Oldroyd</personname>
-            <department>Department of Mathematics and Computer Science</department>
-            <institution>West Virginia Wesleyan College</institution>
-            <email>oldroyd.j@wvwc.edu</email>
+          <personname>Jesse Oldroyd
+          </personname>
+          <department>Department of Mathematics and Computer Science
+          </department>
+          <institution>West Virginia Wesleyan College
+          </institution>
+          <email>oldroyd.j@wvwc.edu
+          </email>
         </author>
 
-        <!-- <editor>
-            <personname>Isaac Newton</personname>
-            <institution>Trinity College</institution>
+        <!--
+            <editor>
+            <personname>Isaac Newton
+            </personname>
+            <institution>Trinity College
+            </institution>
         </editor>
 
         <credit>
-            <title>Sage Exercises for Abstract Algebra</title>
+        <title>Sage Exercises for Abstract Algebra
+        </title>
             <author>
-                <personname>Robert A. Beezer</personname>
-                <department>Department of Mathematics and Computer Science</department>
-                <institution>University of Puget Sound</institution>
-                <email>beezer@pugetsound.edu</email>
+            <personname>Robert A. Beezer
+            </personname>
+            <department>Department of Mathematics and Computer Science
+            </department>
+            <institution>University of Puget Sound
+            </institution>
+            <email>beezer@pugetsound.edu
+            </email>
             </author>
         </credit> -->
 
-        <date><today /></date>
+        <date>
+          <today />
+        </date>
 
-    </titlepage>
-
-    <colophon xml:id="front-colophon">
-
-        <!-- <credit>
-            <role>Cover Design</role>
-            <entity>Covers 4 U</entity>
+      <!--
+          <credit>
+          <role>Cover Design
+          </role>
+          <entity>Covers 4 U
+          </entity>
         </credit>
         <credit>
-            <role>Production Editor</role>
-            <entity>Vilma Mesa</entity>
+        <role>Production Editor
+        </role>
+        <entity>Vilma Mesa
+        </entity>
         </credit> -->
 
-        <edition>Annual Edition 2023</edition>
+      <edition>Annual Edition 2025
+      </edition>
 
         <website>
             <url href="https://j-oldroyd.github.io/wvwc-calculus/output/html/wvwc-calculus.html" visual="j-oldroyd.github.io/wvwc-calculus"/>
         </website>
 
         <copyright>
-            <year>2017<ndash />2023</year>
-            <holder>Jesse Oldroyd</holder>
-            <minilicense>GFDL License</minilicense>
-            <shortlicense>Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.2 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.  A copy of the license is included in the appendix entitled <q>GNU Free Documentation License.</q>  All trademarks<trademark /> are the registered<registered /> marks of their respective owners.</shortlicense>
+          <year>2017 <ndash />2025
+          </year>
+          <holder>Jesse Oldroyd
+          </holder>
+          <minilicense>GFDL License
+          </minilicense>
+          <shortlicense>Permission is granted to copy, distribute
+          and/or modify this document under the terms of the GNU Free
+          Documentation License, Version 1.2 or any later version
+          published by the Free Software Foundation; with no Invariant
+          Sections, no Front-Cover Texts, and no Back-Cover Texts.  A
+          copy of the license is included in the appendix entitled
+          <q>GNU Free Documentation License.  </q> All trademarks
+          <trademark /> are the registered <registered /> marks of
+          their respective owners.
+          </shortlicense>
         </copyright>
 
-    </colophon>
+    </bibinfo>
 
     <!-- A section of its own in HTML, migrates to copyright-page in LaTeX -->
     <!-- Titles are optional, presumably none for single author,           -->
@@ -67,189 +97,47 @@
 
     <preface xml:id="preface">
         <p>
-            This document was created to serve as a single source for my lecture notes for the calculus sequence at West Virginia Wesleyan College.
-            As such these notes are divided into three self-explanatory parts.
+            This document was created to serve as a single source for
+            my lecture notes for the calculus sequence at West
+            Virginia Wesleyan College.  As such these notes are
+            divided into three self-explanatory parts.
             <ul>
                 <li>
                     <p>
-                        The first part, <xref ref="part-differential" text="custom">Differential Calculus</xref>, introduces the derivative and covers its important properties and applications.
-                        This content forms the majority of the Calculus I course.
+                      The first part, <xref ref="part-differential"
+                      text="custom">Differential Calculus </xref>,
+                      introduces the derivative and covers its
+                      important properties and applications.  This
+                      content forms the majority of the Calculus I
+                      course.
                     </p>
                 </li>
                 <li>
                     <p>
-                        The next part, <xref ref="part-integral" text="custom">Integral Calculus</xref>, introduces the integral and goes over multiple methods for its calculation.
-                        This content forms the majority of the Calculus II course.
+                      The next part, <xref ref="part-integral"
+                      text="custom">Integral Calculus </xref>,
+                      introduces the integral and goes over multiple
+                      methods for its calculation.  This content forms
+                      the majority of the Calculus II course.
                     </p>
                 </li>
                 <li>
                     <p>
-                        The final part, <xref ref="part-multivariable" text="custom">Multivariable Calculus</xref>, generalizes the concepts of derivatives and integrals to two and three dimensions.
-                        This content forms basis of the Calculus III course.
+                      The final part, <xref ref="part-multivariable"
+                      text="custom">Multivariable Calculus </xref>,
+                      generalizes the concepts of derivatives and
+                      integrals to two and three dimensions.  This
+                      content forms basis of the Calculus III course.
                     </p>
                 </li>
             </ul>
         </p>
         <p>
-            This document is very much <em>in progress</em> and therefore typos and other errors are to be expected.
-            If you find any, I would appreciate you letting me know by contacting me by email.
+          This document is very much <em>in progress </em> and
+          therefore typos and other errors are to be expected.  If you
+          find any, I would appreciate you letting me know by
+          contacting me by email.
         </p>
     </preface>
-
-    <!-- <preface xml:id="contributors">
-        <title>Contributors to the 4<m>^\mathrm{th}</m> Edition</title>
-
-        <p>Many individuals have made this book possible.  We will try to thank a few of them here, and hope we have not forgotten anybody really important.</p>
-
-        <contributors>
-            <contributor xml:id="tjudson">
-                <personname>Thomas Judson</personname>
-                <department>Department of Mathematics and Statistics</department>
-                <institution>Stephen F. Austin State University</institution>
-                <email>judsontw@sfasu.edu</email>
-            </contributor>
-
-            <contributor xml:id="dfarmer">
-                <personname>David Farmer</personname>
-                <institution>American Institute of Mathematics</institution>
-                <email>farmer@aimath.org</email>
-            </contributor>
-
-            <contributor>
-                <personname>Robert Beezer</personname>
-                <department>Department of Mathematics and Computer Science</department>
-                <institution>University of Puget Sound</institution>
-                <location>Tacoma, Washington, USA</location>
-                <email>beezer@pugetsound.edu</email>
-            </contributor>
-
-            <contributor>
-                <personname>Alex Jordan</personname>
-                <department>Department of Mathematics</department>
-                <institution>Portland Community College</institution>
-                <location>Portland, OR</location>
-                <email>alex.jordan@pcc.edu</email>
-            </contributor>
-
-            <contributor>
-                <personname>Thomas Judson</personname>
-                <department>Department of Mathematics and Statistics</department>
-                <institution>Stephen F. Austin State University</institution>
-                <email>judsontw@sfasu.edu</email>
-            </contributor>
-
-            <contributor>
-                <personname>David Farmer</personname>
-                <institution>American Institute of Mathematics</institution>
-                <email>farmer@aimath.org</email>
-            </contributor>
-
-            <contributor>
-                <personname>Robert Beezer</personname>
-                <department>Department of Mathematics and Computer Science</department>
-                <institution>University of Puget Sound</institution>
-                <location>Tacoma, Washington, USA</location>
-                <email>beezer@pugetsound.edu</email>
-            </contributor>
-
-            <contributor xml:id="ajordan">
-                <personname>Alex Jordan</personname>
-                <department>Department of Mathematics</department>
-                <institution>Portland Community College</institution>
-                <location>Portland, OR</location>
-                <email>alex.jordan@pcc.edu</email>
-            </contributor>
-
-            <contributor>
-                <personname>Thomas Judson</personname>
-                <department>Department of Mathematics and Statistics</department>
-                <institution>Stephen F. Austin State University</institution>
-                <email>judsontw@sfasu.edu</email>
-            </contributor>
-
-            <contributor>
-                <personname>David Farmer</personname>
-                <institution>American Institute of Mathematics</institution>
-                <email>farmer@aimath.org</email>
-            </contributor>
-
-            <contributor>
-                <personname>Robert Beezer</personname>
-                <department>Department of Mathematics and Computer Science</department>
-                <institution>University of Puget Sound</institution>
-                <location>Tacoma, Washington, USA</location>
-                <email>beezer@pugetsound.edu</email>
-            </contributor>
-
-            <contributor>
-                <personname>Alex Jordan</personname>
-                <department>Department of Mathematics</department>
-                <institution>Portland Community College</institution>
-                <location>Portland, OR</location>
-                <email>alex.jordan@pcc.edu</email>
-            </contributor>
-
-            <contributor>
-                <personname>Thomas Judson</personname>
-                <department>Department of Mathematics and Statistics</department>
-                <institution>Stephen F. Austin State University</institution>
-                <email>judsontw@sfasu.edu</email>
-            </contributor>
-
-            <contributor>
-                <personname>David Farmer</personname>
-                <institution>American Institute of Mathematics</institution>
-                <email>farmer@aimath.org</email>
-            </contributor>
-
-            <contributor xml:id="rbeezer">
-                <personname>Robert Beezer</personname>
-                <department>Department of Mathematics and Computer Science</department>
-                <institution>University of Puget Sound</institution>
-                <location>Tacoma, Washington, USA</location>
-                <email>beezer@pugetsound.edu</email>
-            </contributor>
-
-            <contributor>
-                <personname>Alex Jordan</personname>
-                <department>Department of Mathematics</department>
-                <institution>Portland Community College</institution>
-                <location>Portland, OR</location>
-                <email>alex.jordan@pcc.edu</email>
-            </contributor>
-
-            <contributor>
-                <personname>Thomas Judson</personname>
-                <department>Department of Mathematics and Statistics</department>
-                <institution>Stephen F. Austin State University</institution>
-                <email>judsontw@sfasu.edu</email>
-            </contributor>
-
-            <contributor>
-                <personname>David Farmer</personname>
-                <institution>American Institute of Mathematics</institution>
-                <email>farmer@aimath.org</email>
-            </contributor>
-
-            <contributor>
-                <personname>Robert Beezer</personname>
-                <department>Department of Mathematics and Computer Science</department>
-                <institution>University of Puget Sound</institution>
-                <location>Tacoma, Washington, USA</location>
-                <email>beezer@pugetsound.edu</email>
-            </contributor>
-
-            <contributor>
-                <personname>Alex Jordan</personname>
-                <department>Department of Mathematics</department>
-                <institution>Portland Community College</institution>
-                <location>Portland, OR</location>
-                <email>alex.jordan@pcc.edu</email>
-            </contributor>
-        </contributors>
-
-        <p>That's it.  Thanks everybody.</p>
-
-    </preface> -->
 
 </frontmatter>
