@@ -5,7 +5,7 @@
 <!--*         https://pretextbook.org          *-->
 <!--*                                          *-->
 <!--********************************************-->
-<html lang="en-US" dir="ltr" data-legacy-colorscheme="default">
+<html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>WVWC-CALC Limits involving infinity</title>
@@ -14,7 +14,8 @@
 <meta property="og:type" content="book">
 <meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo.jpg">
 <meta property="book:title" content="Calculus Notes">
-<meta property="book:author" content="Jesse Oldroyd">
+<meta property="book:author" content="Jesse Oldroyd
+          ">
 <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
@@ -91,10 +92,6 @@ window.MathJax = {
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;" rel="stylesheet">
 <script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
 <!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
@@ -267,7 +264,7 @@ var ggbApp = new GGBApplet({"appName": "graphing",
     "autoHeight": true,
     "disableAutoScale": false},
 true);
-</script></span><span class="treebuttons"><a class="previous-button button" href="section-continuity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="limits.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="derivatives.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</script><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="section-continuity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="limits.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="derivatives.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
 </div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\RR}{\mathbb{R}}
 \newcommand{\QQ}{\mathbb{Q}}
 \newcommand{\NN}{\mathbb{N}}
@@ -313,11 +310,11 @@ true);
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 parts"><ul class="structural toc-item-list contains-active">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth3 parts focused" data-preexpanded-levels="0" data-max-levels="3"><ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-frontmatter">
 <div class="toc-title-box"><a href="front.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-3.html" class="internal"><span class="title">Colophon</span></a></div></li>
 <li class="toc-item toc-biography"><div class="toc-title-box"><a href="author-bio-JEO.html" class="internal"><span class="title">Author Biography</span></a></div></li>
 <li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li>
 </ul>
@@ -802,44 +799,47 @@ true);
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-limits-involving-infinity"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">2.4</span><span class="space"> </span><span class="title">Limits involving infinity</span>
 </h2>
-<section class="introduction" id="section-limits-involving-infinity-2"><div class="para" id="section-limits-involving-infinity-2-1">Limits are used to describe the behavior of a function <span class="process-math">\(f(x)\)</span> as <span class="process-math">\(x\)</span> approaches some quantity. In this section, we will see how limits can be used to describe singularities of functions (which appear as vertical asymptotes) and long-term behavior of functions (which usually appear as horizontal asymptotes).</div></section><section class="subsection" id="subsection-limits-involving-vertical-asymptotes"><h3 class="heading hide-type">
+<section class="introduction" id="section-limits-involving-infinity-2"><div class="para" id="section-limits-involving-infinity-2-1">Limits are used to describe the behavior of a function <span class="process-math">\(f(x)\)</span> as <span class="process-math">\(x\)</span> approaches some quantity.  In this section, we will see how limits can be used to describe singularities of functions (which appear as vertical asymptotes) and long-term behavior of functions (which usually appear as horizontal asymptotes).</div></section><section class="subsection" id="subsection-limits-involving-vertical-asymptotes"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Limits involving vertical asymptotes</span>
 </h3>
-<div class="para" id="subsection-limits-involving-vertical-asymptotes-2">Consider the function <span class="process-math">\(f(x)=\frac{1}{x}\text{.}\)</span> We know from algebra that this function has a vertical asymptote at <span class="process-math">\(x=0\text{,}\)</span> and so in particular is undefined there. However, just because it’s undefined at <span class="process-math">\(x=0\)</span> doesn’t mean that we can’t gather important information about the function near <span class="process-math">\(0\text{.}\)</span> This is because the function behaves in a very specific way as we let <span class="process-math">\(x\)</span> approach <span class="process-math">\(0\text{.}\)</span> For example, if we let <span class="process-math">\(x\)</span> approach <span class="process-math">\(0\)</span> from the right, then <span class="process-math">\(f(x)\)</span> increases without bound. Similarly, <span class="process-math">\(f(x)\)</span> decreases without bound as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(0\)</span> from the left.</div>
-<div class="para" id="subsection-limits-involving-vertical-asymptotes-3">Even though <span class="process-math">\(f(x)\)</span> is not approaching a specific value as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(0\)</span> from either direction, this behavior shows up often enough and is important enough that we want to introduce notation to describe it. For this function, we would say <span class="process-math">\(\lim_{x\to0^{+}}\frac{1}{x}=\infty\)</span> and <span class="process-math">\(\lim_{x\to0^{-}}\frac{1}{x}=-\infty\text{.}\)</span>
+<div class="para" id="subsection-limits-involving-vertical-asymptotes-2">Consider the function <span class="process-math">\(f(x)=\frac{1}{x}\text{.}\)</span>  We know from algebra that this function has a vertical asymptote at <span class="process-math">\(x=0\text{,}\)</span> and so in particular is undefined there. However, just because it’s undefined at <span class="process-math">\(x=0\)</span> doesn’t mean that we can’t gather important information about the function near <span class="process-math">\(0\text{.}\)</span>  This is because the function behaves in a very specific way as we let <span class="process-math">\(x\)</span> approach <span class="process-math">\(0\text{.}\)</span>  For example, if we let <span class="process-math">\(x\)</span> approach <span class="process-math">\(0\)</span> from the right, then <span class="process-math">\(f(x)\)</span> increases without bound. Similarly, <span class="process-math">\(f(x)\)</span> decreases without bound as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(0\)</span> from the left.</div>
+<div class="para" id="subsection-limits-involving-vertical-asymptotes-3">Even though <span class="process-math">\(f(x)\)</span> is not approaching a specific value as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(0\)</span> from either direction, this behavior shows up often enough and is important enough that we want to introduce notation to describe it.  For this function, we would say <span class="process-math">\(\lim_{x\to0^{+}}\frac{1}{x}=\infty\)</span> and <span class="process-math">\(\lim_{x\to0^{-}}\frac{1}{x}=-\infty\text{.}\)</span>
 </div>
-<div class="para" id="subsection-limits-involving-vertical-asymptotes-4">Now consider <span class="process-math">\(g(x) = \frac{1}{(x-3)^{2}}\text{.}\)</span> Then <span class="process-math">\(\lim_{x\to3^{-}}g(x) = \lim_{x\to3^{+}}g(x) = \infty\)</span> since the function increases without bound when <span class="process-math">\(x\)</span> approaches <span class="process-math">\(3\)</span> from both directions. In this case, we say that <span class="process-math">\(\lim_{x\to3}g(x)=\infty\text{.}\)</span>
+<div class="para" id="subsection-limits-involving-vertical-asymptotes-4">Now consider <span class="process-math">\(g(x) = \frac{1}{(x-3)^{2}}\text{.}\)</span>  Then <span class="process-math">\(\lim_{x\to3^{-}}g(x) = \lim_{x\to3^{+}}g(x) = \infty\)</span> since the function increases without bound when <span class="process-math">\(x\)</span> approaches <span class="process-math">\(3\)</span> from both directions.  In this case, we say that <span class="process-math">\(\lim_{x\to3}g(x)=\infty\text{.}\)</span>
 </div>
-<aside class="aside aside-like" id="subsection-limits-involving-vertical-asymptotes-5"><div class="para" id="subsection-limits-involving-vertical-asymptotes-5-1">It’s <em class="emphasis">extremely</em> important to remember that the symbol <span class="process-math">\(\infty\)</span> is not being used to represent a number or variable that we can perform algebra on. It’s a symbol indicating how a particular function is behaving at a certain point.</div></aside><div class="para" id="subsection-limits-involving-vertical-asymptotes-6">If <span class="process-math">\(f(x)\)</span> is a function and <span class="process-math">\(\lim_{x\to a}f(x)=\pm\infty\text{,}\)</span> <span class="process-math">\(\lim_{x\to a^{-}}f(x)=\pm\infty\)</span> or <span class="process-math">\(\lim_{x\to a^{+}}f(x)=\pm\infty\text{,}\)</span> then this means that the function has a vertical asymptote at <span class="process-math">\(x=a\text{.}\)</span> In this course, this basically corresponds to a divide-by-zero problem.</div>
+<aside class="aside aside-like" id="subsection-limits-involving-vertical-asymptotes-5"><div class="para" id="subsection-limits-involving-vertical-asymptotes-5-1">It’s <em class="emphasis">extremely</em> important to remember that the symbol <span class="process-math">\(\infty\)</span> is not being used to represent a number or variable that we can perform algebra on.  It’s a symbol indicating how a particular function is behaving at a certain point.</div></aside><div class="para" id="subsection-limits-involving-vertical-asymptotes-6">If <span class="process-math">\(f(x)\)</span> is a function and <span class="process-math">\(\lim_{x\to
+a}f(x)=\pm\infty\text{,}\)</span> <span class="process-math">\(\lim_{x\to a^{-}}f(x)=\pm\infty\)</span> or <span class="process-math">\(\lim_{x\to a^{+}}f(x)=\pm\infty\text{,}\)</span> then this means that the function has a vertical asymptote at <span class="process-math">\(x=a\text{.}\)</span> In this course, this basically corresponds to a divide-by-zero problem.</div>
 <article class="example example-like" id="example-infinite-limit-involving-a-rational-function"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Infinite limit involving a rational function.</span>
 </h4>
 <div class="para" id="example-infinite-limit-involving-a-rational-function-2-1">Determine <span class="process-math">\(\lim_{x\to4^{-}}\frac{x-3}{2x-8}\text{.}\)</span>
 </div>
-<div class="solutions"><details id="example-infinite-limit-involving-a-rational-function-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="example-infinite-limit-involving-a-rational-function-3-1">If we try to plug in <span class="process-math">\(x=4\)</span> into <span class="process-math">\(\frac{x-3}{2x-8}\)</span> we get <span class="process-math">\(\frac{1}{0}\text{,}\)</span> which means we have run into a divide-by-zero problem. This is a good hint that the limit should be <span class="process-math">\(\pm\infty\text{,}\)</span> we just need to figure out the correct sign. There are a couple ways we can do this. First, we could set up a sign chart for this function to see where it’s positive and negative and then use that to see if it’s increasing or decreasing without bound as <span class="process-math">\(x\to4^{-}\text{.}\)</span> Second, we could just plug in values of <span class="process-math">\(x\)</span> that are closer and closer to <span class="process-math">\(4\)</span> and see how the function behaves. Either way, we see that it’s negative for values of <span class="process-math">\(x\)</span> that are close to (but less than) <span class="process-math">\(4\text{.}\)</span> Hence <span class="process-math">\(\lim_{x\to4^{-}}\frac{x-3}{2x-8}=-\infty\text{.}\)</span>
+<div class="solutions"><details id="example-infinite-limit-involving-a-rational-function-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="example-infinite-limit-involving-a-rational-function-3-1">If we try to plug in <span class="process-math">\(x=4\)</span> into <span class="process-math">\(\frac{x-3}{2x-8}\)</span> we get <span class="process-math">\(\frac{1}{0}\text{,}\)</span> which means we have run into a divide-by-zero problem.  This is a good hint that the limit should be <span class="process-math">\(\pm\infty\text{,}\)</span> we just need to figure out the correct sign.  There are a couple ways we can do this.  First, we could set up a sign chart for this function to see where it’s positive and negative and then use that to see if it’s increasing or decreasing without bound as <span class="process-math">\(x\to4^{-}\text{.}\)</span>  Second, we could just plug in values of <span class="process-math">\(x\)</span> that are closer and closer to <span class="process-math">\(4\)</span> and see how the function behaves.  Either way, we see that it’s negative for values of <span class="process-math">\(x\)</span> that are close to (but less than) <span class="process-math">\(4\text{.}\)</span>  Hence <span class="process-math">\(\lim_{x\to4^{-}}\frac{x-3}{2x-8}=-\infty\text{.}\)</span>
 </div></div></details></div></article></section><section class="subsection" id="subsection-limits-at-infinity"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Limits at infinity</span>
 </h3>
-<div class="para" id="subsection-limits-at-infinity-2">The previous subsection involved limits of functions whose values approached <span class="process-math">\(\pm\infty\text{.}\)</span> Now we look at what can happen to a function if its input values approach <span class="process-math">\(\pm\infty\text{.}\)</span> First, a definition of sorts.</div>
+<div class="para" id="subsection-limits-at-infinity-2">The previous subsection involved limits of functions whose values approached <span class="process-math">\(\pm\infty\text{.}\)</span>  Now we look at what can happen to a function if its input values approach <span class="process-math">\(\pm\infty\text{.}\)</span>  First, a definition of sorts.</div>
 <article class="definition definition-like" id="definition-limit-at-infinity"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Limit at infinity.</span>
 </h4>
-<div class="para" id="definition-limit-at-infinity-2-1">Let <span class="process-math">\(f(x)\)</span> be a function. We say that <span class="process-math">\(\lim_{x\to\infty}f(x) = L\)</span> if <span class="process-math">\(f(x)\)</span> gets (and stays) arbitrarily close to <span class="process-math">\(L\)</span> as <span class="process-math">\(x\)</span> is made arbitrarily large. Similarly, we say that <span class="process-math">\(\lim_{x\to-\infty}f(x) = L\)</span> if <span class="process-math">\(f(x)\)</span> gets (and stays) arbitrarily close to <span class="process-math">\(L\)</span> as <span class="process-math">\(x\)</span> is made arbitrarily small.</div></article><article class="example example-like" id="example-an-important-limit-at-infinity"><h4 class="heading">
+<div class="para" id="definition-limit-at-infinity-2-1">Let <span class="process-math">\(f(x)\)</span> be a function.  We say that <span class="process-math">\(\lim_{x\to\infty}f(x) = L\)</span> if <span class="process-math">\(f(x)\)</span> gets (and stays) arbitrarily close to <span class="process-math">\(L\)</span> as <span class="process-math">\(x\)</span> is made arbitrarily large.  Similarly, we say that <span class="process-math">\(\lim_{x\to-\infty}f(x) = L\)</span> if <span class="process-math">\(f(x)\)</span> gets (and stays) arbitrarily close to <span class="process-math">\(L\)</span> as <span class="process-math">\(x\)</span> is made arbitrarily small.</div></article><article class="example example-like" id="example-an-important-limit-at-infinity"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">An important limit at infinity.</span>
 </h4>
 <div class="para" id="example-an-important-limit-at-infinity-2-1">Let <span class="process-math">\(f(x) = \frac{1}{x}\text{.}\)</span> Determine <span class="process-math">\(\lim_{x\to\infty}f(x)\text{.}\)</span>
 </div>
-<div class="solutions"><details id="example-an-important-limit-at-infinity-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="example-an-important-limit-at-infinity-3-1">As <span class="process-math">\(x\)</span> gets arbitrarily large, <span class="process-math">\(\frac{1}{x}\)</span> gets arbitrarily close to <span class="process-math">\(0\text{.}\)</span> Therefore <span class="process-math">\(\lim_{x\to\infty}f(x) = 0\text{.}\)</span>
+<div class="solutions"><details id="example-an-important-limit-at-infinity-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="example-an-important-limit-at-infinity-3-1">As <span class="process-math">\(x\)</span> gets arbitrarily large, <span class="process-math">\(\frac{1}{x}\)</span> gets arbitrarily close to <span class="process-math">\(0\text{.}\)</span>  Therefore <span class="process-math">\(\lim_{x\to\infty}f(x) = 0\text{.}\)</span>
 </div></div></details></div></article><div class="para" id="subsection-limits-at-infinity-5">
-<a href="section-limits-involving-infinity.html#example-an-important-limit-at-infinity" class="xref" data-knowl="./knowl/xref/example-an-important-limit-at-infinity.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.4.3: An important limit at infinity">Example 2.4.3</a> holds for many other reciprocal powers of <span class="process-math">\(x\text{.}\)</span> In particular, if <span class="process-math">\(n&gt;0\)</span> then <span class="process-math">\(\lim_{x\to\infty}\frac{1}{x^{n}} = \lim_{x\to-\infty}\frac{1}{x^{n}} = 0\text{.}\)</span>
+<a href="section-limits-involving-infinity.html#example-an-important-limit-at-infinity" class="xref" data-knowl="./knowl/xref/example-an-important-limit-at-infinity.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.4.3: An important limit at infinity">Example 2.4.3</a> holds for many other reciprocal powers of <span class="process-math">\(x\text{.}\)</span> In particular, if <span class="process-math">\(n&gt;0\)</span> then <span class="process-math">\(\lim_{x\to\infty}\frac{1}{x^{n}} =
+\lim_{x\to-\infty}\frac{1}{x^{n}} = 0\text{.}\)</span>
 </div>
 <article class="example example-like" id="example-a-limit-at-infinity-involving-sine"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">A limit at infinity involving cosine.</span>
 </h4>
 <div class="para" id="example-a-limit-at-infinity-involving-sine-2-1">Let <span class="process-math">\(g(s) = \cos s^{-3}\text{.}\)</span> Compute <span class="process-math">\(\lim_{s\to-\infty}g(s)\text{.}\)</span>
 </div>
-<div class="solutions"><details id="example-a-limit-at-infinity-involving-sine-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="example-a-limit-at-infinity-involving-sine-3-1">First, note that <span class="process-math">\(g(s) = \cos\frac{1}{s^{3}}\text{.}\)</span> By the previous remark, we know that <span class="process-math">\(\lim_{s\to-\infty}\frac{1}{s^{3}} = 0\text{.}\)</span> Therefore <span class="process-math">\(\lim_{s\to-\infty}g(s) = \cos0 = 1\text{.}\)</span>
-</div></div></details></div></article><aside class="aside aside-like" id="subsection-limits-at-infinity-7"><div class="para" id="subsection-limits-at-infinity-7-1">The reason we were able to find the limit in <a href="section-limits-involving-infinity.html#example-a-limit-at-infinity-involving-sine" class="xref" data-knowl="./knowl/xref/example-a-limit-at-infinity-involving-sine.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.4.4: A limit at infinity involving cosine">Example 2.4.4</a> was because of the following fact: if <span class="process-math">\(\lim_{x\to a}g(x)\)</span> exists and if <span class="process-math">\(f(x)\)</span> is continuous at <span class="process-math">\(\lim_{x\to a}g(x)\text{,}\)</span> then <span class="process-math">\(\lim_{x\to a}f(g(x)) = f(\lim_{x\to a}g(x))\text{.}\)</span> Basically, we can swap continuous functions with limits without causing any harm.</div></aside><div class="para" id="subsection-limits-at-infinity-8">For limits at infinity involving powers of a variable, it is the highest power variables that determine the outcome.</div>
+<div class="solutions"><details id="example-a-limit-at-infinity-involving-sine-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="example-a-limit-at-infinity-involving-sine-3-1">First, note that <span class="process-math">\(g(s) = \cos\frac{1}{s^{3}}\text{.}\)</span>  By the previous remark, we know that <span class="process-math">\(\lim_{s\to-\infty}\frac{1}{s^{3}} = 0\text{.}\)</span>  Therefore <span class="process-math">\(\lim_{s\to-\infty}g(s) = \cos0 = 1\text{.}\)</span>
+</div></div></details></div></article><aside class="aside aside-like" id="subsection-limits-at-infinity-7"><div class="para" id="subsection-limits-at-infinity-7-1">The reason we were able to find the limit in <a href="section-limits-involving-infinity.html#example-a-limit-at-infinity-involving-sine" class="xref" data-knowl="./knowl/xref/example-a-limit-at-infinity-involving-sine.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 2.4.4: A limit at infinity involving cosine">Example 2.4.4</a> was because of the following fact: if <span class="process-math">\(\lim_{x\to a}g(x)\)</span> exists and if <span class="process-math">\(f(x)\)</span> is continuous at <span class="process-math">\(\lim_{x\to a}g(x)\text{,}\)</span> then <span class="process-math">\(\lim_{x\to
+a}f(g(x)) = f(\lim_{x\to a}g(x))\text{.}\)</span>  Basically, we can swap continuous functions with limits without causing any harm.</div></aside><div class="para" id="subsection-limits-at-infinity-8">For limits at infinity involving powers of a variable, it is the highest power variables that determine the outcome.</div>
 <article class="example example-like" id="example-limit-at-infinity-of-a-rational-function"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">Limit at infinity of a rational function.</span>
 </h4>
@@ -847,7 +847,8 @@ true);
 <div class="para">Let</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(t) = \frac{100t - 3 + t^{3}}{5t^{2}+1}\text{ and } g(t) = \frac{1-2t^{4}}{5t^{4}+3000t}.
+f(t) = \frac{100t - 3 + t^{3}}{5t^{2}+1}\text{ and }
+g(t) = \frac{1-2t^{4}}{5t^{4}+3000t}.
 \end{equation*}
 </div>
 <div class="para">Find <span class="process-math">\(\lim_{t\to\infty} f(t)\)</span> and <span class="process-math">\(\lim_{t\to-\infty}g(t)\text{.}\)</span>
@@ -855,11 +856,13 @@ f(t) = \frac{100t - 3 + t^{3}}{5t^{2}+1}\text{ and } g(t) = \frac{1-2t^{4}}{5t^{
 </div>
 <div class="solutions"><details id="example-limit-at-infinity-of-a-rational-function-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="example-limit-at-infinity-of-a-rational-function-3-1">
-<div class="para">Let’s start with <span class="process-math">\(f(t)\text{.}\)</span> To figure out what this limit should be, we could try the following. As <span class="process-math">\(t\)</span> gets very large the <span class="process-math">\(t^{3}\)</span> term in the numerator should drown out everything else in the numerator. Similarly, the <span class="process-math">\(5t^{2}\)</span> term in the denominator should drown out everything else in the denominator. So for <span class="process-math">\(t\)</span> very large, <span class="process-math">\(f(t)\approx\frac{t^{3}}{5t^{2}} = \frac{1}{5}t\text{.}\)</span> Hence <span class="process-math">\(f(t)\)</span> should probably go to <span class="process-math">\(\infty\)</span> as <span class="process-math">\(t\)</span> goes to <span class="process-math">\(\infty\text{.}\)</span> To make this more precise, we’ll just divide the numerator and denominator by the largest power of the denominator, <span class="process-math">\(t^{2}\text{,}\)</span> and then take the limit:</div>
+<div class="para">Let’s start with <span class="process-math">\(f(t)\text{.}\)</span>  To figure out what this limit should be, we could try the following.  As <span class="process-math">\(t\)</span> gets very large the <span class="process-math">\(t^{3}\)</span> term in the numerator should drown out everything else in the numerator.  Similarly, the <span class="process-math">\(5t^{2}\)</span> term in the denominator should drown out everything else in the denominator.  So for <span class="process-math">\(t\)</span> very large, <span class="process-math">\(f(t)\approx\frac{t^{3}}{5t^{2}} = \frac{1}{5}t\text{.}\)</span> Hence <span class="process-math">\(f(t)\)</span> should probably go to <span class="process-math">\(\infty\)</span> as <span class="process-math">\(t\)</span> goes to <span class="process-math">\(\infty\text{.}\)</span>  To make this more precise, we’ll just divide the numerator and denominator by the largest power of the denominator, <span class="process-math">\(t^{2}\text{,}\)</span> and then take the limit:</div>
 <div class="displaymath process-math" id="example-limit-at-infinity-of-a-rational-function-3-1-12">
 \begin{align*}
-\lim_{t\to\infty}f(t) &amp; = \lim_{t\to\infty}\frac{100t-3+t^{3}}{5t^{2}+1} \\
-&amp; = \lim_{t\to\infty}\frac{\frac{100}{t} - \frac{3}{t^{2}}+t}{5+\frac{1}{t^{2}}} \\
+\lim_{t\to\infty}f(t) &amp; =
+\lim_{t\to\infty}\frac{100t-3+t^{3}}{5t^{2}+1} \\
+&amp; = \lim_{t\to\infty}\frac{\frac{100}{t} -
+\frac{3}{t^{2}}+t}{5+\frac{1}{t^{2}}} \\
 &amp; = \infty \text{.}
 \end{align*}
 </div>
@@ -868,7 +871,8 @@ f(t) = \frac{100t - 3 + t^{3}}{5t^{2}+1}\text{ and } g(t) = \frac{1-2t^{4}}{5t^{
 <div class="para">We can find <span class="process-math">\(\lim_{t\to-\infty}g(t)\)</span> using the same idea. Just divide by the highest power in the denominator and then take the limit:</div>
 <div class="displaymath process-math" id="example-limit-at-infinity-of-a-rational-function-3-2-2">
 \begin{align*}
-\lim_{t\to-\infty}g(t) &amp; = \lim_{t\to-\infty}\frac{\frac{1}{t^{4}}-2}{5+\frac{3000}{t^{3}}} \\
+\lim_{t\to-\infty}g(t) &amp; =
+\lim_{t\to-\infty}\frac{\frac{1}{t^{4}}-2}{5+\frac{3000}{t^{3}}}\\
 &amp; = -\frac{2}{5} \text{.}
 \end{align*}
 </div>
@@ -879,7 +883,8 @@ f(t) = \frac{100t - 3 + t^{3}}{5t^{2}+1}\text{ and } g(t) = \frac{1-2t^{4}}{5t^{
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.4.6</span><span class="period">.</span><span class="space"> </span><span class="title">Asymptotic equivalence.</span>
 </h4>
 <div class="para logical" id="example-asymptotic-equivalence-2-1">
-<div class="para">Two functions <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> are said to be <dfn class="terminology">asymptotically equivalent</dfn>, written <span class="process-math">\(f\sim g\text{,}\)</span> if the following is true:</div>
+<div class="para">Two functions <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> are said to be <dfn class="terminology">asymptotically equivalent</dfn>, written <span class="process-math">\(f\sim
+g\text{,}\)</span> if the following is true:</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \lim_{x\to\infty}\frac{f(x)}{g(x)} = 1.
@@ -893,13 +898,14 @@ f(t) = \frac{100t - 3 + t^{3}}{5t^{2}+1}\text{ and } g(t) = \frac{1-2t^{4}}{5t^{
 </div>
 <div class="displaymath process-math" id="example-asymptotic-equivalence-3-1-2">
 \begin{align*}
-\lim_{x\to\infty}\frac{\sin\frac{1}{x}}{\frac{1}{x}} &amp; = \lim_{\theta\to0^{+}}\frac{\sin\theta}{\theta} \\
+\lim_{x\to\infty}\frac{\sin\frac{1}{x}}{\frac{1}{x}}
+&amp; = \lim_{\theta\to0^{+}}\frac{\sin\theta}{\theta}\\
 &amp; = 1 \text{.}
 \end{align*}
 </div>
 <div class="para">Therefore <span class="process-math">\(\sin\frac{1}{x}\sim\frac{1}{x}\text{.}\)</span>
 </div>
-</div></div></details></div></article></section><section class="conclusion" id="section-limits-involving-infinity-5"><div class="para" id="section-limits-involving-infinity-5-1">Now that we’ve used limits to describe function behaviors that we are already familiar with, such as gaps in graphs and asymptotes, we will move on to using limits to define new concepts of importance. In <a href="derivatives.html" class="internal" title="Chapter 3: Derivatives">Chapter 3</a> we will introduce the first such concept, and one of the most important concepts in calculus as a whole: that of the <em class="emphasis">derivative</em> of a function.</div></section></section></div>
+</div></div></details></div></article></section><section class="conclusion" id="section-limits-involving-infinity-5"><div class="para" id="section-limits-involving-infinity-5-1">Now that we’ve used limits to describe function behaviors that we are already familiar with, such as gaps in graphs and asymptotes, we will move on to using limits to define new concepts of importance.  In <a href="derivatives.html" class="internal" title="Chapter 3: Derivatives">Chapter 3</a> we will introduce the first such concept, and one of the most important concepts in calculus as a whole: that of the <em class="emphasis">derivative</em> of a function.</div></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="section-continuity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="derivatives.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
