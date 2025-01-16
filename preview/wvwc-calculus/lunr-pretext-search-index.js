@@ -7,7 +7,7 @@ var ptx_lunr_docs = [
   "type": "Colophon",
   "number": "",
   "title": "Colophon",
-  "body": "  Annual Edition 2023     copyright  "
+  "body": ""
 },
 {
   "id": "author-bio-JEO",
