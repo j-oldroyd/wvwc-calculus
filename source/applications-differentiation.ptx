@@ -237,7 +237,7 @@
                 <p>
                     Water is leaking out of a conical tank at a rate
                     of <quantity><mag>10000</mag><unit base="meter"
-                    prefix="centi"/><per base="minute"/></quantity>
+                    prefix="centi" exp="3"/><per base="minute"/></quantity>
                     while water is being pumped into the tank at some
                     (unknown) constant rate.  The tank has a height
                     of <quantity><mag>6</mag><unit base="meter"/></quantity>
