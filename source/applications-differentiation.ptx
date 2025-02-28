@@ -164,7 +164,7 @@
         </example>
     </section>
     <section xml:id="section-related-rates">
-        <title>Related Rates</title>
+        <title>Related rates</title>
 
         <example xml:id="example-changing-volume-on-a-sphere">
             <title>Changing volume on a sphere</title>
@@ -630,13 +630,13 @@
         </example>
     </section>
     <section xml:id="section-extreme-values-of-functions">
-        <title>Extreme Values of Functions</title>
+        <title>Extreme values of functions</title>
         <p>
             It's often of interest to determine how large or small
             some quantity can get.
         </p>
         <definition xml:id="definition-absolute-extrema">
-            <title>Absolute Extrema</title>
+            <title>Absolute extrema</title>
             <idx><h>functions</h><h>absolute extrema</h></idx>
             <statement>
                 <p>
@@ -682,8 +682,12 @@
                     Let <m>f(x)</m> be a function and let <m>c</m> be
                     in the domain of <m>f</m>.  Then
                     <ul>
-                        <li><m>f(c)</m> is a <term>local maximum</term> if <m>f(c)\geq f(x)</m> for all <m>x</m> near <m>c</m>.</li>
-                        <li><m>f(c)</m> is a <term>local minimum</term> if <m>f(c)\leq f(x)</m> for all <m>x</m> near <m>c</m>.</li>
+                        <li><m>f(c)</m> is a <term>local
+                        maximum</term> if <m>f(c)\geq f(x)</m> for all
+                        <m>x</m> near <m>c</m>.</li>
+                        <li><m>f(c)</m> is a <term>local
+                        minimum</term> if <m>f(c)\leq f(x)</m> for all
+                        <m>x</m> near <m>c</m>.</li>
                     </ul>
                     Roughly, local maxima correspond to "hilltops"
                     whereas local minima correspond to "valleys" in
@@ -772,7 +776,7 @@
             definition.
         </p>
         <definition xml:id="definition-critical-points">
-            <title>Critical Points</title>
+            <title>Critical points</title>
             <statement>
                 <p>
                     Let <m>f(x)</m> be a differentiable function.
@@ -840,7 +844,7 @@
         </example>
     </section>
     <section xml:id="section-optimization-problems">
-        <title>Optimization Problems</title>
+        <title>Optimization problems</title>
         <p>
             Now that we can use derivatives to find local maxima and
             minima, we can solve <term>optimization problems</term>.
@@ -1051,27 +1055,32 @@
                 powerful in mathematics.
             </p>
             <example xml:id="example-rolle-s-theorem-and-traffic">
-                <title>Rolle's Theorem and Traffic</title>
+                <title>Rolle's Theorem and traffic</title>
                 <statement>
                     <p>
-                        A car enters a highway going
-                        at <quantity><mag>45</mag><unit base="mile"/><per base="hour"/></quantity>
-                        and leaves the highway going at the same
-                        speed.  Was the car's acceleration
-                        ever <m>0</m>?
+                        A car enters a highway going at
+                        <quantity><mag>45</mag><unit base="mile"/><per
+                        base="hour"/></quantity> and leaves the
+                        highway going at the same speed.  Was the
+                        car's acceleration ever <m>0</m>?
                     </p>
                 </statement>
                 <solution>
                     <p>
                         The speed of the car can be represented by a
                         velocity function <m>v(t)</m>.  If we assume
-                        that the car entered the highway at
-                        time <m>t_{\text{in}}</m> and left at some
-                        future time <m>t_{\text{out}}</m>, then we
-                        know that
-                        <me>v(t_{\text{in}}) = v(t_{\text{out}}) = 45.</me>
-                        By <xref ref="theorem-rolle-s-theorem" text="type-global" />, there must be some time <m>t_{1}</m> between <m>t_{\text{in}}</m> and <m>t_{\text{out}}</m> for which <m>v'(t_{1}) = 0</m>.
-                        Since <m>v'</m> is exactly the acceleration, we know that the car had to stop accelerating somewhere on the highway.
+                        that the car entered the highway at time
+                        <m>t_{\text{in}}</m> and left at some future
+                        time <m>t_{\text{out}}</m>, then we know that
+                        <me>v(t_{\text{in}}) = v(t_{\text{out}}) =
+                        45.</me> By <xref
+                        ref="theorem-rolle-s-theorem"
+                        text="type-global" />, there must be some time
+                        <m>t_{1}</m> between <m>t_{\text{in}}</m> and
+                        <m>t_{\text{out}}</m> for which <m>v'(t_{1}) =
+                        0</m>.  Since <m>v'</m> is exactly the
+                        acceleration, we know that the car had to stop
+                        accelerating somewhere on the highway.
                     </p>
                 </solution>
             </example>
@@ -1185,14 +1194,17 @@
                         in <m>(9,16)</m>.  However, we do have an
                         expression for <m>|f(x) - L(x)|</m> now:
                         <md>
-                            <mrow>|f(x) - L(x)| &amp; = \left|\left(\frac{1}{2\sqrt{c}} - \frac{1}{6}\right)(x-9)\right|</mrow>
-                            <mrow> &amp; \leq \left(\frac{1}{6} - \frac{1}{8}\right)7. </mrow>
+                            <mrow>|f(x) - L(x)| &amp; =
+                            \left|\left(\frac{1}{2\sqrt{c}} -
+                            \frac{1}{6}\right)(x-9)\right|</mrow>
+                            <mrow> &amp; \leq \left(\frac{1}{6} -
+                            \frac{1}{8}\right)7. </mrow>
                         </md>
                         So if <m>x</m> is in <m>[9,16]</m>, then the
-                        error <m>|f(x) - L(x)|</m> is <em>at
-                        most</em> <m>\frac{7}{24}</m>.  In other
-                        words,
-                        <me>L(x) - \frac{7}{24} \leq f(x) \leq L(x) + \frac{7}{24}.</me>
+                        error <m>|f(x) - L(x)|</m> is <em>at most</em>
+                        <m>\frac{7}{24}</m>.  In other words, <me>L(x)
+                        - \frac{7}{24} \leq f(x) \leq L(x) +
+                        \frac{7}{24}.</me>
                     </p>
                 </solution>
             </example>
