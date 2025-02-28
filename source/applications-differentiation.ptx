@@ -1247,55 +1247,84 @@
         </subsection>
     </section>
     <section xml:id="section-derivatives-and-graphs">
-        <title>Derivatives and Graphs</title>
+        <title>Derivatives and graphs</title>
         <p>
-            Recall that if <m>f(x)</m> is a function and <m>f^{\prime}(x)</m> exists, then <m>f^{\prime}(c) &gt; 0</m> for some <m>c</m> means that <m>f</m> is increasing at <m>c</m>, while <m>f^{\prime}(c) &lt; 0</m> means that <m>f</m> is decreasing at <m>c</m>.
-            Now, suppose that <m>c</m> is a critical point of <m>f(x)</m>.
-            Then <m>f^{\prime}(c) = 0</m>.
-            If <m>f^{\prime}</m> changes sign from negative to positive, then <m>f^{\prime}(c)</m> is a local minimum.
-            Conversely, if <m>f^{\prime}</m> changes sign from positive to negative, then <m>f^{\prime}(c)</m> is a local maximum.
-            This is the <term>first derivative test</term>.
+            Recall that if <m>f(x)</m> is a function and
+            <m>f^{\prime}(x)</m> exists, then <m>f^{\prime}(c) &gt;
+            0</m> for some <m>c</m> means that <m>f</m> is increasing
+            at <m>c</m>, while <m>f^{\prime}(c) &lt; 0</m> means that
+            <m>f</m> is decreasing at <m>c</m>.  Now, suppose that
+            <m>c</m> is a critical point of <m>f(x)</m>.  Then
+            <m>f^{\prime}(c) = 0</m>.  If <m>f^{\prime}</m> changes
+            sign from negative to positive, then <m>f^{\prime}(c)</m>
+            is a local minimum.  Conversely, if <m>f^{\prime}</m>
+            changes sign from positive to negative, then
+            <m>f^{\prime}(c)</m> is a local maximum.  This is the
+            <term>first derivative test</term>.
         </p>
         <example xml:id="example-local-maxima-and-minima-using-the-first-derivative-test">
-            <title>Local maxima and minima using the first derivative test</title>
+            <title>Local maxima and minima using the first derivative
+            test</title>
             <statement>
                 <p>
-                    Let <m>f(x) = x^{4}e^{-x}</m>.
-                    Find where <m>f</m> is increasing, decreasing, and any local maxima or minima.
+                    Let <m>f(x) = x^{4}e^{-x}</m>.  Find where
+                    <m>f</m> is increasing, decreasing, and any local
+                    maxima or minima.
                 </p>
             </statement>
             <solution>
                 <p>
-                    We can answer all of these questions by setting up a sign chart for
-                    <me>f^{\prime}(x) = x^{3}e^{-x}(4-x)</me>.
-                    The critical points are <m>x=0,4</m>, and <m>f^{\prime} &lt; 0</m> on <m>(-\infty,0)\cup(4,\infty)</m> and <m>f^{\prime} &gt; 0</m> on <m>(0,4)</m>.
-                    So <m>f</m> is decreasing on the first set of intervals, increasing on <m>(0,4)</m>, <m>f</m> has a local maximum at <m>x=4</m> and a local minimum at <m>x=0</m>.
+                    We can answer all of these questions by setting up
+                    a sign chart for <me>f^{\prime}(x) =
+                    x^{3}e^{-x}(4-x)</me>.  The critical points are
+                    <m>x=0,4</m>, and <m>f^{\prime} &lt; 0</m> on
+                    <m>(-\infty,0)\cup(4,\infty)</m> and <m>f^{\prime}
+                    &gt; 0</m> on <m>(0,4)</m>.  So <m>f</m> is
+                    decreasing on the first set of intervals,
+                    increasing on <m>(0,4)</m>, <m>f</m> has a local
+                    maximum at <m>x=4</m> and a local minimum at
+                    <m>x=0</m>.
                 </p>
             </solution>
         </example>
         <example xml:id="example-first-derivative-test-and-a-discontinuous-function">
-            <title>First derivative test and a discontinuous function</title>
+            <title>First derivative test and a discontinuous
+            function</title>
             <statement>
                 <p>
-                    Find any local maxima or minima of <m>G(x) = \frac{x^{2}}{x-1}</m>.
+                    Find any local maxima or minima of <m>G(x) =
+                    \frac{x^{2}}{x-1}</m>.
                 </p>
             </statement>
             <solution>
                 <p>
-                    We need to find the critical points, which means we need to find <m>G^{\prime}(x)</m>:
-                    <me>G^{\prime}(x) = \frac{(x-1)(2x) - x^{2}}{(x-1)^{2}} = \frac{x(x-2)}{(x-1)^{2}}.</me>
-                    So the critical points are <m>x=0,1,2</m>.
-                    Note that <m>x=1</m> <em>cannot</em> be a local extreme value of <m>G</m> since it's not in the domain of <m>G</m>.
-                    However, we still need to include it in our sign chart.
-                    If we do so, we find that <m>G</m> has a local minimum at <m>x=2</m> and a local maximum at <m>x=0</m> by the first derivative test.
+                    We need to find the critical points, which means
+                    we need to find <m>G^{\prime}(x)</m>:
+                    <me>G^{\prime}(x) = \frac{(x-1)(2x) -
+                    x^{2}}{(x-1)^{2}} = \frac{x(x-2)}{(x-1)^{2}}.</me>
+                    So the critical points are <m>x=0,1,2</m>.  Note
+                    that <m>x=1</m> <em>cannot</em> be a local extreme
+                    value of <m>G</m> since it's not in the domain of
+                    <m>G</m>.  However, we still need to include it in
+                    our sign chart.  If we do so, we find that
+                    <m>G</m> has a local minimum at <m>x=2</m> and a
+                    local maximum at <m>x=0</m> by the first
+                    derivative test.
                 </p>
             </solution>
         </example>
         <p>
-            One benefit of the first derivative test is that we only need to compute first derivatives to use it.
-            However, if a function has a second derivative, then it's often easier to use the concavity of the graph at a critical point to determine whether a critical point is a local maximum or minimum.
-            In particular, if <m>f(x)</m> is a function and <m>f''(x)</m> is continuous near the critical point <m>c</m> (so <m>f^{\prime}(c) = 0</m>), then <m>f(c)</m> is a local minimum if <m>f''(c) &gt; 0</m> and <m>f(c)</m> is a local maximum if <m>f''(c) &lt; 0</m>.
-            This is the <term>second derivative test</term>.
+            One benefit of the first derivative test is that we only
+            need to compute first derivatives to use it.  However, if
+            a function has a second derivative, then it's often easier
+            to use the concavity of the graph at a critical point to
+            determine whether a critical point is a local maximum or
+            minimum.  In particular, if <m>f(x)</m> is a function and
+            <m>f''(x)</m> is continuous near the critical point
+            <m>c</m> (so <m>f^{\prime}(c) = 0</m>), then <m>f(c)</m>
+            is a local minimum if <m>f''(c) &gt; 0</m> and <m>f(c)</m>
+            is a local maximum if <m>f''(c) &lt; 0</m>.  This is the
+            <term>second derivative test</term>.
         </p>
         <example xml:id="example-using-the-second-derivative-test">
             <title>Using the second derivative test</title>
@@ -1308,22 +1337,28 @@
                 <p>
                     First, we find the critical points:
                     <me>h^{\prime}x) = 15x^{2} - 15x^{4} = 0</me>
-                    forces <m>x=0,\pm1</m>.
-                    Now we check these critical points in <m>h''(x) = 30x - 60x^{3}:</m>
+                    forces <m>x=0,\pm1</m>.  Now we check these
+                    critical points in <m>h''(x) = 30x - 60x^{3}:</m>
                     <md>
                         <mrow>h''(0) &amp; = 0 </mrow>
                         <mrow>h''(-1) &amp; = 30 </mrow>
                         <mrow>h''(1) &amp; = -30. </mrow>
                     </md>
-                    So <m>h</m> has a local minimum at <m>-1</m> and a local maximum at <m>1</m>.
+                    So <m>h</m> has a local minimum at <m>-1</m> and a
+                    local maximum at <m>1</m>.
                 </p>
             </solution>
         </example>
         <p>
-            The point <m>x=0</m> in <xref ref="example-using-the-second-derivative-test" text="type-global" /> is an example of an <term>inflection point</term> of <m>h(x)</m>: a place where the concavity of <m>h</m> changes, or equivalently a point where the second derivative changes sign.
+            The point <m>x=0</m> in <xref
+            ref="example-using-the-second-derivative-test"
+            text="type-global" /> is an example of an <term>inflection
+            point</term> of <m>h(x)</m>: a place where the concavity
+            of <m>h</m> changes, or equivalently a point where the
+            second derivative changes sign.
         </p>
         <example xml:id="example-finding-inflection-points">
-            <title>Finding Inflection Points</title>
+            <title>Finding inflection points</title>
             <statement>
                 <p>
                     Find the inflection points of
@@ -1332,8 +1367,9 @@
             </statement>
             <solution>
                 <p>
-                    We need to find the points where <m>f''</m> changes sign, so our first job is to compute <m>f''</m>.
-                    We'll do so using technology:
+                    We need to find the points where <m>f''</m>
+                    changes sign, so our first job is to compute
+                    <m>f''</m>.  We'll do so using technology:
                 </p>
                 <sage language="sage">
                     <input>
@@ -1348,7 +1384,8 @@
                     </output>
                 </sage>
                 <p>
-                    We need to find where this is zero, so we'll simplify and then factor:
+                    We need to find where this is zero, so we'll
+                    simplify and then factor:
                 </p>
                 <sage language="sage">
                     <input>
@@ -1359,11 +1396,14 @@
                     </output>
                 </sage>
                 <p>
-                    Therefore
-                    <me>f''(x) = \frac{24 \, {\left(x + 3\right)} {\left(x - 3\right)} x}{{\left(x^{2} + 3\right)}^{3}}</me>,
-                    and we can see that <m>f''(x)</m> is zero when <m>x = -3, 3</m> or <m>0</m>.
-                    Since <m>f''</m> changes sign at each of these points (as can be seen from a sign chart), all of these are inflection points.
-                    This is also indicated on the graph below:
+                    Therefore <me>f''(x) = \frac{24 \, {\left(x +
+                    3\right)} {\left(x - 3\right)} x}{{\left(x^{2} +
+                    3\right)}^{3}}</me>, and we can see that
+                    <m>f''(x)</m> is zero when <m>x = -3, 3</m> or
+                    <m>0</m>.  Since <m>f''</m> changes sign at each
+                    of these points (as can be seen from a sign
+                    chart), all of these are inflection points.  This
+                    is also indicated on the graph below:
                 </p>
                 <sage language="sage">
                     <input>
@@ -1376,9 +1416,14 @@
             </solution>
         </example>
         <p>
-            The code used in <xref ref="example-finding-inflection-points" text="type-global" /> is the Sage programming language, a variant of Python that is designed for mathematical applications.
-            The Sage computer algebra system (CAS) is very useful for quickly performing tedious algebraic calculations.
-            We could also have used Sage to solve the equation <m>f''(x) = 0</m> for us with the <c>solve()</c> command, like so:
+            The code used in <xref
+            ref="example-finding-inflection-points" text="type-global"
+            /> is the Sage programming language, a variant of Python
+            that is designed for mathematical applications.  The Sage
+            computer algebra system (CAS) is very useful for quickly
+            performing tedious algebraic calculations.  We could also
+            have used Sage to solve the equation <m>f''(x) = 0</m> for
+            us with the <c>solve()</c> command, like so:
         </p>
         <sage language="sage">
             <input>
@@ -1392,39 +1437,56 @@
             </output>
         </sage>
         <p>
-            However, it may be the case that some solutions of <m>f''(x) = 0</m> are <em>not</em> inflection points.
-            As a simple example, consider <m>f(x) = x^4</m>.
-            From the graph of this function it's clearly concave up everywhere even though the <m>f''(0) = 0</m>.
-            The problem here is that <m>f''(x) = 12x^2</m> doesn't change sign at <m>x = 0</m>, and so this point can't be an inflection point.
+            However, it may be the case that some solutions of
+            <m>f''(x) = 0</m> are <em>not</em> inflection points.  As
+            a simple example, consider <m>f(x) = x^4</m>.  From the
+            graph of this function it's clearly concave up everywhere
+            even though the <m>f''(0) = 0</m>.  The problem here is
+            that <m>f''(x) = 12x^2</m> doesn't change sign at <m>x =
+            0</m>, and so this point can't be an inflection point.
         </p>
     </section>
 
     <section xml:id="section-newton-s-method">
         <title>Newton's Method</title>
         <p>
-            Consider a differentiable function <m>f(x)</m>, and suppose we want to find a root of <m>f(x)</m>, which is a number <m>x_{0}</m> such that <m>f(x_{0}) = 0</m>.
-            In some cases this is very easy (like <m>f(x) = x^{2} + 2x + 1</m>), but in others this may be more complicated (such as <m>f(x) = x^{5} - x  - 1</m>).
-            So we'd like to find a way to <em>approximate</em> the root <m>x_{0}</m>.
+            Consider a differentiable function <m>f(x)</m>, and
+            suppose we want to find a root of <m>f(x)</m>, which is a
+            number <m>x_{0}</m> such that <m>f(x_{0}) = 0</m>.  In
+            some cases this is very easy (like <m>f(x) = x^{2} + 2x +
+            1</m>), but in others this may be more complicated (such
+            as <m>f(x) = x^{5} - x - 1</m>).  So we'd like to find a
+            way to <em>approximate</em> the root <m>x_{0}</m>.
         </p>
         <p>
-            <term>Newton's Method</term> begins as follows: pick some starting point, or guess, <m>x_{1}</m>.
-            Then draw the tangent line <m>L</m> to the graph of <m>f(x)</m> at <m>x_{1}</m>.
-            Now, the <m>x</m>-intercept of this line may not be a root, but hopefully it'll be closer to the root.
-            So call this point <m>x_{2}</m>.
-            We can solve for <m>x_{2}</m> (if <m>f^{\prime}(x_{1})\neq0</m>) to get
-            <me>x_{2} = x_{1} - \frac{f(x_{1})}{f^{\prime}(x_{1})}.</me>
-            Now, at this point <m>x_{2}</m> is (hopefully!) a better approximation to the root <m>x_{0}</m> than <m>x_{1}</m>, and we can run through the same procedure to get a new point <m>x_{3}</m>.
+            <term>Newton's Method</term> begins as follows: pick some
+            starting point, or guess, <m>x_{1}</m>.  Then draw the
+            tangent line <m>L</m> to the graph of <m>f(x)</m> at
+            <m>x_{1}</m>.  Now, the <m>x</m>-intercept of this line
+            may not be a root, but hopefully it'll be closer to the
+            root.  So call this point <m>x_{2}</m>.  We can solve for
+            <m>x_{2}</m> (if <m>f^{\prime}(x_{1})\neq0</m>) to get
+            <me>x_{2} = x_{1} -
+            \frac{f(x_{1})}{f^{\prime}(x_{1})}.</me> Now, at this
+            point <m>x_{2}</m> is (hopefully!) a better approximation
+            to the root <m>x_{0}</m> than <m>x_{1}</m>, and we can run
+            through the same procedure to get a new point
+            <m>x_{3}</m>.
         </p>
         <p>
-            In general, we can get a <term>sequence</term> of approximations <m>x_{1},x_{2},\ldots,x_{n}</m> to the root <m>x_{0}</m> by using the formula
-            <me>x_{n+1} = x_{n} - \frac{f(x_{n})}{f^{\prime}(x_{n})},</me>
-            as long as <m>f^{\prime}(x_{n}) \neq0</m>.
+            In general, we can get a <term>sequence</term> of
+            approximations <m>x_{1},x_{2},\ldots,x_{n}</m> to the root
+            <m>x_{0}</m> by using the formula <me>x_{n+1} = x_{n} -
+            \frac{f(x_{n})}{f^{\prime}(x_{n})},</me> as long as
+            <m>f^{\prime}(x_{n}) \neq0</m>.
         </p>
         <example xml:id="example-approximating-a-root">
             <title>Approximating a root</title>
             <statement>
                 <p>
-                    Find the third approximation given by Newton's Method for the root of <m>f(x) = x^{5} - x - 1</m>, using <m>x_{1} = -1</m>.
+                    Find the third approximation given by Newton's
+                    Method for the root of <m>f(x) = x^{5} - x -
+                    1</m>, using <m>x_{1} = -1</m>.
                 </p>
             </statement>
             <solution>
@@ -1432,14 +1494,16 @@
                     First, note that <m>f^{\prime}(x) = 5x^{4} - 1</m>.
                     Then
                     <md>
-                        <mrow>x_{2} &amp; = x_{1} - \frac{f(x_{1})}{f^{\prime}(x_{1})} </mrow>
+                        <mrow>x_{2} &amp; = x_{1} -
+                        \frac{f(x_{1})}{f^{\prime}(x_{1})} </mrow>
                         <mrow> &amp; = -1 - \frac{-1}{4} </mrow>
                         <mrow> &amp; = 3, </mrow>
                     </md>
                     so <m>x_{2} = 3</m>.
                     Now we run through this method again to get <m>x_{3}</m>:
                     <md>
-                        <mrow>x_{3} &amp; = x_{2} - \frac{f(x_{2})}{f^{\prime}(x_{2})} </mrow>
+                        <mrow>x_{3} &amp; = x_{2} -
+                        \frac{f(x_{2})}{f^{\prime}(x_{2})} </mrow>
                         <mrow> &amp; = 3 - \frac{239}{404} </mrow>
                         <mrow> &amp; = \frac{973}{404}. </mrow>
                     </md>
@@ -1456,19 +1520,21 @@
             </statement>
             <solution>
                 <p>
-                    We need to find a function <m>f(x)</m> for which <m>f(\pi) = 0</m>.
-                    Perhaps the easiest is <m>f(x) = \sin x</m>.
-                    Now, to use Newton's method we also need a starting guess.
-                    We'll pick <m>x_{1} = 3</m> since this is close to <m>\pi</m>.
-                    Then
-                    <me>x_{2} = x_{1} - \frac{\sin x_{1}}{\cos x_{1}} = 3 - \tan 3</me>
-                    so <m>x_{2} \approx 3.142546543</m>.
-                    Similarly,
+                    We need to find a function <m>f(x)</m> for which
+                    <m>f(\pi) = 0</m>.  Perhaps the easiest is <m>f(x)
+                    = \sin x</m>.  Now, to use Newton's method we also
+                    need a starting guess.  We'll pick <m>x_{1} =
+                    3</m> since this is close to <m>\pi</m>.  Then
+                    <me>x_{2} = x_{1} - \frac{\sin x_{1}}{\cos x_{1}}
+                    = 3 - \tan 3</me> so <m>x_{2} \approx
+                    3.142546543</m>.  Similarly,
                     <md>
-                        <mrow>x_{3} &amp; = x_{2} - \tan x_{2} \approx 3.141592653 </mrow>
-                        <mrow>x_{4} &amp; \approx 3.141592654 </mrow>
+                        <mrow>x_{3} &amp; = x_{2} - \tan x_{2} \approx
+                        3.141592653 </mrow> <mrow>x_{4} &amp; \approx
+                        3.141592654 </mrow>
                     </md>
-                    Since these approximations are so close, we estimate that <m>\pi\approx 3.14159265</m>.
+                    Since these approximations are so close, we
+                    estimate that <m>\pi\approx 3.14159265</m>.
                 </p>
             </solution>
         </example>
@@ -1476,44 +1542,61 @@
             <title>A Babylonian problem</title>
             <statement>
                 <p>
-                    Use Newton's method to find an algorithm for computing <m>\sqrt{a}</m>.
+                    Use Newton's method to find an algorithm for
+                    computing <m>\sqrt{a}</m>.
                 </p>
             </statement>
             <solution>
                 <p>
-                    To use Newton's method, we need to come up with a function <m>f(x)</m> whose root is <m>\sqrt{a}</m>.
-                    A simple choice for this is <m>f(x) = x^{2} - a</m>, since <m>f(\sqrt{a}) = 0</m>.
-                    Now, if we're getting some sequence <m>x_{1},\ldots,x_{n}</m> from Newton's method then the next term in the sequence is
-                    <me>x_{n+1} = x_{n} - \frac{f(x_{n})}{f^{\prime}(x_{n})} = x_{n} - \frac{x_{n}^{2} - a}{2x_{n}}.</me>
-                    After some algebra, we can rewrite this as
-                    <me>x_{n+1} = \frac{1}{2}\left(x_{n} + \frac{a}{x_{n}}\right).</me>
+                    To use Newton's method, we need to come up with a
+                    function <m>f(x)</m> whose root is
+                    <m>\sqrt{a}</m>.  A simple choice for this is
+                    <m>f(x) = x^{2} - a</m>, since <m>f(\sqrt{a}) =
+                    0</m>.  Now, if we're getting some sequence
+                    <m>x_{1},\ldots,x_{n}</m> from Newton's method
+                    then the next term in the sequence is <me>x_{n+1}
+                    = x_{n} - \frac{f(x_{n})}{f^{\prime}(x_{n})} =
+                    x_{n} - \frac{x_{n}^{2} - a}{2x_{n}}.</me> After
+                    some algebra, we can rewrite this as <me>x_{n+1} =
+                    \frac{1}{2}\left(x_{n} +
+                    \frac{a}{x_{n}}\right).</me>
                 </p>
                 <p>
-                    We can actually test this algorithm out.
-                    Say we want to approximate <m>\sqrt{5}</m>.
-                    A reasonable guess would be <m>x_{1} = 2</m>, since this should be close to <m>\sqrt{5}</m>.
-                    Then we get
+                    We can actually test this algorithm out.  Say we
+                    want to approximate <m>\sqrt{5}</m>.  A reasonable
+                    guess would be <m>x_{1} = 2</m>, since this should
+                    be close to <m>\sqrt{5}</m>.  Then we get
                     <md>
-                        <mrow>x_{2} &amp; = \frac{1}{2}\left(2 + \frac{5}{2}\right) = 2.25 </mrow>
-                        <mrow>x_{3} &amp; = \frac{1}{2}\left(2.25 + \frac{5}{2.25}\right) \approx 2.236111111 </mrow>
+                        <mrow>x_{2} &amp; = \frac{1}{2}\left(2 +
+                        \frac{5}{2}\right) = 2.25 </mrow> <mrow>x_{3}
+                        &amp; = \frac{1}{2}\left(2.25 +
+                        \frac{5}{2.25}\right) \approx 2.236111111
+                        </mrow>
                         <mrow>x_{4} &amp; \approx 2.236067978 </mrow>
                         <mrow>x_{5} &amp; \approx 2.236067977 </mrow>
                     </md>
-                    So it looks like <m>\sqrt{5}\approx 2.23606797</m>, and indeed this is quite close to the actual value of <m>\sqrt{5} = 2.236067977\ldots</m>.
+                    So it looks like <m>\sqrt{5}\approx
+                    2.23606797</m>, and indeed this is quite close to
+                    the actual value of <m>\sqrt{5} =
+                    2.236067977\ldots</m>.
                 </p>
                 <p>
-                    We can go one step further for this algorithm.
-                    If <m>x_{1},x_{2},\ldots,x_{n},\ldots</m> is the sequence we obtain using Newton's method for approximating <m>\sqrt{a}</m>, then as we saw earlier
-                    <me>x_{n+1} = \frac{1}{2}\left(x_{n} + \frac{a}{x_{n}}\right).</me>
-                    Now, assume that <m>\lim_{n\to\infty}x_{n}</m> exists and is nonzero, and call it <m>s</m>.
-                    Then
-                    <me>\lim_{n\to\infty}x_{n+1} = \frac{1}{2}\left(\lim_{n\to\infty}x_{n} + \frac{a}{\lim_{n\to\infty}x_{n}}\right)</me>
-                    becomes
-                    <me>s = \frac{1}{2}\left(s + \frac{a}{s}\right)</me>
-                    which we can rearrange to get
-                    <me>s^{2} = \frac{1}{2}(s^{2} + a),</me>
-                    or just <m>s^{2} = a</m>.
-                    Hence <m>s = \pm\sqrt{a}</m>.
+                    We can go one step further for this algorithm.  If
+                    <m>x_{1},x_{2},\ldots,x_{n},\ldots</m> is the
+                    sequence we obtain using Newton's method for
+                    approximating <m>\sqrt{a}</m>, then as we saw
+                    earlier <me>x_{n+1} = \frac{1}{2}\left(x_{n} +
+                    \frac{a}{x_{n}}\right).</me> Now, assume that
+                    <m>\lim_{n\to\infty}x_{n}</m> exists and is
+                    nonzero, and call it <m>s</m>.  Then
+                    <me>\lim_{n\to\infty}x_{n+1} =
+                    \frac{1}{2}\left(\lim_{n\to\infty}x_{n} +
+                    \frac{a}{\lim_{n\to\infty}x_{n}}\right)</me>
+                    becomes <me>s = \frac{1}{2}\left(s +
+                    \frac{a}{s}\right)</me> which we can rearrange to
+                    get <me>s^{2} = \frac{1}{2}(s^{2} + a),</me> or
+                    just <m>s^{2} = a</m>.  Hence <m>s =
+                    \pm\sqrt{a}</m>.
                 </p>
             </solution>
         </example>
@@ -1521,20 +1604,26 @@
     <section xml:id="section-antiderivatives">
         <title>Antiderivatives</title>
         <p>
-            Suppose we're tracking a moving object, and through experimentation we know its acceleration to be equal to <quantity><mag>3</mag><unit base="meter"/><per base="second" exp="2"/></quantity> to the right.
-            Say we want to find the velocity of the mass at time <m>t</m>.
-            Then if we set <m>v(t)</m> equal to the velocity and <m>a(t)</m> equal to the acceleration, we know that
-            <me>v'(t) = a(t) = 3.</me>
-            Therefore <m>v(t)</m> is a function whose derivative is <m>3</m>.
-            So one possible choice for <m>v(t)</m> is <m>v(t) = 3t</m>.
-            This leads us to the definition of an <term>antiderivative</term>.
+            Suppose we're tracking a moving object, and through
+            experimentation we know its acceleration to be equal to
+            <quantity><mag>3</mag><unit base="meter"/><per
+            base="second" exp="2"/></quantity> to the right.  Say we
+            want to find the velocity of the mass at time <m>t</m>.
+            Then if we set <m>v(t)</m> equal to the velocity and
+            <m>a(t)</m> equal to the acceleration, we know that
+            <me>v'(t) = a(t) = 3.</me> Therefore <m>v(t)</m> is a
+            function whose derivative is <m>3</m>.  So one possible
+            choice for <m>v(t)</m> is <m>v(t) = 3t</m>.  This leads us
+            to the definition of an <term>antiderivative</term>.
         </p>
         <definition xml:id="definition-antiderivatives">
             <title>Antiderivatives</title>
             <idx><h>antiderivatives</h></idx>
             <statement>
                 <p>
-                    A function <m>F(x)</m> is called an antiderivative of the function <m>f(x)</m> if <m>F^{\prime}x) = f(x)</m> for all <m>x</m> in an interval <m>I</m>.
+                    A function <m>F(x)</m> is called an antiderivative
+                    of the function <m>f(x)</m> if <m>F^{\prime}x) =
+                    f(x)</m> for all <m>x</m> in an interval <m>I</m>.
                 </p>
             </statement>
         </definition>
@@ -1542,49 +1631,68 @@
             <title>Multiple antiderivatives</title>
             <statement>
                 <p>
-                    Find three different antiderivatives for <m>f(x) = \cos x</m>.
+                    Find three different antiderivatives for <m>f(x) =
+                    \cos x</m>.
                 </p>
             </statement>
             <solution>
                 <p>
-                    An antiderivative of <m>\cos x</m> is any function whose derivative is <m>\cos x</m>.
-                    So three antiderivatives could be
-                    <me>F_{1}(x) = \sin x, F_{2}(x) = \sin x + 4, F_{3}(x) = \sin x - 100.</me>
+                    An antiderivative of <m>\cos x</m> is any function
+                    whose derivative is <m>\cos x</m>.  So three
+                    antiderivatives could be <me>F_{1}(x) = \sin x,
+                    F_{2}(x) = \sin x + 4, F_{3}(x) = \sin x -
+                    100.</me>
                 </p>
             </solution>
         </example>
         <p>
-            From <xref ref="example-multiple-antiderivatives" text="type-global" /> we see that any function of the form <m>\sin x +C</m> is an antiderivative of <m>\cos x</m>.
-            In fact, this describes all possible antiderivatives of <m>\cos x</m>.
-            This suggests the following theorem.
+            From <xref ref="example-multiple-antiderivatives"
+            text="type-global" /> we see that any function of the form
+            <m>\sin x +C</m> is an antiderivative of <m>\cos x</m>.
+            In fact, this describes all possible antiderivatives of
+            <m>\cos x</m>.  This suggests the following theorem.
         </p>
         <theorem xml:id="theorem-general-antiderivatives">
-            <title>General Antiderivatives</title>
+            <title>General antiderivatives</title>
             <statement>
                 <p>
-                    Let <m>f(x)</m> be some function with antiderivative <m>F(x)</m> on some interval <m>I</m>.
-                    Then the most general antiderivative of <m>f(x)</m> is
-                    <me>F(x) + C</me>
-                    where <m>C</m> is an arbitrary constant.
+                    Let <m>f(x)</m> be some function with
+                    antiderivative <m>F(x)</m> on some interval
+                    <m>I</m>.  Then the most general antiderivative of
+                    <m>f(x)</m> is <me>F(x) + C</me> where <m>C</m> is
+                    an arbitrary constant.
                 </p>
             </statement>
             <proof>
                 <p>
-                    It might not seem like this statement requires a proof, but it does!
-                    We can check very easily that every function of the form <m>F(x)+C</m> is an antiderivative of <m>f(x)</m>, but how do we know every antiderivative takes this form?
-                    To prove this, let <m>G(x)</m> be an arbitrary antiderivative of <m>f(x)</m>.
-                    Then we need to show that <m>G(x) = F(x) + C</m>, or equivalently that <m>G(x) - F(x) = C</m>.
-                    We can do this by taking the derivative of <m>G(x) - F(x)</m> to get
+                    It might not seem like this statement requires a
+                    proof, but it does!  We can check very easily that
+                    every function of the form <m>F(x)+C</m> is an
+                    antiderivative of <m>f(x)</m>, but how do we know
+                    every antiderivative takes this form?  To prove
+                    this, let <m>G(x)</m> be an arbitrary
+                    antiderivative of <m>f(x)</m>.  Then we need to
+                    show that <m>G(x) = F(x) + C</m>, or equivalently
+                    that <m>G(x) - F(x) = C</m>.  We can do this by
+                    taking the derivative of <m>G(x) - F(x)</m> to get
                     <me>G'(x) - F^{\prime}x) = f(x) - f(x) = 0,</me>
-                    and so by <xref ref="theorem-zero-derivative-theorem" text="type-global" /> we know that <m>G(x) - F(x)</m> must be constant on <m>I</m>.
-                    Hence <m>G(x) - F(x) = C</m> for some constant <m>C</m>, or equivalently <m>G(x) = F(x)+C</m>.
-                    Therefore <em>every</em> antiderivative of <m>f(x)</m> can be written as <m>F(x) + C</m>.
+                    and so by <xref
+                    ref="theorem-zero-derivative-theorem"
+                    text="type-global" /> we know that <m>G(x) -
+                    F(x)</m> must be constant on <m>I</m>.  Hence
+                    <m>G(x) - F(x) = C</m> for some constant <m>C</m>,
+                    or equivalently <m>G(x) = F(x)+C</m>.  Therefore
+                    <em>every</em> antiderivative of <m>f(x)</m> can
+                    be written as <m>F(x) + C</m>.
                 </p>
             </proof>
         </theorem>
         <p>
-            It might seem superfluous, but typically when dealing with models requiring us to find antiderivatives we'll want to find the most general antiderivative somewhere along the way.
-            Moral of the story: <em>don't forget to add <m>C</m>.</em>
+            It might seem superfluous, but typically when dealing with
+            models requiring us to find antiderivatives we'll want to
+            find the most general antiderivative somewhere along the
+            way.  Moral of the story: <em>don't forget to add
+            <m>C</m>.</em>
         </p>
         <example xml:id="example-finding-antiderivatives">
             <title>Finding antiderivatives</title>
@@ -1603,10 +1711,19 @@
                 <p>
                     We have the following:
                     <ol>
-                        <li>The general antiderivative of <m>x^{3}</m> is <m>\frac{1}{4}x^{4}+C.</m></li>
-                        <li>The general antiderivative of <m>-\frac{1}{2}x^{\frac{5}{3}}</m> is <m>-\frac{1}{2}\frac{3}{8}x^{\frac{8}{3}}+C.</m></li>
-                        <li>The general antiderivative of <m>\sqrt{x} - 3x^{3} + x^{-2}</m> is <m>\frac{2}{3}x^{\frac{3}{2}} - \frac{3}{4}x^{4} - \frac{1}{x} + C</m>.</li>
-                        <li>The general antiderivative of <m>\sin x + \cos (5x) + e^{4x}</m> is <m>-\cos x + \frac{1}{5}\sin(5x) + \frac{1}{4}e^{4x} + C.</m></li>
+                        <li>The general antiderivative of <m>x^{3}</m>
+                        is <m>\frac{1}{4}x^{4}+C.</m></li>
+                        <li>The general antiderivative of
+                        <m>-\frac{1}{2}x^{\frac{5}{3}}</m> is
+                        <m>-\frac{1}{2}\frac{3}{8}x^{\frac{8}{3}}+C.</m></li>
+                        <li>The general antiderivative of <m>\sqrt{x}
+                        - 3x^{3} + x^{-2}</m> is
+                        <m>\frac{2}{3}x^{\frac{3}{2}} -
+                        \frac{3}{4}x^{4} - \frac{1}{x} + C</m>.</li>
+                        <li>The general antiderivative of <m>\sin x +
+                        \cos (5x) + e^{4x}</m> is <m>-\cos x +
+                        \frac{1}{5}\sin(5x) + \frac{1}{4}e^{4x} +
+                        C.</m></li>
                     </ol>
                 </p>
             </solution>
@@ -1615,26 +1732,39 @@
             <title>The antiderivative of <m>\frac{1}{x}</m></title>
             <statement>
                 <p>
-                    Find the general antiderivative of <m>f(x) = \frac{1}{x}</m>.
+                    Find the general antiderivative of <m>f(x) =
+                    \frac{1}{x}</m>.
                 </p>
             </statement>
             <solution>
                 <p>
-                    We have two cases we need to consider, since the domain of <m>f(x)</m> consists of two intervals.
-                    First, suppose that <m>x</m> is in <m>(0,\infty)</m>.
-                    Then we know that <m>\dv{}{x}\ln x = \frac{1}{x}</m>, so on this interval the most general antiderivative of <m>\frac{1}{x}</m> is <m>\ln x + C_{1}</m>.
+                    We have two cases we need to consider, since the
+                    domain of <m>f(x)</m> consists of two intervals.
+                    First, suppose that <m>x</m> is in
+                    <m>(0,\infty)</m>.  Then we know that
+                    <m>\dv{}{x}\ln x = \frac{1}{x}</m>, so on this
+                    interval the most general antiderivative of
+                    <m>\frac{1}{x}</m> is <m>\ln x + C_{1}</m>.
                 </p>
                 <p>
-                    Now let <m>x</m> be in <m>(-\infty,0)</m>.
-                    Then <m>\ln x</m> isn't defined here.
-                    However, we can write
-                    <me>\frac{1}{x} = -\frac{1}{-x},</me>
-                    and if <m>x &lt; 0</m> then <m>-x &gt; 0</m> and <m>\ln(-x)</m> is defined, and in fact
-                    <me>\dv{}{x}\ln(-x) = -\frac{1}{(-x)} = \frac{1}{x}.</me>
-                    So the most general antiderivative of <m>\frac{1}{x}</m> on <m>(-\infty,0)</m> is <m>\ln(-x) + C_{2}</m>.
-                    Putting this all together, we can say that the most general antiderivative of <m>f(x) = \frac{1}{x}</m> is given by
-                    <me>F(x) = \begin{cases} \ln x + C_{1} &amp; x &gt; 0 \\ \ln(-x) + C_{2} &amp; x &lt; 0\end{cases}.</me>
-                    If we know that we're only selecting values of <m>x</m> with the same sign, then we can just say that the antiderivative of <m>\frac{1}{x}</m> is <m>\ln|x| + C</m>.
+                    Now let <m>x</m> be in <m>(-\infty,0)</m>.  Then
+                    <m>\ln x</m> isn't defined here.  However, we can
+                    write <me>\frac{1}{x} = -\frac{1}{-x},</me> and if
+                    <m>x &lt; 0</m> then <m>-x &gt; 0</m> and
+                    <m>\ln(-x)</m> is defined, and in fact
+                    <me>\dv{}{x}\ln(-x) = -\frac{1}{(-x)} =
+                    \frac{1}{x}.</me> So the most general
+                    antiderivative of <m>\frac{1}{x}</m> on
+                    <m>(-\infty,0)</m> is <m>\ln(-x) + C_{2}</m>.
+                    Putting this all together, we can say that the
+                    most general antiderivative of <m>f(x) =
+                    \frac{1}{x}</m> is given by <me>F(x) =
+                    \begin{cases} \ln x + C_{1} &amp; x &gt; 0 \\
+                    \ln(-x) + C_{2} &amp; x &lt; 0\end{cases}.</me> If
+                    we know that we're only selecting values of
+                    <m>x</m> with the same sign, then we can just say
+                    that the antiderivative of <m>\frac{1}{x}</m> is
+                    <m>\ln|x| + C</m>.
                 </p>
             </solution>
         </example>
@@ -1642,26 +1772,35 @@
             <title>Antiderivatives involving secant</title>
             <statement>
                 <p>
-                    Find the general antiderivatives of <m>\sec^{2}t</m> and <m>-2\sec3t\tan3t</m>.
+                    Find the general antiderivatives of
+                    <m>\sec^{2}t</m> and <m>-2\sec3t\tan3t</m>.
                 </p>
             </statement>
             <solution>
                 <p>
-                    The first antiderivative isn't too hard; it's just <m>\tan t+C</m>.
-                    The second is a little more complicated but still not too bad.
-                    Since <m>\dv{}{t}\sec t = \sec t\tan t</m>, a good guess for an antiderivative of <m>-2\sec3t\tan3t</m> would be <m>-2\sec3t.</m>
-                    However, the derivative of this is <m>-6\sec3t\tan3t</m>, so we're off by a factor of <m>3</m>.
-                    So we just need to divide our guess by <m>3</m> to correct for this.
-                    Hence the general antiderivative of <m>-2\sec3t\tan3t</m> is <m>-\frac{2}{3}\sec3t</m>.
+                    The first antiderivative isn't too hard; it's just
+                    <m>\tan t+C</m>.  The second is a little more
+                    complicated but still not too bad.  Since
+                    <m>\dv{}{t}\sec t = \sec t\tan t</m>, a good guess
+                    for an antiderivative of <m>-2\sec3t\tan3t</m>
+                    would be <m>-2\sec3t.</m> However, the derivative
+                    of this is <m>-6\sec3t\tan3t</m>, so we're off by
+                    a factor of <m>3</m>.  So we just need to divide
+                    our guess by <m>3</m> to correct for this.  Hence
+                    the general antiderivative of
+                    <m>-2\sec3t\tan3t</m> is
+                    <m>-\frac{2}{3}\sec3t</m>.
                 </p>
             </solution>
         </example>
         <theorem xml:id="theorem-antidifferentiation-formulas">
-            <title>Antidifferentiation Formulas</title>
+            <title>Antidifferentiation formulas</title>
             <statement>
                 <p>
-                    Let <m>F(x)</m> and <m>G(x)</m> denote antiderivatives of <m>f(x)</m> and <m>g(x)</m>, and let <m>c</m> be a constant.
-                    Then we have the following:
+                    Let <m>F(x)</m> and <m>G(x)</m> denote
+                    antiderivatives of <m>f(x)</m> and <m>g(x)</m>,
+                    and let <m>c</m> be a constant.  Then we have the
+                    following:
                     <table xml:id="table-antiderivatives">
                         <title>Particular antiderivatives of functions</title>
                         <tabular halign="center" top="major">
@@ -1690,12 +1829,16 @@
                                 <cell><m>\frac{1}{c}e^{cx}</m></cell>
                             </row>
                             <row bottom="major">
-                                <cell><m>\sin cx, \cos cx, c\neq 0</m></cell>
-                                <cell><m>-\frac{1}{c}\cos cx, \frac{1}{c}\sin cx</m></cell>
+                                <cell><m>\sin cx, \cos cx, c\neq
+                                0</m></cell>
+                                <cell><m>-\frac{1}{c}\cos cx,
+                                \frac{1}{c}\sin cx</m></cell>
                             </row>
                         </tabular>
                     </table>
-                    These are by no means the only antiderivatives that you will need to deal with, but they are probably the most common.
+                    These are by no means the only antiderivatives
+                    that you will need to deal with, but they are
+                    probably the most common.
                 </p>
             </statement>
         </theorem>
@@ -1703,35 +1846,52 @@
             <title>Falling objects</title>
             <statement>
                 <p>
-                    An object is dropped from a height of <quantity><mag>100</mag><unit base="meter"/></quantity> above sea level and falls with downward acceleration equal to <quantity><mag>9.8</mag><unit base="meter"/><per base="second" exp="2"/></quantity>.
-                    Find the height <m>h(t)</m> of the object <m>t</m> seconds after it's dropped.
+                    An object is dropped from a height of
+                    <quantity><mag>100</mag><unit
+                    base="meter"/></quantity> above sea level and
+                    falls with downward acceleration equal to
+                    <quantity><mag>9.8</mag><unit base="meter"/><per
+                    base="second" exp="2"/></quantity>.  Find the
+                    height <m>h(t)</m> of the object <m>t</m> seconds
+                    after it's dropped.
                 </p>
             </statement>
             <solution>
                 <p>
-                    Take downward to be the negative direction and sea level to be <m>h=0</m>.
-                    Since acceleration is the second derivative of position, then the position (i.e. height) of the object should be the second <em>antiderivative</em> of acceleration.
-                    At this step, it's tempting to say that since <m>h''(t) = -9.8</m>, we have
-                    <me>h^{\prime}t) = -9.8t\quad\text{and}\quad h(t) = -4.9 t^{2}</me>.
-                    And indeed, <m>-4.9t^{2}</m> is a function whose second derivative is <m>-9.8</m>.
-                    However, we have a slight problem here.
-                    We know that <m>h(0) = 100</m> and <m>h^{\prime}0) = 0</m>.
-                    If <m>h(t) = -4.9t^{2}</m>, then it's impossible for <m>h(0)</m> to equal <m>100</m>.
-                    The problem here is we forgot about the arbitrary constants.
+                    Take downward to be the negative direction and sea
+                    level to be <m>h=0</m>.  Since acceleration is the
+                    second derivative of position, then the position
+                    (i.e. height) of the object should be the second
+                    <em>antiderivative</em> of acceleration.  At this
+                    step, it's tempting to say that since <m>h''(t) =
+                    -9.8</m>, we have <me>h^{\prime}t) =
+                    -9.8t\quad\text{and}\quad h(t) = -4.9 t^{2}</me>.
+                    And indeed, <m>-4.9t^{2}</m> is a function whose
+                    second derivative is <m>-9.8</m>.  However, we
+                    have a slight problem here.  We know that <m>h(0)
+                    = 100</m> and <m>h^{\prime}0) = 0</m>.  If <m>h(t)
+                    = -4.9t^{2}</m>, then it's impossible for
+                    <m>h(0)</m> to equal <m>100</m>.  The problem here
+                    is we forgot about the arbitrary constants.
                 </p>
                 <p>
-                    To get an accurate expression for <m>h(t)</m>, we go back to <m>h''(t) = -9.8</m>.
-                    Then <m>h^{\prime}t) = -9.8t+C_{1}</m> for some constant <m>C_{1}</m>.
-                    Since <m>h^{\prime}0) = 0</m>, this forces <m>C_{1} = 0</m>.
-                    So we have <m>h^{\prime}t) = -9.8t</m>.
-                    Now we antidifferentiate one more time to get <m>h(t) = -4.9t^{2} + C_{2}</m>.
-                    Since <m>h(0) = 100</m>, this forces <m>C_{2} = 100</m>.
-                    So <me>h(t) = -4.9t^{2} + 100</me>.
+                    To get an accurate expression for <m>h(t)</m>, we
+                    go back to <m>h''(t) = -9.8</m>.  Then
+                    <m>h^{\prime}t) = -9.8t+C_{1}</m> for some
+                    constant <m>C_{1}</m>.  Since <m>h^{\prime}0) =
+                    0</m>, this forces <m>C_{1} = 0</m>.  So we have
+                    <m>h^{\prime}t) = -9.8t</m>.  Now we
+                    antidifferentiate one more time to get <m>h(t) =
+                    -4.9t^{2} + C_{2}</m>.  Since <m>h(0) = 100</m>,
+                    this forces <m>C_{2} = 100</m>.  So <me>h(t) =
+                    -4.9t^{2} + 100</me>.
                 </p>
             </solution>
         </example>
         <p>
-            Some functions that do not have an obvious antiderivative can be simplified through algebra into a form that is perhaps more helpful.
+            Some functions that do not have an obvious antiderivative
+            can be simplified through algebra into a form that is
+            perhaps more helpful.
         </p>
         <example xml:id="example-a-tricky-antiderivative">
             <title>A tricky antiderivative</title>
@@ -1743,28 +1903,48 @@
             </statement>
             <solution>
                 <p>
-                    It's tough to think of a function whose derivative is <m>f(x)</m>, though since the denominator is <m>1+x^{2}</m> it seems likely that this antiderivative will involve <m>\tan^{-1}x</m> in some way.
-                    In order to actually find the antiderivative, we'll rewrite <m>f(x)</m> into a more convenient form.
-                    First, note that the numerator is very close to the denominator, which means we can almost cancel it out.
-                    So we'll split up the numerator as follows:
-                    <me>\frac{2+x^{2}}{1+x^{2}} = \frac{1+(1+x^{2})}{1+x^{2}} = \frac{1}{1+x^{2}} + 1.</me>
+                    It's tough to think of a function whose derivative
+                    is <m>f(x)</m>, though since the denominator is
+                    <m>1+x^{2}</m> it seems likely that this
+                    antiderivative will involve <m>\tan^{-1}x</m> in
+                    some way.  In order to actually find the
+                    antiderivative, we'll rewrite <m>f(x)</m> into a
+                    more convenient form.  First, note that the
+                    numerator is very close to the denominator, which
+                    means we can almost cancel it out.  So we'll split
+                    up the numerator as follows:
+                    <me>\frac{2+x^{2}}{1+x^{2}} =
+                    \frac{1+(1+x^{2})}{1+x^{2}} = \frac{1}{1+x^{2}} +
+                    1.</me>
                 </p>
                 <p>
-                    We can find the antiderivative of this term by term, so the most general antiderivative of <m>f(x)</m> is
-                    <me>F(x) = \tan^{-1}x + x + C.</me>
+                    We can find the antiderivative of this term by
+                    term, so the most general antiderivative of
+                    <m>f(x)</m> is <me>F(x) = \tan^{-1}x + x + C.</me>
                 </p>
             </solution>
         </example>
         <p>
-            At this point, it's natural to think about what an antiderivative means geometrically since the derivative of a function has such a nice interpretation.
-            One approach to this is to think about <term>net change</term> of the antiderivative.
-            Let <m>F(x)</m> be an antiderivative of <m>f(x)</m> on some interval containing <m>a,b</m>.
-            The net change of <m>F(x)</m> from <m>x=a</m> to <m>x=b</m> is given by
-            <me>F(b) - F(a).</me>
-            Now, <m>F^{\prime}x) = f(x)</m> represents instantaneous rate of change, not net change.
-            However, if we can somehow add these instantaneous changes from <m>x=a</m> to <m>x=b</m>, they should accumulate until they give the net change of <m>F</m> from <m>a</m> to <m>b</m>.
-            Graphically, adding these instantaneous rates of change looks like it's giving us the <em>area</em> under <m>f(x)</m>, which suggests the following geometric interpretation: <em>the area under of <m>f(x)</m> from <m>x=a</m> to <m>x=b</m> is just the net change of an antiderivative <m>F(x)</m> from <m>x=a</m> to <m>x=b</m>.</em>
-            Much of the next chapter is devoted to making this idea precise.
+            At this point, it's natural to think about what an
+            antiderivative means geometrically since the derivative of
+            a function has such a nice interpretation.  One approach
+            to this is to think about <term>net change</term> of the
+            antiderivative.  Let <m>F(x)</m> be an antiderivative of
+            <m>f(x)</m> on some interval containing <m>a,b</m>.  The
+            net change of <m>F(x)</m> from <m>x=a</m> to <m>x=b</m> is
+            given by <me>F(b) - F(a).</me> Now, <m>F^{\prime}x) =
+            f(x)</m> represents instantaneous rate of change, not net
+            change.  However, if we can somehow add these
+            instantaneous changes from <m>x=a</m> to <m>x=b</m>, they
+            should accumulate until they give the net change of
+            <m>F</m> from <m>a</m> to <m>b</m>.  Graphically, adding
+            these instantaneous rates of change looks like it's giving
+            us the <em>area</em> under <m>f(x)</m>, which suggests the
+            following geometric interpretation: <em>the area under of
+            <m>f(x)</m> from <m>x=a</m> to <m>x=b</m> is just the net
+            change of an antiderivative <m>F(x)</m> from <m>x=a</m> to
+            <m>x=b</m>.</em> Much of the next chapter is devoted to
+            making this idea precise.
         </p>
     </section>
 </chapter>
