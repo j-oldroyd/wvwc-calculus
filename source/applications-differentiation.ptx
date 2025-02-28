@@ -4,22 +4,27 @@
     <title>Applications of Differentiation</title>
     <introduction>
         <p>
-            If a function is differentiable, then its derivative gives us information about how that function is changing.
-            This information is important in many different applications of calculus.
+            If a function is differentiable, then its derivative gives
+            us information about how that function is changing.  This
+            information is important in many different applications of
+            calculus.
         </p>
     </introduction>
     <section xml:id="section-linear-approximations">
         <title>Linear approximations</title>
 
         <p>
-            Suppose we graph the tangent line to <m>y=\sqrt{x}</m> at <m>x=4</m>.
-            The equation of this line will be
+          Suppose we graph the tangent line to
+          <m>y=\sqrt{x}</m> at
+            <m>x=4</m>.  The equation of this line will be
             <me>
                 y-2 = \frac{x-4}{4}\quad\text{or}\quad y= 2 + \frac{x-4}{4}
-            </me>.
-            If we look at the tangent line next to the graph, we'll see that the line is very close to the graph of <m>y=\sqrt{x}</m> if <m>x</m> is very close to <m>4</m>.
-            So we can use the equation of the tangent line to approximate <m>y=\sqrt{x}</m> when <m>x</m> is near <m>4</m>.
-            For example, we can say that
+            </me>.  If we look at the tangent line next to the graph,
+            we'll see that the line is very close to the graph
+            of <m>y=\sqrt{x}</m> if <m>x</m> is very close
+            to <m>4</m>.  So we can use the equation of the tangent
+            line to approximate <m>y=\sqrt{x}</m> when <m>x</m> is
+            near <m>4</m>.  For example, we can say that
             <me>
                 \sqrt{4.2} \approx 2 + \frac{4.2 - 4}{4} = 2.05
             </me>.
@@ -32,8 +37,11 @@
             <idx><h>derivative</h><h>linear approximation</h></idx>
             <statement>
                 <p>
-                    Let <m>f(x)</m> be a function that is differentiable at <m>x=a</m>.
-                    The linear approximation (or <term>linearization</term>) of <m>f</m> at <m>a</m> is the function <m>L(x)</m> given by
+                    Let <m>f(x)</m> be a function that is
+                    differentiable at <m>x=a</m>.  The linear
+                    approximation (or <term>linearization</term>)
+                    of <m>f</m> at <m>a</m> is the
+                    function <m>L(x)</m> given by
                     <me>
                         L(x) = f(a) + f^\prime(a)(x-a).
                     </me>
@@ -42,7 +50,9 @@
         </definition>
 
         <p>
-            The formula of the linear approximation to a function <m>f</m> at <m>a</m> is nothing more than the equation of the tangent line to <m>f</m> at <m>a</m>.
+            The formula of the linear approximation to a
+            function <m>f</m> at <m>a</m> is nothing more than the
+            equation of the tangent line to <m>f</m> at <m>a</m>.
         </p>
 
         <example xml:id="example-linear-approximation-of-sine">
@@ -50,7 +60,9 @@
 
             <statement>
                 <p>
-                    Find the linear approximation of <m>f(\theta) = \sin\theta</m> at <m>\theta=0</m> and use this to estimate <m>\sin(-.02)</m>.
+                    Find the linear approximation of <m>f(\theta) =
+                    \sin\theta</m> at <m>\theta=0</m> and use this to
+                    estimate <m>\sin(-.02)</m>.
                 </p>
             </statement>
 
@@ -58,7 +70,8 @@
                 <p>
                     The linear approximation is given by
                     <me>
-                        L(\theta) = f(0) + f'(0)(\theta - 0) = \sin0 + \cos0 (\theta - 0)
+                        L(\theta) = f(0) + f'(0)(\theta - 0) = \sin0 +
+                        \cos0 (\theta - 0)
                     </me>,
                     so <m>L(\theta) = \theta</m>.
                     Therefore
@@ -81,10 +94,16 @@
 
             <solution>
                 <p>
-                    We want to estimate this using a linear approximation, and we want to make sure the linear approximation is easy to set up.
-                    This means we want to base the linear approximation at a value of <m>a</m> that both tangent and its derivative are relatively easy to compute at, and is also close to <m>\pi+\frac{3}{49}</m>.
-                    So we'll pick <m>a=\pi</m> and find the linear approximation to <m>\tan x</m> at <m>a = \pi</m>: Set <m>f(x) = \tan x</m>.
-                    Then
+                    We want to estimate this using a linear
+                    approximation, and we want to make sure the linear
+                    approximation is easy to set up.  This means we
+                    want to base the linear approximation at a value
+                    of <m>a</m> that both tangent and its derivative
+                    are relatively easy to compute at, and is also
+                    close to <m>\pi+\frac{3}{49}</m>.  So we'll
+                    pick <m>a=\pi</m> and find the linear
+                    approximation to <m>\tan x</m> at <m>a = \pi</m>:
+                    Set <m>f(x) = \tan x</m>.  Then
                     <md>
                         <mrow>L(x) &amp; = f(a) + f^\prime(a)(x-a)</mrow>
                         <mrow> &amp; = \tan\pi + \sec^{2}(\pi)(x-\pi) </mrow>
@@ -92,32 +111,44 @@
                     </md>.
                     So
                     <me>
-                        \tan(\pi+\frac{3}{49}) \approx (\pi+\frac{3}{49}) - \pi = \frac{3}{49}
+                        \tan(\pi+\frac{3}{49}) \approx
+                        (\pi+\frac{3}{49}) - \pi = \frac{3}{49}
                     </me>.
                 </p>
             </solution>
         </example>
 
         <example xml:id="example-estimating-the-population-of-the-united-states-in-2020">
-            <title>Estimating the population of the United States in 2020</title>
+            <title>Estimating the population of the United States in
+            2020</title>
 
             <statement>
                 <p>
-                    Use the differential equation from <xref ref="example-a-differential-equation" text="type-global" /> and the fact that the current population of the US is about 323.1 million to estimate the population of the US in 2020.
+                    Use the differential equation from
+                    <xref ref="example-a-differential-equation"
+                    text="type-global" /> and the fact that the
+                    current population of the US is about 323.1
+                    million to estimate the population of the US in
+                    2020.
                 </p>
             </statement>
 
             <solution>
                 <p>
-                    Recall that <m>P(t)</m> in <xref ref="example-a-differential-equation" text="type-global" /> represented the population of the US (in millions) <m>t</m> years after 1990.
-                    To estimate the population in 2020, we want to find the linearization of <m>P</m> at <m>t = 27</m>.
-                    This is given by
+                    Recall that <m>P(t)</m> in
+                    <xref ref="example-a-differential-equation"
+                    text="type-global" /> represented the population
+                    of the US (in millions) <m>t</m> years after 1990.
+                    To estimate the population in 2020, we want to
+                    find the linearization of <m>P</m> at <m>t =
+                    27</m>.  This is given by
                     <me>
                         L(t) = P(27) + P'(27)(t - 27)
                     </me>.
                     Since <m>P(27) = 323.1</m> and
                     <me>
-                        P^\prime(27) = \frac{1}{23500}P(532-P) = \frac{1}{23500}(323.1)(532-323.1) = 2.9
+                        P^\prime(27) = \frac{1}{23500}P(532-P) =
+                        \frac{1}{23500}(323.1)(532-323.1) = 2.9
                     </me>,
                     we have
                     <me>
@@ -140,28 +171,39 @@
 
             <statement>
                 <p>
-                    The radius of a sphere is increasing at a rate of <quantity><mag>4</mag><unit base="meter" prefix="milli"/><per base="second"/></quantity>.
-                    How fast is the volume increasing when the radius is <quantity><mag>13</mag><unit base="meter" prefix="milli"/></quantity>?
+                    The radius of a sphere is increasing at a rate
+                    of <quantity><mag>4</mag><unit base="meter"
+                    prefix="milli"/><per base="second"/></quantity>.
+                    How fast is the volume increasing when the radius
+                    is <quantity><mag>13</mag><unit base="meter"
+                    prefix="milli"/></quantity>?
                 </p>
             </statement>
 
             <solution>
                 <p>
-                    First, let's assign names to all of the changing quantities in this problem:
+                    First, let's assign names to all of the changing
+                    quantities in this problem:
                     <md>
                         <mrow>V &amp; = \text{volume} </mrow>
                         <mrow>r &amp; = \text{radius} </mrow>
-                    </md>.
-                    Note that we're considering <m>V</m> and <m>r</m> to be functions of time, i.e.
-                    <m>V = V(t)</m> and <m>r=r(t)</m>, where <m>t</m> is in seconds.
-                    Then we're given that <m>r' = 4</m> and we need to find <m>V'</m> when <m>r=13</m>.
-                    To do this, we had better find some relationship between <m>V</m> and <m>r</m>.
-                    We can find this by looking at the volume formula for a sphere:
+                    </md>.  Note that we're considering <m>V</m>
+                    and <m>r</m> to be functions of time, i.e.
+                    <m>V = V(t)</m> and <m>r=r(t)</m>, where <m>t</m>
+                    is in seconds.  Then we're given that <m>r' =
+                    4</m> and we need to find <m>V'</m>
+                    when <m>r=13</m>.  To do this, we had better find
+                    some relationship between <m>V</m> and <m>r</m>.
+                    We can find this by looking at the volume formula
+                    for a sphere:
                     <me>
                         V = \frac{4}{3}\pi r^{3}
-                    </me>.
-                    This equation relates <m>r</m> and <m>V</m>, and if we take the derivatives of both sides with respect to time <m>t</m> (using implicit differentiation) then we get an equation relating <m>V'</m> and <m>r'</m>.
-                    So let's do that:
+                    </me>.  This equation relates <m>r</m>
+                    and <m>V</m>, and if we take the derivatives of
+                    both sides with respect to time <m>t</m> (using
+                    implicit differentiation) then we get an equation
+                    relating <m>V'</m> and <m>r'</m>.  So let's do
+                    that:
                     <me>
                         V' = 4\pi r^{2}r'
                     </me>
@@ -170,15 +212,22 @@
                         V' = 4\pi(13^{2})(4) = 2704\pi
                     </me>.
 
-                    So the volume is increasing at a rate of <quantity><mag>2704\pi</mag><unit base="meter" prefix="milli" exp="3"/><per base="second"/></quantity>.
+                    So the volume is increasing at a rate
+                    of <quantity><mag>2704\pi</mag><unit base="meter"
+                    prefix="milli"
+                    exp="3"/><per base="second"/></quantity>.
                 </p>
             </solution>
         </example>
 
         <p>
-            Note that we <em>never</em> found what <m>V(t)</m> and <m>r(t)</m> were in <xref ref="example-changing-volume-on-a-sphere" text="type-global" />, but we didn't need to.
-            All we needed to find was a relationship between the two changing quantities, i.e.
-            the two derivatives, to answer the question.
+            Note that we <em>never</em> found what <m>V(t)</m>
+            and <m>r(t)</m> were in
+            <xref ref="example-changing-volume-on-a-sphere"
+            text="type-global" />, but we didn't need to.  All we
+            needed to find was a relationship between the two changing
+            quantities, i.e.  the two derivatives, to answer the
+            question.
         </p>
 
         <example xml:id="example-a-tank-problem">
@@ -186,40 +235,69 @@
 
             <statement>
                 <p>
-                    Water is leaking out of a conical tank at a rate of <quantity><mag>10000</mag><unit base="meter" prefix="centi"/><per base="minute"/></quantity> while water is being pumped into the tank at some (unknown) constant rate.
-                    The tank has a height of <quantity><mag>6</mag><unit base="meter"/></quantity> and the diameter of the top is <quantity><mag>4</mag><unit base="meter"/></quantity>.
-                    If the water level is rising at a rate of <quantity><mag>20</mag><unit base="meter" prefix="centi"/><per base="minute"/></quantity> when the height of the water is <quantity><mag>2</mag><unit base="meter"/></quantity>, what is the rate at which water is being poured into the tank?
+                    Water is leaking out of a conical tank at a rate
+                    of <quantity><mag>10000</mag><unit base="meter"
+                    prefix="centi"/><per base="minute"/></quantity>
+                    while water is being pumped into the tank at some
+                    (unknown) constant rate.  The tank has a height
+                    of <quantity><mag>6</mag><unit base="meter"/></quantity>
+                    and the diameter of the top
+                    is <quantity><mag>4</mag><unit base="meter"/></quantity>.
+                    If the water level is rising at a rate
+                    of <quantity><mag>20</mag><unit base="meter"
+                    prefix="centi"/><per base="minute"/></quantity>
+                    when the height of the water
+                    is <quantity><mag>2</mag><unit base="meter"/></quantity>,
+                    what is the rate at which water is being poured
+                    into the tank?
                 </p>
             </statement>
 
             <solution>
                 <p>
-                    We have a <em>lot</em> of information to process here, so we'll take things a step at a time.
-                    The changing quantities are
+                    We have a <em>lot</em> of information to process
+                    here, so we'll take things a step at a time.  The
+                    changing quantities are
                     <md>
                         <mrow>h(t) &amp; = \text{height of water} </mrow>
                         <mrow>r(t) &amp; = \text{radius of water} </mrow>
                         <mrow>V(t) &amp; = \text{volume of water} </mrow>
                     </md>
-                    where <m>t</m> is in minutes.
-                    We need to find the rate at which water is entering the tank, so let's call this mystery number <m>C</m>.
-                    Then all we know about <m>C</m> is that it's related to the rate that the volume is changing.
-                    In particular, we should have <m>V' = C - 10000</m>.
-                    So to find <m>C</m> we need to find <m>V'</m>, which means we need to set up a relationship between <m>V</m> and the other changing quantities to determine how exactly <m>V</m> is changing, using the fact that <m>h' = 20</m> when <m>h=200</m> (after converting to centimeters).
+                    where <m>t</m> is in minutes.  We need to find the
+                    rate at which water is entering the tank, so let's
+                    call this mystery number <m>C</m>.  Then all we
+                    know about <m>C</m> is that it's related to the
+                    rate that the volume is changing.  In particular,
+                    we should have <m>V' = C - 10000</m>.  So to
+                    find <m>C</m> we need to find <m>V'</m>, which
+                    means we need to set up a relationship
+                    between <m>V</m> and the other changing quantities
+                    to determine how exactly <m>V</m> is changing,
+                    using the fact that <m>h' = 20</m>
+                    when <m>h=200</m> (after converting to
+                    centimeters).
                 </p>
 
                 <p>
-                    Using the fact that the water is in a conical tank, we can use the formula for the volume of a cone to say that <m>V = \frac{1}{3}\pi r^{2}h</m>.
-                    If we differentiate both sides with respect to <m>t</m>, then we get
+                    Using the fact that the water is in a conical
+                    tank, we can use the formula for the volume of a
+                    cone to say that <m>V = \frac{1}{3}\pi r^{2}h</m>.
+                    If we differentiate both sides with respect
+                    to <m>t</m>, then we get
                     <me>
                         V' = \frac{1}{3}\pi (2rr'h + r^{2}h')
-                    </me>.
-                    Unfortunately, we don't have any information on <m>r</m> or <m>r'</m> that we can use, just information on <m>h</m> and <m>h'</m>.
+                    </me>.  Unfortunately, we don't have any
+                    information on <m>r</m> or <m>r'</m> that we can
+                    use, just information on <m>h</m> and <m>h'</m>.
                     So we need to get <m>r</m> in terms of <m>h</m>.
-                    By similar triangles, we can say that <m>\frac{r}{h} = \frac{200}{600} = \frac{1}{3}</m>, and so <m>r = \frac{h}{3}</m> and likewise <m>r' = \frac{h'}{3}</m>.
-                    Hence
+                    By similar triangles, we can say
+                    that <m>\frac{r}{h} = \frac{200}{600} =
+                    \frac{1}{3}</m>, and so <m>r = \frac{h}{3}</m> and
+                    likewise <m>r' = \frac{h'}{3}</m>.  Hence
                     <me>
-                        V' = \frac{1}{3}\pi (2rr'h + r^{2}h') = \frac{1}{3}\pi \left(2\frac{h^{2}h'}{9} + \frac{h^{2}h'}{9}\right)
+                        V' = \frac{1}{3}\pi (2rr'h + r^{2}h') =
+                        \frac{1}{3}\pi \left(2\frac{h^{2}h'}{9} +
+                        \frac{h^{2}h'}{9}\right)
                     </me>
                     which boils down to
                     <me>
@@ -233,9 +311,14 @@
                     <me>
                         C = V' + 10000 = \frac{800000\pi}{9} + 10000,
                     </me>
-
-                    or just <quantity><mag>289252.68</mag><unit base="meter" prefix="centi" exp="3"/><per base="minute"/></quantity>.
-                    In terms of meters this is <quantity><mag>.29</mag><unit base="meter" exp="3"/><per base="minute"/></quantity>, which perhaps looks a bit more reasonable.
+                    or
+                    just <quantity><mag>289252.68</mag><unit base="meter"
+                    prefix="centi"
+                    exp="3"/><per base="minute"/></quantity>.  In
+                    terms of meters this
+                    is <quantity><mag>.29</mag><unit base="meter"
+                    exp="3"/><per base="minute"/></quantity>, which
+                    perhaps looks a bit more reasonable.
                 </p>
             </solution>
         </example>
@@ -244,34 +327,52 @@
     <section xml:id="section-l-hospital-s-rule">
         <title>L'Hospital's Rule</title>
         <p>
-            Consider the important limit <m>\lim_{x\to0}\frac{\sin x}{x}</m>.
-            If we try to plug in <m>x=0</m>, we get <m>\frac{0}{0}</m>, which is undefined.
-            However, we can prove using geometry that the limit is <m>1</m>.
-            As another example, consider <m>\lim_{x\to\infty}\frac{1-x^{3}}{4x^{3}}</m>.
-            Once again, if we try to plug the limit in we get an expression of the form <m>\frac{-\infty}{\infty}</m>.
-            However, the limit is just <m>-\frac{1}{4}</m>, which we can find using algebra.
+            Consider the important limit <m>\lim_{x\to0}\frac{\sin
+            x}{x}</m>.  If we try to plug in <m>x=0</m>, we
+            get <m>\frac{0}{0}</m>, which is undefined.  However, we
+            can prove using geometry that the limit is <m>1</m>.  As
+            another example,
+            consider <m>\lim_{x\to\infty}\frac{1-x^{3}}{4x^{3}}</m>.
+            Once again, if we try to plug the limit in we get an
+            expression of the form <m>\frac{-\infty}{\infty}</m>.
+            However, the limit is just <m>-\frac{1}{4}</m>, which we
+            can find using algebra.
         </p>
         <p>
-            Limits of the form <m>\frac{0}{0}</m> or <m>\frac{\infty}{\infty}</m> are known as <term>indeterminate forms</term>.
-            There is no restriction whatsoever on what value a limit involving an indeterminate form may take, or even that it has to exist at all.
+            Limits of the form <m>\frac{0}{0}</m>
+            or <m>\frac{\infty}{\infty}</m> are known
+            as <term>indeterminate forms</term>.  There is no
+            restriction whatsoever on what value a limit involving an
+            indeterminate form may take, or even that it has to exist
+            at all.
         </p>
         <example xml:id="example-different-indeterminate-forms">
             <title>Different indeterminate forms</title>
             <statement>
                 <p>
-                    Find <m>\frac{\infty}{\infty}</m> indeterminate forms that, respectively, evaluate to <m>1, 0</m> and do not exist.
+                    Find <m>\frac{\infty}{\infty}</m> indeterminate
+                    forms that, respectively, evaluate to <m>1, 0</m>
+                    and do not exist.
                 </p>
             </statement>
             <solution>
                 <p>
-                    Let <m>f(x) = \frac{1-x}{3-x}</m>, <m>g(x) = \frac{1+x^{4}}{1+x^{3}}</m> and <m>h(x) = \frac{\ln x}{\cot x}</m>.
-                    Then <m>\lim_{x\to\infty}f(x), \lim_{x\to\infty}g(x)</m> and <m>\lim_{x\to0^{+}}h(x)</m> are all <m>\frac{\infty}{\infty}</m> indeterminate forms.
-                    The first evaluates to <m>1</m>, the second does not exist (it's <m>\infty</m>) while the third appears to be equal to <m>0</m>.
+                    Let <m>f(x) = \frac{1-x}{3-x}</m>, <m>g(x) =
+                    \frac{1+x^{4}}{1+x^{3}}</m> and <m>h(x) =
+                    \frac{\ln x}{\cot x}</m>.
+                    Then <m>\lim_{x\to\infty}f(x),
+                    \lim_{x\to\infty}g(x)</m>
+                    and <m>\lim_{x\to0^{+}}h(x)</m> are
+                    all <m>\frac{\infty}{\infty}</m> indeterminate
+                    forms.  The first evaluates to <m>1</m>, the
+                    second does not exist (it's <m>\infty</m>) while
+                    the third appears to be equal to <m>0</m>.
                 </p>
             </solution>
         </example>
         <p>
-            The goal of this section is to determine a method that can help us evaluate limits involving indeterminate forms.
+            The goal of this section is to determine a method that can
+            help us evaluate limits involving indeterminate forms.
             This method is called <term>L'Hospital's Rule</term>.
         </p>
         <theorem xml:id="theorem-l-hospital-s-rule">
@@ -279,15 +380,22 @@
             <idx>L'Hospital's Rule</idx>
             <statement>
                 <p>
-                    Let <m>f(x)</m> and <m>g(x)</m> be differentiable functions.
-                    If <m>\lim_{x\to a}\frac{f(x)}{g(x)}</m> is either one of the indeterminate forms <m>\frac{0}{0}</m> or <m>\frac{\infty}{\infty}</m>, then
-                    <me>\lim_{x\to a}\frac{f(x)}{g(x)} = \lim_{x\to a}\frac{f^{\prime}x)}{g'(x)}</me>
-                    if the limit on the right exists or is <m>\pm\infty</m>.
+                    Let <m>f(x)</m> and <m>g(x)</m> be differentiable
+                    functions.  If <m>\lim_{x\to
+                    a}\frac{f(x)}{g(x)}</m> is either one of the
+                    indeterminate forms <m>\frac{0}{0}</m>
+                    or <m>\frac{\infty}{\infty}</m>, then
+                    <me>
+                      \lim_{x\to a}\frac{f(x)}{g(x)}
+                      = \lim_{x\to a}\frac{f^{\prime}x)}{g'(x)}
+                    </me> if the limit on
+                    the right exists or is <m>\pm\infty</m>.
                 </p>
             </statement>
         </theorem>
         <p>
-            It's important to note that L'Hospital's Rule does not necessarily ask you to use the quotient rule!
+            It's important to note that L'Hospital's Rule does not
+            necessarily ask you to use the quotient rule!
         </p>
         <example xml:id="example-using-l-hospital-s-rule">
             <title>Using L'Hospital's Rule</title>
@@ -299,8 +407,11 @@
             </statement>
             <solution>
                 <p>
-                    We saw in <xref ref="example-different-indeterminate-forms" text="type-global" /> that this limit gives us the indeterminate form <m>\frac{\infty}{\infty}</m>, so L'Hospital's Rule applies.
-                    Hence
+                    We saw in
+                    <xref ref="example-different-indeterminate-forms"
+                    text="type-global" /> that this limit gives us the
+                    indeterminate form <m>\frac{\infty}{\infty}</m>,
+                    so L'Hospital's Rule applies.  Hence
                     <md>
                         <mrow>\lim_{x\to0^{+}}\frac{\ln x}{\cot x} &amp; = \lim_{x\to0^{+}}\frac{1/x}{-\csc^{2}x} </mrow>
                         <mrow> &amp; = \lim_{x\to0^{+}}\left(-\frac{\sin x}{x}\sin x\right) </mrow>
@@ -317,20 +428,25 @@
             <title>Exponential and polynomial growth</title>
             <statement>
                 <p>
-                    Let <m>f(x) = ax^{2} + bx + c</m> and let <m>g(x) = e^{x}</m>, where <m>a,b,c</m> are arbitrary constants.
-                    Find <m>\lim_{x\to\infty}\frac{ax^{2} + bx + c}{e^{x}}</m>.
+                    Let <m>f(x) = ax^{2} + bx + c</m> and let <m>g(x)
+                    = e^{x}</m>, where <m>a,b,c</m> are arbitrary
+                    constants.  Find <m>\lim_{x\to\infty}\frac{ax^{2}
+                    + bx + c}{e^{x}}</m>.
                 </p>
             </statement>
             <solution>
                 <p>
-                    This is another example of a <m>\frac{\infty}{\infty}</m> indeterminate form, and so L'Hospital's Rule applies.
-                    If we use it, we get
+                    This is another example of
+                    a <m>\frac{\infty}{\infty}</m> indeterminate form,
+                    and so L'Hospital's Rule applies.  If we use it,
+                    we get
                     <md>
                         <mrow>\lim_{x\to\infty}\frac{ax^{2} + bx + c}{e^{x}} &amp; = \lim_{x\to\infty}\frac{2ax+b}{e^{x}} </mrow>
                         <mrow> &amp; = \lim_{x\to\infty}\frac{2a}{e^{x}} </mrow>
                         <mrow> &amp; = 0. </mrow>
                     </md>
-                    In other words, the exponential function grows faster than <em>any</em> quadratic function.
+                    In other words, the exponential function grows
+                    faster than <em>any</em> quadratic function.
                 </p>
             </solution>
         </example>
@@ -343,8 +459,8 @@
             </statement>
             <solution>
                 <p>
-                    This is a <m>\frac{0}{0}</m> indeterminate form, so L'Hospital's Rule applies.
-                    We get
+                    This is a <m>\frac{0}{0}</m> indeterminate form,
+                    so L'Hospital's Rule applies.  We get
                     <md>
                         <mrow>\lim_{t\to1^{+}}\frac{9^{t-1} - 4^{t-1}}{t-1} &amp; = \lim_{t\to1^{+}}\frac{9^{t-1}\ln9 - 4^{t-1}\ln4}{1} </mrow>
                         <mrow> &amp; = \ln\frac{9}{4}. </mrow>
@@ -353,7 +469,10 @@
             </solution>
         </example>
         <p>
-            L'Hospital's Rule only applies <em>directly</em> to the indeterminate forms <m>\frac{0}{0}</m> and <m>\frac{\infty}{\infty}</m>, but these are not the only problems when L'Hospital's Rule proves useful.
+            L'Hospital's Rule only applies <em>directly</em> to the
+            indeterminate forms <m>\frac{0}{0}</m>
+            and <m>\frac{\infty}{\infty}</m>, but these are not the
+            only problems when L'Hospital's Rule proves useful.
         </p>
         <example xml:id="example-a-different-indeterminate-form">
             <title>A different indeterminate form</title>
@@ -364,10 +483,15 @@
             </statement>
             <solution>
                 <p>
-                    If we try to evaluate the limit, we get the expression <m>\infty\cdot0</m>.
-                    This is another indeterminate form, but is not one that we can apply L'Hospital's Rule to without doing some algebra first.
-                    We can write
-                    <me>\lim_{x\to\infty}xe^{-3x-x^{2}} = \lim_{x\to\infty}\frac{x}{e^{3x+x^{2}}}</me>
+                    If we try to evaluate the limit, we get the
+                    expression <m>\infty\cdot0</m>.  This is another
+                    indeterminate form, but is not one that we can
+                    apply L'Hospital's Rule to without doing some
+                    algebra first.  We can write
+                    <me>
+                      \lim_{x\to\infty}xe^{-3x-x^{2}}
+                      = \lim_{x\to\infty}\frac{x}{e^{3x+x^{2}}}
+                    </me>
                     which is a <m>\frac{\infty}{\infty}</m> indeterminate form.
                     We <em>can</em> use L'Hospital's on this expression!
                 </p>
@@ -382,8 +506,14 @@
             </solution>
         </example>
         <p>
-            <xref ref="example-a-different-indeterminate-form" text="type-global" /> shows that <m>0\cdot\infty</m> indeterminate forms can be dealt with by rewriting them in the form <m>\frac{0}{0}</m> or <m>\frac{\infty}{\infty}</m> and then applying L'Hospital's Rule.
-            It's trickier, but we can also deal with <m>\infty-\infty</m> indeterminate forms by rewriting them in this way.
+            <xref ref="example-a-different-indeterminate-form"
+            text="type-global" /> shows that <m>0\cdot\infty</m>
+            indeterminate forms can be dealt with by rewriting them in
+            the form <m>\frac{0}{0}</m>
+            or <m>\frac{\infty}{\infty}</m> and then applying
+            L'Hospital's Rule.  It's trickier, but we can also deal
+            with <m>\infty-\infty</m> indeterminate forms by rewriting
+            them in this way.
         </p>
         <example xml:id="example---infty-infty--indeterminate-form">
             <title><m>\infty-\infty</m> indeterminate form</title>
@@ -394,10 +524,15 @@
             </statement>
             <solution>
                 <p>
-                    As <m>x\to\frac{\pi}{2}^{-}</m>, <m>\sec x\to\infty</m> and <m>\tan x\to\infty</m>.
-                    So this limit is the indeterminate form <m>\infty-\infty</m>.
-                    We can't sue L'Hospital's Rule yet, but we can try to rewrite this limit as a <m>\frac{0}{0}</m> or <m>\frac{\infty}{\infty}</m> indeterminate form.
-                    We'll try to do this by replacing <m>\sec x,\tan x</m> with <m>\sin x,\cos x</m> to get
+                    As <m>x\to\frac{\pi}{2}^{-}</m>, <m>\sec
+                    x\to\infty</m> and <m>\tan x\to\infty</m>.  So
+                    this limit is the indeterminate
+                    form <m>\infty-\infty</m>.  We can't sue
+                    L'Hospital's Rule yet, but we can try to rewrite
+                    this limit as a <m>\frac{0}{0}</m>
+                    or <m>\frac{\infty}{\infty}</m> indeterminate
+                    form.  We'll try to do this by replacing <m>\sec
+                    x,\tan x</m> with <m>\sin x,\cos x</m> to get
                     <md>
                         <mrow>\lim_{x\to\frac{\pi}{2}^{-}}(\sec x - \tan x) &amp; =\lim_{x\to\frac{\pi}{2}^{-}}\frac{1-\sin x}{\cos x} </mrow>
                         <mrow> &amp; = \lim_{x\to\frac{\pi}{2}^{-}}\frac{-\cos x}{-\sin x} </mrow>
@@ -410,13 +545,18 @@
             <title>Limit involving radicals</title>
             <statement>
                 <p>
-                    Find <m>\lim_{x\to\infty}(\sqrt{2x^{2} - x} - \sqrt{2x^{2}+1})</m>.
+                    Find <m>\lim_{x\to\infty}(\sqrt{2x^{2} - x} -
+                    \sqrt{2x^{2}+1})</m>.
                 </p>
             </statement>
             <solution>
                 <p>
-                    This is another <m>\infty-\infty</m> form, so we'll try to rewrite it into a form we can use L'Hospital's Rule on.
-                    The trick here is to factor an <m>x</m> out so we can get a <m>0\cdot\infty</m> form, which we've already seen how to handle:
+                    This is another <m>\infty-\infty</m> form, so
+                    we'll try to rewrite it into a form we can use
+                    L'Hospital's Rule on.  The trick here is to factor
+                    an <m>x</m> out so we can get
+                    a <m>0\cdot\infty</m> form, which we've already
+                    seen how to handle:
                     <md>
                         <mrow>\lim_{x\to\infty}(\sqrt{2x^{2} - x} - \sqrt{2x^{2} + 1}) &amp; = \lim_{x\to\infty}(x\sqrt{2 - x^{-1}} - x\sqrt{2+x^{-2}}) </mrow>
                         <mrow> &amp; = \lim_{x\to\infty}\frac{\sqrt{2 - x^{-1}} - \sqrt{2+x^{-2}}}{\frac{1}{x}} </mrow>
@@ -428,7 +568,9 @@
             </solution>
         </example>
         <p>
-            There are three other indeterminate forms that L'Hospital's Rule can help us with (after some algebra): <m>1^{\infty}, \infty^{0}</m> and <m>0^{0}</m>.
+            There are three other indeterminate forms that
+            L'Hospital's Rule can help us with (after some
+            algebra): <m>1^{\infty}, \infty^{0}</m> and <m>0^{0}</m>.
             All of these can be found by first using logarithms.
         </p>
         <example xml:id="example-a-natural-limit">
@@ -440,13 +582,19 @@
             </statement>
             <solution>
                 <p>
-                    This limit is a <m>1^{\infty}</m> indeterminate form.
-                    We'll try taking logarithms to rewrite it as a <m>0\cdot\infty</m> form, so set <m>y = \lim_{x\to\infty}\left(1+\frac{1}{x}\right)^{x}</m>.
+                    This limit is a <m>1^{\infty}</m> indeterminate
+                    form.  We'll try taking logarithms to rewrite it
+                    as a <m>0\cdot\infty</m> form, so set <m>y =
+                    \lim_{x\to\infty}\left(1+\frac{1}{x}\right)^{x}</m>.
                     Then
-                    <me>\ln y = \lim_{x\to\infty}x\ln\left(1+\frac{1}{x}\right)</me>
-                    is a <m>0\cdot\infty</m> form.
-                    We can use L'Hospital's by rewriting this limit at a <m>\frac{0}{0}</m> form or <m>\frac{\infty}{\infty}</m>.
-                    Either way, we get <m>\ln y = 1</m> and so the original limit is <m>y = e</m>.
+                    <me>\ln y =
+                    \lim_{x\to\infty}x\ln\left(1+\frac{1}{x}\right)</me>
+                    is a <m>0\cdot\infty</m> form.  We can use
+                    L'Hospital's by rewriting this limit at
+                    a <m>\frac{0}{0}</m> form
+                    or <m>\frac{\infty}{\infty}</m>.  Either way, we
+                    get <m>\ln y = 1</m> and so the original limit
+                    is <m>y = e</m>.
                 </p>
             </solution>
         </example>
@@ -454,15 +602,16 @@
     <section xml:id="section-extreme-values-of-functions">
         <title>Extreme Values of Functions</title>
         <p>
-            It's often of interest to determine how large or small some quantity can get.
+            It's often of interest to determine how large or small
+            some quantity can get.
         </p>
         <definition xml:id="definition-absolute-extrema">
             <title>Absolute Extrema</title>
             <idx><h>functions</h><h>absolute extrema</h></idx>
             <statement>
                 <p>
-                    Let <m>f(x)</m> be a function defined on some domain <m>D</m>.
-                    Let <m>c</m> be in <m>D</m>.
+                    Let <m>f(x)</m> be a function defined on some
+                    domain <m>D</m>.  Let <m>c</m> be in <m>D</m>.
                     Then
                     <ul>
                         <li><m>f(c)</m> is an <term>absolute maximum</term> of <m>f</m> on <m>D</m> if <m>f(c)\geq f(x)</m> for all <m>x</m> in <m>D</m>.</li>
@@ -485,105 +634,145 @@
             </statement>
         </example>
         <p>
-            Some functions may not have extreme values, but they could have values that are smaller or larger than all other values of the function "nearby".
+            Some functions may not have extreme values, but they could
+            have values that are smaller or larger than all other
+            values of the function "nearby".
         </p>
         <definition xml:id="definition-local-extrema">
             <title>Local extrema</title>
             <idx><h>functions</h><h>local extrema</h></idx>
             <statement>
                 <p>
-                    Let <m>f(x)</m> be a function and let <m>c</m> be in the domain of <m>f</m>.
-                    Then
+                    Let <m>f(x)</m> be a function and let <m>c</m> be
+                    in the domain of <m>f</m>.  Then
                     <ul>
                         <li><m>f(c)</m> is a <term>local maximum</term> if <m>f(c)\geq f(x)</m> for all <m>x</m> near <m>c</m>.</li>
                         <li><m>f(c)</m> is a <term>local minimum</term> if <m>f(c)\leq f(x)</m> for all <m>x</m> near <m>c</m>.</li>
                     </ul>
-                    Roughly, local maxima correspond to "hilltops" whereas local minima correspond to "valleys" in the graph of <m>f(x)</m>.
+                    Roughly, local maxima correspond to "hilltops"
+                    whereas local minima correspond to "valleys" in
+                    the graph of <m>f(x)</m>.
                 </p>
             </statement>
         </definition>
         <p>
-            In general, local extrema and absolute extrema can be different.
-            However, the following theorem does provide a relationship between the two on <em>closed, bounded</em> intervals.
+            In general, local extrema and absolute extrema can be
+            different.  However, the following theorem does provide a
+            relationship between the two on <em>closed, bounded</em>
+            intervals.
         </p>
         <theorem xml:id="theorem-extreme-value-theorem">
             <title>Extreme Value Theorem</title>
             <idx>Extreme Value Theorem</idx>
             <statement>
                 <p>
-                    Let <m>f(x)</m> be a continuous function defined on the interval <m>[a,b]</m>
-                    Then <m>f(x)</m> has both an absolute maximum and absolute minimum on <m>[a,b]</m>.
-                    Furthermore, these values occur at either an endpoint or a local extrema.
+                    Let <m>f(x)</m> be a continuous function defined
+                    on the interval <m>[a,b]</m> Then <m>f(x)</m> has
+                    both an absolute maximum and absolute minimum
+                    on <m>[a,b]</m>.  Furthermore, these values occur
+                    at either an endpoint or a local extrema.
                 </p>
             </statement>
         </theorem>
         <p>
-            What <xref ref="theorem-extreme-value-theorem" text="type-global" /> tells us is that we can find the extreme values of any continuous function defined on a closed, bounded interval by just checking the function at the endpoint and at its local extrema.
+            What <xref ref="theorem-extreme-value-theorem"
+            text="type-global" /> tells us is that we can find the
+            extreme values of any continuous function defined on a
+            closed, bounded interval by just checking the function at
+            the endpoint and at its local extrema.
         </p>
         <example xml:id="example-finding-extreme-values">
             <title>Finding extreme values</title>
             <statement>
                 <p>
-                    Let <m>f(x) = (x^{2}-1)^{2}</m>.
-                    Given that <m>f</m> has local extrema at <m>x=-1,0,1</m>, find the extreme values of <m>f</m> on the interval <m>[\frac{1}{2},6]</m>.
+                    Let <m>f(x) = (x^{2}-1)^{2}</m>.  Given
+                    that <m>f</m> has local extrema
+                    at <m>x=-1,0,1</m>, find the extreme values
+                    of <m>f</m> on the
+                    interval <m>[\frac{1}{2},6]</m>.
                 </p>
             </statement>
             <solution>
                 <p>
-                    <xref ref="theorem-extreme-value-theorem" text="type-global" /> tells us that we can find the extreme values by checking local extrema and the endpoints of our interval.
-                    Since <m>x=1</m> is the only local extreme value inside of our interval, that's the only one we need to check.
+                    <xref ref="theorem-extreme-value-theorem"
+                    text="type-global" /> tells us that we can find
+                    the extreme values by checking local extrema and
+                    the endpoints of our interval.  Since <m>x=1</m>
+                    is the only local extreme value inside of our
+                    interval, that's the only one we need to check.
                     We have
-                    <me>f(\frac{1}{2}) = \frac{9}{16}, f(1) = 0\quad\text{and}\quad f(6) = 35^{2}.</me>
-                    So the absolute minimum of <m>f</m> on <m>[\frac{1}{2},6]</m> is <m>0</m> and the absolute maximum is <m>35^{2}.</m>
+                    <me>f(\frac{1}{2}) = \frac{9}{16}, f(1) =
+                    0\quad\text{and}\quad f(6) = 35^{2}.</me> So the
+                    absolute minimum of <m>f</m>
+                    on <m>[\frac{1}{2},6]</m> is <m>0</m> and the
+                    absolute maximum is <m>35^{2}.</m>
                 </p>
             </solution>
         </example>
         <p>
-            So if we can find where a function has local extrema, then finding absolute extrema won't be too much more difficult.
-            Thankfully, this is relatively straightforward if the function is differentiable.
+            So if we can find where a function has local extrema, then
+            finding absolute extrema won't be too much more difficult.
+            Thankfully, this is relatively straightforward if the
+            function is differentiable.
         </p>
         <theorem xml:id="theorem-fermat-s-theorem">
             <title>Fermat's Theorem</title>
             <idx>Fermat's Theorem</idx>
             <statement>
                 <p>
-                    Let <m>f(x)</m> be a function and let <m>c</m> be a local extreme value of <m>f</m>.
-                    If <m>f^{\prime}c)</m> exists, then <m>f^{\prime}c) = 0</m>.
+                    Let <m>f(x)</m> be a function and let <m>c</m> be
+                    a local extreme value of <m>f</m>.
+                    If <m>f^{\prime}c)</m> exists,
+                    then <m>f^{\prime}c) = 0</m>.
                 </p>
             </statement>
         </theorem>
         <p>
-            So finding local extrema of <m>f(x)</m> often amounts to finding where <m>f^{\prime}x) = 0</m>, i.e., where it has a root.
-            However, we also need to worry about where <m>f^{\prime}x)</m> doesn't exist (just think about <m>y = |x|</m>).
-            This leads to the following definition.
+            So finding local extrema of <m>f(x)</m> often amounts to
+            finding where <m>f^{\prime}x) = 0</m>, i.e., where it has
+            a root.  However, we also need to worry about
+            where <m>f^{\prime}x)</m> doesn't exist (just think
+            about <m>y = |x|</m>).  This leads to the following
+            definition.
         </p>
         <definition xml:id="definition-critical-points">
             <title>Critical Points</title>
             <statement>
                 <p>
                     Let <m>f(x)</m> be a differentiable function.
-                    The <term>critical points</term> of <m>f(x)</m> are the points where <m>f^{\prime}x) = 0</m> or <m>f^{\prime}x)</m> does not exist.
+                    The <term>critical points</term> of <m>f(x)</m>
+                    are the points where <m>f^{\prime}x) = 0</m>
+                    or <m>f^{\prime}x)</m> does not exist.
                 </p>
             </statement>
         </definition>
         <p>
-            Our method for finding extreme values on a closed interval will proceed as follows: find all the critical points, and then compare the values of our function at the critical points and the endpoints of the interval.
+            Our method for finding extreme values on a closed interval
+            will proceed as follows: find all the critical points, and
+            then compare the values of our function at the critical
+            points and the endpoints of the interval.
         </p>
         <example xml:id="example-extreme-values-of-tangent">
             <title>Extreme values of tangent</title>
             <statement>
                 <p>
-                    Let <m>f(\theta) = \frac{4}{3}\theta - \tan\theta</m>.
-                    Find the extreme values of <m>f</m> on the interval <m>[-\frac{\pi}{3},\frac{\pi}{3}]</m>.
+                    Let <m>f(\theta) = \frac{4}{3}\theta -
+                    \tan\theta</m>.  Find the extreme values
+                    of <m>f</m> on the
+                    interval <m>[-\frac{\pi}{3},\frac{\pi}{3}]</m>.
                 </p>
             </statement>
             <solution>
                 <p>
                     We need to find the critical points first.
                     We have
-                    <me>f^{\prime}\theta) = \frac{4}{3} - \sec^{2}\theta.</me>
-                    This is <m>0</m> if <m>\cos\theta = \frac{\sqrt{3}}{2}</m>, which occurs in our interval only if <m>\theta = \pm\frac{\pi}{6}</m>.
-                    So we need to check <m>f</m> at <m>\pm\frac{\pi}{3},\pm\frac{\pi}{6}</m>.
+                    <me>f^{\prime}\theta) = \frac{4}{3} -
+                    \sec^{2}\theta.</me> This is <m>0</m>
+                    if <m>\cos\theta = \frac{\sqrt{3}}{2}</m>, which
+                    occurs in our interval only if <m>\theta =
+                    \pm\frac{\pi}{6}</m>.  So we need to
+                    check <m>f</m>
+                    at <m>\pm\frac{\pi}{3},\pm\frac{\pi}{6}</m>.
                 </p>
             </solution>
         </example>
@@ -598,10 +787,18 @@
             <solution>
                 <p>
                     First, find the critical points of <m>g</m>:
-                    <me>g'(x) = \frac{1}{3}x^{-\frac{2}{3}} - \frac{4}{3}x^{\frac{1}{3}} = \frac{1}{3}x^{-\frac{2}{3}}(1 - 4x).</me>
-                    This is <m>0</m> at <m>x = \frac{1}{4}</m> and undefined at <m>0</m>, so our critical points are <m>x=0,\frac{1}{4}</m>.
-                    So to find the absolute extrema we need to check <m>g</m> at <m>x=-1,0,\frac{1}{4},1</m>.
-                    Doing so, we see that the absolute minimum value is <m>-2</m> at <m>x=-1</m> and the absolute maximum is <m>(\frac{1}{4})^{1/3} - (\frac{1}{4})^{4/3}</m> at <m>x = \frac{1}{4}</m>.
+                    <me>g'(x) = \frac{1}{3}x^{-\frac{2}{3}} -
+                    \frac{4}{3}x^{\frac{1}{3}} =
+                    \frac{1}{3}x^{-\frac{2}{3}}(1 - 4x).</me> This
+                    is <m>0</m> at <m>x = \frac{1}{4}</m> and
+                    undefined at <m>0</m>, so our critical points
+                    are <m>x=0,\frac{1}{4}</m>.  So to find the
+                    absolute extrema we need to check <m>g</m>
+                    at <m>x=-1,0,\frac{1}{4},1</m>.  Doing so, we see
+                    that the absolute minimum value is <m>-2</m>
+                    at <m>x=-1</m> and the absolute maximum
+                    is <m>(\frac{1}{4})^{1/3} -
+                    (\frac{1}{4})^{4/3}</m> at <m>x = \frac{1}{4}</m>.
                 </p>
             </solution>
         </example>
@@ -609,23 +806,31 @@
     <section xml:id="section-optimization-problems">
         <title>Optimization Problems</title>
         <p>
-            Now that we can use derivatives to find local maxima and minima, we can solve <term>optimization problems</term>.
+            Now that we can use derivatives to find local maxima and
+            minima, we can solve <term>optimization problems</term>.
         </p>
         <example xml:id="example-minimizing-a-product">
             <title>Minimizing a product</title>
             <statement>
                 <p>
-                    Find two numbers that differ by <m>100</m> and whose product is a minimum.
+                    Find two numbers that differ by <m>100</m> and
+                    whose product is a minimum.
                 </p>
             </statement>
             <solution>
                 <p>
-                    Call our numbers <m>x,y</m> and suppose <m>x &gt; y</m>.
-                    Then <m>x-y = 100</m> and we need to choose <m>x,y</m> in such a way that <m>xy</m> is as small as possible.
-                    If we replace <m>x</m> with <m>100+y</m>, then this means we need to minimize
-                    <me>f(y) = 100y + y^{2}.</me>
-                    The critical point of <m>f(y)</m> is <m>y = -50</m>, and since <m>f</m> is a parabola we know that this must be the location of the absolute minimum value on the graph.
-                    So the numbers we need are <m>50,-50</m>.
+                    Call our numbers <m>x,y</m> and suppose <m>x &gt;
+                    y</m>.  Then <m>x-y = 100</m> and we need to
+                    choose <m>x,y</m> in such a way that <m>xy</m> is
+                    as small as possible.  If we replace <m>x</m>
+                    with <m>100+y</m>, then this means we need to
+                    minimize
+                    <me>f(y) = 100y + y^{2}.</me> The critical point
+                    of <m>f(y)</m> is <m>y = -50</m>, and
+                    since <m>f</m> is a parabola we know that this
+                    must be the location of the absolute minimum value
+                    on the graph.  So the numbers we need
+                    are <m>50,-50</m>.
                 </p>
             </solution>
         </example>
@@ -633,9 +838,13 @@
             <title>Minimizing material costs</title>
             <statement>
                 <p>
-                    A box with an open top and a square base is to be built using material that costs \$5 per square meter.
-                    The box must have a volume of <quantity><mag>32000</mag><unit base="meter" prefix="centi" exp="3"/></quantity>.
-                    Find the dimensions of the box that will be cheapest to build to these specifications.
+                    A box with an open top and a square base is to be
+                    built using material that costs \$5 per square
+                    meter.  The box must have a volume
+                    of <quantity><mag>32000</mag><unit base="meter"
+                    prefix="centi" exp="3"/></quantity>.  Find the
+                    dimensions of the box that will be cheapest to
+                    build to these specifications.
                 </p>
             </statement>
             <solution>
@@ -645,25 +854,39 @@
                         <li>Find the quantity to be optimize.</li>
                         <li>Solve the resulting optimization problem.</li>
                     </ol>
-                    We need to minimize costs, which means we need to minimize how much material is used to construct this box.
-                    Hence we must minimize the surface area of the box.
-                    If we let <m>x</m> denote the length of the base of the box and <m>h</m> the height of the box, then the surface area is given by
-                    <me>x^{2} + 4xh.</me>
-                    Now, we can't minimize this yet because we have too many variables.
-                    However, we can solve for <m>h</m> in terms of <m>x</m> by using the volume constraint.
-                    Since the volume of the box is <m>x^{2}h = 32000,</m> this gives <m>h = \frac{32000}{x^{2}}.</m>
-                    So the quantity we need to minimize is
+                    We need to minimize costs, which means we need to
+                    minimize how much material is used to construct
+                    this box.  Hence we must minimize the surface area
+                    of the box.  If we let <m>x</m> denote the length
+                    of the base of the box and <m>h</m> the height of
+                    the box, then the surface area is given by
+                    <me>x^{2} + 4xh.</me> Now, we can't minimize this
+                    yet because we have too many variables.  However,
+                    we can solve for <m>h</m> in terms of <m>x</m> by
+                    using the volume constraint.  Since the volume of
+                    the box is <m>x^{2}h = 32000,</m> this gives <m>h
+                    = \frac{32000}{x^{2}}.</m> So the quantity we need
+                    to minimize is
                     <me>f(x) = x^{2} + 4xh = x^{2} + \frac{128000}{x}.</me>
                 </p>
                 <p>
-                    To minimize this, we find the critical points by solving <m>f^{\prime}(x) = 0</m>.
-                    This gives, after some algebra, <m>x = 40</m>.
-                    Now we need to be careful here! We only have a critical point at this step.
-                    We need to make an argument now as to why this critical point should be an absolute minimum of <m>f(x)</m>.
-                    One way to do this is by setting up a sign chart for <m>f^{\prime}(x)</m>.
-                    If we do this, then we see that <m>f' &lt; 0</m> for <m>x</m> in <m>(0,40)</m>, while <m>f' &gt; 0</m> for <m>x</m> in <m>(40,\infty)</m>.
-                    If we think about what this tells us of the graph of <m>f(x)</m>, we see that <m>x=40</m> must minimize <m>f(x)</m>, at least for <m>x &gt; 0</m>.
-                    So the dimensions that minimize the cost of building this box are <m>40\times40\times20</m>.
+                    To minimize this, we find the critical points by
+                    solving <m>f^{\prime}(x) = 0</m>.  This gives,
+                    after some algebra, <m>x = 40</m>.  Now we need to
+                    be careful here! We only have a critical point at
+                    this step.  We need to make an argument now as to
+                    why this critical point should be an absolute
+                    minimum of <m>f(x)</m>.  One way to do this is by
+                    setting up a sign chart for <m>f^{\prime}(x)</m>.
+                    If we do this, then we see that <m>f' &lt; 0</m>
+                    for <m>x</m> in <m>(0,40)</m>, while <m>f' &gt;
+                    0</m> for <m>x</m> in <m>(40,\infty)</m>.  If we
+                    think about what this tells us of the graph
+                    of <m>f(x)</m>, we see that <m>x=40</m> must
+                    minimize <m>f(x)</m>, at least for <m>x &gt;
+                    0</m>.  So the dimensions that minimize the cost
+                    of building this box
+                    are <m>40\times40\times20</m>.
                 </p>
             </solution>
         </example>
@@ -671,41 +894,66 @@
             <title>Distance on an ellipse</title>
             <statement>
                 <p>
-                    Find the point(s) on the ellipse <m>4x^{2} + y^{2} = 4</m> that are farthest from the point <m>(1,0)</m>.
+                    Find the point(s) on the ellipse <m>4x^{2} + y^{2}
+                    = 4</m> that are farthest from the
+                    point <m>(1,0)</m>.
                 </p>
             </statement>
             <solution>
                 <p>
-                    This is an optimization problem since we're trying to maximize distance.
-                    There are two things we need to do:
+                    This is an optimization problem since we're trying
+                    to maximize distance.  There are two things we
+                    need to do:
                     <ol>
                         <li>Find the function we need to optimize.</li>
                         <li>Find the extrema.</li>
                     </ol>
-                    The function we need to optimize is just the distance function.
-                    In particular, if <m>(x,y)</m> is a point on the ellipse then we need to maximize
+                    The function we need to optimize is just the
+                    distance function.  In particular, if <m>(x,y)</m>
+                    is a point on the ellipse then we need to maximize
                     <me>d = \sqrt{(x-1)^{2} + (y-0)^{2}}.</me>
                 </p>
                 <p>
-                    Now, we have a constraint that <m>(x,y)</m> must satisfy; namely, this must lie on the ellipse <m>4x^{2} + y^{2} = 4</m>.
-                    This means that <m>y^{2} = 4 - 4x^{2}</m>, and if we plug this into our distance function we get
-                    <me>d = \sqrt{(x-1)^{2} + (y-0)^{2}} = \sqrt{(x-1)^{2} + 4 - 4x^{2}}.</me>
-                    Now here's a trick we can use: maximizing <m>d</m> is the same thing as maximizing <m>d^{2}</m>, but <m>d^{2}</m> is <em>much</em> nicer to work with algebraically.
-                    So instead of maximizing <m>d</m>, we'll maximize the function
+                    Now, we have a constraint that <m>(x,y)</m> must
+                    satisfy; namely, this must lie on the
+                    ellipse <m>4x^{2} + y^{2} = 4</m>.  This means
+                    that <m>y^{2} = 4 - 4x^{2}</m>, and if we plug
+                    this into our distance function we get
+                    <me>d = \sqrt{(x-1)^{2} + (y-0)^{2}} =
+                    \sqrt{(x-1)^{2} + 4 - 4x^{2}}.</me> Now here's a
+                    trick we can use: maximizing <m>d</m> is the same
+                    thing as maximizing <m>d^{2}</m>, but <m>d^{2}</m>
+                    is <em>much</em> nicer to work with algebraically.
+                    So instead of maximizing <m>d</m>, we'll maximize
+                    the function
                     <me>f(x) = d^{2} = (x-1)^{2} + 4 - 4x^{2}.</me>
                 </p>
                 <p>
-                    We'll start by finding it's local extrema, which means we need to find the critical points.
-                    These are the solutions of <m>f^{\prime}(x) = 0</m>.
+                    We'll start by finding it's local extrema, which
+                    means we need to find the critical points.  These
+                    are the solutions of <m>f^{\prime}(x) = 0</m>.
                     Since
-                    <me>f^{\prime}(x) = 2x - 2 - 8x = -6x - 2,</me>
-                    we see that the only critical point is <m>x = -\frac{1}{3}</m>.
-                    Since <m>f''(x) = -6 &lt; 0</m>, this means that <m>x = -\frac{1}{3}</m> gives us a local maximum of <m>f(x)</m> by the second derivative test.
-                    In fact, we can go further: this must be an absolute maximum of <m>f(x)</m>, since <m>f(x)</m> is always concave down (it's actually a parabola).
+                    <me>f^{\prime}(x) = 2x - 2 - 8x = -6x - 2,</me> we
+                    see that the only critical point is <m>x =
+                    -\frac{1}{3}</m>.  Since <m>f''(x) = -6 &lt;
+                    0</m>, this means that <m>x = -\frac{1}{3}</m>
+                    gives us a local maximum of <m>f(x)</m> by the
+                    second derivative test.  In fact, we can go
+                    further: this must be an absolute maximum
+                    of <m>f(x)</m>, since <m>f(x)</m> is always
+                    concave down (it's actually a parabola).
                 </p>
                 <p>
-                    So the point on the ellipse <m>4x^{2} + y^{2} = 4</m> farthest from <m>(1,0)</m> has <m>x</m>-coordinate equal to <m>-\frac{1}{3}</m>.
-                    This means that the corresponding <m>y</m>-coordinate is <m>y = \pm\frac{2\sqrt{5}}{3},</m> so the points on the ellipse that are the farthest from <m>(1,0)</m> are the points <m>(-\frac{1}{3}, -\frac{2\sqrt{5}}{3}), (-\frac{1}{3}, \frac{2\sqrt{5}}{3}).</m>
+                    So the point on the ellipse <m>4x^{2} + y^{2} =
+                    4</m> farthest from <m>(1,0)</m>
+                    has <m>x</m>-coordinate equal
+                    to <m>-\frac{1}{3}</m>.  This means that the
+                    corresponding <m>y</m>-coordinate is <m>y =
+                    \pm\frac{2\sqrt{5}}{3},</m> so the points on the
+                    ellipse that are the farthest from <m>(1,0)</m>
+                    are the points <m>(-\frac{1}{3},
+                    -\frac{2\sqrt{5}}{3}), (-\frac{1}{3},
+                    \frac{2\sqrt{5}}{3}).</m>
                 </p>
             </solution>
         </example>
@@ -714,48 +962,77 @@
         <title>The Mean Value Theorem</title>
         <introduction>
             <p>
-                The linear approximations we came up with in <xref ref="section-linear-approximations" text="type-global" /> are useful for estimating complicated functions with simpler, linear models.
-                In essence, we use the derivative of a function to tell us how much to change a given value of the function in order to estimate that function.
-                There is one problem with this approach, at least currently.
-                We have good reason to suspect that our approximations are close to the exact values in certain circumstances, but we don't know how close.
-                The goal of this section is to derive an estimate for the derivative that can help us to find more precise approximations.
+                The linear approximations we came up with in
+                <xref ref="section-linear-approximations"
+                text="type-global" /> are useful for estimating
+                complicated functions with simpler, linear models.  In
+                essence, we use the derivative of a function to tell
+                us how much to change a given value of the function in
+                order to estimate that function.  There is one problem
+                with this approach, at least currently.  We have good
+                reason to suspect that our approximations are close to
+                the exact values in certain circumstances, but we
+                don't know how close.  The goal of this section is to
+                derive an estimate for the derivative that can help us
+                to find more precise approximations.
             </p>
         </introduction>
         <subsection xml:id="subsection-rolle-s-theorem">
             <title>Rolle's Theorem</title>
             <p>
-                We start with a theorem that is very reasonable, at least geometrically.
-                Let <m>f(x)</m> be a differentiable function on some interval <m>[a,b]</m>, and suppose <m>f(a) = f(b)</m>.
-                Then this means the graph of <m>f</m> must "turn around" at some point in <m>[a,b]</m>, i.e., there is a local maximum or minimum contained within the interval.
-                Combining this observation with <xref ref="theorem-fermat-s-theorem" text="type-global" /> gives us <term>Rolle's Theorem.</term>
+                We start with a theorem that is very reasonable, at
+                least geometrically.  Let <m>f(x)</m> be a
+                differentiable function on some interval <m>[a,b]</m>,
+                and suppose <m>f(a) = f(b)</m>.  Then this means the
+                graph of <m>f</m> must "turn around" at some point
+                in <m>[a,b]</m>, i.e., there is a local maximum or
+                minimum contained within the interval.  Combining this
+                observation with <xref ref="theorem-fermat-s-theorem"
+                text="type-global" /> gives us <term>Rolle's
+                Theorem.</term>
             </p>
             <theorem xml:id="theorem-rolle-s-theorem">
                 <title>Rolle's Theorem</title>
                 <statement>
                     <p>
-                        Let <m>f(x)</m> be a differentiable function on <m>[a,b]</m> and suppose <m>f(a) = f(b)</m>.
-                        Then there exists some number <m>c</m> in <m>(a,b)</m> such that <m>f^{\prime}(c) = 0</m>.
+                        Let <m>f(x)</m> be a differentiable function
+                        on <m>[a,b]</m> and suppose <m>f(a) =
+                        f(b)</m>.  Then there exists some
+                        number <m>c</m> in <m>(a,b)</m> such
+                        that <m>f^{\prime}(c) = 0</m>.
                     </p>
                 </statement>
             </theorem>
             <p>
-                <xref ref="theorem-rolle-s-theorem" text="type-global" /> is an example of an <term>existence theorem</term>.
-                It tells us nothing about how to find the number <m>c</m>, or how many such <m>c</m> can exist.
-                It only tells us that there is at least one number <m>c</m> in <m>(a,b)</m> for which <m>f^{\prime}(c) = 0</m>.
-                This may not seem very useful, but existence theorems can be quite powerful in mathematics.
+                <xref ref="theorem-rolle-s-theorem" text="type-global"
+                /> is an example of an <term>existence theorem</term>.
+                It tells us nothing about how to find the
+                number <m>c</m>, or how many such <m>c</m> can exist.
+                It only tells us that there is at least one
+                number <m>c</m> in <m>(a,b)</m> for
+                which <m>f^{\prime}(c) = 0</m>.  This may not seem
+                very useful, but existence theorems can be quite
+                powerful in mathematics.
             </p>
             <example xml:id="example-rolle-s-theorem-and-traffic">
                 <title>Rolle's Theorem and Traffic</title>
                 <statement>
                     <p>
-                        A car enters a highway going at <quantity><mag>45</mag><unit base="mile"/><per base="hour"/></quantity> and leaves the highway going at the same speed.
-                        Was the car's acceleration ever <m>0</m>?
+                        A car enters a highway going
+                        at <quantity><mag>45</mag><unit base="mile"/><per base="hour"/></quantity>
+                        and leaves the highway going at the same
+                        speed.  Was the car's acceleration
+                        ever <m>0</m>?
                     </p>
                 </statement>
                 <solution>
                     <p>
-                        The speed of the car can be represented by a velocity function <m>v(t)</m>.
-                        If we assume that the car entered the highway at time <m>t_{\text{in}}</m> and left at some future time <m>t_{\text{out}}</m>, then we know that
+                        The speed of the car can be represented by a
+                        velocity function <m>v(t)</m>.  If we assume
+                        that the car entered the highway at
+                        time <m>t_{\text{in}}</m> and left at some
+                        future time <m>t_{\text{out}}</m>, then we
+                        know that
                         <me>v(t_{\text{in}}) = v(t_{\text{out}}) = 45.</me>
                         By <xref ref="theorem-rolle-s-theorem" text="type-global" />, there must be some time <m>t_{1}</m> between <m>t_{\text{in}}</m> and <m>t_{\text{out}}</m> for which <m>v'(t_{1}) = 0</m>.
                         Since <m>v'</m> is exactly the acceleration, we know that the car had to stop accelerating somewhere on the highway.
@@ -766,31 +1043,47 @@
         <subsection xml:id="subsection-the-mean-value-theorem">
             <title>The Mean Value Theorem</title>
             <p>
-                <xref ref="theorem-rolle-s-theorem" text="title" /> is powerful because it has very general conditions for its use.
-                However, it does require the function in question to take on the same values at the endpoints of <m>[a,b]</m>, and this is a condition we'd like to try to relax.
-                However, we'll try to be clever about this and use <xref ref="theorem-rolle-s-theorem" text="title" />
-                to do most of the heavy lifting for us.
+                <xref ref="theorem-rolle-s-theorem" text="title" /> is
+                powerful because it has very general conditions for
+                its use.  However, it does require the function in
+                question to take on the same values at the endpoints
+                of <m>[a,b]</m>, and this is a condition we'd like to
+                try to relax.  However, we'll try to be clever about
+                this and use <xref ref="theorem-rolle-s-theorem"
+                text="title" /> to do most of the heavy lifting for
+                us.
             </p>
             <p>
-                If we imagine graphing some differentiable function <m>f(x)</m> on some interval <m>[a,b]</m>, but <m>f(a)\neq f(b)</m>, then we can't apply <xref ref="theorem-rolle-s-theorem" text="title" />.
-                But maybe we can adjust it just a little bit so that we can?
-                In particular, the only reason we can't use <xref ref="theorem-rolle-s-theorem" text="type-global" /> is that <m>f(a)\neq f(b)</m>.
-                But if we subtract the line through these points from <m>f(x)</m>, we should get a new function for which <xref ref="theorem-rolle-s-theorem" text="type-global" /> applies.
+                If we imagine graphing some differentiable
+                function <m>f(x)</m> on some interval <m>[a,b]</m>,
+                but <m>f(a)\neq f(b)</m>, then we can't apply
+                <xref ref="theorem-rolle-s-theorem" text="title" />.
+                But maybe we can adjust it just a little bit so that
+                we can?  In particular, the only reason we can't use
+                <xref ref="theorem-rolle-s-theorem" text="type-global"
+                /> is that <m>f(a)\neq f(b)</m>.  But if we subtract
+                the line through these points from <m>f(x)</m>, we
+                should get a new function for which
+                <xref ref="theorem-rolle-s-theorem" text="type-global"
+                /> applies.
             </p>
             <p>
                 The line through these points has equation
                 <me>y = f(a) + \frac{f(b) - f(a)}{b-a}(x-a).</me>
                 So define
-                <me>g(x) = f(x) - y = f(x) - f(a) - \frac{f(b) - f(a)}{b-a}(x-a).</me>
-                Then
-                <me>g(a) = g(b) = 0,</me>
-                So <xref ref="theorem-rolle-s-theorem" text="type-global" /> <em>does</em> apply to this function.
-                Hence there exists some number <m>c</m> between <m>a</m> and <m>b</m> for which <m>g'(c) = 0</m>.
+                <me>g(x) = f(x) - y = f(x) - f(a)
+                  - \frac{f(b) - f(a)}{b-a}(x-a).</me> Then
+                <me>g(a) = g(b) = 0,</me> So
+                <xref ref="theorem-rolle-s-theorem" text="type-global"
+                /> <em>does</em> apply to this function.  Hence there
+                exists some number <m>c</m> between <m>a</m>
+                and <m>b</m> for which <m>g'(c) = 0</m>.
             </p>
             <p>
                 But
-                <me>g'(c) = f^{\prime}(c) - \frac{f(b) - f(a)}{b-a},</me>
-                and if this is <m>0</m> then we can solve <m>g'(c) = 0</m> for <m>f^{\prime}(c)</m> to get
+                <me>g'(c) = f^{\prime}(c) - \frac{f(b) -
+                f(a)}{b-a},</me> and if this is <m>0</m> then we can
+                solve <m>g'(c) = 0</m> for <m>f^{\prime}(c)</m> to get
                 <me>f^{\prime}(c) = \frac{f(b) - f(a)}{b-a}.</me>
                 This gives us the <term>Mean Value Theorem</term>.
             </p>
@@ -799,8 +1092,9 @@
                 <idx>Mean Value Theorem</idx>
                 <statement>
                     <p>
-                        Let <m>f(x)</m> be differentiable on some interval <m>[a,b]</m>.
-                        Then there exists a number <m>c</m> in <m>(a,b)</m> such that
+                        Let <m>f(x)</m> be differentiable on some
+                        interval <m>[a,b]</m>.  Then there exists a
+                        number <m>c</m> in <m>(a,b)</m> such that
                         <me>f^{\prime}(c) = \frac{f(b) - f(a)}{b-a},</me>
                         or equivalently
                         <me>f(b) - f(a) = f^{\prime}(c)(b-a).</me>
@@ -808,64 +1102,97 @@
                 </statement>
             </theorem>
             <p>
-                The <xref ref="theorem-mean-value-theorem" text="title" /> essentially says that there is at least one point inside of <m>(a,b)</m> for which the slope <m>f^{\prime}(c)</m> at that point matches the "average slope" <m>\frac{f(b) - f(a)}{b-a}.</m>
-                Like <xref ref="theorem-rolle-s-theorem" text="title" />, this is an existence theorem.
-                However, it's slightly more general, and so is applicable in more situations.
+                The <xref ref="theorem-mean-value-theorem"
+                text="title" /> essentially says that there is at
+                least one point inside of <m>(a,b)</m> for which the
+                slope <m>f^{\prime}(c)</m> at that point matches the
+                "average slope" <m>\frac{f(b) - f(a)}{b-a}.</m> Like
+                <xref ref="theorem-rolle-s-theorem" text="title" />,
+                this is an existence theorem.  However, it's slightly
+                more general, and so is applicable in more situations.
                 It's also useful in deriving error estimates.
             </p>
             <example xml:id="example-estimating-error-in-a-linear-approximation">
                 <title>Estimating error in a linear approximation</title>
                 <statement>
                     <p>
-                        Let <m>f(x) = \sqrt{x}</m> and let <m>L(x)</m> denote the linear approximation to <m>f(x)</m> at <m>a=9</m>.
-                        Find the largest possible error between <m>f(x)</m> and <m>L(x)</m> on the interval <m>[9,16]</m>.
+                        Let <m>f(x) = \sqrt{x}</m> and let <m>L(x)</m>
+                        denote the linear approximation to <m>f(x)</m>
+                        at <m>a=9</m>.  Find the largest possible
+                        error between <m>f(x)</m> and <m>L(x)</m> on
+                        the interval <m>[9,16]</m>.
                     </p>
                 </statement>
                 <solution>
                     <p>
-                        First, we should find <m>L(x)</m>, which from <xref ref="section-linear-approximations" text="type-global" /> is just
-                        <me>L(x) = 3 + \frac{1}{6}(x-9).</me>
-                        The error we need to estimate is <m>|f(x) - L(x)|</m>, for <m>x</m> in <m>[9,16]</m>.
-                        So we'll set <m>g(x) = f(x) - L(x)</m> and let <m>x</m> be some number in <m>[9,16]</m>.
-                        By <xref ref="theorem-mean-value-theorem" text="type-global" />, there exists some number <m>c</m> in <m>(9,x)</m> such that
+                        First, we should find <m>L(x)</m>, which from
+                        <xref ref="section-linear-approximations"
+                        text="type-global" /> is just
+                        <me>L(x) = 3 + \frac{1}{6}(x-9).</me> The
+                        error we need to estimate is <m>|f(x) -
+                        L(x)|</m>, for <m>x</m> in <m>[9,16]</m>.  So
+                        we'll set <m>g(x) = f(x) - L(x)</m> and
+                        let <m>x</m> be some number in <m>[9,16]</m>.
+                        By <xref ref="theorem-mean-value-theorem"
+                        text="type-global" />, there exists some
+                        number <m>c</m> in <m>(9,x)</m> such that
                         <me>g(x) - g(9) = g'(c)(x-9).</me>
-                        Now, <m>g(9) = 0</m> and <m>g'(c) = \frac{1}{2\sqrt{c}} - \frac{1}{6}</m>.
-                        So the above equation becomes
-                        <me>f(x) - L(x) = \left(\frac{1}{2\sqrt{c}} - \frac{1}{6}\right)(x-9).</me>
+                        Now, <m>g(9) = 0</m> and <m>g'(c) =
+                        \frac{1}{2\sqrt{c}} - \frac{1}{6}</m>.  So the
+                        above equation becomes
+                        <me>f(x) - L(x) = \left(\frac{1}{2\sqrt{c}} -
+                        \frac{1}{6}\right)(x-9).</me>
                     </p>
                     <p>
-                        Now, we don't know anything about <m>c</m> aside from the fact that it lives in <m>(9,16)</m>.
-                        However, we do have an expression for <m>|f(x) - L(x)|</m> now:
+                        Now, we don't know anything about <m>c</m>
+                        aside from the fact that it lives
+                        in <m>(9,16)</m>.  However, we do have an
+                        expression for <m>|f(x) - L(x)|</m> now:
                         <md>
                             <mrow>|f(x) - L(x)| &amp; = \left|\left(\frac{1}{2\sqrt{c}} - \frac{1}{6}\right)(x-9)\right|</mrow>
                             <mrow> &amp; \leq \left(\frac{1}{6} - \frac{1}{8}\right)7. </mrow>
                         </md>
-                        So if <m>x</m> is in <m>[9,16]</m>, then the error <m>|f(x) - L(x)|</m> is <em>at most</em> <m>\frac{7}{24}</m>.
-                        In other words,
+                        So if <m>x</m> is in <m>[9,16]</m>, then the
+                        error <m>|f(x) - L(x)|</m> is <em>at
+                        most</em> <m>\frac{7}{24}</m>.  In other
+                        words,
                         <me>L(x) - \frac{7}{24} \leq f(x) \leq L(x) + \frac{7}{24}.</me>
                     </p>
                 </solution>
             </example>
             <p>
-                Perhaps the most important example of <xref ref="theorem-mean-value-theorem" text="type-global" /> in this course will be the following theorem.
+                Perhaps the most important example of
+                <xref ref="theorem-mean-value-theorem"
+                text="type-global" /> in this course will be the
+                following theorem.
             </p>
             <theorem xml:id="theorem-zero-derivative-theorem">
                 <title>Zero Derivative Theorem</title>
                 <statement>
                     <p>
-                        Let <m>f(x)</m> be differentiable on <m>(a,b)</m>.
-                        If <m>f^{\prime}(x) = 0</m> for all <m>x</m> in <m>(a,b)</m>, then <m>f(x)</m> has to be a constant.
+                        Let <m>f(x)</m> be differentiable
+                        on <m>(a,b)</m>.  If <m>f^{\prime}(x) = 0</m>
+                        for all <m>x</m> in <m>(a,b)</m>,
+                        then <m>f(x)</m> has to be a constant.
                     </p>
                 </statement>
                 <proof>
                     <p>
-                        The idea of the proof is to use <xref ref="theorem-mean-value-theorem" text="type-global" /> to show that <m>f(x_{2}) - f(x_{1}) = 0</m> for any points <m>x_{1},x_{2}</m> in <m>(a,b)</m>.
-                        Now, by <xref ref="theorem-mean-value-theorem" text="type-global" /> we have
-                        <me>f(x_{2}) - f(x_{1}) = f^{\prime}(c)(x_{2}-x_{1})</me>
-                        for some <m>c</m> in <m>(a,b)</m>.
-                        However, <m>f^{\prime}(c) = 0</m> by assumption, and so <m>f(x_{2}) - f(x_{1}) = 0</m>.
-                        In other words, <m>f(x_{2}) = f(x_{1})</m>.
-                        Hence <m>f</m> must be constant.
+                        The idea of the proof is to use
+                        <xref ref="theorem-mean-value-theorem"
+                        text="type-global" /> to show that <m>f(x_{2})
+                        - f(x_{1}) = 0</m> for any
+                        points <m>x_{1},x_{2}</m> in <m>(a,b)</m>.
+                        Now, by <xref ref="theorem-mean-value-theorem"
+                        text="type-global" /> we have
+                        <me>f(x_{2}) - f(x_{1}) =
+                        f^{\prime}(c)(x_{2}-x_{1})</me> for
+                        some <m>c</m> in <m>(a,b)</m>.
+                        However, <m>f^{\prime}(c) = 0</m> by
+                        assumption, and so <m>f(x_{2}) - f(x_{1}) =
+                        0</m>.  In other words, <m>f(x_{2}) =
+                        f(x_{1})</m>.  Hence <m>f</m> must be
+                        constant.
                     </p>
                 </proof>
             </theorem>
