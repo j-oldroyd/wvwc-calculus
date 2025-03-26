@@ -1600,6 +1600,12 @@
                 </p>
             </solution>
         </example>
+        <subsection xml:id="subsection-newtons-method-optimization">
+          <title>Newton's Method for optimization</title>
+          <p>
+            To be written.
+          </p>
+        </subsection>
     </section>
     <section xml:id="section-antiderivatives">
         <title>Antiderivatives</title>
