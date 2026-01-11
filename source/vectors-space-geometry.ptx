@@ -21,205 +21,206 @@
   </introduction>
   <section xml:id="section-coordinates-in-3-space">
     <title>Coordinates in 3-Space</title>
-    <subsection xml:id="xyz-coordinates">
-      <title><m>xyz</m>-coordinates</title>
-      <p>
-        We're used to Cartesian coordinates in the plane: each point
-        in the plane can be represented by an <m>x</m>-coordinate and
-        a <m>y</m>-coordinate.  This representation is determined by
-        the <term>coordinate axes</term> (the <m>x</m>- and
-        <m>y</m>-axes).  There's nothing preventing us from doing the
-        same for three dimensions.  We'll just need three coordinate
-        axes: the <m>x</m>-, <m>y</m>- and <m>z</m>-axes.  We
-        typically view the <m>xy</m>-plane as horizontal, and the
-        <m>z</m>-axis as vertical, but there's no mathematical
-        preference either way.
-      </p>
-      <p>
-        Just as the <m>x</m>- and <m>y</m>-axes determined the
-        <m>xy</m>-plane, we can also get the <m>xz</m>- and
-        <m>yz</m>-planes.  These planes divide space into eight
-        <term>octants</term>.  And just as any point in the
-        <m>xy</m>-plane can be represented by measuring along the
-        <m>x</m>-axis and <m>y</m>-axis to get a point <m>(x,y)</m>,
-        we can do the same in space to get a point <m>(x,y,z)</m>.
-        The set of all points like this is denoted by <m>\RR^{3}</m>,
-        and is the <term>three-dimensional coordinate system</term>.
-      </p>
-      <p>
-        Given any point <m>(a,b,c)</m> in <m>\RR^{3}</m>, we can find
-        its <term>projections</term> onto any of the coordinate axes
-        or coordinate planes without too much trouble.  The projection
-        onto a line or plane is the point on that line or plane that
-        is closest to the original point <m>(a,b,c)</m>.
-      </p>
-      <example xml:id="example-projection">
-        <title>Projection</title>
-        <statement>
-          <p>
-            Find the projection of the point <m>(-1,3,4)</m> onto the
-            <m>yz</m>-plane.
-          </p>
-        </statement>
-        <solution>
-          <p>
-            Here's how we can find the projection of the point
-            <m>(-1,3,4)</m> onto the <m>yz</m>-plane.  Note that the
-            <m>yz</m>-plane is just the set of all points with
-            <m>x</m>-coordinate equation to <m>0</m>, so the
-            projection of <m>(-1,3,4)</m> onto the <m>yz</m>-plane is
-            the point <m>(0,3,4)</m>.
-          </p>
-        </solution>
-      </example>
-
-      <example xml:id="example-equations-in-space">
-        <title>Equations in space</title>
-        <statement>
-          <p>
-            Sketch <m>y=1</m> in <m>\RR^{3}</m>.
-          </p>
-        </statement>
-        <solution>
-          <p>
-            This is just the set of all points in <m>\RR^{3}</m> of
-            the form <m>(x,1,z)</m>.  This forms a <term>plane</term>
-            in <m>\RR^{3}</m>.
-          </p>
-        </solution>
-      </example>
-      <sage>
-        <input>
-          x,z = var('x,z')
-          parametric_plot3d((x,1,z), (x,-4,4), (z,-4,4))
-        </input>
-      </sage>
-
-      <example xml:id="example-more-equations-in-space">
-        <title>More equations in space</title>
-        <statement>
-          <p>
-            Sketch <m>x+y=2</m> in <m>\RR^{3}</m>.
-          </p>
-        </statement>
-        <solution>
-          <p>
-            We can do so as follows.  First, sketch <m>x+y=2</m> in
-            the <m>xy</m>-plane, which will just be the line <m>y =
-            2-x</m>.  Then the surface in <m>\RR^{3}</m> represented
-            by <m>x+y=2</m> is actually the surface consisting of all
-            points directly above and directly below the line
-            <m>y=2-x</m> in the <m>xy</m>-plane.
-          </p>
-        </solution>
-      </example>
-
-      <example xml:id="example-intersection-of-a-sphere-and-a-plane">
-        <title>Intersection of a sphere and a plane</title>
-        <statement>
-          <p>
-            Describe the intersection of the sphere given by the
-            equation <m>(x+2)^{2} + (y-3)^{2} + z^{2} = 9</m> with the
-            <m>xz</m>-plane.
-          </p>
-        </statement>
-        <solution>
-          <p>
-            We can do this without too much trouble if we remember
-            that the <m>xz</m>-plane is just the set of all points
-            with <m>y</m>-coordinate equal to <m>0</m>.  So the
-            intersection of this sphere with the <m>xz</m>-plane
-            traces out the curve <m>(x+2)^{2} + (0-3)^{2} + z^{2} =
-            9</m> in the <m>xz</m>-plane, which is just the point
-            <m>(-2,0,0)</m>.
-          </p>
-        </solution>
-      </example>
-
-      <figure xml:id="figure-sphere-xz-plane-intersection">
-        <caption>Intersection of the sphere <m>(x+2)^2 + (y-3)^2 + z^2 = 9</m> with the <m>xz</m>-plane.</caption>
-        <interactive xml:id="calcplot3d-sphere-xz-plane-intersection" calcplot3d="type=implicit;equation=(x+2)^2+(y-3)^2+z^2~9;cubes=16;visible=true;fixdomain=true;xmin=-5;xmax=1;ymin=0;ymax=6;zmin=-3;zmax=3;alpha=142;hidemyedges=false;view=0;format=normal;constcol=rgb(255,0,0)&amp;type=implicit;equation=y~0;cubes=16;visible=true;fixdomain=false;xmin=-5;xmax=5;ymin=-5;ymax=5;zmin=-5;zmax=5;alpha=124;hidemyedges=false;view=0;format=normal;constcol=rgb(255,0,0)&amp;type=point;point=(-2,0,0);visible=true;color=rgb(0,0,255);size=4&amp;type=window;hsrmode=0;nomidpts=true;anaglyph=-1;center=9.785420552928016,1.9381426581355918,0.6993909057450174,1;focus=0,0,0,1;up=-0.0788418191491362,0.03859848628809217,0.9961396109027705,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=true;gridcolor=rgb(128,128,128);xmin=-5;xmax=5;ymin=-5;ymax=5;zmin=-5;zmax=5;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;xscalefactor=1;yscalefactor=1;zscalefactor=1;tracemode=0;keep2d=false;zoom=0.385067" variant="minimal"/>
-      </figure>
-    </subsection>
-
-    <subsection xml:id="subsection-the-distance-formula">
-      <title>The Distance Formula</title>
-      <p>
-        Recall that the distance between two points
-        <m>P_{1}(x_{1},y_{1})</m> and <m>P_{2}(x_{2},y_{2})</m> in
-        <m>\RR^{2}</m> (the <m>xy</m>-plane) is given by
-      </p>
-      <me>|P_{1}P_{2}| = d(P_{1},P_{2}) =
-      \sqrt{(x_{1}-x_{2})^{2}+(y_{1}-y_{2})^{2}}.</me>
-      <p>
-        This is proved using the Pythagorean theorem. We can do the
-        same exact thing in <m>\RR^{3}</m>!
-      </p>
-      <theorem xml:id="theorem-distances-in-space">
-        <title>Distances in Space</title>
-        <idx><h>distance formula</h><h>three dimensions</h></idx>
-        <statement>
-          <p>
-            Let <m>P_{1}(x_{1},y_{1},z_{1})</m> and
-            <m>P_{2}(x_{2},y_{2},z_{2})</m> be two points in
-            <m>\RR^{3}</m>.  Then the distance between these two
-            points, <m>|P_{1}P_{2}| = d(P_{1},P_{2})</m>, is given by
-            <me>|P_{1}P_{2}| = d(P_{1},P_{2}) =
-            \sqrt{(x_{1}-x_{2})^{2}+(y_{1}-y_{2})^{2} +
-            (z_{1}-z_{2})^{2}}.</me>
-          </p>
-        </statement>
-      </theorem>
-      <example xml:id="example-computing-distances">
-        <title>Computing distances</title>
+      <subsection xml:id="xyz-coordinates">
+      <handout xml:id="handout-coordinates">
+        <title><m>xyz</m>-coordinates</title>
         <p>
-          <xref ref="theorem-distances-in-space" text="type-global" />
-          lets us find the distance between the points
-          <m>P(1,4,-2)</m> and <m>Q(-1,0,2)</m> as follows:
+          We're used to Cartesian coordinates in the plane: each point
+          in the plane can be represented by an <m>x</m>-coordinate and
+          a <m>y</m>-coordinate.  This representation is determined by
+          the <term>coordinate axes</term> (the <m>x</m>- and
+          <m>y</m>-axes).  There's nothing preventing us from doing the
+          same for three dimensions.  We'll just need three coordinate
+          axes: the <m>x</m>-, <m>y</m>- and <m>z</m>-axes.  We
+          typically view the <m>xy</m>-plane as horizontal, and the
+          <m>z</m>-axis as vertical, but there's no mathematical
+          preference either way.
         </p>
-        <me>d(P,Q) = \sqrt{4+16+16} = 6.</me>
-      </example>
-      <p>
-        One important use of the distance formula in <m>\RR^{3}</m> is
-        that it lets us find equations of spheres.  The equation of a
-        sphere of radius <m>r</m> and center <m>C(h,k,l)</m> is given
-        by <me>\sqrt{(x-h)^{2}+(y-k)^{2}+(z-l)^{2}} = r,</me> which is
-        more commonly written as <me>(x-h)^{2}+(y-k)^{2}+(z-l)^{2} =
-        r^{2}.</me>
-      </p>
-      <example xml:id="example-equation-of-a-sphere">
-        <title>Equation of a sphere</title>
         <p>
-          The equation <m>2x^{2}+2y^{2}+2z^{2} = 8x - 24z + 4</m>
-          represents a sphere in <m>\RR^{3}</m>. To see how, we can
-          rearrange the equation and complete the square to get
+          Just as the <m>x</m>- and <m>y</m>-axes determined the
+          <m>xy</m>-plane, we can also get the <m>xz</m>- and
+          <m>yz</m>-planes.  These planes divide space into eight
+          <term>octants</term>.  And just as any point in the
+          <m>xy</m>-plane can be represented by measuring along the
+          <m>x</m>-axis and <m>y</m>-axis to get a point <m>(x,y)</m>,
+          we can do the same in space to get a point <m>(x,y,z)</m>.
+          The set of all points like this is denoted by <m>\RR^{3}</m>,
+          and is the <term>three-dimensional coordinate system</term>.
         </p>
-        <md>
-          <mrow>2x^{2}+2y^{2}+2z^{2} - 8x + 24z = 4 &amp; \Rightarrow x^{2}+y^{2}+z^{2} - 4x + 12z = 2 </mrow>
-          <mrow> &amp; \Rightarrow (x-2)^{2} + y^{2} + (z-6)^{2} = 2 + 4 + 36</mrow>
-          <mrow> &amp; \Rightarrow (x-2)^{2} + y^{2} + (z-6)^{2} = 42.</mrow>
-        </md>
         <p>
-          So this equation describes a sphere of radius
-          <m>\sqrt{42}</m> centered at <m>(2,0,6)</m>.
+          Given any point <m>(a,b,c)</m> in <m>\RR^{3}</m>, we can find
+          its <term>projections</term> onto any of the coordinate axes
+          or coordinate planes without too much trouble.  The projection
+          onto a line or plane is the point on that line or plane that
+          is closest to the original point <m>(a,b,c)</m>.
         </p>
-      </example>
+        <example xml:id="example-projection" workspace="2in">
+          <title>Projection</title>
+          <statement>
+            <p>
+              Find the projection of the point <m>(-1,3,4)</m> onto the
+              <m>yz</m>-plane.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              Here's how we can find the projection of the point
+              <m>(-1,3,4)</m> onto the <m>yz</m>-plane.  Note that the
+              <m>yz</m>-plane is just the set of all points with
+              <m>x</m>-coordinate equation to <m>0</m>, so the
+              projection of <m>(-1,3,4)</m> onto the <m>yz</m>-plane is
+              the point <m>(0,3,4)</m>.
+            </p>
+          </solution>
+        </example>
 
-      <example xml:id="example-spherical-shells">
-        <title>Spherical shells</title>
+        <example xml:id="example-equations-in-space" workspace="2in">
+          <title>Equations in space</title>
+          <statement>
+            <p>
+              Sketch <m>y=1</m> in <m>\RR^{3}</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              This is just the set of all points in <m>\RR^{3}</m> of
+              the form <m>(x,1,z)</m>.  This forms a <term>plane</term>
+              in <m>\RR^{3}</m>.
+            </p>
+          </solution>
+        </example>
+        <sage>
+          <input>
+            x,z = var('x,z')
+            parametric_plot3d((x,1,z), (x,-4,4), (z,-4,4))
+          </input>
+        </sage>
+
+        <example xml:id="example-more-equations-in-space" workspace="2in">
+          <title>More equations in space</title>
+          <statement>
+            <p>
+              Sketch <m>x+y=2</m> in <m>\RR^{3}</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We can do so as follows.  First, sketch <m>x+y=2</m> in
+              the <m>xy</m>-plane, which will just be the line <m>y =
+              2-x</m>.  Then the surface in <m>\RR^{3}</m> represented
+              by <m>x+y=2</m> is actually the surface consisting of all
+              points directly above and directly below the line
+              <m>y=2-x</m> in the <m>xy</m>-plane.
+            </p>
+          </solution>
+        </example>
+
+        <example xml:id="example-intersection-of-a-sphere-and-a-plane" workspace="3in">
+          <title>Intersection of a sphere and a plane</title>
+          <statement>
+            <p>
+              Describe the intersection of the sphere given by the
+              equation <m>(x+2)^{2} + (y-3)^{2} + z^{2} = 9</m> with the
+              <m>xz</m>-plane.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We can do this without too much trouble if we remember
+              that the <m>xz</m>-plane is just the set of all points
+              with <m>y</m>-coordinate equal to <m>0</m>.  So the
+              intersection of this sphere with the <m>xz</m>-plane
+              traces out the curve <m>(x+2)^{2} + (0-3)^{2} + z^{2} =
+              9</m> in the <m>xz</m>-plane, which is just the point
+              <m>(-2,0,0)</m>.
+            </p>
+          </solution>
+        </example>
+      </handout>
+        <figure xml:id="figure-sphere-xz-plane-intersection">
+          <caption>Intersection of the sphere <m>(x+2)^2 + (y-3)^2 + z^2 = 9</m> with the <m>xz</m>-plane.</caption>
+          <interactive xml:id="calcplot3d-sphere-xz-plane-intersection" calcplot3d="type=implicit;equation=(x+2)^2+(y-3)^2+z^2~9;cubes=16;visible=true;fixdomain=true;xmin=-5;xmax=1;ymin=0;ymax=6;zmin=-3;zmax=3;alpha=142;hidemyedges=false;view=0;format=normal;constcol=rgb(255,0,0)&amp;type=implicit;equation=y~0;cubes=16;visible=true;fixdomain=false;xmin=-5;xmax=5;ymin=-5;ymax=5;zmin=-5;zmax=5;alpha=124;hidemyedges=false;view=0;format=normal;constcol=rgb(255,0,0)&amp;type=point;point=(-2,0,0);visible=true;color=rgb(0,0,255);size=4&amp;type=window;hsrmode=0;nomidpts=true;anaglyph=-1;center=9.785420552928016,1.9381426581355918,0.6993909057450174,1;focus=0,0,0,1;up=-0.0788418191491362,0.03859848628809217,0.9961396109027705,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=true;gridcolor=rgb(128,128,128);xmin=-5;xmax=5;ymin=-5;ymax=5;zmin=-5;zmax=5;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;xscalefactor=1;yscalefactor=1;zscalefactor=1;tracemode=0;keep2d=false;zoom=0.385067" variant="minimal"/>
+        </figure>
+      </subsection>
+
+      <subsection xml:id="subsection-the-distance-formula">
+        <title>The Distance Formula</title>
         <p>
-          We can also use inequalities to describe regions in addition
-          to equalities. For example, <m>3^2\leq x^{2}+y^{2}+z^{2}\leq
-          4^2</m> describes the region contained between the sphere of
-          radius <m>3</m> and the sphere of radius <m>4</m>, both
-          centered at the origin.
+          Recall that the distance between two points
+          <m>P_{1}(x_{1},y_{1})</m> and <m>P_{2}(x_{2},y_{2})</m> in
+          <m>\RR^{2}</m> (the <m>xy</m>-plane) is given by
         </p>
-      </example>
-      <figure xml:id="figure-spherical-shells-radii-3-4">
-        <caption>The spherical shells <m>x^2 + y^2 + z^2 = a^2, 3\leq a\leq 4</m>.</caption>
-        <interactive xml:id="calcplot3d-spherical-shells-radii-3-4" variant="controls" aspect="3:2" calcplot3d="type=implicit;equation=x^2+y^2+z^2~a^2;cubes=16;visible=true;fixdomain=false;xmin=-5;xmax=5;ymin=-5;ymax=5;zmin=-5;zmax=5;alpha=-1;hidemyedges=false;view=0;format=normal;constcol=rgb(255,0,0)&amp;type=slider;slider=a;value=3;steps=100;pmin=3;pmax=4;repeat=true;bounce=true;waittime=1;careful=false;noanimate=false;name=-1&amp;type=window;hsrmode=0;nomidpts=false;anaglyph=-1;center=7.6331122627967956,1.981796419405057,6.148827541536563,1;focus=0,0,0,1;up=-0.4299207843228113,-0.37080228549923083,0.8232094413184324,1;transparent=true;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=true;gridcolor=rgb(128,128,128);xmin=-5;xmax=5;ymin=-5;ymax=5;zmin=-5;zmax=5;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;xscalefactor=1;yscalefactor=1;zscalefactor=1;tracemode=1;tracepoint=-2.945243112740431,3,0,1;keep2d=false;zoom=0.369067"/>
-      </figure>
-    </subsection>
+        <me>|P_{1}P_{2}| = d(P_{1},P_{2}) =
+        \sqrt{(x_{1}-x_{2})^{2}+(y_{1}-y_{2})^{2}}.</me>
+        <p>
+          This is proved using the Pythagorean theorem. We can do the
+          same exact thing in <m>\RR^{3}</m>!
+        </p>
+        <theorem xml:id="theorem-distances-in-space">
+          <title>Distances in Space</title>
+          <idx><h>distance formula</h><h>three dimensions</h></idx>
+          <statement>
+            <p>
+              Let <m>P_{1}(x_{1},y_{1},z_{1})</m> and
+              <m>P_{2}(x_{2},y_{2},z_{2})</m> be two points in
+              <m>\RR^{3}</m>.  Then the distance between these two
+              points, <m>|P_{1}P_{2}| = d(P_{1},P_{2})</m>, is given by
+              <me>|P_{1}P_{2}| = d(P_{1},P_{2}) =
+              \sqrt{(x_{1}-x_{2})^{2}+(y_{1}-y_{2})^{2} +
+              (z_{1}-z_{2})^{2}}.</me>
+            </p>
+          </statement>
+        </theorem>
+        <example xml:id="example-computing-distances">
+          <title>Computing distances</title>
+          <p>
+            <xref ref="theorem-distances-in-space" text="type-global" />
+            lets us find the distance between the points
+            <m>P(1,4,-2)</m> and <m>Q(-1,0,2)</m> as follows:
+          </p>
+          <me>d(P,Q) = \sqrt{4+16+16} = 6.</me>
+        </example>
+        <p>
+          One important use of the distance formula in <m>\RR^{3}</m> is
+          that it lets us find equations of spheres.  The equation of a
+          sphere of radius <m>r</m> and center <m>C(h,k,l)</m> is given
+          by <me>\sqrt{(x-h)^{2}+(y-k)^{2}+(z-l)^{2}} = r,</me> which is
+          more commonly written as <me>(x-h)^{2}+(y-k)^{2}+(z-l)^{2} =
+          r^{2}.</me>
+        </p>
+        <example xml:id="example-equation-of-a-sphere">
+          <title>Equation of a sphere</title>
+          <p>
+            The equation <m>2x^{2}+2y^{2}+2z^{2} = 8x - 24z + 4</m>
+            represents a sphere in <m>\RR^{3}</m>. To see how, we can
+            rearrange the equation and complete the square to get
+          </p>
+          <md>
+            <mrow>2x^{2}+2y^{2}+2z^{2} - 8x + 24z = 4 &amp; \Rightarrow x^{2}+y^{2}+z^{2} - 4x + 12z = 2 </mrow>
+            <mrow> &amp; \Rightarrow (x-2)^{2} + y^{2} + (z-6)^{2} = 2 + 4 + 36</mrow>
+            <mrow> &amp; \Rightarrow (x-2)^{2} + y^{2} + (z-6)^{2} = 42.</mrow>
+          </md>
+          <p>
+            So this equation describes a sphere of radius
+            <m>\sqrt{42}</m> centered at <m>(2,0,6)</m>.
+          </p>
+        </example>
+
+        <example xml:id="example-spherical-shells">
+          <title>Spherical shells</title>
+          <p>
+            We can also use inequalities to describe regions in addition
+            to equalities. For example, <m>3^2\leq x^{2}+y^{2}+z^{2}\leq
+            4^2</m> describes the region contained between the sphere of
+            radius <m>3</m> and the sphere of radius <m>4</m>, both
+            centered at the origin.
+          </p>
+        </example>
+        <figure xml:id="figure-spherical-shells-radii-3-4">
+          <caption>The spherical shells <m>x^2 + y^2 + z^2 = a^2, 3\leq a\leq 4</m>.</caption>
+          <interactive xml:id="calcplot3d-spherical-shells-radii-3-4" variant="controls" aspect="3:2" calcplot3d="type=implicit;equation=x^2+y^2+z^2~a^2;cubes=16;visible=true;fixdomain=false;xmin=-5;xmax=5;ymin=-5;ymax=5;zmin=-5;zmax=5;alpha=-1;hidemyedges=false;view=0;format=normal;constcol=rgb(255,0,0)&amp;type=slider;slider=a;value=3;steps=100;pmin=3;pmax=4;repeat=true;bounce=true;waittime=1;careful=false;noanimate=false;name=-1&amp;type=window;hsrmode=0;nomidpts=false;anaglyph=-1;center=7.6331122627967956,1.981796419405057,6.148827541536563,1;focus=0,0,0,1;up=-0.4299207843228113,-0.37080228549923083,0.8232094413184324,1;transparent=true;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=true;gridcolor=rgb(128,128,128);xmin=-5;xmax=5;ymin=-5;ymax=5;zmin=-5;zmax=5;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;xscalefactor=1;yscalefactor=1;zscalefactor=1;tracemode=1;tracepoint=-2.945243112740431,3,0,1;keep2d=false;zoom=0.369067"/>
+        </figure>
+      </subsection>
   </section>
   <section xml:id="section-vectors">
     <title>Vectors</title>
