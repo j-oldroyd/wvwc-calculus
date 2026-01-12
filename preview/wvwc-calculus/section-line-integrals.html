@@ -6,17 +6,21 @@
 <!--*                                          *-->
 <!--********************************************-->
 <html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>WVWC-CALC Line integrals</title>
-<meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:type" content="book">
-<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo.jpg">
-<meta property="book:title" content="Calculus Notes">
-<meta property="book:author" content="Jesse Oldroyd
-          ">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -88,12 +92,14 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo-brandlogo.jpg">
+<meta property="book:title" content="Calculus Notes">
+<meta property="book:author" content="Jesse Oldroyd
+          ">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -115,127 +121,22 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.1';
+eBookConfig.runestone_version = '7.11.8';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.87cabc2515250052.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.630d5c4fb4b681eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.97f3ae4f7a71ba18.css">
-<style>
-#theorem-combining-continuous-functions-2-1-4 { counter-set: theorem-combining-continuous-functions-2-1-4 0; }
-#theorem-combining-continuous-functions-2-1-4 > li::marker { content: ""counter(theorem-combining-continuous-functions-2-1-4,decimal)"."; }
-#theorem-combining-continuous-functions-2-1-4 > li { counter-increment: theorem-combining-continuous-functions-2-1-4; }
-#example-derivatives-using-the-power-rule-2-1-1 { counter-set: example-derivatives-using-the-power-rule-2-1-1 0; }
-#example-derivatives-using-the-power-rule-2-1-1 > li::marker { content: ""counter(example-derivatives-using-the-power-rule-2-1-1,decimal)"."; }
-#example-derivatives-using-the-power-rule-2-1-1 > li { counter-increment: example-derivatives-using-the-power-rule-2-1-1; }
-#section-extreme-values-of-functions-4-1-1-1 { counter-set: section-extreme-values-of-functions-4-1-1-1 0; }
-#section-extreme-values-of-functions-4-1-1-1 > li::marker { content: ""counter(section-extreme-values-of-functions-4-1-1-1,decimal)"."; }
-#section-extreme-values-of-functions-4-1-1-1 > li { counter-increment: section-extreme-values-of-functions-4-1-1-1; }
-#example-minimizing-material-costs-3-1-1 { counter-set: example-minimizing-material-costs-3-1-1 0; }
-#example-minimizing-material-costs-3-1-1 > li::marker { content: ""counter(example-minimizing-material-costs-3-1-1,decimal)"."; }
-#example-minimizing-material-costs-3-1-1 > li { counter-increment: example-minimizing-material-costs-3-1-1; }
-#example-distance-on-an-ellipse-3-1-1 { counter-set: example-distance-on-an-ellipse-3-1-1 0; }
-#example-distance-on-an-ellipse-3-1-1 > li::marker { content: ""counter(example-distance-on-an-ellipse-3-1-1,decimal)"."; }
-#example-distance-on-an-ellipse-3-1-1 > li { counter-increment: example-distance-on-an-ellipse-3-1-1; }
-#example-finding-antiderivatives-2-1-1 { counter-set: example-finding-antiderivatives-2-1-1 0; }
-#example-finding-antiderivatives-2-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-2-1-1,decimal)"."; }
-#example-finding-antiderivatives-2-1-1 > li { counter-increment: example-finding-antiderivatives-2-1-1; }
-#example-finding-antiderivatives-3-1-1 { counter-set: example-finding-antiderivatives-3-1-1 0; }
-#example-finding-antiderivatives-3-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-3-1-1,decimal)"."; }
-#example-finding-antiderivatives-3-1-1 > li { counter-increment: example-finding-antiderivatives-3-1-1; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 { counter-set: theorem-more-properties-of-the-definite-integral-2-1-3 0; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li::marker { content: ""counter(theorem-more-properties-of-the-definite-integral-2-1-3,decimal)"."; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li { counter-increment: theorem-more-properties-of-the-definite-integral-2-1-3; }
-#theorem-fundamental-theorem-of-calculus-2-2 { counter-set: theorem-fundamental-theorem-of-calculus-2-2 0; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li::marker { content: ""counter(theorem-fundamental-theorem-of-calculus-2-2,decimal)"."; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li { counter-increment: theorem-fundamental-theorem-of-calculus-2-2; }
-#section-substitution-5-3 { counter-set: section-substitution-5-3 0; }
-#section-substitution-5-3 > li::marker { content: ""counter(section-substitution-5-3,decimal)"."; }
-#section-substitution-5-3 > li { counter-increment: section-substitution-5-3; }
-#algorithm-partial-fractions-algorithm-3-1-2 { counter-set: algorithm-partial-fractions-algorithm-3-1-2 0; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li::marker { content: ""counter(algorithm-partial-fractions-algorithm-3-1-2,decimal)"."; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li { counter-increment: algorithm-partial-fractions-algorithm-3-1-2; }
-#section-applications-to-physics-and-engineering-2-2 { counter-set: section-applications-to-physics-and-engineering-2-2 0; }
-#section-applications-to-physics-and-engineering-2-2 > li::marker { content: ""counter(section-applications-to-physics-and-engineering-2-2,decimal)"."; }
-#section-applications-to-physics-and-engineering-2-2 > li { counter-increment: section-applications-to-physics-and-engineering-2-2; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 { counter-set: subsection-moments-and-centers-of-mass-7-1-3-1 0; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-1-3-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-1-3-1; }
-#subsection-moments-and-centers-of-mass-7-2-1 { counter-set: subsection-moments-and-centers-of-mass-7-2-1 0; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-2-1; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 { counter-set: subsection-moments-and-centers-of-mass-12-1-1-4 0; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-1-1-4,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li { counter-increment: subsection-moments-and-centers-of-mass-12-1-1-4; }
-#subsection-moments-and-centers-of-mass-12-2-1 { counter-set: subsection-moments-and-centers-of-mass-12-2-1 0; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-12-2-1; }
-#example-determining-a-sustainable-population-3-3 { counter-set: example-determining-a-sustainable-population-3-3 0; }
-#example-determining-a-sustainable-population-3-3 > li::marker { content: ""counter(example-determining-a-sustainable-population-3-3,decimal)"."; }
-#example-determining-a-sustainable-population-3-3 > li { counter-increment: example-determining-a-sustainable-population-3-3; }
-#theorem-sequential-limit-laws-2-2 { counter-set: theorem-sequential-limit-laws-2-2 0; }
-#theorem-sequential-limit-laws-2-2 > li::marker { content: ""counter(theorem-sequential-limit-laws-2-2,decimal)"."; }
-#theorem-sequential-limit-laws-2-2 > li { counter-increment: theorem-sequential-limit-laws-2-2; }
-#example-guessing-sums-2-1-1 { counter-set: example-guessing-sums-2-1-1 0; }
-#example-guessing-sums-2-1-1 > li::marker { content: ""counter(example-guessing-sums-2-1-1,decimal)"."; }
-#example-guessing-sums-2-1-1 > li { counter-increment: example-guessing-sums-2-1-1; }
-#example-guessing-sums-3-1-1 { counter-set: example-guessing-sums-3-1-1 0; }
-#example-guessing-sums-3-1-1 > li::marker { content: ""counter(example-guessing-sums-3-1-1,decimal)"."; }
-#example-guessing-sums-3-1-1 > li { counter-increment: example-guessing-sums-3-1-1; }
-#theorem-direct-comparison-test-series-3-1-4 { counter-set: theorem-direct-comparison-test-series-3-1-4 0; }
-#theorem-direct-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-direct-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-direct-comparison-test-series-3-1-4 > li { counter-increment: theorem-direct-comparison-test-series-3-1-4; }
-#theorem-limit-comparison-test-series-3-1-4 { counter-set: theorem-limit-comparison-test-series-3-1-4 0; }
-#theorem-limit-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-limit-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-limit-comparison-test-series-3-1-4 > li { counter-increment: theorem-limit-comparison-test-series-3-1-4; }
-#subsection-alternating-series-9-2 { counter-set: subsection-alternating-series-9-2 0; }
-#subsection-alternating-series-9-2 > li::marker { content: ""counter(subsection-alternating-series-9-2,decimal)"."; }
-#subsection-alternating-series-9-2 > li { counter-increment: subsection-alternating-series-9-2; }
-#theorem-ratio-test-2-1-3 { counter-set: theorem-ratio-test-2-1-3 0; }
-#theorem-ratio-test-2-1-3 > li::marker { content: ""counter(theorem-ratio-test-2-1-3,decimal)"."; }
-#theorem-ratio-test-2-1-3 > li { counter-increment: theorem-ratio-test-2-1-3; }
-#theorem-root-test-2-1-3 { counter-set: theorem-root-test-2-1-3 0; }
-#theorem-root-test-2-1-3 > li::marker { content: ""counter(theorem-root-test-2-1-3,decimal)"."; }
-#theorem-root-test-2-1-3 > li { counter-increment: theorem-root-test-2-1-3; }
-#example-examples-of-power-series-2-1-1 { counter-set: example-examples-of-power-series-2-1-1 0; }
-#example-examples-of-power-series-2-1-1 > li::marker { content: ""counter(example-examples-of-power-series-2-1-1,decimal)"."; }
-#example-examples-of-power-series-2-1-1 > li { counter-increment: example-examples-of-power-series-2-1-1; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 { counter-set: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 0; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li::marker { content: ""counter(theorem-properties-of-vector-addition-and-scalar-multiplication-3-2,decimal)"."; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li { counter-increment: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2; }
-#theorem-properties-of-the-dot-product-3-2 { counter-set: theorem-properties-of-the-dot-product-3-2 0; }
-#theorem-properties-of-the-dot-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-dot-product-3-2,decimal)"."; }
-#theorem-properties-of-the-dot-product-3-2 > li { counter-increment: theorem-properties-of-the-dot-product-3-2; }
-#theorem-properties-of-the-cross-product-3-2 { counter-set: theorem-properties-of-the-cross-product-3-2 0; }
-#theorem-properties-of-the-cross-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-cross-product-3-2,decimal)"."; }
-#theorem-properties-of-the-cross-product-3-2 > li { counter-increment: theorem-properties-of-the-cross-product-3-2; }
-#theorem-vector-derivative-rules-3-2 { counter-set: theorem-vector-derivative-rules-3-2 0; }
-#theorem-vector-derivative-rules-3-2 > li::marker { content: ""counter(theorem-vector-derivative-rules-3-2,decimal)"."; }
-#theorem-vector-derivative-rules-3-2 > li { counter-increment: theorem-vector-derivative-rules-3-2; }
-#subsection-continuous-functions-5 { counter-set: subsection-continuous-functions-5 0; }
-#subsection-continuous-functions-5 > li::marker { content: ""counter(subsection-continuous-functions-5,decimal)"."; }
-#subsection-continuous-functions-5 > li { counter-increment: subsection-continuous-functions-5; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 { counter-set: algorithm-method-of-lagrange-multipliers-3-1-7 0; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li::marker { content: ""counter(algorithm-method-of-lagrange-multipliers-3-1-7,decimal)"."; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li { counter-increment: algorithm-method-of-lagrange-multipliers-3-1-7; }
-#subsection-conservative-vector-fields-2-2 { counter-set: subsection-conservative-vector-fields-2-2 0; }
-#subsection-conservative-vector-fields-2-2 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-2,decimal)"."; }
-#subsection-conservative-vector-fields-2-2 > li { counter-increment: subsection-conservative-vector-fields-2-2; }
-#subsection-conservative-vector-fields-2-3 { counter-set: subsection-conservative-vector-fields-2-3 0; }
-#subsection-conservative-vector-fields-2-3 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-3,decimal)"."; }
-#subsection-conservative-vector-fields-2-3 > li { counter-increment: subsection-conservative-vector-fields-2-3; }
-#gfdl-section4-3 { counter-set: gfdl-section4-3 0; }
-#gfdl-section4-3 > li::marker { content: ""counter(gfdl-section4-3,upper-alpha)"."; }
-#gfdl-section4-3 > li { counter-increment: gfdl-section4-3; }
-</style>
+<script src="_static/prefix-runtime.991c135ccf182bf5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1c010553c35c544c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.677a75a9120449ff.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdn.geogebra.org/apps/deployggb.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" target="_blank" href=""><img src="external/./wvwc-logo.jpg" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes:</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
+<img src="external/./wvwc-logo-brandlogo.jpg" alt="Logo image"><div class="title-container">
+<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
 <p class="byline">Jesse Oldroyd</p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
@@ -431,10 +332,10 @@ true);
 <div class="toc-title-box"><a href="applications-differentiation.html" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Differentiation</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-linear-approximations.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear approximations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related Rates</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related rates</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-l-hospital-s-rule.html" class="internal"><span class="codenumber">5.3</span> <span class="title">L’Hospital’s Rule</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme Values of Functions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization Problems</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme values of functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization problems</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-the-mean-value-theorem.html" class="internal"><span class="codenumber">5.6</span> <span class="title">The Mean Value Theorem</span></a></div>
 <ul class="structural toc-item-list">
@@ -442,8 +343,11 @@ true);
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-the-mean-value-theorem.html#subsection-the-mean-value-theorem" class="internal"><span class="title">The Mean Value Theorem</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and Graphs</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and graphs</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-newton-s-method.html#subsection-newtons-method-optimization" class="internal"><span class="title">Newton’s Method for optimization</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-antiderivatives.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Antiderivatives</span></a></div></li>
 </ul>
 </li>
@@ -606,8 +510,14 @@ true);
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-coordinates-in-3-space.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Coordinates in 3-Space</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -797,34 +707,38 @@ true);
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-line-integrals"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">14.2</span><span class="space"> </span><span class="title">Line integrals</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Line integrals</span>
 </h2>
-<section class="introduction" id="section-line-integrals-2"><div class="para" id="section-line-integrals-2-1">In this section we move on to computing integrals over curves in <span class="process-math">\(\RR^{2}\)</span> and <span class="process-math">\(\RR^{3}\text{.}\)</span>
+<section class="introduction" id="section-line-integrals-2"><div class="para" id="section-line-integrals-2-1">In this section we move on to computing integrals over curves in <span class="process-math">\(\RR^{2}\)</span> and <span class="process-math">\(\RR^{3}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#section-line-integrals-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><section class="subsection" id="subsection-scalar-line-integrals"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Scalar line integrals</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Scalar line integrals</span>
 </h3>
-<div class="para" id="subsection-scalar-line-integrals-2">Suppose we wish to find the mass of a wire given by a curve <span class="process-math">\(C\)</span> in the <span class="process-math">\(xy\)</span>-plane. If the density is a constant <span class="process-math">\(\rho\)</span> then this is simple: the mass is just <span class="process-math">\(\rho L\)</span> where <span class="process-math">\(L\)</span> denotes the length of the wire.</div>
+<div class="para" id="subsection-scalar-line-integrals-2">Suppose we wish to find the mass of a wire given by a curve <span class="process-math">\(C\)</span> in the <span class="process-math">\(xy\)</span>-plane. If the density is a constant <span class="process-math">\(\rho\)</span> then this is simple: the mass is just <span class="process-math">\(\rho L\)</span> where <span class="process-math">\(L\)</span> denotes the length of the wire.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-scalar-line-integrals-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="para logical" id="subsection-scalar-line-integrals-3">
 <div class="para">Now suppose that the density varies, and is now a function <span class="process-math">\(\rho(x,y)\text{.}\)</span> Then we can estimate the mass of the wire by chopping the wire into <span class="process-math">\(k\)</span> smaller segments, each of length <span class="process-math">\(\Delta s\text{,}\)</span> choosing points <span class="process-math">\((x_{i},y_{i})\)</span> from each segment, and then computing</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsection-scalar-line-integrals-3-5">
 \begin{equation*}
 \sum_{j=1}^{k}\rho(x_{j}, y_{j})\Delta s\text{.}
 \end{equation*}
 </div>
 <div class="para">If we send <span class="process-math">\(\Delta s\to 0\)</span>the approximation becomes exact, and defines the <dfn class="terminology">scalar line integral</dfn> of <span class="process-math">\(\rho\)</span> along <span class="process-math">\(C\text{.}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-scalar-line-integrals-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="definition-scalar-line-integral"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">14.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Scalar line lntegral.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.2.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Scalar line lntegral.</span>
 </h4>
 <div class="para logical" id="definition-scalar-line-integral-4-1">
 <div class="para">Suppose that <span class="process-math">\(C\)</span> is a smooth curve in <span class="process-math">\(\RR^{2}\)</span> and that the function <span class="process-math">\(f(x,y)\)</span> is continuous on <span class="process-math">\(C\text{.}\)</span> The scalar line integral of <span class="process-math">\(f\)</span> along <span class="process-math">\(C\)</span> is the number <span class="process-math">\(\int_{C}f(x,y)\dd{s}\)</span> defined to be</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="definition-scalar-line-integral-4-1-8">
 \begin{equation*}
 \int_{C}f(x,y)\dd{s} = \lim_{\Delta s\to 0}\sum_{j=1}^{k}f(x_{j},y_{j})\Delta s\text{.}
 \end{equation*}
 </div>
-</div> <aside class="aside aside-like" id="definition-scalar-line-integral-4-2"><div class="para" id="definition-scalar-line-integral-4-2-1">An analogous definition holds for curves in <span class="process-math">\(\RR^{3}\text{.}\)</span> We can also replace the assumption that <span class="process-math">\(C\)</span> is smooth with the assumption that <span class="process-math">\(C\)</span> is <em class="emphasis">rectifiable</em>, which (roughly) means it has a well-defined length.</div></aside></article><div class="para" id="subsection-scalar-line-integrals-5">Geometrically, <span class="process-math">\(\int_{C}f(x,y)\dd{s}\)</span> represents the area under <span class="process-math">\(z = f(x,y)\)</span> and above <span class="process-math">\(C\text{.}\)</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#definition-scalar-line-integral-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <details id="definition-scalar-line-integral-4-2" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading"><span class="type">Aside</span></h5></summary><aside class="aside aside-like knowl__content"><div class="para" id="definition-scalar-line-integral-4-2-1">An analogous definition holds for curves in <span class="process-math">\(\RR^{3}\text{.}\)</span> We can also replace the assumption that <span class="process-math">\(C\)</span> is smooth with the assumption that <span class="process-math">\(C\)</span> is <em class="emphasis">rectifiable</em>, which (roughly) means it has a well-defined length.<div class="autopermalink" data-description="Paragraph"><a href="#definition-scalar-line-integral-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside></details><div class="autopermalink" data-description="Definition 14.2.1: Scalar line lntegral"><a href="#definition-scalar-line-integral" title="Copy heading and permalink for Definition 14.2.1: Scalar line lntegral" aria-label="Copy heading and permalink for Definition 14.2.1: Scalar line lntegral">🔗</a></div></article><div class="para" id="subsection-scalar-line-integrals-5">Geometrically, <span class="process-math">\(\int_{C}f(x,y)\dd{s}\)</span> represents the area under <span class="process-math">\(z = f(x,y)\)</span> and above <span class="process-math">\(C\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-scalar-line-integrals-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsection-scalar-line-integrals-6">
 <div class="para">If <span class="process-math">\(C\)</span> is nice enough (i.e., piecewise smooth), we can avoid using Riemann sums to compute the scalar line integral. Note that <span class="process-math">\(ds\)</span> can be viewed as representing an <em class="emphasis">infinitesimal length</em> along the curve <span class="process-math">\(C\text{.}\)</span> If <span class="process-math">\(C\)</span> is traced out by the parametric equations</div>
@@ -837,38 +751,41 @@ a \amp \leq t\leq b \text{,}
 </div>
 <div class="para">then the length of <span class="process-math">\(C\)</span> from <span class="process-math">\(a\)</span> to <span class="process-math">\(t\)</span> is given by the <em class="emphasis">arc length function</em>
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-arc-length-parametric-curves.html ./knowl/xref/subsection-arc-length.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-arc-length-parametric-curves.html ./knowl/xref/subsection-arc-length.html" id="subsection-scalar-line-integrals-6-11">
 \begin{equation*}
 s(t) = \int_{a}^{t}\sqrt{x'(u)^{2} + y'(u)^{2}}\,du\text{.}
 \end{equation*}
 </div>
 <div class="para">See <a href="section-calculus-and-parametric-curves.html#subsection-arc-length-parametric-curves" class="internal" title="Subsection: Arc Length of Parametric Curves">Arc Length of Parametric Curves</a> and <a href="section-arc-length-and-curvature.html#subsection-arc-length" class="internal" title="Subsection: Arc Length">Arc Length</a>. Thus</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-arc-length-parametric-curves.html ./knowl/xref/subsection-arc-length.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-arc-length-parametric-curves.html ./knowl/xref/subsection-arc-length.html" id="subsection-scalar-line-integrals-6-14">
 \begin{equation*}
 \dv{s}{t} = \sqrt{x'(t)^{2} + y'(t)^{2}}\text{,}
 \end{equation*}
 </div>
 <div class="para">and we can write</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-arc-length-parametric-curves.html ./knowl/xref/subsection-arc-length.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-arc-length-parametric-curves.html ./knowl/xref/subsection-arc-length.html" id="subsection-scalar-line-integrals-6-15">
 \begin{equation*}
 \int_{C}f(x,y)\dd{s} = \int_{a}^{b}f(x(t),y(t))\sqrt{x'(t)^{2} + y'(t)^{2}}\,dt\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-scalar-line-integrals-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsection-scalar-line-integrals-7">
 <div class="para">If we view <span class="process-math">\(C\)</span> as being traced out by a vector function <span class="process-math">\(\vb{r}(t), a\leq t\leq b\text{,}\)</span> then we can write this formula even more compactly:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsection-scalar-line-integrals-7-3">
 \begin{equation*}
 \int_{C}f(x,y)\dd{s} = \int_{a}^{b}f(\vb{r}(t))\norm{\vb{r}'(t)}\,dt\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-scalar-line-integrals-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-computing-a-scalar-line-integral"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">14.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Computing a scalar line integral.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.2.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Computing a scalar line integral.</span>
 </h4>
-<div class="para" id="example-computing-a-scalar-line-integral-2-1">Compute <span class="process-math">\(\int_{C}(xy)^{1/3}\dd{s}\text{,}\)</span> where <span class="process-math">\(C\)</span> is the segment of the parabola <span class="process-math">\(y = x^{2}\)</span> from <span class="process-math">\(x = 0\)</span> to <span class="process-math">\(x = 1\text{.}\)</span>
+<div class="para" id="example-computing-a-scalar-line-integral-2-1">Compute <span class="process-math">\(\int_{C}(xy)^{1/3}\dd{s}\text{,}\)</span> where <span class="process-math">\(C\)</span> is the segment of the parabola <span class="process-math">\(y = x^{2}\)</span> from <span class="process-math">\(x = 0\)</span> to <span class="process-math">\(x = 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-computing-a-scalar-line-integral-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-computing-a-scalar-line-integral-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-computing-a-scalar-line-integral-3-1">
+<div class="solutions"><details id="example-computing-a-scalar-line-integral-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-computing-a-scalar-line-integral-3-1">
 <div class="para">The curve <span class="process-math">\(C\)</span> is traced out by the vector function <span class="process-math">\(\vb{r}(t) = \dotprod{t,t^{2}}\)</span> for <span class="process-math">\(0\leq t\leq 1\text{.}\)</span> Therefore</div>
 <div class="displaymath process-math" id="example-computing-a-scalar-line-integral-3-1-4">
 \begin{align*}
@@ -877,13 +794,19 @@ s(t) = \int_{a}^{t}\sqrt{x'(u)^{2} + y'(u)^{2}}\,du\text{.}
 \amp = \frac{5^{3/2} - 1}{12} 
 \end{align*}
 </div>
-</div></div></details></div></article><div class="para" id="subsection-scalar-line-integrals-9">Line integrals along piecewise smooth curves can be found without too much trouble.</div>
-<article class="example example-like" id="example-integrating-along-line-segments"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">14.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Integrating along line segments.</span>
-</h4>
-<div class="para" id="example-integrating-along-line-segments-2-1">Find <span class="process-math">\(\int_{C}(3x - 3y)\dd{s}\)</span> where <span class="process-math">\(C\)</span> denotes the line segment from <span class="process-math">\((-1,0)\)</span> to <span class="process-math">\((0,1)\)</span> followed by the segment from <span class="process-math">\((0,1)\)</span> to <span class="process-math">\((1,0)\text{.}\)</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-computing-a-scalar-line-integral-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-integrating-along-line-segments-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-integrating-along-line-segments-3-1">
+<div class="autopermalink" data-description="Solution 14.2.2.1"><a href="#example-computing-a-scalar-line-integral-3" title="Copy heading and permalink for Solution 14.2.2.1" aria-label="Copy heading and permalink for Solution 14.2.2.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 14.2.2: Computing a scalar line integral"><a href="#example-computing-a-scalar-line-integral" title="Copy heading and permalink for Example 14.2.2: Computing a scalar line integral" aria-label="Copy heading and permalink for Example 14.2.2: Computing a scalar line integral">🔗</a></div></article><div class="para" id="subsection-scalar-line-integrals-9">Line integrals along piecewise smooth curves can be found without too much trouble.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-scalar-line-integrals-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="example-integrating-along-line-segments"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Integrating along line segments.</span>
+</h4>
+<div class="para" id="example-integrating-along-line-segments-2-1">Find <span class="process-math">\(\int_{C}(3x - 3y)\dd{s}\)</span> where <span class="process-math">\(C\)</span> denotes the line segment from <span class="process-math">\((-1,0)\)</span> to <span class="process-math">\((0,1)\)</span> followed by the segment from <span class="process-math">\((0,1)\)</span> to <span class="process-math">\((1,0)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-integrating-along-line-segments-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-integrating-along-line-segments-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-integrating-along-line-segments-3-1">
 <div class="para">We find this by breaking <span class="process-math">\(C\)</span> down as the union of two smooth curves <span class="process-math">\(C_{1}\)</span> and <span class="process-math">\(C_{2}\text{,}\)</span> where</div>
 <div class="displaymath process-math" id="example-integrating-along-line-segments-3-1-4">
 \begin{align*}
@@ -898,24 +821,30 @@ C_{2}:\vb{r}_{2}(t) \amp = (1-t)\dotprod{0,1} + t\dotprod{1,0}
 \amp = \int_{0}^{1}\left[(2t - 2 - 3t) + (2t - 3 + 3t)\right]\sqrt{2}\,dt \text{.}
 \end{align*}
 </div>
-</div></div></details></div></article><div class="para" id="subsection-scalar-line-integrals-11">We can also compute scalar line integrals in <span class="process-math">\(\RR^{3}\text{.}\)</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-integrating-along-line-segments-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 14.2.3.1"><a href="#example-integrating-along-line-segments-3" title="Copy heading and permalink for Solution 14.2.3.1" aria-label="Copy heading and permalink for Solution 14.2.3.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 14.2.3: Integrating along line segments"><a href="#example-integrating-along-line-segments" title="Copy heading and permalink for Example 14.2.3: Integrating along line segments" aria-label="Copy heading and permalink for Example 14.2.3: Integrating along line segments">🔗</a></div></article><div class="para" id="subsection-scalar-line-integrals-11">We can also compute scalar line integrals in <span class="process-math">\(\RR^{3}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-scalar-line-integrals-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-average-value-on-a-circle"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">14.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Average value on a circle.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Average value on a circle.</span>
 </h4>
 <div class="para logical" id="example-average-value-on-a-circle-2-1">
 <div class="para">Let <span class="process-math">\(f(x,y,z) = x^{2} + y^{2} - 2z^{2}\)</span> and let</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-average-value-on-a-circle-2-1-2">
 \begin{equation*}
 C:\vb{r}(t) = \dotprod{5\sin t,3\cos t, 4\cos t}, 0\leq t\leq 2\pi\text{.}
 \end{equation*}
 </div>
 <div class="para">Find the average value of <span class="process-math">\(f\)</span> on <span class="process-math">\(C\text{.}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-average-value-on-a-circle-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-average-value-on-a-circle-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-average-value-on-a-circle-3-1">
+<div class="solutions"><details id="example-average-value-on-a-circle-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-average-value-on-a-circle-3-1">
 <div class="para">The average value of <span class="process-math">\(f\)</span> on <span class="process-math">\(C\)</span> is given by</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-average-value-on-a-circle-3-1-3">
 \begin{equation*}
 \frac{1}{\operatorname{length}(C)}\int_{C}f(x,y,z)\dd{s}
 \end{equation*}
@@ -938,19 +867,24 @@ C:\vb{r}(t) = \dotprod{5\sin t,3\cos t, 4\cos t}, 0\leq t\leq 2\pi\text{.}
 </div>
 <div class="para">Therefore <span class="process-math">\(f(x,y,z)\)</span> has an average value of <span class="process-math">\(1\)</span> on <span class="process-math">\(C\text{.}\)</span>
 </div>
-</div></div></details></div></article></section><section class="subsection" id="subsection-vector-field-line-integrals"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Vector field line integrals</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-average-value-on-a-circle-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 14.2.4.1"><a href="#example-average-value-on-a-circle-3" title="Copy heading and permalink for Solution 14.2.4.1" aria-label="Copy heading and permalink for Solution 14.2.4.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 14.2.4: Average value on a circle"><a href="#example-average-value-on-a-circle" title="Copy heading and permalink for Example 14.2.4: Average value on a circle" aria-label="Copy heading and permalink for Example 14.2.4: Average value on a circle">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Scalar line integrals"><a href="#subsection-scalar-line-integrals" title="Copy heading and permalink for Subsection: Scalar line integrals" aria-label="Copy heading and permalink for Subsection: Scalar line integrals">🔗</a></div></section><section class="subsection" id="subsection-vector-field-line-integrals"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Vector field line integrals</span>
 </h3>
 <div class="para" id="subsection-vector-field-line-integrals-2">Suppose we have a <em class="emphasis">force field</em> <span class="process-math">\(\vb{F}\)</span> in <span class="process-math">\(\RR^{2}\)</span> and some particle that is acted upon by the force. The particle has a trajectory given by a curve <span class="process-math">\(C: \vb{r}(t), 0\leq t\leq 1\text{.}\)</span> <figure class="figure figure-like" id="figure-trajectory-in-a-force-field"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><div class="asymptote-box" style="padding-top: 99.8132766211337%"><iframe src="generated/asymptote/image-trajectory-in-a-force-field.html" class="asymptote"></iframe></div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">14.2.5<span class="period">.</span></span><span class="space"> </span>Trajectory in a force field.</figcaption></figure>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.2.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Trajectory in a force field.<div class="autopermalink" data-description="Figure 14.2.5"><a href="#figure-trajectory-in-a-force-field" title="Copy heading and permalink for Figure 14.2.5" aria-label="Copy heading and permalink for Figure 14.2.5">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#subsection-vector-field-line-integrals-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsection-vector-field-line-integrals-3">We want to determine how the trajectory of the particle aligns with the forcefield <span class="process-math">\(\vb{F}\text{.}\)</span> We can do this by picking an arbitrary point along <span class="process-math">\(C\text{,}\)</span> finding the unit tangent <span class="process-math">\(\vb{T}\)</span> at this point, and then comparing the direction of <span class="process-math">\(\vb{T}\)</span> and that of <span class="process-math">\(\vb{F}\)</span> by computing the dot product <span class="process-math">\(\vb{F}\cdot\vb{T}\text{.}\)</span> This is a measure of how <span class="process-math">\(\vb{F}\)</span> and <span class="process-math">\(C\)</span> align at a specific point, and integrating this along <span class="process-math">\(C\)</span> should tell us how <span class="process-math">\(C\)</span> and <span class="process-math">\(\vb{F}\)</span> align overall.</div>
+<div class="para" id="subsection-vector-field-line-integrals-3">We want to determine how the trajectory of the particle aligns with the forcefield <span class="process-math">\(\vb{F}\text{.}\)</span> We can do this by picking an arbitrary point along <span class="process-math">\(C\text{,}\)</span> finding the unit tangent <span class="process-math">\(\vb{T}\)</span> at this point, and then comparing the direction of <span class="process-math">\(\vb{T}\)</span> and that of <span class="process-math">\(\vb{F}\)</span> by computing the dot product <span class="process-math">\(\vb{F}\cdot\vb{T}\text{.}\)</span> This is a measure of how <span class="process-math">\(\vb{F}\)</span> and <span class="process-math">\(C\)</span> align at a specific point, and integrating this along <span class="process-math">\(C\)</span> should tell us how <span class="process-math">\(C\)</span> and <span class="process-math">\(\vb{F}\)</span> align overall.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-vector-field-line-integrals-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="definition-line-integral-of-a-vector-field"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">14.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Line integral of a vector field.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.2.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Line integral of a vector field.</span>
 </h4>
-<div class="para" id="definition-line-integral-of-a-vector-field-4-1">Let <span class="process-math">\(C\)</span> denote a smooth curve and let <span class="process-math">\(\vb{F}\)</span> be a vector field continuous on <span class="process-math">\(C\text{.}\)</span> Then we define the <dfn class="terminology">line integral of <span class="process-math">\(\vb{F}\)</span> over <span class="process-math">\(C\)</span></dfn> to be <span class="process-math">\(\int_{C}\vb{F}\cdot\vb{T}\dd{s}\text{.}\)</span>
-</div> <aside class="aside aside-like" id="definition-line-integral-of-a-vector-field-4-2"><div class="para" id="definition-line-integral-of-a-vector-field-4-2-1">This integral is also sometimes called the <dfn class="terminology">circulation integral</dfn> of <span class="process-math">\(\vb{F}\)</span> along <span class="process-math">\(C\text{.}\)</span>
-</div></aside></article><div class="para logical" id="subsection-vector-field-line-integrals-5">
+<div class="para" id="definition-line-integral-of-a-vector-field-4-1">Let <span class="process-math">\(C\)</span> denote a smooth curve and let <span class="process-math">\(\vb{F}\)</span> be a vector field continuous on <span class="process-math">\(C\text{.}\)</span> Then we define the <dfn class="terminology">line integral of <span class="process-math">\(\vb{F}\)</span> over <span class="process-math">\(C\)</span></dfn> to be <span class="process-math">\(\int_{C}\vb{F}\cdot\vb{T}\dd{s}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#definition-line-integral-of-a-vector-field-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <details id="definition-line-integral-of-a-vector-field-4-2" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading"><span class="type">Aside</span></h5></summary><aside class="aside aside-like knowl__content"><div class="para" id="definition-line-integral-of-a-vector-field-4-2-1">This integral is also sometimes called the <dfn class="terminology">circulation integral</dfn> of <span class="process-math">\(\vb{F}\)</span> along <span class="process-math">\(C\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#definition-line-integral-of-a-vector-field-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside></details><div class="autopermalink" data-description="Definition 14.2.6: Line integral of a vector field"><a href="#definition-line-integral-of-a-vector-field" title="Copy heading and permalink for Definition 14.2.6: Line integral of a vector field" aria-label="Copy heading and permalink for Definition 14.2.6: Line integral of a vector field">🔗</a></div></article><div class="para logical" id="subsection-vector-field-line-integrals-5">
 <div class="para">To find line integrals of vector fields, we proceed as follows. Suppose that <span class="process-math">\(C:\vb{r}(t), a\leq t\leq b\text{.}\)</span> Then</div>
 <div class="displaymath process-math" id="subsection-vector-field-line-integrals-5-2">
 \begin{align*}
@@ -959,31 +893,34 @@ C:\vb{r}(t) = \dotprod{5\sin t,3\cos t, 4\cos t}, 0\leq t\leq 2\pi\text{.}
 \end{align*}
 </div>
 <div class="para">We can also write this as</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsection-vector-field-line-integrals-5-3">
 \begin{equation*}
 \int_{a}^{b}\vb{F}\cdot d\vb{r} \qq{or} \int_{a}^{b} P\,dx + Q\,dy\text{,}
 \end{equation*}
 </div>
 <div class="para">assuming that <span class="process-math">\(\vb{F} = \dotprod{P,Q}\text{.}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-vector-field-line-integrals-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsection-vector-field-line-integrals-6">In addition to measuring how well <span class="process-math">\(C\)</span> and <span class="process-math">\(\vb{F}\)</span> align, vector field line integrals can also represent work done.</div>
+<div class="para" id="subsection-vector-field-line-integrals-6">In addition to measuring how well <span class="process-math">\(C\)</span> and <span class="process-math">\(\vb{F}\)</span> align, vector field line integrals can also represent work done.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-vector-field-line-integrals-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-flow-along-a-circle"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">14.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">Flow along a circle.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.2.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Flow along a circle.</span>
 </h4>
 <div class="para logical" id="example-flow-along-a-circle-2-1">
 <div class="para">Let <span class="process-math">\(C\)</span> denote the segment of the parabola <span class="process-math">\(y = \cos x\)</span> traversed once from <span class="process-math">\(x = -\frac{\pi}{2}\)</span> to <span class="process-math">\(x = \frac{\pi}{2}\text{,}\)</span> and let</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-flow-along-a-circle-2-1-5">
 \begin{equation*}
 \vb{F} = \dotprod{y^{2}, -x}\text{.}
 \end{equation*}
 </div>
 <div class="para">Does <span class="process-math">\(\vb{F}\)</span> tend to flow with or against <span class="process-math">\(C\text{?}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-flow-along-a-circle-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-flow-along-a-circle-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="solutions"><details id="example-flow-along-a-circle-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para" id="example-flow-along-a-circle-3-1">If we graph <span class="process-math">\(\vb{F}\)</span> and <span class="process-math">\(C\text{,}\)</span> we get the following: <figure class="figure figure-like" id="figure-flow-over-cosine-"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><div class="asymptote-box" style="padding-top: 99.3435658787038%"><iframe src="generated/asymptote/image-flow-over-cosine-.html" class="asymptote"></iframe></div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">14.2.8<span class="period">.</span></span><span class="space"> </span>Flow over <span class="process-math">\(y = \cos x\text{.}\)</span></figcaption></figure>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.2.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Flow over <span class="process-math">\(y = \cos x\text{.}\)</span><div class="autopermalink" data-description="Figure 14.2.8"><a href="#figure-flow-over-cosine-" title="Copy heading and permalink for Figure 14.2.8" aria-label="Copy heading and permalink for Figure 14.2.8">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#example-flow-along-a-circle-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-flow-along-a-circle-3-2">
 <div class="para">
@@ -1000,15 +937,21 @@ C:\vb{r}(t) = \dotprod{5\sin t,3\cos t, 4\cos t}, 0\leq t\leq 2\pi\text{.}
 </div>
 <div class="para">Since the result is positive, this tells us that <span class="process-math">\(\vb{F}\)</span> tends to flow with <span class="process-math">\(C\text{.}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-flow-along-a-circle-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-</div></details></div></article><article class="example example-like" id="example-a-nonconservative-force"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">14.2.9</span><span class="period">.</span><span class="space"> </span><span class="title">A nonconservative force.</span>
+<div class="autopermalink" data-description="Solution 14.2.7.1"><a href="#example-flow-along-a-circle-3" title="Copy heading and permalink for Solution 14.2.7.1" aria-label="Copy heading and permalink for Solution 14.2.7.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 14.2.7: Flow along a circle"><a href="#example-flow-along-a-circle" title="Copy heading and permalink for Example 14.2.7: Flow along a circle" aria-label="Copy heading and permalink for Example 14.2.7: Flow along a circle">🔗</a></div></article><article class="example example-like" id="example-a-nonconservative-force"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.2.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A nonconservative force.</span>
 </h4>
-<div class="para" id="example-a-nonconservative-force-2-1">Let <span class="process-math">\(\vb{F} = \dotprod{-y, x}\)</span> denote a force field. Is the force <span class="process-math">\(\vb{F}\)</span> conservative?</div>
-<div class="solutions"><details id="example-a-nonconservative-force-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="example-a-nonconservative-force-3-1">Here we are using the physical definition of a conservative force, namely that the work done must be <em class="emphasis">path independent</em>. So we’ll choose two paths between two points and find the work done on each path. Let the first path, <span class="process-math">\(C_{1}\text{,}\)</span> denote the top half of the unit circle traversed counterclockwise. Similarly, let the second path, <span class="process-math">\(C_{2}\text{,}\)</span> denote the bottom half of the unit circle traversed clockwise. Then both paths have the same initial and terminal points.</div>
+<div class="para" id="example-a-nonconservative-force-2-1">Let <span class="process-math">\(\vb{F} = \dotprod{-y, x}\)</span> denote a force field. Is the force <span class="process-math">\(\vb{F}\)</span> conservative?<div class="autopermalink" data-description="Paragraph"><a href="#example-a-nonconservative-force-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-a-nonconservative-force-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-a-nonconservative-force-3-1">Here we are using the physical definition of a conservative force, namely that the work done must be <em class="emphasis">path independent</em>. So we’ll choose two paths between two points and find the work done on each path. Let the first path, <span class="process-math">\(C_{1}\text{,}\)</span> denote the top half of the unit circle traversed counterclockwise. Similarly, let the second path, <span class="process-math">\(C_{2}\text{,}\)</span> denote the bottom half of the unit circle traversed clockwise. Then both paths have the same initial and terminal points.<div class="autopermalink" data-description="Paragraph"><a href="#example-a-nonconservative-force-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="para" id="example-a-nonconservative-force-3-2">From <a href="section-line-integrals.html#figure-a-rotating-force-field-" class="xref" data-knowl="./knowl/xref/figure-a-rotating-force-field-.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 14.2.10">Figure 14.2.10</a>, it appears as though <span class="process-math">\(\int_{C_{2}}\vb{F}\cdot d\vb{r} \lt 0 \lt \int_{C_{1}}\vb{F}\cdot d\vb{r}\text{,}\)</span> which suggests that the vector field is path dependent. <figure class="figure figure-like" id="figure-a-rotating-force-field-"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><div class="asymptote-box" style="padding-top: 100%"><iframe src="generated/asymptote/image-a-rotating-force-field-.html" class="asymptote"></iframe></div></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">14.2.10<span class="period">.</span></span><span class="space"> </span>A rotating force field.</figcaption></figure> To verify this, we’ll compute the appropriate line integrals.</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.2.10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A rotating force field.<div class="autopermalink" data-description="Figure 14.2.10"><a href="#figure-a-rotating-force-field-" title="Copy heading and permalink for Figure 14.2.10" aria-label="Copy heading and permalink for Figure 14.2.10">🔗</a></div></figcaption></figure> To verify this, we’ll compute the appropriate line integrals.<div class="autopermalink" data-description="Paragraph"><a href="#example-a-nonconservative-force-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="para logical" id="example-a-nonconservative-force-3-3">
 <div class="para">For <span class="process-math">\(C_{1}:\vb{r}_{1}(t) = \dotprod{\cos t,\sin t}, 0\leq t\leq \pi\text{,}\)</span> the total circulation is</div>
 <div class="displaymath process-math" id="example-a-nonconservative-force-3-3-2">
@@ -1019,26 +962,33 @@ C:\vb{r}(t) = \dotprod{5\sin t,3\cos t, 4\cos t}, 0\leq t\leq 2\pi\text{.}
 \end{align*}
 </div>
 <div class="para">Likewise, the circulation of <span class="process-math">\(\vb{F}\)</span> along <span class="process-math">\(C_{2}\)</span> is</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-a-nonconservative-force-3-3-5">
 \begin{equation*}
 \int_{C_{2}}\vb{F}\cdot\vb{T}\dd{s} = -\pi\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-a-nonconservative-force-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="example-a-nonconservative-force-3-4">Since the work done by <span class="process-math">\(\vb{F}\)</span> between the points <span class="process-math">\((1,0)\)</span> and <span class="process-math">\((-1,0)\)</span> clearly depends on the path taken between the points, this means that <span class="process-math">\(\vb{F}\)</span> is path dependent and, therefore, not conservative.</div>
-</div></details></div></article><div class="para" id="subsection-vector-field-line-integrals-9">We can also compute vector field line integrals in <span class="process-math">\(\RR^{3}\)</span> with essentially the same formula.</div>
+<div class="para" id="example-a-nonconservative-force-3-4">Since the work done by <span class="process-math">\(\vb{F}\)</span> between the points <span class="process-math">\((1,0)\)</span> and <span class="process-math">\((-1,0)\)</span> clearly depends on the path taken between the points, this means that <span class="process-math">\(\vb{F}\)</span> is path dependent and, therefore, not conservative.<div class="autopermalink" data-description="Paragraph"><a href="#example-a-nonconservative-force-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 14.2.9.1"><a href="#example-a-nonconservative-force-3" title="Copy heading and permalink for Solution 14.2.9.1" aria-label="Copy heading and permalink for Solution 14.2.9.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 14.2.9: A nonconservative force"><a href="#example-a-nonconservative-force" title="Copy heading and permalink for Example 14.2.9: A nonconservative force" aria-label="Copy heading and permalink for Example 14.2.9: A nonconservative force">🔗</a></div></article><div class="para" id="subsection-vector-field-line-integrals-9">We can also compute vector field line integrals in <span class="process-math">\(\RR^{3}\)</span> with essentially the same formula.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-vector-field-line-integrals-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-circulation-in-R3"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">14.2.11</span><span class="period">.</span><span class="space"> </span><span class="title">Circulation in <span class="process-math">\(\RR^{3}\)</span>.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.2.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Circulation in <span class="process-math">\(\RR^{3}\)</span>.</span>
 </h4>
 <div class="para logical" id="example-circulation-in-R3-2-1">
 <div class="para">Find the circulation of <span class="process-math">\(\vb{F} = x^{2}\vb{i} + \vb{k}\)</span> along</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-circulation-in-R3-2-1-2">
 \begin{equation*}
 C:\vb{r}(t) = 3t\vb{i} + 4t\vb{j}, 0\leq t\leq 2\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-circulation-in-R3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-circulation-in-R3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-circulation-in-R3-3-1">
+<div class="solutions"><details id="example-circulation-in-R3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-circulation-in-R3-3-1">
 <div class="para">We have</div>
 <div class="displaymath process-math" id="example-circulation-in-R3-3-1-1">
 \begin{align*}
@@ -1049,52 +999,65 @@ C:\vb{r}(t) = 3t\vb{i} + 4t\vb{j}, 0\leq t\leq 2\text{.}
 </div>
 <div class="para">Since the circulation is positive, this also shows that <span class="process-math">\(\vb{F}\)</span> tends to flow with <span class="process-math">\(C\text{.}\)</span>
 </div>
-</div></div></details></div></article></section><section class="subsection" id="subsection-flux-integrals"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Flux integrals</span>
-</h3>
-<div class="para" id="subsection-flux-integrals-2">The circulation integral in <a href="section-line-integrals.html#definition-line-integral-of-a-vector-field" class="xref" data-knowl="./knowl/xref/definition-line-integral-of-a-vector-field.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 14.2.6: Line integral of a vector field">Definition 14.2.6</a> is useful for measuring how much a vector field flows along a given curve. Now, we want to measure how a vector field flows <em class="emphasis">across</em> a curve, at least in <span class="process-math">\(\RR^{2}\text{.}\)</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-circulation-in-R3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsection-flux-integrals-3">Given a smooth curve <span class="process-math">\(C\)</span> with unit tangent <span class="process-math">\(\vb{T}\text{,}\)</span> recall that <span class="process-math">\(\vb{F}\cdot\vb{T}\)</span> measures how well a vector field <span class="process-math">\(\vb{F}\)</span> and <span class="process-math">\(\vb{T}\)</span> align at a point on <span class="process-math">\(C\text{.}\)</span> By integrating this, we get a measure along the entire curve. So if we want to get a sense of how <span class="process-math">\(\vb{F}\)</span> flows across <span class="process-math">\(C\text{,}\)</span> we can do so by looking at a single point and then integrating along the curve again.</div>
-<div class="para" id="subsection-flux-integrals-4">To do this, let <span class="process-math">\(\vb{N}\)</span> be the unit normal vector to <span class="process-math">\(C\text{,}\)</span> given in <a href="section-arc-length-and-curvature.html#definition-unit-normal-vectors" class="xref" data-knowl="./knowl/xref/definition-unit-normal-vectors.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 11.8.8: Unit Normal Vectors">Definition 11.8.8</a>. Then <span class="process-math">\(\vb{F}\cdot\vb{N}\)</span> determines how <span class="process-math">\(\vb{F}\)</span> flows across <span class="process-math">\(C\)</span> at a specific point, and integrating <span class="process-math">\(\vb{F}\cdot\vb{N}\)</span> provides a measure along the entire curve. But there’s one slight issue: if <span class="process-math">\(C\)</span> is a closed curve then it’s possible that <span class="process-math">\(\vb{N}\)</span> points <em class="emphasis">into</em> the region enclosed by <span class="process-math">\(C\text{.}\)</span> We would like to measure how <span class="process-math">\(\vb{F}\)</span> flows out of <span class="process-math">\(C\)</span> instead, so we’ll replace <span class="process-math">\(\vb{N}\)</span> with <span class="process-math">\(\vb{n}\text{,}\)</span> the <dfn class="terminology">outward unit normal</dfn>. This leads us to the <dfn class="terminology">flux integral</dfn>.</div>
+<div class="autopermalink" data-description="Solution 14.2.11.1"><a href="#example-circulation-in-R3-3" title="Copy heading and permalink for Solution 14.2.11.1" aria-label="Copy heading and permalink for Solution 14.2.11.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 14.2.11: Circulation in \RR^{3}"><a href="#example-circulation-in-R3" title="Copy heading and permalink for Example 14.2.11: Circulation in \RR^{3}" aria-label="Copy heading and permalink for Example 14.2.11: Circulation in \RR^{3}">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Vector field line integrals"><a href="#subsection-vector-field-line-integrals" title="Copy heading and permalink for Subsection: Vector field line integrals" aria-label="Copy heading and permalink for Subsection: Vector field line integrals">🔗</a></div></section><section class="subsection" id="subsection-flux-integrals"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Flux integrals</span>
+</h3>
+<div class="para" id="subsection-flux-integrals-2">The circulation integral in <a href="section-line-integrals.html#definition-line-integral-of-a-vector-field" class="xref" data-knowl="./knowl/xref/definition-line-integral-of-a-vector-field.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 14.2.6: Line integral of a vector field">Definition 14.2.6</a> is useful for measuring how much a vector field flows along a given curve. Now, we want to measure how a vector field flows <em class="emphasis">across</em> a curve, at least in <span class="process-math">\(\RR^{2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-flux-integrals-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-flux-integrals-3">Given a smooth curve <span class="process-math">\(C\)</span> with unit tangent <span class="process-math">\(\vb{T}\text{,}\)</span> recall that <span class="process-math">\(\vb{F}\cdot\vb{T}\)</span> measures how well a vector field <span class="process-math">\(\vb{F}\)</span> and <span class="process-math">\(\vb{T}\)</span> align at a point on <span class="process-math">\(C\text{.}\)</span> By integrating this, we get a measure along the entire curve. So if we want to get a sense of how <span class="process-math">\(\vb{F}\)</span> flows across <span class="process-math">\(C\text{,}\)</span> we can do so by looking at a single point and then integrating along the curve again.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-flux-integrals-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-flux-integrals-4">To do this, let <span class="process-math">\(\vb{N}\)</span> be the unit normal vector to <span class="process-math">\(C\text{,}\)</span> given in <a href="section-arc-length-and-curvature.html#definition-unit-normal-vectors" class="xref" data-knowl="./knowl/xref/definition-unit-normal-vectors.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 11.8.8: Unit Normal Vectors">Definition 11.8.8</a>. Then <span class="process-math">\(\vb{F}\cdot\vb{N}\)</span> determines how <span class="process-math">\(\vb{F}\)</span> flows across <span class="process-math">\(C\)</span> at a specific point, and integrating <span class="process-math">\(\vb{F}\cdot\vb{N}\)</span> provides a measure along the entire curve. But there’s one slight issue: if <span class="process-math">\(C\)</span> is a closed curve then it’s possible that <span class="process-math">\(\vb{N}\)</span> points <em class="emphasis">into</em> the region enclosed by <span class="process-math">\(C\text{.}\)</span> We would like to measure how <span class="process-math">\(\vb{F}\)</span> flows out of <span class="process-math">\(C\)</span> instead, so we’ll replace <span class="process-math">\(\vb{N}\)</span> with <span class="process-math">\(\vb{n}\text{,}\)</span> the <dfn class="terminology">outward unit normal</dfn>. This leads us to the <dfn class="terminology">flux integral</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-flux-integrals-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="definition-line-integral-flux-integral"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">14.2.12</span><span class="period">.</span><span class="space"> </span><span class="title">Flux integral.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.2.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Flux integral.</span>
 </h4>
-<div class="para" id="definition-line-integral-flux-integral-4-1">Let <span class="process-math">\(C\)</span> denote a smooth curve and let <span class="process-math">\(\vb{F}\)</span> be a vector field continuous on <span class="process-math">\(C\text{.}\)</span> Then we define the <dfn class="terminology">flux integral of <span class="process-math">\(\vb{F}\)</span> across <span class="process-math">\(C\)</span></dfn> to be <span class="process-math">\(\int_{C}\vb{F}\cdot\vb{n}\dd{s}\text{,}\)</span> where <span class="process-math">\(\vb{n}\)</span> is the outward unit normal vector to <span class="process-math">\(C\text{.}\)</span>
-</div></article><div class="para" id="subsection-flux-integrals-6">At this point it may be helpful to introduce some new notation. If <span class="process-math">\(C\)</span> is a closed curve, then we often denote line integrals involving <span class="process-math">\(C\)</span> with <span class="process-math">\(\oint_{C}\)</span> instead of <span class="process-math">\(\int_{C}\text{.}\)</span>
+<div class="para" id="definition-line-integral-flux-integral-4-1">Let <span class="process-math">\(C\)</span> denote a smooth curve and let <span class="process-math">\(\vb{F}\)</span> be a vector field continuous on <span class="process-math">\(C\text{.}\)</span> Then we define the <dfn class="terminology">flux integral of <span class="process-math">\(\vb{F}\)</span> across <span class="process-math">\(C\)</span></dfn> to be <span class="process-math">\(\int_{C}\vb{F}\cdot\vb{n}\dd{s}\text{,}\)</span> where <span class="process-math">\(\vb{n}\)</span> is the outward unit normal vector to <span class="process-math">\(C\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#definition-line-integral-flux-integral-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 14.2.12: Flux integral"><a href="#definition-line-integral-flux-integral" title="Copy heading and permalink for Definition 14.2.12: Flux integral" aria-label="Copy heading and permalink for Definition 14.2.12: Flux integral">🔗</a></div></article><div class="para" id="subsection-flux-integrals-6">At this point it may be helpful to introduce some new notation. If <span class="process-math">\(C\)</span> is a closed curve, then we often denote line integrals involving <span class="process-math">\(C\)</span> with <span class="process-math">\(\oint_{C}\)</span> instead of <span class="process-math">\(\int_{C}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-flux-integrals-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-flux-across-the-unit-circle"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">14.2.13</span><span class="period">.</span><span class="space"> </span><span class="title">Flux across the unit circle.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.2.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Flux across the unit circle.</span>
 </h4>
-<div class="para" id="example-flux-across-the-unit-circle-2-1">Let <span class="process-math">\(\vb{F} = \dotprod{-y, x}\)</span> and let <span class="process-math">\(C\)</span> denote the unit circle, traversed exactly once counterclockwise. What is <span class="process-math">\(\oint_{C}\vb{F}\cdot\vb{n}\dd{s}\text{?}\)</span>
+<div class="para" id="example-flux-across-the-unit-circle-2-1">Let <span class="process-math">\(\vb{F} = \dotprod{-y, x}\)</span> and let <span class="process-math">\(C\)</span> denote the unit circle, traversed exactly once counterclockwise. What is <span class="process-math">\(\oint_{C}\vb{F}\cdot\vb{n}\dd{s}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-flux-across-the-unit-circle-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-flux-across-the-unit-circle-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="example-flux-across-the-unit-circle-3-1">We should have <span class="process-math">\(\oint_{C}\vb{F}\cdot\vb{n}\dd{s} = 0\text{.}\)</span>
-</div></div></details></div></article><div class="para logical" id="subsection-flux-integrals-8">
+<div class="solutions"><details id="example-flux-across-the-unit-circle-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-flux-across-the-unit-circle-3-1">We should have <span class="process-math">\(\oint_{C}\vb{F}\cdot\vb{n}\dd{s} = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-flux-across-the-unit-circle-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 14.2.13.1"><a href="#example-flux-across-the-unit-circle-3" title="Copy heading and permalink for Solution 14.2.13.1" aria-label="Copy heading and permalink for Solution 14.2.13.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 14.2.13: Flux across the unit circle"><a href="#example-flux-across-the-unit-circle" title="Copy heading and permalink for Example 14.2.13: Flux across the unit circle" aria-label="Copy heading and permalink for Example 14.2.13: Flux across the unit circle">🔗</a></div></article><div class="para logical" id="subsection-flux-integrals-8">
 <div class="para">In order to actually compute flux integrals, we need to write <span class="process-math">\(\vb{n}\)</span> using <span class="process-math">\(C\text{.}\)</span> So suppose that <span class="process-math">\(C\)</span> is traced out by the vector function <span class="process-math">\(\vb{r}(t) = \dotprod{x(t), y(t)}\text{.}\)</span> Then <span class="process-math">\(\vb{n}\)</span> must be perpendicular to the unit tangent</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsection-flux-integrals-8-6">
 \begin{equation*}
 \vb{T} = \frac{1}{\sqrt{x^{2} + y^{2}}}\dotprod{x', y'}
 \end{equation*}
 </div>
 <div class="para">or equivalently <span class="process-math">\(\dotprod{x',y'}\text{.}\)</span> Our primary tool for finding perpendicular vectors, the cross product, only applies in <span class="process-math">\(\RR^{3}\text{.}\)</span> So to find <span class="process-math">\(\vb{n}\)</span> we’ll (temporarily) move everything into <span class="process-math">\(\RR^{3}\text{.}\)</span> Now we need to find a vector orthogonal to <span class="process-math">\(\dotprod{x', y', 0}\)</span> that also lies in the <span class="process-math">\(xy\)</span>-plane. This can be done by computing</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsection-flux-integrals-8-13">
 \begin{equation*}
 \dotprod{x',y',0}\times\vb{k} \qq{or} \vb{k}\times \dotprod{x',y',0}\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-flux-integrals-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsection-flux-integrals-9">
 <div class="para">At this point we need to decide which direction we want our normal vector to go. We’ll usually choose the first option if <span class="process-math">\(C\)</span> is traversed counterclockwise and the second option otherwise. Assuming counterclockwise orientation, we have</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsection-flux-integrals-9-2">
 \begin{equation*}
 \dotprod{x', y', 0}\times \vb{k} = \dotprod{y', -x', 0}\text{.}
 \end{equation*}
 </div>
 <div class="para">Now moving back down to <span class="process-math">\(\RR^{3}\text{,}\)</span> we can write the outward unit normal as</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsection-flux-integrals-9-4">
 \begin{equation*}
 \vb{n} = \frac{1}{\sqrt{(x')^{2} + (y')^{2}}}\dotprod{y', -x'} = \frac{1}{\norm{\vb{r}'(t)}}\dotprod{y', -x'}\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-flux-integrals-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsection-flux-integrals-10">
 <div class="para">Therefore</div>
@@ -1104,12 +1067,15 @@ C:\vb{r}(t) = 3t\vb{i} + 4t\vb{j}, 0\leq t\leq 2\text{.}
 \amp = \int_{C} P\,dy - Q\,dx \text{.}
 \end{align*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-flux-integrals-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-verifying-the-flux"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">14.2.14</span><span class="period">.</span><span class="space"> </span><span class="title">Verifying the flux.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.2.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Verifying the flux.</span>
 </h4>
-<div class="para" id="example-verifying-the-flux-2-1">Compute the flux integral in <a href="section-line-integrals.html#example-flux-across-the-unit-circle" class="xref" data-knowl="./knowl/xref/example-flux-across-the-unit-circle.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 14.2.13: Flux across the unit circle">Example 14.2.13</a>.</div>
-<div class="solutions"><details id="example-verifying-the-flux-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-verifying-the-flux-3-1">
+<div class="para" id="example-verifying-the-flux-2-1">Compute the flux integral in <a href="section-line-integrals.html#example-flux-across-the-unit-circle" class="xref" data-knowl="./knowl/xref/example-flux-across-the-unit-circle.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 14.2.13: Flux across the unit circle">Example 14.2.13</a>.<div class="autopermalink" data-description="Paragraph"><a href="#example-verifying-the-flux-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-verifying-the-flux-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-verifying-the-flux-3-1">
 <div class="para">We have</div>
 <div class="displaymath process-math" id="example-verifying-the-flux-3-1-1">
 \begin{align*}
@@ -1118,13 +1084,17 @@ C:\vb{r}(t) = 3t\vb{i} + 4t\vb{j}, 0\leq t\leq 2\text{.}
 \amp = 0 \text{.}
 \end{align*}
 </div>
-</div></div></details></div></article></section></section></div>
-<div class="ptx-content-footer">
+<div class="autopermalink" data-description="Paragraph"><a href="#example-verifying-the-flux-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 14.2.14.1"><a href="#example-verifying-the-flux-3" title="Copy heading and permalink for Solution 14.2.14.1" aria-label="Copy heading and permalink for Solution 14.2.14.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 14.2.14: Verifying the flux"><a href="#example-verifying-the-flux" title="Copy heading and permalink for Example 14.2.14: Verifying the flux" aria-label="Copy heading and permalink for Example 14.2.14: Verifying the flux">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Flux integrals"><a href="#subsection-flux-integrals" title="Copy heading and permalink for Subsection: Flux integrals" aria-label="Copy heading and permalink for Subsection: Flux integrals">🔗</a></div></section><div class="autopermalink" data-description="Section 14.2: Line integrals"><a href="#section-line-integrals" title="Copy heading and permalink for Section 14.2: Line integrals" aria-label="Copy heading and permalink for Section 14.2: Line integrals">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="section-vector-fields.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="section-the-fundamental-theorem-for-line-integrals.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
-<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
 </body>
 </html>

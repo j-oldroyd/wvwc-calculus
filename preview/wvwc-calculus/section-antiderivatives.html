@@ -6,17 +6,21 @@
 <!--*                                          *-->
 <!--********************************************-->
 <html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>WVWC-CALC Antiderivatives</title>
-<meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:type" content="book">
-<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo.jpg">
-<meta property="book:title" content="Calculus Notes">
-<meta property="book:author" content="Jesse Oldroyd
-          ">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -88,12 +92,14 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo-brandlogo.jpg">
+<meta property="book:title" content="Calculus Notes">
+<meta property="book:author" content="Jesse Oldroyd
+          ">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -115,127 +121,22 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.1';
+eBookConfig.runestone_version = '7.11.8';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.87cabc2515250052.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.630d5c4fb4b681eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.97f3ae4f7a71ba18.css">
-<style>
-#theorem-combining-continuous-functions-2-1-4 { counter-set: theorem-combining-continuous-functions-2-1-4 0; }
-#theorem-combining-continuous-functions-2-1-4 > li::marker { content: ""counter(theorem-combining-continuous-functions-2-1-4,decimal)"."; }
-#theorem-combining-continuous-functions-2-1-4 > li { counter-increment: theorem-combining-continuous-functions-2-1-4; }
-#example-derivatives-using-the-power-rule-2-1-1 { counter-set: example-derivatives-using-the-power-rule-2-1-1 0; }
-#example-derivatives-using-the-power-rule-2-1-1 > li::marker { content: ""counter(example-derivatives-using-the-power-rule-2-1-1,decimal)"."; }
-#example-derivatives-using-the-power-rule-2-1-1 > li { counter-increment: example-derivatives-using-the-power-rule-2-1-1; }
-#section-extreme-values-of-functions-4-1-1-1 { counter-set: section-extreme-values-of-functions-4-1-1-1 0; }
-#section-extreme-values-of-functions-4-1-1-1 > li::marker { content: ""counter(section-extreme-values-of-functions-4-1-1-1,decimal)"."; }
-#section-extreme-values-of-functions-4-1-1-1 > li { counter-increment: section-extreme-values-of-functions-4-1-1-1; }
-#example-minimizing-material-costs-3-1-1 { counter-set: example-minimizing-material-costs-3-1-1 0; }
-#example-minimizing-material-costs-3-1-1 > li::marker { content: ""counter(example-minimizing-material-costs-3-1-1,decimal)"."; }
-#example-minimizing-material-costs-3-1-1 > li { counter-increment: example-minimizing-material-costs-3-1-1; }
-#example-distance-on-an-ellipse-3-1-1 { counter-set: example-distance-on-an-ellipse-3-1-1 0; }
-#example-distance-on-an-ellipse-3-1-1 > li::marker { content: ""counter(example-distance-on-an-ellipse-3-1-1,decimal)"."; }
-#example-distance-on-an-ellipse-3-1-1 > li { counter-increment: example-distance-on-an-ellipse-3-1-1; }
-#example-finding-antiderivatives-2-1-1 { counter-set: example-finding-antiderivatives-2-1-1 0; }
-#example-finding-antiderivatives-2-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-2-1-1,decimal)"."; }
-#example-finding-antiderivatives-2-1-1 > li { counter-increment: example-finding-antiderivatives-2-1-1; }
-#example-finding-antiderivatives-3-1-1 { counter-set: example-finding-antiderivatives-3-1-1 0; }
-#example-finding-antiderivatives-3-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-3-1-1,decimal)"."; }
-#example-finding-antiderivatives-3-1-1 > li { counter-increment: example-finding-antiderivatives-3-1-1; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 { counter-set: theorem-more-properties-of-the-definite-integral-2-1-3 0; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li::marker { content: ""counter(theorem-more-properties-of-the-definite-integral-2-1-3,decimal)"."; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li { counter-increment: theorem-more-properties-of-the-definite-integral-2-1-3; }
-#theorem-fundamental-theorem-of-calculus-2-2 { counter-set: theorem-fundamental-theorem-of-calculus-2-2 0; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li::marker { content: ""counter(theorem-fundamental-theorem-of-calculus-2-2,decimal)"."; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li { counter-increment: theorem-fundamental-theorem-of-calculus-2-2; }
-#section-substitution-5-3 { counter-set: section-substitution-5-3 0; }
-#section-substitution-5-3 > li::marker { content: ""counter(section-substitution-5-3,decimal)"."; }
-#section-substitution-5-3 > li { counter-increment: section-substitution-5-3; }
-#algorithm-partial-fractions-algorithm-3-1-2 { counter-set: algorithm-partial-fractions-algorithm-3-1-2 0; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li::marker { content: ""counter(algorithm-partial-fractions-algorithm-3-1-2,decimal)"."; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li { counter-increment: algorithm-partial-fractions-algorithm-3-1-2; }
-#section-applications-to-physics-and-engineering-2-2 { counter-set: section-applications-to-physics-and-engineering-2-2 0; }
-#section-applications-to-physics-and-engineering-2-2 > li::marker { content: ""counter(section-applications-to-physics-and-engineering-2-2,decimal)"."; }
-#section-applications-to-physics-and-engineering-2-2 > li { counter-increment: section-applications-to-physics-and-engineering-2-2; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 { counter-set: subsection-moments-and-centers-of-mass-7-1-3-1 0; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-1-3-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-1-3-1; }
-#subsection-moments-and-centers-of-mass-7-2-1 { counter-set: subsection-moments-and-centers-of-mass-7-2-1 0; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-2-1; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 { counter-set: subsection-moments-and-centers-of-mass-12-1-1-4 0; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-1-1-4,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li { counter-increment: subsection-moments-and-centers-of-mass-12-1-1-4; }
-#subsection-moments-and-centers-of-mass-12-2-1 { counter-set: subsection-moments-and-centers-of-mass-12-2-1 0; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-12-2-1; }
-#example-determining-a-sustainable-population-3-3 { counter-set: example-determining-a-sustainable-population-3-3 0; }
-#example-determining-a-sustainable-population-3-3 > li::marker { content: ""counter(example-determining-a-sustainable-population-3-3,decimal)"."; }
-#example-determining-a-sustainable-population-3-3 > li { counter-increment: example-determining-a-sustainable-population-3-3; }
-#theorem-sequential-limit-laws-2-2 { counter-set: theorem-sequential-limit-laws-2-2 0; }
-#theorem-sequential-limit-laws-2-2 > li::marker { content: ""counter(theorem-sequential-limit-laws-2-2,decimal)"."; }
-#theorem-sequential-limit-laws-2-2 > li { counter-increment: theorem-sequential-limit-laws-2-2; }
-#example-guessing-sums-2-1-1 { counter-set: example-guessing-sums-2-1-1 0; }
-#example-guessing-sums-2-1-1 > li::marker { content: ""counter(example-guessing-sums-2-1-1,decimal)"."; }
-#example-guessing-sums-2-1-1 > li { counter-increment: example-guessing-sums-2-1-1; }
-#example-guessing-sums-3-1-1 { counter-set: example-guessing-sums-3-1-1 0; }
-#example-guessing-sums-3-1-1 > li::marker { content: ""counter(example-guessing-sums-3-1-1,decimal)"."; }
-#example-guessing-sums-3-1-1 > li { counter-increment: example-guessing-sums-3-1-1; }
-#theorem-direct-comparison-test-series-3-1-4 { counter-set: theorem-direct-comparison-test-series-3-1-4 0; }
-#theorem-direct-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-direct-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-direct-comparison-test-series-3-1-4 > li { counter-increment: theorem-direct-comparison-test-series-3-1-4; }
-#theorem-limit-comparison-test-series-3-1-4 { counter-set: theorem-limit-comparison-test-series-3-1-4 0; }
-#theorem-limit-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-limit-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-limit-comparison-test-series-3-1-4 > li { counter-increment: theorem-limit-comparison-test-series-3-1-4; }
-#subsection-alternating-series-9-2 { counter-set: subsection-alternating-series-9-2 0; }
-#subsection-alternating-series-9-2 > li::marker { content: ""counter(subsection-alternating-series-9-2,decimal)"."; }
-#subsection-alternating-series-9-2 > li { counter-increment: subsection-alternating-series-9-2; }
-#theorem-ratio-test-2-1-3 { counter-set: theorem-ratio-test-2-1-3 0; }
-#theorem-ratio-test-2-1-3 > li::marker { content: ""counter(theorem-ratio-test-2-1-3,decimal)"."; }
-#theorem-ratio-test-2-1-3 > li { counter-increment: theorem-ratio-test-2-1-3; }
-#theorem-root-test-2-1-3 { counter-set: theorem-root-test-2-1-3 0; }
-#theorem-root-test-2-1-3 > li::marker { content: ""counter(theorem-root-test-2-1-3,decimal)"."; }
-#theorem-root-test-2-1-3 > li { counter-increment: theorem-root-test-2-1-3; }
-#example-examples-of-power-series-2-1-1 { counter-set: example-examples-of-power-series-2-1-1 0; }
-#example-examples-of-power-series-2-1-1 > li::marker { content: ""counter(example-examples-of-power-series-2-1-1,decimal)"."; }
-#example-examples-of-power-series-2-1-1 > li { counter-increment: example-examples-of-power-series-2-1-1; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 { counter-set: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 0; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li::marker { content: ""counter(theorem-properties-of-vector-addition-and-scalar-multiplication-3-2,decimal)"."; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li { counter-increment: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2; }
-#theorem-properties-of-the-dot-product-3-2 { counter-set: theorem-properties-of-the-dot-product-3-2 0; }
-#theorem-properties-of-the-dot-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-dot-product-3-2,decimal)"."; }
-#theorem-properties-of-the-dot-product-3-2 > li { counter-increment: theorem-properties-of-the-dot-product-3-2; }
-#theorem-properties-of-the-cross-product-3-2 { counter-set: theorem-properties-of-the-cross-product-3-2 0; }
-#theorem-properties-of-the-cross-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-cross-product-3-2,decimal)"."; }
-#theorem-properties-of-the-cross-product-3-2 > li { counter-increment: theorem-properties-of-the-cross-product-3-2; }
-#theorem-vector-derivative-rules-3-2 { counter-set: theorem-vector-derivative-rules-3-2 0; }
-#theorem-vector-derivative-rules-3-2 > li::marker { content: ""counter(theorem-vector-derivative-rules-3-2,decimal)"."; }
-#theorem-vector-derivative-rules-3-2 > li { counter-increment: theorem-vector-derivative-rules-3-2; }
-#subsection-continuous-functions-5 { counter-set: subsection-continuous-functions-5 0; }
-#subsection-continuous-functions-5 > li::marker { content: ""counter(subsection-continuous-functions-5,decimal)"."; }
-#subsection-continuous-functions-5 > li { counter-increment: subsection-continuous-functions-5; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 { counter-set: algorithm-method-of-lagrange-multipliers-3-1-7 0; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li::marker { content: ""counter(algorithm-method-of-lagrange-multipliers-3-1-7,decimal)"."; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li { counter-increment: algorithm-method-of-lagrange-multipliers-3-1-7; }
-#subsection-conservative-vector-fields-2-2 { counter-set: subsection-conservative-vector-fields-2-2 0; }
-#subsection-conservative-vector-fields-2-2 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-2,decimal)"."; }
-#subsection-conservative-vector-fields-2-2 > li { counter-increment: subsection-conservative-vector-fields-2-2; }
-#subsection-conservative-vector-fields-2-3 { counter-set: subsection-conservative-vector-fields-2-3 0; }
-#subsection-conservative-vector-fields-2-3 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-3,decimal)"."; }
-#subsection-conservative-vector-fields-2-3 > li { counter-increment: subsection-conservative-vector-fields-2-3; }
-#gfdl-section4-3 { counter-set: gfdl-section4-3 0; }
-#gfdl-section4-3 > li::marker { content: ""counter(gfdl-section4-3,upper-alpha)"."; }
-#gfdl-section4-3 > li { counter-increment: gfdl-section4-3; }
-</style>
+<script src="_static/prefix-runtime.991c135ccf182bf5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1c010553c35c544c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.677a75a9120449ff.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdn.geogebra.org/apps/deployggb.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" target="_blank" href=""><img src="external/./wvwc-logo.jpg" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes:</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
+<img src="external/./wvwc-logo-brandlogo.jpg" alt="Logo image"><div class="title-container">
+<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
 <p class="byline">Jesse Oldroyd</p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
@@ -431,10 +332,10 @@ true);
 <div class="toc-title-box"><a href="applications-differentiation.html" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Differentiation</span></a></div>
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-linear-approximations.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear approximations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related Rates</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related rates</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-l-hospital-s-rule.html" class="internal"><span class="codenumber">5.3</span> <span class="title">L’Hospital’s Rule</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme Values of Functions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization Problems</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme values of functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization problems</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-the-mean-value-theorem.html" class="internal"><span class="codenumber">5.6</span> <span class="title">The Mean Value Theorem</span></a></div>
 <ul class="structural toc-item-list">
@@ -442,8 +343,11 @@ true);
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-the-mean-value-theorem.html#subsection-the-mean-value-theorem" class="internal"><span class="title">The Mean Value Theorem</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and Graphs</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and graphs</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-newton-s-method.html#subsection-newtons-method-optimization" class="internal"><span class="title">Newton’s Method for optimization</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section active"><div class="toc-title-box"><a href="section-antiderivatives.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Antiderivatives</span></a></div></li>
 </ul>
 </li>
@@ -606,8 +510,14 @@ true);
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-coordinates-in-3-space.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Coordinates in 3-Space</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -797,120 +707,184 @@ true);
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-antiderivatives"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">5.9</span><span class="space"> </span><span class="title">Antiderivatives</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.9</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Antiderivatives</span>
 </h2>
 <div class="para logical" id="section-antiderivatives-2">
-<div class="para">Suppose we’re tracking a moving object, and through experimentation we know its acceleration to be equal to <span class="quantity">3 <sup>m</sup>⁄<sub>s<sup>2</sup></sub></span> to the right. Say we want to find the velocity of the mass at time <span class="process-math">\(t\text{.}\)</span> Then if we set <span class="process-math">\(v(t)\)</span> equal to the velocity and <span class="process-math">\(a(t)\)</span> equal to the acceleration, we know that</div>
-<div class="displaymath process-math">
+<div class="para">Suppose we’re tracking a moving object, and through experimentation we know its acceleration to be equal to <span class="quantity">3 <sup>m</sup>⁄<sub>s<sup>2</sup></sub></span> to the right.  Say we want to find the velocity of the mass at time <span class="process-math">\(t\text{.}\)</span> Then if we set <span class="process-math">\(v(t)\)</span> equal to the velocity and <span class="process-math">\(a(t)\)</span> equal to the acceleration, we know that</div>
+<div class="displaymath process-math" id="section-antiderivatives-2-5">
 \begin{equation*}
 v'(t) = a(t) = 3.
 \end{equation*}
 </div>
-<div class="para">Therefore <span class="process-math">\(v(t)\)</span> is a function whose derivative is <span class="process-math">\(3\text{.}\)</span> So one possible choice for <span class="process-math">\(v(t)\)</span> is <span class="process-math">\(v(t) = 3t\text{.}\)</span> This leads us to the definition of an <dfn class="terminology">antiderivative</dfn>.</div>
+<div class="para">Therefore <span class="process-math">\(v(t)\)</span> is a function whose derivative is <span class="process-math">\(3\text{.}\)</span>  So one possible choice for <span class="process-math">\(v(t)\)</span> is <span class="process-math">\(v(t) = 3t\text{.}\)</span>  This leads us to the definition of an <dfn class="terminology">antiderivative</dfn>.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-antiderivatives-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="definition-antiderivatives"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.9.1</span><span class="period">.</span><span class="space"> </span><span class="title">Antiderivatives.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.9.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Antiderivatives.</span>
 </h3>
-<div class="para" id="definition-antiderivatives-3-1">A function <span class="process-math">\(F(x)\)</span> is called an antiderivative of the function <span class="process-math">\(f(x)\)</span> if <span class="process-math">\(F^{\prime}x) = f(x)\)</span> for all <span class="process-math">\(x\)</span> in an interval <span class="process-math">\(I\text{.}\)</span>
-</div></article><article class="example example-like" id="example-multiple-antiderivatives"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.9.2</span><span class="period">.</span><span class="space"> </span><span class="title">Multiple antiderivatives.</span>
-</h3>
-<div class="para" id="example-multiple-antiderivatives-2-1">Find three different antiderivatives for <span class="process-math">\(f(x) = \cos x\text{.}\)</span>
+<div class="para" id="definition-antiderivatives-3-1">A function <span class="process-math">\(F(x)\)</span> is called an antiderivative of the function <span class="process-math">\(f(x)\)</span> if <span class="process-math">\(F^{\prime}x) =
+f(x)\)</span> for all <span class="process-math">\(x\)</span> in an interval <span class="process-math">\(I\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#definition-antiderivatives-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-multiple-antiderivatives-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-multiple-antiderivatives-3-1">
-<div class="para">An antiderivative of <span class="process-math">\(\cos x\)</span> is any function whose derivative is <span class="process-math">\(\cos x\text{.}\)</span> So three antiderivatives could be</div>
-<div class="displaymath process-math">
+<div class="autopermalink" data-description="Definition 5.9.1: Antiderivatives"><a href="#definition-antiderivatives" title="Copy heading and permalink for Definition 5.9.1: Antiderivatives" aria-label="Copy heading and permalink for Definition 5.9.1: Antiderivatives">🔗</a></div></article><article class="example example-like" id="example-multiple-antiderivatives"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.9.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Multiple antiderivatives.</span>
+</h3>
+<div class="para" id="example-multiple-antiderivatives-2-1">Find three different antiderivatives for <span class="process-math">\(f(x) =
+\cos x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-multiple-antiderivatives-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-multiple-antiderivatives-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-multiple-antiderivatives-3-1">
+<div class="para">An antiderivative of <span class="process-math">\(\cos x\)</span> is any function whose derivative is <span class="process-math">\(\cos x\text{.}\)</span>  So three antiderivatives could be</div>
+<div class="displaymath process-math" id="example-multiple-antiderivatives-3-1-3">
 \begin{equation*}
-F_{1}(x) = \sin x, F_{2}(x) = \sin x + 4, F_{3}(x) = \sin x - 100.
+F_{1}(x) = \sin x,
+F_{2}(x) = \sin x + 4, F_{3}(x) = \sin x -
+100.
 \end{equation*}
 </div>
-</div></div></details></div></article><div class="para" id="section-antiderivatives-5">From <a href="section-antiderivatives.html#example-multiple-antiderivatives" class="xref" data-knowl="./knowl/xref/example-multiple-antiderivatives.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 5.9.2: Multiple antiderivatives">Example 5.9.2</a> we see that any function of the form <span class="process-math">\(\sin x +C\)</span> is an antiderivative of <span class="process-math">\(\cos x\text{.}\)</span> In fact, this describes all possible antiderivatives of <span class="process-math">\(\cos x\text{.}\)</span> This suggests the following theorem.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-multiple-antiderivatives-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.9.2.1"><a href="#example-multiple-antiderivatives-3" title="Copy heading and permalink for Solution 5.9.2.1" aria-label="Copy heading and permalink for Solution 5.9.2.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.9.2: Multiple antiderivatives"><a href="#example-multiple-antiderivatives" title="Copy heading and permalink for Example 5.9.2: Multiple antiderivatives" aria-label="Copy heading and permalink for Example 5.9.2: Multiple antiderivatives">🔗</a></div></article><div class="para" id="section-antiderivatives-5">From <a href="section-antiderivatives.html#example-multiple-antiderivatives" class="xref" data-knowl="./knowl/xref/example-multiple-antiderivatives.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 5.9.2: Multiple antiderivatives">Example 5.9.2</a> we see that any function of the form <span class="process-math">\(\sin x +C\)</span> is an antiderivative of <span class="process-math">\(\cos x\text{.}\)</span> In fact, this describes all possible antiderivatives of <span class="process-math">\(\cos x\text{.}\)</span>  This suggests the following theorem.<div class="autopermalink" data-description="Paragraph"><a href="#section-antiderivatives-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="theorem-general-antiderivatives"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.9.3</span><span class="period">.</span><span class="space"> </span><span class="title">General Antiderivatives.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.9.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">General antiderivatives.</span>
 </h3>
 <div class="para logical" id="theorem-general-antiderivatives-2-1">
-<div class="para">Let <span class="process-math">\(f(x)\)</span> be some function with antiderivative <span class="process-math">\(F(x)\)</span> on some interval <span class="process-math">\(I\text{.}\)</span> Then the most general antiderivative of <span class="process-math">\(f(x)\)</span> is</div>
-<div class="displaymath process-math">
+<div class="para">Let <span class="process-math">\(f(x)\)</span> be some function with antiderivative <span class="process-math">\(F(x)\)</span> on some interval <span class="process-math">\(I\text{.}\)</span>  Then the most general antiderivative of <span class="process-math">\(f(x)\)</span> is</div>
+<div class="displaymath process-math" id="theorem-general-antiderivatives-2-1-5">
 \begin{equation*}
 F(x) + C
 \end{equation*}
 </div>
 <div class="para">where <span class="process-math">\(C\)</span> is an arbitrary constant.</div>
-</div></article><details id="theorem-general-antiderivatives-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></summary><article class="hiddenproof knowl__content"><div class="para logical" id="theorem-general-antiderivatives-3-1">
-<div class="para">It might not seem like this statement requires a proof, but it does! We can check very easily that every function of the form <span class="process-math">\(F(x)+C\)</span> is an antiderivative of <span class="process-math">\(f(x)\text{,}\)</span> but how do we know every antiderivative takes this form? To prove this, let <span class="process-math">\(G(x)\)</span> be an arbitrary antiderivative of <span class="process-math">\(f(x)\text{.}\)</span> Then we need to show that <span class="process-math">\(G(x) = F(x) + C\text{,}\)</span> or equivalently that <span class="process-math">\(G(x) - F(x) = C\text{.}\)</span> We can do this by taking the derivative of <span class="process-math">\(G(x) - F(x)\)</span> to get</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-zero-derivative-theorem.html">
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-general-antiderivatives-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 5.9.3: General antiderivatives"><a href="#theorem-general-antiderivatives" title="Copy heading and permalink for Theorem 5.9.3: General antiderivatives" aria-label="Copy heading and permalink for Theorem 5.9.3: General antiderivatives">🔗</a></div></article><details id="theorem-general-antiderivatives-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary><article class="hiddenproof knowl__content"><div class="para logical" id="theorem-general-antiderivatives-3-1">
+<div class="para">It might not seem like this statement requires a proof, but it does!  We can check very easily that every function of the form <span class="process-math">\(F(x)+C\)</span> is an antiderivative of <span class="process-math">\(f(x)\text{,}\)</span> but how do we know every antiderivative takes this form?  To prove this, let <span class="process-math">\(G(x)\)</span> be an arbitrary antiderivative of <span class="process-math">\(f(x)\text{.}\)</span>  Then we need to show that <span class="process-math">\(G(x) = F(x) + C\text{,}\)</span> or equivalently that <span class="process-math">\(G(x) - F(x) = C\text{.}\)</span>  We can do this by taking the derivative of <span class="process-math">\(G(x) - F(x)\)</span> to get</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-zero-derivative-theorem.html" id="theorem-general-antiderivatives-3-1-8">
 \begin{equation*}
 G'(x) - F^{\prime}x) = f(x) - f(x) = 0,
 \end{equation*}
 </div>
-<div class="para">and so by <a href="section-the-mean-value-theorem.html#theorem-zero-derivative-theorem" class="xref" data-knowl="./knowl/xref/theorem-zero-derivative-theorem.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5.6.5: Zero Derivative Theorem">Theorem 5.6.5</a> we know that <span class="process-math">\(G(x) - F(x)\)</span> must be constant on <span class="process-math">\(I\text{.}\)</span> Hence <span class="process-math">\(G(x) - F(x) = C\)</span> for some constant <span class="process-math">\(C\text{,}\)</span> or equivalently <span class="process-math">\(G(x) = F(x)+C\text{.}\)</span> Therefore <em class="emphasis">every</em> antiderivative of <span class="process-math">\(f(x)\)</span> can be written as <span class="process-math">\(F(x) + C\text{.}\)</span>
+<div class="para">and so by <a href="section-the-mean-value-theorem.html#theorem-zero-derivative-theorem" class="xref" data-knowl="./knowl/xref/theorem-zero-derivative-theorem.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 5.6.5: Zero Derivative Theorem">Theorem 5.6.5</a> we know that <span class="process-math">\(G(x) -
+F(x)\)</span> must be constant on <span class="process-math">\(I\text{.}\)</span>  Hence <span class="process-math">\(G(x) - F(x) = C\)</span> for some constant <span class="process-math">\(C\text{,}\)</span> or equivalently <span class="process-math">\(G(x) = F(x)+C\text{.}\)</span>  Therefore <em class="emphasis">every</em> antiderivative of <span class="process-math">\(f(x)\)</span> can be written as <span class="process-math">\(F(x) + C\text{.}\)</span>
 </div>
-</div></article></details><div class="para" id="section-antiderivatives-7">It might seem superfluous, but typically when dealing with models requiring us to find antiderivatives we’ll want to find the most general antiderivative somewhere along the way. Moral of the story: <em class="emphasis">don’t forget to add <span class="process-math">\(C\text{.}\)</span></em>
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-general-antiderivatives-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 5.9.3.1"><a href="#theorem-general-antiderivatives-3" title="Copy heading and permalink for Proof 5.9.3.1" aria-label="Copy heading and permalink for Proof 5.9.3.1">🔗</a></div></article></details><div class="para" id="section-antiderivatives-7">It might seem superfluous, but typically when dealing with models requiring us to find antiderivatives we’ll want to find the most general antiderivative somewhere along the way.  Moral of the story: <em class="emphasis">don’t forget to add <span class="process-math">\(C\text{.}\)</span></em><div class="autopermalink" data-description="Paragraph"><a href="#section-antiderivatives-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-finding-antiderivatives"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.9.4</span><span class="period">.</span><span class="space"> </span><span class="title">Finding antiderivatives.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.9.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Finding antiderivatives.</span>
 </h3>
 <div class="para logical" id="example-finding-antiderivatives-2-1">
 <div class="para">Find the most general antiderivatives of the following functions:</div>
 <ol class="decimal" id="example-finding-antiderivatives-2-1-1">
-<li id="example-finding-antiderivatives-2-1-1-1"><div class="para" id="p-derived-example-finding-antiderivatives-2-1-1-1"><span class="process-math">\(\displaystyle x^{3}.\)</span></div></li>
-<li id="example-finding-antiderivatives-2-1-1-2"><div class="para" id="p-derived-example-finding-antiderivatives-2-1-1-2"><span class="process-math">\(\displaystyle -\frac{1}{2}x^{\frac{5}{3}}.\)</span></div></li>
-<li id="example-finding-antiderivatives-2-1-1-3"><div class="para" id="p-derived-example-finding-antiderivatives-2-1-1-3"><span class="process-math">\(\displaystyle \sqrt{x} - 3x^{3} + x^{-2}.\)</span></div></li>
-<li id="example-finding-antiderivatives-2-1-1-4"><div class="para" id="p-derived-example-finding-antiderivatives-2-1-1-4"><span class="process-math">\(\displaystyle \sin x + \cos (5x) + e^{4x}.\)</span></div></li>
+<li id="example-finding-antiderivatives-2-1-1-1">
+<div class="para" id="p-derived-example-finding-antiderivatives-2-1-1-1"><span class="process-math">\(\displaystyle x^{3}.\)</span></div>
+<div class="autopermalink" data-description="Item 1"><a href="#example-finding-antiderivatives-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="example-finding-antiderivatives-2-1-1-2">
+<div class="para" id="p-derived-example-finding-antiderivatives-2-1-1-2"><span class="process-math">\(\displaystyle -\frac{1}{2}x^{\frac{5}{3}}.\)</span></div>
+<div class="autopermalink" data-description="Item 2"><a href="#example-finding-antiderivatives-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="example-finding-antiderivatives-2-1-1-3">
+<div class="para" id="p-derived-example-finding-antiderivatives-2-1-1-3"><span class="process-math">\(\displaystyle \sqrt{x} - 3x^{3} + x^{-2}.\)</span></div>
+<div class="autopermalink" data-description="Item 3"><a href="#example-finding-antiderivatives-2-1-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="example-finding-antiderivatives-2-1-1-4">
+<div class="para" id="p-derived-example-finding-antiderivatives-2-1-1-4"><span class="process-math">\(\displaystyle \sin x + \cos (5x) + e^{4x}.\)</span></div>
+<div class="autopermalink" data-description="Item 4"><a href="#example-finding-antiderivatives-2-1-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
 </ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-finding-antiderivatives-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-finding-antiderivatives-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-finding-antiderivatives-3-1">
+<div class="solutions"><details id="example-finding-antiderivatives-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-finding-antiderivatives-3-1">
 <div class="para">We have the following:</div>
 <ol class="decimal" id="example-finding-antiderivatives-3-1-1">
-<li id="example-finding-antiderivatives-3-1-1-1"><div class="para" id="p-derived-example-finding-antiderivatives-3-1-1-1">The general antiderivative of <span class="process-math">\(x^{3}\)</span> is <span class="process-math">\(\frac{1}{4}x^{4}+C.\)</span>
-</div></li>
-<li id="example-finding-antiderivatives-3-1-1-2"><div class="para" id="p-derived-example-finding-antiderivatives-3-1-1-2">The general antiderivative of <span class="process-math">\(-\frac{1}{2}x^{\frac{5}{3}}\)</span> is <span class="process-math">\(-\frac{1}{2}\frac{3}{8}x^{\frac{8}{3}}+C.\)</span>
-</div></li>
-<li id="example-finding-antiderivatives-3-1-1-3"><div class="para" id="p-derived-example-finding-antiderivatives-3-1-1-3">The general antiderivative of <span class="process-math">\(\sqrt{x} - 3x^{3} + x^{-2}\)</span> is <span class="process-math">\(\frac{2}{3}x^{\frac{3}{2}} - \frac{3}{4}x^{4} - \frac{1}{x} + C\text{.}\)</span>
-</div></li>
-<li id="example-finding-antiderivatives-3-1-1-4"><div class="para" id="p-derived-example-finding-antiderivatives-3-1-1-4">The general antiderivative of <span class="process-math">\(\sin x + \cos (5x) + e^{4x}\)</span> is <span class="process-math">\(-\cos x + \frac{1}{5}\sin(5x) + \frac{1}{4}e^{4x} + C.\)</span>
-</div></li>
-</ol>
-</div></div></details></div></article><article class="example example-like" id="example-the-antiderivative-of--frac-1-x-m-"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.9.5</span><span class="period">.</span><span class="space"> </span><span class="title">The antiderivative of <span class="process-math">\(\frac{1}{x}\)</span>.</span>
-</h3>
-<div class="para" id="example-the-antiderivative-of--frac-1-x-m--2-1">Find the general antiderivative of <span class="process-math">\(f(x) = \frac{1}{x}\text{.}\)</span>
+<li id="example-finding-antiderivatives-3-1-1-1">
+<div class="para" id="p-derived-example-finding-antiderivatives-3-1-1-1">The general antiderivative of <span class="process-math">\(x^{3}\)</span> is <span class="process-math">\(\frac{1}{4}x^{4}+C.\)</span>
 </div>
-<div class="solutions"><details id="example-the-antiderivative-of--frac-1-x-m--3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="example-the-antiderivative-of--frac-1-x-m--3-1">We have two cases we need to consider, since the domain of <span class="process-math">\(f(x)\)</span> consists of two intervals. First, suppose that <span class="process-math">\(x\)</span> is in <span class="process-math">\((0,\infty)\text{.}\)</span> Then we know that <span class="process-math">\(\dv{}{x}\ln x = \frac{1}{x}\text{,}\)</span> so on this interval the most general antiderivative of <span class="process-math">\(\frac{1}{x}\)</span> is <span class="process-math">\(\ln x + C_{1}\text{.}\)</span>
+<div class="autopermalink" data-description="Item 1"><a href="#example-finding-antiderivatives-3-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="example-finding-antiderivatives-3-1-1-2">
+<div class="para" id="p-derived-example-finding-antiderivatives-3-1-1-2">The general antiderivative of <span class="process-math">\(-\frac{1}{2}x^{\frac{5}{3}}\)</span> is <span class="process-math">\(-\frac{1}{2}\frac{3}{8}x^{\frac{8}{3}}+C.\)</span>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#example-finding-antiderivatives-3-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="example-finding-antiderivatives-3-1-1-3">
+<div class="para" id="p-derived-example-finding-antiderivatives-3-1-1-3">The general antiderivative of <span class="process-math">\(\sqrt{x}
+- 3x^{3} + x^{-2}\)</span> is <span class="process-math">\(\frac{2}{3}x^{\frac{3}{2}} -
+\frac{3}{4}x^{4} - \frac{1}{x} + C\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#example-finding-antiderivatives-3-1-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="example-finding-antiderivatives-3-1-1-4">
+<div class="para" id="p-derived-example-finding-antiderivatives-3-1-1-4">The general antiderivative of <span class="process-math">\(\sin x +
+\cos (5x) + e^{4x}\)</span> is <span class="process-math">\(-\cos x +
+\frac{1}{5}\sin(5x) + \frac{1}{4}e^{4x} +
+C.\)</span>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#example-finding-antiderivatives-3-1-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-finding-antiderivatives-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.9.4.1"><a href="#example-finding-antiderivatives-3" title="Copy heading and permalink for Solution 5.9.4.1" aria-label="Copy heading and permalink for Solution 5.9.4.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.9.4: Finding antiderivatives"><a href="#example-finding-antiderivatives" title="Copy heading and permalink for Example 5.9.4: Finding antiderivatives" aria-label="Copy heading and permalink for Example 5.9.4: Finding antiderivatives">🔗</a></div></article><article class="example example-like" id="example-the-antiderivative-of--frac-1-x-m-"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.9.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The antiderivative of <span class="process-math">\(\frac{1}{x}\)</span>.</span>
+</h3>
+<div class="para" id="example-the-antiderivative-of--frac-1-x-m--2-1">Find the general antiderivative of <span class="process-math">\(f(x) =
+\frac{1}{x}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-the-antiderivative-of--frac-1-x-m--2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-the-antiderivative-of--frac-1-x-m--3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-the-antiderivative-of--frac-1-x-m--3-1">We have two cases we need to consider, since the domain of <span class="process-math">\(f(x)\)</span> consists of two intervals. First, suppose that <span class="process-math">\(x\)</span> is in <span class="process-math">\((0,\infty)\text{.}\)</span>  Then we know that <span class="process-math">\(\dv{}{x}\ln x = \frac{1}{x}\text{,}\)</span> so on this interval the most general antiderivative of <span class="process-math">\(\frac{1}{x}\)</span> is <span class="process-math">\(\ln x + C_{1}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-the-antiderivative-of--frac-1-x-m--3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-the-antiderivative-of--frac-1-x-m--3-2">
-<div class="para">Now let <span class="process-math">\(x\)</span> be in <span class="process-math">\((-\infty,0)\text{.}\)</span> Then <span class="process-math">\(\ln x\)</span> isn’t defined here. However, we can write</div>
-<div class="displaymath process-math">
+<div class="para">Now let <span class="process-math">\(x\)</span> be in <span class="process-math">\((-\infty,0)\text{.}\)</span>  Then <span class="process-math">\(\ln x\)</span> isn’t defined here.  However, we can write</div>
+<div class="displaymath process-math" id="example-the-antiderivative-of--frac-1-x-m--3-2-4">
 \begin{equation*}
 \frac{1}{x} = -\frac{1}{-x},
 \end{equation*}
 </div>
 <div class="para">and if <span class="process-math">\(x &lt; 0\)</span> then <span class="process-math">\(-x &gt; 0\)</span> and <span class="process-math">\(\ln(-x)\)</span> is defined, and in fact</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-the-antiderivative-of--frac-1-x-m--3-2-8">
 \begin{equation*}
-\dv{}{x}\ln(-x) = -\frac{1}{(-x)} = \frac{1}{x}.
+\dv{}{x}\ln(-x) = -\frac{1}{(-x)} =
+\frac{1}{x}.
 \end{equation*}
 </div>
-<div class="para">So the most general antiderivative of <span class="process-math">\(\frac{1}{x}\)</span> on <span class="process-math">\((-\infty,0)\)</span> is <span class="process-math">\(\ln(-x) + C_{2}\text{.}\)</span> Putting this all together, we can say that the most general antiderivative of <span class="process-math">\(f(x) = \frac{1}{x}\)</span> is given by</div>
-<div class="displaymath process-math">
+<div class="para">So the most general antiderivative of <span class="process-math">\(\frac{1}{x}\)</span> on <span class="process-math">\((-\infty,0)\)</span> is <span class="process-math">\(\ln(-x) + C_{2}\text{.}\)</span> Putting this all together, we can say that the most general antiderivative of <span class="process-math">\(f(x) =
+\frac{1}{x}\)</span> is given by</div>
+<div class="displaymath process-math" id="example-the-antiderivative-of--frac-1-x-m--3-2-13">
 \begin{equation*}
-F(x) = \begin{cases} \ln x + C_{1} &amp; x &gt; 0 \\ \ln(-x) + C_{2} &amp; x &lt; 0\end{cases}.
+F(x) =
+\begin{cases} \ln x + C_{1} &amp; x &gt; 0 \\
+\ln(-x) + C_{2} &amp; x &lt; 0\end{cases}.
 \end{equation*}
 </div>
 <div class="para">If we know that we’re only selecting values of <span class="process-math">\(x\)</span> with the same sign, then we can just say that the antiderivative of <span class="process-math">\(\frac{1}{x}\)</span> is <span class="process-math">\(\ln|x| + C\text{.}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-the-antiderivative-of--frac-1-x-m--3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-</div></details></div></article><article class="example example-like" id="example-antiderivatives-involving-secant"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.9.6</span><span class="period">.</span><span class="space"> </span><span class="title">Antiderivatives involving secant.</span>
+<div class="autopermalink" data-description="Solution 5.9.5.1"><a href="#example-the-antiderivative-of--frac-1-x-m--3" title="Copy heading and permalink for Solution 5.9.5.1" aria-label="Copy heading and permalink for Solution 5.9.5.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.9.5: The antiderivative of \frac{1}{x}"><a href="#example-the-antiderivative-of--frac-1-x-m-" title="Copy heading and permalink for Example 5.9.5: The antiderivative of \frac{1}{x}" aria-label="Copy heading and permalink for Example 5.9.5: The antiderivative of \frac{1}{x}">🔗</a></div></article><article class="example example-like" id="example-antiderivatives-involving-secant"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.9.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Antiderivatives involving secant.</span>
 </h3>
-<div class="para" id="example-antiderivatives-involving-secant-2-1">Find the general antiderivatives of <span class="process-math">\(\sec^{2}t\)</span> and <span class="process-math">\(-2\sec3t\tan3t\text{.}\)</span>
+<div class="para" id="example-antiderivatives-involving-secant-2-1">Find the general antiderivatives of <span class="process-math">\(\sec^{2}t\)</span> and <span class="process-math">\(-2\sec3t\tan3t\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-antiderivatives-involving-secant-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-antiderivatives-involving-secant-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="example-antiderivatives-involving-secant-3-1">The first antiderivative isn’t too hard; it’s just <span class="process-math">\(\tan t+C\text{.}\)</span> The second is a little more complicated but still not too bad. Since <span class="process-math">\(\dv{}{t}\sec t = \sec t\tan t\text{,}\)</span> a good guess for an antiderivative of <span class="process-math">\(-2\sec3t\tan3t\)</span> would be <span class="process-math">\(-2\sec3t.\)</span> However, the derivative of this is <span class="process-math">\(-6\sec3t\tan3t\text{,}\)</span> so we’re off by a factor of <span class="process-math">\(3\text{.}\)</span> So we just need to divide our guess by <span class="process-math">\(3\)</span> to correct for this. Hence the general antiderivative of <span class="process-math">\(-2\sec3t\tan3t\)</span> is <span class="process-math">\(-\frac{2}{3}\sec3t\text{.}\)</span>
-</div></div></details></div></article><article class="theorem theorem-like" id="theorem-antidifferentiation-formulas"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.9.7</span><span class="period">.</span><span class="space"> </span><span class="title">Antidifferentiation Formulas.</span>
+<div class="solutions"><details id="example-antiderivatives-involving-secant-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-antiderivatives-involving-secant-3-1">The first antiderivative isn’t too hard; it’s just <span class="process-math">\(\tan t+C\text{.}\)</span>  The second is a little more complicated but still not too bad.  Since <span class="process-math">\(\dv{}{t}\sec t = \sec t\tan t\text{,}\)</span> a good guess for an antiderivative of <span class="process-math">\(-2\sec3t\tan3t\)</span> would be <span class="process-math">\(-2\sec3t.\)</span> However, the derivative of this is <span class="process-math">\(-6\sec3t\tan3t\text{,}\)</span> so we’re off by a factor of <span class="process-math">\(3\text{.}\)</span>  So we just need to divide our guess by <span class="process-math">\(3\)</span> to correct for this.  Hence the general antiderivative of <span class="process-math">\(-2\sec3t\tan3t\)</span> is <span class="process-math">\(-\frac{2}{3}\sec3t\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-antiderivatives-involving-secant-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.9.6.1"><a href="#example-antiderivatives-involving-secant-3" title="Copy heading and permalink for Solution 5.9.6.1" aria-label="Copy heading and permalink for Solution 5.9.6.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.9.6: Antiderivatives involving secant"><a href="#example-antiderivatives-involving-secant" title="Copy heading and permalink for Example 5.9.6: Antiderivatives involving secant" aria-label="Copy heading and permalink for Example 5.9.6: Antiderivatives involving secant">🔗</a></div></article><article class="theorem theorem-like" id="theorem-antidifferentiation-formulas"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.9.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Antidifferentiation formulas.</span>
 </h3>
-<div class="para" id="theorem-antidifferentiation-formulas-2-1">Let <span class="process-math">\(F(x)\)</span> and <span class="process-math">\(G(x)\)</span> denote antiderivatives of <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\text{,}\)</span> and let <span class="process-math">\(c\)</span> be a constant. Then we have the following: <figure class="table table-like" id="table-antiderivatives"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">5.9.8<span class="period">.</span></span><span class="space"> </span>Particular antiderivatives of functions</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="theorem-antidifferentiation-formulas-2-1">Let <span class="process-math">\(F(x)\)</span> and <span class="process-math">\(G(x)\)</span> denote antiderivatives of <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\text{,}\)</span> and let <span class="process-math">\(c\)</span> be a constant.  Then we have the following: <figure class="table table-like" id="table-antiderivatives"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.9.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Particular antiderivatives of functions<div class="autopermalink" data-description="Table 5.9.8: Particular antiderivatives of functions"><a href="#table-antiderivatives" title="Copy heading and permalink for Table 5.9.8: Particular antiderivatives of functions" aria-label="Copy heading and permalink for Table 5.9.8: Particular antiderivatives of functions">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r0 l0 t3 lines">Function</td>
 <td class="c m b1 r0 l0 t3 lines">Antiderivative</td>
@@ -936,75 +910,102 @@ F(x) = \begin{cases} \ln x + C_{1} &amp; x &gt; 0 \\ \ln(-x) + C_{2} &amp; x &lt
 <td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\frac{1}{c}e^{cx}\)</span></td>
 </tr>
 <tr>
-<td class="c m b3 r0 l0 t0 lines"><span class="process-math">\(\sin cx, \cos cx, c\neq 0\)</span></td>
-<td class="c m b3 r0 l0 t0 lines"><span class="process-math">\(-\frac{1}{c}\cos cx, \frac{1}{c}\sin cx\)</span></td>
+<td class="c m b3 r0 l0 t0 lines"><span class="process-math">\(\sin cx, \cos cx, c\neq
+0\)</span></td>
+<td class="c m b3 r0 l0 t0 lines"><span class="process-math">\(-\frac{1}{c}\cos cx,
+\frac{1}{c}\sin cx\)</span></td>
 </tr>
-</table></div></figure> These are by no means the only antiderivatives that you will need to deal with, but they are probably the most common.</div></article><article class="example example-like" id="example-falling-objects"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.9.9</span><span class="period">.</span><span class="space"> </span><span class="title">Falling objects.</span>
+</table></div></figure> These are by no means the only antiderivatives that you will need to deal with, but they are probably the most common.<div class="autopermalink" data-description="Paragraph"><a href="#theorem-antidifferentiation-formulas-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 5.9.7: Antidifferentiation formulas"><a href="#theorem-antidifferentiation-formulas" title="Copy heading and permalink for Theorem 5.9.7: Antidifferentiation formulas" aria-label="Copy heading and permalink for Theorem 5.9.7: Antidifferentiation formulas">🔗</a></div></article><article class="example example-like" id="example-falling-objects"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.9.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Falling objects.</span>
 </h3>
-<div class="para" id="example-falling-objects-2-1">An object is dropped from a height of <span class="quantity">100 m</span> above sea level and falls with downward acceleration equal to <span class="quantity">9.8 <sup>m</sup>⁄<sub>s<sup>2</sup></sub></span>. Find the height <span class="process-math">\(h(t)\)</span> of the object <span class="process-math">\(t\)</span> seconds after it’s dropped.</div>
-<div class="solutions"><details id="example-falling-objects-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-falling-objects-2-1">An object is dropped from a height of <span class="quantity">100 m</span> above sea level and falls with downward acceleration equal to <span class="quantity">9.8 <sup>m</sup>⁄<sub>s<sup>2</sup></sub></span>.  Find the height <span class="process-math">\(h(t)\)</span> of the object <span class="process-math">\(t\)</span> seconds after it’s dropped.<div class="autopermalink" data-description="Paragraph"><a href="#example-falling-objects-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-falling-objects-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="example-falling-objects-3-1">
-<div class="para">Take downward to be the negative direction and sea level to be <span class="process-math">\(h=0\text{.}\)</span> Since acceleration is the second derivative of position, then the position (i.e. height) of the object should be the second <em class="emphasis">antiderivative</em> of acceleration. At this step, it’s tempting to say that since <span class="process-math">\(h''(t) = -9.8\text{,}\)</span> we have</div>
-<div class="displaymath process-math">
+<div class="para">Take downward to be the negative direction and sea level to be <span class="process-math">\(h=0\text{.}\)</span>  Since acceleration is the second derivative of position, then the position (i.e. height) of the object should be the second <em class="emphasis">antiderivative</em> of acceleration.  At this step, it’s tempting to say that since <span class="process-math">\(h''(t) =
+-9.8\text{,}\)</span> we have</div>
+<div class="displaymath process-math" id="example-falling-objects-3-1-4">
 \begin{equation*}
-h^{\prime}t) = -9.8t\quad\text{and}\quad h(t) = -4.9 t^{2}\text{.}
+h^{\prime}t) =
+-9.8t\quad\text{and}\quad h(t) = -4.9 t^{2}\text{.}
 \end{equation*}
 </div>
-<div class="para">And indeed, <span class="process-math">\(-4.9t^{2}\)</span> is a function whose second derivative is <span class="process-math">\(-9.8\text{.}\)</span> However, we have a slight problem here. We know that <span class="process-math">\(h(0) = 100\)</span> and <span class="process-math">\(h^{\prime}0) = 0\text{.}\)</span> If <span class="process-math">\(h(t) = -4.9t^{2}\text{,}\)</span> then it’s impossible for <span class="process-math">\(h(0)\)</span> to equal <span class="process-math">\(100\text{.}\)</span> The problem here is we forgot about the arbitrary constants.</div>
+<div class="para">And indeed, <span class="process-math">\(-4.9t^{2}\)</span> is a function whose second derivative is <span class="process-math">\(-9.8\text{.}\)</span>  However, we have a slight problem here.  We know that <span class="process-math">\(h(0)
+= 100\)</span> and <span class="process-math">\(h^{\prime}0) = 0\text{.}\)</span>  If <span class="process-math">\(h(t)
+= -4.9t^{2}\text{,}\)</span> then it’s impossible for <span class="process-math">\(h(0)\)</span> to equal <span class="process-math">\(100\text{.}\)</span>  The problem here is we forgot about the arbitrary constants.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-falling-objects-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-falling-objects-3-2">
-<div class="para">To get an accurate expression for <span class="process-math">\(h(t)\text{,}\)</span> we go back to <span class="process-math">\(h''(t) = -9.8\text{.}\)</span> Then <span class="process-math">\(h^{\prime}t) = -9.8t+C_{1}\)</span> for some constant <span class="process-math">\(C_{1}\text{.}\)</span> Since <span class="process-math">\(h^{\prime}0) = 0\text{,}\)</span> this forces <span class="process-math">\(C_{1} = 0\text{.}\)</span> So we have <span class="process-math">\(h^{\prime}t) = -9.8t\text{.}\)</span> Now we antidifferentiate one more time to get <span class="process-math">\(h(t) = -4.9t^{2} + C_{2}\text{.}\)</span> Since <span class="process-math">\(h(0) = 100\text{,}\)</span> this forces <span class="process-math">\(C_{2} = 100\text{.}\)</span> So</div>
-<div class="displaymath process-math">
+<div class="para">To get an accurate expression for <span class="process-math">\(h(t)\text{,}\)</span> we go back to <span class="process-math">\(h''(t) = -9.8\text{.}\)</span>  Then <span class="process-math">\(h^{\prime}t) = -9.8t+C_{1}\)</span> for some constant <span class="process-math">\(C_{1}\text{.}\)</span>  Since <span class="process-math">\(h^{\prime}0) =
+0\text{,}\)</span> this forces <span class="process-math">\(C_{1} = 0\text{.}\)</span>  So we have <span class="process-math">\(h^{\prime}t) = -9.8t\text{.}\)</span>  Now we antidifferentiate one more time to get <span class="process-math">\(h(t) =
+-4.9t^{2} + C_{2}\text{.}\)</span>  Since <span class="process-math">\(h(0) = 100\text{,}\)</span> this forces <span class="process-math">\(C_{2} = 100\text{.}\)</span>  So</div>
+<div class="displaymath process-math" id="example-falling-objects-3-2-11">
 \begin{equation*}
-h(t) = -4.9t^{2} + 100\text{.}
+h(t) =
+-4.9t^{2} + 100\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-falling-objects-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-</div></details></div></article><div class="para" id="section-antiderivatives-13">Some functions that do not have an obvious antiderivative can be simplified through algebra into a form that is perhaps more helpful.</div>
+<div class="autopermalink" data-description="Solution 5.9.9.1"><a href="#example-falling-objects-3" title="Copy heading and permalink for Solution 5.9.9.1" aria-label="Copy heading and permalink for Solution 5.9.9.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.9.9: Falling objects"><a href="#example-falling-objects" title="Copy heading and permalink for Example 5.9.9: Falling objects" aria-label="Copy heading and permalink for Example 5.9.9: Falling objects">🔗</a></div></article><div class="para" id="section-antiderivatives-13">Some functions that do not have an obvious antiderivative can be simplified through algebra into a form that is perhaps more helpful.<div class="autopermalink" data-description="Paragraph"><a href="#section-antiderivatives-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-a-tricky-antiderivative"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.9.10</span><span class="period">.</span><span class="space"> </span><span class="title">A tricky antiderivative.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.9.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A tricky antiderivative.</span>
 </h3>
 <div class="para logical" id="example-a-tricky-antiderivative-2-1">
 <div class="para">Find the most general antiderivative of</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-a-tricky-antiderivative-2-1-1">
 \begin{equation*}
 f(x) = \frac{2+x^{2}}{1+x^{2}}.
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-a-tricky-antiderivative-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-a-tricky-antiderivative-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="solutions"><details id="example-a-tricky-antiderivative-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="example-a-tricky-antiderivative-3-1">
-<div class="para">It’s tough to think of a function whose derivative is <span class="process-math">\(f(x)\text{,}\)</span> though since the denominator is <span class="process-math">\(1+x^{2}\)</span> it seems likely that this antiderivative will involve <span class="process-math">\(\tan^{-1}x\)</span> in some way. In order to actually find the antiderivative, we’ll rewrite <span class="process-math">\(f(x)\)</span> into a more convenient form. First, note that the numerator is very close to the denominator, which means we can almost cancel it out. So we’ll split up the numerator as follows:</div>
-<div class="displaymath process-math">
+<div class="para">It’s tough to think of a function whose derivative is <span class="process-math">\(f(x)\text{,}\)</span> though since the denominator is <span class="process-math">\(1+x^{2}\)</span> it seems likely that this antiderivative will involve <span class="process-math">\(\tan^{-1}x\)</span> in some way.  In order to actually find the antiderivative, we’ll rewrite <span class="process-math">\(f(x)\)</span> into a more convenient form.  First, note that the numerator is very close to the denominator, which means we can almost cancel it out.  So we’ll split up the numerator as follows:</div>
+<div class="displaymath process-math" id="example-a-tricky-antiderivative-3-1-5">
 \begin{equation*}
-\frac{2+x^{2}}{1+x^{2}} = \frac{1+(1+x^{2})}{1+x^{2}} = \frac{1}{1+x^{2}} + 1.
+\frac{2+x^{2}}{1+x^{2}} =
+\frac{1+(1+x^{2})}{1+x^{2}} = \frac{1}{1+x^{2}} +
+1.
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-a-tricky-antiderivative-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-a-tricky-antiderivative-3-2">
 <div class="para">We can find the antiderivative of this term by term, so the most general antiderivative of <span class="process-math">\(f(x)\)</span> is</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-a-tricky-antiderivative-3-2-2">
 \begin{equation*}
 F(x) = \tan^{-1}x + x + C.
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-a-tricky-antiderivative-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-</div></details></div></article><div class="para logical" id="section-antiderivatives-15">
-<div class="para">At this point, it’s natural to think about what an antiderivative means geometrically since the derivative of a function has such a nice interpretation. One approach to this is to think about <dfn class="terminology">net change</dfn> of the antiderivative. Let <span class="process-math">\(F(x)\)</span> be an antiderivative of <span class="process-math">\(f(x)\)</span> on some interval containing <span class="process-math">\(a,b\text{.}\)</span> The net change of <span class="process-math">\(F(x)\)</span> from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\)</span> is given by</div>
-<div class="displaymath process-math">
+<div class="autopermalink" data-description="Solution 5.9.10.1"><a href="#example-a-tricky-antiderivative-3" title="Copy heading and permalink for Solution 5.9.10.1" aria-label="Copy heading and permalink for Solution 5.9.10.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.9.10: A tricky antiderivative"><a href="#example-a-tricky-antiderivative" title="Copy heading and permalink for Example 5.9.10: A tricky antiderivative" aria-label="Copy heading and permalink for Example 5.9.10: A tricky antiderivative">🔗</a></div></article><div class="para logical" id="section-antiderivatives-15">
+<div class="para">At this point, it’s natural to think about what an antiderivative means geometrically since the derivative of a function has such a nice interpretation.  One approach to this is to think about <dfn class="terminology">net change</dfn> of the antiderivative.  Let <span class="process-math">\(F(x)\)</span> be an antiderivative of <span class="process-math">\(f(x)\)</span> on some interval containing <span class="process-math">\(a,b\text{.}\)</span>  The net change of <span class="process-math">\(F(x)\)</span> from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\)</span> is given by</div>
+<div class="displaymath process-math" id="section-antiderivatives-15-8">
 \begin{equation*}
 F(b) - F(a).
 \end{equation*}
 </div>
-<div class="para">Now, <span class="process-math">\(F^{\prime}x) = f(x)\)</span> represents instantaneous rate of change, not net change. However, if we can somehow add these instantaneous changes from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\text{,}\)</span> they should accumulate until they give the net change of <span class="process-math">\(F\)</span> from <span class="process-math">\(a\)</span> to <span class="process-math">\(b\text{.}\)</span> Graphically, adding these instantaneous rates of change looks like it’s giving us the <em class="emphasis">area</em> under <span class="process-math">\(f(x)\text{,}\)</span> which suggests the following geometric interpretation: <em class="emphasis">the area under of <span class="process-math">\(f(x)\)</span> from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\)</span> is just the net change of an antiderivative <span class="process-math">\(F(x)\)</span> from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\text{.}\)</span></em> Much of the next chapter is devoted to making this idea precise.</div>
-</div></section></div>
-<div class="ptx-content-footer">
+<div class="para">Now, <span class="process-math">\(F^{\prime}x) =
+f(x)\)</span> represents instantaneous rate of change, not net change.  However, if we can somehow add these instantaneous changes from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\text{,}\)</span> they should accumulate until they give the net change of <span class="process-math">\(F\)</span> from <span class="process-math">\(a\)</span> to <span class="process-math">\(b\text{.}\)</span>  Graphically, adding these instantaneous rates of change looks like it’s giving us the <em class="emphasis">area</em> under <span class="process-math">\(f(x)\text{,}\)</span> which suggests the following geometric interpretation: <em class="emphasis">the area under of <span class="process-math">\(f(x)\)</span> from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\)</span> is just the net change of an antiderivative <span class="process-math">\(F(x)\)</span> from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\text{.}\)</span></em> Much of the next chapter is devoted to making this idea precise.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-antiderivatives-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 5.9: Antiderivatives"><a href="#section-antiderivatives" title="Copy heading and permalink for Section 5.9: Antiderivatives" aria-label="Copy heading and permalink for Section 5.9: Antiderivatives">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="section-newton-s-method.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="part-integral.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
-<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
 </body>
 </html>

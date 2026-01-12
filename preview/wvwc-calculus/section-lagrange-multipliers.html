@@ -6,17 +6,21 @@
 <!--*                                          *-->
 <!--********************************************-->
 <html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>WVWC-CALC Lagrange Multipliers</title>
-<meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:type" content="book">
-<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo.jpg">
-<meta property="book:title" content="Calculus Notes">
-<meta property="book:author" content="Jesse Oldroyd
-          ">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -88,12 +92,14 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo-brandlogo.jpg">
+<meta property="book:title" content="Calculus Notes">
+<meta property="book:author" content="Jesse Oldroyd
+          ">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -115,127 +121,22 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.1';
+eBookConfig.runestone_version = '7.11.8';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.87cabc2515250052.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.630d5c4fb4b681eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.97f3ae4f7a71ba18.css">
-<style>
-#theorem-combining-continuous-functions-2-1-4 { counter-set: theorem-combining-continuous-functions-2-1-4 0; }
-#theorem-combining-continuous-functions-2-1-4 > li::marker { content: ""counter(theorem-combining-continuous-functions-2-1-4,decimal)"."; }
-#theorem-combining-continuous-functions-2-1-4 > li { counter-increment: theorem-combining-continuous-functions-2-1-4; }
-#example-derivatives-using-the-power-rule-2-1-1 { counter-set: example-derivatives-using-the-power-rule-2-1-1 0; }
-#example-derivatives-using-the-power-rule-2-1-1 > li::marker { content: ""counter(example-derivatives-using-the-power-rule-2-1-1,decimal)"."; }
-#example-derivatives-using-the-power-rule-2-1-1 > li { counter-increment: example-derivatives-using-the-power-rule-2-1-1; }
-#section-extreme-values-of-functions-4-1-1-1 { counter-set: section-extreme-values-of-functions-4-1-1-1 0; }
-#section-extreme-values-of-functions-4-1-1-1 > li::marker { content: ""counter(section-extreme-values-of-functions-4-1-1-1,decimal)"."; }
-#section-extreme-values-of-functions-4-1-1-1 > li { counter-increment: section-extreme-values-of-functions-4-1-1-1; }
-#example-minimizing-material-costs-3-1-1 { counter-set: example-minimizing-material-costs-3-1-1 0; }
-#example-minimizing-material-costs-3-1-1 > li::marker { content: ""counter(example-minimizing-material-costs-3-1-1,decimal)"."; }
-#example-minimizing-material-costs-3-1-1 > li { counter-increment: example-minimizing-material-costs-3-1-1; }
-#example-distance-on-an-ellipse-3-1-1 { counter-set: example-distance-on-an-ellipse-3-1-1 0; }
-#example-distance-on-an-ellipse-3-1-1 > li::marker { content: ""counter(example-distance-on-an-ellipse-3-1-1,decimal)"."; }
-#example-distance-on-an-ellipse-3-1-1 > li { counter-increment: example-distance-on-an-ellipse-3-1-1; }
-#example-finding-antiderivatives-2-1-1 { counter-set: example-finding-antiderivatives-2-1-1 0; }
-#example-finding-antiderivatives-2-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-2-1-1,decimal)"."; }
-#example-finding-antiderivatives-2-1-1 > li { counter-increment: example-finding-antiderivatives-2-1-1; }
-#example-finding-antiderivatives-3-1-1 { counter-set: example-finding-antiderivatives-3-1-1 0; }
-#example-finding-antiderivatives-3-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-3-1-1,decimal)"."; }
-#example-finding-antiderivatives-3-1-1 > li { counter-increment: example-finding-antiderivatives-3-1-1; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 { counter-set: theorem-more-properties-of-the-definite-integral-2-1-3 0; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li::marker { content: ""counter(theorem-more-properties-of-the-definite-integral-2-1-3,decimal)"."; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li { counter-increment: theorem-more-properties-of-the-definite-integral-2-1-3; }
-#theorem-fundamental-theorem-of-calculus-2-2 { counter-set: theorem-fundamental-theorem-of-calculus-2-2 0; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li::marker { content: ""counter(theorem-fundamental-theorem-of-calculus-2-2,decimal)"."; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li { counter-increment: theorem-fundamental-theorem-of-calculus-2-2; }
-#section-substitution-5-3 { counter-set: section-substitution-5-3 0; }
-#section-substitution-5-3 > li::marker { content: ""counter(section-substitution-5-3,decimal)"."; }
-#section-substitution-5-3 > li { counter-increment: section-substitution-5-3; }
-#algorithm-partial-fractions-algorithm-3-1-2 { counter-set: algorithm-partial-fractions-algorithm-3-1-2 0; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li::marker { content: ""counter(algorithm-partial-fractions-algorithm-3-1-2,decimal)"."; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li { counter-increment: algorithm-partial-fractions-algorithm-3-1-2; }
-#section-applications-to-physics-and-engineering-2-2 { counter-set: section-applications-to-physics-and-engineering-2-2 0; }
-#section-applications-to-physics-and-engineering-2-2 > li::marker { content: ""counter(section-applications-to-physics-and-engineering-2-2,decimal)"."; }
-#section-applications-to-physics-and-engineering-2-2 > li { counter-increment: section-applications-to-physics-and-engineering-2-2; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 { counter-set: subsection-moments-and-centers-of-mass-7-1-3-1 0; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-1-3-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-1-3-1; }
-#subsection-moments-and-centers-of-mass-7-2-1 { counter-set: subsection-moments-and-centers-of-mass-7-2-1 0; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-2-1; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 { counter-set: subsection-moments-and-centers-of-mass-12-1-1-4 0; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-1-1-4,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li { counter-increment: subsection-moments-and-centers-of-mass-12-1-1-4; }
-#subsection-moments-and-centers-of-mass-12-2-1 { counter-set: subsection-moments-and-centers-of-mass-12-2-1 0; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-12-2-1; }
-#example-determining-a-sustainable-population-3-3 { counter-set: example-determining-a-sustainable-population-3-3 0; }
-#example-determining-a-sustainable-population-3-3 > li::marker { content: ""counter(example-determining-a-sustainable-population-3-3,decimal)"."; }
-#example-determining-a-sustainable-population-3-3 > li { counter-increment: example-determining-a-sustainable-population-3-3; }
-#theorem-sequential-limit-laws-2-2 { counter-set: theorem-sequential-limit-laws-2-2 0; }
-#theorem-sequential-limit-laws-2-2 > li::marker { content: ""counter(theorem-sequential-limit-laws-2-2,decimal)"."; }
-#theorem-sequential-limit-laws-2-2 > li { counter-increment: theorem-sequential-limit-laws-2-2; }
-#example-guessing-sums-2-1-1 { counter-set: example-guessing-sums-2-1-1 0; }
-#example-guessing-sums-2-1-1 > li::marker { content: ""counter(example-guessing-sums-2-1-1,decimal)"."; }
-#example-guessing-sums-2-1-1 > li { counter-increment: example-guessing-sums-2-1-1; }
-#example-guessing-sums-3-1-1 { counter-set: example-guessing-sums-3-1-1 0; }
-#example-guessing-sums-3-1-1 > li::marker { content: ""counter(example-guessing-sums-3-1-1,decimal)"."; }
-#example-guessing-sums-3-1-1 > li { counter-increment: example-guessing-sums-3-1-1; }
-#theorem-direct-comparison-test-series-3-1-4 { counter-set: theorem-direct-comparison-test-series-3-1-4 0; }
-#theorem-direct-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-direct-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-direct-comparison-test-series-3-1-4 > li { counter-increment: theorem-direct-comparison-test-series-3-1-4; }
-#theorem-limit-comparison-test-series-3-1-4 { counter-set: theorem-limit-comparison-test-series-3-1-4 0; }
-#theorem-limit-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-limit-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-limit-comparison-test-series-3-1-4 > li { counter-increment: theorem-limit-comparison-test-series-3-1-4; }
-#subsection-alternating-series-9-2 { counter-set: subsection-alternating-series-9-2 0; }
-#subsection-alternating-series-9-2 > li::marker { content: ""counter(subsection-alternating-series-9-2,decimal)"."; }
-#subsection-alternating-series-9-2 > li { counter-increment: subsection-alternating-series-9-2; }
-#theorem-ratio-test-2-1-3 { counter-set: theorem-ratio-test-2-1-3 0; }
-#theorem-ratio-test-2-1-3 > li::marker { content: ""counter(theorem-ratio-test-2-1-3,decimal)"."; }
-#theorem-ratio-test-2-1-3 > li { counter-increment: theorem-ratio-test-2-1-3; }
-#theorem-root-test-2-1-3 { counter-set: theorem-root-test-2-1-3 0; }
-#theorem-root-test-2-1-3 > li::marker { content: ""counter(theorem-root-test-2-1-3,decimal)"."; }
-#theorem-root-test-2-1-3 > li { counter-increment: theorem-root-test-2-1-3; }
-#example-examples-of-power-series-2-1-1 { counter-set: example-examples-of-power-series-2-1-1 0; }
-#example-examples-of-power-series-2-1-1 > li::marker { content: ""counter(example-examples-of-power-series-2-1-1,decimal)"."; }
-#example-examples-of-power-series-2-1-1 > li { counter-increment: example-examples-of-power-series-2-1-1; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 { counter-set: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 0; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li::marker { content: ""counter(theorem-properties-of-vector-addition-and-scalar-multiplication-3-2,decimal)"."; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li { counter-increment: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2; }
-#theorem-properties-of-the-dot-product-3-2 { counter-set: theorem-properties-of-the-dot-product-3-2 0; }
-#theorem-properties-of-the-dot-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-dot-product-3-2,decimal)"."; }
-#theorem-properties-of-the-dot-product-3-2 > li { counter-increment: theorem-properties-of-the-dot-product-3-2; }
-#theorem-properties-of-the-cross-product-3-2 { counter-set: theorem-properties-of-the-cross-product-3-2 0; }
-#theorem-properties-of-the-cross-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-cross-product-3-2,decimal)"."; }
-#theorem-properties-of-the-cross-product-3-2 > li { counter-increment: theorem-properties-of-the-cross-product-3-2; }
-#theorem-vector-derivative-rules-3-2 { counter-set: theorem-vector-derivative-rules-3-2 0; }
-#theorem-vector-derivative-rules-3-2 > li::marker { content: ""counter(theorem-vector-derivative-rules-3-2,decimal)"."; }
-#theorem-vector-derivative-rules-3-2 > li { counter-increment: theorem-vector-derivative-rules-3-2; }
-#subsection-continuous-functions-5 { counter-set: subsection-continuous-functions-5 0; }
-#subsection-continuous-functions-5 > li::marker { content: ""counter(subsection-continuous-functions-5,decimal)"."; }
-#subsection-continuous-functions-5 > li { counter-increment: subsection-continuous-functions-5; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 { counter-set: algorithm-method-of-lagrange-multipliers-3-1-7 0; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li::marker { content: ""counter(algorithm-method-of-lagrange-multipliers-3-1-7,decimal)"."; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li { counter-increment: algorithm-method-of-lagrange-multipliers-3-1-7; }
-#subsection-conservative-vector-fields-2-2 { counter-set: subsection-conservative-vector-fields-2-2 0; }
-#subsection-conservative-vector-fields-2-2 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-2,decimal)"."; }
-#subsection-conservative-vector-fields-2-2 > li { counter-increment: subsection-conservative-vector-fields-2-2; }
-#subsection-conservative-vector-fields-2-3 { counter-set: subsection-conservative-vector-fields-2-3 0; }
-#subsection-conservative-vector-fields-2-3 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-3,decimal)"."; }
-#subsection-conservative-vector-fields-2-3 > li { counter-increment: subsection-conservative-vector-fields-2-3; }
-#gfdl-section4-3 { counter-set: gfdl-section4-3 0; }
-#gfdl-section4-3 > li::marker { content: ""counter(gfdl-section4-3,upper-alpha)"."; }
-#gfdl-section4-3 > li { counter-increment: gfdl-section4-3; }
-</style>
+<script src="_static/prefix-runtime.991c135ccf182bf5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1c010553c35c544c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.677a75a9120449ff.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdn.geogebra.org/apps/deployggb.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" target="_blank" href=""><img src="external/./wvwc-logo.jpg" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes:</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
+<img src="external/./wvwc-logo-brandlogo.jpg" alt="Logo image"><div class="title-container">
+<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
 <p class="byline">Jesse Oldroyd</p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
@@ -431,10 +332,10 @@ true);
 <div class="toc-title-box"><a href="applications-differentiation.html" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Differentiation</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-linear-approximations.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear approximations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related Rates</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related rates</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-l-hospital-s-rule.html" class="internal"><span class="codenumber">5.3</span> <span class="title">L’Hospital’s Rule</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme Values of Functions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization Problems</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme values of functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization problems</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-the-mean-value-theorem.html" class="internal"><span class="codenumber">5.6</span> <span class="title">The Mean Value Theorem</span></a></div>
 <ul class="structural toc-item-list">
@@ -442,8 +343,11 @@ true);
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-the-mean-value-theorem.html#subsection-the-mean-value-theorem" class="internal"><span class="title">The Mean Value Theorem</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and Graphs</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and graphs</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-newton-s-method.html#subsection-newtons-method-optimization" class="internal"><span class="title">Newton’s Method for optimization</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-antiderivatives.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Antiderivatives</span></a></div></li>
 </ul>
 </li>
@@ -606,8 +510,14 @@ true);
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-coordinates-in-3-space.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Coordinates in 3-Space</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -797,36 +707,52 @@ true);
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-lagrange-multipliers"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">12.8</span><span class="space"> </span><span class="title">Lagrange Multipliers</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.8</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Lagrange Multipliers</span>
 </h2>
 <div class="para" id="section-lagrange-multipliers-2">
-<a href="section-extreme-values.html#theorem-second-derivative-test" class="xref" data-knowl="./knowl/xref/theorem-second-derivative-test.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 12.7.4: Second Derivative Test">Theorem 12.7.4</a> is useful for finding local maxima and minima of a function <span class="process-math">\(f(x,y)\text{,}\)</span> but it’s often the case where we have an additional restriction on the variables <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{,}\)</span> which we interpret as an equality <span class="process-math">\(g(x,y) = k\)</span> for some constant <span class="process-math">\(k\text{.}\)</span> Geometrically, this reduces down to finding the maximum and minimum values of <span class="process-math">\(f(x,y)\)</span> on the curve <span class="process-math">\(g(x,y) = k\text{.}\)</span> This problem can be attacked algebraically using contours, as in the example below.</div>
+<a href="section-extreme-values.html#theorem-second-derivative-test" class="xref" data-knowl="./knowl/xref/theorem-second-derivative-test.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 12.7.4: Second Derivative Test">Theorem 12.7.4</a> is useful for finding local maxima and minima of a function <span class="process-math">\(f(x,y)\text{,}\)</span> but it’s often the case where we have an additional restriction on the variables <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{,}\)</span> which we interpret as an equality <span class="process-math">\(g(x,y) = k\)</span> for some constant <span class="process-math">\(k\text{.}\)</span> Geometrically, this reduces down to finding the maximum and minimum values of <span class="process-math">\(f(x,y)\)</span> on the curve <span class="process-math">\(g(x,y) = k\text{.}\)</span> This problem can be attacked algebraically using contours, as in the example below.<div class="autopermalink" data-description="Paragraph"><a href="#section-lagrange-multipliers-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-constrained-optimization-using-contours"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">12.8.1</span><span class="period">.</span><span class="space"> </span><span class="title">Constrained Optimization Using Contours.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.8.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Constrained Optimization Using Contours.</span>
 </h3>
-<div class="para" id="example-constrained-optimization-using-contours-2-1">Estimate the minimum and maximum values of <span class="process-math">\(f(x,y) = x^2 + 2y^2\)</span> subject to the constraint <span class="process-math">\(g(x,y) = x^2 + y^2 = 1\text{.}\)</span>
+<div class="para" id="example-constrained-optimization-using-contours-2-1">Estimate the minimum and maximum values of <span class="process-math">\(f(x,y) = x^2 + 2y^2\)</span> subject to the constraint <span class="process-math">\(g(x,y) = x^2 + y^2 = 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-constrained-optimization-using-contours-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-constrained-optimization-using-contours-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="example-constrained-optimization-using-contours-3-1">The constraint is represented as a contour plot of <span class="process-math">\(g(x,y)\text{.}\)</span> We can compare this with contours of <span class="process-math">\(f(x,y)\text{,}\)</span> and any point where there two contours intersect is a point for which the constraint is satisfied.</div>
-<figure class="figure figure-like" id="figure-lagrange-contour-example"><iframe src="https://www.desmos.com/calculator/j3cspl30hv" id="figure-lagrange-contour-example-2" width="600" height="600"></iframe><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">12.8.2<span class="period">.</span></span><span class="space"> </span><div class="para" id="figure-lagrange-contour-example-1-1">An interactive contour plot of <span class="process-math">\(f(x,y) = s\)</span> and <span class="process-math">\(g(x,y) = 1\text{.}\)</span>
-</div></figcaption></figure><div class="para" id="example-constrained-optimization-using-contours-3-3">Using these contours, we see that the maximum value of <span class="process-math">\(f\)</span> subject to <span class="process-math">\(g = 1\)</span> appears to be <span class="process-math">\(2\text{,}\)</span> while the minimum value of <span class="process-math">\(f\)</span> subject to <span class="process-math">\(g=1\)</span> appears to be <span class="process-math">\(1\text{.}\)</span>
+<div class="solutions"><details id="example-constrained-optimization-using-contours-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-constrained-optimization-using-contours-3-1">The constraint is represented as a contour plot of <span class="process-math">\(g(x,y)\text{.}\)</span> We can compare this with contours of <span class="process-math">\(f(x,y)\text{,}\)</span> and any point where there two contours intersect is a point for which the constraint is satisfied.<div class="autopermalink" data-description="Paragraph"><a href="#example-constrained-optimization-using-contours-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-</div></details></div></article><div class="para" id="section-lagrange-multipliers-4">Although the graphical approach used in <a href="section-lagrange-multipliers.html#example-constrained-optimization-using-contours" class="xref" data-knowl="./knowl/xref/example-constrained-optimization-using-contours.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 12.8.1: Constrained Optimization Using Contours">Example 12.8.1</a> and specifically in <a href="section-lagrange-multipliers.html#figure-lagrange-contour-example" class="xref" data-knowl="./knowl/xref/figure-lagrange-contour-example.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 12.8.2">Figure 12.8.2</a> is useful for estimating solutions of constrained optimization problems in two dimensions, it’s neither exact nor easy to visualize in higher dimensions. We therefore want to determine an algebraic approach for solving these problems. In these cases, <a href="section-extreme-values.html#theorem-second-derivative-test" class="xref" data-knowl="./knowl/xref/theorem-second-derivative-test.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 12.7.4: Second Derivative Test">Theorem 12.7.4</a> is not as useful because there’s no guarantee that the critical points of <span class="process-math">\(f\)</span> will lie on the curve <span class="process-math">\(g(x,y) = k\text{.}\)</span> For this scenario, we must use the method of <dfn class="terminology">Lagrange multipliers</dfn>.</div>
+<figure class="figure figure-like" id="figure-lagrange-contour-example"><iframe src="https://www.desmos.com/calculator/j3cspl30hv" id="figure-lagrange-contour-example-2" width="600" height="600"></iframe><figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.8.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="para" id="figure-lagrange-contour-example-1-1">An interactive contour plot of <span class="process-math">\(f(x,y) = s\)</span> and <span class="process-math">\(g(x,y) = 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#figure-lagrange-contour-example-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Figure 12.8.2"><a href="#figure-lagrange-contour-example" title="Copy heading and permalink for Figure 12.8.2" aria-label="Copy heading and permalink for Figure 12.8.2">🔗</a></div></figcaption></figure><div class="para" id="example-constrained-optimization-using-contours-3-3">Using these contours, we see that the maximum value of <span class="process-math">\(f\)</span> subject to <span class="process-math">\(g = 1\)</span> appears to be <span class="process-math">\(2\text{,}\)</span> while the minimum value of <span class="process-math">\(f\)</span> subject to <span class="process-math">\(g=1\)</span> appears to be <span class="process-math">\(1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-constrained-optimization-using-contours-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 12.8.1.1"><a href="#example-constrained-optimization-using-contours-3" title="Copy heading and permalink for Solution 12.8.1.1" aria-label="Copy heading and permalink for Solution 12.8.1.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 12.8.1: Constrained Optimization Using Contours"><a href="#example-constrained-optimization-using-contours" title="Copy heading and permalink for Example 12.8.1: Constrained Optimization Using Contours" aria-label="Copy heading and permalink for Example 12.8.1: Constrained Optimization Using Contours">🔗</a></div></article><div class="para" id="section-lagrange-multipliers-4">Although the graphical approach used in <a href="section-lagrange-multipliers.html#example-constrained-optimization-using-contours" class="xref" data-knowl="./knowl/xref/example-constrained-optimization-using-contours.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 12.8.1: Constrained Optimization Using Contours">Example 12.8.1</a> and specifically in <a href="section-lagrange-multipliers.html#figure-lagrange-contour-example" class="xref" data-knowl="./knowl/xref/figure-lagrange-contour-example.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 12.8.2">Figure 12.8.2</a> is useful for estimating solutions of constrained optimization problems in two dimensions, it’s neither exact nor easy to visualize in higher dimensions. We therefore want to determine an algebraic approach for solving these problems. In these cases, <a href="section-extreme-values.html#theorem-second-derivative-test" class="xref" data-knowl="./knowl/xref/theorem-second-derivative-test.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 12.7.4: Second Derivative Test">Theorem 12.7.4</a> is not as useful because there’s no guarantee that the critical points of <span class="process-math">\(f\)</span> will lie on the curve <span class="process-math">\(g(x,y) = k\text{.}\)</span> For this scenario, we must use the method of <dfn class="terminology">Lagrange multipliers</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#section-lagrange-multipliers-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="algorithm theorem-like" id="algorithm-method-of-lagrange-multipliers"><h3 class="heading">
-<span class="type">Algorithm</span><span class="space"> </span><span class="codenumber">12.8.3</span><span class="period">.</span><span class="space"> </span><span class="title">Method of Lagrange Multipliers.</span>
+<span class="type">Algorithm</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.8.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Method of Lagrange Multipliers.</span>
 </h3>
 <div class="para logical" id="algorithm-method-of-lagrange-multipliers-3-1">
 <div class="para">Suppose that <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are both differentiable functions, and suppose that <span class="process-math">\(\grad g\neq\vb{0}\)</span> on the curve <span class="process-math">\(g(x,y) = k\text{.}\)</span> To find the extreme values of <span class="process-math">\(f(x,y)\)</span> subject to the constraint <span class="process-math">\(g(x,y) = k\text{,}\)</span> perform the following steps:</div>
 <ol class="decimal" id="algorithm-method-of-lagrange-multipliers-3-1-7">
-<li id="algorithm-method-of-lagrange-multipliers-3-1-7-1"><div class="para" id="p-derived-algorithm-method-of-lagrange-multipliers-3-1-7-1">Find all points <span class="process-math">\((x_{0},y_{0})\)</span> such that <span class="process-math">\(\grad f(x_{0},y_{0}) = \lambda \grad g(x_{0},y_{0})\text{,}\)</span> where <span class="process-math">\(\lambda\)</span> is a constant we call the <dfn class="terminology">Lagrange multiplier</dfn>.</div></li>
-<li id="algorithm-method-of-lagrange-multipliers-3-1-7-2"><div class="para" id="p-derived-algorithm-method-of-lagrange-multipliers-3-1-7-2">Compute <span class="process-math">\(f\)</span> at all points from the first step and compare values to find any maxima or minima.</div></li>
+<li id="algorithm-method-of-lagrange-multipliers-3-1-7-1">
+<div class="para" id="p-derived-algorithm-method-of-lagrange-multipliers-3-1-7-1">Find all points <span class="process-math">\((x_{0},y_{0})\)</span> such that <span class="process-math">\(\grad f(x_{0},y_{0}) = \lambda \grad g(x_{0},y_{0})\text{,}\)</span> where <span class="process-math">\(\lambda\)</span> is a constant we call the <dfn class="terminology">Lagrange multiplier</dfn>.</div>
+<div class="autopermalink" data-description="Item 1"><a href="#algorithm-method-of-lagrange-multipliers-3-1-7-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="algorithm-method-of-lagrange-multipliers-3-1-7-2">
+<div class="para" id="p-derived-algorithm-method-of-lagrange-multipliers-3-1-7-2">Compute <span class="process-math">\(f\)</span> at all points from the first step and compare values to find any maxima or minima.</div>
+<div class="autopermalink" data-description="Item 2"><a href="#algorithm-method-of-lagrange-multipliers-3-1-7-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
 </ol>
-</div></article><article class="example example-like" id="example-maximizing-volume"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">12.8.4</span><span class="period">.</span><span class="space"> </span><span class="title">Maximizing volume.</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#algorithm-method-of-lagrange-multipliers-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Algorithm 12.8.3: Method of Lagrange Multipliers"><a href="#algorithm-method-of-lagrange-multipliers" title="Copy heading and permalink for Algorithm 12.8.3: Method of Lagrange Multipliers" aria-label="Copy heading and permalink for Algorithm 12.8.3: Method of Lagrange Multipliers">🔗</a></div></article><article class="example example-like" id="example-maximizing-volume"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.8.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Maximizing volume.</span>
 </h3>
-<div class="para" id="example-maximizing-volume-2-1">A lidless box may be made from <span class="quantity">12 m<sup>2</sup></span> of material. What dimensions give the maximum volume?</div>
-<div class="solutions"><details id="example-maximizing-volume-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="example-maximizing-volume-3-1">If we denote the dimensions of the box by <span class="process-math">\(x,y,z\text{,}\)</span> then the function we need to maximize is <span class="process-math">\(V(x,y,z) = xyz\text{.}\)</span> However, not all dimensions are valid since we’re only allowed to use <span class="quantity">12 m<sup>2</sup></span> of material. This means that the surface area of the box, which is given by <span class="process-math">\(A(x,y,z) = xy + 2xz + 2yz\text{,}\)</span> must be equal to <span class="process-math">\(12\text{.}\)</span> So our constraint is that <span class="process-math">\(A(x,y,z) = 12\text{,}\)</span> and because we have this constraint we’ll try to solve this using <a href="section-lagrange-multipliers.html#algorithm-method-of-lagrange-multipliers" class="xref" data-knowl="./knowl/xref/algorithm-method-of-lagrange-multipliers.html" data-reveal-label="Reveal" data-close-label="Close" title="Algorithm 12.8.3: Method of Lagrange Multipliers">Algorithm 12.8.3</a>.</div>
+<div class="para" id="example-maximizing-volume-2-1">A lidless box may be made from <span class="quantity">12 m<sup>2</sup></span> of material. What dimensions give the maximum volume?<div class="autopermalink" data-description="Paragraph"><a href="#example-maximizing-volume-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-maximizing-volume-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-maximizing-volume-3-1">If we denote the dimensions of the box by <span class="process-math">\(x,y,z\text{,}\)</span> then the function we need to maximize is <span class="process-math">\(V(x,y,z) = xyz\text{.}\)</span> However, not all dimensions are valid since we’re only allowed to use <span class="quantity">12 m<sup>2</sup></span> of material. This means that the surface area of the box, which is given by <span class="process-math">\(A(x,y,z) = xy + 2xz + 2yz\text{,}\)</span> must be equal to <span class="process-math">\(12\text{.}\)</span> So our constraint is that <span class="process-math">\(A(x,y,z) = 12\text{,}\)</span> and because we have this constraint we’ll try to solve this using <a href="section-lagrange-multipliers.html#algorithm-method-of-lagrange-multipliers" class="xref" data-knowl="./knowl/xref/algorithm-method-of-lagrange-multipliers.html" data-reveal-label="Reveal" data-close-label="Close" title="Algorithm 12.8.3: Method of Lagrange Multipliers">Algorithm 12.8.3</a>.<div class="autopermalink" data-description="Paragraph"><a href="#example-maximizing-volume-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="para logical" id="example-maximizing-volume-3-2">
 <div class="para">To begin, we need to solve <span class="process-math">\(\grad V = \lambda \grad A\text{.}\)</span> Equivalently, we need to solve the system</div>
 <div class="displaymath process-math" id="example-maximizing-volume-3-2-2">
@@ -853,7 +779,7 @@ xyz &amp; = \lambda(2xz + 2yz)
 \end{align*}
 </div>
 <div class="para">or just</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-maximizing-volume-3-2-10">
 \begin{equation*}
 \lambda(xy + 2xz) = \lambda(xy + 2yz) = \lambda(2xz + 2yz)
 \end{equation*}
@@ -864,10 +790,11 @@ xyz &amp; = \lambda(2xz + 2yz)
 xy + 2xz = xy + 2yz = 2xz + 2yz\tag{12.8.1}
 \end{equation}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-maximizing-volume-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-maximizing-volume-3-3">
 <div class="para">The first two expressions in <a href="section-lagrange-multipliers.html#equation-lagrange-example-1" class="xref" data-knowl="./knowl/xref/equation-lagrange-example-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 12.8.1">(12.8.1)</a> simplify to <span class="process-math">\(x=y\text{,}\)</span> while the first and third reduce to <span class="process-math">\(x = 2z\text{.}\)</span> So</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/equation-lagrange-example-1.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/equation-lagrange-example-1.html" id="example-maximizing-volume-3-3-4">
 \begin{equation*}
 x = y = 2z\text{.}
 \end{equation*}
@@ -883,16 +810,22 @@ x = y = 2z\text{.}
 </div>
 <div class="para">Therefore <span class="process-math">\(z = \pm1\text{,}\)</span> so we take <span class="process-math">\(z=1\)</span> (since we’re dealing with dimensions). This also means that <span class="process-math">\(x = y = 2(1) = 2\text{.}\)</span> So the point <span class="process-math">\((2,2,1)\)</span> is therefore our candidate for the dimensions that maximize volume subject to the constraint <span class="process-math">\(A = 12\text{.}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-maximizing-volume-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="example-maximizing-volume-3-4">In order to actually verify that <span class="process-math">\(V(2,2,1) = 4\)</span> is actually the largest possible volume we can obtain, we need to show that it’s actually a maximum and not a minimum. This means we need to find another point <span class="process-math">\((x,y,z)\)</span> that also satisfies <span class="process-math">\(A = 12\text{,}\)</span> and show that it gives a smaller value for <span class="process-math">\(V\text{.}\)</span> One such point is just <span class="process-math">\((-2,-2,-1)\text{,}\)</span> and <span class="process-math">\(V(-2,-2,-1) = -4 &lt; V(2,2,1)\text{.}\)</span> So <span class="process-math">\(4\)</span> is actually a maximum value and not a minimum value.</div>
-</div></details></div></article><div class="para" id="section-lagrange-multipliers-7">The points we’ll obtain using Lagrange multipliers will be either maxima or minima, but the method itself doesn’t always tell us which is which. As in the last example, sometimes it’s up to us to find that on our own.</div>
+<div class="para" id="example-maximizing-volume-3-4">In order to actually verify that <span class="process-math">\(V(2,2,1) = 4\)</span> is actually the largest possible volume we can obtain, we need to show that it’s actually a maximum and not a minimum. This means we need to find another point <span class="process-math">\((x,y,z)\)</span> that also satisfies <span class="process-math">\(A = 12\text{,}\)</span> and show that it gives a smaller value for <span class="process-math">\(V\text{.}\)</span> One such point is just <span class="process-math">\((-2,-2,-1)\text{,}\)</span> and <span class="process-math">\(V(-2,-2,-1) = -4 &lt; V(2,2,1)\text{.}\)</span> So <span class="process-math">\(4\)</span> is actually a maximum value and not a minimum value.<div class="autopermalink" data-description="Paragraph"><a href="#example-maximizing-volume-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 12.8.4.1"><a href="#example-maximizing-volume-3" title="Copy heading and permalink for Solution 12.8.4.1" aria-label="Copy heading and permalink for Solution 12.8.4.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 12.8.4: Maximizing volume"><a href="#example-maximizing-volume" title="Copy heading and permalink for Example 12.8.4: Maximizing volume" aria-label="Copy heading and permalink for Example 12.8.4: Maximizing volume">🔗</a></div></article><div class="para" id="section-lagrange-multipliers-7">The points we’ll obtain using Lagrange multipliers will be either maxima or minima, but the method itself doesn’t always tell us which is which. As in the last example, sometimes it’s up to us to find that on our own.<div class="autopermalink" data-description="Paragraph"><a href="#section-lagrange-multipliers-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-extreme-values-on-a-paraboloid"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">12.8.5</span><span class="period">.</span><span class="space"> </span><span class="title">Extreme values on a paraboloid.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.8.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Extreme values on a paraboloid.</span>
 </h3>
-<div class="para" id="example-extreme-values-on-a-paraboloid-2-1">Find the absolute maxima and minima for <span class="process-math">\(f(x,y) = x^{2} + 2y^{2}\)</span> over this disk <span class="process-math">\(x^{2} + y^{2} \leq 1\text{.}\)</span>
+<div class="para" id="example-extreme-values-on-a-paraboloid-2-1">Find the absolute maxima and minima for <span class="process-math">\(f(x,y) = x^{2} + 2y^{2}\)</span> over this disk <span class="process-math">\(x^{2} + y^{2} \leq 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-extreme-values-on-a-paraboloid-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-extreme-values-on-a-paraboloid-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="example-extreme-values-on-a-paraboloid-3-1">First, recall from <a href="section-extreme-values.html" class="internal" title="Section 12.7: Extreme Values">Section 12.7</a> that the absolute maxima and minima of a differentiable function over a bounded set occur at either a critical point or somewhere on the boundary. So first, we need to find if <span class="process-math">\(f(x,y)\)</span> has any critical points inside the disk. If we solve <span class="process-math">\(f_{x} = f_{y} = 0\text{,}\)</span> then we quickly get that <span class="process-math">\((0,0)\)</span> is a critical point, and hence a possible maximum or minimum value. The only other place we need to check is the boundary <span class="process-math">\(x^{2} + y^{2} = 1\text{,}\)</span> and this is something we can use Lagrange multipliers for.</div>
+<div class="solutions"><details id="example-extreme-values-on-a-paraboloid-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-extreme-values-on-a-paraboloid-3-1">First, recall from <a href="section-extreme-values.html" class="internal" title="Section 12.7: Extreme Values">Section 12.7</a> that the absolute maxima and minima of a differentiable function over a bounded set occur at either a critical point or somewhere on the boundary. So first, we need to find if <span class="process-math">\(f(x,y)\)</span> has any critical points inside the disk. If we solve <span class="process-math">\(f_{x} = f_{y} = 0\text{,}\)</span> then we quickly get that <span class="process-math">\((0,0)\)</span> is a critical point, and hence a possible maximum or minimum value. The only other place we need to check is the boundary <span class="process-math">\(x^{2} + y^{2} = 1\text{,}\)</span> and this is something we can use Lagrange multipliers for.<div class="autopermalink" data-description="Paragraph"><a href="#example-extreme-values-on-a-paraboloid-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="para logical" id="example-extreme-values-on-a-paraboloid-3-2">
 <div class="para">Set <span class="process-math">\(g(x,y) = x^{2} + y^{2}\text{.}\)</span> Then we need to find the extreme values of <span class="process-math">\(f\)</span> subject to the constraint <span class="process-math">\(g = 1\text{.}\)</span> The system of equations we need to solve is then</div>
 <div class="displaymath process-math" id="example-extreme-values-on-a-paraboloid-3-2-4">
@@ -903,8 +836,9 @@ x^{2} + y^{2} &amp; = 1
 \end{align*}
 </div>
 <div class="para">The first equation is true if <span class="process-math">\(\lambda = 1\text{,}\)</span> but then this forces <span class="process-math">\(y = 0\)</span> in the second equation. If we then plug <span class="process-math">\(y = 0\)</span> into the constraint, this forces <span class="process-math">\(x = \pm1\text{.}\)</span> So the case <span class="process-math">\(\lambda=1\)</span> gives us two points to test: <span class="process-math">\((-1,0)\)</span> and <span class="process-math">\((1,0)\text{.}\)</span> On the other hand, the second equation is true if <span class="process-math">\(\lambda = 2\text{.}\)</span> This then forces <span class="process-math">\(x = 0\)</span> and <span class="process-math">\(y = \pm 1\text{,}\)</span> which gives us the points <span class="process-math">\((0,-1)\)</span> and <span class="process-math">\((0,1)\text{.}\)</span> Finally, if <span class="process-math">\(\lambda\neq1,2\text{,}\)</span> then this forces <span class="process-math">\(x = y = 0\text{.}\)</span> But there’s no way to satisfy the constraint if <span class="process-math">\(x = y = 0\text{,}\)</span> so we discard this possibility.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-extreme-values-on-a-paraboloid-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="example-extreme-values-on-a-paraboloid-3-3">So we have five points that we need to check, which we arrange in the following table: <figure class="table table-like" id="table-lagrange-example-2"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">12.8.6<span class="period">.</span></span><span class="space"> </span>Absolute values on the disk</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="example-extreme-values-on-a-paraboloid-3-3">So we have five points that we need to check, which we arrange in the following table: <figure class="table table-like" id="table-lagrange-example-2"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.8.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Absolute values on the disk<div class="autopermalink" data-description="Table 12.8.6: Absolute values on the disk"><a href="#table-lagrange-example-2" title="Copy heading and permalink for Table 12.8.6: Absolute values on the disk" aria-label="Copy heading and permalink for Table 12.8.6: Absolute values on the disk">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r0 l0 t3 lines"><span class="process-math">\((x,y)\)</span></td>
 <td class="c m b1 r0 l0 t3 lines"><span class="process-math">\(f(x,y)\)</span></td>
@@ -929,13 +863,16 @@ x^{2} + y^{2} &amp; = 1
 <td class="c m b3 r0 l0 t0 lines"><span class="process-math">\((0,1)\)</span></td>
 <td class="c m b3 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
 </tr>
-</table></div></figure> So the absolute minimum is <span class="process-math">\(0\text{,}\)</span> which occurs at the origin. The absolute maximum is <span class="process-math">\(2\text{,}\)</span> which occurs at the points <span class="process-math">\((0,\pm1)\text{.}\)</span>
+</table></div></figure> So the absolute minimum is <span class="process-math">\(0\text{,}\)</span> which occurs at the origin. The absolute maximum is <span class="process-math">\(2\text{,}\)</span> which occurs at the points <span class="process-math">\((0,\pm1)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-extreme-values-on-a-paraboloid-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-</div></details></div></article><article class="example example-like" id="example-maximizing-the-volume-of-a-prism-within-an-ellipsoid"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">12.8.7</span><span class="period">.</span><span class="space"> </span><span class="title">Maximizing the volume of a prism within an ellipsoid.</span>
+<div class="autopermalink" data-description="Solution 12.8.5.1"><a href="#example-extreme-values-on-a-paraboloid-3" title="Copy heading and permalink for Solution 12.8.5.1" aria-label="Copy heading and permalink for Solution 12.8.5.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 12.8.5: Extreme values on a paraboloid"><a href="#example-extreme-values-on-a-paraboloid" title="Copy heading and permalink for Example 12.8.5: Extreme values on a paraboloid" aria-label="Copy heading and permalink for Example 12.8.5: Extreme values on a paraboloid">🔗</a></div></article><article class="example example-like" id="example-maximizing-the-volume-of-a-prism-within-an-ellipsoid"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.8.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Maximizing the volume of a prism within an ellipsoid.</span>
 </h3>
-<div class="para" id="example-maximizing-the-volume-of-a-prism-within-an-ellipsoid-2-1">A rectangular prism, centered at the origin and with sides parallel to the coordinate planes, is inscribed within the ellipsoid <span class="process-math">\(x^{2} + \frac{y^{2}}{4} + \frac{z^{2}}{4} = 1\text{.}\)</span> Find the dimensions of the prism that maximize the volume.</div>
-<div class="solutions"><details id="example-maximizing-the-volume-of-a-prism-within-an-ellipsoid-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-maximizing-the-volume-of-a-prism-within-an-ellipsoid-2-1">A rectangular prism, centered at the origin and with sides parallel to the coordinate planes, is inscribed within the ellipsoid <span class="process-math">\(x^{2} + \frac{y^{2}}{4} + \frac{z^{2}}{4} = 1\text{.}\)</span> Find the dimensions of the prism that maximize the volume.<div class="autopermalink" data-description="Paragraph"><a href="#example-maximizing-the-volume-of-a-prism-within-an-ellipsoid-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-maximizing-the-volume-of-a-prism-within-an-ellipsoid-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="example-maximizing-the-volume-of-a-prism-within-an-ellipsoid-3-1">
 <div class="para">Let <span class="process-math">\((x,y,z)\)</span> denote the corner of the prism located in the first octant. Then we want to maximize <span class="process-math">\(V(x,y,z) = (2x)(2y)(2z)\)</span> subject to the constraint <span class="process-math">\(g(x,y,z) = x^{2} + \frac{y^{2}}{4} + \frac{z^{2}}{4} = 1\text{.}\)</span> So we’ll use the method of Lagrange multipliers again to get the system</div>
 <div class="displaymath process-math" id="example-maximizing-the-volume-of-a-prism-within-an-ellipsoid-3-1-4">
@@ -947,17 +884,18 @@ x^{2} + \frac{y^{2}}{4} + \frac{z^{2}}{4} &amp; =1
 \end{align*}
 </div>
 <div class="para">We can assume that <span class="process-math">\(x,y,z\)</span> are all positive (since we’re trying to find the <em class="emphasis">maximum</em> volume), so we can go ahead and solve each equation for <span class="process-math">\(\lambda\)</span> to get</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-maximizing-the-volume-of-a-prism-within-an-ellipsoid-3-1-8">
 \begin{equation*}
 \lambda = \frac{4yz}{x} = \frac{16xz}{y} = \frac{16xy}{z}
 \end{equation*}
 </div>
 <div class="para">Setting the first two fractions equal and simplifying gives <span class="process-math">\(y^{2} = 4x^{2}\text{.}\)</span> Similarly, the second and third fractions give <span class="process-math">\(y^{2} = z^{2}\text{.}\)</span> So</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-maximizing-the-volume-of-a-prism-within-an-ellipsoid-3-1-11">
 \begin{equation*}
 y^{2} = z^{2} = 4x^{2}.
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-maximizing-the-volume-of-a-prism-within-an-ellipsoid-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-maximizing-the-volume-of-a-prism-within-an-ellipsoid-3-2">
 <div class="para">Now we plug this into our constraint to get</div>
@@ -976,19 +914,24 @@ z &amp; = 2\sqrt{\frac{1}{3}}
 \end{align*}
 </div>
 <div class="para">To check that these values actually maximize <span class="process-math">\(V(x,y,z)\text{,}\)</span> we can compare them with the point <span class="process-math">\((1,0,0)\text{,}\)</span> which also satisfies the constraint <span class="process-math">\(g = 1\text{.}\)</span> Since <span class="process-math">\(V(1,0,0) = 0\text{,}\)</span> this means that the dimensions that maximize the volume are given by</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-maximizing-the-volume-of-a-prism-within-an-ellipsoid-3-2-12">
 \begin{equation*}
 \frac{2}{\sqrt{3}}\times\frac{4}{\sqrt{3}}\times\frac{4}{\sqrt{3}}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-maximizing-the-volume-of-a-prism-within-an-ellipsoid-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-</div></details></div></article><div class="para" id="section-lagrange-multipliers-10">SUGGESTED PROBLEMS: 1-11 odd, 17, 19</div></section></div>
-<div class="ptx-content-footer">
+<div class="autopermalink" data-description="Solution 12.8.7.1"><a href="#example-maximizing-the-volume-of-a-prism-within-an-ellipsoid-3" title="Copy heading and permalink for Solution 12.8.7.1" aria-label="Copy heading and permalink for Solution 12.8.7.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 12.8.7: Maximizing the volume of a prism within an ellipsoid"><a href="#example-maximizing-the-volume-of-a-prism-within-an-ellipsoid" title="Copy heading and permalink for Example 12.8.7: Maximizing the volume of a prism within an ellipsoid" aria-label="Copy heading and permalink for Example 12.8.7: Maximizing the volume of a prism within an ellipsoid">🔗</a></div></article><div class="para" id="section-lagrange-multipliers-10">SUGGESTED PROBLEMS: 1-11 odd, 17, 19<div class="autopermalink" data-description="Paragraph"><a href="#section-lagrange-multipliers-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 12.8: Lagrange Multipliers"><a href="#section-lagrange-multipliers" title="Copy heading and permalink for Section 12.8: Lagrange Multipliers" aria-label="Copy heading and permalink for Section 12.8: Lagrange Multipliers">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="section-extreme-values.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="multiple-integrals.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
-<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
 </body>
 </html>

@@ -6,17 +6,21 @@
 <!--*                                          *-->
 <!--********************************************-->
 <html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>WVWC-CALC The Fundamental Theorem of Calculus</title>
-<meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:type" content="book">
-<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo.jpg">
-<meta property="book:title" content="Calculus Notes">
-<meta property="book:author" content="Jesse Oldroyd
-          ">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -88,12 +92,14 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo-brandlogo.jpg">
+<meta property="book:title" content="Calculus Notes">
+<meta property="book:author" content="Jesse Oldroyd
+          ">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -115,127 +121,22 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.1';
+eBookConfig.runestone_version = '7.11.8';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.87cabc2515250052.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.630d5c4fb4b681eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.97f3ae4f7a71ba18.css">
-<style>
-#theorem-combining-continuous-functions-2-1-4 { counter-set: theorem-combining-continuous-functions-2-1-4 0; }
-#theorem-combining-continuous-functions-2-1-4 > li::marker { content: ""counter(theorem-combining-continuous-functions-2-1-4,decimal)"."; }
-#theorem-combining-continuous-functions-2-1-4 > li { counter-increment: theorem-combining-continuous-functions-2-1-4; }
-#example-derivatives-using-the-power-rule-2-1-1 { counter-set: example-derivatives-using-the-power-rule-2-1-1 0; }
-#example-derivatives-using-the-power-rule-2-1-1 > li::marker { content: ""counter(example-derivatives-using-the-power-rule-2-1-1,decimal)"."; }
-#example-derivatives-using-the-power-rule-2-1-1 > li { counter-increment: example-derivatives-using-the-power-rule-2-1-1; }
-#section-extreme-values-of-functions-4-1-1-1 { counter-set: section-extreme-values-of-functions-4-1-1-1 0; }
-#section-extreme-values-of-functions-4-1-1-1 > li::marker { content: ""counter(section-extreme-values-of-functions-4-1-1-1,decimal)"."; }
-#section-extreme-values-of-functions-4-1-1-1 > li { counter-increment: section-extreme-values-of-functions-4-1-1-1; }
-#example-minimizing-material-costs-3-1-1 { counter-set: example-minimizing-material-costs-3-1-1 0; }
-#example-minimizing-material-costs-3-1-1 > li::marker { content: ""counter(example-minimizing-material-costs-3-1-1,decimal)"."; }
-#example-minimizing-material-costs-3-1-1 > li { counter-increment: example-minimizing-material-costs-3-1-1; }
-#example-distance-on-an-ellipse-3-1-1 { counter-set: example-distance-on-an-ellipse-3-1-1 0; }
-#example-distance-on-an-ellipse-3-1-1 > li::marker { content: ""counter(example-distance-on-an-ellipse-3-1-1,decimal)"."; }
-#example-distance-on-an-ellipse-3-1-1 > li { counter-increment: example-distance-on-an-ellipse-3-1-1; }
-#example-finding-antiderivatives-2-1-1 { counter-set: example-finding-antiderivatives-2-1-1 0; }
-#example-finding-antiderivatives-2-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-2-1-1,decimal)"."; }
-#example-finding-antiderivatives-2-1-1 > li { counter-increment: example-finding-antiderivatives-2-1-1; }
-#example-finding-antiderivatives-3-1-1 { counter-set: example-finding-antiderivatives-3-1-1 0; }
-#example-finding-antiderivatives-3-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-3-1-1,decimal)"."; }
-#example-finding-antiderivatives-3-1-1 > li { counter-increment: example-finding-antiderivatives-3-1-1; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 { counter-set: theorem-more-properties-of-the-definite-integral-2-1-3 0; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li::marker { content: ""counter(theorem-more-properties-of-the-definite-integral-2-1-3,decimal)"."; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li { counter-increment: theorem-more-properties-of-the-definite-integral-2-1-3; }
-#theorem-fundamental-theorem-of-calculus-2-2 { counter-set: theorem-fundamental-theorem-of-calculus-2-2 0; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li::marker { content: ""counter(theorem-fundamental-theorem-of-calculus-2-2,decimal)"."; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li { counter-increment: theorem-fundamental-theorem-of-calculus-2-2; }
-#section-substitution-5-3 { counter-set: section-substitution-5-3 0; }
-#section-substitution-5-3 > li::marker { content: ""counter(section-substitution-5-3,decimal)"."; }
-#section-substitution-5-3 > li { counter-increment: section-substitution-5-3; }
-#algorithm-partial-fractions-algorithm-3-1-2 { counter-set: algorithm-partial-fractions-algorithm-3-1-2 0; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li::marker { content: ""counter(algorithm-partial-fractions-algorithm-3-1-2,decimal)"."; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li { counter-increment: algorithm-partial-fractions-algorithm-3-1-2; }
-#section-applications-to-physics-and-engineering-2-2 { counter-set: section-applications-to-physics-and-engineering-2-2 0; }
-#section-applications-to-physics-and-engineering-2-2 > li::marker { content: ""counter(section-applications-to-physics-and-engineering-2-2,decimal)"."; }
-#section-applications-to-physics-and-engineering-2-2 > li { counter-increment: section-applications-to-physics-and-engineering-2-2; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 { counter-set: subsection-moments-and-centers-of-mass-7-1-3-1 0; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-1-3-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-1-3-1; }
-#subsection-moments-and-centers-of-mass-7-2-1 { counter-set: subsection-moments-and-centers-of-mass-7-2-1 0; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-2-1; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 { counter-set: subsection-moments-and-centers-of-mass-12-1-1-4 0; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-1-1-4,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li { counter-increment: subsection-moments-and-centers-of-mass-12-1-1-4; }
-#subsection-moments-and-centers-of-mass-12-2-1 { counter-set: subsection-moments-and-centers-of-mass-12-2-1 0; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-12-2-1; }
-#example-determining-a-sustainable-population-3-3 { counter-set: example-determining-a-sustainable-population-3-3 0; }
-#example-determining-a-sustainable-population-3-3 > li::marker { content: ""counter(example-determining-a-sustainable-population-3-3,decimal)"."; }
-#example-determining-a-sustainable-population-3-3 > li { counter-increment: example-determining-a-sustainable-population-3-3; }
-#theorem-sequential-limit-laws-2-2 { counter-set: theorem-sequential-limit-laws-2-2 0; }
-#theorem-sequential-limit-laws-2-2 > li::marker { content: ""counter(theorem-sequential-limit-laws-2-2,decimal)"."; }
-#theorem-sequential-limit-laws-2-2 > li { counter-increment: theorem-sequential-limit-laws-2-2; }
-#example-guessing-sums-2-1-1 { counter-set: example-guessing-sums-2-1-1 0; }
-#example-guessing-sums-2-1-1 > li::marker { content: ""counter(example-guessing-sums-2-1-1,decimal)"."; }
-#example-guessing-sums-2-1-1 > li { counter-increment: example-guessing-sums-2-1-1; }
-#example-guessing-sums-3-1-1 { counter-set: example-guessing-sums-3-1-1 0; }
-#example-guessing-sums-3-1-1 > li::marker { content: ""counter(example-guessing-sums-3-1-1,decimal)"."; }
-#example-guessing-sums-3-1-1 > li { counter-increment: example-guessing-sums-3-1-1; }
-#theorem-direct-comparison-test-series-3-1-4 { counter-set: theorem-direct-comparison-test-series-3-1-4 0; }
-#theorem-direct-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-direct-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-direct-comparison-test-series-3-1-4 > li { counter-increment: theorem-direct-comparison-test-series-3-1-4; }
-#theorem-limit-comparison-test-series-3-1-4 { counter-set: theorem-limit-comparison-test-series-3-1-4 0; }
-#theorem-limit-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-limit-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-limit-comparison-test-series-3-1-4 > li { counter-increment: theorem-limit-comparison-test-series-3-1-4; }
-#subsection-alternating-series-9-2 { counter-set: subsection-alternating-series-9-2 0; }
-#subsection-alternating-series-9-2 > li::marker { content: ""counter(subsection-alternating-series-9-2,decimal)"."; }
-#subsection-alternating-series-9-2 > li { counter-increment: subsection-alternating-series-9-2; }
-#theorem-ratio-test-2-1-3 { counter-set: theorem-ratio-test-2-1-3 0; }
-#theorem-ratio-test-2-1-3 > li::marker { content: ""counter(theorem-ratio-test-2-1-3,decimal)"."; }
-#theorem-ratio-test-2-1-3 > li { counter-increment: theorem-ratio-test-2-1-3; }
-#theorem-root-test-2-1-3 { counter-set: theorem-root-test-2-1-3 0; }
-#theorem-root-test-2-1-3 > li::marker { content: ""counter(theorem-root-test-2-1-3,decimal)"."; }
-#theorem-root-test-2-1-3 > li { counter-increment: theorem-root-test-2-1-3; }
-#example-examples-of-power-series-2-1-1 { counter-set: example-examples-of-power-series-2-1-1 0; }
-#example-examples-of-power-series-2-1-1 > li::marker { content: ""counter(example-examples-of-power-series-2-1-1,decimal)"."; }
-#example-examples-of-power-series-2-1-1 > li { counter-increment: example-examples-of-power-series-2-1-1; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 { counter-set: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 0; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li::marker { content: ""counter(theorem-properties-of-vector-addition-and-scalar-multiplication-3-2,decimal)"."; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li { counter-increment: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2; }
-#theorem-properties-of-the-dot-product-3-2 { counter-set: theorem-properties-of-the-dot-product-3-2 0; }
-#theorem-properties-of-the-dot-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-dot-product-3-2,decimal)"."; }
-#theorem-properties-of-the-dot-product-3-2 > li { counter-increment: theorem-properties-of-the-dot-product-3-2; }
-#theorem-properties-of-the-cross-product-3-2 { counter-set: theorem-properties-of-the-cross-product-3-2 0; }
-#theorem-properties-of-the-cross-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-cross-product-3-2,decimal)"."; }
-#theorem-properties-of-the-cross-product-3-2 > li { counter-increment: theorem-properties-of-the-cross-product-3-2; }
-#theorem-vector-derivative-rules-3-2 { counter-set: theorem-vector-derivative-rules-3-2 0; }
-#theorem-vector-derivative-rules-3-2 > li::marker { content: ""counter(theorem-vector-derivative-rules-3-2,decimal)"."; }
-#theorem-vector-derivative-rules-3-2 > li { counter-increment: theorem-vector-derivative-rules-3-2; }
-#subsection-continuous-functions-5 { counter-set: subsection-continuous-functions-5 0; }
-#subsection-continuous-functions-5 > li::marker { content: ""counter(subsection-continuous-functions-5,decimal)"."; }
-#subsection-continuous-functions-5 > li { counter-increment: subsection-continuous-functions-5; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 { counter-set: algorithm-method-of-lagrange-multipliers-3-1-7 0; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li::marker { content: ""counter(algorithm-method-of-lagrange-multipliers-3-1-7,decimal)"."; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li { counter-increment: algorithm-method-of-lagrange-multipliers-3-1-7; }
-#subsection-conservative-vector-fields-2-2 { counter-set: subsection-conservative-vector-fields-2-2 0; }
-#subsection-conservative-vector-fields-2-2 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-2,decimal)"."; }
-#subsection-conservative-vector-fields-2-2 > li { counter-increment: subsection-conservative-vector-fields-2-2; }
-#subsection-conservative-vector-fields-2-3 { counter-set: subsection-conservative-vector-fields-2-3 0; }
-#subsection-conservative-vector-fields-2-3 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-3,decimal)"."; }
-#subsection-conservative-vector-fields-2-3 > li { counter-increment: subsection-conservative-vector-fields-2-3; }
-#gfdl-section4-3 { counter-set: gfdl-section4-3 0; }
-#gfdl-section4-3 > li::marker { content: ""counter(gfdl-section4-3,upper-alpha)"."; }
-#gfdl-section4-3 > li { counter-increment: gfdl-section4-3; }
-</style>
+<script src="_static/prefix-runtime.991c135ccf182bf5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1c010553c35c544c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.677a75a9120449ff.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdn.geogebra.org/apps/deployggb.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" target="_blank" href=""><img src="external/./wvwc-logo.jpg" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes:</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
+<img src="external/./wvwc-logo-brandlogo.jpg" alt="Logo image"><div class="title-container">
+<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
 <p class="byline">Jesse Oldroyd</p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
@@ -431,10 +332,10 @@ true);
 <div class="toc-title-box"><a href="applications-differentiation.html" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Differentiation</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-linear-approximations.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear approximations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related Rates</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related rates</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-l-hospital-s-rule.html" class="internal"><span class="codenumber">5.3</span> <span class="title">L’Hospital’s Rule</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme Values of Functions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization Problems</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme values of functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization problems</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-the-mean-value-theorem.html" class="internal"><span class="codenumber">5.6</span> <span class="title">The Mean Value Theorem</span></a></div>
 <ul class="structural toc-item-list">
@@ -442,8 +343,11 @@ true);
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-the-mean-value-theorem.html#subsection-the-mean-value-theorem" class="internal"><span class="title">The Mean Value Theorem</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and Graphs</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and graphs</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-newton-s-method.html#subsection-newtons-method-optimization" class="internal"><span class="title">Newton’s Method for optimization</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-antiderivatives.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Antiderivatives</span></a></div></li>
 </ul>
 </li>
@@ -606,8 +510,14 @@ true);
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-coordinates-in-3-space.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Coordinates in 3-Space</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -797,92 +707,117 @@ true);
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-the-fundamental-theorem-of-calculus"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">6.4</span><span class="space"> </span><span class="title">The Fundamental Theorem of Calculus</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Fundamental Theorem of Calculus</span>
 </h2>
-<div class="para" id="section-the-fundamental-theorem-of-calculus-2">The previous section used antiderivatives to find definite integrals. Now we’ll go the other direction and use integrals to define antiderivatives. We can do this as follows.</div>
-<div class="para" id="section-the-fundamental-theorem-of-calculus-3">Let <span class="process-math">\(f\)</span> be some function continuous on <span class="process-math">\([a,b]\text{.}\)</span> Then we can say that <span class="process-math">\(f\)</span> must be continuous on every interval of the form <span class="process-math">\([a,x]\)</span> for <span class="process-math">\(x\)</span> in <span class="process-math">\([a,b]\text{.}\)</span> This means that the definite integrals <span class="process-math">\(\int_{a}^{x}f(t)\,dt\)</span> exist, and so we can use these to define a function, say <span class="process-math">\(g(x)\text{.}\)</span>
+<div class="para" id="section-the-fundamental-theorem-of-calculus-2">The previous section used antiderivatives to find definite integrals. Now we’ll go the other direction and use integrals to define antiderivatives. We can do this as follows.<div class="autopermalink" data-description="Paragraph"><a href="#section-the-fundamental-theorem-of-calculus-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-the-fundamental-theorem-of-calculus-3">Let <span class="process-math">\(f\)</span> be some function continuous on <span class="process-math">\([a,b]\text{.}\)</span> Then we can say that <span class="process-math">\(f\)</span> must be continuous on every interval of the form <span class="process-math">\([a,x]\)</span> for <span class="process-math">\(x\)</span> in <span class="process-math">\([a,b]\text{.}\)</span> This means that the definite integrals <span class="process-math">\(\int_{a}^{x}f(t)\,dt\)</span> exist, and so we can use these to define a function, say <span class="process-math">\(g(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#section-the-fundamental-theorem-of-calculus-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-functions-from-integrals"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Functions from integrals.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Functions from integrals.</span>
 </h3>
-<div class="para" id="example-functions-from-integrals-2-1">Let <span class="process-math">\(f(x) = 2 - x^{2}\)</span> and define <span class="process-math">\(g(x) = \int_{1}^{x}f(t)\,dt\text{.}\)</span> Find <span class="process-math">\(g(x)\text{.}\)</span> Where is <span class="process-math">\(g(x)\)</span> the largest?</div>
-<div class="solutions"><details id="example-functions-from-integrals-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-functions-from-integrals-2-1">Let <span class="process-math">\(f(x) = 2 - x^{2}\)</span> and define <span class="process-math">\(g(x) = \int_{1}^{x}f(t)\,dt\text{.}\)</span> Find <span class="process-math">\(g(x)\text{.}\)</span> Where is <span class="process-math">\(g(x)\)</span> the largest?<div class="autopermalink" data-description="Paragraph"><a href="#example-functions-from-integrals-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-functions-from-integrals-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="example-functions-from-integrals-3-1">
 <div class="para">First, note that we can compute <span class="process-math">\(\int_{1}^{x}f(t)\,dt\)</span> by finding an antiderivative of <span class="process-math">\(f(t) = 2 - t^{2}\text{.}\)</span> So</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-functions-from-integrals-3-1-3">
 \begin{equation*}
 g(x) = \int_{1}^{x}(2-t^{2})\,dt = \left[2t-\frac{1}{3}t^{3}\right]_{t=1}^{x}
 \end{equation*}
 </div>
 <div class="para">or just</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-functions-from-integrals-3-1-4">
 \begin{equation*}
 g(x) = 2x - \frac{1}{3}x^{3} - \frac{5}{3}.
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-functions-from-integrals-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="example-functions-from-integrals-3-2">We can find where <span class="process-math">\(g\)</span> is largest by using a derivative test or just geometry. Since <span class="process-math">\(g\)</span> represents the area under <span class="process-math">\(f\)</span> from <span class="process-math">\(1\)</span> to <span class="process-math">\(x\text{,}\)</span> it follows that this area will be largest at <span class="process-math">\(x=\sqrt{2}\text{,}\)</span> since this is where <span class="process-math">\(f\)</span> crosses the axis.</div>
-</div></details></div></article><div class="para" id="section-the-fundamental-theorem-of-calculus-5">There’s one important thing to take away from the previous example. The function <span class="process-math">\(g(x) = \int_{1}^{x}f(t)\,dt\)</span> turned out to be an antiderivative of <span class="process-math">\(f(x)\text{,}\)</span> so in particular <span class="process-math">\(g^{\prime}(x) = f(x)\text{.}\)</span> This is not a coincidence.</div>
+<div class="para" id="example-functions-from-integrals-3-2">We can find where <span class="process-math">\(g\)</span> is largest by using a derivative test or just geometry. Since <span class="process-math">\(g\)</span> represents the area under <span class="process-math">\(f\)</span> from <span class="process-math">\(1\)</span> to <span class="process-math">\(x\text{,}\)</span> it follows that this area will be largest at <span class="process-math">\(x=\sqrt{2}\text{,}\)</span> since this is where <span class="process-math">\(f\)</span> crosses the axis.<div class="autopermalink" data-description="Paragraph"><a href="#example-functions-from-integrals-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.4.1.1"><a href="#example-functions-from-integrals-3" title="Copy heading and permalink for Solution 6.4.1.1" aria-label="Copy heading and permalink for Solution 6.4.1.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 6.4.1: Functions from integrals"><a href="#example-functions-from-integrals" title="Copy heading and permalink for Example 6.4.1: Functions from integrals" aria-label="Copy heading and permalink for Example 6.4.1: Functions from integrals">🔗</a></div></article><div class="para" id="section-the-fundamental-theorem-of-calculus-5">There’s one important thing to take away from the previous example. The function <span class="process-math">\(g(x) = \int_{1}^{x}f(t)\,dt\)</span> turned out to be an antiderivative of <span class="process-math">\(f(x)\text{,}\)</span> so in particular <span class="process-math">\(g^{\prime}(x) = f(x)\text{.}\)</span> This is not a coincidence.<div class="autopermalink" data-description="Paragraph"><a href="#section-the-fundamental-theorem-of-calculus-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="theorem-fundamental-theorem-of-calculus"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.4.2</span><span class="period">.</span><span class="space"> </span><span class="title">Fundamental Theorem of Calculus.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Fundamental Theorem of Calculus.</span>
 </h3>
-<div class="para" id="theorem-fundamental-theorem-of-calculus-2-1">Let <span class="process-math">\(f(x)\)</span> be a continuous function defined on <span class="process-math">\([a,b]\text{.}\)</span>
+<div class="para" id="theorem-fundamental-theorem-of-calculus-2-1">Let <span class="process-math">\(f(x)\)</span> be a continuous function defined on <span class="process-math">\([a,b]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#theorem-fundamental-theorem-of-calculus-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <ol class="decimal" id="theorem-fundamental-theorem-of-calculus-2-2">
-<li id="theorem-fundamental-theorem-of-calculus-2-2-1"><div class="para" id="p-derived-theorem-fundamental-theorem-of-calculus-2-2-1">Define <span class="process-math">\(g(x) = \int_{a}^{x}f(t)\,dt\)</span> for <span class="process-math">\(x\)</span> in <span class="process-math">\([a,x]\text{.}\)</span> Then <span class="process-math">\(g^{\prime}(x) = f(x)\text{,}\)</span> i.e., <span class="process-math">\(g\)</span> is an antiderivative of <span class="process-math">\(f\text{.}\)</span>
-</div></li>
-<li id="theorem-fundamental-theorem-of-calculus-2-2-2"><div class="para" id="p-derived-theorem-fundamental-theorem-of-calculus-2-2-2">Let <span class="process-math">\(F\)</span> be a particular antiderivative of <span class="process-math">\(f\text{.}\)</span> Then <span class="process-math">\(\int_{a}^{b}f(x)\,dx = F(b) - F(a).\)</span>
-</div></li>
-</ol></article><details id="theorem-fundamental-theorem-of-calculus-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Proof<span class="period">.</span></span></h3></summary><article class="hiddenproof knowl__content"><div class="para logical" id="theorem-fundamental-theorem-of-calculus-3-1">
+<li id="theorem-fundamental-theorem-of-calculus-2-2-1">
+<div class="para" id="p-derived-theorem-fundamental-theorem-of-calculus-2-2-1">Define <span class="process-math">\(g(x) = \int_{a}^{x}f(t)\,dt\)</span> for <span class="process-math">\(x\)</span> in <span class="process-math">\([a,x]\text{.}\)</span> Then <span class="process-math">\(g^{\prime}(x) = f(x)\text{,}\)</span> i.e., <span class="process-math">\(g\)</span> is an antiderivative of <span class="process-math">\(f\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#theorem-fundamental-theorem-of-calculus-2-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="theorem-fundamental-theorem-of-calculus-2-2-2">
+<div class="para" id="p-derived-theorem-fundamental-theorem-of-calculus-2-2-2">Let <span class="process-math">\(F\)</span> be a particular antiderivative of <span class="process-math">\(f\text{.}\)</span> Then <span class="process-math">\(\int_{a}^{b}f(x)\,dx = F(b) - F(a).\)</span>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#theorem-fundamental-theorem-of-calculus-2-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Theorem 6.4.2: Fundamental Theorem of Calculus"><a href="#theorem-fundamental-theorem-of-calculus" title="Copy heading and permalink for Theorem 6.4.2: Fundamental Theorem of Calculus" aria-label="Copy heading and permalink for Theorem 6.4.2: Fundamental Theorem of Calculus">🔗</a></div></article><details id="theorem-fundamental-theorem-of-calculus-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary><article class="hiddenproof knowl__content"><div class="para logical" id="theorem-fundamental-theorem-of-calculus-3-1">
 <div class="para">We’ll sketch the proof of the first part. First, assume that <span class="process-math">\(g(x) = \int_{a}^{x}f(t)\,dt\text{.}\)</span> Then</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="theorem-fundamental-theorem-of-calculus-3-1-2">
 \begin{equation*}
 \frac{g(x+h)-g(x)}{h} = \frac{1}{h}\int_{x}^{x+h}f(t)\,dt.
 \end{equation*}
 </div>
 <div class="para">Now, if <span class="process-math">\(h\)</span> is small and if <span class="process-math">\(x\leq t\leq x+h\text{,}\)</span> then <span class="process-math">\(\int_{x}^{x+h}f(t)\,dt\)</span> should be approximately equal to <span class="process-math">\(f(x)h\)</span> since <span class="process-math">\(f\)</span> is continuous. Therefore</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="theorem-fundamental-theorem-of-calculus-3-1-8">
 \begin{equation*}
 \lim_{h\to0}\frac{g(x+h)-g(x)}{h} = \lim_{h\to0}\frac{f(x)h}{h} = f(x),
 \end{equation*}
 </div>
 <div class="para">and so <span class="process-math">\(g^{\prime}(x) = f(x)\text{.}\)</span>
 </div>
-</div></article></details><div class="para" id="section-the-fundamental-theorem-of-calculus-7">The second part of <a href="section-the-fundamental-theorem-of-calculus.html#theorem-fundamental-theorem-of-calculus" class="xref" data-knowl="./knowl/xref/theorem-fundamental-theorem-of-calculus.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 6.4.2: Fundamental Theorem of Calculus">Theorem 6.4.2</a> is something we’ve seen before in <a href="section-evaluating-integrals.html#theorem-evaluation-theorem" class="xref" data-knowl="./knowl/xref/theorem-evaluation-theorem.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 6.3.1: Evaluation Theorem">Theorem 6.3.1</a>, but the first part is new. Essentially, this result says that integration and differentiation are <em class="emphasis">inverses</em> of each other.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-fundamental-theorem-of-calculus-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 6.4.2.1"><a href="#theorem-fundamental-theorem-of-calculus-3" title="Copy heading and permalink for Proof 6.4.2.1" aria-label="Copy heading and permalink for Proof 6.4.2.1">🔗</a></div></article></details><div class="para" id="section-the-fundamental-theorem-of-calculus-7">The second part of <a href="section-the-fundamental-theorem-of-calculus.html#theorem-fundamental-theorem-of-calculus" class="xref" data-knowl="./knowl/xref/theorem-fundamental-theorem-of-calculus.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 6.4.2: Fundamental Theorem of Calculus">Theorem 6.4.2</a> is something we’ve seen before in <a href="section-evaluating-integrals.html#theorem-evaluation-theorem" class="xref" data-knowl="./knowl/xref/theorem-evaluation-theorem.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 6.3.1: Evaluation Theorem">Theorem 6.3.1</a>, but the first part is new. Essentially, this result says that integration and differentiation are <em class="emphasis">inverses</em> of each other.<div class="autopermalink" data-description="Paragraph"><a href="#section-the-fundamental-theorem-of-calculus-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-error-function"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Error function.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Error function.</span>
 </h3>
 <div class="para logical" id="example-error-function-2-1">
 <div class="para">The <dfn class="terminology">error function</dfn>, defined by</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-error-function-2-1-2">
 \begin{equation*}
 \erf(x) = \frac{2}{\sqrt{\pi}}\int_{0}^{x}e^{-t^{2}}\,dt,
 \end{equation*}
 </div>
 <div class="para">is one of the most important functions in statistics and other applications of mathematics (such as modeling the spread of a virus or the spread of heat). Find the derivative of <span class="process-math">\(\erf(x)\text{.}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-error-function-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-error-function-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-error-function-3-1">
+<div class="solutions"><details id="example-error-function-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-error-function-3-1">
 <div class="para">By the Fundamental Theorem of Calculus, we have</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-error-function-3-1-1">
 \begin{equation*}
 \erf^{\prime}(x) = \frac{2}{\sqrt{\pi}}e^{-x^{2}}.
 \end{equation*}
 </div>
 <div class="para">Note that <span class="process-math">\(\erf^{\prime}(x)\to0\)</span> as <span class="process-math">\(x\to\infty\text{,}\)</span> which suggests that the error function "levels out" as <span class="process-math">\(x\)</span> increases, which is in fact true.</div>
-</div></div></details></div></article><div class="para logical" id="section-the-fundamental-theorem-of-calculus-9">
+<div class="autopermalink" data-description="Paragraph"><a href="#example-error-function-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.4.3.1"><a href="#example-error-function-3" title="Copy heading and permalink for Solution 6.4.3.1" aria-label="Copy heading and permalink for Solution 6.4.3.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 6.4.3: Error function"><a href="#example-error-function" title="Copy heading and permalink for Example 6.4.3: Error function" aria-label="Copy heading and permalink for Example 6.4.3: Error function">🔗</a></div></article><div class="para logical" id="section-the-fundamental-theorem-of-calculus-9">
 <div class="para">Note that we can also use the <a href="section-the-fundamental-theorem-of-calculus.html#theorem-fundamental-theorem-of-calculus" class="xref" data-knowl="./knowl/xref/theorem-fundamental-theorem-of-calculus.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 6.4.2: Fundamental Theorem of Calculus">FTC</a> to differentiate expressions of the form <span class="process-math">\(\int_a^{g(x)}f(t)\dd{t}\)</span> by making use of the <a href="section-the-chain-rule.html#theorem-the-chain-rule" class="xref" data-knowl="./knowl/xref/theorem-the-chain-rule.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 3.4.1: The chain rule">chain rule</a> and treating the upper limit <span class="process-math">\(g(x)\)</span> as our inside function. Functions of <span class="process-math">\(x\)</span> in the lower limit can also be dealt with by using <a href="section-the-definite-integral.html#theorem-more-properties-of-the-definite-integral" class="xref" data-knowl="./knowl/xref/theorem-more-properties-of-the-definite-integral.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 6.2.13: More Properties of the Definite Integral">Theorem 6.2.13</a> to switch the limits. In general,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-fundamental-theorem-of-calculus.html ./knowl/xref/theorem-the-chain-rule.html ./knowl/xref/theorem-more-properties-of-the-definite-integral.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-fundamental-theorem-of-calculus.html ./knowl/xref/theorem-the-chain-rule.html ./knowl/xref/theorem-more-properties-of-the-definite-integral.html" id="section-the-fundamental-theorem-of-calculus-9-7">
 \begin{equation*}
 \dv{}{x}\left(\int_{a(x)}^{b(x)}f(t)\dd{t}\right) = f(b(x))b^{\prime}(x) - f(a(x))a^{\prime}(x)\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-the-fundamental-theorem-of-calculus-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-computing-derivatives"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Computing derivatives.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Computing derivatives.</span>
 </h3>
-<div class="para" id="example-computing-derivatives-2-1">Let <span class="process-math">\(f(x) = \int_{\sin x}^{1}\sqrt{t^{2} + e^{-t}}\,dt.\)</span> Find <span class="process-math">\(f^{\prime}(x)\text{.}\)</span>
+<div class="para" id="example-computing-derivatives-2-1">Let <span class="process-math">\(f(x) = \int_{\sin x}^{1}\sqrt{t^{2} + e^{-t}}\,dt.\)</span> Find <span class="process-math">\(f^{\prime}(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-computing-derivatives-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-computing-derivatives-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-computing-derivatives-3-1">
+<div class="solutions"><details id="example-computing-derivatives-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-computing-derivatives-3-1">
 <div class="para">We have</div>
 <div class="displaymath process-math" id="example-computing-derivatives-3-1-1">
 \begin{align*}
@@ -892,63 +827,73 @@ f^{\prime}(x) &amp; = \dv{}{x}\int_{\sin x}^{1}\sqrt{t^{2} + e^{-t}}\,dt \\
 \end{align*}
 </div>
 <div class="para">Here, <span class="process-math">\(\sin x\)</span> acts like an inside function so we must use the chain rule in addition to the Fundamental Theorem of Calculus to find this derivative.</div>
-</div></div></details></div></article><article class="example example-like" id="example-a-business-problem"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.4.5</span><span class="period">.</span><span class="space"> </span><span class="title">A business problem.</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-computing-derivatives-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.4.4.1"><a href="#example-computing-derivatives-3" title="Copy heading and permalink for Solution 6.4.4.1" aria-label="Copy heading and permalink for Solution 6.4.4.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 6.4.4: Computing derivatives"><a href="#example-computing-derivatives" title="Copy heading and permalink for Example 6.4.4: Computing derivatives" aria-label="Copy heading and permalink for Example 6.4.4: Computing derivatives">🔗</a></div></article><article class="example example-like" id="example-a-business-problem"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A business problem.</span>
 </h3>
-<div class="para" id="example-a-business-problem-2-1">A company purchases equipment that depreciates at a rate <span class="process-math">\(f(t)\)</span> and accumulates maintenance costs at a rate <span class="process-math">\(g(t)\text{,}\)</span> where <span class="process-math">\(t\)</span> denotes the number of months after purchase. The company wants to minimize the cost per month of the equipment due to depreciation and maintenance. After how much time should the company replace the equipment?</div>
-<div class="solutions"><details id="example-a-business-problem-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-a-business-problem-2-1">A company purchases equipment that depreciates at a rate <span class="process-math">\(f(t)\)</span> and accumulates maintenance costs at a rate <span class="process-math">\(g(t)\text{,}\)</span> where <span class="process-math">\(t\)</span> denotes the number of months after purchase. The company wants to minimize the cost per month of the equipment due to depreciation and maintenance. After how much time should the company replace the equipment?<div class="autopermalink" data-description="Paragraph"><a href="#example-a-business-problem-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-a-business-problem-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="example-a-business-problem-3-1">
 <div class="para">First, we need to figure out the cost per month due to depreciation and maintenance, call it <span class="process-math">\(C(t)\text{.}\)</span> Then</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-a-business-problem-3-1-2">
 \begin{equation*}
 C(t) = \frac{\text{total depreciation} - \text{total maintenance}}{t}.
 \end{equation*}
 </div>
 <div class="para">Now, the total depreciation after <span class="process-math">\(t\)</span> months is <span class="process-math">\(\int_{0}^{t}f(s)\,ds\text{,}\)</span> and the total maintenance cost after <span class="process-math">\(t\)</span> months is <span class="process-math">\(\int_{0}^{t}g(s)\,ds\text{.}\)</span> So</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-a-business-problem-3-1-7">
 \begin{equation*}
 C(t) = \frac{1}{t}\int_{0}^{t}[f(s) + g(s)]\,ds.
 \end{equation*}
 </div>
 <div class="para">This is the function we need to minimize.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-a-business-problem-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-a-business-problem-3-2">
 <div class="para">To minimize <span class="process-math">\(C(t)\text{,}\)</span> we’ll start by finding its critical points. Assuming that each of these functions is differentiable, we have</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-a-business-problem-3-2-2">
 \begin{equation*}
 C^{\prime}(t) = -\frac{1}{t^{2}}\int_{0}^{t}[f(s)+g(s)]\,ds + \frac{f(t) + g(t)}{t}
 \end{equation*}
 </div>
 <div class="para">which reduces to</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-a-business-problem-3-2-3">
 \begin{equation*}
 C^{\prime}(t) = -\frac{1}{t}C(t) + \frac{f(t) + g(t)}{t}.
 \end{equation*}
 </div>
 <div class="para">So the critical points occur at any value <span class="process-math">\(t = T\)</span> for which <span class="process-math">\(C(T) = f(T) + g(T)\text{,}\)</span> i.e., the cost per month due to depreciation and maintenance equals the rate of depreciation plus the rate of maintenance costs.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-a-business-problem-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-a-business-problem-3-3">
 <div class="para">Now we need to see if we have a minimum or a maximum. To do so, we can use the second derivative test. After some algebra, we get that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-a-business-problem-3-3-1">
 \begin{equation*}
 C''(t) = 2\frac{C(t) - (f(t) + g(t))}{t^{2}} + \frac{f'(t) + g'(t)}{t^{2}},
 \end{equation*}
 </div>
 <div class="para">and so</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-a-business-problem-3-3-2">
 \begin{equation*}
 C''(T) = \frac{f'(T) + g'(T)}{T^{2}} &gt;0.
 \end{equation*}
 </div>
 <div class="para">Therefore <span class="process-math">\(T\)</span> gives a local minimum. If we assume that <span class="process-math">\(C(t)\)</span> is differentiable everywhere, then this local minimum should also be an absolute minimum since it’s the only critical point.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-a-business-problem-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-</div></details></div></article></section></div>
-<div class="ptx-content-footer">
+<div class="autopermalink" data-description="Solution 6.4.5.1"><a href="#example-a-business-problem-3" title="Copy heading and permalink for Solution 6.4.5.1" aria-label="Copy heading and permalink for Solution 6.4.5.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 6.4.5: A business problem"><a href="#example-a-business-problem" title="Copy heading and permalink for Example 6.4.5: A business problem" aria-label="Copy heading and permalink for Example 6.4.5: A business problem">🔗</a></div></article><div class="autopermalink" data-description="Section 6.4: The Fundamental Theorem of Calculus"><a href="#section-the-fundamental-theorem-of-calculus" title="Copy heading and permalink for Section 6.4: The Fundamental Theorem of Calculus" aria-label="Copy heading and permalink for Section 6.4: The Fundamental Theorem of Calculus">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="section-evaluating-integrals.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="section-substitution.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
-<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
 </body>
 </html>

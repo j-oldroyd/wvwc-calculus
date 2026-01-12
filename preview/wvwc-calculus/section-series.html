@@ -6,17 +6,21 @@
 <!--*                                          *-->
 <!--********************************************-->
 <html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>WVWC-CALC Series</title>
-<meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:type" content="book">
-<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo.jpg">
-<meta property="book:title" content="Calculus Notes">
-<meta property="book:author" content="Jesse Oldroyd
-          ">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -88,24 +92,14 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* div with class 'sagecell-sage' an executable Sage cell
-// Their results will be linked, only within language type
-sagecell.makeSagecell({
-  "inputLocation": "div.sagecell-sage",
-  "linked": true,
-  "linkKey": "linked-sage",
-  "autoeval": false,
-  "languages": [
-    "sage"
-  ],
-  "evalButtonText": "Evaluate (Sage)"
-});
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo-brandlogo.jpg">
+<meta property="book:title" content="Calculus Notes">
+<meta property="book:author" content="Jesse Oldroyd
+          ">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -127,127 +121,34 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.1';
+eBookConfig.runestone_version = '7.11.8';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.87cabc2515250052.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.630d5c4fb4b681eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.97f3ae4f7a71ba18.css">
-<style>
-#theorem-combining-continuous-functions-2-1-4 { counter-set: theorem-combining-continuous-functions-2-1-4 0; }
-#theorem-combining-continuous-functions-2-1-4 > li::marker { content: ""counter(theorem-combining-continuous-functions-2-1-4,decimal)"."; }
-#theorem-combining-continuous-functions-2-1-4 > li { counter-increment: theorem-combining-continuous-functions-2-1-4; }
-#example-derivatives-using-the-power-rule-2-1-1 { counter-set: example-derivatives-using-the-power-rule-2-1-1 0; }
-#example-derivatives-using-the-power-rule-2-1-1 > li::marker { content: ""counter(example-derivatives-using-the-power-rule-2-1-1,decimal)"."; }
-#example-derivatives-using-the-power-rule-2-1-1 > li { counter-increment: example-derivatives-using-the-power-rule-2-1-1; }
-#section-extreme-values-of-functions-4-1-1-1 { counter-set: section-extreme-values-of-functions-4-1-1-1 0; }
-#section-extreme-values-of-functions-4-1-1-1 > li::marker { content: ""counter(section-extreme-values-of-functions-4-1-1-1,decimal)"."; }
-#section-extreme-values-of-functions-4-1-1-1 > li { counter-increment: section-extreme-values-of-functions-4-1-1-1; }
-#example-minimizing-material-costs-3-1-1 { counter-set: example-minimizing-material-costs-3-1-1 0; }
-#example-minimizing-material-costs-3-1-1 > li::marker { content: ""counter(example-minimizing-material-costs-3-1-1,decimal)"."; }
-#example-minimizing-material-costs-3-1-1 > li { counter-increment: example-minimizing-material-costs-3-1-1; }
-#example-distance-on-an-ellipse-3-1-1 { counter-set: example-distance-on-an-ellipse-3-1-1 0; }
-#example-distance-on-an-ellipse-3-1-1 > li::marker { content: ""counter(example-distance-on-an-ellipse-3-1-1,decimal)"."; }
-#example-distance-on-an-ellipse-3-1-1 > li { counter-increment: example-distance-on-an-ellipse-3-1-1; }
-#example-finding-antiderivatives-2-1-1 { counter-set: example-finding-antiderivatives-2-1-1 0; }
-#example-finding-antiderivatives-2-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-2-1-1,decimal)"."; }
-#example-finding-antiderivatives-2-1-1 > li { counter-increment: example-finding-antiderivatives-2-1-1; }
-#example-finding-antiderivatives-3-1-1 { counter-set: example-finding-antiderivatives-3-1-1 0; }
-#example-finding-antiderivatives-3-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-3-1-1,decimal)"."; }
-#example-finding-antiderivatives-3-1-1 > li { counter-increment: example-finding-antiderivatives-3-1-1; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 { counter-set: theorem-more-properties-of-the-definite-integral-2-1-3 0; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li::marker { content: ""counter(theorem-more-properties-of-the-definite-integral-2-1-3,decimal)"."; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li { counter-increment: theorem-more-properties-of-the-definite-integral-2-1-3; }
-#theorem-fundamental-theorem-of-calculus-2-2 { counter-set: theorem-fundamental-theorem-of-calculus-2-2 0; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li::marker { content: ""counter(theorem-fundamental-theorem-of-calculus-2-2,decimal)"."; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li { counter-increment: theorem-fundamental-theorem-of-calculus-2-2; }
-#section-substitution-5-3 { counter-set: section-substitution-5-3 0; }
-#section-substitution-5-3 > li::marker { content: ""counter(section-substitution-5-3,decimal)"."; }
-#section-substitution-5-3 > li { counter-increment: section-substitution-5-3; }
-#algorithm-partial-fractions-algorithm-3-1-2 { counter-set: algorithm-partial-fractions-algorithm-3-1-2 0; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li::marker { content: ""counter(algorithm-partial-fractions-algorithm-3-1-2,decimal)"."; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li { counter-increment: algorithm-partial-fractions-algorithm-3-1-2; }
-#section-applications-to-physics-and-engineering-2-2 { counter-set: section-applications-to-physics-and-engineering-2-2 0; }
-#section-applications-to-physics-and-engineering-2-2 > li::marker { content: ""counter(section-applications-to-physics-and-engineering-2-2,decimal)"."; }
-#section-applications-to-physics-and-engineering-2-2 > li { counter-increment: section-applications-to-physics-and-engineering-2-2; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 { counter-set: subsection-moments-and-centers-of-mass-7-1-3-1 0; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-1-3-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-1-3-1; }
-#subsection-moments-and-centers-of-mass-7-2-1 { counter-set: subsection-moments-and-centers-of-mass-7-2-1 0; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-2-1; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 { counter-set: subsection-moments-and-centers-of-mass-12-1-1-4 0; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-1-1-4,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li { counter-increment: subsection-moments-and-centers-of-mass-12-1-1-4; }
-#subsection-moments-and-centers-of-mass-12-2-1 { counter-set: subsection-moments-and-centers-of-mass-12-2-1 0; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-12-2-1; }
-#example-determining-a-sustainable-population-3-3 { counter-set: example-determining-a-sustainable-population-3-3 0; }
-#example-determining-a-sustainable-population-3-3 > li::marker { content: ""counter(example-determining-a-sustainable-population-3-3,decimal)"."; }
-#example-determining-a-sustainable-population-3-3 > li { counter-increment: example-determining-a-sustainable-population-3-3; }
-#theorem-sequential-limit-laws-2-2 { counter-set: theorem-sequential-limit-laws-2-2 0; }
-#theorem-sequential-limit-laws-2-2 > li::marker { content: ""counter(theorem-sequential-limit-laws-2-2,decimal)"."; }
-#theorem-sequential-limit-laws-2-2 > li { counter-increment: theorem-sequential-limit-laws-2-2; }
-#example-guessing-sums-2-1-1 { counter-set: example-guessing-sums-2-1-1 0; }
-#example-guessing-sums-2-1-1 > li::marker { content: ""counter(example-guessing-sums-2-1-1,decimal)"."; }
-#example-guessing-sums-2-1-1 > li { counter-increment: example-guessing-sums-2-1-1; }
-#example-guessing-sums-3-1-1 { counter-set: example-guessing-sums-3-1-1 0; }
-#example-guessing-sums-3-1-1 > li::marker { content: ""counter(example-guessing-sums-3-1-1,decimal)"."; }
-#example-guessing-sums-3-1-1 > li { counter-increment: example-guessing-sums-3-1-1; }
-#theorem-direct-comparison-test-series-3-1-4 { counter-set: theorem-direct-comparison-test-series-3-1-4 0; }
-#theorem-direct-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-direct-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-direct-comparison-test-series-3-1-4 > li { counter-increment: theorem-direct-comparison-test-series-3-1-4; }
-#theorem-limit-comparison-test-series-3-1-4 { counter-set: theorem-limit-comparison-test-series-3-1-4 0; }
-#theorem-limit-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-limit-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-limit-comparison-test-series-3-1-4 > li { counter-increment: theorem-limit-comparison-test-series-3-1-4; }
-#subsection-alternating-series-9-2 { counter-set: subsection-alternating-series-9-2 0; }
-#subsection-alternating-series-9-2 > li::marker { content: ""counter(subsection-alternating-series-9-2,decimal)"."; }
-#subsection-alternating-series-9-2 > li { counter-increment: subsection-alternating-series-9-2; }
-#theorem-ratio-test-2-1-3 { counter-set: theorem-ratio-test-2-1-3 0; }
-#theorem-ratio-test-2-1-3 > li::marker { content: ""counter(theorem-ratio-test-2-1-3,decimal)"."; }
-#theorem-ratio-test-2-1-3 > li { counter-increment: theorem-ratio-test-2-1-3; }
-#theorem-root-test-2-1-3 { counter-set: theorem-root-test-2-1-3 0; }
-#theorem-root-test-2-1-3 > li::marker { content: ""counter(theorem-root-test-2-1-3,decimal)"."; }
-#theorem-root-test-2-1-3 > li { counter-increment: theorem-root-test-2-1-3; }
-#example-examples-of-power-series-2-1-1 { counter-set: example-examples-of-power-series-2-1-1 0; }
-#example-examples-of-power-series-2-1-1 > li::marker { content: ""counter(example-examples-of-power-series-2-1-1,decimal)"."; }
-#example-examples-of-power-series-2-1-1 > li { counter-increment: example-examples-of-power-series-2-1-1; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 { counter-set: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 0; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li::marker { content: ""counter(theorem-properties-of-vector-addition-and-scalar-multiplication-3-2,decimal)"."; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li { counter-increment: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2; }
-#theorem-properties-of-the-dot-product-3-2 { counter-set: theorem-properties-of-the-dot-product-3-2 0; }
-#theorem-properties-of-the-dot-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-dot-product-3-2,decimal)"."; }
-#theorem-properties-of-the-dot-product-3-2 > li { counter-increment: theorem-properties-of-the-dot-product-3-2; }
-#theorem-properties-of-the-cross-product-3-2 { counter-set: theorem-properties-of-the-cross-product-3-2 0; }
-#theorem-properties-of-the-cross-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-cross-product-3-2,decimal)"."; }
-#theorem-properties-of-the-cross-product-3-2 > li { counter-increment: theorem-properties-of-the-cross-product-3-2; }
-#theorem-vector-derivative-rules-3-2 { counter-set: theorem-vector-derivative-rules-3-2 0; }
-#theorem-vector-derivative-rules-3-2 > li::marker { content: ""counter(theorem-vector-derivative-rules-3-2,decimal)"."; }
-#theorem-vector-derivative-rules-3-2 > li { counter-increment: theorem-vector-derivative-rules-3-2; }
-#subsection-continuous-functions-5 { counter-set: subsection-continuous-functions-5 0; }
-#subsection-continuous-functions-5 > li::marker { content: ""counter(subsection-continuous-functions-5,decimal)"."; }
-#subsection-continuous-functions-5 > li { counter-increment: subsection-continuous-functions-5; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 { counter-set: algorithm-method-of-lagrange-multipliers-3-1-7 0; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li::marker { content: ""counter(algorithm-method-of-lagrange-multipliers-3-1-7,decimal)"."; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li { counter-increment: algorithm-method-of-lagrange-multipliers-3-1-7; }
-#subsection-conservative-vector-fields-2-2 { counter-set: subsection-conservative-vector-fields-2-2 0; }
-#subsection-conservative-vector-fields-2-2 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-2,decimal)"."; }
-#subsection-conservative-vector-fields-2-2 > li { counter-increment: subsection-conservative-vector-fields-2-2; }
-#subsection-conservative-vector-fields-2-3 { counter-set: subsection-conservative-vector-fields-2-3 0; }
-#subsection-conservative-vector-fields-2-3 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-3,decimal)"."; }
-#subsection-conservative-vector-fields-2-3 > li { counter-increment: subsection-conservative-vector-fields-2-3; }
-#gfdl-section4-3 { counter-set: gfdl-section4-3 0; }
-#gfdl-section4-3 > li::marker { content: ""counter(gfdl-section4-3,upper-alpha)"."; }
-#gfdl-section4-3 > li { counter-increment: gfdl-section4-3; }
-</style>
+<script src="_static/prefix-runtime.991c135ccf182bf5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1c010553c35c544c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.677a75a9120449ff.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdn.geogebra.org/apps/deployggb.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><script>// Make *any* div with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "div.sagecell-sage",
+  "linked": true,
+  "linkKey": "linked-sage",
+  "autoeval": false,
+  "languages": [
+    "sage"
+  ],
+  "evalButtonText": "Evaluate (Sage)"
+});
+</script>
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" target="_blank" href=""><img src="external/./wvwc-logo.jpg" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes:</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
+<img src="external/./wvwc-logo-brandlogo.jpg" alt="Logo image"><div class="title-container">
+<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
 <p class="byline">Jesse Oldroyd</p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
@@ -443,10 +344,10 @@ true);
 <div class="toc-title-box"><a href="applications-differentiation.html" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Differentiation</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-linear-approximations.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear approximations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related Rates</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related rates</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-l-hospital-s-rule.html" class="internal"><span class="codenumber">5.3</span> <span class="title">L’Hospital’s Rule</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme Values of Functions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization Problems</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme values of functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization problems</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-the-mean-value-theorem.html" class="internal"><span class="codenumber">5.6</span> <span class="title">The Mean Value Theorem</span></a></div>
 <ul class="structural toc-item-list">
@@ -454,8 +355,11 @@ true);
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-the-mean-value-theorem.html#subsection-the-mean-value-theorem" class="internal"><span class="title">The Mean Value Theorem</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and Graphs</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and graphs</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-newton-s-method.html#subsection-newtons-method-optimization" class="internal"><span class="title">Newton’s Method for optimization</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-antiderivatives.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Antiderivatives</span></a></div></li>
 </ul>
 </li>
@@ -618,8 +522,14 @@ true);
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-coordinates-in-3-space.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Coordinates in 3-Space</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -809,75 +719,112 @@ true);
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-series"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">9.2</span><span class="space"> </span><span class="title">Series</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Series</span>
 </h2>
-<section class="introduction" id="section-series-2"><div class="para" id="section-series-2-1">Consider the number <span class="process-math">\(\pi = 3.14159\ldots\text{.}\)</span> This number is irrational and so cannot be represented as a rational number <span class="process-math">\(\frac{a}{b}\text{.}\)</span> This leads to the question of what we mean by <span class="process-math">\(\pi\text{?}\)</span> Or in particular, how can we actually make sense of <span class="process-math">\(\pi\text{,}\)</span> or represent it?</div>
+<section class="introduction" id="section-series-2"><div class="para" id="section-series-2-1">Consider the number <span class="process-math">\(\pi = 3.14159\ldots\text{.}\)</span> This number is irrational and so cannot be represented as a rational number <span class="process-math">\(\frac{a}{b}\text{.}\)</span> This leads to the question of what we mean by <span class="process-math">\(\pi\text{?}\)</span> Or in particular, how can we actually make sense of <span class="process-math">\(\pi\text{,}\)</span> or represent it?<div class="autopermalink" data-description="Paragraph"><a href="#section-series-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="para logical" id="section-series-2-2">
 <div class="para">We can consider rewriting <span class="process-math">\(\pi\)</span> as follows:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="section-series-2-2-2">
 \begin{equation*}
 \pi = 3.14159\ldots = 3 + \frac{1}{10} + \frac{4}{100} + \frac{1}{1000} + \frac{5}{10000} + \frac{9}{100000} + \cdots\text{.}
 \end{equation*}
 </div>
 <div class="para">So we can identify <span class="process-math">\(\pi\)</span> with the sequence <span class="process-math">\(\{a_{n}\}_{n=0}^{\infty} = \{3, \frac{1}{10}, \frac{4}{100}, \ldots\}\)</span> and the <em class="emphasis">series</em>
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="section-series-2-2-6">
 \begin{equation*}
 a_{0} + a_{1} + a_{2} + \cdots\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-series-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><section class="subsection" id="subsection-infinite-series"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Infinite Series</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Infinite Series</span>
 </h3>
-<div class="para" id="subsection-infinite-series-2">We now introduce the fundamental construction of this chapter.</div>
+<div class="para" id="subsection-infinite-series-2">We now introduce the fundamental construction of this chapter.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-infinite-series-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="definition-infinite-series"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.2.1</span><span class="period">.</span><span class="space"> </span><span class="title">Infinite Series.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Infinite Series.</span>
 </h4>
 <div class="para logical" id="definition-infinite-series-2-1">
 <div class="para">An <dfn class="terminology">infinite series</dfn> is a sum of the form</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="definition-infinite-series-2-1-2">
 \begin{equation*}
 \sum_{k=0}^{\infty}a_{k} = a_{0} + a_{1} + \cdots
 \end{equation*}
 </div>
 <div class="para">where <span class="process-math">\(\{a_{k}\}_{k=0}^{\infty}\)</span> is a sequence.</div>
-</div></article><div class="para" id="subsection-infinite-series-4">Infinite series are useful for representing (and computing) irrational numbers (which includes almost all numbers).</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#definition-infinite-series-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 9.2.1: Infinite Series"><a href="#definition-infinite-series" title="Copy heading and permalink for Definition 9.2.1: Infinite Series" aria-label="Copy heading and permalink for Definition 9.2.1: Infinite Series">🔗</a></div></article><div class="para" id="subsection-infinite-series-4">Infinite series are useful for representing (and computing) irrational numbers (which includes almost all numbers).<div class="autopermalink" data-description="Paragraph"><a href="#subsection-infinite-series-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-guessing-sums"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.2.2</span><span class="period">.</span><span class="space"> </span><span class="title">Guessing sums.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Guessing sums.</span>
 </h4>
 <div class="para logical" id="example-guessing-sums-2-1">
 <div class="para">Guess the sums of the following series:</div>
 <ol class="decimal" id="example-guessing-sums-2-1-1">
-<li id="example-guessing-sums-2-1-1-1"><div class="para" id="p-derived-example-guessing-sums-2-1-1-1"><span class="process-math">\(\displaystyle \sum_{k=0}^{\infty}2^{k}\)</span></div></li>
-<li id="example-guessing-sums-2-1-1-2"><div class="para" id="p-derived-example-guessing-sums-2-1-1-2"><span class="process-math">\(\displaystyle \sum_{k=1}^{\infty}2^{-k}\)</span></div></li>
-<li id="example-guessing-sums-2-1-1-3"><div class="para" id="p-derived-example-guessing-sums-2-1-1-3"><span class="process-math">\(\displaystyle 1 - 1 + 1 - 1 + 1 - \cdots\)</span></div></li>
+<li id="example-guessing-sums-2-1-1-1">
+<div class="para" id="p-derived-example-guessing-sums-2-1-1-1"><span class="process-math">\(\displaystyle \sum_{k=0}^{\infty}2^{k}\)</span></div>
+<div class="autopermalink" data-description="Item 1"><a href="#example-guessing-sums-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="example-guessing-sums-2-1-1-2">
+<div class="para" id="p-derived-example-guessing-sums-2-1-1-2"><span class="process-math">\(\displaystyle \sum_{k=1}^{\infty}2^{-k}\)</span></div>
+<div class="autopermalink" data-description="Item 2"><a href="#example-guessing-sums-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="example-guessing-sums-2-1-1-3">
+<div class="para" id="p-derived-example-guessing-sums-2-1-1-3"><span class="process-math">\(\displaystyle 1 - 1 + 1 - 1 + 1 - \cdots\)</span></div>
+<div class="autopermalink" data-description="Item 3"><a href="#example-guessing-sums-2-1-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
 </ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-guessing-sums-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-guessing-sums-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-guessing-sums-3-1">
+<div class="solutions"><details id="example-guessing-sums-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-guessing-sums-3-1">
 <div class="para">We have the following:</div>
 <ol class="decimal" id="example-guessing-sums-3-1-1">
-<li id="example-guessing-sums-3-1-1-1"><div class="para" id="p-derived-example-guessing-sums-3-1-1-1"><span class="process-math">\(\displaystyle \sum_{k=0}^{\infty}2^{k} = \infty\)</span></div></li>
-<li id="example-guessing-sums-3-1-1-2"><div class="para" id="p-derived-example-guessing-sums-3-1-1-2"><span class="process-math">\(\displaystyle \sum_{k=1}^{\infty}2^{-k} = 1\)</span></div></li>
-<li id="example-guessing-sums-3-1-1-3"><div class="para" id="example-guessing-sums-3-1-1-3-1">For this last sum we have an issue: there’s no sensible way to define this sum. We can say that <span class="process-math">\(1 - 1 + \cdots = 0\)</span> or <span class="process-math">\(1\)</span> by grouping terms differently.</div></li>
+<li id="example-guessing-sums-3-1-1-1">
+<div class="para" id="p-derived-example-guessing-sums-3-1-1-1"><span class="process-math">\(\displaystyle \sum_{k=0}^{\infty}2^{k} = \infty\)</span></div>
+<div class="autopermalink" data-description="Item 1"><a href="#example-guessing-sums-3-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="example-guessing-sums-3-1-1-2">
+<div class="para" id="p-derived-example-guessing-sums-3-1-1-2"><span class="process-math">\(\displaystyle \sum_{k=1}^{\infty}2^{-k} = 1\)</span></div>
+<div class="autopermalink" data-description="Item 2"><a href="#example-guessing-sums-3-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="example-guessing-sums-3-1-1-3">
+<div class="para" id="example-guessing-sums-3-1-1-3-1">For this last sum we have an issue: there’s no sensible way to define this sum. We can say that <span class="process-math">\(1 - 1 + \cdots = 0\)</span> or <span class="process-math">\(1\)</span> by grouping terms differently.<div class="autopermalink" data-description="Paragraph"><a href="#example-guessing-sums-3-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#example-guessing-sums-3-1-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
 </ol>
-</div></div></details></div></article><div class="para" id="subsection-infinite-series-6">We can determine what the value of a series should be by using limits.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-guessing-sums-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.2.1"><a href="#example-guessing-sums-3" title="Copy heading and permalink for Solution 9.2.2.1" aria-label="Copy heading and permalink for Solution 9.2.2.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.2.2: Guessing sums"><a href="#example-guessing-sums" title="Copy heading and permalink for Example 9.2.2: Guessing sums" aria-label="Copy heading and permalink for Example 9.2.2: Guessing sums">🔗</a></div></article><div class="para" id="subsection-infinite-series-6">We can determine what the value of a series should be by using limits.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-infinite-series-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="definition-partial-sums-and-convergence"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Partial Sums and Convergence.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Partial Sums and Convergence.</span>
 </h4>
 <div class="para logical" id="definition-partial-sums-and-convergence-2-1">
 <div class="para">Given the series <span class="process-math">\(\sum_{k=0}^{\infty}a_{k}\text{,}\)</span> we denote its <span class="process-math">\(n^{\text{th}}\)</span> <dfn class="terminology">partial sum</dfn> by</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="definition-partial-sums-and-convergence-2-1-4">
 \begin{equation*}
 S_{n} = \sum_{k=0}^{n}a_{k}\text{.}
 \end{equation*}
 </div>
 <div class="para">If the sequence <span class="process-math">\(\{S_{n}\}\)</span> is convergent and <span class="process-math">\(S_{n}\to S\text{,}\)</span> then we say that the original series <dfn class="terminology">converges</dfn> and <span class="process-math">\(\sum_{k=0}^{\infty}a_{k} = S\text{.}\)</span> If the sequence of partial sums diverges, we say the original series <dfn class="terminology">diverges</dfn>.</div>
-</div></article><div class="para" id="subsection-infinite-series-8">Using <a href="section-series.html#definition-partial-sums-and-convergence" class="xref" data-knowl="./knowl/xref/definition-partial-sums-and-convergence.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 9.2.3: Partial Sums and Convergence">Definition 9.2.3</a>, we can say that the sum <span class="process-math">\(1 - 1 + 1 - 1 + \cdots\)</span> diverges, since its sequence of partial sums is <span class="process-math">\(\{1,0,1,0,1,\ldots\}\text{.}\)</span> The same is true for the first series in <a href="section-series.html#example-guessing-sums" class="xref" data-knowl="./knowl/xref/example-guessing-sums.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 9.2.2: Guessing sums">Example 9.2.2</a>, but the second series converges.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#definition-partial-sums-and-convergence-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 9.2.3: Partial Sums and Convergence"><a href="#definition-partial-sums-and-convergence" title="Copy heading and permalink for Definition 9.2.3: Partial Sums and Convergence" aria-label="Copy heading and permalink for Definition 9.2.3: Partial Sums and Convergence">🔗</a></div></article><div class="para" id="subsection-infinite-series-8">Using <a href="section-series.html#definition-partial-sums-and-convergence" class="xref" data-knowl="./knowl/xref/definition-partial-sums-and-convergence.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 9.2.3: Partial Sums and Convergence">Definition 9.2.3</a>, we can say that the sum <span class="process-math">\(1 - 1 + 1 - 1 + \cdots\)</span> diverges, since its sequence of partial sums is <span class="process-math">\(\{1,0,1,0,1,\ldots\}\text{.}\)</span> The same is true for the first series in <a href="section-series.html#example-guessing-sums" class="xref" data-knowl="./knowl/xref/example-guessing-sums.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 9.2.2: Guessing sums">Example 9.2.2</a>, but the second series converges.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-infinite-series-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-determining-convergence-of-a-series"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Determining Convergence of a Series.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Determining Convergence of a Series.</span>
 </h4>
-<div class="para" id="example-determining-convergence-of-a-series-2-1">Does the series <span class="process-math">\(\sum_{n=1}^{\infty}3^{-n}\)</span> converge?</div>
-<div class="solutions"><details id="example-determining-convergence-of-a-series-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-determining-convergence-of-a-series-3-1">
+<div class="para" id="example-determining-convergence-of-a-series-2-1">Does the series <span class="process-math">\(\sum_{n=1}^{\infty}3^{-n}\)</span> converge?<div class="autopermalink" data-description="Paragraph"><a href="#example-determining-convergence-of-a-series-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-determining-convergence-of-a-series-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-determining-convergence-of-a-series-3-1">
 <div class="para">We’ll look at the sequence of partial sums. We have</div>
 <div class="displaymath process-math" id="example-determining-convergence-of-a-series-3-1-1">
 \begin{align*}
@@ -887,217 +834,267 @@ S_{3} \amp = \frac{13}{27}
 \end{align*}
 </div>
 <div class="para">and so on. It looks like the sequence of partial sums approaches <span class="process-math">\(\frac{1}{2}\text{,}\)</span> so we guess that the series equals the same.</div>
-</div></div></details></div></article></section><section class="subsection" id="subsection-geometric-series"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Geometric Series</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-determining-convergence-of-a-series-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.4.1"><a href="#example-determining-convergence-of-a-series-3" title="Copy heading and permalink for Solution 9.2.4.1" aria-label="Copy heading and permalink for Solution 9.2.4.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.2.4: Determining Convergence of a Series"><a href="#example-determining-convergence-of-a-series" title="Copy heading and permalink for Example 9.2.4: Determining Convergence of a Series" aria-label="Copy heading and permalink for Example 9.2.4: Determining Convergence of a Series">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Infinite Series"><a href="#subsection-infinite-series" title="Copy heading and permalink for Subsection: Infinite Series" aria-label="Copy heading and permalink for Subsection: Infinite Series">🔗</a></div></section><section class="subsection" id="subsection-geometric-series"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Geometric Series</span>
 </h3>
-<div class="para" id="subsection-geometric-series-2">The series in <a href="section-series.html#example-determining-convergence-of-a-series" class="xref" data-knowl="./knowl/xref/example-determining-convergence-of-a-series.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 9.2.4: Determining Convergence of a Series">Example 9.2.4</a>, as well as the first two series in <a href="section-series.html#example-guessing-sums" class="xref" data-knowl="./knowl/xref/example-guessing-sums.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 9.2.2: Guessing sums">Example 9.2.2</a>, are examples of an important series known as a <dfn class="terminology">geometric series</dfn>.</div>
+<div class="para" id="subsection-geometric-series-2">The series in <a href="section-series.html#example-determining-convergence-of-a-series" class="xref" data-knowl="./knowl/xref/example-determining-convergence-of-a-series.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 9.2.4: Determining Convergence of a Series">Example 9.2.4</a>, as well as the first two series in <a href="section-series.html#example-guessing-sums" class="xref" data-knowl="./knowl/xref/example-guessing-sums.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 9.2.2: Guessing sums">Example 9.2.2</a>, are examples of an important series known as a <dfn class="terminology">geometric series</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-geometric-series-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="definition-geometric-series"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Geometric Series.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Geometric Series.</span>
 </h4>
-<div class="para" id="definition-geometric-series-2-1">A series <span class="process-math">\(\sum_{k=0}^{\infty}a_{k}\)</span> is a geometric series if <span class="process-math">\(a_{k} = ar^{k}\)</span> for some constants <span class="process-math">\(a\)</span> and <span class="process-math">\(r\text{.}\)</span> Equivalently, the terms of the series form a geometric sequence (see <a href="section-sequences.html#example-geometric-sequences" class="xref" data-knowl="./knowl/xref/example-geometric-sequences.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 9.1.7: Geometric Sequences">Example 9.1.7</a>).</div></article><div class="para logical" id="subsection-geometric-series-4">
+<div class="para" id="definition-geometric-series-2-1">A series <span class="process-math">\(\sum_{k=0}^{\infty}a_{k}\)</span> is a geometric series if <span class="process-math">\(a_{k} = ar^{k}\)</span> for some constants <span class="process-math">\(a\)</span> and <span class="process-math">\(r\text{.}\)</span> Equivalently, the terms of the series form a geometric sequence (see <a href="section-sequences.html#example-geometric-sequences" class="xref" data-knowl="./knowl/xref/example-geometric-sequences.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 9.1.7: Geometric Sequences">Example 9.1.7</a>).<div class="autopermalink" data-description="Paragraph"><a href="#definition-geometric-series-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 9.2.5: Geometric Series"><a href="#definition-geometric-series" title="Copy heading and permalink for Definition 9.2.5: Geometric Series" aria-label="Copy heading and permalink for Definition 9.2.5: Geometric Series">🔗</a></div></article><div class="para logical" id="subsection-geometric-series-4">
 <div class="para">Geometric series are useful because it’s straightforward to find their values. To see how, let <span class="process-math">\(\sum_{k=0}^{\infty}ar^{k}\)</span> be a geometric series and let <span class="process-math">\(\{S_{n}\}\)</span> denote the corresponding sequence of partial sums. Then</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsection-geometric-series-4-3">
 \begin{equation*}
 S_{n} = a + ar + ar^{2} + \cdots + ar^{n}
 \end{equation*}
 </div>
 <div class="para">which gives</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsection-geometric-series-4-4">
 \begin{equation*}
 S_{n} - rS_{n} = a - ar^{n+1}\text{.}
 \end{equation*}
 </div>
 <div class="para">We can solve this for <span class="process-math">\(S_{n}\)</span> to get</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsection-geometric-series-4-6">
 \begin{equation*}
 S_{n} = \frac{a - ar^{n+1}}{1 - r}\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-geometric-series-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsection-geometric-series-5">At this point, we can find the limit of the partial sums using <a href="section-sequences.html#example-geometric-sequences" class="xref" data-knowl="./knowl/xref/example-geometric-sequences.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 9.1.7: Geometric Sequences">Example 9.1.7</a>. Therefore <span class="process-math">\(\sum_{k=0}^{\infty}ar^{k}\)</span> converges to <span class="process-math">\(\frac{a}{1 - r}\)</span> if <span class="process-math">\(|r| \lt 1\)</span> and diverges otherwise.</div>
+<div class="para" id="subsection-geometric-series-5">At this point, we can find the limit of the partial sums using <a href="section-sequences.html#example-geometric-sequences" class="xref" data-knowl="./knowl/xref/example-geometric-sequences.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 9.1.7: Geometric Sequences">Example 9.1.7</a>. Therefore <span class="process-math">\(\sum_{k=0}^{\infty}ar^{k}\)</span> converges to <span class="process-math">\(\frac{a}{1 - r}\)</span> if <span class="process-math">\(|r| \lt 1\)</span> and diverges otherwise.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-geometric-series-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="para logical" id="subsection-geometric-series-6">
 <div class="para">As a quick example of this result, we can find the value of <span class="process-math">\(\sum_{n=1}^{\infty}3^{-n}\)</span> since this series is geometric. To do so, we must determine <span class="process-math">\(a\)</span> and <span class="process-math">\(r\)</span> for this sum. Since</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsection-geometric-series-6-4">
 \begin{equation*}
 \sum_{n=1}^{\infty}3^{-n} = \frac{1}{3} + \frac{1}{9} + \frac{1}{27} + \cdots\text{,}
 \end{equation*}
 </div>
 <div class="para">we have <span class="process-math">\(a = \frac{1}{3}\)</span> and <span class="process-math">\(r = \frac{1}{3}\)</span> also. Hence the series sums to <span class="process-math">\(\frac{1/3}{2/3} = \frac{1}{2}\text{.}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-geometric-series-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-computing-a-geometric-series"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Computing a geometric series.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Computing a geometric series.</span>
 </h4>
-<div class="para" id="example-computing-a-geometric-series-2-1">Determine the value of <span class="process-math">\(\sum_{k=0}^{\infty}\left(-\frac{1}{4}\right)^{k} 5^{6 - k}\)</span> if it exists.</div>
-<div class="solutions"><details id="example-computing-a-geometric-series-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-computing-a-geometric-series-3-1">
+<div class="para" id="example-computing-a-geometric-series-2-1">Determine the value of <span class="process-math">\(\sum_{k=0}^{\infty}\left(-\frac{1}{4}\right)^{k} 5^{6 - k}\)</span> if it exists.<div class="autopermalink" data-description="Paragraph"><a href="#example-computing-a-geometric-series-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-computing-a-geometric-series-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-computing-a-geometric-series-3-1">
 <div class="para">Since this series contains terms being raised to the <span class="process-math">\(k^{\text{th}}\)</span> power, we suspect it may be geometric. If we write out the first several terms, we get</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-computing-a-geometric-series-3-1-2">
 \begin{equation*}
 \sum_{k=0}^{\infty}\left(-\frac{1}{4}\right)^{k} 5^{6 - k} = 5^{6} - \frac{5^{5}}{4} + \frac{5^{4}}{4^{2}} - \cdots\text{,}
 \end{equation*}
 </div>
 <div class="para">so at each step we’re dividing by <span class="process-math">\(4\cdot5 = -20\text{.}\)</span> This series is therefore a geometric series with <span class="process-math">\(a = 5^{6}\)</span> and <span class="process-math">\(r = -\frac{1}{20}\text{.}\)</span> Since <span class="process-math">\(|r| \lt 1\text{,}\)</span> this series converges. The value of this series is</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-computing-a-geometric-series-3-1-7">
 \begin{equation*}
 \sum_{k=0}^{\infty}\left(-\frac{1}{4}\right)^{k} 5^{6 - k} = \frac{a}{1 - r} = \frac{5^{6}}{21/20}\text{.}
 \end{equation*}
 </div>
-</div></div></details></div></article><div class="para" id="subsection-geometric-series-8">We can also find <span class="process-math">\(a\)</span> and <span class="process-math">\(r\)</span> without writing out the first few terms of the series.</div>
-<article class="example example-like" id="example-a-divergent-geometric-series"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">A divergent geometric series.</span>
-</h4>
-<div class="para" id="example-a-divergent-geometric-series-2-1">Determine the value of <span class="process-math">\(\sum_{k=2}^{\infty}3^{4 - k}7^{3k}\text{.}\)</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-computing-a-geometric-series-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-a-divergent-geometric-series-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-a-divergent-geometric-series-3-1">
+<div class="autopermalink" data-description="Solution 9.2.6.1"><a href="#example-computing-a-geometric-series-3" title="Copy heading and permalink for Solution 9.2.6.1" aria-label="Copy heading and permalink for Solution 9.2.6.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.2.6: Computing a geometric series"><a href="#example-computing-a-geometric-series" title="Copy heading and permalink for Example 9.2.6: Computing a geometric series" aria-label="Copy heading and permalink for Example 9.2.6: Computing a geometric series">🔗</a></div></article><div class="para" id="subsection-geometric-series-8">We can also find <span class="process-math">\(a\)</span> and <span class="process-math">\(r\)</span> without writing out the first few terms of the series.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-geometric-series-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="example-a-divergent-geometric-series"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A divergent geometric series.</span>
+</h4>
+<div class="para" id="example-a-divergent-geometric-series-2-1">Determine the value of <span class="process-math">\(\sum_{k=2}^{\infty}3^{4 - k}7^{3k}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-a-divergent-geometric-series-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-a-divergent-geometric-series-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-a-divergent-geometric-series-3-1">
 <div class="para">We can rewrite the series as</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-a-divergent-geometric-series-3-1-1">
 \begin{equation*}
 \sum_{k=2}^{\infty}3^{4 - k}7^{3k} = \sum_{k=2}^{\infty}3^{4}\left(\frac{7^{3}}{3}\right)^{k}\text{.}
 \end{equation*}
 </div>
 <div class="para">This is a geometric series with</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-a-divergent-geometric-series-3-1-2">
 \begin{equation*}
 a = 3^{4}\frac{7^{6}}{3^{2}}\quad\text{and}\quad r = \frac{7^{3}}{3}\text{.}
 \end{equation*}
 </div>
 <div class="para">Since <span class="process-math">\(|r| &gt; 1\text{,}\)</span> the series diverges.</div>
-</div></div></details></div></article><article class="example example-like" id="example---9-ldots--repeating"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Evaluating <span class="process-math">\(.999\ldots\)</span>.</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-a-divergent-geometric-series-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.7.1"><a href="#example-a-divergent-geometric-series-3" title="Copy heading and permalink for Solution 9.2.7.1" aria-label="Copy heading and permalink for Solution 9.2.7.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.2.7: A divergent geometric series"><a href="#example-a-divergent-geometric-series" title="Copy heading and permalink for Example 9.2.7: A divergent geometric series" aria-label="Copy heading and permalink for Example 9.2.7: A divergent geometric series">🔗</a></div></article><article class="example example-like" id="example---9-ldots--repeating"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Evaluating <span class="process-math">\(.999\ldots\)</span>.</span>
 </h4>
-<div class="para" id="example---9-ldots--repeating-2-1">Prove that <span class="process-math">\(.999\ldots = 1\)</span> using geometric series.</div>
-<div class="solutions"><details id="example---9-ldots--repeating-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example---9-ldots--repeating-3-1">
+<div class="para" id="example---9-ldots--repeating-2-1">Prove that <span class="process-math">\(.999\ldots = 1\)</span> using geometric series.<div class="autopermalink" data-description="Paragraph"><a href="#example---9-ldots--repeating-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example---9-ldots--repeating-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example---9-ldots--repeating-3-1">
 <div class="para">First, we need to write <span class="process-math">\(.999\ldots\)</span> as a geometric series. We can do so as follows:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example---9-ldots--repeating-3-1-2">
 \begin{equation*}
 .999\ldots = \frac{9}{10} + \frac{9}{100} + \cdots\text{,}
 \end{equation*}
 </div>
 <div class="para">and so we see that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example---9-ldots--repeating-3-1-3">
 \begin{equation*}
 .999\ldots = \sum_{k=1}^{\infty}\frac{9}{10^{k}}\text{.}
 \end{equation*}
 </div>
 <div class="para">This is a geometric series with <span class="process-math">\(a = \frac{9}{10}\)</span> and <span class="process-math">\(r = \frac{1}{10}\)</span> (and so is convergent!), and so</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example---9-ldots--repeating-3-1-6">
 \begin{equation*}
 \sum_{k=1}^{\infty}\frac{9}{10^{k}} = \frac{9/10}{1 - \frac{1}{10}} = 1\text{.}
 \end{equation*}
 </div>
-</div></div></details></div></article><article class="example example-like" id="example-writing-a-decimal-as-a-fraction"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.2.9</span><span class="period">.</span><span class="space"> </span><span class="title">Writing a decimal as a fraction.</span>
-</h4>
-<div class="para" id="example-writing-a-decimal-as-a-fraction-2-1">Rewrite the decimal <span class="process-math">\(.123451234512345\ldots\)</span> as a fraction <span class="process-math">\(\frac{m}{n}\text{.}\)</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example---9-ldots--repeating-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-writing-a-decimal-as-a-fraction-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-writing-a-decimal-as-a-fraction-3-1">
+<div class="autopermalink" data-description="Solution 9.2.8.1"><a href="#example---9-ldots--repeating-3" title="Copy heading and permalink for Solution 9.2.8.1" aria-label="Copy heading and permalink for Solution 9.2.8.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.2.8: Evaluating .999\ldots"><a href="#example---9-ldots--repeating" title="Copy heading and permalink for Example 9.2.8: Evaluating .999\ldots" aria-label="Copy heading and permalink for Example 9.2.8: Evaluating .999\ldots">🔗</a></div></article><article class="example example-like" id="example-writing-a-decimal-as-a-fraction"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Writing a decimal as a fraction.</span>
+</h4>
+<div class="para" id="example-writing-a-decimal-as-a-fraction-2-1">Rewrite the decimal <span class="process-math">\(.123451234512345\ldots\)</span> as a fraction <span class="process-math">\(\frac{m}{n}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-writing-a-decimal-as-a-fraction-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-writing-a-decimal-as-a-fraction-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-writing-a-decimal-as-a-fraction-3-1">
 <div class="para">First, it’s a mathematical fact that any repeating decimal can be written as a rational number so we know that we can actually write <span class="process-math">\(0.\overline{12345}\)</span> as a fraction. We’ll do so by rewriting the decimal as a geometric series:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-writing-a-decimal-as-a-fraction-3-1-2">
 \begin{equation*}
 0.\overline{12345} = \frac{12345}{100000} + \frac{12345}{10000000000} + \cdots\text{,}
 \end{equation*}
 </div>
 <div class="para">which is a geometric series with <span class="process-math">\(a = \frac{12345}{100000}\)</span> and <span class="process-math">\(r = \frac{1}{100000}\text{.}\)</span> This series is also convergent, and has sum</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-writing-a-decimal-as-a-fraction-3-1-5">
 \begin{equation*}
 \frac{a}{1 - r} = \frac{12345/100000}{99999/100000} = \frac{12345}{99999}\text{.}
 \end{equation*}
 </div>
-</div></div></details></div></article></section><section class="subsection" id="subsection-telescoping-series"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Telescoping Series</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-writing-a-decimal-as-a-fraction-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.2.9.1"><a href="#example-writing-a-decimal-as-a-fraction-3" title="Copy heading and permalink for Solution 9.2.9.1" aria-label="Copy heading and permalink for Solution 9.2.9.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.2.9: Writing a decimal as a fraction"><a href="#example-writing-a-decimal-as-a-fraction" title="Copy heading and permalink for Example 9.2.9: Writing a decimal as a fraction" aria-label="Copy heading and permalink for Example 9.2.9: Writing a decimal as a fraction">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Geometric Series"><a href="#subsection-geometric-series" title="Copy heading and permalink for Subsection: Geometric Series" aria-label="Copy heading and permalink for Subsection: Geometric Series">🔗</a></div></section><section class="subsection" id="subsection-telescoping-series"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Telescoping Series</span>
 </h3>
-<div class="para" id="subsection-telescoping-series-2">We can find exact values for geometric series since their partial sums simplify nicely. Another type of series that can be calculated (relatively) easily is the <em class="emphasis">telescoping series</em>, and for the same reason.</div>
+<div class="para" id="subsection-telescoping-series-2">We can find exact values for geometric series since their partial sums simplify nicely. Another type of series that can be calculated (relatively) easily is the <em class="emphasis">telescoping series</em>, and for the same reason.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-telescoping-series-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="definition-telescoping-series"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.2.10</span><span class="period">.</span><span class="space"> </span><span class="title">Telescoping Series.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Telescoping Series.</span>
 </h4>
 <div class="para logical" id="definition-telescoping-series-3-1">
 <div class="para">A <dfn class="terminology">telescoping series</dfn> is a series that can be written in the form</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="definition-telescoping-series-3-1-2">
 \begin{equation*}
 \sum[a_{k+1}-a_{k}]\text{.}
 \end{equation*}
 </div>
-</div></article><div class="para logical" id="subsection-telescoping-series-4">
+<div class="autopermalink" data-description="Paragraph"><a href="#definition-telescoping-series-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 9.2.10: Telescoping Series"><a href="#definition-telescoping-series" title="Copy heading and permalink for Definition 9.2.10: Telescoping Series" aria-label="Copy heading and permalink for Definition 9.2.10: Telescoping Series">🔗</a></div></article><div class="para logical" id="subsection-telescoping-series-4">
 <div class="para">The partial sums of a telescoping series simplify quite a bit due to cancellation of successive terms. In particular, the partial sums look like</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsection-telescoping-series-4-1">
 \begin{equation*}
 \sum_{k=0}^n[a_{k+1}-a_{k}] = a_{n+1}-a_{0}\text{.}
 \end{equation*}
 </div>
 <div class="para">Hence the value of the series can be found by computing</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsection-telescoping-series-4-2">
 \begin{equation*}
 \lim_{n\to\infty}[a_{n+1}-a_{0}]\text{.}
 \end{equation*}
 </div>
 <div class="para">We’ll demonstrate by way of example.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-telescoping-series-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-telescoping-logarithms"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.2.11</span><span class="period">.</span><span class="space"> </span><span class="title">Telescoping logarithms.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Telescoping logarithms.</span>
 </h4>
-<div class="para" id="example-telescoping-logarithms-2-1">Find <span class="process-math">\(\sum_{k=1}^{\infty}\ln\parens{\frac{k + 1}{k}}\text{.}\)</span>
+<div class="para" id="example-telescoping-logarithms-2-1">Find <span class="process-math">\(\sum_{k=1}^{\infty}\ln\parens{\frac{k + 1}{k}}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-telescoping-logarithms-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-telescoping-logarithms-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-telescoping-logarithms-3-1">
+<div class="solutions"><details id="example-telescoping-logarithms-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-telescoping-logarithms-3-1">
 <div class="para">If we write out the first few terms, we get</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-telescoping-logarithms-3-1-1">
 \begin{equation*}
 \sum_{k=1}^{\infty}\ln\parens{\frac{k + 1}{k}} = (\ln2 - \ln 1) + (\ln3 - \ln2) + \cdots
 \end{equation*}
 </div>
 <div class="para">so it looks like many of these terms cancel each other out. To be precise about this, we’ll find the partial sums of this series and then consider their limit:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-telescoping-logarithms-3-1-2">
 \begin{equation*}
 S_{n} = \sum_{k=1}^{n}\ln\parens{\frac{k+1}{k}} = \ln(n + 1)\text{,}
 \end{equation*}
 </div>
 <div class="para">which goes to <span class="process-math">\(\infty\)</span> as <span class="process-math">\(n\to\infty\text{.}\)</span> So the series diverges.</div>
-</div></div></details></div></article><div class="para" id="subsection-telescoping-series-6">Not every series is quickly recognizable as a telescoping series. Occasionally, we need to do a bit of algebra first.</div>
-<article class="example example-like" id="example-rewriting-a-telescoping-series"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.2.12</span><span class="period">.</span><span class="space"> </span><span class="title">Recognizing a telescoping series.</span>
-</h4>
-<div class="para" id="example-rewriting-a-telescoping-series-2-1">Find <span class="process-math">\(\sum_{n=3}^{\infty}\frac{3}{n(n-1)}\text{.}\)</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-telescoping-logarithms-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-rewriting-a-telescoping-series-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="autopermalink" data-description="Solution 9.2.11.1"><a href="#example-telescoping-logarithms-3" title="Copy heading and permalink for Solution 9.2.11.1" aria-label="Copy heading and permalink for Solution 9.2.11.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.2.11: Telescoping logarithms"><a href="#example-telescoping-logarithms" title="Copy heading and permalink for Example 9.2.11: Telescoping logarithms" aria-label="Copy heading and permalink for Example 9.2.11: Telescoping logarithms">🔗</a></div></article><div class="para" id="subsection-telescoping-series-6">Not every series is quickly recognizable as a telescoping series. Occasionally, we need to do a bit of algebra first.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-telescoping-series-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="example-rewriting-a-telescoping-series"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Recognizing a telescoping series.</span>
+</h4>
+<div class="para" id="example-rewriting-a-telescoping-series-2-1">Find <span class="process-math">\(\sum_{n=3}^{\infty}\frac{3}{n(n-1)}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-rewriting-a-telescoping-series-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-rewriting-a-telescoping-series-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="example-rewriting-a-telescoping-series-3-1">
 <div class="para">It’s not obvious at all that the series is telescoping, even if we write out a few terms. However, if we try partial fractions on <span class="process-math">\(\frac{3}{n(n-1)}\)</span> we obtain (see SageMath cell below)</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-rewriting-a-telescoping-series-3-1-2">
 \begin{equation*}
 \frac{3}{n(n-1)} = \frac{3}{n - 1} - \frac{3}{n}\text{.}
 \end{equation*}
 </div>
 <div class="para">So</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-rewriting-a-telescoping-series-3-1-3">
 \begin{equation*}
 \sum_{n=3}^{\infty}\frac{3}{n(n-1)} = \sum_{n=3}^{\infty}\left[\frac{3}{n-1} - \frac{3}{n}\right]\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-rewriting-a-telescoping-series-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-rewriting-a-telescoping-series-3-2">
 <div class="para">The <span class="process-math">\(k^{\text{th}}\)</span> partial sum is</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-rewriting-a-telescoping-series-3-2-2">
 \begin{equation*}
 S_{k} = \sum_{n=3}^{k}\left[\frac{3}{n-1} - \frac{3}{n}\right] = \frac{3}{2} - \frac{3}{k}\text{,}
 \end{equation*}
 </div>
 <div class="para">and so <span class="process-math">\(S_{k}\to \frac{3}{2}\text{.}\)</span> Hence <span class="process-math">\(\sum_{n=3}^{\infty}\frac{3}{n(n-1)} = \frac{3}{2}\text{.}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-rewriting-a-telescoping-series-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-</div></details></div></article><div id="subsection-telescoping-series-8" class="ptx-sagecell sagecell-sage"><script type="text/x-sage"># Finds partial fraction decomposition for previous example
+<div class="autopermalink" data-description="Solution 9.2.12.1"><a href="#example-rewriting-a-telescoping-series-3" title="Copy heading and permalink for Solution 9.2.12.1" aria-label="Copy heading and permalink for Solution 9.2.12.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.2.12: Recognizing a telescoping series"><a href="#example-rewriting-a-telescoping-series" title="Copy heading and permalink for Example 9.2.12: Recognizing a telescoping series" aria-label="Copy heading and permalink for Example 9.2.12: Recognizing a telescoping series">🔗</a></div></article><div id="subsection-telescoping-series-8" class="ptx-sagecell sagecell-sage"><script type="text/x-sage"># Finds partial fraction decomposition for previous example
 var('n')
 f = 3/(n*(n-1))
 f.partial_fraction()
-</script></div></section><div class="para" id="section-series-6">Series, or rather the summation symbol <span class="process-math">\(\Sigma\text{,}\)</span> obey many of the same laws as integrals: they split over sums and we may pull constants out.</div>
+</script></div>
+<div class="autopermalink" data-description="Subsection: Telescoping Series"><a href="#subsection-telescoping-series" title="Copy heading and permalink for Subsection: Telescoping Series" aria-label="Copy heading and permalink for Subsection: Telescoping Series">🔗</a></div></section><div class="para" id="section-series-6">Series, or rather the summation symbol <span class="process-math">\(\Sigma\text{,}\)</span> obey many of the same laws as integrals: they split over sums and we may pull constants out.<div class="autopermalink" data-description="Paragraph"><a href="#section-series-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-splitting-a-sum"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.2.13</span><span class="period">.</span><span class="space"> </span><span class="title">Splitting a Sum.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.2.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Splitting a Sum.</span>
 </h3>
-<div class="para" id="example-splitting-a-sum-2-1">Find the value of <span class="process-math">\(\sum_{k=4}^{\infty}\left(3\cdot2^{-k} - \pi e^{-k}\right)\text{.}\)</span>
-</div></article></section></div>
-<div class="ptx-content-footer">
+<div class="para" id="example-splitting-a-sum-2-1">Find the value of <span class="process-math">\(\sum_{k=4}^{\infty}\left(3\cdot2^{-k} - \pi e^{-k}\right)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-splitting-a-sum-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 9.2.13: Splitting a Sum"><a href="#example-splitting-a-sum" title="Copy heading and permalink for Example 9.2.13: Splitting a Sum" aria-label="Copy heading and permalink for Example 9.2.13: Splitting a Sum">🔗</a></div></article><div class="autopermalink" data-description="Section 9.2: Series"><a href="#section-series" title="Copy heading and permalink for Section 9.2: Series" aria-label="Copy heading and permalink for Section 9.2: Series">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="section-sequences.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="section-the-divergence-integral-and-comparison-tests.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
-<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
 </body>
 </html>

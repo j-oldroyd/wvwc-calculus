@@ -6,17 +6,21 @@
 <!--*                                          *-->
 <!--********************************************-->
 <html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>WVWC-CALC Taylor and Maclaurin Series</title>
-<meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:type" content="book">
-<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo.jpg">
-<meta property="book:title" content="Calculus Notes">
-<meta property="book:author" content="Jesse Oldroyd
-          ">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -88,12 +92,14 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo-brandlogo.jpg">
+<meta property="book:title" content="Calculus Notes">
+<meta property="book:author" content="Jesse Oldroyd
+          ">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -115,127 +121,22 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.1';
+eBookConfig.runestone_version = '7.11.8';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.87cabc2515250052.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.630d5c4fb4b681eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.97f3ae4f7a71ba18.css">
-<style>
-#theorem-combining-continuous-functions-2-1-4 { counter-set: theorem-combining-continuous-functions-2-1-4 0; }
-#theorem-combining-continuous-functions-2-1-4 > li::marker { content: ""counter(theorem-combining-continuous-functions-2-1-4,decimal)"."; }
-#theorem-combining-continuous-functions-2-1-4 > li { counter-increment: theorem-combining-continuous-functions-2-1-4; }
-#example-derivatives-using-the-power-rule-2-1-1 { counter-set: example-derivatives-using-the-power-rule-2-1-1 0; }
-#example-derivatives-using-the-power-rule-2-1-1 > li::marker { content: ""counter(example-derivatives-using-the-power-rule-2-1-1,decimal)"."; }
-#example-derivatives-using-the-power-rule-2-1-1 > li { counter-increment: example-derivatives-using-the-power-rule-2-1-1; }
-#section-extreme-values-of-functions-4-1-1-1 { counter-set: section-extreme-values-of-functions-4-1-1-1 0; }
-#section-extreme-values-of-functions-4-1-1-1 > li::marker { content: ""counter(section-extreme-values-of-functions-4-1-1-1,decimal)"."; }
-#section-extreme-values-of-functions-4-1-1-1 > li { counter-increment: section-extreme-values-of-functions-4-1-1-1; }
-#example-minimizing-material-costs-3-1-1 { counter-set: example-minimizing-material-costs-3-1-1 0; }
-#example-minimizing-material-costs-3-1-1 > li::marker { content: ""counter(example-minimizing-material-costs-3-1-1,decimal)"."; }
-#example-minimizing-material-costs-3-1-1 > li { counter-increment: example-minimizing-material-costs-3-1-1; }
-#example-distance-on-an-ellipse-3-1-1 { counter-set: example-distance-on-an-ellipse-3-1-1 0; }
-#example-distance-on-an-ellipse-3-1-1 > li::marker { content: ""counter(example-distance-on-an-ellipse-3-1-1,decimal)"."; }
-#example-distance-on-an-ellipse-3-1-1 > li { counter-increment: example-distance-on-an-ellipse-3-1-1; }
-#example-finding-antiderivatives-2-1-1 { counter-set: example-finding-antiderivatives-2-1-1 0; }
-#example-finding-antiderivatives-2-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-2-1-1,decimal)"."; }
-#example-finding-antiderivatives-2-1-1 > li { counter-increment: example-finding-antiderivatives-2-1-1; }
-#example-finding-antiderivatives-3-1-1 { counter-set: example-finding-antiderivatives-3-1-1 0; }
-#example-finding-antiderivatives-3-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-3-1-1,decimal)"."; }
-#example-finding-antiderivatives-3-1-1 > li { counter-increment: example-finding-antiderivatives-3-1-1; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 { counter-set: theorem-more-properties-of-the-definite-integral-2-1-3 0; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li::marker { content: ""counter(theorem-more-properties-of-the-definite-integral-2-1-3,decimal)"."; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li { counter-increment: theorem-more-properties-of-the-definite-integral-2-1-3; }
-#theorem-fundamental-theorem-of-calculus-2-2 { counter-set: theorem-fundamental-theorem-of-calculus-2-2 0; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li::marker { content: ""counter(theorem-fundamental-theorem-of-calculus-2-2,decimal)"."; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li { counter-increment: theorem-fundamental-theorem-of-calculus-2-2; }
-#section-substitution-5-3 { counter-set: section-substitution-5-3 0; }
-#section-substitution-5-3 > li::marker { content: ""counter(section-substitution-5-3,decimal)"."; }
-#section-substitution-5-3 > li { counter-increment: section-substitution-5-3; }
-#algorithm-partial-fractions-algorithm-3-1-2 { counter-set: algorithm-partial-fractions-algorithm-3-1-2 0; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li::marker { content: ""counter(algorithm-partial-fractions-algorithm-3-1-2,decimal)"."; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li { counter-increment: algorithm-partial-fractions-algorithm-3-1-2; }
-#section-applications-to-physics-and-engineering-2-2 { counter-set: section-applications-to-physics-and-engineering-2-2 0; }
-#section-applications-to-physics-and-engineering-2-2 > li::marker { content: ""counter(section-applications-to-physics-and-engineering-2-2,decimal)"."; }
-#section-applications-to-physics-and-engineering-2-2 > li { counter-increment: section-applications-to-physics-and-engineering-2-2; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 { counter-set: subsection-moments-and-centers-of-mass-7-1-3-1 0; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-1-3-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-1-3-1; }
-#subsection-moments-and-centers-of-mass-7-2-1 { counter-set: subsection-moments-and-centers-of-mass-7-2-1 0; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-2-1; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 { counter-set: subsection-moments-and-centers-of-mass-12-1-1-4 0; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-1-1-4,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li { counter-increment: subsection-moments-and-centers-of-mass-12-1-1-4; }
-#subsection-moments-and-centers-of-mass-12-2-1 { counter-set: subsection-moments-and-centers-of-mass-12-2-1 0; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-12-2-1; }
-#example-determining-a-sustainable-population-3-3 { counter-set: example-determining-a-sustainable-population-3-3 0; }
-#example-determining-a-sustainable-population-3-3 > li::marker { content: ""counter(example-determining-a-sustainable-population-3-3,decimal)"."; }
-#example-determining-a-sustainable-population-3-3 > li { counter-increment: example-determining-a-sustainable-population-3-3; }
-#theorem-sequential-limit-laws-2-2 { counter-set: theorem-sequential-limit-laws-2-2 0; }
-#theorem-sequential-limit-laws-2-2 > li::marker { content: ""counter(theorem-sequential-limit-laws-2-2,decimal)"."; }
-#theorem-sequential-limit-laws-2-2 > li { counter-increment: theorem-sequential-limit-laws-2-2; }
-#example-guessing-sums-2-1-1 { counter-set: example-guessing-sums-2-1-1 0; }
-#example-guessing-sums-2-1-1 > li::marker { content: ""counter(example-guessing-sums-2-1-1,decimal)"."; }
-#example-guessing-sums-2-1-1 > li { counter-increment: example-guessing-sums-2-1-1; }
-#example-guessing-sums-3-1-1 { counter-set: example-guessing-sums-3-1-1 0; }
-#example-guessing-sums-3-1-1 > li::marker { content: ""counter(example-guessing-sums-3-1-1,decimal)"."; }
-#example-guessing-sums-3-1-1 > li { counter-increment: example-guessing-sums-3-1-1; }
-#theorem-direct-comparison-test-series-3-1-4 { counter-set: theorem-direct-comparison-test-series-3-1-4 0; }
-#theorem-direct-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-direct-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-direct-comparison-test-series-3-1-4 > li { counter-increment: theorem-direct-comparison-test-series-3-1-4; }
-#theorem-limit-comparison-test-series-3-1-4 { counter-set: theorem-limit-comparison-test-series-3-1-4 0; }
-#theorem-limit-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-limit-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-limit-comparison-test-series-3-1-4 > li { counter-increment: theorem-limit-comparison-test-series-3-1-4; }
-#subsection-alternating-series-9-2 { counter-set: subsection-alternating-series-9-2 0; }
-#subsection-alternating-series-9-2 > li::marker { content: ""counter(subsection-alternating-series-9-2,decimal)"."; }
-#subsection-alternating-series-9-2 > li { counter-increment: subsection-alternating-series-9-2; }
-#theorem-ratio-test-2-1-3 { counter-set: theorem-ratio-test-2-1-3 0; }
-#theorem-ratio-test-2-1-3 > li::marker { content: ""counter(theorem-ratio-test-2-1-3,decimal)"."; }
-#theorem-ratio-test-2-1-3 > li { counter-increment: theorem-ratio-test-2-1-3; }
-#theorem-root-test-2-1-3 { counter-set: theorem-root-test-2-1-3 0; }
-#theorem-root-test-2-1-3 > li::marker { content: ""counter(theorem-root-test-2-1-3,decimal)"."; }
-#theorem-root-test-2-1-3 > li { counter-increment: theorem-root-test-2-1-3; }
-#example-examples-of-power-series-2-1-1 { counter-set: example-examples-of-power-series-2-1-1 0; }
-#example-examples-of-power-series-2-1-1 > li::marker { content: ""counter(example-examples-of-power-series-2-1-1,decimal)"."; }
-#example-examples-of-power-series-2-1-1 > li { counter-increment: example-examples-of-power-series-2-1-1; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 { counter-set: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 0; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li::marker { content: ""counter(theorem-properties-of-vector-addition-and-scalar-multiplication-3-2,decimal)"."; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li { counter-increment: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2; }
-#theorem-properties-of-the-dot-product-3-2 { counter-set: theorem-properties-of-the-dot-product-3-2 0; }
-#theorem-properties-of-the-dot-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-dot-product-3-2,decimal)"."; }
-#theorem-properties-of-the-dot-product-3-2 > li { counter-increment: theorem-properties-of-the-dot-product-3-2; }
-#theorem-properties-of-the-cross-product-3-2 { counter-set: theorem-properties-of-the-cross-product-3-2 0; }
-#theorem-properties-of-the-cross-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-cross-product-3-2,decimal)"."; }
-#theorem-properties-of-the-cross-product-3-2 > li { counter-increment: theorem-properties-of-the-cross-product-3-2; }
-#theorem-vector-derivative-rules-3-2 { counter-set: theorem-vector-derivative-rules-3-2 0; }
-#theorem-vector-derivative-rules-3-2 > li::marker { content: ""counter(theorem-vector-derivative-rules-3-2,decimal)"."; }
-#theorem-vector-derivative-rules-3-2 > li { counter-increment: theorem-vector-derivative-rules-3-2; }
-#subsection-continuous-functions-5 { counter-set: subsection-continuous-functions-5 0; }
-#subsection-continuous-functions-5 > li::marker { content: ""counter(subsection-continuous-functions-5,decimal)"."; }
-#subsection-continuous-functions-5 > li { counter-increment: subsection-continuous-functions-5; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 { counter-set: algorithm-method-of-lagrange-multipliers-3-1-7 0; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li::marker { content: ""counter(algorithm-method-of-lagrange-multipliers-3-1-7,decimal)"."; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li { counter-increment: algorithm-method-of-lagrange-multipliers-3-1-7; }
-#subsection-conservative-vector-fields-2-2 { counter-set: subsection-conservative-vector-fields-2-2 0; }
-#subsection-conservative-vector-fields-2-2 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-2,decimal)"."; }
-#subsection-conservative-vector-fields-2-2 > li { counter-increment: subsection-conservative-vector-fields-2-2; }
-#subsection-conservative-vector-fields-2-3 { counter-set: subsection-conservative-vector-fields-2-3 0; }
-#subsection-conservative-vector-fields-2-3 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-3,decimal)"."; }
-#subsection-conservative-vector-fields-2-3 > li { counter-increment: subsection-conservative-vector-fields-2-3; }
-#gfdl-section4-3 { counter-set: gfdl-section4-3 0; }
-#gfdl-section4-3 > li::marker { content: ""counter(gfdl-section4-3,upper-alpha)"."; }
-#gfdl-section4-3 > li { counter-increment: gfdl-section4-3; }
-</style>
+<script src="_static/prefix-runtime.991c135ccf182bf5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1c010553c35c544c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.677a75a9120449ff.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdn.geogebra.org/apps/deployggb.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" target="_blank" href=""><img src="external/./wvwc-logo.jpg" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes:</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
+<img src="external/./wvwc-logo-brandlogo.jpg" alt="Logo image"><div class="title-container">
+<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
 <p class="byline">Jesse Oldroyd</p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
@@ -431,10 +332,10 @@ true);
 <div class="toc-title-box"><a href="applications-differentiation.html" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Differentiation</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-linear-approximations.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear approximations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related Rates</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related rates</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-l-hospital-s-rule.html" class="internal"><span class="codenumber">5.3</span> <span class="title">L’Hospital’s Rule</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme Values of Functions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization Problems</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme values of functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization problems</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-the-mean-value-theorem.html" class="internal"><span class="codenumber">5.6</span> <span class="title">The Mean Value Theorem</span></a></div>
 <ul class="structural toc-item-list">
@@ -442,8 +343,11 @@ true);
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-the-mean-value-theorem.html#subsection-the-mean-value-theorem" class="internal"><span class="title">The Mean Value Theorem</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and Graphs</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and graphs</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-newton-s-method.html#subsection-newtons-method-optimization" class="internal"><span class="title">Newton’s Method for optimization</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-antiderivatives.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Antiderivatives</span></a></div></li>
 </ul>
 </li>
@@ -606,8 +510,14 @@ true);
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-coordinates-in-3-space.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Coordinates in 3-Space</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -797,22 +707,25 @@ true);
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-taylor-and-maclaurin-series"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">9.7</span><span class="space"> </span><span class="title">Taylor and Maclaurin Series</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.7</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Taylor and Maclaurin Series</span>
 </h2>
-<section class="introduction" id="section-taylor-and-maclaurin-series-3"><div class="para" id="section-taylor-and-maclaurin-series-3-1">In <a href="section-representing-functions-as-power-series.html" class="internal" title="Section 9.6: Representing Functions as Power Series">Section 9.6</a> we found how to obtain power series using the geometric series. In this section we will determine how to find more general power series by means of <em class="emphasis">Taylor polynomials</em> and <em class="emphasis">Taylor series</em>.</div></section><section class="subsection" id="subsection-taylor-polynomials"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Taylor Polynomials</span>
+<section class="introduction" id="section-taylor-and-maclaurin-series-3"><div class="para" id="section-taylor-and-maclaurin-series-3-1">In <a href="section-representing-functions-as-power-series.html" class="internal" title="Section 9.6: Representing Functions as Power Series">Section 9.6</a> we found how to obtain power series using the geometric series. In this section we will determine how to find more general power series by means of <em class="emphasis">Taylor polynomials</em> and <em class="emphasis">Taylor series</em>.<div class="autopermalink" data-description="Paragraph"><a href="#section-taylor-and-maclaurin-series-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsection-taylor-polynomials"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Taylor Polynomials</span>
 </h3>
 <div class="para logical" id="subsection-taylor-polynomials-2">
 <div class="para">Suppose that we are given a function <span class="process-math">\(f(x)\)</span> that we want to approximate with a polynomial of degree <span class="process-math">\(n\text{,}\)</span> say <span class="process-math">\(T_{n}(x)\text{,}\)</span> centered at some point <span class="process-math">\(a\text{.}\)</span> If <span class="process-math">\(f(x)\)</span> is differentiable, then a natural condition to put on our polynomial approximation is for the derivatives to match up to the <span class="process-math">\(n\)</span>th-order derivative:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsection-taylor-polynomials-2-7">
 \begin{equation*}
 f^{(k)}(x) = T^{(k)}_{n}(x)\text{ for }0\leq k\leq n\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-taylor-polynomials-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<aside class="aside aside-like" id="subsection-taylor-polynomials-3"><div class="para" id="subsection-taylor-polynomials-3-1">This process of finding a polynomial that best approximates a function near a given point generalizes the concept of a linear approximation introduced in <a href="section-linear-approximations.html" class="internal" title="Section 5.1: Linear approximations">Section 5.1</a>.</div></aside><div class="para logical" id="subsection-taylor-polynomials-4">
+<details id="subsection-taylor-polynomials-3" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Aside</span></h4></summary><aside class="aside aside-like knowl__content"><div class="para" id="subsection-taylor-polynomials-3-1">This process of finding a polynomial that best approximates a function near a given point generalizes the concept of a linear approximation introduced in <a href="section-linear-approximations.html" class="internal" title="Section 5.1: Linear approximations">Section 5.1</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-taylor-polynomials-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside></details><div class="para logical" id="subsection-taylor-polynomials-4">
 <div class="para">If we write</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsection-taylor-polynomials-4-1">
 \begin{equation*}
 T_n(x) = c_0 + c_1(x-a) + c_2(x-a)^2 + \cdots + c_n(x-a)^n\text{,}
 \end{equation*}
@@ -828,55 +741,63 @@ f^{(n)}(a) \amp = T_n^{(n)}(a) \amp = n!c_n \text{.}
 \end{align*}
 </div>
 <div class="para">In other words, the coefficients of our polynomial must be given by</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsection-taylor-polynomials-4-4">
 \begin{equation*}
 c_k = \frac{f^{(k)}(a)}{k!}
 \end{equation*}
 </div>
 <div class="para">for <span class="process-math">\(k = 0, 1, \ldots, n\)</span> if we want the corresponding derivatives to match. This gives us the <em class="emphasis">Taylor polynomial of order <span class="process-math">\(n\)</span></em>.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-taylor-polynomials-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="definition-taylor-polynomial-of-order-n-"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.7.1</span><span class="period">.</span><span class="space"> </span><span class="title">Taylor Polynomial of Order <span class="process-math">\(n\)</span>.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.7.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Taylor Polynomial of Order <span class="process-math">\(n\)</span>.</span>
 </h4>
 <div class="para logical" id="definition-taylor-polynomial-of-order-n--4-1">
 <div class="para">Let <span class="process-math">\(f(x)\)</span> be a function that is <span class="process-math">\(n\)</span>-times differentiable at <span class="process-math">\(x=a\)</span> (so that <span class="process-math">\(f(a), f^\prime(a),\ldots,f^{(n)}(a)\)</span> all exist). The corresponding <dfn class="terminology">Taylor polynomial of order <span class="process-math">\(n\)</span></dfn> centered at <span class="process-math">\(x=a\)</span> is given by</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="definition-taylor-polynomial-of-order-n--4-1-7">
 \begin{equation*}
 T_n(x) = \sum_{k=0}^n \frac{f^{(k)}(a)}{k!}(x-a)^k\text{.}
 \end{equation*}
 </div>
-</div></article><div class="para" id="subsection-taylor-polynomials-6">Taylor polynomials are typically very good approximations to a given differentiable function near their center. However, the approximation usually gets worse as <span class="process-math">\(x\)</span> gets farther away from the center.</div>
-<article class="example example-like" id="example-taylor-polynomial-of-e-x-"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.7.2</span><span class="period">.</span><span class="space"> </span><span class="title">Taylor polynomial of <span class="process-math">\(e^x\)</span>.</span>
-</h4>
-<div class="para" id="example-taylor-polynomial-of-e-x--2-1">Compute <span class="process-math">\(T_3(x)\)</span> for <span class="process-math">\(f(x)=e^x\)</span> centered at <span class="process-math">\(0\text{.}\)</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#definition-taylor-polynomial-of-order-n--4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-taylor-polynomial-of-e-x--3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="autopermalink" data-description="Definition 9.7.1: Taylor Polynomial of Order n"><a href="#definition-taylor-polynomial-of-order-n-" title="Copy heading and permalink for Definition 9.7.1: Taylor Polynomial of Order n" aria-label="Copy heading and permalink for Definition 9.7.1: Taylor Polynomial of Order n">🔗</a></div></article><div class="para" id="subsection-taylor-polynomials-6">Taylor polynomials are typically very good approximations to a given differentiable function near their center. However, the approximation usually gets worse as <span class="process-math">\(x\)</span> gets farther away from the center.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-taylor-polynomials-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="example-taylor-polynomial-of-e-x-"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.7.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Taylor polynomial of <span class="process-math">\(e^x\)</span>.</span>
+</h4>
+<div class="para" id="example-taylor-polynomial-of-e-x--2-1">Compute <span class="process-math">\(T_3(x)\)</span> for <span class="process-math">\(f(x)=e^x\)</span> centered at <span class="process-math">\(0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-taylor-polynomial-of-e-x--2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-taylor-polynomial-of-e-x--3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="example-taylor-polynomial-of-e-x--3-1">
 <div class="para">Using <a href="section-taylor-and-maclaurin-series.html#definition-taylor-polynomial-of-order-n-" class="xref" data-knowl="./knowl/xref/definition-taylor-polynomial-of-order-n-.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 9.7.1: Taylor Polynomial of Order n">Definition 9.7.1</a>, we need to find</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-taylor-polynomial-of-order-n-.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-taylor-polynomial-of-order-n-.html" id="example-taylor-polynomial-of-e-x--3-1-2">
 \begin{equation*}
 T_3(x) = \sum_{k=0}^3\frac{f^{(k)}(0)}{k!}x^k\text{.}
 \end{equation*}
 </div>
 <div class="para">This is straightforward to find since <span class="process-math">\(f^{(k)}(0) = 1\)</span> for all <span class="process-math">\(k\text{,}\)</span> and so</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-taylor-polynomial-of-order-n-.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-taylor-polynomial-of-order-n-.html" id="example-taylor-polynomial-of-e-x--3-1-5">
 \begin{equation*}
 T_3(x) = 1 + x + \frac{x^2}{2} + \frac{x^3}{6}\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-taylor-polynomial-of-e-x--3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="example-taylor-polynomial-of-e-x--3-2">The figure below compares <span class="process-math">\(f(x)\)</span> with its Taylor polynomials of order <span class="process-math">\(0,1,2\)</span> and <span class="process-math">\(3\text{.}\)</span> As expected, the Taylor polynomials of higher order produce a better approximation to <span class="process-math">\(e^x\text{,}\)</span> at least near <span class="process-math">\(0\text{.}\)</span>
+<div class="para" id="example-taylor-polynomial-of-e-x--3-2">The figure below compares <span class="process-math">\(f(x)\)</span> with its Taylor polynomials of order <span class="process-math">\(0,1,2\)</span> and <span class="process-math">\(3\text{.}\)</span> As expected, the Taylor polynomials of higher order produce a better approximation to <span class="process-math">\(e^x\text{,}\)</span> at least near <span class="process-math">\(0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-taylor-polynomial-of-e-x--3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="figure-taylor-polynomials-e-x"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/latex-image-taylor-polynomials-e-x.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9.7.3<span class="period">.</span></span><span class="space"> </span>Taylor polynomials of <span class="process-math">\(e^x\)</span></figcaption></figure>
-</div></details></div></article><div class="para" id="subsection-taylor-polynomials-8">We will often choose the center of a Taylor polynomial to be <span class="process-math">\(0\text{,}\)</span> but as mentioned above (and evidenced in <a href="section-taylor-and-maclaurin-series.html#figure-taylor-polynomials-e-x" class="xref" data-knowl="./knowl/xref/figure-taylor-polynomials-e-x.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 9.7.3">Figure 9.7.3</a>) the resulting polynomials become worse approximations as we move away from the center. Therefore it is occasionally desirable to choose the center to be some other value, particularly if we are trying to compute an estimate of a function.</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.7.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Taylor polynomials of <span class="process-math">\(e^x\)</span><div class="autopermalink" data-description="Figure 9.7.3"><a href="#figure-taylor-polynomials-e-x" title="Copy heading and permalink for Figure 9.7.3" aria-label="Copy heading and permalink for Figure 9.7.3">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Solution 9.7.2.1"><a href="#example-taylor-polynomial-of-e-x--3" title="Copy heading and permalink for Solution 9.7.2.1" aria-label="Copy heading and permalink for Solution 9.7.2.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.7.2: Taylor polynomial of e^x"><a href="#example-taylor-polynomial-of-e-x-" title="Copy heading and permalink for Example 9.7.2: Taylor polynomial of e^x" aria-label="Copy heading and permalink for Example 9.7.2: Taylor polynomial of e^x">🔗</a></div></article><div class="para" id="subsection-taylor-polynomials-8">We will often choose the center of a Taylor polynomial to be <span class="process-math">\(0\text{,}\)</span> but as mentioned above (and evidenced in <a href="section-taylor-and-maclaurin-series.html#figure-taylor-polynomials-e-x" class="xref" data-knowl="./knowl/xref/figure-taylor-polynomials-e-x.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 9.7.3">Figure 9.7.3</a>) the resulting polynomials become worse approximations as we move away from the center. Therefore it is occasionally desirable to choose the center to be some other value, particularly if we are trying to compute an estimate of a function.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-taylor-polynomials-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-using-a-taylor-polynomial-for-a-numerical-estimate"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.7.4</span><span class="period">.</span><span class="space"> </span><span class="title">Using a Taylor polynomial for a numerical estimate.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.7.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using a Taylor polynomial for a numerical estimate.</span>
 </h4>
-<div class="para" id="example-using-a-taylor-polynomial-for-a-numerical-estimate-2-1">Estimate <span class="process-math">\(\sqrt{9.02}\)</span> by setting up an appropriate Taylor polynomial.</div>
-<div class="solutions"><details id="example-using-a-taylor-polynomial-for-a-numerical-estimate-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="example-using-a-taylor-polynomial-for-a-numerical-estimate-3-1">We need to estimate <span class="process-math">\(f(x) = \sqrt{x}\)</span> at <span class="process-math">\(x=9.02\text{.}\)</span> Therefore, we will use a Taylor polynomial of order <span class="process-math">\(2\)</span> centered at <span class="process-math">\(x=9\text{.}\)</span>
+<div class="para" id="example-using-a-taylor-polynomial-for-a-numerical-estimate-2-1">Estimate <span class="process-math">\(\sqrt{9.02}\)</span> by setting up an appropriate Taylor polynomial.<div class="autopermalink" data-description="Paragraph"><a href="#example-using-a-taylor-polynomial-for-a-numerical-estimate-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-using-a-taylor-polynomial-for-a-numerical-estimate-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-using-a-taylor-polynomial-for-a-numerical-estimate-3-1">We need to estimate <span class="process-math">\(f(x) = \sqrt{x}\)</span> at <span class="process-math">\(x=9.02\text{.}\)</span> Therefore, we will use a Taylor polynomial of order <span class="process-math">\(2\)</span> centered at <span class="process-math">\(x=9\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-using-a-taylor-polynomial-for-a-numerical-estimate-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-using-a-taylor-polynomial-for-a-numerical-estimate-3-2">
 <div class="para">To find <span class="process-math">\(T_2(x)\)</span> for this function, we need to choose our coefficients based on the derivatives. Since</div>
@@ -888,158 +809,186 @@ f''(9) \amp = -\frac{1}{108} \text{,}
 \end{align*}
 </div>
 <div class="para">it follows that our Taylor polynomial is</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-using-a-taylor-polynomial-for-a-numerical-estimate-3-2-3">
 \begin{equation*}
 T_2(x) = 3 + \frac{1}{6}(x-9) - \frac{1}{216}(x-9)^2\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-using-a-taylor-polynomial-for-a-numerical-estimate-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-using-a-taylor-polynomial-for-a-numerical-estimate-3-3">
 <div class="para">As shown in <a href="section-taylor-and-maclaurin-series.html#figure-taylor-polynomial-sqrt-x" class="xref" data-knowl="./knowl/xref/figure-taylor-polynomial-sqrt-x.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 9.7.5">Figure 9.7.5</a> below, this Taylor polynomial is a very good fit for the graph of <span class="process-math">\(f(x)=\sqrt{x}\)</span> near <span class="process-math">\(x=9\text{.}\)</span> Therefore,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/figure-taylor-polynomial-sqrt-x.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/figure-taylor-polynomial-sqrt-x.html" id="example-using-a-taylor-polynomial-for-a-numerical-estimate-3-3-4">
 \begin{equation*}
 \sqrt{9.02}\approx T_2(9.02) = 3 + \frac{.02}{6} - \frac{.0004}{216}\text{.}
 \end{equation*}
 </div>
 <div class="para">In fact, the approximation produced by this Taylor polynomial is within three <em class="emphasis">billionths</em> of the true value of <span class="process-math">\(\sqrt{9.02}\text{.}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-using-a-taylor-polynomial-for-a-numerical-estimate-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="figure-taylor-polynomial-sqrt-x"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/latex-image-taylor-polynomial-sqrt-x.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">9.7.5<span class="period">.</span></span><span class="space"> </span>Taylor polynomial of <span class="process-math">\(\sqrt{x}\)</span></figcaption></figure>
-</div></details></div></article><div class="para" id="subsection-taylor-polynomials-10">Taylor polynomials are also sometimes useful for rewriting polynomials. This is demonstrated in the next example.</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.7.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Taylor polynomial of <span class="process-math">\(\sqrt{x}\)</span><div class="autopermalink" data-description="Figure 9.7.5"><a href="#figure-taylor-polynomial-sqrt-x" title="Copy heading and permalink for Figure 9.7.5" aria-label="Copy heading and permalink for Figure 9.7.5">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Solution 9.7.4.1"><a href="#example-using-a-taylor-polynomial-for-a-numerical-estimate-3" title="Copy heading and permalink for Solution 9.7.4.1" aria-label="Copy heading and permalink for Solution 9.7.4.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.7.4: Using a Taylor polynomial for a numerical estimate"><a href="#example-using-a-taylor-polynomial-for-a-numerical-estimate" title="Copy heading and permalink for Example 9.7.4: Using a Taylor polynomial for a numerical estimate" aria-label="Copy heading and permalink for Example 9.7.4: Using a Taylor polynomial for a numerical estimate">🔗</a></div></article><div class="para" id="subsection-taylor-polynomials-10">Taylor polynomials are also sometimes useful for rewriting polynomials. This is demonstrated in the next example.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-taylor-polynomials-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-partial-fractions-with-taylor-polynomials"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.7.6</span><span class="period">.</span><span class="space"> </span><span class="title">Partial fractions with Taylor polynomials.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.7.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Partial fractions with Taylor polynomials.</span>
 </h4>
 <div class="para logical" id="example-partial-fractions-with-taylor-polynomials-2-1">
 <div class="para">Find the partial fraction decomposition of</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-partial-fractions-with-taylor-polynomials-2-1-1">
 \begin{equation*}
 G(s) = \frac{3s^2+2s+1}{(s-1)^3}\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-partial-fractions-with-taylor-polynomials-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-partial-fractions-with-taylor-polynomials-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="solutions"><details id="example-partial-fractions-with-taylor-polynomials-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="example-partial-fractions-with-taylor-polynomials-3-1">
 <div class="para">The partial fraction decomposition of <span class="process-math">\(G(s)\)</span> will take the form</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/section-partial-fractions.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/section-partial-fractions.html" id="example-partial-fractions-with-taylor-polynomials-3-1-2">
 \begin{equation*}
 \frac{A}{s-1} + \frac{B}{(s-1)^2} + \frac{C}{(s-1)^3}\text{.}
 \end{equation*}
 </div>
 <div class="para">We could find this using the methods discussed in <a href="section-partial-fractions.html" class="internal" title="Section 7.3: Partial Fractions">Section 7.3</a>, but this would be tedious. Instead, we’ll use an appropriate Taylor polynomial to rewrite <span class="process-math">\(3s^2+2s+1\)</span> as a polynomial centered at <span class="process-math">\(s=1\text{.}\)</span> In particular, we’ll compute <span class="process-math">\(T_2(s)\)</span> for the numerator.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-partial-fractions-with-taylor-polynomials-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-partial-fractions-with-taylor-polynomials-3-2">
 <div class="para">Let <span class="process-math">\(g(s) = 3s^2+2s+1\text{.}\)</span> Then</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-partial-fractions-with-taylor-polynomials-3-2-2">
 \begin{equation*}
 g(1) = 6, g^\prime(1)=8\text{ and }g''(1)=6\text{.}
 \end{equation*}
 </div>
 <div class="para">Therefore,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-partial-fractions-with-taylor-polynomials-3-2-3">
 \begin{equation*}
 g(s) = 6 + 8(s-1) + 3(s-1)^2\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-partial-fractions-with-taylor-polynomials-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-partial-fractions-with-taylor-polynomials-3-3">
 <div class="para">Now that we’ve expanded the numerator <span class="process-math">\(g(s)\)</span> in terms of <span class="process-math">\((s-1)\)</span> it’s straightforward to get our partial fraction decomposition. We simply have</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-partial-fractions-with-taylor-polynomials-3-3-3">
 \begin{equation*}
 G(s) = \frac{6}{(s-1)^3} + \frac{8}{(s-1)^2} + \frac{3}{(s-1)}\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-partial-fractions-with-taylor-polynomials-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-</div></details></div></article></section><section class="subsection" id="subsection-taylors-theorem-taylor-series"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Taylor’s Theorem and Taylor Series</span>
+<div class="autopermalink" data-description="Solution 9.7.6.1"><a href="#example-partial-fractions-with-taylor-polynomials-3" title="Copy heading and permalink for Solution 9.7.6.1" aria-label="Copy heading and permalink for Solution 9.7.6.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.7.6: Partial fractions with Taylor polynomials"><a href="#example-partial-fractions-with-taylor-polynomials" title="Copy heading and permalink for Example 9.7.6: Partial fractions with Taylor polynomials" aria-label="Copy heading and permalink for Example 9.7.6: Partial fractions with Taylor polynomials">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Taylor Polynomials"><a href="#subsection-taylor-polynomials" title="Copy heading and permalink for Subsection: Taylor Polynomials" aria-label="Copy heading and permalink for Subsection: Taylor Polynomials">🔗</a></div></section><section class="subsection" id="subsection-taylors-theorem-taylor-series"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Taylor’s Theorem and Taylor Series</span>
 </h3>
-<div class="para" id="subsection-taylors-theorem-taylor-series-2">So far, we’ve seen that Taylor polynomials can provide good approximations to functions near their center. Furthermore, these approximations seem to improve as the order of the Taylor polynomial increases. It’s natural to ask if the approximation becomes exact as we let the order go to <span class="process-math">\(\infty\text{.}\)</span> Doing so transforms the Taylor polynomial into a <em class="emphasis">Taylor series</em>.</div>
+<div class="para" id="subsection-taylors-theorem-taylor-series-2">So far, we’ve seen that Taylor polynomials can provide good approximations to functions near their center. Furthermore, these approximations seem to improve as the order of the Taylor polynomial increases. It’s natural to ask if the approximation becomes exact as we let the order go to <span class="process-math">\(\infty\text{.}\)</span> Doing so transforms the Taylor polynomial into a <em class="emphasis">Taylor series</em>.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-taylors-theorem-taylor-series-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="definition-taylor-series"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.7.7</span><span class="period">.</span><span class="space"> </span><span class="title">Taylor Series.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.7.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Taylor Series.</span>
 </h4>
 <div class="para logical" id="definition-taylor-series-3-1">
 <div class="para">Let <span class="process-math">\(f(x)\)</span> be a function that is infinitely differentiable at <span class="process-math">\(x=a\text{.}\)</span> The <dfn class="terminology">Taylor series</dfn> of <span class="process-math">\(f(x)\)</span> centered at <span class="process-math">\(x=a\)</span> is</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="definition-taylor-series-3-1-6">
 \begin{equation*}
 \sum_{k=0}^{\infty}\frac{f^{(k)}(a)}{k!}(x-a)^k\text{.}
 \end{equation*}
 </div>
 <div class="para">If <span class="process-math">\(a=0\text{,}\)</span> we often call the resulting series the <dfn class="terminology">Maclaurin series</dfn> of <span class="process-math">\(f(x)\text{.}\)</span>
 </div>
-</div></article><div class="para" id="subsection-taylors-theorem-taylor-series-4">Note that if <span class="process-math">\(T_n(x)\)</span> is the order <span class="process-math">\(n\)</span> Taylor polynomial of some infinitely differentiable function <span class="process-math">\(f(x)\text{,}\)</span> then the Taylor series is given by <span class="process-math">\(\lim_{n\to\infty}T_n(x)\)</span> (assuming this limit exists).</div>
-<article class="example example-like" id="example-maclaurin-series-for-the-exponential"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.7.8</span><span class="period">.</span><span class="space"> </span><span class="title">Maclaurin series for the exponential.</span>
-</h4>
-<div class="para" id="example-maclaurin-series-for-the-exponential-2-1">Find the Maclaurin series for <span class="process-math">\(e^{x}\text{.}\)</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#definition-taylor-series-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-maclaurin-series-for-the-exponential-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-maclaurin-series-for-the-exponential-3-1">
+<div class="autopermalink" data-description="Definition 9.7.7: Taylor Series"><a href="#definition-taylor-series" title="Copy heading and permalink for Definition 9.7.7: Taylor Series" aria-label="Copy heading and permalink for Definition 9.7.7: Taylor Series">🔗</a></div></article><div class="para" id="subsection-taylors-theorem-taylor-series-4">Note that if <span class="process-math">\(T_n(x)\)</span> is the order <span class="process-math">\(n\)</span> Taylor polynomial of some infinitely differentiable function <span class="process-math">\(f(x)\text{,}\)</span> then the Taylor series is given by <span class="process-math">\(\lim_{n\to\infty}T_n(x)\)</span> (assuming this limit exists).<div class="autopermalink" data-description="Paragraph"><a href="#subsection-taylors-theorem-taylor-series-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="example-maclaurin-series-for-the-exponential"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.7.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Maclaurin series for the exponential.</span>
+</h4>
+<div class="para" id="example-maclaurin-series-for-the-exponential-2-1">Find the Maclaurin series for <span class="process-math">\(e^{x}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-maclaurin-series-for-the-exponential-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-maclaurin-series-for-the-exponential-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-maclaurin-series-for-the-exponential-3-1">
 <div class="para">Let <span class="process-math">\(f(x) = e^x\text{.}\)</span> As mentioned in <a href="section-taylor-and-maclaurin-series.html#example-taylor-polynomial-of-e-x-" class="xref" data-knowl="./knowl/xref/example-taylor-polynomial-of-e-x-.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 9.7.2: Taylor polynomial of e^x">Example 9.7.2</a>, all of the derivatives of <span class="process-math">\(f\)</span> at <span class="process-math">\(0\)</span> are <span class="process-math">\(1\text{.}\)</span> Therefore the Maclaurin series is</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-taylor-polynomial-of-e-x-.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-taylor-polynomial-of-e-x-.html" id="example-maclaurin-series-for-the-exponential-3-1-6">
 \begin{equation*}
 \sum_{k=0}^{\infty}\frac{1}{k!}x^k\text{.}
 \end{equation*}
 </div>
-</div></div></details></div></article><div class="para" id="subsection-taylors-theorem-taylor-series-6">
-<a href="section-taylor-and-maclaurin-series.html#example-maclaurin-series-for-the-exponential" class="xref" data-knowl="./knowl/xref/example-maclaurin-series-for-the-exponential.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 9.7.8: Maclaurin series for the exponential">Example 9.7.8</a> gives us the Taylor series about <span class="process-math">\(0\)</span> for <span class="process-math">\(e^{x}\text{,}\)</span> but at the moment we don’t know if it actually equals <span class="process-math">\(e^{x}\text{.}\)</span> However, if we differentiate the series we get the same series back. In other words, the Taylor series of <span class="process-math">\(e^{x}\)</span> <em class="emphasis">is its own derivative</em>, which is a promising sign.</div>
-<article class="example example-like" id="example-taylor-series-for-e-x-2"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.7.9</span><span class="period">.</span><span class="space"> </span><span class="title">Taylor series for <span class="process-math">\(e^{-x^2}\)</span>.</span>
-</h4>
-<div class="para" id="example-taylor-series-for-e-x-2-2-1">Assuming that <span class="process-math">\(e^{x}\)</span> equals its Taylor series, find the Maclaurin series for <span class="process-math">\(e^{-x^{2}}\text{.}\)</span> Also, find the <span class="process-math">\(70^{\text{th}}\)</span> derivative of <span class="process-math">\(e^{-x^{2}}\)</span> at <span class="process-math">\(x = 0\text{.}\)</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-maclaurin-series-for-the-exponential-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-taylor-series-for-e-x-2-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="autopermalink" data-description="Solution 9.7.8.1"><a href="#example-maclaurin-series-for-the-exponential-3" title="Copy heading and permalink for Solution 9.7.8.1" aria-label="Copy heading and permalink for Solution 9.7.8.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.7.8: Maclaurin series for the exponential"><a href="#example-maclaurin-series-for-the-exponential" title="Copy heading and permalink for Example 9.7.8: Maclaurin series for the exponential" aria-label="Copy heading and permalink for Example 9.7.8: Maclaurin series for the exponential">🔗</a></div></article><div class="para" id="subsection-taylors-theorem-taylor-series-6">
+<a href="section-taylor-and-maclaurin-series.html#example-maclaurin-series-for-the-exponential" class="xref" data-knowl="./knowl/xref/example-maclaurin-series-for-the-exponential.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 9.7.8: Maclaurin series for the exponential">Example 9.7.8</a> gives us the Taylor series about <span class="process-math">\(0\)</span> for <span class="process-math">\(e^{x}\text{,}\)</span> but at the moment we don’t know if it actually equals <span class="process-math">\(e^{x}\text{.}\)</span> However, if we differentiate the series we get the same series back. In other words, the Taylor series of <span class="process-math">\(e^{x}\)</span> <em class="emphasis">is its own derivative</em>, which is a promising sign.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-taylors-theorem-taylor-series-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="example-taylor-series-for-e-x-2"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.7.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Taylor series for <span class="process-math">\(e^{-x^2}\)</span>.</span>
+</h4>
+<div class="para" id="example-taylor-series-for-e-x-2-2-1">Assuming that <span class="process-math">\(e^{x}\)</span> equals its Taylor series, find the Maclaurin series for <span class="process-math">\(e^{-x^{2}}\text{.}\)</span> Also, find the <span class="process-math">\(70^{\text{th}}\)</span> derivative of <span class="process-math">\(e^{-x^{2}}\)</span> at <span class="process-math">\(x = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-taylor-series-for-e-x-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-taylor-series-for-e-x-2-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="example-taylor-series-for-e-x-2-3-1">
 <div class="para">We could use <a href="section-taylor-and-maclaurin-series.html#definition-taylor-series" class="xref" data-knowl="./knowl/xref/definition-taylor-series.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 9.7.7: Taylor Series">Definition 9.7.7</a> to find the Maclaurin series for <span class="process-math">\(e^{-x^{2}}\text{,}\)</span> but it’s far, far easier to use the series for <span class="process-math">\(e^{x}\text{:}\)</span>
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-taylor-series.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-taylor-series.html" id="example-taylor-series-for-e-x-2-3-1-4">
 \begin{equation*}
 e^{-x^{2}} = \sum_{k=0}^{\infty}\frac{(-x^{2})^{k}}{k!} = \sum_{k=0}^{\infty}(-1)^{k}\frac{x^{2k}}{k!}\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-taylor-series-for-e-x-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-taylor-series-for-e-x-2-3-2">
 <div class="para">It turns out that this also lets us find derivatives at <span class="process-math">\(0\)</span> incredibly quickly. If we let <span class="process-math">\(f(x) = e^{-x^{2}}\text{,}\)</span> then it follows that <span class="process-math">\(\frac{f^{(k)}(0)}{k!}\)</span> is the coefficient of <span class="process-math">\(x^{k}\)</span> in the power series for <span class="process-math">\(f(x)\text{.}\)</span> Therefore</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-taylor-series-for-e-x-2-3-2-6">
 \begin{equation*}
 \frac{f^{(70)}(0)}{70!} = \frac{(-1)^{35}}{35!} \Rightarrow f^{(70)}(0) = -\frac{70!}{35!}\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-taylor-series-for-e-x-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-</div></details></div></article><div class="para logical" id="subsection-taylors-theorem-taylor-series-8">
+<div class="autopermalink" data-description="Solution 9.7.9.1"><a href="#example-taylor-series-for-e-x-2-3" title="Copy heading and permalink for Solution 9.7.9.1" aria-label="Copy heading and permalink for Solution 9.7.9.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.7.9: Taylor series for e^{-x^2}"><a href="#example-taylor-series-for-e-x-2" title="Copy heading and permalink for Example 9.7.9: Taylor series for e^{-x^2}" aria-label="Copy heading and permalink for Example 9.7.9: Taylor series for e^{-x^2}">🔗</a></div></article><div class="para logical" id="subsection-taylors-theorem-taylor-series-8">
 <div class="para">Not every function with a Taylor series can be represented by its Taylor series. The typical example of this poor behavior is the piecewise function</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsection-taylors-theorem-taylor-series-8-1">
 \begin{equation*}
 f(x) = \begin{cases}e^{-1/x} \amp\text{ if }x\neq0 \\ 0 \amp\text{ if }x=0\end{cases}\text{.}
 \end{equation*}
 </div>
 <div class="para">It can be shown that <span class="process-math">\(f^{(k)}(0) = 0\)</span> for all <span class="process-math">\(k\)</span> and so the Maclaurin series of <span class="process-math">\(f(x)\)</span> must be</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsection-taylors-theorem-taylor-series-8-5">
 \begin{equation*}
 0 + 0x + 0x^2 + \cdots = 0\text{.}
 \end{equation*}
 </div>
 <div class="para">However, this series cannot equal <span class="process-math">\(f(x)\)</span> except at <span class="process-math">\(x = 0\text{.}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-taylors-theorem-taylor-series-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsection-taylors-theorem-taylor-series-9">If we want to use Taylor series, then we need to know exactly when a function is equal to its Taylor series. This can be determined with <em class="emphasis">Taylor’s Theorem</em>.</div>
+<div class="para" id="subsection-taylors-theorem-taylor-series-9">If we want to use Taylor series, then we need to know exactly when a function is equal to its Taylor series. This can be determined with <em class="emphasis">Taylor’s Theorem</em>.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-taylors-theorem-taylor-series-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="theorem-taylor-s-theorem-lagrange"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.7.10</span><span class="period">.</span><span class="space"> </span><span class="title">Taylor’s Theorem (Lagrange’s form).</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.7.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Taylor’s Theorem (Lagrange’s form).</span>
 </h4>
 <div class="para logical" id="theorem-taylor-s-theorem-lagrange-2-1">
 <div class="para">Let <span class="process-math">\(f(x)\)</span> be a function that is <span class="process-math">\((n+1)\)</span>-times differentiable. Let <span class="process-math">\(T_n(x)\)</span> denote the corresponding Taylor polynomial of order <span class="process-math">\(n\)</span> centered at <span class="process-math">\(a\text{.}\)</span> Then there exists <span class="process-math">\(z\)</span> between <span class="process-math">\(a\)</span> and <span class="process-math">\(x\)</span> such that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="theorem-taylor-s-theorem-lagrange-2-1-9">
 \begin{equation*}
 f(x) = T_n(x) + \frac{f^{(k+1)}(z)}{(k+1)!}(x-a)^{k+1}\text{.}
 \end{equation*}
 </div>
-</div></article><article class="example example-like" id="example-maclaurin-series-for-cosine"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.7.11</span><span class="period">.</span><span class="space"> </span><span class="title">Maclaurin Series for Cosine.</span>
-</h4>
-<div class="para" id="example-maclaurin-series-for-cosine-2-1">Find the Maclaurin series for <span class="process-math">\(\cos x\)</span> and show that <span class="process-math">\(\cos x\)</span> equals its Maclaurin series for all <span class="process-math">\(x\text{.}\)</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-taylor-s-theorem-lagrange-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-maclaurin-series-for-cosine-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="autopermalink" data-description="Theorem 9.7.10: Taylor’s Theorem (Lagrange’s form)"><a href="#theorem-taylor-s-theorem-lagrange" title="Copy heading and permalink for Theorem 9.7.10: Taylor’s Theorem (Lagrange’s form)" aria-label="Copy heading and permalink for Theorem 9.7.10: Taylor’s Theorem (Lagrange’s form)">🔗</a></div></article><article class="example example-like" id="example-maclaurin-series-for-cosine"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.7.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Maclaurin Series for Cosine.</span>
+</h4>
+<div class="para" id="example-maclaurin-series-for-cosine-2-1">Find the Maclaurin series for <span class="process-math">\(\cos x\)</span> and show that <span class="process-math">\(\cos x\)</span> equals its Maclaurin series for all <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-maclaurin-series-for-cosine-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-maclaurin-series-for-cosine-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="example-maclaurin-series-for-cosine-3-1">
 <div class="para">Using <a href="section-taylor-and-maclaurin-series.html#definition-taylor-series" class="xref" data-knowl="./knowl/xref/definition-taylor-series.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 9.7.7: Taylor Series">Definition 9.7.7</a>, the Taylor series for <span class="process-math">\(f(x) = \cos x\)</span> at <span class="process-math">\(a = 0\)</span> is given by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-taylor-series.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-taylor-series.html" id="example-maclaurin-series-for-cosine-3-1-4">
 \begin{equation*}
 \sum_{k=0}^{\infty}\frac{f^{(k)}(0)}{k!}x^{k}\text{.}
 \end{equation*}
@@ -1055,78 +1004,92 @@ f^{(3)}(0) \amp = 0
 \end{align*}
 </div>
 <div class="para">and so on. So the Maclaurin series for <span class="process-math">\(\cos x\)</span> is given by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-taylor-series.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-taylor-series.html" id="example-maclaurin-series-for-cosine-3-1-8">
 \begin{equation*}
 1 - \frac{1}{2!}x^{2} + \frac{1}{4!}x^{4} - \frac{1}{6!}x^{6} + \cdots\text{.}
 \end{equation*}
 </div>
 <div class="para">In sigma notation, this is</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-taylor-series.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-taylor-series.html" id="example-maclaurin-series-for-cosine-3-1-9">
 \begin{equation*}
 \sum_{k=0}^{\infty}\frac{(-1)^{k}}{(2k)!}x^{2k}\text{.}
 \end{equation*}
 </div>
 <div class="para">Using the ratio test, we can also show that this series converges for all <span class="process-math">\(x\text{.}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-maclaurin-series-for-cosine-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-maclaurin-series-for-cosine-3-2">
 <div class="para">To show that this series actually equals <span class="process-math">\(\cos x\text{,}\)</span> we need to consider the remainder term</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-taylor-s-theorem-lagrange.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-taylor-s-theorem-lagrange.html" id="example-maclaurin-series-for-cosine-3-2-2">
 \begin{equation*}
 R_{N}(x) = \frac{f^{(N+1)}(z)}{(N+1)!}x^{N+1}\text{.}
 \end{equation*}
 </div>
 <div class="para">from <a href="section-taylor-and-maclaurin-series.html#theorem-taylor-s-theorem-lagrange" class="xref" data-knowl="./knowl/xref/theorem-taylor-s-theorem-lagrange.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.7.10: Taylor’s Theorem (Lagrange’s form)">Theorem 9.7.10</a> We don’t know what exactly <span class="process-math">\(z\)</span> is, except that it’s between <span class="process-math">\(0\)</span> and <span class="process-math">\(x\text{.}\)</span> However, we do know that <span class="process-math">\(\|f^{(N+1)}(z)\|\leq 1\text{,}\)</span> which means that the remainder satisfies</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-taylor-s-theorem-lagrange.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-taylor-s-theorem-lagrange.html" id="example-maclaurin-series-for-cosine-3-2-8">
 \begin{equation*}
 |R_{N}(x)| \leq \frac{|x|^{N+1}}{(N+1)!}\to0\text{.}
 \end{equation*}
 </div>
 <div class="para">Therefore <span class="process-math">\(\cos x\)</span> equals its Maclaurin series.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-maclaurin-series-for-cosine-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-</div></details></div></article><div class="para" id="subsection-taylors-theorem-taylor-series-12">Now that we know how to express <span class="process-math">\(\cos x\)</span> as a power series, we can do the same for <span class="process-math">\(\sin x\text{.}\)</span>
+<div class="autopermalink" data-description="Solution 9.7.11.1"><a href="#example-maclaurin-series-for-cosine-3" title="Copy heading and permalink for Solution 9.7.11.1" aria-label="Copy heading and permalink for Solution 9.7.11.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.7.11: Maclaurin Series for Cosine"><a href="#example-maclaurin-series-for-cosine" title="Copy heading and permalink for Example 9.7.11: Maclaurin Series for Cosine" aria-label="Copy heading and permalink for Example 9.7.11: Maclaurin Series for Cosine">🔗</a></div></article><div class="para" id="subsection-taylors-theorem-taylor-series-12">Now that we know how to express <span class="process-math">\(\cos x\)</span> as a power series, we can do the same for <span class="process-math">\(\sin x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-taylors-theorem-taylor-series-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-maclaurin-series-for-sine"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.7.12</span><span class="period">.</span><span class="space"> </span><span class="title">Maclaurin Series for Sine.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.7.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Maclaurin Series for Sine.</span>
 </h4>
-<div class="para" id="example-maclaurin-series-for-sine-2-1">Find the Maclaurin series for <span class="process-math">\(\sin x\text{.}\)</span>
-</div></article><div class="para" id="subsection-taylors-theorem-taylor-series-14">Knowing a power series representation for a function makes calculus with that function extremely straightforward, at least if you’re willing to use series.</div>
+<div class="para" id="example-maclaurin-series-for-sine-2-1">Find the Maclaurin series for <span class="process-math">\(\sin x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-maclaurin-series-for-sine-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 9.7.12: Maclaurin Series for Sine"><a href="#example-maclaurin-series-for-sine" title="Copy heading and permalink for Example 9.7.12: Maclaurin Series for Sine" aria-label="Copy heading and permalink for Example 9.7.12: Maclaurin Series for Sine">🔗</a></div></article><div class="para" id="subsection-taylors-theorem-taylor-series-14">Knowing a power series representation for a function makes calculus with that function extremely straightforward, at least if you’re willing to use series.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-taylors-theorem-taylor-series-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-computing-a-definite-integral"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.7.13</span><span class="period">.</span><span class="space"> </span><span class="title">Computing a Definite Integral.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.7.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Computing a Definite Integral.</span>
 </h4>
-<div class="para" id="example-computing-a-definite-integral-2-1">Use power series to find <span class="process-math">\(\displaystyle\int_{0}^{1}e^{-x^{2}}\,dx\text{,}\)</span> and find an approximation within <span class="process-math">\(.01\)</span> of the exact value.</div>
-<div class="solutions"><details id="example-computing-a-definite-integral-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-computing-a-definite-integral-3-1">
+<div class="para" id="example-computing-a-definite-integral-2-1">Use power series to find <span class="process-math">\(\displaystyle\int_{0}^{1}e^{-x^{2}}\,dx\text{,}\)</span> and find an approximation within <span class="process-math">\(.01\)</span> of the exact value.<div class="autopermalink" data-description="Paragraph"><a href="#example-computing-a-definite-integral-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-computing-a-definite-integral-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-computing-a-definite-integral-3-1">
 <div class="para">Using the power series for <span class="process-math">\(e^{-x^{2}}\)</span> from <a href="section-taylor-and-maclaurin-series.html#example-taylor-series-for-e-x-2" class="xref" data-knowl="./knowl/xref/example-taylor-series-for-e-x-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 9.7.9: Taylor series for e^{-x^2}">Example 9.7.9</a>, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-taylor-series-for-e-x-2.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-taylor-series-for-e-x-2.html" id="example-computing-a-definite-integral-3-1-3">
 \begin{equation*}
 \int_{0}^{1}e^{-x^{2}}\,dx = \sum_{k=0}^{\infty}\frac{(-1)^{k}}{(2k+1)k!}\text{.}
 \end{equation*}
 </div>
 <div class="para">This is an alternating series, so by the alternating series test the partial sum <span class="process-math">\(\displaystyle\sum_{k=0}^{N}\frac{(-1)^{k}}{(2k+1)k!}\)</span> is always within</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-taylor-series-for-e-x-2.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-taylor-series-for-e-x-2.html" id="example-computing-a-definite-integral-3-1-5">
 \begin{equation*}
 \frac{1}{(2(N+1)+1)(N+1)!}
 \end{equation*}
 </div>
 <div class="para">of the exact value. So if we want to get enough terms of the series to be within <span class="process-math">\(.01\)</span> of the exact value, we need to pick <span class="process-math">\(N\)</span> so that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-taylor-series-for-e-x-2.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-taylor-series-for-e-x-2.html" id="example-computing-a-definite-integral-3-1-8">
 \begin{equation*}
 \frac{1}{(2(N+1)+1)(N+1)!} \lt .01\text{,}
 \end{equation*}
 </div>
 <div class="para">which occurs at <span class="process-math">\(N = 3\text{.}\)</span> So</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-taylor-series-for-e-x-2.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-taylor-series-for-e-x-2.html" id="example-computing-a-definite-integral-3-1-10">
 \begin{equation*}
 \int_{0}^{1}e^{-x^{2}}\,dx \approx 1 - \frac{1}{3} + \frac{1}{10} - \frac{1}{42} = 0.742...\text{.}
 \end{equation*}
 </div>
 <div class="para">This is within about <span class="process-math">\(.004\)</span> of the exact value.</div>
-</div></div></details></div></article><div class="para" id="subsection-taylors-theorem-taylor-series-16">One extremely useful application of power series in mathematics and its applications is in deriving <dfn class="terminology">Euler’s Formula</dfn>.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-computing-a-definite-integral-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.7.13.1"><a href="#example-computing-a-definite-integral-3" title="Copy heading and permalink for Solution 9.7.13.1" aria-label="Copy heading and permalink for Solution 9.7.13.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.7.13: Computing a Definite Integral"><a href="#example-computing-a-definite-integral" title="Copy heading and permalink for Example 9.7.13: Computing a Definite Integral" aria-label="Copy heading and permalink for Example 9.7.13: Computing a Definite Integral">🔗</a></div></article><div class="para" id="subsection-taylors-theorem-taylor-series-16">One extremely useful application of power series in mathematics and its applications is in deriving <dfn class="terminology">Euler’s Formula</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-taylors-theorem-taylor-series-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="theorem-euler-s-formula"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.7.14</span><span class="period">.</span><span class="space"> </span><span class="title">Euler’s Formula.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.7.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Euler’s Formula.</span>
 </h4>
-<div class="para" id="theorem-euler-s-formula-2-1">Let <span class="process-math">\(i = \sqrt{-1}\text{.}\)</span> Then <span class="process-math">\(e^{ix} = \cos x + i\sin x\text{.}\)</span>
-</div></article><details id="theorem-euler-s-formula-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical" id="theorem-euler-s-formula-3-1">
+<div class="para" id="theorem-euler-s-formula-2-1">Let <span class="process-math">\(i = \sqrt{-1}\text{.}\)</span> Then <span class="process-math">\(e^{ix} = \cos x + i\sin x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#theorem-euler-s-formula-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 9.7.14: Euler’s Formula"><a href="#theorem-euler-s-formula" title="Copy heading and permalink for Theorem 9.7.14: Euler’s Formula" aria-label="Copy heading and permalink for Theorem 9.7.14: Euler’s Formula">🔗</a></div></article><details id="theorem-euler-s-formula-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical" id="theorem-euler-s-formula-3-1">
 <div class="para">We can try to use power series to make sense of <span class="process-math">\(e^{ix}\text{.}\)</span> Our idea is that since the power series for <span class="process-math">\(e^{x}\)</span> is valid for all <span class="process-math">\(x\text{,}\)</span> it should be valid for all <span class="process-math">\(ix\)</span> as well, giving</div>
 <div class="displaymath process-math" id="theorem-euler-s-formula-3-1-5">
 \begin{align*}
@@ -1135,18 +1098,20 @@ e^{ix} \amp 1 + (ix) + \frac{(ix)^{2}}{2!} + \frac{(ix)^{3}}{3!} + \frac{(ix)^{4
 \end{align*}
 </div>
 <div class="para">In particular,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="theorem-euler-s-formula-3-1-6">
 \begin{equation*}
 e^{i\pi} = -1\text{.}
 \end{equation*}
 </div>
-</div></article></details></section></section></div>
-<div class="ptx-content-footer">
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-euler-s-formula-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 9.7.14.1"><a href="#theorem-euler-s-formula-3" title="Copy heading and permalink for Proof 9.7.14.1" aria-label="Copy heading and permalink for Proof 9.7.14.1">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection: Taylor’s Theorem and Taylor Series"><a href="#subsection-taylors-theorem-taylor-series" title="Copy heading and permalink for Subsection: Taylor’s Theorem and Taylor Series" aria-label="Copy heading and permalink for Subsection: Taylor’s Theorem and Taylor Series">🔗</a></div></section><div class="autopermalink" data-description="Section 9.7: Taylor and Maclaurin Series"><a href="#section-taylor-and-maclaurin-series" title="Copy heading and permalink for Section 9.7: Taylor and Maclaurin Series" aria-label="Copy heading and permalink for Section 9.7: Taylor and Maclaurin Series">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="section-representing-functions-as-power-series.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="part-multivariable.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
-<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
 </body>
 </html>

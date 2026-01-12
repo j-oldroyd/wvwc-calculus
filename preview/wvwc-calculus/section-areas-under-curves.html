@@ -6,17 +6,21 @@
 <!--*                                          *-->
 <!--********************************************-->
 <html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>WVWC-CALC Areas Under Curves</title>
-<meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:type" content="book">
-<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo.jpg">
-<meta property="book:title" content="Calculus Notes">
-<meta property="book:author" content="Jesse Oldroyd
-          ">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -88,12 +92,14 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo-brandlogo.jpg">
+<meta property="book:title" content="Calculus Notes">
+<meta property="book:author" content="Jesse Oldroyd
+          ">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -115,127 +121,22 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.1';
+eBookConfig.runestone_version = '7.11.8';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.87cabc2515250052.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.630d5c4fb4b681eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.97f3ae4f7a71ba18.css">
-<style>
-#theorem-combining-continuous-functions-2-1-4 { counter-set: theorem-combining-continuous-functions-2-1-4 0; }
-#theorem-combining-continuous-functions-2-1-4 > li::marker { content: ""counter(theorem-combining-continuous-functions-2-1-4,decimal)"."; }
-#theorem-combining-continuous-functions-2-1-4 > li { counter-increment: theorem-combining-continuous-functions-2-1-4; }
-#example-derivatives-using-the-power-rule-2-1-1 { counter-set: example-derivatives-using-the-power-rule-2-1-1 0; }
-#example-derivatives-using-the-power-rule-2-1-1 > li::marker { content: ""counter(example-derivatives-using-the-power-rule-2-1-1,decimal)"."; }
-#example-derivatives-using-the-power-rule-2-1-1 > li { counter-increment: example-derivatives-using-the-power-rule-2-1-1; }
-#section-extreme-values-of-functions-4-1-1-1 { counter-set: section-extreme-values-of-functions-4-1-1-1 0; }
-#section-extreme-values-of-functions-4-1-1-1 > li::marker { content: ""counter(section-extreme-values-of-functions-4-1-1-1,decimal)"."; }
-#section-extreme-values-of-functions-4-1-1-1 > li { counter-increment: section-extreme-values-of-functions-4-1-1-1; }
-#example-minimizing-material-costs-3-1-1 { counter-set: example-minimizing-material-costs-3-1-1 0; }
-#example-minimizing-material-costs-3-1-1 > li::marker { content: ""counter(example-minimizing-material-costs-3-1-1,decimal)"."; }
-#example-minimizing-material-costs-3-1-1 > li { counter-increment: example-minimizing-material-costs-3-1-1; }
-#example-distance-on-an-ellipse-3-1-1 { counter-set: example-distance-on-an-ellipse-3-1-1 0; }
-#example-distance-on-an-ellipse-3-1-1 > li::marker { content: ""counter(example-distance-on-an-ellipse-3-1-1,decimal)"."; }
-#example-distance-on-an-ellipse-3-1-1 > li { counter-increment: example-distance-on-an-ellipse-3-1-1; }
-#example-finding-antiderivatives-2-1-1 { counter-set: example-finding-antiderivatives-2-1-1 0; }
-#example-finding-antiderivatives-2-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-2-1-1,decimal)"."; }
-#example-finding-antiderivatives-2-1-1 > li { counter-increment: example-finding-antiderivatives-2-1-1; }
-#example-finding-antiderivatives-3-1-1 { counter-set: example-finding-antiderivatives-3-1-1 0; }
-#example-finding-antiderivatives-3-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-3-1-1,decimal)"."; }
-#example-finding-antiderivatives-3-1-1 > li { counter-increment: example-finding-antiderivatives-3-1-1; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 { counter-set: theorem-more-properties-of-the-definite-integral-2-1-3 0; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li::marker { content: ""counter(theorem-more-properties-of-the-definite-integral-2-1-3,decimal)"."; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li { counter-increment: theorem-more-properties-of-the-definite-integral-2-1-3; }
-#theorem-fundamental-theorem-of-calculus-2-2 { counter-set: theorem-fundamental-theorem-of-calculus-2-2 0; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li::marker { content: ""counter(theorem-fundamental-theorem-of-calculus-2-2,decimal)"."; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li { counter-increment: theorem-fundamental-theorem-of-calculus-2-2; }
-#section-substitution-5-3 { counter-set: section-substitution-5-3 0; }
-#section-substitution-5-3 > li::marker { content: ""counter(section-substitution-5-3,decimal)"."; }
-#section-substitution-5-3 > li { counter-increment: section-substitution-5-3; }
-#algorithm-partial-fractions-algorithm-3-1-2 { counter-set: algorithm-partial-fractions-algorithm-3-1-2 0; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li::marker { content: ""counter(algorithm-partial-fractions-algorithm-3-1-2,decimal)"."; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li { counter-increment: algorithm-partial-fractions-algorithm-3-1-2; }
-#section-applications-to-physics-and-engineering-2-2 { counter-set: section-applications-to-physics-and-engineering-2-2 0; }
-#section-applications-to-physics-and-engineering-2-2 > li::marker { content: ""counter(section-applications-to-physics-and-engineering-2-2,decimal)"."; }
-#section-applications-to-physics-and-engineering-2-2 > li { counter-increment: section-applications-to-physics-and-engineering-2-2; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 { counter-set: subsection-moments-and-centers-of-mass-7-1-3-1 0; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-1-3-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-1-3-1; }
-#subsection-moments-and-centers-of-mass-7-2-1 { counter-set: subsection-moments-and-centers-of-mass-7-2-1 0; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-2-1; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 { counter-set: subsection-moments-and-centers-of-mass-12-1-1-4 0; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-1-1-4,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li { counter-increment: subsection-moments-and-centers-of-mass-12-1-1-4; }
-#subsection-moments-and-centers-of-mass-12-2-1 { counter-set: subsection-moments-and-centers-of-mass-12-2-1 0; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-12-2-1; }
-#example-determining-a-sustainable-population-3-3 { counter-set: example-determining-a-sustainable-population-3-3 0; }
-#example-determining-a-sustainable-population-3-3 > li::marker { content: ""counter(example-determining-a-sustainable-population-3-3,decimal)"."; }
-#example-determining-a-sustainable-population-3-3 > li { counter-increment: example-determining-a-sustainable-population-3-3; }
-#theorem-sequential-limit-laws-2-2 { counter-set: theorem-sequential-limit-laws-2-2 0; }
-#theorem-sequential-limit-laws-2-2 > li::marker { content: ""counter(theorem-sequential-limit-laws-2-2,decimal)"."; }
-#theorem-sequential-limit-laws-2-2 > li { counter-increment: theorem-sequential-limit-laws-2-2; }
-#example-guessing-sums-2-1-1 { counter-set: example-guessing-sums-2-1-1 0; }
-#example-guessing-sums-2-1-1 > li::marker { content: ""counter(example-guessing-sums-2-1-1,decimal)"."; }
-#example-guessing-sums-2-1-1 > li { counter-increment: example-guessing-sums-2-1-1; }
-#example-guessing-sums-3-1-1 { counter-set: example-guessing-sums-3-1-1 0; }
-#example-guessing-sums-3-1-1 > li::marker { content: ""counter(example-guessing-sums-3-1-1,decimal)"."; }
-#example-guessing-sums-3-1-1 > li { counter-increment: example-guessing-sums-3-1-1; }
-#theorem-direct-comparison-test-series-3-1-4 { counter-set: theorem-direct-comparison-test-series-3-1-4 0; }
-#theorem-direct-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-direct-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-direct-comparison-test-series-3-1-4 > li { counter-increment: theorem-direct-comparison-test-series-3-1-4; }
-#theorem-limit-comparison-test-series-3-1-4 { counter-set: theorem-limit-comparison-test-series-3-1-4 0; }
-#theorem-limit-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-limit-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-limit-comparison-test-series-3-1-4 > li { counter-increment: theorem-limit-comparison-test-series-3-1-4; }
-#subsection-alternating-series-9-2 { counter-set: subsection-alternating-series-9-2 0; }
-#subsection-alternating-series-9-2 > li::marker { content: ""counter(subsection-alternating-series-9-2,decimal)"."; }
-#subsection-alternating-series-9-2 > li { counter-increment: subsection-alternating-series-9-2; }
-#theorem-ratio-test-2-1-3 { counter-set: theorem-ratio-test-2-1-3 0; }
-#theorem-ratio-test-2-1-3 > li::marker { content: ""counter(theorem-ratio-test-2-1-3,decimal)"."; }
-#theorem-ratio-test-2-1-3 > li { counter-increment: theorem-ratio-test-2-1-3; }
-#theorem-root-test-2-1-3 { counter-set: theorem-root-test-2-1-3 0; }
-#theorem-root-test-2-1-3 > li::marker { content: ""counter(theorem-root-test-2-1-3,decimal)"."; }
-#theorem-root-test-2-1-3 > li { counter-increment: theorem-root-test-2-1-3; }
-#example-examples-of-power-series-2-1-1 { counter-set: example-examples-of-power-series-2-1-1 0; }
-#example-examples-of-power-series-2-1-1 > li::marker { content: ""counter(example-examples-of-power-series-2-1-1,decimal)"."; }
-#example-examples-of-power-series-2-1-1 > li { counter-increment: example-examples-of-power-series-2-1-1; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 { counter-set: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 0; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li::marker { content: ""counter(theorem-properties-of-vector-addition-and-scalar-multiplication-3-2,decimal)"."; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li { counter-increment: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2; }
-#theorem-properties-of-the-dot-product-3-2 { counter-set: theorem-properties-of-the-dot-product-3-2 0; }
-#theorem-properties-of-the-dot-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-dot-product-3-2,decimal)"."; }
-#theorem-properties-of-the-dot-product-3-2 > li { counter-increment: theorem-properties-of-the-dot-product-3-2; }
-#theorem-properties-of-the-cross-product-3-2 { counter-set: theorem-properties-of-the-cross-product-3-2 0; }
-#theorem-properties-of-the-cross-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-cross-product-3-2,decimal)"."; }
-#theorem-properties-of-the-cross-product-3-2 > li { counter-increment: theorem-properties-of-the-cross-product-3-2; }
-#theorem-vector-derivative-rules-3-2 { counter-set: theorem-vector-derivative-rules-3-2 0; }
-#theorem-vector-derivative-rules-3-2 > li::marker { content: ""counter(theorem-vector-derivative-rules-3-2,decimal)"."; }
-#theorem-vector-derivative-rules-3-2 > li { counter-increment: theorem-vector-derivative-rules-3-2; }
-#subsection-continuous-functions-5 { counter-set: subsection-continuous-functions-5 0; }
-#subsection-continuous-functions-5 > li::marker { content: ""counter(subsection-continuous-functions-5,decimal)"."; }
-#subsection-continuous-functions-5 > li { counter-increment: subsection-continuous-functions-5; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 { counter-set: algorithm-method-of-lagrange-multipliers-3-1-7 0; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li::marker { content: ""counter(algorithm-method-of-lagrange-multipliers-3-1-7,decimal)"."; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li { counter-increment: algorithm-method-of-lagrange-multipliers-3-1-7; }
-#subsection-conservative-vector-fields-2-2 { counter-set: subsection-conservative-vector-fields-2-2 0; }
-#subsection-conservative-vector-fields-2-2 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-2,decimal)"."; }
-#subsection-conservative-vector-fields-2-2 > li { counter-increment: subsection-conservative-vector-fields-2-2; }
-#subsection-conservative-vector-fields-2-3 { counter-set: subsection-conservative-vector-fields-2-3 0; }
-#subsection-conservative-vector-fields-2-3 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-3,decimal)"."; }
-#subsection-conservative-vector-fields-2-3 > li { counter-increment: subsection-conservative-vector-fields-2-3; }
-#gfdl-section4-3 { counter-set: gfdl-section4-3 0; }
-#gfdl-section4-3 > li::marker { content: ""counter(gfdl-section4-3,upper-alpha)"."; }
-#gfdl-section4-3 > li { counter-increment: gfdl-section4-3; }
-</style>
+<script src="_static/prefix-runtime.991c135ccf182bf5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1c010553c35c544c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.677a75a9120449ff.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdn.geogebra.org/apps/deployggb.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" target="_blank" href=""><img src="external/./wvwc-logo.jpg" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes:</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
+<img src="external/./wvwc-logo-brandlogo.jpg" alt="Logo image"><div class="title-container">
+<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
 <p class="byline">Jesse Oldroyd</p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
@@ -431,10 +332,10 @@ true);
 <div class="toc-title-box"><a href="applications-differentiation.html" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Differentiation</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-linear-approximations.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear approximations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related Rates</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related rates</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-l-hospital-s-rule.html" class="internal"><span class="codenumber">5.3</span> <span class="title">L’Hospital’s Rule</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme Values of Functions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization Problems</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme values of functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization problems</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-the-mean-value-theorem.html" class="internal"><span class="codenumber">5.6</span> <span class="title">The Mean Value Theorem</span></a></div>
 <ul class="structural toc-item-list">
@@ -442,8 +343,11 @@ true);
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-the-mean-value-theorem.html#subsection-the-mean-value-theorem" class="internal"><span class="title">The Mean Value Theorem</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and Graphs</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and graphs</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-newton-s-method.html#subsection-newtons-method-optimization" class="internal"><span class="title">Newton’s Method for optimization</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-antiderivatives.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Antiderivatives</span></a></div></li>
 </ul>
 </li>
@@ -606,8 +510,14 @@ true);
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-coordinates-in-3-space.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Coordinates in 3-Space</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -797,62 +707,66 @@ true);
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-areas-under-curves"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">6.1</span><span class="space"> </span><span class="title">Areas Under Curves</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Areas Under Curves</span>
 </h2>
-<div class="para" id="section-areas-under-curves-2">We know how to find areas of simple shapes, such as rectangles, triangles and circles. But how can we find the area of a more complicated shape? Say, for example, the area under <span class="process-math">\(y=x^{3}\)</span> from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(x=1\text{?}\)</span> Well, if we don’t know it exactly then we can at least approximate it using a shape we do know. For example, using rectangles.</div>
+<div class="para" id="section-areas-under-curves-2">We know how to find areas of simple shapes, such as rectangles, triangles and circles. But how can we find the area of a more complicated shape? Say, for example, the area under <span class="process-math">\(y=x^{3}\)</span> from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(x=1\text{?}\)</span> Well, if we don’t know it exactly then we can at least approximate it using a shape we do know. For example, using rectangles.<div class="autopermalink" data-description="Paragraph"><a href="#section-areas-under-curves-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="para logical" id="section-areas-under-curves-3">
 <div class="para">A simple way to divide the graph of <span class="process-math">\(y=x^{3}\)</span> using rectangles is to pick several equally spaced points in the interval <span class="process-math">\([0,1]\text{,}\)</span> say</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="section-areas-under-curves-3-3">
 \begin{equation*}
 x_{0} = 1, x_{1} = \frac{1}{3}, x_{2} = \frac{2}{3}, \quad\text{and}\quad x_{3} = 1,
 \end{equation*}
 </div>
 <div class="para">and then draw rectangles using these points to determine the base of each rectangle and the height of the graph above the points to determine the height of each rectangle. In particular, we will have three rectangles; the first with base <span class="process-math">\([0,\frac{1}{3}]\text{,}\)</span> the second with base <span class="process-math">\([\frac{1}{3},\frac{2}{3}]\)</span> and the third with base <span class="process-math">\([\frac{2}{3},1]\text{.}\)</span> Now, the height of each rectangle comes from a point on the graph above the corresponding interval. To make these specific (and relatively straightforward), we’ll use <dfn class="terminology">right endpoints</dfn> to determine the height of each rectangle. So the height of each respective rectangle is given by <span class="process-math">\((\frac{1}{3})^{3}\text{,}\)</span> <span class="process-math">\((\frac{2}{3})^{3}\)</span> and by <span class="process-math">\(1^{3}\text{.}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-areas-under-curves-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="section-areas-under-curves-4">
 <div class="para">Now, if we add up the areas of these rectangles we get an approximation for the area under the graph. Call these areas <span class="process-math">\(A_{1},A_{2},A_{3}\text{.}\)</span> So the area under the graph of <span class="process-math">\(y = x^{3}\)</span> from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(x=1\)</span> is about</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="section-areas-under-curves-4-5">
 \begin{equation*}
 A_{1} + A_{2} + A_{3} = \frac{4}{9}.
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-areas-under-curves-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="section-areas-under-curves-5">
 <div class="para">There’s nothing stopping us from going further here. For example, we pick <span class="process-math">\(n\)</span> rectangles, each with base length <span class="process-math">\(\frac{1}{n}\)</span> and heights determined by right endpoints as above, then the area <span class="process-math">\(R_{n}\)</span> of all of the rectangles will be an approximation (in fact, an overestimate) of the area of <span class="process-math">\(y = x^{3}\text{.}\)</span> The bases of these rectangles are given by</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="section-areas-under-curves-5-5">
 \begin{equation*}
 [0,\frac{1}{n}], [\frac{1}{n},\frac{2}{n}],\ldots,[\frac{n-1}{n},\frac{n}{n}].
 \end{equation*}
 </div>
 <div class="para">So the areas of these rectangles are</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="section-areas-under-curves-5-6">
 \begin{equation*}
 \frac{1}{n}\left(\frac{1}{n}\right)^{3}, \frac{1}{n}\left(\frac{2}{n}\right)^{3},\ldots,\frac{1}{n}\left(\frac{n-1}{n}\right)^{3}, \frac{1}{n}\left(\frac{n}{n}\right)^{3}.
 \end{equation*}
 </div>
 <div class="para">Adding these up, we get</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="section-areas-under-curves-5-7">
 \begin{equation*}
 R_{n} = \frac{1}{n}\frac{1^{3}+2^{3} + 3^{3} + \cdots + n^{3}}{n^{3}}
 \end{equation*}
 </div>
 <div class="para">or just</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="section-areas-under-curves-5-8">
 \begin{equation*}
 R_{n} = \frac{1^{3} + 2^{3} + \cdots + n^{3}}{n^{4}}.
 \end{equation*}
 </div>
 <div class="para">So if we sent <span class="process-math">\(n\)</span> to <span class="process-math">\(\infty\text{,}\)</span> we should get the exact area. In other words, the area under <span class="process-math">\(y=x^{3}\)</span> from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(x=1\)</span> is given by</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="section-areas-under-curves-5-14">
 \begin{equation*}
 \lim_{n\to\infty}R_{n} = \lim_{n\to\infty}\frac{1^{3} + 2^{3} + \cdots + n^{3}}{n^{4}}.
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-areas-under-curves-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="section-areas-under-curves-6">
 <div class="para">Actually finding this limit requires some trickery. It’s not at all obvious, but we can write</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="section-areas-under-curves-6-1">
 \begin{equation*}
 1^{3} + 2^{3} + \cdots + n^{3} = \left[\frac{n(n+1)}{2}\right]^{2}.
 \end{equation*}
@@ -868,6 +782,7 @@ R_{n} = \frac{1^{3} + 2^{3} + \cdots + n^{3}}{n^{4}}.
 </div>
 <div class="para">So the exact area under <span class="process-math">\(y = x^{3}\)</span> from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(x=1\)</span> is <span class="process-math">\(\frac{1}{4}\text{.}\)</span> Note that this matches up with our intuition from the last chapter: the area should be equal to the net change of an antiderivative. In this case, an antiderivative of <span class="process-math">\(x^{3}\)</span> is <span class="process-math">\(\frac{1}{4}x^{4}\text{,}\)</span> and the net change of <span class="process-math">\(\frac{1}{4}x^{4}\)</span> from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(x=1\)</span> is exactly <span class="process-math">\(\frac{1}{4}\text{.}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-areas-under-curves-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="section-areas-under-curves-7">
 <div class="para">The process we used above for <span class="process-math">\(y = x^{3}\)</span> can be carried out for any continuous function. If we have a function defined on the interval <span class="process-math">\([a,b]\text{,}\)</span> we can approximate the area under the graph by using rectangles. First, we split <span class="process-math">\([a,b]\)</span> into <span class="process-math">\(n\)</span> different subintervals <span class="process-math">\([x_{0},x_{1}],\ldots,[x_{n-1},x_{n}]\text{,}\)</span> each of width <span class="process-math">\(\Delta x = \frac{b-a}{n}\)</span> and where</div>
@@ -881,41 +796,46 @@ x_{n} &amp; a+n\Delta x = b
 \end{align*}
 </div>
 <div class="para">The approximate area under the graph of <span class="process-math">\(y=f(x)\)</span> from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\)</span> is then</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="section-areas-under-curves-7-11">
 \begin{equation*}
 R_{n} = f(x_{1})\Delta x + f(x_{2})\Delta x + \cdots + f(x_{n})\Delta x.
 \end{equation*}
 </div>
 <div class="para">We can now define the area under a graph of a continuous function. Again, the idea is to approximate the graph with more and more rectangles.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-areas-under-curves-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="definition-area"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Area.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Area.</span>
 </h3>
 <div class="para logical" id="definition-area-2-1">
 <div class="para">The <dfn class="terminology">area</dfn> under the graph of a continuous function <span class="process-math">\(y=f(x)\)</span> is the limit of the sum of the areas of the approximating rectangles:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="definition-area-2-1-3">
 \begin{equation*}
 A = \lim_{n\to\infty}R_{n} = \lim_{n\to\infty}[f(x_{1})\Delta x + \cdots + f(x_{n})\Delta x].
 \end{equation*}
 </div>
-</div></article><div class="para" id="section-areas-under-curves-9">Although the previous definition used right endpoints to find the height of each rectangle, this doesn’t have to be the case. We can use left endpoints, midpoints or any other <dfn class="terminology">sample points</dfn> <span class="process-math">\(x_{1}^{*}, x_{2}^{*},\ldots,x_{n}^{*}\text{,}\)</span> where each <span class="process-math">\(x_{i}^{*}\)</span> is a point in the interval <span class="process-math">\([x_{i-1},x_{i}].\)</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#definition-area-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 6.1.1: Area"><a href="#definition-area" title="Copy heading and permalink for Definition 6.1.1: Area" aria-label="Copy heading and permalink for Definition 6.1.1: Area">🔗</a></div></article><div class="para" id="section-areas-under-curves-9">Although the previous definition used right endpoints to find the height of each rectangle, this doesn’t have to be the case. We can use left endpoints, midpoints or any other <dfn class="terminology">sample points</dfn> <span class="process-math">\(x_{1}^{*}, x_{2}^{*},\ldots,x_{n}^{*}\text{,}\)</span> where each <span class="process-math">\(x_{i}^{*}\)</span> is a point in the interval <span class="process-math">\([x_{i-1},x_{i}].\)</span><div class="autopermalink" data-description="Paragraph"><a href="#section-areas-under-curves-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="section-areas-under-curves-10">
 <div class="para">Since finding areas in this way requires writing complicated sums, it seems like a good idea at this point to introduce notation for writing large summations. We call this <dfn class="terminology">sigma notation</dfn>. Sigma notation takes the following form:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="section-areas-under-curves-10-2">
 \begin{equation*}
 \sum_{i=\text{start}}^{\text{finish}}(\text{terms involving }i).
 \end{equation*}
 </div>
 <div class="para">To evaluate such an expression, just plug in the different values for <span class="process-math">\(i\)</span> from start to finish and add up what you get.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-areas-under-curves-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-evaluating-a-sum"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">Evaluating a sum.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Evaluating a sum.</span>
 </h3>
-<div class="para" id="example-evaluating-a-sum-2-1">Determine <span class="process-math">\(\sum_{i=-2}^{3}(4-3i).\)</span>
+<div class="para" id="example-evaluating-a-sum-2-1">Determine <span class="process-math">\(\sum_{i=-2}^{3}(4-3i).\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-evaluating-a-sum-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-evaluating-a-sum-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-evaluating-a-sum-3-1">
-<div class="para">We start at <span class="process-math">\(i=-2\)</span> and finish at <span class="process-math">\(i=3\text{.}\)</span> Plugging all of these values in for <span class="process-math">\(i\text{,}\)</span> we get the following table: <figure class="table table-like" id="table-evaluating-a-sum"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">6.1.3<span class="period">.</span></span><span class="space"> </span>Table of values for <span class="process-math">\(\sum_{i=-2}^{3}(4-3i)\)</span></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="solutions"><details id="example-evaluating-a-sum-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-evaluating-a-sum-3-1">
+<div class="para">We start at <span class="process-math">\(i=-2\)</span> and finish at <span class="process-math">\(i=3\text{.}\)</span> Plugging all of these values in for <span class="process-math">\(i\text{,}\)</span> we get the following table: <figure class="table table-like" id="table-evaluating-a-sum"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Table of values for <span class="process-math">\(\sum_{i=-2}^{3}(4-3i)\)</span><div class="autopermalink" data-description="Table 6.1.3: Table of values for \sum_{i=-2}^{3}(4-3i)"><a href="#table-evaluating-a-sum" title="Copy heading and permalink for Table 6.1.3: Table of values for \sum_{i=-2}^{3}(4-3i)" aria-label="Copy heading and permalink for Table 6.1.3: Table of values for \sum_{i=-2}^{3}(4-3i)">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r0 l0 t3 lines"><span class="process-math">\(i\)</span></td>
 <td class="c m b1 r0 l0 t3 lines"><span class="process-math">\(4-3i\)</span></td>
@@ -951,21 +871,31 @@ A = \lim_{n\to\infty}R_{n} = \lim_{n\to\infty}[f(x_{1})\Delta x + \cdots + f(x_{
 &amp; = 15. 
 \end{align*}
 </div>
-</div></div></details></div></article><article class="example example-like" id="example-using-sigma-notation"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.1.4</span><span class="period">.</span><span class="space"> </span><span class="title">Using sigma notation.</span>
-</h3>
-<div class="para" id="example-using-sigma-notation-2-1">Use sigma notation to write the sum of all squares from <span class="process-math">\(31\)</span> to <span class="process-math">\(245\text{.}\)</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-evaluating-a-sum-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-using-sigma-notation-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-using-sigma-notation-3-1">
+<div class="autopermalink" data-description="Solution 6.1.2.1"><a href="#example-evaluating-a-sum-3" title="Copy heading and permalink for Solution 6.1.2.1" aria-label="Copy heading and permalink for Solution 6.1.2.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 6.1.2: Evaluating a sum"><a href="#example-evaluating-a-sum" title="Copy heading and permalink for Example 6.1.2: Evaluating a sum" aria-label="Copy heading and permalink for Example 6.1.2: Evaluating a sum">🔗</a></div></article><article class="example example-like" id="example-using-sigma-notation"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using sigma notation.</span>
+</h3>
+<div class="para" id="example-using-sigma-notation-2-1">Use sigma notation to write the sum of all squares from <span class="process-math">\(31\)</span> to <span class="process-math">\(245\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-using-sigma-notation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-using-sigma-notation-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-using-sigma-notation-3-1">
 <div class="para">We need to start at <span class="process-math">\(i=31\)</span> and stop at <span class="process-math">\(i=245\text{.}\)</span> So the first component of this sum using sigma notation looks like <span class="process-math">\(\sum_{i=31}^{245}\text{.}\)</span> Now we just need to figure out what goes inside of it. Since we’re adding squares of numbers, we’ll just put <span class="process-math">\(i^{2}\)</span> inside of this sum. Hence the sum of all squares from <span class="process-math">\(31\)</span> to <span class="process-math">\(245\)</span> can be denoted</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-using-sigma-notation-3-1-7">
 \begin{equation*}
 \sum_{i=31}^{245}i^{2}.
 \end{equation*}
 </div>
-</div></div></details></div></article><div class="para" id="section-areas-under-curves-13">Sigma notation has some useful properties, since it’s just another way to write sums.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-using-sigma-notation-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.1.4.1"><a href="#example-using-sigma-notation-3" title="Copy heading and permalink for Solution 6.1.4.1" aria-label="Copy heading and permalink for Solution 6.1.4.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 6.1.4: Using sigma notation"><a href="#example-using-sigma-notation" title="Copy heading and permalink for Example 6.1.4: Using sigma notation" aria-label="Copy heading and permalink for Example 6.1.4: Using sigma notation">🔗</a></div></article><div class="para" id="section-areas-under-curves-13">Sigma notation has some useful properties, since it’s just another way to write sums.<div class="autopermalink" data-description="Paragraph"><a href="#section-areas-under-curves-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="theorem-properties-of-sigma-notation"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.1.5</span><span class="period">.</span><span class="space"> </span><span class="title">Properties of Sigma Notation.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Properties of Sigma Notation.</span>
 </h3>
 <div class="para logical" id="theorem-properties-of-sigma-notation-2-1">
 <div class="para">Let <span class="process-math">\(X = \sum_{i=a}^{b}x_{i}\)</span> and let <span class="process-math">\(Y = \sum_{i=a}^{b}y_{i}\text{.}\)</span> Let <span class="process-math">\(c\)</span> be a constant. Then the following are true:</div>
@@ -979,20 +909,23 @@ A = \lim_{n\to\infty}R_{n} = \lim_{n\to\infty}[f(x_{1})\Delta x + \cdots + f(x_{
 \end{align*}
 </div>
 <div class="para">In other words, we can break sigma notation up over addition and subtraction, and we can move constants outside of it.</div>
-</div></article><article class="example example-like" id="example-areas-using-sigma-notation"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.1.6</span><span class="period">.</span><span class="space"> </span><span class="title">Areas using sigma notation.</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-properties-of-sigma-notation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 6.1.5: Properties of Sigma Notation"><a href="#theorem-properties-of-sigma-notation" title="Copy heading and permalink for Theorem 6.1.5: Properties of Sigma Notation" aria-label="Copy heading and permalink for Theorem 6.1.5: Properties of Sigma Notation">🔗</a></div></article><article class="example example-like" id="example-areas-using-sigma-notation"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Areas using sigma notation.</span>
 </h3>
-<div class="para" id="example-areas-using-sigma-notation-2-1">Write down a limit that gives the area under <span class="process-math">\(f(x) = \sin x\)</span> from <span class="process-math">\(x=1\)</span> to <span class="process-math">\(x = 3\)</span> using sigma notation.</div>
-<div class="solutions"><details id="example-areas-using-sigma-notation-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-areas-using-sigma-notation-2-1">Write down a limit that gives the area under <span class="process-math">\(f(x) = \sin x\)</span> from <span class="process-math">\(x=1\)</span> to <span class="process-math">\(x = 3\)</span> using sigma notation.<div class="autopermalink" data-description="Paragraph"><a href="#example-areas-using-sigma-notation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-areas-using-sigma-notation-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="example-areas-using-sigma-notation-3-1">
 <div class="para">First, note that we can rewrite <a href="section-areas-under-curves.html#definition-area" class="xref" data-knowl="./knowl/xref/definition-area.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 6.1.1: Area">Definition 6.1.1</a> using sigma notation as</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-area.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-area.html" id="example-areas-using-sigma-notation-3-1-2">
 \begin{equation*}
 A = \lim_{n\to\infty}\sum_{i=1}^{n}f(x_{i})\Delta x.
 \end{equation*}
 </div>
 <div class="para">We know what <span class="process-math">\(f(x)\)</span> is, so we just need to identify <span class="process-math">\(x_{i}\)</span> and <span class="process-math">\(\Delta x\text{.}\)</span> <span class="process-math">\(\Delta x\)</span> isn’t too bad here, it’s just</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-area.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-area.html" id="example-areas-using-sigma-notation-3-1-7">
 \begin{equation*}
 \Delta x = \frac{3-1}{n} = \frac{2}{n}.
 \end{equation*}
@@ -1009,65 +942,76 @@ x_{n} &amp; = 3
 \end{align*}
 </div>
 <div class="para">In general,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-area.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-area.html" id="example-areas-using-sigma-notation-3-1-10">
 \begin{equation*}
 x_{i} = 1 + i\frac{2}{n} = \frac{n+2i}{n}
 \end{equation*}
 </div>
 <div class="para">for <span class="process-math">\(1\leq i\leq n\text{.}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-areas-using-sigma-notation-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-areas-using-sigma-notation-3-2">
 <div class="para">Now we have everything we need to write our limit. Hence the area under <span class="process-math">\(\sin x\)</span> from <span class="process-math">\(1\)</span> to <span class="process-math">\(3\)</span> is given by</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-areas-using-sigma-notation-3-2-4">
 \begin{equation*}
 \lim_{n\to\infty}\sum_{i=1}^{n}\sin\left(\frac{n+2i}{n}\right)\frac{2}{n}.
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-areas-using-sigma-notation-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-</div></details></div></article><div class="para" id="section-areas-under-curves-16">Just as the problem of finding the slope of a tangent line can be viewed as a rate of change problem, the problem of finding areas can be viewed as an <em class="emphasis">accumulation problem</em>.</div>
+<div class="autopermalink" data-description="Solution 6.1.6.1"><a href="#example-areas-using-sigma-notation-3" title="Copy heading and permalink for Solution 6.1.6.1" aria-label="Copy heading and permalink for Solution 6.1.6.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 6.1.6: Areas using sigma notation"><a href="#example-areas-using-sigma-notation" title="Copy heading and permalink for Example 6.1.6: Areas using sigma notation" aria-label="Copy heading and permalink for Example 6.1.6: Areas using sigma notation">🔗</a></div></article><div class="para" id="section-areas-under-curves-16">Just as the problem of finding the slope of a tangent line can be viewed as a rate of change problem, the problem of finding areas can be viewed as an <em class="emphasis">accumulation problem</em>.<div class="autopermalink" data-description="Paragraph"><a href="#section-areas-under-curves-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-finding-work-done"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">Finding work done.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Finding work done.</span>
 </h3>
 <div class="para logical" id="example-finding-work-done-2-1">
 <div class="para">In physics, the work done by a constant force <span class="process-math">\(F\)</span> on some particle that moves a displacement <span class="process-math">\(d\)</span> is given by the formula</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-finding-work-done-2-1-3">
 \begin{equation*}
 W = Fd.
 \end{equation*}
 </div>
 <div class="para">How should we define the work done by a variable force?</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-finding-work-done-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-finding-work-done-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="example-finding-work-done-3-1">The main idea here is to treat the variable force as the combination of several constant forces. To be specific, let <span class="process-math">\(F(x)\)</span> denote our force (which depends on position <span class="process-math">\(x\)</span>) and suppose it acts on a particle moving from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\text{.}\)</span> <span class="process-math">\(F(x)\)</span> itself may not be constant, but if we break <span class="process-math">\([a,b]\)</span> up into <span class="process-math">\(n\)</span> subintervals of the form <span class="process-math">\([x_{i-1},x_{i}]\)</span> each of length <span class="process-math">\(\Delta x = \frac{b-a}{n}\text{,}\)</span> then <span class="process-math">\(F(x)\)</span> should be nearly constant on each subinterval. So we can pick points <span class="process-math">\(x_{i}^{*}\)</span> from each subinterval and say that <span class="process-math">\(F(x)\approx F(x_{i}^{*})\)</span> for all <span class="process-math">\(x\)</span> in <span class="process-math">\([x_{i-1},x_{i}]\text{.}\)</span>
+<div class="solutions"><details id="example-finding-work-done-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-finding-work-done-3-1">The main idea here is to treat the variable force as the combination of several constant forces. To be specific, let <span class="process-math">\(F(x)\)</span> denote our force (which depends on position <span class="process-math">\(x\)</span>) and suppose it acts on a particle moving from <span class="process-math">\(x=a\)</span> to <span class="process-math">\(x=b\text{.}\)</span> <span class="process-math">\(F(x)\)</span> itself may not be constant, but if we break <span class="process-math">\([a,b]\)</span> up into <span class="process-math">\(n\)</span> subintervals of the form <span class="process-math">\([x_{i-1},x_{i}]\)</span> each of length <span class="process-math">\(\Delta x = \frac{b-a}{n}\text{,}\)</span> then <span class="process-math">\(F(x)\)</span> should be nearly constant on each subinterval. So we can pick points <span class="process-math">\(x_{i}^{*}\)</span> from each subinterval and say that <span class="process-math">\(F(x)\approx F(x_{i}^{*})\)</span> for all <span class="process-math">\(x\)</span> in <span class="process-math">\([x_{i-1},x_{i}]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-finding-work-done-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-finding-work-done-3-2">
 <div class="para">Now we can approximate the work done by <span class="process-math">\(F\)</span> as the particle moves through the subinterval <span class="process-math">\([x_{i-1},x_{i}]\text{.}\)</span> The work done should be about equal to</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-finding-work-done-3-2-3">
 \begin{equation*}
 F(x_{i}^{*})\Delta x\text{.}
 \end{equation*}
 </div>
 <div class="para">Now, if we add up these estimates for each subinterval, we see that the total work done should be approximated by</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-finding-work-done-3-2-4">
 \begin{equation*}
 \sum_{i=1}^{n}F(x_{i}^{*})\Delta x,
 \end{equation*}
 </div>
 <div class="para">which suggests that we should define the exact work done to be</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-finding-work-done-3-2-5">
 \begin{equation*}
 W = \lim_{n\to\infty}\sum_{i=1}^{n}F(x_{i}^{*})\Delta x.
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-finding-work-done-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-</div></details></div></article><div class="para" id="section-areas-under-curves-18">Note that <a href="section-areas-under-curves.html#example-finding-work-done" class="xref" data-knowl="./knowl/xref/example-finding-work-done.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 6.1.7: Finding work done">Example 6.1.7</a> was not written in terms of finding areas, but still involved the limit from <a href="section-areas-under-curves.html#definition-area" class="xref" data-knowl="./knowl/xref/definition-area.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 6.1.1: Area">Definition 6.1.1</a>. This tells us that the ideas in this section have a wider use than in just finding areas under curves.</div></section></div>
-<div class="ptx-content-footer">
+<div class="autopermalink" data-description="Solution 6.1.7.1"><a href="#example-finding-work-done-3" title="Copy heading and permalink for Solution 6.1.7.1" aria-label="Copy heading and permalink for Solution 6.1.7.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 6.1.7: Finding work done"><a href="#example-finding-work-done" title="Copy heading and permalink for Example 6.1.7: Finding work done" aria-label="Copy heading and permalink for Example 6.1.7: Finding work done">🔗</a></div></article><div class="para" id="section-areas-under-curves-18">Note that <a href="section-areas-under-curves.html#example-finding-work-done" class="xref" data-knowl="./knowl/xref/example-finding-work-done.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 6.1.7: Finding work done">Example 6.1.7</a> was not written in terms of finding areas, but still involved the limit from <a href="section-areas-under-curves.html#definition-area" class="xref" data-knowl="./knowl/xref/definition-area.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 6.1.1: Area">Definition 6.1.1</a>. This tells us that the ideas in this section have a wider use than in just finding areas under curves.<div class="autopermalink" data-description="Paragraph"><a href="#section-areas-under-curves-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Section 6.1: Areas Under Curves"><a href="#section-areas-under-curves" title="Copy heading and permalink for Section 6.1: Areas Under Curves" aria-label="Copy heading and permalink for Section 6.1: Areas Under Curves">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="integrals.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="section-the-definite-integral.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
-<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
 </body>
 </html>

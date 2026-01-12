@@ -6,17 +6,21 @@
 <!--*                                          *-->
 <!--********************************************-->
 <html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>WVWC-CALC Vectors</title>
-<meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:type" content="book">
-<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo.jpg">
-<meta property="book:title" content="Calculus Notes">
-<meta property="book:author" content="Jesse Oldroyd
-          ">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -88,12 +92,14 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo-brandlogo.jpg">
+<meta property="book:title" content="Calculus Notes">
+<meta property="book:author" content="Jesse Oldroyd
+          ">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -115,127 +121,22 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.1';
+eBookConfig.runestone_version = '7.11.8';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.87cabc2515250052.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.630d5c4fb4b681eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.97f3ae4f7a71ba18.css">
-<style>
-#theorem-combining-continuous-functions-2-1-4 { counter-set: theorem-combining-continuous-functions-2-1-4 0; }
-#theorem-combining-continuous-functions-2-1-4 > li::marker { content: ""counter(theorem-combining-continuous-functions-2-1-4,decimal)"."; }
-#theorem-combining-continuous-functions-2-1-4 > li { counter-increment: theorem-combining-continuous-functions-2-1-4; }
-#example-derivatives-using-the-power-rule-2-1-1 { counter-set: example-derivatives-using-the-power-rule-2-1-1 0; }
-#example-derivatives-using-the-power-rule-2-1-1 > li::marker { content: ""counter(example-derivatives-using-the-power-rule-2-1-1,decimal)"."; }
-#example-derivatives-using-the-power-rule-2-1-1 > li { counter-increment: example-derivatives-using-the-power-rule-2-1-1; }
-#section-extreme-values-of-functions-4-1-1-1 { counter-set: section-extreme-values-of-functions-4-1-1-1 0; }
-#section-extreme-values-of-functions-4-1-1-1 > li::marker { content: ""counter(section-extreme-values-of-functions-4-1-1-1,decimal)"."; }
-#section-extreme-values-of-functions-4-1-1-1 > li { counter-increment: section-extreme-values-of-functions-4-1-1-1; }
-#example-minimizing-material-costs-3-1-1 { counter-set: example-minimizing-material-costs-3-1-1 0; }
-#example-minimizing-material-costs-3-1-1 > li::marker { content: ""counter(example-minimizing-material-costs-3-1-1,decimal)"."; }
-#example-minimizing-material-costs-3-1-1 > li { counter-increment: example-minimizing-material-costs-3-1-1; }
-#example-distance-on-an-ellipse-3-1-1 { counter-set: example-distance-on-an-ellipse-3-1-1 0; }
-#example-distance-on-an-ellipse-3-1-1 > li::marker { content: ""counter(example-distance-on-an-ellipse-3-1-1,decimal)"."; }
-#example-distance-on-an-ellipse-3-1-1 > li { counter-increment: example-distance-on-an-ellipse-3-1-1; }
-#example-finding-antiderivatives-2-1-1 { counter-set: example-finding-antiderivatives-2-1-1 0; }
-#example-finding-antiderivatives-2-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-2-1-1,decimal)"."; }
-#example-finding-antiderivatives-2-1-1 > li { counter-increment: example-finding-antiderivatives-2-1-1; }
-#example-finding-antiderivatives-3-1-1 { counter-set: example-finding-antiderivatives-3-1-1 0; }
-#example-finding-antiderivatives-3-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-3-1-1,decimal)"."; }
-#example-finding-antiderivatives-3-1-1 > li { counter-increment: example-finding-antiderivatives-3-1-1; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 { counter-set: theorem-more-properties-of-the-definite-integral-2-1-3 0; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li::marker { content: ""counter(theorem-more-properties-of-the-definite-integral-2-1-3,decimal)"."; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li { counter-increment: theorem-more-properties-of-the-definite-integral-2-1-3; }
-#theorem-fundamental-theorem-of-calculus-2-2 { counter-set: theorem-fundamental-theorem-of-calculus-2-2 0; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li::marker { content: ""counter(theorem-fundamental-theorem-of-calculus-2-2,decimal)"."; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li { counter-increment: theorem-fundamental-theorem-of-calculus-2-2; }
-#section-substitution-5-3 { counter-set: section-substitution-5-3 0; }
-#section-substitution-5-3 > li::marker { content: ""counter(section-substitution-5-3,decimal)"."; }
-#section-substitution-5-3 > li { counter-increment: section-substitution-5-3; }
-#algorithm-partial-fractions-algorithm-3-1-2 { counter-set: algorithm-partial-fractions-algorithm-3-1-2 0; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li::marker { content: ""counter(algorithm-partial-fractions-algorithm-3-1-2,decimal)"."; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li { counter-increment: algorithm-partial-fractions-algorithm-3-1-2; }
-#section-applications-to-physics-and-engineering-2-2 { counter-set: section-applications-to-physics-and-engineering-2-2 0; }
-#section-applications-to-physics-and-engineering-2-2 > li::marker { content: ""counter(section-applications-to-physics-and-engineering-2-2,decimal)"."; }
-#section-applications-to-physics-and-engineering-2-2 > li { counter-increment: section-applications-to-physics-and-engineering-2-2; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 { counter-set: subsection-moments-and-centers-of-mass-7-1-3-1 0; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-1-3-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-1-3-1; }
-#subsection-moments-and-centers-of-mass-7-2-1 { counter-set: subsection-moments-and-centers-of-mass-7-2-1 0; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-2-1; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 { counter-set: subsection-moments-and-centers-of-mass-12-1-1-4 0; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-1-1-4,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li { counter-increment: subsection-moments-and-centers-of-mass-12-1-1-4; }
-#subsection-moments-and-centers-of-mass-12-2-1 { counter-set: subsection-moments-and-centers-of-mass-12-2-1 0; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-12-2-1; }
-#example-determining-a-sustainable-population-3-3 { counter-set: example-determining-a-sustainable-population-3-3 0; }
-#example-determining-a-sustainable-population-3-3 > li::marker { content: ""counter(example-determining-a-sustainable-population-3-3,decimal)"."; }
-#example-determining-a-sustainable-population-3-3 > li { counter-increment: example-determining-a-sustainable-population-3-3; }
-#theorem-sequential-limit-laws-2-2 { counter-set: theorem-sequential-limit-laws-2-2 0; }
-#theorem-sequential-limit-laws-2-2 > li::marker { content: ""counter(theorem-sequential-limit-laws-2-2,decimal)"."; }
-#theorem-sequential-limit-laws-2-2 > li { counter-increment: theorem-sequential-limit-laws-2-2; }
-#example-guessing-sums-2-1-1 { counter-set: example-guessing-sums-2-1-1 0; }
-#example-guessing-sums-2-1-1 > li::marker { content: ""counter(example-guessing-sums-2-1-1,decimal)"."; }
-#example-guessing-sums-2-1-1 > li { counter-increment: example-guessing-sums-2-1-1; }
-#example-guessing-sums-3-1-1 { counter-set: example-guessing-sums-3-1-1 0; }
-#example-guessing-sums-3-1-1 > li::marker { content: ""counter(example-guessing-sums-3-1-1,decimal)"."; }
-#example-guessing-sums-3-1-1 > li { counter-increment: example-guessing-sums-3-1-1; }
-#theorem-direct-comparison-test-series-3-1-4 { counter-set: theorem-direct-comparison-test-series-3-1-4 0; }
-#theorem-direct-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-direct-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-direct-comparison-test-series-3-1-4 > li { counter-increment: theorem-direct-comparison-test-series-3-1-4; }
-#theorem-limit-comparison-test-series-3-1-4 { counter-set: theorem-limit-comparison-test-series-3-1-4 0; }
-#theorem-limit-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-limit-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-limit-comparison-test-series-3-1-4 > li { counter-increment: theorem-limit-comparison-test-series-3-1-4; }
-#subsection-alternating-series-9-2 { counter-set: subsection-alternating-series-9-2 0; }
-#subsection-alternating-series-9-2 > li::marker { content: ""counter(subsection-alternating-series-9-2,decimal)"."; }
-#subsection-alternating-series-9-2 > li { counter-increment: subsection-alternating-series-9-2; }
-#theorem-ratio-test-2-1-3 { counter-set: theorem-ratio-test-2-1-3 0; }
-#theorem-ratio-test-2-1-3 > li::marker { content: ""counter(theorem-ratio-test-2-1-3,decimal)"."; }
-#theorem-ratio-test-2-1-3 > li { counter-increment: theorem-ratio-test-2-1-3; }
-#theorem-root-test-2-1-3 { counter-set: theorem-root-test-2-1-3 0; }
-#theorem-root-test-2-1-3 > li::marker { content: ""counter(theorem-root-test-2-1-3,decimal)"."; }
-#theorem-root-test-2-1-3 > li { counter-increment: theorem-root-test-2-1-3; }
-#example-examples-of-power-series-2-1-1 { counter-set: example-examples-of-power-series-2-1-1 0; }
-#example-examples-of-power-series-2-1-1 > li::marker { content: ""counter(example-examples-of-power-series-2-1-1,decimal)"."; }
-#example-examples-of-power-series-2-1-1 > li { counter-increment: example-examples-of-power-series-2-1-1; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 { counter-set: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 0; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li::marker { content: ""counter(theorem-properties-of-vector-addition-and-scalar-multiplication-3-2,decimal)"."; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li { counter-increment: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2; }
-#theorem-properties-of-the-dot-product-3-2 { counter-set: theorem-properties-of-the-dot-product-3-2 0; }
-#theorem-properties-of-the-dot-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-dot-product-3-2,decimal)"."; }
-#theorem-properties-of-the-dot-product-3-2 > li { counter-increment: theorem-properties-of-the-dot-product-3-2; }
-#theorem-properties-of-the-cross-product-3-2 { counter-set: theorem-properties-of-the-cross-product-3-2 0; }
-#theorem-properties-of-the-cross-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-cross-product-3-2,decimal)"."; }
-#theorem-properties-of-the-cross-product-3-2 > li { counter-increment: theorem-properties-of-the-cross-product-3-2; }
-#theorem-vector-derivative-rules-3-2 { counter-set: theorem-vector-derivative-rules-3-2 0; }
-#theorem-vector-derivative-rules-3-2 > li::marker { content: ""counter(theorem-vector-derivative-rules-3-2,decimal)"."; }
-#theorem-vector-derivative-rules-3-2 > li { counter-increment: theorem-vector-derivative-rules-3-2; }
-#subsection-continuous-functions-5 { counter-set: subsection-continuous-functions-5 0; }
-#subsection-continuous-functions-5 > li::marker { content: ""counter(subsection-continuous-functions-5,decimal)"."; }
-#subsection-continuous-functions-5 > li { counter-increment: subsection-continuous-functions-5; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 { counter-set: algorithm-method-of-lagrange-multipliers-3-1-7 0; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li::marker { content: ""counter(algorithm-method-of-lagrange-multipliers-3-1-7,decimal)"."; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li { counter-increment: algorithm-method-of-lagrange-multipliers-3-1-7; }
-#subsection-conservative-vector-fields-2-2 { counter-set: subsection-conservative-vector-fields-2-2 0; }
-#subsection-conservative-vector-fields-2-2 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-2,decimal)"."; }
-#subsection-conservative-vector-fields-2-2 > li { counter-increment: subsection-conservative-vector-fields-2-2; }
-#subsection-conservative-vector-fields-2-3 { counter-set: subsection-conservative-vector-fields-2-3 0; }
-#subsection-conservative-vector-fields-2-3 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-3,decimal)"."; }
-#subsection-conservative-vector-fields-2-3 > li { counter-increment: subsection-conservative-vector-fields-2-3; }
-#gfdl-section4-3 { counter-set: gfdl-section4-3 0; }
-#gfdl-section4-3 > li::marker { content: ""counter(gfdl-section4-3,upper-alpha)"."; }
-#gfdl-section4-3 > li { counter-increment: gfdl-section4-3; }
-</style>
+<script src="_static/prefix-runtime.991c135ccf182bf5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1c010553c35c544c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.677a75a9120449ff.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdn.geogebra.org/apps/deployggb.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" target="_blank" href=""><img src="external/./wvwc-logo.jpg" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes:</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
+<img src="external/./wvwc-logo-brandlogo.jpg" alt="Logo image"><div class="title-container">
+<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
 <p class="byline">Jesse Oldroyd</p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
@@ -431,10 +332,10 @@ true);
 <div class="toc-title-box"><a href="applications-differentiation.html" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Differentiation</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-linear-approximations.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear approximations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related Rates</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related rates</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-l-hospital-s-rule.html" class="internal"><span class="codenumber">5.3</span> <span class="title">L’Hospital’s Rule</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme Values of Functions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization Problems</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme values of functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization problems</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-the-mean-value-theorem.html" class="internal"><span class="codenumber">5.6</span> <span class="title">The Mean Value Theorem</span></a></div>
 <ul class="structural toc-item-list">
@@ -442,8 +343,11 @@ true);
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-the-mean-value-theorem.html#subsection-the-mean-value-theorem" class="internal"><span class="title">The Mean Value Theorem</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and Graphs</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and graphs</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-newton-s-method.html#subsection-newtons-method-optimization" class="internal"><span class="title">Newton’s Method for optimization</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-antiderivatives.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Antiderivatives</span></a></div></li>
 </ul>
 </li>
@@ -606,8 +510,14 @@ true);
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-coordinates-in-3-space.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Coordinates in 3-Space</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-section contains-active">
@@ -797,189 +707,274 @@ true);
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-vectors"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">11.2</span><span class="space"> </span><span class="title">Vectors</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Vectors</span>
 </h2>
-<section class="introduction" id="section-vectors-2"><div class="para" id="section-vectors-2-1">One of our goals in this chapter is to adequately describe motion in space. A useful way to do this uses the concept of <dfn class="terminology">vector</dfn>, which we think of as a quantity that has both direction and magnitude/length. A simple example would be velocity: velocity in space has a direction and also a magnitude (speed). We will typically denote vectors by using boldface letters such as <span class="process-math">\(\mathbf{x}\)</span> or letters with a bar overhead such as <span class="process-math">\(\bar{x}\text{.}\)</span> We represent vectors as arrows with an <dfn class="terminology">initial point</dfn> and a <dfn class="terminology">terminal point</dfn>:</div>
+<section class="introduction" id="section-vectors-2"><div class="para" id="section-vectors-2-1">One of our goals in this chapter is to adequately describe motion in space.  A useful way to do this uses the concept of <dfn class="terminology">vector</dfn>, which we think of as a quantity that has both direction and magnitude/length.  A simple example would be velocity: velocity in space has a direction and also a magnitude (speed).  We will typically denote vectors by using boldface letters such as <span class="process-math">\(\mathbf{x}\)</span> or letters with a bar overhead such as <span class="process-math">\(\bar{x}\text{.}\)</span>  We represent vectors as arrows with an <dfn class="terminology">initial point</dfn> and a <dfn class="terminology">terminal point</dfn>:<div class="autopermalink" data-description="Paragraph"><a href="#section-vectors-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <figure class="figure figure-like" id="figure-vector-representation"><div class="image-box" style="width: 20%; margin-left: 40%; margin-right: 40%;"><img src="generated/latex-image/image-vector-representation.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">11.2.1<span class="period">.</span></span><span class="space"> </span>A vector.</figcaption></figure><div class="para" id="section-vectors-2-3">We say that two vectors <span class="process-math">\(\mathbf{x},\mathbf{y}\)</span> are <dfn class="terminology">equivalent</dfn>, or <dfn class="terminology">equal</dfn>, if they have the same magnitude and direction. We write this as <span class="process-math">\(\mathbf{x} = \mathbf{y}\text{.}\)</span>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.2.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A vector.<div class="autopermalink" data-description="Figure 11.2.1"><a href="#figure-vector-representation" title="Copy heading and permalink for Figure 11.2.1" aria-label="Copy heading and permalink for Figure 11.2.1">🔗</a></div></figcaption></figure><div class="para" id="section-vectors-2-3">We say that two vectors <span class="process-math">\(\mathbf{x},\mathbf{y}\)</span> are <dfn class="terminology">equivalent</dfn>, or <dfn class="terminology">equal</dfn>, if they have the same magnitude and direction. We write this as <span class="process-math">\(\mathbf{x} = \mathbf{y}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#section-vectors-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><section class="subsection" id="subsection-addition-and-scalar-multiplication"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Addition and Scalar Multiplication</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Addition and Scalar Multiplication</span>
 </h3>
-<div class="para" id="subsection-addition-and-scalar-multiplication-2">Given two vectors <span class="process-math">\(\mathbf{x} = \overrightarrow{AB},\mathbf{y}=\overrightarrow{BC}\text{,}\)</span> we can add them to get the new vector</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/figure-vector-addition.html">
+<div class="para" id="subsection-addition-and-scalar-multiplication-2">Given two vectors <span class="process-math">\(\mathbf{x} =
+\overrightarrow{AB},\mathbf{y}=\overrightarrow{BC}\text{,}\)</span> we can add them to get the new vector<div class="autopermalink" data-description="Paragraph"><a href="#subsection-addition-and-scalar-multiplication-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/figure-vector-addition.html" id="subsection-addition-and-scalar-multiplication-3">
 \begin{equation*}
 \mathbf{x}+\mathbf{y} = \overrightarrow{AC}.
 \end{equation*}
 </div>
-<div class="para" id="subsection-addition-and-scalar-multiplication-4">So the vector <span class="process-math">\(\mathbf{x}+\mathbf{y}\)</span> is obtained by moving the tail of <span class="process-math">\(\mathbf{y}\)</span> to the tip of <span class="process-math">\(\mathbf{x}\)</span> and then drawing a vector from the tail of <span class="process-math">\(\mathbf{x}\)</span> to the tip of <span class="process-math">\(\mathbf{y}\text{.}\)</span>
+<div class="para" id="subsection-addition-and-scalar-multiplication-4">So the vector <span class="process-math">\(\mathbf{x}+\mathbf{y}\)</span> is obtained by moving the tail of <span class="process-math">\(\mathbf{y}\)</span> to the tip of <span class="process-math">\(\mathbf{x}\)</span> and then drawing a vector from the tail of <span class="process-math">\(\mathbf{x}\)</span> to the tip of <span class="process-math">\(\mathbf{y}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-addition-and-scalar-multiplication-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="figure-vector-addition"><div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="generated/latex-image/image-vector-addition.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">11.2.2<span class="period">.</span></span><span class="space"> </span>Vector addition.</figcaption></figure><div class="para" id="subsection-addition-and-scalar-multiplication-6">The sum <span class="process-math">\(\mathbf{x}+\mathbf{y}\)</span> of vectors <span class="process-math">\(\mathbf{x},\mathbf{y}\)</span> can be computed using either the <dfn class="terminology">triangle law</dfn>, illustrated above in <a href="section-vectors.html#figure-vector-addition" class="xref" data-knowl="./knowl/xref/figure-vector-addition.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 11.2.2">Figure 11.2.2</a>, or the similar <dfn class="terminology">parallelogram law</dfn>. We can also scale vectors using <dfn class="terminology">scalar multiplication</dfn>: if <span class="process-math">\(\alpha\)</span> is a scalar<details class="ptx-footnote" aria-live="polite" id="subsection-addition-and-scalar-multiplication-6-8"><summary class="ptx-footnote__number" title="Footnote 5"><sup> 5 </sup></summary><div class="ptx-footnote__contents" id="subsection-addition-and-scalar-multiplication-6-8">In other words, a number.</div></details> then <span class="process-math">\(\alpha\mathbf{x}\)</span> is defined to be the vector that has the same direction as <span class="process-math">\(\mathbf{x}\)</span> if <span class="process-math">\(\alpha&gt;0\)</span> and the opposite direction if <span class="process-math">\(\alpha&lt;0\text{,}\)</span> but the magnitude is rescaled by the factor <span class="process-math">\(\alpha\text{.}\)</span>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.2.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Vector addition.<div class="autopermalink" data-description="Figure 11.2.2"><a href="#figure-vector-addition" title="Copy heading and permalink for Figure 11.2.2" aria-label="Copy heading and permalink for Figure 11.2.2">🔗</a></div></figcaption></figure><div class="para" id="subsection-addition-and-scalar-multiplication-6">The sum <span class="process-math">\(\mathbf{x}+\mathbf{y}\)</span> of vectors <span class="process-math">\(\mathbf{x},\mathbf{y}\)</span> can be computed using either the <dfn class="terminology">triangle law</dfn>, illustrated above in <a href="section-vectors.html#figure-vector-addition" class="xref" data-knowl="./knowl/xref/figure-vector-addition.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 11.2.2">Figure 11.2.2</a>, or the similar <dfn class="terminology">parallelogram law</dfn>.  We can also scale vectors using <dfn class="terminology">scalar multiplication</dfn>: if <span class="process-math">\(\alpha\)</span> is a scalar<details class="ptx-footnote" aria-live="polite" id="subsection-addition-and-scalar-multiplication-6-8"><summary class="ptx-footnote__number" title="Footnote 2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="subsection-addition-and-scalar-multiplication-6-8">In other words, a number.</div></details> then <span class="process-math">\(\alpha\mathbf{x}\)</span> is defined to be the vector that has the same direction as <span class="process-math">\(\mathbf{x}\)</span> if <span class="process-math">\(\alpha&gt;0\)</span> and the opposite direction if <span class="process-math">\(\alpha&lt;0\text{,}\)</span> but the magnitude is rescaled by the factor <span class="process-math">\(\alpha\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-addition-and-scalar-multiplication-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-vector-subtraction"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">11.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Vector subtraction.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Vector subtraction.</span>
 </h4>
-<div class="para" id="example-vector-subtraction-2">Using the previous graph, we can compute <span class="process-math">\(2\mathbf{x}-\mathbf{y}\text{.}\)</span> We just need to scale the vectors properly and then add <span class="process-math">\(2\mathbf{x}\)</span> to <span class="process-math">\(-\mathbf{y}\text{.}\)</span>
-</div></article></section><section class="subsection" id="subsection-vector-components"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Vector Components</span>
+<div class="para" id="example-vector-subtraction-2">Using the previous graph, we can compute <span class="process-math">\(2\mathbf{x}-\mathbf{y}\text{.}\)</span> We just need to scale the vectors properly and then add <span class="process-math">\(2\mathbf{x}\)</span> to <span class="process-math">\(-\mathbf{y}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-vector-subtraction-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 11.2.3: Vector subtraction"><a href="#example-vector-subtraction" title="Copy heading and permalink for Example 11.2.3: Vector subtraction" aria-label="Copy heading and permalink for Example 11.2.3: Vector subtraction">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Addition and Scalar Multiplication"><a href="#subsection-addition-and-scalar-multiplication" title="Copy heading and permalink for Subsection: Addition and Scalar Multiplication" aria-label="Copy heading and permalink for Subsection: Addition and Scalar Multiplication">🔗</a></div></section><section class="subsection" id="subsection-vector-components"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Vector Components</span>
 </h3>
 <div class="para logical" id="subsection-vector-components-2">
-<div class="para">Although it isn’t too hard to add and scale vectors visually, it’ll be beneficial to do the same algebraically. We can do so by breaking a vector down into its <dfn class="terminology">components</dfn>. Consider a vector in <span class="process-math">\(\mathbf{x}\)</span> in <span class="process-math">\(\RR^{2}\text{,}\)</span> and suppose if we move it to the origin then the tip of the vector is at the point <span class="process-math">\((3,-1)\text{.}\)</span> Then the components of <span class="process-math">\(\mathbf{x}\)</span> are <span class="process-math">\(3\)</span> and <span class="process-math">\(-1\text{,}\)</span> and we write</div>
-<div class="displaymath process-math">
+<div class="para">Although it isn’t too hard to add and scale vectors visually, it’ll be beneficial to do the same algebraically.  We can do so by breaking a vector down into its <dfn class="terminology">components</dfn>. Consider a vector in <span class="process-math">\(\mathbf{x}\)</span> in <span class="process-math">\(\RR^{2}\text{,}\)</span> and suppose if we move it to the origin then the tip of the vector is at the point <span class="process-math">\((3,-1)\text{.}\)</span>  Then the components of <span class="process-math">\(\mathbf{x}\)</span> are <span class="process-math">\(3\)</span> and <span class="process-math">\(-1\text{,}\)</span> and we write</div>
+<div class="displaymath process-math" id="subsection-vector-components-2-8">
 \begin{equation*}
 \mathbf{x} = \dotprod{3,-1}.
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-vector-components-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsection-vector-components-3">Note the use of brackets here, since technically we are saying that the vector <span class="process-math">\(\mathbf{x}\)</span> is distinct from the point <span class="process-math">\((3,-1)\text{,}\)</span> even though they are closely related. We say that the <dfn class="terminology">position vector</dfn> of a point is the vector whose components are the same as the coordinates of the point. Geometrically, the position vector of a point <span class="process-math">\(P\)</span> is the vector with its tail at the origin and its tip at <span class="process-math">\(P\text{.}\)</span>
+<div class="para" id="subsection-vector-components-3">Note the use of brackets here, since technically we are saying that the vector <span class="process-math">\(\mathbf{x}\)</span> is distinct from the point <span class="process-math">\((3,-1)\text{,}\)</span> even though they are closely related.  We say that the <dfn class="terminology">position vector</dfn> of a point is the vector whose components are the same as the coordinates of the point. Geometrically, the position vector of a point <span class="process-math">\(P\)</span> is the vector with its tail at the origin and its tip at <span class="process-math">\(P\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-vector-components-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsection-vector-components-4">So any vector in <span class="process-math">\(\RR^{2}\)</span> can be represented using components by <span class="process-math">\(\mathbf{x} = \dotprod{x_{1},x_{2}}\text{.}\)</span> Similarly, any vector in <span class="process-math">\(\RR^{3}\)</span> can be represented as <span class="process-math">\(\mathbf{x} = \dotprod{x_{1},x_{2},x_{3}}\text{.}\)</span> Once you represent a vector in component form, addition and scalar multiplication is straightforward.</div>
+<div class="para" id="subsection-vector-components-4">So any vector in <span class="process-math">\(\RR^{2}\)</span> can be represented using components by <span class="process-math">\(\mathbf{x} = \dotprod{x_{1},x_{2}}\text{.}\)</span> Similarly, any vector in <span class="process-math">\(\RR^{3}\)</span> can be represented as <span class="process-math">\(\mathbf{x} = \dotprod{x_{1},x_{2},x_{3}}\text{.}\)</span>  Once you represent a vector in component form, addition and scalar multiplication is straightforward.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-vector-components-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-vector-addition-with-components"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">11.2.4</span><span class="period">.</span><span class="space"> </span><span class="title">Vector addition with components.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Vector addition with components.</span>
 </h4>
-<div class="para" id="example-vector-addition-with-components-2">Let <span class="process-math">\(\mathbf{a} = \dotprod{-2,1,3}\)</span> and <span class="process-math">\(\mathbf{b} = \dotprod{0,2,1}\text{.}\)</span> Then</div>
-<div class="displaymath process-math">
+<div class="para" id="example-vector-addition-with-components-2">Let <span class="process-math">\(\mathbf{a} = \dotprod{-2,1,3}\)</span> and <span class="process-math">\(\mathbf{b} =
+\dotprod{0,2,1}\text{.}\)</span> Then<div class="autopermalink" data-description="Paragraph"><a href="#example-vector-addition-with-components-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="example-vector-addition-with-components-3">
 \begin{equation*}
 \mathbf{b}-3\mathbf{a} = \dotprod{6,-1,-8}.
 \end{equation*}
-</div></article><div class="para logical" id="subsection-vector-components-6">
-<div class="para">Finding magnitudes of vectors can also be done by applying the distance formula from <a href="section-coordinates-in-3-space.html" class="internal" title="Section 11.1: Coordinates in 3-Space">Section 11.1</a> to the components of the vectors. The magnitude of a vector <span class="process-math">\(\mathbf{x}\)</span> is denoted by <span class="process-math">\(|\mathbf{x}|\)</span> or <span class="process-math">\(\norm{\mathbf{x}}\text{.}\)</span> For example, the magnitude of <span class="process-math">\(\mathbf{b}-3\mathbf{a}\)</span> from the previous example is</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/section-coordinates-in-3-space.html">
+</div>
+<div class="autopermalink" data-description="Example 11.2.4: Vector addition with components"><a href="#example-vector-addition-with-components" title="Copy heading and permalink for Example 11.2.4: Vector addition with components" aria-label="Copy heading and permalink for Example 11.2.4: Vector addition with components">🔗</a></div></article><div class="para logical" id="subsection-vector-components-6">
+<div class="para">Finding magnitudes of vectors can also be done by applying the distance formula from <a href="section-coordinates-in-3-space.html" class="internal" title="Section 11.1: Coordinates in 3-Space">Section 11.1</a> to the components of the vectors.  The magnitude of a vector <span class="process-math">\(\mathbf{x}\)</span> is denoted by <span class="process-math">\(|\mathbf{x}|\)</span> or <span class="process-math">\(\norm{\mathbf{x}}\text{.}\)</span>  For example, the magnitude of <span class="process-math">\(\mathbf{b}-3\mathbf{a}\)</span> from the previous example is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/section-coordinates-in-3-space.html" id="subsection-vector-components-6-6">
 \begin{equation*}
-\norm{\mathbf{b}-3\mathbf{a}} = \sqrt{36+1+64} = \sqrt{101}.
+\norm{\mathbf{b}-3\mathbf{a}} = \sqrt{36+1+64} =
+\sqrt{101}.
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-vector-components-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsection-vector-components-7">
 <div class="para">Given a vector <span class="process-math">\(\mathbf{x} = \dotprod{x_{1},x_{2},x_{3}},\)</span>
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="subsection-vector-components-7-2">
 \begin{equation*}
 \norm{\mathbf{x}} = \sqrt{x_{1}^{2}+x_{2}^{2}+x_{3}^{2}}.
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-vector-components-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-a-vector-equation"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">11.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">A vector equation.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A vector equation.</span>
 </h4>
 <div class="para logical" id="example-a-vector-equation-2">
 <div class="para">We can use vectors to describe curves and surfaces. For example, let <span class="process-math">\(\mathbf{r} = \dotprod{x,y,z}\)</span> and <span class="process-math">\(\mathbf{r}_{0} = \dotprod{a,b,c}\text{.}\)</span> Let <span class="process-math">\(r\geq0\text{.}\)</span> Then the set of all points <span class="process-math">\((x,y,z)\)</span> that satisfy the equation</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-a-vector-equation-2-5">
 \begin{equation*}
-\norm{\mathbf{r}-\mathbf{r}_{0}} = r
+\norm{\mathbf{r}-\mathbf{r}_{0}} =
+r
 \end{equation*}
 </div>
 <div class="para">has a very nice description: it’s just the sphere of radius <span class="process-math">\(r\)</span> centered at <span class="process-math">\((a,b,c)\text{.}\)</span>
 </div>
-</div></article><article class="example example-like" id="example-finding-position-vectors"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">11.2.6</span><span class="period">.</span><span class="space"> </span><span class="title">Finding components of vectors.</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-a-vector-equation-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 11.2.5: A vector equation"><a href="#example-a-vector-equation" title="Copy heading and permalink for Example 11.2.5: A vector equation" aria-label="Copy heading and permalink for Example 11.2.5: A vector equation">🔗</a></div></article><article class="example example-like" id="example-finding-position-vectors"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.2.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Finding components of vectors.</span>
 </h4>
-<div class="para" id="example-finding-position-vectors-2">Consider the points <span class="process-math">\(A(4,0,-2)\)</span> and <span class="process-math">\(B(4,2,1)\text{.}\)</span> We want to find the components of the vector <span class="process-math">\(\overrightarrow{AB}\text{.}\)</span> We can do this by translating <span class="process-math">\(\overrightarrow{AB}\)</span> to the origin, which is done by subtracting from each coordinate of <span class="process-math">\(B\)</span> the corresponding coordinate of <span class="process-math">\(A\text{.}\)</span> So the vector <span class="process-math">\(\overrightarrow{AB}\)</span> is given by</div>
-<div class="displaymath process-math">
+<div class="para" id="example-finding-position-vectors-2">Consider the points <span class="process-math">\(A(4,0,-2)\)</span> and <span class="process-math">\(B(4,2,1)\text{.}\)</span> We want to find the components of the vector <span class="process-math">\(\overrightarrow{AB}\text{.}\)</span> We can do this by translating <span class="process-math">\(\overrightarrow{AB}\)</span> to the origin, which is done by subtracting from each coordinate of <span class="process-math">\(B\)</span> the corresponding coordinate of <span class="process-math">\(A\text{.}\)</span> So the vector <span class="process-math">\(\overrightarrow{AB}\)</span> is given by<div class="autopermalink" data-description="Paragraph"><a href="#example-finding-position-vectors-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="example-finding-position-vectors-3">
 \begin{equation*}
 \overrightarrow{AB} = \dotprod{4-4,2-0,1+2} = \dotprod{0,2,3}.
 \end{equation*}
-</div></article><div class="para" id="subsection-vector-components-10">In general, given <span class="process-math">\(A(x_{1},y_{1},z_{1})\)</span> and <span class="process-math">\(B(x_{2},y_{2},z_{2}),\)</span> the vector <span class="process-math">\(\mathbf{x} = \overrightarrow{AB}\)</span> is given by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/section-coordinates-in-3-space.html">
+</div>
+<div class="autopermalink" data-description="Example 11.2.6: Finding components of vectors"><a href="#example-finding-position-vectors" title="Copy heading and permalink for Example 11.2.6: Finding components of vectors" aria-label="Copy heading and permalink for Example 11.2.6: Finding components of vectors">🔗</a></div></article><div class="para" id="subsection-vector-components-10">In general, given <span class="process-math">\(A(x_{1},y_{1},z_{1})\)</span> and <span class="process-math">\(B(x_{2},y_{2},z_{2}),\)</span> the vector <span class="process-math">\(\mathbf{x} =
+\overrightarrow{AB}\)</span> is given by<div class="autopermalink" data-description="Paragraph"><a href="#subsection-vector-components-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/section-coordinates-in-3-space.html" id="subsection-vector-components-11">
 \begin{equation*}
 \mathbf{x} = \dotprod{x_{2}-x_{1},y_{2}-y_{1},z_{2}-z_{1}}.
 \end{equation*}
 </div>
 <article class="theorem theorem-like" id="theorem-properties-of-vector-addition-and-scalar-multiplication"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">11.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">Properties of Vector Addition and Scalar Multiplication.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.2.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Properties of Vector Addition and Scalar Multiplication.</span>
 </h4>
-<div class="para" id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-1">Let <span class="process-math">\(\mathbf{x},\mathbf{y},\mathbf{z}\)</span> be vectors and let <span class="process-math">\(\alpha,\beta\)</span> be scalars. Then the following are true:</div> <ol class="decimal cols2" id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2">
-<li id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-1"><div class="para" id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-1-1"><span class="process-math">\(\mathbf{x}+\mathbf{y} = \mathbf{y}+\mathbf{x}\text{.}\)</span></div></li>
-<li id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-2"><div class="para" id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-2-1"><span class="process-math">\(\displaystyle \mathbf{x}+(\mathbf{y}+\mathbf{z}) = (\mathbf{x}+\mathbf{y})+\mathbf{z}.\)</span></div></li>
-<li id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-3"><div class="para" id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-3-1"><span class="process-math">\(\displaystyle \mathbf{x}+\mathbf{0} = \mathbf{x}.\)</span></div></li>
-<li id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-4"><div class="para" id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-4-1"><span class="process-math">\(\displaystyle \mathbf{x}+(-\mathbf{x}) = \mathbf{0}.\)</span></div></li>
-<li id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-5"><div class="para" id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-5-1"><span class="process-math">\(\displaystyle \alpha(\mathbf{x}+\mathbf{y}) = \alpha\mathbf{x}+\alpha\mathbf{y}.\)</span></div></li>
-<li id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-6"><div class="para" id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-6-1"><span class="process-math">\(\displaystyle (\alpha+\beta)\mathbf{x} = \alpha\mathbf{x}+\beta\mathbf{y}\)</span></div></li>
-<li id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-7"><div class="para" id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-7-1"><span class="process-math">\(\displaystyle (\alpha\beta)\mathbf{x} = \alpha(\beta)\mathbf{x}.\)</span></div></li>
-<li id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-8"><div class="para" id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-8-1"><span class="process-math">\(\displaystyle 1\mathbf{x} = \mathbf{x}.\)</span></div></li>
-</ol></article></section><section class="subsection" id="subsection-basis-vectors-and-unit-vectors"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Basis Vectors and Unit Vectors</span>
+<div class="para" id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-1">Let <span class="process-math">\(\mathbf{x},\mathbf{y},\mathbf{z}\)</span> be vectors and let <span class="process-math">\(\alpha,\beta\)</span> be scalars. Then the following are true:<div class="autopermalink" data-description="Paragraph"><a href="#theorem-properties-of-vector-addition-and-scalar-multiplication-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <ol class="decimal cols2 multicolumn" id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2">
+<li id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-1">
+<div class="para" id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-1-1">
+<span class="process-math">\(\mathbf{x}+\mathbf{y} = \mathbf{y}+\mathbf{x}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-2">
+<div class="para" id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-2-1">
+<span class="process-math">\(\displaystyle \mathbf{x}+(\mathbf{y}+\mathbf{z}) =
+(\mathbf{x}+\mathbf{y})+\mathbf{z}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-3">
+<div class="para" id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-3-1">
+<span class="process-math">\(\displaystyle \mathbf{x}+\mathbf{0} = \mathbf{x}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-4">
+<div class="para" id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-4-1">
+<span class="process-math">\(\displaystyle \mathbf{x}+(-\mathbf{x}) = \mathbf{0}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-5">
+<div class="para" id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-5-1">
+<span class="process-math">\(\displaystyle \alpha(\mathbf{x}+\mathbf{y}) =
+\alpha\mathbf{x}+\alpha\mathbf{y}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 5"><a href="#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+<li id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-6">
+<div class="para" id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-6-1">
+<span class="process-math">\(\displaystyle (\alpha+\beta)\mathbf{x} = \alpha\mathbf{x}+\beta\mathbf{y}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 6"><a href="#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-6" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
+</li>
+<li id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-7">
+<div class="para" id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-7-1">
+<span class="process-math">\(\displaystyle (\alpha\beta)\mathbf{x} = \alpha(\beta)\mathbf{x}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 7"><a href="#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-7" title="Copy heading and permalink for Item 7" aria-label="Copy heading and permalink for Item 7">🔗</a></div>
+</li>
+<li id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-8">
+<div class="para" id="theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-8-1">
+<span class="process-math">\(\displaystyle 1\mathbf{x} = \mathbf{x}.\)</span><div class="autopermalink" data-description="Paragraph"><a href="#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 8"><a href="#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2-8" title="Copy heading and permalink for Item 8" aria-label="Copy heading and permalink for Item 8">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Theorem 11.2.7: Properties of Vector Addition and Scalar Multiplication"><a href="#theorem-properties-of-vector-addition-and-scalar-multiplication" title="Copy heading and permalink for Theorem 11.2.7: Properties of Vector Addition and Scalar Multiplication" aria-label="Copy heading and permalink for Theorem 11.2.7: Properties of Vector Addition and Scalar Multiplication">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Vector Components"><a href="#subsection-vector-components" title="Copy heading and permalink for Subsection: Vector Components" aria-label="Copy heading and permalink for Subsection: Vector Components">🔗</a></div></section><section class="subsection" id="subsection-basis-vectors-and-unit-vectors"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Basis Vectors and Unit Vectors</span>
 </h3>
-<div class="para" id="subsection-basis-vectors-and-unit-vectors-2">Every vector in <span class="process-math">\(\RR^{3}\)</span> can be written using three components: <span class="process-math">\(\mathbf{x} = \dotprod{x_{1},x_{2},x_{3}}.\)</span> Each component corresponds to a coordinate axis, and we can rewrite <span class="process-math">\(\mathbf{x}\)</span> as a <dfn class="terminology">linear combination</dfn> of three different vectors, with each vector corresponding to a coordinate axis:</div>
-<div class="displaymath process-math">
+<div class="para" id="subsection-basis-vectors-and-unit-vectors-2">Every vector in <span class="process-math">\(\RR^{3}\)</span> can be written using three components: <span class="process-math">\(\mathbf{x} = \dotprod{x_{1},x_{2},x_{3}}.\)</span> Each component corresponds to a coordinate axis, and we can rewrite <span class="process-math">\(\mathbf{x}\)</span> as a <dfn class="terminology">linear combination</dfn> of three different vectors, with each vector corresponding to a coordinate axis:<div class="autopermalink" data-description="Paragraph"><a href="#subsection-basis-vectors-and-unit-vectors-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="subsection-basis-vectors-and-unit-vectors-3">
 \begin{equation*}
-\mathbf{x} = x_{1}\dotprod{1,0,0}+x_{2}\dotprod{0,1,0}+x_{3}\dotprod{0,0,1}.
+\mathbf{x} =
+x_{1}\dotprod{1,0,0}+x_{2}\dotprod{0,1,0}+x_{3}\dotprod{0,0,1}.
 \end{equation*}
 </div>
 <dfn class="terminology">standard basis vectors</dfn><article class="definition definition-like" id="definition-standard-basis-vectors"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">11.2.8</span><span class="period">.</span><span class="space"> </span><span class="title">Standard Basis Vectors.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.2.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Standard Basis Vectors.</span>
 </h4>
-<div class="para" id="definition-standard-basis-vectors-3-1">The standard basis for <span class="process-math">\(\RR^{3}\)</span> is the set <span class="process-math">\(\{\mathbf{i},\mathbf{j},\mathbf{k}\}\text{,}\)</span> where</div>
-<div class="displaymath process-math">
+<div class="para" id="definition-standard-basis-vectors-3-1">The standard basis for <span class="process-math">\(\RR^{3}\)</span> is the set <span class="process-math">\(\{\mathbf{i},\mathbf{j},\mathbf{k}\}\text{,}\)</span> where<div class="autopermalink" data-description="Paragraph"><a href="#definition-standard-basis-vectors-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="definition-standard-basis-vectors-3-2">
 \begin{equation*}
-\mathbf{i} = \dotprod{1,0,0},\quad\mathbf{j} = \dotprod{0,1,0}\quad\text{and}\quad\mathbf{k} = \dotprod{0,0,1}.
+\mathbf{i} = \dotprod{1,0,0},\quad\mathbf{j} =
+\dotprod{0,1,0}\quad\text{and}\quad\mathbf{k} =
+\dotprod{0,0,1}.
 \end{equation*}
-</div></article><div class="para" id="subsection-basis-vectors-and-unit-vectors-6">As we’ve seen, every vector <span class="process-math">\(\mathbf{x}\)</span> in <span class="process-math">\(\RR^{3}\)</span> can be expressed using only these three vectors. The standard basis has two important properties: it is perpendicular (also called <dfn class="terminology">orthogonal</dfn>) and every vector in the collection has magnitude <span class="process-math">\(1\text{.}\)</span> In other words,</div>
-<div class="displaymath process-math">
+</div>
+<div class="autopermalink" data-description="Definition 11.2.8: Standard Basis Vectors"><a href="#definition-standard-basis-vectors" title="Copy heading and permalink for Definition 11.2.8: Standard Basis Vectors" aria-label="Copy heading and permalink for Definition 11.2.8: Standard Basis Vectors">🔗</a></div></article><div class="para" id="subsection-basis-vectors-and-unit-vectors-6">As we’ve seen, every vector <span class="process-math">\(\mathbf{x}\)</span> in <span class="process-math">\(\RR^{3}\)</span> can be expressed using only these three vectors. The standard basis has two important properties: it is perpendicular (also called <dfn class="terminology">orthogonal</dfn>) and every vector in the collection has magnitude <span class="process-math">\(1\text{.}\)</span> In other words,<div class="autopermalink" data-description="Paragraph"><a href="#subsection-basis-vectors-and-unit-vectors-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="subsection-basis-vectors-and-unit-vectors-7">
 \begin{equation*}
 \norm{\mathbf{i}} = \norm{\mathbf{j}} = \norm{\mathbf{k}} = 1.
 \end{equation*}
 </div>
-<div class="para" id="subsection-basis-vectors-and-unit-vectors-8">These vectors are essentially designed to capture the "coordinate directions", and are plotted below.</div>
+<div class="para" id="subsection-basis-vectors-and-unit-vectors-8">These vectors are essentially designed to capture the "coordinate directions", and are plotted below.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-basis-vectors-and-unit-vectors-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <figure class="figure figure-like" id="figure-standard-basis"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="generated/latex-image/image-standard-basis.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">11.2.9<span class="period">.</span></span><span class="space"> </span>The standard basis.</figcaption></figure><div class="para" id="subsection-basis-vectors-and-unit-vectors-10">This also leads us to our next definition.</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.2.9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The standard basis.<div class="autopermalink" data-description="Figure 11.2.9"><a href="#figure-standard-basis" title="Copy heading and permalink for Figure 11.2.9" aria-label="Copy heading and permalink for Figure 11.2.9">🔗</a></div></figcaption></figure><div class="para" id="subsection-basis-vectors-and-unit-vectors-10">This also leads us to our next definition.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-basis-vectors-and-unit-vectors-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="definition-unit-vectors"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">11.2.10</span><span class="period">.</span><span class="space"> </span><span class="title">Unit Vectors.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.2.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Unit Vectors.</span>
 </h4>
-<div class="para" id="definition-unit-vectors-3-1">A vector <span class="process-math">\(\mathbf{x}\)</span> is a unit vector if <span class="process-math">\(\norm{\mathbf{x}} = 1\text{.}\)</span>
-</div></article><div class="para" id="subsection-basis-vectors-and-unit-vectors-12">Unit vectors are useful if we just need to indicate a direction, and we don’t care about magnitude. Every nonzero vector can be rescaled to a unit vector: just divide the vector by its norm.</div>
+<div class="para" id="definition-unit-vectors-3-1">A vector <span class="process-math">\(\mathbf{x}\)</span> is a unit vector if <span class="process-math">\(\norm{\mathbf{x}} = 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#definition-unit-vectors-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 11.2.10: Unit Vectors"><a href="#definition-unit-vectors" title="Copy heading and permalink for Definition 11.2.10: Unit Vectors" aria-label="Copy heading and permalink for Definition 11.2.10: Unit Vectors">🔗</a></div></article><div class="para" id="subsection-basis-vectors-and-unit-vectors-12">Unit vectors are useful if we just need to indicate a direction, and we don’t care about magnitude. Every nonzero vector can be rescaled to a unit vector: just divide the vector by its norm.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-basis-vectors-and-unit-vectors-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-direction-from-one-point-to-another"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">11.2.11</span><span class="period">.</span><span class="space"> </span><span class="title">Direction from one point to another.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.2.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Direction from one point to another.</span>
 </h4>
-<div class="para" id="example-direction-from-one-point-to-another-2">Consider the points <span class="process-math">\(A(1,2,-1)\)</span> and <span class="process-math">\(B(0,-3,2)\text{.}\)</span> Then we can find the unit vector indicating the direction from <span class="process-math">\(A\)</span> to <span class="process-math">\(B\text{.}\)</span> First, set</div>
-<div class="displaymath process-math">
+<div class="para" id="example-direction-from-one-point-to-another-2">Consider the points <span class="process-math">\(A(1,2,-1)\)</span> and <span class="process-math">\(B(0,-3,2)\text{.}\)</span> Then we can find the unit vector indicating the direction from <span class="process-math">\(A\)</span> to <span class="process-math">\(B\text{.}\)</span> First, set<div class="autopermalink" data-description="Paragraph"><a href="#example-direction-from-one-point-to-another-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="example-direction-from-one-point-to-another-3">
 \begin{equation*}
 \mathbf{x} = \overrightarrow{AB} = \dotprod{-1,-5,3}.
 \end{equation*}
 </div>
-<div class="para" id="example-direction-from-one-point-to-another-4">Then the unit vector that gives the direction from <span class="process-math">\(A\)</span> to <span class="process-math">\(B\)</span> is given by</div>
+<div class="para" id="example-direction-from-one-point-to-another-4">Then the unit vector that gives the direction from <span class="process-math">\(A\)</span> to <span class="process-math">\(B\)</span> is given by<div class="autopermalink" data-description="Paragraph"><a href="#example-direction-from-one-point-to-another-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="displaymath process-math" id="example-direction-from-one-point-to-another-5">
 \begin{align*}
 \mathbf{u} &amp; = \frac{\mathbf{x}}{\norm{\mathbf{x}}} \\
 &amp; = \frac{\dotprod{-1,-5,3}}{\sqrt{1+25+9}} \\
 &amp; = \dotprod{-\frac{1}{\sqrt{37}}, -\frac{5}{\sqrt{37}}, \frac{3}{\sqrt{37}}}. 
 \end{align*}
-</div></article><article class="example example-like" id="example-a-vector-equation-for-the-unit-sphere"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">11.2.12</span><span class="period">.</span><span class="space"> </span><span class="title">A vector equation for the unit sphere.</span>
+</div>
+<div class="autopermalink" data-description="Example 11.2.11: Direction from one point to another"><a href="#example-direction-from-one-point-to-another" title="Copy heading and permalink for Example 11.2.11: Direction from one point to another" aria-label="Copy heading and permalink for Example 11.2.11: Direction from one point to another">🔗</a></div></article><article class="example example-like" id="example-a-vector-equation-for-the-unit-sphere"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.2.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A vector equation for the unit sphere.</span>
 </h4>
-<div class="para" id="example-a-vector-equation-for-the-unit-sphere-2">Using the concept of a unit vector, we can very easily describe the unit sphere<details class="ptx-footnote" aria-live="polite" id="example-a-vector-equation-for-the-unit-sphere-2-1"><summary class="ptx-footnote__number" title="Footnote 6"><sup> 6 </sup></summary><div class="ptx-footnote__contents" id="example-a-vector-equation-for-the-unit-sphere-2-1">The sphere of radius <span class="process-math">\(1\)</span> centered at the origin.</div></details> using a vector equation. If we set <span class="process-math">\(\mathbf{r} = (x,y,z)\text{,}\)</span> then the unit sphere is just the set of all solutions of</div>
-<div class="displaymath process-math">
+<div class="para" id="example-a-vector-equation-for-the-unit-sphere-2">Using the concept of a unit vector, we can very easily describe the unit sphere<details class="ptx-footnote" aria-live="polite" id="example-a-vector-equation-for-the-unit-sphere-2-1"><summary class="ptx-footnote__number" title="Footnote 3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="example-a-vector-equation-for-the-unit-sphere-2-1">The sphere of radius <span class="process-math">\(1\)</span> centered at the origin.</div></details> using a vector equation. If we set <span class="process-math">\(\mathbf{r} = (x,y,z)\text{,}\)</span> then the unit sphere is just the set of all solutions of<div class="autopermalink" data-description="Paragraph"><a href="#example-a-vector-equation-for-the-unit-sphere-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="example-a-vector-equation-for-the-unit-sphere-3">
 \begin{equation*}
 \norm{\mathbf{r}} = 1.
 \end{equation*}
-</div></article></section><section class="subsection" id="subsection-applications"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Applications</span>
+</div>
+<div class="autopermalink" data-description="Example 11.2.12: A vector equation for the unit sphere"><a href="#example-a-vector-equation-for-the-unit-sphere" title="Copy heading and permalink for Example 11.2.12: A vector equation for the unit sphere" aria-label="Copy heading and permalink for Example 11.2.12: A vector equation for the unit sphere">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Basis Vectors and Unit Vectors"><a href="#subsection-basis-vectors-and-unit-vectors" title="Copy heading and permalink for Subsection: Basis Vectors and Unit Vectors" aria-label="Copy heading and permalink for Subsection: Basis Vectors and Unit Vectors">🔗</a></div></section><section class="subsection" id="subsection-applications"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Applications</span>
 </h3>
-<div class="para" id="subsection-applications-2">Many physical quantities have both a direction and a magnitude, like velocity, acceleration and forces. Vectors are ideally suited to measure these quantities.</div>
+<div class="para" id="subsection-applications-2">Many physical quantities have both a direction and a magnitude, like velocity, acceleration and forces. Vectors are ideally suited to measure these quantities.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-applications-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-weight-of-a-chain"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">11.2.13</span><span class="period">.</span><span class="space"> </span><span class="title">Weight of a chain.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.2.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Weight of a chain.</span>
 </h4>
-<div class="para" id="example-weight-of-a-chain-2">A still chain is fixed to two ends of a level divide. The tension of the chain at each fixed end can be represented by vectors pointing away from the chain. Call these tension forces <span class="process-math">\(\mathbf{T}_{1}\)</span> and <span class="process-math">\(\mathbf{T}_{2}\text{.}\)</span> Suppose we know that each force vector makes an angle of <span class="process-math">\(45^{\circ}\)</span> with the ground on either side of the chain’s fixed ends, and that the magnitude of each tension is <span class="quantity">43 N</span>. Then we can use vector addition to find the weight of the chain.</div>
-<div class="para" id="example-weight-of-a-chain-3">Let <span class="process-math">\(\mathbf{w}\)</span> denote the weight of the chain considered as a vector (so that it’s pointing down). Since the chain is still, its <dfn class="terminology">resultant</dfn><details class="ptx-footnote" aria-live="polite" id="example-weight-of-a-chain-3-3"><summary class="ptx-footnote__number" title="Footnote 7"><sup> 7 </sup></summary><div class="ptx-footnote__contents" id="example-weight-of-a-chain-3-3">The sum of all forces acting on the chain.</div></details> must be <span class="process-math">\(\mathbf{0}\text{.}\)</span> So we can say that</div>
-<div class="displaymath process-math">
+<div class="para" id="example-weight-of-a-chain-2">A still chain is fixed to two ends of a level divide. The tension of the chain at each fixed end can be represented by vectors pointing away from the chain. Call these tension forces <span class="process-math">\(\mathbf{T}_{1}\)</span> and <span class="process-math">\(\mathbf{T}_{2}\text{.}\)</span> Suppose we know that each force vector makes an angle of <span class="process-math">\(45^{\circ}\)</span> with the ground on either side of the chain’s fixed ends, and that the magnitude of each tension is <span class="quantity">43 N</span>. Then we can use vector addition to find the weight of the chain.<div class="autopermalink" data-description="Paragraph"><a href="#example-weight-of-a-chain-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="example-weight-of-a-chain-3">Let <span class="process-math">\(\mathbf{w}\)</span> denote the weight of the chain considered as a vector (so that it’s pointing down). Since the chain is still, its <dfn class="terminology">resultant</dfn><details class="ptx-footnote" aria-live="polite" id="example-weight-of-a-chain-3-3"><summary class="ptx-footnote__number" title="Footnote 4"><sup> 4 </sup></summary><div class="ptx-footnote__contents" id="example-weight-of-a-chain-3-3">The sum of all forces acting on the chain.</div></details> must be <span class="process-math">\(\mathbf{0}\text{.}\)</span> So we can say that<div class="autopermalink" data-description="Paragraph"><a href="#example-weight-of-a-chain-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="example-weight-of-a-chain-4">
 \begin{equation*}
 \mathbf{T}_{1}+\mathbf{T}_{2} + \mathbf{w} = \mathbf{0}
 \end{equation*}
 </div>
-<div class="para" id="example-weight-of-a-chain-5">or in other words</div>
-<div class="displaymath process-math">
+<div class="para" id="example-weight-of-a-chain-5">or in other words<div class="autopermalink" data-description="Paragraph"><a href="#example-weight-of-a-chain-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" id="example-weight-of-a-chain-6">
 \begin{equation*}
 \mathbf{w} = -\mathbf{T}_{1}-\mathbf{T}_{2}.
 \end{equation*}
 </div>
-<div class="para" id="example-weight-of-a-chain-7">What we need to find is <span class="process-math">\(\norm{\mathbf{w}}\text{,}\)</span> which we can do without too much trouble if we can rewrite the tension vectors in component form. In fact, we have</div>
+<div class="para" id="example-weight-of-a-chain-7">What we need to find is <span class="process-math">\(\norm{\mathbf{w}}\text{,}\)</span> which we can do without too much trouble if we can rewrite the tension vectors in component form. In fact, we have<div class="autopermalink" data-description="Paragraph"><a href="#example-weight-of-a-chain-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="displaymath process-math" id="example-weight-of-a-chain-8">
 \begin{align*}
 \mathbf{T}_{1} &amp; = \dotprod{-\norm{\mathbf{T}_{1}}\cos45^{\circ},\norm{\mathbf{T}_{1}}\sin45^{\circ}} \\
 \mathbf{T}_{2} &amp; = \dotprod{\norm{\mathbf{T}_{2}}\cos45^{\circ},\norm{\mathbf{T}_{2}}\sin45^{\circ}} 
 \end{align*}
 </div>
-<div class="para" id="example-weight-of-a-chain-9">So it follows that</div>
+<div class="para" id="example-weight-of-a-chain-9">So it follows that<div class="autopermalink" data-description="Paragraph"><a href="#example-weight-of-a-chain-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="displaymath process-math" id="example-weight-of-a-chain-10">
 \begin{align*}
 \norm{\mathbf{w}} &amp; = \norm{-\mathbf{T}_{1}-\mathbf{T}_{2}} \\
@@ -987,13 +982,15 @@ true);
 &amp; = 43\sqrt{2} 
 \end{align*}
 </div>
-<div class="para" id="example-weight-of-a-chain-11">Therefore the chain weighs <span class="process-math">\(43\sqrt{2}\)</span><span class="quantity">N</span>.</div></article></section></section></div>
-<div class="ptx-content-footer">
+<div class="para" id="example-weight-of-a-chain-11">Therefore the chain weighs <span class="process-math">\(43\sqrt{2}\)</span><span class="quantity">N</span>.<div class="autopermalink" data-description="Paragraph"><a href="#example-weight-of-a-chain-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 11.2.13: Weight of a chain"><a href="#example-weight-of-a-chain" title="Copy heading and permalink for Example 11.2.13: Weight of a chain" aria-label="Copy heading and permalink for Example 11.2.13: Weight of a chain">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Applications"><a href="#subsection-applications" title="Copy heading and permalink for Subsection: Applications" aria-label="Copy heading and permalink for Subsection: Applications">🔗</a></div></section><div class="autopermalink" data-description="Section 11.2: Vectors"><a href="#section-vectors" title="Copy heading and permalink for Section 11.2: Vectors" aria-label="Copy heading and permalink for Section 11.2: Vectors">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="section-coordinates-in-3-space.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="section-the-dot-product.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
-<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
 </body>
 </html>

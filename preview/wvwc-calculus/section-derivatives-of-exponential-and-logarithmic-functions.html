@@ -6,17 +6,21 @@
 <!--*                                          *-->
 <!--********************************************-->
 <html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>WVWC-CALC Derivatives of exponential and logarithmic functions</title>
-<meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:type" content="book">
-<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo.jpg">
-<meta property="book:title" content="Calculus Notes">
-<meta property="book:author" content="Jesse Oldroyd
-          ">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -88,12 +92,14 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo-brandlogo.jpg">
+<meta property="book:title" content="Calculus Notes">
+<meta property="book:author" content="Jesse Oldroyd
+          ">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -115,127 +121,22 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.1';
+eBookConfig.runestone_version = '7.11.8';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.87cabc2515250052.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.630d5c4fb4b681eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.97f3ae4f7a71ba18.css">
-<style>
-#theorem-combining-continuous-functions-2-1-4 { counter-set: theorem-combining-continuous-functions-2-1-4 0; }
-#theorem-combining-continuous-functions-2-1-4 > li::marker { content: ""counter(theorem-combining-continuous-functions-2-1-4,decimal)"."; }
-#theorem-combining-continuous-functions-2-1-4 > li { counter-increment: theorem-combining-continuous-functions-2-1-4; }
-#example-derivatives-using-the-power-rule-2-1-1 { counter-set: example-derivatives-using-the-power-rule-2-1-1 0; }
-#example-derivatives-using-the-power-rule-2-1-1 > li::marker { content: ""counter(example-derivatives-using-the-power-rule-2-1-1,decimal)"."; }
-#example-derivatives-using-the-power-rule-2-1-1 > li { counter-increment: example-derivatives-using-the-power-rule-2-1-1; }
-#section-extreme-values-of-functions-4-1-1-1 { counter-set: section-extreme-values-of-functions-4-1-1-1 0; }
-#section-extreme-values-of-functions-4-1-1-1 > li::marker { content: ""counter(section-extreme-values-of-functions-4-1-1-1,decimal)"."; }
-#section-extreme-values-of-functions-4-1-1-1 > li { counter-increment: section-extreme-values-of-functions-4-1-1-1; }
-#example-minimizing-material-costs-3-1-1 { counter-set: example-minimizing-material-costs-3-1-1 0; }
-#example-minimizing-material-costs-3-1-1 > li::marker { content: ""counter(example-minimizing-material-costs-3-1-1,decimal)"."; }
-#example-minimizing-material-costs-3-1-1 > li { counter-increment: example-minimizing-material-costs-3-1-1; }
-#example-distance-on-an-ellipse-3-1-1 { counter-set: example-distance-on-an-ellipse-3-1-1 0; }
-#example-distance-on-an-ellipse-3-1-1 > li::marker { content: ""counter(example-distance-on-an-ellipse-3-1-1,decimal)"."; }
-#example-distance-on-an-ellipse-3-1-1 > li { counter-increment: example-distance-on-an-ellipse-3-1-1; }
-#example-finding-antiderivatives-2-1-1 { counter-set: example-finding-antiderivatives-2-1-1 0; }
-#example-finding-antiderivatives-2-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-2-1-1,decimal)"."; }
-#example-finding-antiderivatives-2-1-1 > li { counter-increment: example-finding-antiderivatives-2-1-1; }
-#example-finding-antiderivatives-3-1-1 { counter-set: example-finding-antiderivatives-3-1-1 0; }
-#example-finding-antiderivatives-3-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-3-1-1,decimal)"."; }
-#example-finding-antiderivatives-3-1-1 > li { counter-increment: example-finding-antiderivatives-3-1-1; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 { counter-set: theorem-more-properties-of-the-definite-integral-2-1-3 0; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li::marker { content: ""counter(theorem-more-properties-of-the-definite-integral-2-1-3,decimal)"."; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li { counter-increment: theorem-more-properties-of-the-definite-integral-2-1-3; }
-#theorem-fundamental-theorem-of-calculus-2-2 { counter-set: theorem-fundamental-theorem-of-calculus-2-2 0; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li::marker { content: ""counter(theorem-fundamental-theorem-of-calculus-2-2,decimal)"."; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li { counter-increment: theorem-fundamental-theorem-of-calculus-2-2; }
-#section-substitution-5-3 { counter-set: section-substitution-5-3 0; }
-#section-substitution-5-3 > li::marker { content: ""counter(section-substitution-5-3,decimal)"."; }
-#section-substitution-5-3 > li { counter-increment: section-substitution-5-3; }
-#algorithm-partial-fractions-algorithm-3-1-2 { counter-set: algorithm-partial-fractions-algorithm-3-1-2 0; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li::marker { content: ""counter(algorithm-partial-fractions-algorithm-3-1-2,decimal)"."; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li { counter-increment: algorithm-partial-fractions-algorithm-3-1-2; }
-#section-applications-to-physics-and-engineering-2-2 { counter-set: section-applications-to-physics-and-engineering-2-2 0; }
-#section-applications-to-physics-and-engineering-2-2 > li::marker { content: ""counter(section-applications-to-physics-and-engineering-2-2,decimal)"."; }
-#section-applications-to-physics-and-engineering-2-2 > li { counter-increment: section-applications-to-physics-and-engineering-2-2; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 { counter-set: subsection-moments-and-centers-of-mass-7-1-3-1 0; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-1-3-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-1-3-1; }
-#subsection-moments-and-centers-of-mass-7-2-1 { counter-set: subsection-moments-and-centers-of-mass-7-2-1 0; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-2-1; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 { counter-set: subsection-moments-and-centers-of-mass-12-1-1-4 0; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-1-1-4,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li { counter-increment: subsection-moments-and-centers-of-mass-12-1-1-4; }
-#subsection-moments-and-centers-of-mass-12-2-1 { counter-set: subsection-moments-and-centers-of-mass-12-2-1 0; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-12-2-1; }
-#example-determining-a-sustainable-population-3-3 { counter-set: example-determining-a-sustainable-population-3-3 0; }
-#example-determining-a-sustainable-population-3-3 > li::marker { content: ""counter(example-determining-a-sustainable-population-3-3,decimal)"."; }
-#example-determining-a-sustainable-population-3-3 > li { counter-increment: example-determining-a-sustainable-population-3-3; }
-#theorem-sequential-limit-laws-2-2 { counter-set: theorem-sequential-limit-laws-2-2 0; }
-#theorem-sequential-limit-laws-2-2 > li::marker { content: ""counter(theorem-sequential-limit-laws-2-2,decimal)"."; }
-#theorem-sequential-limit-laws-2-2 > li { counter-increment: theorem-sequential-limit-laws-2-2; }
-#example-guessing-sums-2-1-1 { counter-set: example-guessing-sums-2-1-1 0; }
-#example-guessing-sums-2-1-1 > li::marker { content: ""counter(example-guessing-sums-2-1-1,decimal)"."; }
-#example-guessing-sums-2-1-1 > li { counter-increment: example-guessing-sums-2-1-1; }
-#example-guessing-sums-3-1-1 { counter-set: example-guessing-sums-3-1-1 0; }
-#example-guessing-sums-3-1-1 > li::marker { content: ""counter(example-guessing-sums-3-1-1,decimal)"."; }
-#example-guessing-sums-3-1-1 > li { counter-increment: example-guessing-sums-3-1-1; }
-#theorem-direct-comparison-test-series-3-1-4 { counter-set: theorem-direct-comparison-test-series-3-1-4 0; }
-#theorem-direct-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-direct-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-direct-comparison-test-series-3-1-4 > li { counter-increment: theorem-direct-comparison-test-series-3-1-4; }
-#theorem-limit-comparison-test-series-3-1-4 { counter-set: theorem-limit-comparison-test-series-3-1-4 0; }
-#theorem-limit-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-limit-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-limit-comparison-test-series-3-1-4 > li { counter-increment: theorem-limit-comparison-test-series-3-1-4; }
-#subsection-alternating-series-9-2 { counter-set: subsection-alternating-series-9-2 0; }
-#subsection-alternating-series-9-2 > li::marker { content: ""counter(subsection-alternating-series-9-2,decimal)"."; }
-#subsection-alternating-series-9-2 > li { counter-increment: subsection-alternating-series-9-2; }
-#theorem-ratio-test-2-1-3 { counter-set: theorem-ratio-test-2-1-3 0; }
-#theorem-ratio-test-2-1-3 > li::marker { content: ""counter(theorem-ratio-test-2-1-3,decimal)"."; }
-#theorem-ratio-test-2-1-3 > li { counter-increment: theorem-ratio-test-2-1-3; }
-#theorem-root-test-2-1-3 { counter-set: theorem-root-test-2-1-3 0; }
-#theorem-root-test-2-1-3 > li::marker { content: ""counter(theorem-root-test-2-1-3,decimal)"."; }
-#theorem-root-test-2-1-3 > li { counter-increment: theorem-root-test-2-1-3; }
-#example-examples-of-power-series-2-1-1 { counter-set: example-examples-of-power-series-2-1-1 0; }
-#example-examples-of-power-series-2-1-1 > li::marker { content: ""counter(example-examples-of-power-series-2-1-1,decimal)"."; }
-#example-examples-of-power-series-2-1-1 > li { counter-increment: example-examples-of-power-series-2-1-1; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 { counter-set: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 0; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li::marker { content: ""counter(theorem-properties-of-vector-addition-and-scalar-multiplication-3-2,decimal)"."; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li { counter-increment: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2; }
-#theorem-properties-of-the-dot-product-3-2 { counter-set: theorem-properties-of-the-dot-product-3-2 0; }
-#theorem-properties-of-the-dot-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-dot-product-3-2,decimal)"."; }
-#theorem-properties-of-the-dot-product-3-2 > li { counter-increment: theorem-properties-of-the-dot-product-3-2; }
-#theorem-properties-of-the-cross-product-3-2 { counter-set: theorem-properties-of-the-cross-product-3-2 0; }
-#theorem-properties-of-the-cross-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-cross-product-3-2,decimal)"."; }
-#theorem-properties-of-the-cross-product-3-2 > li { counter-increment: theorem-properties-of-the-cross-product-3-2; }
-#theorem-vector-derivative-rules-3-2 { counter-set: theorem-vector-derivative-rules-3-2 0; }
-#theorem-vector-derivative-rules-3-2 > li::marker { content: ""counter(theorem-vector-derivative-rules-3-2,decimal)"."; }
-#theorem-vector-derivative-rules-3-2 > li { counter-increment: theorem-vector-derivative-rules-3-2; }
-#subsection-continuous-functions-5 { counter-set: subsection-continuous-functions-5 0; }
-#subsection-continuous-functions-5 > li::marker { content: ""counter(subsection-continuous-functions-5,decimal)"."; }
-#subsection-continuous-functions-5 > li { counter-increment: subsection-continuous-functions-5; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 { counter-set: algorithm-method-of-lagrange-multipliers-3-1-7 0; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li::marker { content: ""counter(algorithm-method-of-lagrange-multipliers-3-1-7,decimal)"."; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li { counter-increment: algorithm-method-of-lagrange-multipliers-3-1-7; }
-#subsection-conservative-vector-fields-2-2 { counter-set: subsection-conservative-vector-fields-2-2 0; }
-#subsection-conservative-vector-fields-2-2 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-2,decimal)"."; }
-#subsection-conservative-vector-fields-2-2 > li { counter-increment: subsection-conservative-vector-fields-2-2; }
-#subsection-conservative-vector-fields-2-3 { counter-set: subsection-conservative-vector-fields-2-3 0; }
-#subsection-conservative-vector-fields-2-3 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-3,decimal)"."; }
-#subsection-conservative-vector-fields-2-3 > li { counter-increment: subsection-conservative-vector-fields-2-3; }
-#gfdl-section4-3 { counter-set: gfdl-section4-3 0; }
-#gfdl-section4-3 > li::marker { content: ""counter(gfdl-section4-3,upper-alpha)"."; }
-#gfdl-section4-3 > li { counter-increment: gfdl-section4-3; }
-</style>
+<script src="_static/prefix-runtime.991c135ccf182bf5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1c010553c35c544c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.677a75a9120449ff.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdn.geogebra.org/apps/deployggb.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" target="_blank" href=""><img src="external/./wvwc-logo.jpg" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes:</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
+<img src="external/./wvwc-logo-brandlogo.jpg" alt="Logo image"><div class="title-container">
+<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
 <p class="byline">Jesse Oldroyd</p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
@@ -431,10 +332,10 @@ true);
 <div class="toc-title-box"><a href="applications-differentiation.html" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Differentiation</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-linear-approximations.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear approximations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related Rates</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related rates</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-l-hospital-s-rule.html" class="internal"><span class="codenumber">5.3</span> <span class="title">L’Hospital’s Rule</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme Values of Functions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization Problems</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme values of functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization problems</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-the-mean-value-theorem.html" class="internal"><span class="codenumber">5.6</span> <span class="title">The Mean Value Theorem</span></a></div>
 <ul class="structural toc-item-list">
@@ -442,8 +343,11 @@ true);
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-the-mean-value-theorem.html#subsection-the-mean-value-theorem" class="internal"><span class="title">The Mean Value Theorem</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and Graphs</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and graphs</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-newton-s-method.html#subsection-newtons-method-optimization" class="internal"><span class="title">Newton’s Method for optimization</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-antiderivatives.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Antiderivatives</span></a></div></li>
 </ul>
 </li>
@@ -606,8 +510,14 @@ true);
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-coordinates-in-3-space.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Coordinates in 3-Space</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -797,21 +707,26 @@ true);
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-derivatives-of-exponential-and-logarithmic-functions"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.3</span><span class="space"> </span><span class="title">Derivatives of exponential and logarithmic functions</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Derivatives of exponential and logarithmic functions</span>
 </h2>
 <section class="subsection" id="subsection-inverse-function-review"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Inverse function review</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Inverse function review</span>
 </h3>
-<div class="para" id="subsection-inverse-function-review-2">Suppose we want to solve the equation <span class="process-math">\(y = f(x)\)</span> for <span class="process-math">\(x\text{.}\)</span> Then we can only do so unambiguously if <span class="process-math">\(f\)</span> is an <dfn class="terminology">invertible function</dfn>.</div>
+<div class="para" id="subsection-inverse-function-review-2">Suppose we want to solve the equation <span class="process-math">\(y = f(x)\)</span> for <span class="process-math">\(x\text{.}\)</span> Then we can only do so unambiguously if <span class="process-math">\(f\)</span> is an <dfn class="terminology">invertible function</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-inverse-function-review-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="definition-invertible-functions"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Invertible functions.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Invertible functions.</span>
 </h4>
-<div class="para" id="definition-invertible-functions-3-1">A function <span class="process-math">\(f(x)\)</span> is invertible if and only if it is a one-to-one function. That is, <span class="process-math">\(f(x_{1}) = f(x_{2})\)</span> forces <span class="process-math">\(x_{1} = x_{2}\text{.}\)</span>
-</div></article><div class="para" id="subsection-inverse-function-review-4">Since a function is one-to-one if and only if its graph passes the horizontal line test, the horizontal line test also gives us a useful way to check if a function is invertible.</div>
+<div class="para" id="definition-invertible-functions-3-1">A function <span class="process-math">\(f(x)\)</span> is invertible if and only if it is a one-to-one function. That is, <span class="process-math">\(f(x_{1}) = f(x_{2})\)</span> forces <span class="process-math">\(x_{1} = x_{2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#definition-invertible-functions-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 4.3.1: Invertible functions"><a href="#definition-invertible-functions" title="Copy heading and permalink for Definition 4.3.1: Invertible functions" aria-label="Copy heading and permalink for Definition 4.3.1: Invertible functions">🔗</a></div></article><div class="para" id="subsection-inverse-function-review-4">Since a function is one-to-one if and only if its graph passes the horizontal line test, the horizontal line test also gives us a useful way to check if a function is invertible.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-inverse-function-review-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-exponential-inverse"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.2</span><span class="period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="example-exponential-inverse-1">Let <span class="process-math">\(f(x) = e^{x}\text{,}\)</span> the natural exponential function introduced in <a href="section-exponential-functions.html" class="internal" title="Section 4.1: Exponential functions">Section 4.1</a>. Then <span class="process-math">\(f(x)\)</span> is an invertible function, since its graph passes the horizontal line test.</div></article><div class="para logical" id="subsection-inverse-function-review-6">
+<div class="para" id="example-exponential-inverse-1">Let <span class="process-math">\(f(x) = e^{x}\text{,}\)</span> the natural exponential function introduced in <a href="section-exponential-functions.html" class="internal" title="Section 4.1: Exponential functions">Section 4.1</a>. Then <span class="process-math">\(f(x)\)</span> is an invertible function, since its graph passes the horizontal line test.<div class="autopermalink" data-description="Paragraph"><a href="#example-exponential-inverse-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 4.3.2"><a href="#example-exponential-inverse" title="Copy heading and permalink for Example 4.3.2" aria-label="Copy heading and permalink for Example 4.3.2">🔗</a></div></article><div class="para logical" id="subsection-inverse-function-review-6">
 <div class="para">If a function <span class="process-math">\(f\)</span> is invertible, then there exists an <dfn class="terminology">inverse function</dfn> <span class="process-math">\(f^{1}\)</span> satisfying the following equations:</div>
 <div class="displaymath process-math" id="subsection-inverse-function-review-6-4">
 \begin{align*}
@@ -821,113 +736,142 @@ f^{-1}(f(x)) &amp; = x.
 </div>
 <div class="para">Essentially, <span class="process-math">\(f^{-1}\)</span> is the rule that undoes the transformation that <span class="process-math">\(f\)</span> applies to <span class="process-math">\(x\text{.}\)</span> The domain of <span class="process-math">\(f^{-1}\)</span> is the range of <span class="process-math">\(f\)</span> and the range of <span class="process-math">\(f^{-1}\)</span> is the domain of <span class="process-math">\(f\text{.}\)</span> Note that <span class="process-math">\(f^{-1}\neq\frac{1}{f}\text{!.}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-inverse-function-review-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsection-inverse-function-review-7">The graph of an inverse function is related to the graph of the original function in a very nice way. To get the graph of <span class="process-math">\(f^{-1}\)</span> from <span class="process-math">\(f\text{,}\)</span> just reflect the graph of <span class="process-math">\(f\)</span> across the line <span class="process-math">\(y=x\text{.}\)</span>
+<div class="para" id="subsection-inverse-function-review-7">The graph of an inverse function is related to the graph of the original function in a very nice way. To get the graph of <span class="process-math">\(f^{-1}\)</span> from <span class="process-math">\(f\text{,}\)</span> just reflect the graph of <span class="process-math">\(f\)</span> across the line <span class="process-math">\(y=x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-inverse-function-review-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-graphing-the-inverse-of-the-natural-exponential"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Graphing the inverse of the natural exponential.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Graphing the inverse of the natural exponential.</span>
 </h4>
-<div class="para" id="example-graphing-the-inverse-of-the-natural-exponential-2-1">Let <span class="process-math">\(f(x) = e^{x}\text{.}\)</span> Graph <span class="process-math">\(f^{-1}(x)\text{.}\)</span>
+<div class="para" id="example-graphing-the-inverse-of-the-natural-exponential-2-1">Let <span class="process-math">\(f(x) = e^{x}\text{.}\)</span> Graph <span class="process-math">\(f^{-1}(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-graphing-the-inverse-of-the-natural-exponential-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-graphing-the-inverse-of-the-natural-exponential-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="example-graphing-the-inverse-of-the-natural-exponential-3-1">If we graph <span class="process-math">\(e^{x}\)</span> and then rotate the graph across the line <span class="process-math">\(y=x\text{,}\)</span> we get the graph in <a href="section-derivatives-of-exponential-and-logarithmic-functions.html#figure-exponential" class="xref" data-knowl="./knowl/xref/figure-exponential.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.3.4">Figure 4.3.4</a>.</div>
+<div class="solutions"><details id="example-graphing-the-inverse-of-the-natural-exponential-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-graphing-the-inverse-of-the-natural-exponential-3-1">If we graph <span class="process-math">\(e^{x}\)</span> and then rotate the graph across the line <span class="process-math">\(y=x\text{,}\)</span> we get the graph in <a href="section-derivatives-of-exponential-and-logarithmic-functions.html#figure-exponential" class="xref" data-knowl="./knowl/xref/figure-exponential.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.3.4">Figure 4.3.4</a>.<div class="autopermalink" data-description="Paragraph"><a href="#example-graphing-the-inverse-of-the-natural-exponential-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <figure class="figure figure-like" id="figure-exponential"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/image-exponential.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.3.4<span class="period">.</span></span><span class="space"> </span>The inverse of <span class="process-math">\(e^{x}\text{.}\)</span></figcaption></figure>
-</div></details></div></article></section><section class="subsection" id="subsection-calculus-with-inverse-functions"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Calculus with inverse functions</span>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The inverse of <span class="process-math">\(e^{x}\text{.}\)</span><div class="autopermalink" data-description="Figure 4.3.4"><a href="#figure-exponential" title="Copy heading and permalink for Figure 4.3.4" aria-label="Copy heading and permalink for Figure 4.3.4">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Solution 4.3.3.1"><a href="#example-graphing-the-inverse-of-the-natural-exponential-3" title="Copy heading and permalink for Solution 4.3.3.1" aria-label="Copy heading and permalink for Solution 4.3.3.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 4.3.3: Graphing the inverse of the natural exponential"><a href="#example-graphing-the-inverse-of-the-natural-exponential" title="Copy heading and permalink for Example 4.3.3: Graphing the inverse of the natural exponential" aria-label="Copy heading and permalink for Example 4.3.3: Graphing the inverse of the natural exponential">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Inverse function review"><a href="#subsection-inverse-function-review" title="Copy heading and permalink for Subsection: Inverse function review" aria-label="Copy heading and permalink for Subsection: Inverse function review">🔗</a></div></section><section class="subsection" id="subsection-calculus-with-inverse-functions"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Calculus with inverse functions</span>
 </h3>
-<div class="para" id="subsection-calculus-with-inverse-functions-2">There are two important things to notice about the graph of the inverse function in <a href="section-derivatives-of-exponential-and-logarithmic-functions.html#example-exponential-inverse" class="xref" data-knowl="./knowl/xref/example-exponential-inverse.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 4.3.2">Example 4.3.2</a>: it’s continuous and differentiable. This is because the same was true of the original graph, and if we think about it this should be true in general as well since graphing the inverse doesn’t add any new gaps or cusps to the graph.</div>
-<article class="theorem theorem-like" id="theorem-continuity-and-differentiability-of-inverses"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.3.5</span><span class="period">.</span><span class="space"> </span><span class="title">Continuity and differentiability of inverses.</span>
-</h4>
-<div class="para" id="theorem-continuity-and-differentiability-of-inverses-3-1">Let <span class="process-math">\(f(x)\)</span> be a continuous (respectively, differentiable) function. Suppose that <span class="process-math">\(f(x)\)</span> is invertible, and has inverse <span class="process-math">\(f^{-1}(x)\text{.}\)</span> Then <span class="process-math">\(f^{-1}(x)\)</span> is continuous (respectively, differentiable).</div></article><article class="example example-like" id="example-finding-the-derivative-of-an-inverse-function"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.6</span><span class="period">.</span><span class="space"> </span><span class="title">Finding the derivative of an inverse function.</span>
-</h4>
-<div class="para" id="example-finding-the-derivative-of-an-inverse-function-2-1">Let <span class="process-math">\(f(x) = \sqrt{x-1}\)</span> and note that <span class="process-math">\(f\)</span> is invertible. Find the derivative of <span class="process-math">\(f^{-1}\text{.}\)</span>
+<div class="para" id="subsection-calculus-with-inverse-functions-2">There are two important things to notice about the graph of the inverse function in <a href="section-derivatives-of-exponential-and-logarithmic-functions.html#example-exponential-inverse" class="xref" data-knowl="./knowl/xref/example-exponential-inverse.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 4.3.2">Example 4.3.2</a>: it’s continuous and differentiable. This is because the same was true of the original graph, and if we think about it this should be true in general as well since graphing the inverse doesn’t add any new gaps or cusps to the graph.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-calculus-with-inverse-functions-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-finding-the-derivative-of-an-inverse-function-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-finding-the-derivative-of-an-inverse-function-3-1">
+<article class="theorem theorem-like" id="theorem-continuity-and-differentiability-of-inverses"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Continuity and differentiability of inverses.</span>
+</h4>
+<div class="para" id="theorem-continuity-and-differentiability-of-inverses-3-1">Let <span class="process-math">\(f(x)\)</span> be a continuous (respectively, differentiable) function. Suppose that <span class="process-math">\(f(x)\)</span> is invertible, and has inverse <span class="process-math">\(f^{-1}(x)\text{.}\)</span> Then <span class="process-math">\(f^{-1}(x)\)</span> is continuous (respectively, differentiable).<div class="autopermalink" data-description="Paragraph"><a href="#theorem-continuity-and-differentiability-of-inverses-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 4.3.5: Continuity and differentiability of inverses"><a href="#theorem-continuity-and-differentiability-of-inverses" title="Copy heading and permalink for Theorem 4.3.5: Continuity and differentiability of inverses" aria-label="Copy heading and permalink for Theorem 4.3.5: Continuity and differentiability of inverses">🔗</a></div></article><article class="example example-like" id="example-finding-the-derivative-of-an-inverse-function"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Finding the derivative of an inverse function.</span>
+</h4>
+<div class="para" id="example-finding-the-derivative-of-an-inverse-function-2-1">Let <span class="process-math">\(f(x) = \sqrt{x-1}\)</span> and note that <span class="process-math">\(f\)</span> is invertible. Find the derivative of <span class="process-math">\(f^{-1}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-finding-the-derivative-of-an-inverse-function-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-finding-the-derivative-of-an-inverse-function-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-finding-the-derivative-of-an-inverse-function-3-1">
 <div class="para">One way to do this is just start by finding <span class="process-math">\(f^{-1}\text{.}\)</span> So we’ll set <span class="process-math">\(y = \sqrt{x-1}\text{,}\)</span> solve for <span class="process-math">\(x\)</span> and then switch <span class="process-math">\(x\)</span> and <span class="process-math">\(y\text{.}\)</span> If we do this, we get</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-finding-the-derivative-of-an-inverse-function-3-1-6">
 \begin{equation*}
 y = x^{2} + 1
 \end{equation*}
 </div>
 <div class="para">so <span class="process-math">\(f^{-1}(x) = x^{2} + 1\)</span> (and note that the domain of <span class="process-math">\(f^{-1}\)</span> is <span class="process-math">\([0,\infty)\)</span> since this is the range of <span class="process-math">\(f\text{!}\)</span>). Hence</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-finding-the-derivative-of-an-inverse-function-3-1-11">
 \begin{equation*}
 \dv{}{x}f^{-1}(x) = 2x\text{.}
 \end{equation*}
 </div>
-</div></div></details></div></article><div class="para" id="subsection-calculus-with-inverse-functions-5">The method used in <a href="section-derivatives-of-exponential-and-logarithmic-functions.html#example-finding-the-derivative-of-an-inverse-function" class="xref" data-knowl="./knowl/xref/example-finding-the-derivative-of-an-inverse-function.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 4.3.6: Finding the derivative of an inverse function">Example 4.3.6</a> will certainly work in simple cases. But what do we do if we can’t (or don’t want to) find an explicit formula for the inverse function? The following formula will help us to do this.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-finding-the-derivative-of-an-inverse-function-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.3.6.1"><a href="#example-finding-the-derivative-of-an-inverse-function-3" title="Copy heading and permalink for Solution 4.3.6.1" aria-label="Copy heading and permalink for Solution 4.3.6.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 4.3.6: Finding the derivative of an inverse function"><a href="#example-finding-the-derivative-of-an-inverse-function" title="Copy heading and permalink for Example 4.3.6: Finding the derivative of an inverse function" aria-label="Copy heading and permalink for Example 4.3.6: Finding the derivative of an inverse function">🔗</a></div></article><div class="para" id="subsection-calculus-with-inverse-functions-5">The method used in <a href="section-derivatives-of-exponential-and-logarithmic-functions.html#example-finding-the-derivative-of-an-inverse-function" class="xref" data-knowl="./knowl/xref/example-finding-the-derivative-of-an-inverse-function.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 4.3.6: Finding the derivative of an inverse function">Example 4.3.6</a> will certainly work in simple cases. But what do we do if we can’t (or don’t want to) find an explicit formula for the inverse function? The following formula will help us to do this.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-calculus-with-inverse-functions-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="theorem-derivative-of-an-inverse-function"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.3.7</span><span class="period">.</span><span class="space"> </span><span class="title">Derivative of an inverse function.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Derivative of an inverse function.</span>
 </h4>
 <div class="para logical" id="theorem-derivative-of-an-inverse-function-4-1">
 <div class="para">Let <span class="process-math">\(f(x)\)</span> be a differentiable function with inverse <span class="process-math">\(f^{-1}(x)\text{.}\)</span> Assume that <span class="process-math">\(f^{-1}\)</span> is itself differentiable. Then</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="theorem-derivative-of-an-inverse-function-4-1-4">
 \begin{equation*}
 (f^{-1})'(x) = \frac{1}{f'(f^{-1}(x))}\text{.}
 \end{equation*}
 </div>
-</div></article><details id="theorem-derivative-of-an-inverse-function-5" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical" id="theorem-derivative-of-an-inverse-function-5-1">
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-derivative-of-an-inverse-function-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 4.3.7: Derivative of an inverse function"><a href="#theorem-derivative-of-an-inverse-function" title="Copy heading and permalink for Theorem 4.3.7: Derivative of an inverse function" aria-label="Copy heading and permalink for Theorem 4.3.7: Derivative of an inverse function">🔗</a></div></article><details id="theorem-derivative-of-an-inverse-function-5" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical" id="theorem-derivative-of-an-inverse-function-5-1">
 <div class="para">First, let <span class="process-math">\(y = f^{-1}(x)\text{,}\)</span> so that we need to find <span class="process-math">\(y'\text{.}\)</span> Then we can say that <span class="process-math">\(f(y) = x\text{.}\)</span> Now differentiate this equation implicitly to get</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="theorem-derivative-of-an-inverse-function-5-1-4">
 \begin{equation*}
 f'(y)y' = 1
 \end{equation*}
 </div>
 <div class="para">or just</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="theorem-derivative-of-an-inverse-function-5-1-5">
 \begin{equation*}
 y' = \frac{1}{f'(y)} = \frac{1}{f'(f^{-1}(x))}\text{.}
 \end{equation*}
 </div>
-</div></article></details><article class="example example-like" id="example-exponential-inverse-revisited"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.8</span><span class="period">.</span><span class="space"> </span><span class="title">Exponential inverse revisited.</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-derivative-of-an-inverse-function-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 4.3.7.1"><a href="#theorem-derivative-of-an-inverse-function-5" title="Copy heading and permalink for Proof 4.3.7.1" aria-label="Copy heading and permalink for Proof 4.3.7.1">🔗</a></div></article></details><article class="example example-like" id="example-exponential-inverse-revisited"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exponential inverse revisited.</span>
 </h4>
-<div class="para" id="example-exponential-inverse-revisited-2-1">Using the fact that the derivative of <span class="process-math">\(e^{x}\)</span> is itself, find the derivative of its inverse.</div>
-<div class="solutions"><details id="example-exponential-inverse-revisited-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-exponential-inverse-revisited-3-1">
+<div class="para" id="example-exponential-inverse-revisited-2-1">Using the fact that the derivative of <span class="process-math">\(e^{x}\)</span> is itself, find the derivative of its inverse.<div class="autopermalink" data-description="Paragraph"><a href="#example-exponential-inverse-revisited-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-exponential-inverse-revisited-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-exponential-inverse-revisited-3-1">
 <div class="para">Let <span class="process-math">\(f(x) = e^{x}\text{.}\)</span> Then by <a href="section-derivatives-of-exponential-and-logarithmic-functions.html#theorem-derivative-of-an-inverse-function" class="xref" data-knowl="./knowl/xref/theorem-derivative-of-an-inverse-function.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.3.7: Derivative of an inverse function">Theorem 4.3.7</a> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-derivative-of-an-inverse-function.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-derivative-of-an-inverse-function.html" id="example-exponential-inverse-revisited-3-1-3">
 \begin{equation*}
 (f^{-1})'(x) = \frac{1}{f'(f^{-1}(x))} = \frac{1}{f(f^{-1}(x))} = \frac{1}{x}\text{.}
 \end{equation*}
 </div>
 <div class="para">So the derivative of the inverse of <span class="process-math">\(e^{x}\)</span> is <span class="process-math">\(\frac{1}{x}\text{.}\)</span>
 </div>
-</div></div></details></div></article><article class="example example-like" id="example-derivative-at-a-point"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.9</span><span class="period">.</span><span class="space"> </span><span class="title">Derivative at a point.</span>
-</h4>
-<div class="para" id="example-derivative-at-a-point-2-1">Let <span class="process-math">\(f(x) = x^{3} + 3\sin x + 2\cos x\text{.}\)</span> Find <span class="process-math">\((f^{-1})'(2)\)</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-exponential-inverse-revisited-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-derivative-at-a-point-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-derivative-at-a-point-3-1">
+<div class="autopermalink" data-description="Solution 4.3.8.1"><a href="#example-exponential-inverse-revisited-3" title="Copy heading and permalink for Solution 4.3.8.1" aria-label="Copy heading and permalink for Solution 4.3.8.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 4.3.8: Exponential inverse revisited"><a href="#example-exponential-inverse-revisited" title="Copy heading and permalink for Example 4.3.8: Exponential inverse revisited" aria-label="Copy heading and permalink for Example 4.3.8: Exponential inverse revisited">🔗</a></div></article><article class="example example-like" id="example-derivative-at-a-point"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Derivative at a point.</span>
+</h4>
+<div class="para" id="example-derivative-at-a-point-2-1">Let <span class="process-math">\(f(x) = x^{3} + 3\sin x + 2\cos x\text{.}\)</span> Find <span class="process-math">\((f^{-1})'(2)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-derivative-at-a-point-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-derivative-at-a-point-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-derivative-at-a-point-3-1">
 <div class="para">By <a href="section-derivatives-of-exponential-and-logarithmic-functions.html#theorem-derivative-of-an-inverse-function" class="xref" data-knowl="./knowl/xref/theorem-derivative-of-an-inverse-function.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 4.3.7: Derivative of an inverse function">Theorem 4.3.7</a>, we know that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-derivative-of-an-inverse-function.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-derivative-of-an-inverse-function.html" id="example-derivative-at-a-point-3-1-2">
 \begin{equation*}
 (f^{-1})'(2) = \frac{1}{f'(f^{-1}(2))}\text{.}
 \end{equation*}
 </div>
 <div class="para">By inspection, <span class="process-math">\(f(0) = 2\)</span> which means <span class="process-math">\(f^{-1}(2) = 0\text{.}\)</span> Since</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-derivative-of-an-inverse-function.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-derivative-of-an-inverse-function.html" id="example-derivative-at-a-point-3-1-5">
 \begin{equation*}
 f'(x) = 3x^{2} + 3\cos x - 2\sin x\text{,}
 \end{equation*}
 </div>
 <div class="para">this gives</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-derivative-of-an-inverse-function.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-derivative-of-an-inverse-function.html" id="example-derivative-at-a-point-3-1-6">
 \begin{equation*}
 (f^{-1})'(2) = \frac{1}{f'(f^{-1}(2))} = \frac{1}{f'(0)} = \frac{1}{3}\text{.}
 \end{equation*}
 </div>
-</div></div></details></div></article></section><section class="subsection" id="subsection-derivatives-of-exponentials"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Derivatives of exponentials</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-derivative-at-a-point-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.3.9.1"><a href="#example-derivative-at-a-point-3" title="Copy heading and permalink for Solution 4.3.9.1" aria-label="Copy heading and permalink for Solution 4.3.9.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 4.3.9: Derivative at a point"><a href="#example-derivative-at-a-point" title="Copy heading and permalink for Example 4.3.9: Derivative at a point" aria-label="Copy heading and permalink for Example 4.3.9: Derivative at a point">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Calculus with inverse functions"><a href="#subsection-calculus-with-inverse-functions" title="Copy heading and permalink for Subsection: Calculus with inverse functions" aria-label="Copy heading and permalink for Subsection: Calculus with inverse functions">🔗</a></div></section><section class="subsection" id="subsection-derivatives-of-exponentials"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Derivatives of exponentials</span>
 </h3>
-<div class="para" id="subsection-derivatives-of-exponentials-2">We’ve already mentioned that <span class="process-math">\(\dv{}{x}e^{x} = e^{x}\text{,}\)</span> but we’ve said nothing about differentiating functions such as <span class="process-math">\(3^{x}\)</span> or <span class="process-math">\((\frac{1}{\pi})^{-x}\text{.}\)</span> However, it turns out that we can get these derivatives from the derivative of <span class="process-math">\(e^{x}\)</span> without too much trouble.</div>
+<div class="para" id="subsection-derivatives-of-exponentials-2">We’ve already mentioned that <span class="process-math">\(\dv{}{x}e^{x} = e^{x}\text{,}\)</span> but we’ve said nothing about differentiating functions such as <span class="process-math">\(3^{x}\)</span> or <span class="process-math">\((\frac{1}{\pi})^{-x}\text{.}\)</span> However, it turns out that we can get these derivatives from the derivative of <span class="process-math">\(e^{x}\)</span> without too much trouble.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-derivatives-of-exponentials-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="theorem-derivatives-of-exponential-functions"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.3.10</span><span class="period">.</span><span class="space"> </span><span class="title">Derivatives of exponential functions.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Derivatives of exponential functions.</span>
 </h4>
-<div class="para" id="theorem-derivatives-of-exponential-functions-4-1">Let <span class="process-math">\(a \gt 0\)</span> and set <span class="process-math">\(f(x) = a^{x}\text{.}\)</span> Then <span class="process-math">\(f'(x) = a^{x}\ln a\text{.}\)</span>
-</div></article><details id="theorem-derivatives-of-exponential-functions-5" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical" id="theorem-derivatives-of-exponential-functions-5-1">
+<div class="para" id="theorem-derivatives-of-exponential-functions-4-1">Let <span class="process-math">\(a \gt 0\)</span> and set <span class="process-math">\(f(x) = a^{x}\text{.}\)</span> Then <span class="process-math">\(f'(x) = a^{x}\ln a\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#theorem-derivatives-of-exponential-functions-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 4.3.10: Derivatives of exponential functions"><a href="#theorem-derivatives-of-exponential-functions" title="Copy heading and permalink for Theorem 4.3.10: Derivatives of exponential functions" aria-label="Copy heading and permalink for Theorem 4.3.10: Derivatives of exponential functions">🔗</a></div></article><details id="theorem-derivatives-of-exponential-functions-5" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical" id="theorem-derivatives-of-exponential-functions-5-1">
 <div class="para">To prove this, we need to use what’s available to us: the derivative of <span class="process-math">\(e^{x}\text{.}\)</span> From <a href="section-logarithms.html#example-simplifying-an-exponential" class="xref" data-knowl="./knowl/xref/example-simplifying-an-exponential.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 4.2.2: Simplifying an exponential">Example 4.2.2</a> we say that <span class="process-math">\(e^{x\ln 3} = 3^{x}\text{.}\)</span> More generally, we can also say that <span class="process-math">\(e^{x\ln a} = a^{x}\text{.}\)</span> Hence</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-simplifying-an-exponential.html" id="theorem-derivatives-of-exponential-functions-5-1-5">
 \begin{align*}
@@ -936,18 +880,27 @@ f'(x) = 3x^{2} + 3\cos x - 2\sin x\text{,}
 &amp; = (\ln a)a^{x} \text{.}
 \end{align*}
 </div>
-</div></article></details><article class="example example-like" id="example-differentiating-an-exponential"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.11</span><span class="period">.</span><span class="space"> </span><span class="title">Differentiating an exponential.</span>
-</h4>
-<div class="para" id="example-differentiating-an-exponential-2-1">Let <span class="process-math">\(g(t) = 2.6^{3t - \sin t}\text{.}\)</span> Find <span class="process-math">\(g'(t)\text{.}\)</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-derivatives-of-exponential-functions-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-differentiating-an-exponential-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="example-differentiating-an-exponential-3-1">If we set <span class="process-math">\(u = 3t - \sin t\text{,}\)</span> then <span class="process-math">\(g(t) = g(u) = 2.6^{u}\text{.}\)</span> By the chain rule, <span class="process-math">\(g'(t) = g'(u)\dv{u}{t} = (\ln2.6)2.6^{u}(3-\cos t) = (\ln2.6)2.6^{3t-\sin t}(3-\cos t)\text{.}\)</span>
-</div></div></details></div></article><div class="para" id="subsection-derivatives-of-exponentials-5">Although we certainly want to know the derivative of <span class="process-math">\(a^{x}\text{,}\)</span> or at least how to find it, most applications involving exponential functions use the natural exponential function <span class="process-math">\(e^{x}\)</span> instead. The derivative of <span class="process-math">\(e^{x}\)</span> is probably the most important derivative in this course.</div>
-<article class="example example-like" id="example-solutions-of-a-differential-equation"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.12</span><span class="period">.</span><span class="space"> </span><span class="title">Solutions of a differential equation.</span>
+<div class="autopermalink" data-description="Proof 4.3.10.1"><a href="#theorem-derivatives-of-exponential-functions-5" title="Copy heading and permalink for Proof 4.3.10.1" aria-label="Copy heading and permalink for Proof 4.3.10.1">🔗</a></div></article></details><article class="example example-like" id="example-differentiating-an-exponential"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Differentiating an exponential.</span>
 </h4>
-<div class="para" id="example-solutions-of-a-differential-equation-2-1">Show that <span class="process-math">\(x(t) = Ae^{-t} + Bte^{-t}\)</span> satisfies the differential equation <span class="process-math">\(x'' + 2x' + x = 0\text{,}\)</span> where <span class="process-math">\(A,B\)</span> are arbitrary constants.</div>
-<div class="solutions"><details id="example-solutions-of-a-differential-equation-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-solutions-of-a-differential-equation-3-1">
+<div class="para" id="example-differentiating-an-exponential-2-1">Let <span class="process-math">\(g(t) = 2.6^{3t - \sin t}\text{.}\)</span> Find <span class="process-math">\(g'(t)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-differentiating-an-exponential-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-differentiating-an-exponential-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-differentiating-an-exponential-3-1">If we set <span class="process-math">\(u = 3t - \sin t\text{,}\)</span> then <span class="process-math">\(g(t) = g(u) = 2.6^{u}\text{.}\)</span> By the chain rule, <span class="process-math">\(g'(t) = g'(u)\dv{u}{t} = (\ln2.6)2.6^{u}(3-\cos t) = (\ln2.6)2.6^{3t-\sin t}(3-\cos t)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-differentiating-an-exponential-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.3.11.1"><a href="#example-differentiating-an-exponential-3" title="Copy heading and permalink for Solution 4.3.11.1" aria-label="Copy heading and permalink for Solution 4.3.11.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 4.3.11: Differentiating an exponential"><a href="#example-differentiating-an-exponential" title="Copy heading and permalink for Example 4.3.11: Differentiating an exponential" aria-label="Copy heading and permalink for Example 4.3.11: Differentiating an exponential">🔗</a></div></article><div class="para" id="subsection-derivatives-of-exponentials-5">Although we certainly want to know the derivative of <span class="process-math">\(a^{x}\text{,}\)</span> or at least how to find it, most applications involving exponential functions use the natural exponential function <span class="process-math">\(e^{x}\)</span> instead. The derivative of <span class="process-math">\(e^{x}\)</span> is probably the most important derivative in this course.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-derivatives-of-exponentials-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="example-solutions-of-a-differential-equation"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Solutions of a differential equation.</span>
+</h4>
+<div class="para" id="example-solutions-of-a-differential-equation-2-1">Show that <span class="process-math">\(x(t) = Ae^{-t} + Bte^{-t}\)</span> satisfies the differential equation <span class="process-math">\(x'' + 2x' + x = 0\text{,}\)</span> where <span class="process-math">\(A,B\)</span> are arbitrary constants.<div class="autopermalink" data-description="Paragraph"><a href="#example-solutions-of-a-differential-equation-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-solutions-of-a-differential-equation-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-solutions-of-a-differential-equation-3-1">
 <div class="para">We need to show that if we compute <span class="process-math">\(x'\)</span> and <span class="process-math">\(x''\)</span> and plug these expressions into the differential equation, this will simplify out to <span class="process-math">\(0\text{.}\)</span> Since</div>
 <div class="displaymath process-math" id="example-solutions-of-a-differential-equation-3-1-4">
 \begin{align*}
@@ -963,94 +916,118 @@ x'' + 2x' + x &amp; = (Ae^{-t} - 2Be^{-t} + Bte^{-t}) + 2(-Ae^{-t} + Be^{-t} - B
 &amp; = 0 \text{.}
 \end{align*}
 </div>
-</div></div></details></div></article><div class="para" id="subsection-derivatives-of-exponentials-7">Exponential functions often appear in the solutions of differential equations, which are themselves often viewed as mathematical models of physical systems. Hence exponential functions play a significant role in predicting physical quantities, which goes a long way towards justifying their importance.</div></section><section class="subsection" id="subsection-derivatives-of-logarithms"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Derivatives of logarithms</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-solutions-of-a-differential-equation-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.3.12.1"><a href="#example-solutions-of-a-differential-equation-3" title="Copy heading and permalink for Solution 4.3.12.1" aria-label="Copy heading and permalink for Solution 4.3.12.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 4.3.12: Solutions of a differential equation"><a href="#example-solutions-of-a-differential-equation" title="Copy heading and permalink for Example 4.3.12: Solutions of a differential equation" aria-label="Copy heading and permalink for Example 4.3.12: Solutions of a differential equation">🔗</a></div></article><div class="para" id="subsection-derivatives-of-exponentials-7">Exponential functions often appear in the solutions of differential equations, which are themselves often viewed as mathematical models of physical systems. Hence exponential functions play a significant role in predicting physical quantities, which goes a long way towards justifying their importance.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-derivatives-of-exponentials-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Derivatives of exponentials"><a href="#subsection-derivatives-of-exponentials" title="Copy heading and permalink for Subsection: Derivatives of exponentials" aria-label="Copy heading and permalink for Subsection: Derivatives of exponentials">🔗</a></div></section><section class="subsection" id="subsection-derivatives-of-logarithms"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Derivatives of logarithms</span>
 </h3>
-<div class="para" id="subsection-derivatives-of-logarithms-2">Just as we can get the derivative of every exponential function <span class="process-math">\(a^{x}\)</span> just by knowing the derivative of <span class="process-math">\(e^{x}\text{,}\)</span> we can get the derivative of every logarithmic function <span class="process-math">\(\log_{a}x\)</span> just by knowing that <span class="process-math">\(\dv{}{x}\ln x = \frac{1}{x}\text{.}\)</span>
+<div class="para" id="subsection-derivatives-of-logarithms-2">Just as we can get the derivative of every exponential function <span class="process-math">\(a^{x}\)</span> just by knowing the derivative of <span class="process-math">\(e^{x}\text{,}\)</span> we can get the derivative of every logarithmic function <span class="process-math">\(\log_{a}x\)</span> just by knowing that <span class="process-math">\(\dv{}{x}\ln x = \frac{1}{x}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-derivatives-of-logarithms-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="theorem-derivatives-of-logarithmic-functions"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.3.13</span><span class="period">.</span><span class="space"> </span><span class="title">Derivatives of logarithmic functions.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Derivatives of logarithmic functions.</span>
 </h4>
 <div class="para logical" id="theorem-derivatives-of-logarithmic-functions-3-1">
 <div class="para">Let <span class="process-math">\(a &gt; 0, a\neq 1\)</span> and set <span class="process-math">\(f(x) = \log_{a}x\text{.}\)</span> Then</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="theorem-derivatives-of-logarithmic-functions-3-1-3">
 \begin{equation*}
 f'(x) = \frac{1}{x\ln a}\text{.}
 \end{equation*}
 </div>
-</div></article><article class="example example-like" id="example-differentiating-nested-logarithms"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.14</span><span class="period">.</span><span class="space"> </span><span class="title">Differentiating nested logarithms.</span>
-</h4>
-<div class="para" id="example-differentiating-nested-logarithms-2-1">Let <span class="process-math">\(f(x) = \log_{2}(\log_{5} x)\text{.}\)</span> Find <span class="process-math">\(f'(x)\text{.}\)</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-derivatives-of-logarithmic-functions-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-differentiating-nested-logarithms-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-differentiating-nested-logarithms-3-1">
+<div class="autopermalink" data-description="Theorem 4.3.13: Derivatives of logarithmic functions"><a href="#theorem-derivatives-of-logarithmic-functions" title="Copy heading and permalink for Theorem 4.3.13: Derivatives of logarithmic functions" aria-label="Copy heading and permalink for Theorem 4.3.13: Derivatives of logarithmic functions">🔗</a></div></article><article class="example example-like" id="example-differentiating-nested-logarithms"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Differentiating nested logarithms.</span>
+</h4>
+<div class="para" id="example-differentiating-nested-logarithms-2-1">Let <span class="process-math">\(f(x) = \log_{2}(\log_{5} x)\text{.}\)</span> Find <span class="process-math">\(f'(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-differentiating-nested-logarithms-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-differentiating-nested-logarithms-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-differentiating-nested-logarithms-3-1">
 <div class="para">By the chain rule, we have</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-differentiating-nested-logarithms-3-1-1">
 \begin{equation*}
 f'(x) = \frac{1}{(\log_{5}x)\ln 2}\dv{}{x}\log_{5}x = \frac{1}{(\log_{5} x)\ln 2}\frac{1}{x\ln 5}\text{,}
 \end{equation*}
 </div>
-</div></div></details></div></article><div class="para" id="subsection-derivatives-of-logarithms-5">Logarithms can be used to greatly simplify derivatives involving products, division or exponentiation using a technique known as <dfn class="terminology">logarithmic differentiation</dfn>.</div>
-<article class="example example-like" id="example-a-simple-fraction"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.15</span><span class="period">.</span><span class="space"> </span><span class="title">A simple fraction.</span>
-</h4>
-<div class="para" id="example-a-simple-fraction-2-1">Let <span class="process-math">\(f(x) = \frac{e^{-x}\cos x}{x^{2} + 4x + 4}\text{.}\)</span> Find <span class="process-math">\(f'(x)\text{.}\)</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-differentiating-nested-logarithms-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-a-simple-fraction-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="autopermalink" data-description="Solution 4.3.14.1"><a href="#example-differentiating-nested-logarithms-3" title="Copy heading and permalink for Solution 4.3.14.1" aria-label="Copy heading and permalink for Solution 4.3.14.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 4.3.14: Differentiating nested logarithms"><a href="#example-differentiating-nested-logarithms" title="Copy heading and permalink for Example 4.3.14: Differentiating nested logarithms" aria-label="Copy heading and permalink for Example 4.3.14: Differentiating nested logarithms">🔗</a></div></article><div class="para" id="subsection-derivatives-of-logarithms-5">Logarithms can be used to greatly simplify derivatives involving products, division or exponentiation using a technique known as <dfn class="terminology">logarithmic differentiation</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-derivatives-of-logarithms-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="example-a-simple-fraction"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A simple fraction.</span>
+</h4>
+<div class="para" id="example-a-simple-fraction-2-1">Let <span class="process-math">\(f(x) = \frac{e^{-x}\cos x}{x^{2} + 4x + 4}\text{.}\)</span> Find <span class="process-math">\(f'(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-a-simple-fraction-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-a-simple-fraction-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="example-a-simple-fraction-3-1">
 <div class="para">We can find <span class="process-math">\(f'(x)\)</span> without resorting to logarithms, but this would require using the product, quotient and chain rules. The algebra would be awful. So we’ll using logarithms instead! Set <span class="process-math">\(y = f(x)\text{.}\)</span> Then</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-a-simple-fraction-3-1-3">
 \begin{equation*}
 \ln y = \ln e^{-x} + \ln\cos x - \ln (x^{2} + 4x + 4) = -x + \ln\cos x - 2\ln(x+2)\text{.}
 \end{equation*}
 </div>
 <div class="para">Now we differentiate both sides implicitly to obtain</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-a-simple-fraction-3-1-4">
 \begin{equation*}
 \frac{y'}{y} = -1 - \frac{\sin x}{\cos x} - \frac{2}{x+2}\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-a-simple-fraction-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-a-simple-fraction-3-2">
 <div class="para">Hence</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-a-simple-fraction-3-2-1">
 \begin{equation*}
 y' = y\left(-1 - \tan x - \frac{2}{x+2}\right) = \frac{e^{-x}\cos x}{x^{2} + 4x + 4}\left(-1 - \tan x - \frac{2}{x+2}\right)\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-a-simple-fraction-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-</div></details></div></article><div class="para" id="subsection-derivatives-of-logarithms-7">Logarithmic differentiation is useful for finding derivatives of expressions containing complicated quotients, products or powers.</div>
+<div class="autopermalink" data-description="Solution 4.3.15.1"><a href="#example-a-simple-fraction-3" title="Copy heading and permalink for Solution 4.3.15.1" aria-label="Copy heading and permalink for Solution 4.3.15.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 4.3.15: A simple fraction"><a href="#example-a-simple-fraction" title="Copy heading and permalink for Example 4.3.15: A simple fraction" aria-label="Copy heading and permalink for Example 4.3.15: A simple fraction">🔗</a></div></article><div class="para" id="subsection-derivatives-of-logarithms-7">Logarithmic differentiation is useful for finding derivatives of expressions containing complicated quotients, products or powers.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-derivatives-of-logarithms-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-a-simple-exponent"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.16</span><span class="period">.</span><span class="space"> </span><span class="title">A simple exponent.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A simple exponent.</span>
 </h4>
-<div class="para" id="example-a-simple-exponent-2-1">Let <span class="process-math">\(h(z) = z^{z}\text{.}\)</span> Find <span class="process-math">\(h'(z)\text{.}\)</span>
+<div class="para" id="example-a-simple-exponent-2-1">Let <span class="process-math">\(h(z) = z^{z}\text{.}\)</span> Find <span class="process-math">\(h'(z)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-a-simple-exponent-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-a-simple-exponent-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-a-simple-exponent-3-1">
+<div class="solutions"><details id="example-a-simple-exponent-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-a-simple-exponent-3-1">
 <div class="para">We’ll use logarithmic differentiation again to simplify <span class="process-math">\(h\)</span> and remove the exponent. Set <span class="process-math">\(y = h(z)\text{,}\)</span> which gives</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-a-simple-exponent-3-1-3">
 \begin{equation*}
 \ln y = z\ln z\text{.}
 \end{equation*}
 </div>
 <div class="para">So</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-a-simple-exponent-3-1-4">
 \begin{equation*}
 \frac{y'}{y} = \ln z + 1\text{,}
 \end{equation*}
 </div>
 <div class="para">which means that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-a-simple-exponent-3-1-5">
 \begin{equation*}
 y' = y(\ln z + 1) = z^{z}(\ln z + 1)\text{.}
 \end{equation*}
 </div>
-</div></div></details></div></article></section></section></div>
-<div class="ptx-content-footer">
+<div class="autopermalink" data-description="Paragraph"><a href="#example-a-simple-exponent-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.3.16.1"><a href="#example-a-simple-exponent-3" title="Copy heading and permalink for Solution 4.3.16.1" aria-label="Copy heading and permalink for Solution 4.3.16.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 4.3.16: A simple exponent"><a href="#example-a-simple-exponent" title="Copy heading and permalink for Example 4.3.16: A simple exponent" aria-label="Copy heading and permalink for Example 4.3.16: A simple exponent">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Derivatives of logarithms"><a href="#subsection-derivatives-of-logarithms" title="Copy heading and permalink for Subsection: Derivatives of logarithms" aria-label="Copy heading and permalink for Subsection: Derivatives of logarithms">🔗</a></div></section><div class="autopermalink" data-description="Section 4.3: Derivatives of exponential and logarithmic functions"><a href="#section-derivatives-of-exponential-and-logarithmic-functions" title="Copy heading and permalink for Section 4.3: Derivatives of exponential and logarithmic functions" aria-label="Copy heading and permalink for Section 4.3: Derivatives of exponential and logarithmic functions">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="section-logarithms.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="section-exponential-models.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
-<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
 </body>
 </html>

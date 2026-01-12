@@ -6,17 +6,21 @@
 <!--*                                          *-->
 <!--********************************************-->
 <html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>WVWC-CALC Sequences</title>
-<meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:type" content="book">
-<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo.jpg">
-<meta property="book:title" content="Calculus Notes">
-<meta property="book:author" content="Jesse Oldroyd
-          ">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -88,24 +92,14 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script>// Make *any* div with class 'sagecell-sage' an executable Sage cell
-// Their results will be linked, only within language type
-sagecell.makeSagecell({
-  "inputLocation": "div.sagecell-sage",
-  "linked": true,
-  "linkKey": "linked-sage",
-  "autoeval": false,
-  "languages": [
-    "sage"
-  ],
-  "evalButtonText": "Evaluate (Sage)"
-});
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo-brandlogo.jpg">
+<meta property="book:title" content="Calculus Notes">
+<meta property="book:author" content="Jesse Oldroyd
+          ">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -127,127 +121,34 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.1';
+eBookConfig.runestone_version = '7.11.8';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.87cabc2515250052.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.630d5c4fb4b681eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.97f3ae4f7a71ba18.css">
-<style>
-#theorem-combining-continuous-functions-2-1-4 { counter-set: theorem-combining-continuous-functions-2-1-4 0; }
-#theorem-combining-continuous-functions-2-1-4 > li::marker { content: ""counter(theorem-combining-continuous-functions-2-1-4,decimal)"."; }
-#theorem-combining-continuous-functions-2-1-4 > li { counter-increment: theorem-combining-continuous-functions-2-1-4; }
-#example-derivatives-using-the-power-rule-2-1-1 { counter-set: example-derivatives-using-the-power-rule-2-1-1 0; }
-#example-derivatives-using-the-power-rule-2-1-1 > li::marker { content: ""counter(example-derivatives-using-the-power-rule-2-1-1,decimal)"."; }
-#example-derivatives-using-the-power-rule-2-1-1 > li { counter-increment: example-derivatives-using-the-power-rule-2-1-1; }
-#section-extreme-values-of-functions-4-1-1-1 { counter-set: section-extreme-values-of-functions-4-1-1-1 0; }
-#section-extreme-values-of-functions-4-1-1-1 > li::marker { content: ""counter(section-extreme-values-of-functions-4-1-1-1,decimal)"."; }
-#section-extreme-values-of-functions-4-1-1-1 > li { counter-increment: section-extreme-values-of-functions-4-1-1-1; }
-#example-minimizing-material-costs-3-1-1 { counter-set: example-minimizing-material-costs-3-1-1 0; }
-#example-minimizing-material-costs-3-1-1 > li::marker { content: ""counter(example-minimizing-material-costs-3-1-1,decimal)"."; }
-#example-minimizing-material-costs-3-1-1 > li { counter-increment: example-minimizing-material-costs-3-1-1; }
-#example-distance-on-an-ellipse-3-1-1 { counter-set: example-distance-on-an-ellipse-3-1-1 0; }
-#example-distance-on-an-ellipse-3-1-1 > li::marker { content: ""counter(example-distance-on-an-ellipse-3-1-1,decimal)"."; }
-#example-distance-on-an-ellipse-3-1-1 > li { counter-increment: example-distance-on-an-ellipse-3-1-1; }
-#example-finding-antiderivatives-2-1-1 { counter-set: example-finding-antiderivatives-2-1-1 0; }
-#example-finding-antiderivatives-2-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-2-1-1,decimal)"."; }
-#example-finding-antiderivatives-2-1-1 > li { counter-increment: example-finding-antiderivatives-2-1-1; }
-#example-finding-antiderivatives-3-1-1 { counter-set: example-finding-antiderivatives-3-1-1 0; }
-#example-finding-antiderivatives-3-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-3-1-1,decimal)"."; }
-#example-finding-antiderivatives-3-1-1 > li { counter-increment: example-finding-antiderivatives-3-1-1; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 { counter-set: theorem-more-properties-of-the-definite-integral-2-1-3 0; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li::marker { content: ""counter(theorem-more-properties-of-the-definite-integral-2-1-3,decimal)"."; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li { counter-increment: theorem-more-properties-of-the-definite-integral-2-1-3; }
-#theorem-fundamental-theorem-of-calculus-2-2 { counter-set: theorem-fundamental-theorem-of-calculus-2-2 0; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li::marker { content: ""counter(theorem-fundamental-theorem-of-calculus-2-2,decimal)"."; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li { counter-increment: theorem-fundamental-theorem-of-calculus-2-2; }
-#section-substitution-5-3 { counter-set: section-substitution-5-3 0; }
-#section-substitution-5-3 > li::marker { content: ""counter(section-substitution-5-3,decimal)"."; }
-#section-substitution-5-3 > li { counter-increment: section-substitution-5-3; }
-#algorithm-partial-fractions-algorithm-3-1-2 { counter-set: algorithm-partial-fractions-algorithm-3-1-2 0; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li::marker { content: ""counter(algorithm-partial-fractions-algorithm-3-1-2,decimal)"."; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li { counter-increment: algorithm-partial-fractions-algorithm-3-1-2; }
-#section-applications-to-physics-and-engineering-2-2 { counter-set: section-applications-to-physics-and-engineering-2-2 0; }
-#section-applications-to-physics-and-engineering-2-2 > li::marker { content: ""counter(section-applications-to-physics-and-engineering-2-2,decimal)"."; }
-#section-applications-to-physics-and-engineering-2-2 > li { counter-increment: section-applications-to-physics-and-engineering-2-2; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 { counter-set: subsection-moments-and-centers-of-mass-7-1-3-1 0; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-1-3-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-1-3-1; }
-#subsection-moments-and-centers-of-mass-7-2-1 { counter-set: subsection-moments-and-centers-of-mass-7-2-1 0; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-2-1; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 { counter-set: subsection-moments-and-centers-of-mass-12-1-1-4 0; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-1-1-4,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li { counter-increment: subsection-moments-and-centers-of-mass-12-1-1-4; }
-#subsection-moments-and-centers-of-mass-12-2-1 { counter-set: subsection-moments-and-centers-of-mass-12-2-1 0; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-12-2-1; }
-#example-determining-a-sustainable-population-3-3 { counter-set: example-determining-a-sustainable-population-3-3 0; }
-#example-determining-a-sustainable-population-3-3 > li::marker { content: ""counter(example-determining-a-sustainable-population-3-3,decimal)"."; }
-#example-determining-a-sustainable-population-3-3 > li { counter-increment: example-determining-a-sustainable-population-3-3; }
-#theorem-sequential-limit-laws-2-2 { counter-set: theorem-sequential-limit-laws-2-2 0; }
-#theorem-sequential-limit-laws-2-2 > li::marker { content: ""counter(theorem-sequential-limit-laws-2-2,decimal)"."; }
-#theorem-sequential-limit-laws-2-2 > li { counter-increment: theorem-sequential-limit-laws-2-2; }
-#example-guessing-sums-2-1-1 { counter-set: example-guessing-sums-2-1-1 0; }
-#example-guessing-sums-2-1-1 > li::marker { content: ""counter(example-guessing-sums-2-1-1,decimal)"."; }
-#example-guessing-sums-2-1-1 > li { counter-increment: example-guessing-sums-2-1-1; }
-#example-guessing-sums-3-1-1 { counter-set: example-guessing-sums-3-1-1 0; }
-#example-guessing-sums-3-1-1 > li::marker { content: ""counter(example-guessing-sums-3-1-1,decimal)"."; }
-#example-guessing-sums-3-1-1 > li { counter-increment: example-guessing-sums-3-1-1; }
-#theorem-direct-comparison-test-series-3-1-4 { counter-set: theorem-direct-comparison-test-series-3-1-4 0; }
-#theorem-direct-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-direct-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-direct-comparison-test-series-3-1-4 > li { counter-increment: theorem-direct-comparison-test-series-3-1-4; }
-#theorem-limit-comparison-test-series-3-1-4 { counter-set: theorem-limit-comparison-test-series-3-1-4 0; }
-#theorem-limit-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-limit-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-limit-comparison-test-series-3-1-4 > li { counter-increment: theorem-limit-comparison-test-series-3-1-4; }
-#subsection-alternating-series-9-2 { counter-set: subsection-alternating-series-9-2 0; }
-#subsection-alternating-series-9-2 > li::marker { content: ""counter(subsection-alternating-series-9-2,decimal)"."; }
-#subsection-alternating-series-9-2 > li { counter-increment: subsection-alternating-series-9-2; }
-#theorem-ratio-test-2-1-3 { counter-set: theorem-ratio-test-2-1-3 0; }
-#theorem-ratio-test-2-1-3 > li::marker { content: ""counter(theorem-ratio-test-2-1-3,decimal)"."; }
-#theorem-ratio-test-2-1-3 > li { counter-increment: theorem-ratio-test-2-1-3; }
-#theorem-root-test-2-1-3 { counter-set: theorem-root-test-2-1-3 0; }
-#theorem-root-test-2-1-3 > li::marker { content: ""counter(theorem-root-test-2-1-3,decimal)"."; }
-#theorem-root-test-2-1-3 > li { counter-increment: theorem-root-test-2-1-3; }
-#example-examples-of-power-series-2-1-1 { counter-set: example-examples-of-power-series-2-1-1 0; }
-#example-examples-of-power-series-2-1-1 > li::marker { content: ""counter(example-examples-of-power-series-2-1-1,decimal)"."; }
-#example-examples-of-power-series-2-1-1 > li { counter-increment: example-examples-of-power-series-2-1-1; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 { counter-set: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 0; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li::marker { content: ""counter(theorem-properties-of-vector-addition-and-scalar-multiplication-3-2,decimal)"."; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li { counter-increment: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2; }
-#theorem-properties-of-the-dot-product-3-2 { counter-set: theorem-properties-of-the-dot-product-3-2 0; }
-#theorem-properties-of-the-dot-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-dot-product-3-2,decimal)"."; }
-#theorem-properties-of-the-dot-product-3-2 > li { counter-increment: theorem-properties-of-the-dot-product-3-2; }
-#theorem-properties-of-the-cross-product-3-2 { counter-set: theorem-properties-of-the-cross-product-3-2 0; }
-#theorem-properties-of-the-cross-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-cross-product-3-2,decimal)"."; }
-#theorem-properties-of-the-cross-product-3-2 > li { counter-increment: theorem-properties-of-the-cross-product-3-2; }
-#theorem-vector-derivative-rules-3-2 { counter-set: theorem-vector-derivative-rules-3-2 0; }
-#theorem-vector-derivative-rules-3-2 > li::marker { content: ""counter(theorem-vector-derivative-rules-3-2,decimal)"."; }
-#theorem-vector-derivative-rules-3-2 > li { counter-increment: theorem-vector-derivative-rules-3-2; }
-#subsection-continuous-functions-5 { counter-set: subsection-continuous-functions-5 0; }
-#subsection-continuous-functions-5 > li::marker { content: ""counter(subsection-continuous-functions-5,decimal)"."; }
-#subsection-continuous-functions-5 > li { counter-increment: subsection-continuous-functions-5; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 { counter-set: algorithm-method-of-lagrange-multipliers-3-1-7 0; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li::marker { content: ""counter(algorithm-method-of-lagrange-multipliers-3-1-7,decimal)"."; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li { counter-increment: algorithm-method-of-lagrange-multipliers-3-1-7; }
-#subsection-conservative-vector-fields-2-2 { counter-set: subsection-conservative-vector-fields-2-2 0; }
-#subsection-conservative-vector-fields-2-2 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-2,decimal)"."; }
-#subsection-conservative-vector-fields-2-2 > li { counter-increment: subsection-conservative-vector-fields-2-2; }
-#subsection-conservative-vector-fields-2-3 { counter-set: subsection-conservative-vector-fields-2-3 0; }
-#subsection-conservative-vector-fields-2-3 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-3,decimal)"."; }
-#subsection-conservative-vector-fields-2-3 > li { counter-increment: subsection-conservative-vector-fields-2-3; }
-#gfdl-section4-3 { counter-set: gfdl-section4-3 0; }
-#gfdl-section4-3 > li::marker { content: ""counter(gfdl-section4-3,upper-alpha)"."; }
-#gfdl-section4-3 > li { counter-increment: gfdl-section4-3; }
-</style>
+<script src="_static/prefix-runtime.991c135ccf182bf5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1c010553c35c544c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.677a75a9120449ff.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdn.geogebra.org/apps/deployggb.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><script>// Make *any* div with class 'sagecell-sage' an executable Sage cell
+// Their results will be linked, only within language type
+sagecell.makeSagecell({
+  "inputLocation": "div.sagecell-sage",
+  "linked": true,
+  "linkKey": "linked-sage",
+  "autoeval": false,
+  "languages": [
+    "sage"
+  ],
+  "evalButtonText": "Evaluate (Sage)"
+});
+</script>
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" target="_blank" href=""><img src="external/./wvwc-logo.jpg" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes:</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
+<img src="external/./wvwc-logo-brandlogo.jpg" alt="Logo image"><div class="title-container">
+<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
 <p class="byline">Jesse Oldroyd</p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
@@ -443,10 +344,10 @@ true);
 <div class="toc-title-box"><a href="applications-differentiation.html" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Differentiation</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-linear-approximations.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear approximations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related Rates</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related rates</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-l-hospital-s-rule.html" class="internal"><span class="codenumber">5.3</span> <span class="title">L’Hospital’s Rule</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme Values of Functions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization Problems</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme values of functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization problems</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-the-mean-value-theorem.html" class="internal"><span class="codenumber">5.6</span> <span class="title">The Mean Value Theorem</span></a></div>
 <ul class="structural toc-item-list">
@@ -454,8 +355,11 @@ true);
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-the-mean-value-theorem.html#subsection-the-mean-value-theorem" class="internal"><span class="title">The Mean Value Theorem</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and Graphs</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and graphs</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-newton-s-method.html#subsection-newtons-method-optimization" class="internal"><span class="title">Newton’s Method for optimization</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-antiderivatives.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Antiderivatives</span></a></div></li>
 </ul>
 </li>
@@ -618,8 +522,14 @@ true);
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-coordinates-in-3-space.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Coordinates in 3-Space</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -809,122 +719,146 @@ true);
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-sequences"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">9.1</span><span class="space"> </span><span class="title">Sequences</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sequences</span>
 </h2>
-<div class="para" id="section-sequences-2">In this chapter we’ll be using infinite sums of the form <span class="process-math">\(\sum_{k=0}^{\infty}a_k x^k\)</span> to represent functions and compute integrals. In order to make sense of these series, we need to introduce the concept of a sequence and the limit of a sequence.</div>
+<div class="para" id="section-sequences-2">In this chapter we’ll be using infinite sums of the form <span class="process-math">\(\sum_{k=0}^{\infty}a_k x^k\)</span> to represent functions and compute integrals. In order to make sense of these series, we need to introduce the concept of a sequence and the limit of a sequence.<div class="autopermalink" data-description="Paragraph"><a href="#section-sequences-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="para logical" id="section-sequences-3">
 <div class="para">A <dfn class="terminology">sequence</dfn> is a list of numbers:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="section-sequences-3-2">
 \begin{equation*}
 (a_{0}, a_{1}, a_{2}, \ldots),
 \end{equation*}
 </div>
-<div class="para">often written <span class="process-math">\(\{a_{n}\}_{n=0}^{\infty}\text{.}\)</span> <aside class="aside aside-like" id="section-sequences-3-4"><div class="para" id="section-sequences-3-4-1">We will often take <span class="process-math">\(n = 0\)</span> as our starting index, but not always.</div></aside> We call <span class="process-math">\(a_{n}\)</span> the <span class="process-math">\(\mathbf{n}^{\textbf{th}}\)</span> term of the sequence, and <span class="process-math">\(n\)</span> itself the <dfn class="terminology">index</dfn>. We can view <span class="process-math">\(n\)</span> as denoting the position of the number <span class="process-math">\(a_n\)</span> within the sequence.</div>
+<div class="para">often written <span class="process-math">\(\{a_{n}\}_{n=0}^{\infty}\text{.}\)</span> <details id="section-sequences-3-4" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Aside</span></h3></summary><aside class="aside aside-like knowl__content"><div class="para" id="section-sequences-3-4-1">We will often take <span class="process-math">\(n = 0\)</span> as our starting index, but not always.<div class="autopermalink" data-description="Paragraph"><a href="#section-sequences-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside></details> We call <span class="process-math">\(a_{n}\)</span> the <span class="process-math">\(\mathbf{n}^{\textbf{th}}\)</span> term of the sequence, and <span class="process-math">\(n\)</span> itself the <dfn class="terminology">index</dfn>. We can view <span class="process-math">\(n\)</span> as denoting the position of the number <span class="process-math">\(a_n\)</span> within the sequence.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-sequences-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-finding-a-formula-for-a-sequence"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.1.1</span><span class="period">.</span><span class="space"> </span><span class="title">Finding a Formula for a Sequence.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Finding a Formula for a Sequence.</span>
 </h3>
-<div class="para" id="example-finding-a-formula-for-a-sequence-2-1">Given the sequence <span class="process-math">\((a_n)_{n=0}^{\infty} = (1, 2, 4, 8, \ldots)\text{,}\)</span> make a reasonable guess of the value of <span class="process-math">\(a_4\)</span> and the general formula for <span class="process-math">\(a_n\text{.}\)</span>
-</div></article><div class="para logical" id="section-sequences-5">
+<div class="para" id="example-finding-a-formula-for-a-sequence-2-1">Given the sequence <span class="process-math">\((a_n)_{n=0}^{\infty} = (1, 2, 4, 8, \ldots)\text{,}\)</span> make a reasonable guess of the value of <span class="process-math">\(a_4\)</span> and the general formula for <span class="process-math">\(a_n\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-finding-a-formula-for-a-sequence-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 9.1.1: Finding a Formula for a Sequence"><a href="#example-finding-a-formula-for-a-sequence" title="Copy heading and permalink for Example 9.1.1: Finding a Formula for a Sequence" aria-label="Copy heading and permalink for Example 9.1.1: Finding a Formula for a Sequence">🔗</a></div></article><div class="para logical" id="section-sequences-5">
 <div class="para">Sequences are usually specified in one of two ways: as an <dfn class="terminology">explicit formula</dfn> such as</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="section-sequences-5-2">
 \begin{equation*}
 a_{n} = \frac{1}{1 - 2n}\text{,}
 \end{equation*}
 </div>
 <div class="para">or recursively by means of a <dfn class="terminology">recurrence relation</dfn>, such as</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="section-sequences-5-4">
 \begin{equation*}
 F_{n} = F_{n-1} + F_{n-2}, \quad f_{0} = f_{1} = 1.
 \end{equation*}
 </div>
 <div class="para">Note that for recurrence relations, we need to specify “base cases”.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-sequences-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-an-alternating-sequence"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">An Alternating Sequence.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">An Alternating Sequence.</span>
 </h3>
-<div class="para" id="example-an-alternating-sequence-2-1">Find the first few terms of the sequence <span class="process-math">\(\{\cos(n\pi)\}_{n=2}^{\infty}\text{.}\)</span>
+<div class="para" id="example-an-alternating-sequence-2-1">Find the first few terms of the sequence <span class="process-math">\(\{\cos(n\pi)\}_{n=2}^{\infty}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-an-alternating-sequence-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-an-alternating-sequence-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="example-an-alternating-sequence-3-1">This sequence simplifies down to <span class="process-math">\(\{1, -1, 1, -1, 1, \ldots\}\text{.}\)</span>
-</div></div></details></div></article><div class="para" id="section-sequences-7">Sequences have limits just as functions do.</div>
+<div class="solutions"><details id="example-an-alternating-sequence-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-an-alternating-sequence-3-1">This sequence simplifies down to <span class="process-math">\(\{1, -1, 1, -1, 1, \ldots\}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-an-alternating-sequence-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.2.1"><a href="#example-an-alternating-sequence-3" title="Copy heading and permalink for Solution 9.1.2.1" aria-label="Copy heading and permalink for Solution 9.1.2.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.1.2: An Alternating Sequence"><a href="#example-an-alternating-sequence" title="Copy heading and permalink for Example 9.1.2: An Alternating Sequence" aria-label="Copy heading and permalink for Example 9.1.2: An Alternating Sequence">🔗</a></div></article><div class="para" id="section-sequences-7">Sequences have limits just as functions do.<div class="autopermalink" data-description="Paragraph"><a href="#section-sequences-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="definition-limit-of-a-sequence"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Limit of a Sequence.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Limit of a Sequence.</span>
 </h3>
 <div class="para logical" id="definition-limit-of-a-sequence-2-1">
 <div class="para">A sequence <span class="process-math">\(\{a_{n}\}\)</span> has limit <span class="process-math">\(L\text{,}\)</span> denoted</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="definition-limit-of-a-sequence-2-1-3">
 \begin{equation*}
 \lim_{n\to\infty}a_{n} = L \quad \text{or} \quad a_{n}\to L\text{,}
 \end{equation*}
 </div>
 <div class="para">if <span class="process-math">\(a_{n}\)</span> gets arbitrarily close to <span class="process-math">\(L\)</span> as <span class="process-math">\(n\)</span> increases. If a sequence has a limit, we say the sequence is <dfn class="terminology">convergent</dfn> and <dfn class="terminology">converges</dfn>. Otherwise, we say the sequence is <dfn class="terminology">divergent</dfn> and <dfn class="terminology">diverges</dfn>.</div>
-</div></article><div class="para" id="section-sequences-9">Graphically, we can say that a sequence <span class="process-math">\(a_n\)</span> has a limit <span class="process-math">\(L\)</span> if the points <span class="process-math">\((n, a_n)\)</span> become arbitrarily close to the line <span class="process-math">\(y = L\text{:}\)</span> <div id="section-sequences-9-5" class="ptx-sagecell sagecell-sage"><script type="text/x-sage"># plot of cos(n)/(n^1.5)
+<div class="autopermalink" data-description="Paragraph"><a href="#definition-limit-of-a-sequence-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 9.1.3: Limit of a Sequence"><a href="#definition-limit-of-a-sequence" title="Copy heading and permalink for Definition 9.1.3: Limit of a Sequence" aria-label="Copy heading and permalink for Definition 9.1.3: Limit of a Sequence">🔗</a></div></article><div class="para" id="section-sequences-9">Graphically, we can say that a sequence <span class="process-math">\(a_n\)</span> has a limit <span class="process-math">\(L\)</span> if the points <span class="process-math">\((n, a_n)\)</span> become arbitrarily close to the line <span class="process-math">\(y = L\text{:}\)</span> <div id="section-sequences-9-5" class="ptx-sagecell sagecell-sage"><script type="text/x-sage"># plot of cos(n)/(n^1.5)
 # limit is L = 0
 points([(n, cos(n)/n^(3/2)) for n in range(1, 100)], legend_label = r'$a_n = \frac{\cos(n)}{n}$')
-</script></div> If you run the above code cell, you get some pretty convincing evidence that <span class="process-math">\(\frac{\cos(n)}{n^{3/2}}\to0\)</span> as <span class="process-math">\(n\to\infty\text{.}\)</span>
+</script></div> If you run the above code cell, you get some pretty convincing evidence that <span class="process-math">\(\frac{\cos(n)}{n^{3/2}}\to0\)</span> as <span class="process-math">\(n\to\infty\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#section-sequences-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="section-sequences-10">
 <div class="para">One of the most important sequential limits is the following:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="section-sequences-10-1">
 \begin{equation*}
 \frac{1}{n^{p}}\to 0\quad\text{as}\quad n\to\infty
 \end{equation*}
 </div>
 <div class="para">if <span class="process-math">\(p &gt; 0\text{.}\)</span> Many limits involving sequences with terms that are rational functions of <span class="process-math">\(n\)</span> can be reduced to this form when finding limits.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-sequences-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="section-sequences-11"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.1.4</span><span class="period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
 <div class="para logical" id="section-sequences-11-1-1">
 <div class="para">Find the limit of the sequence</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="section-sequences-11-1-1-1">
 \begin{equation*}
 a_{n} = \frac{3n - n^{3}}{5n^{3} + 2n^{2}}.
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-sequences-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="section-sequences-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="section-sequences-11-2-1">
+<div class="solutions"><details id="section-sequences-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="section-sequences-11-2-1">
 <div class="para">We can try dividing the numerator and denominator by the highest power of <span class="process-math">\(n\)</span> that appears: <span class="process-math">\(n^{3}\text{.}\)</span> This gives</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="section-sequences-11-2-1-3">
 \begin{equation*}
 a_{n} = \frac{3n^{-2} - 1}{5 + 2n^{-1}}\text{.}
 \end{equation*}
 </div>
 <div class="para">Now we can take the limit as <span class="process-math">\(n\to\infty\)</span> to get <span class="process-math">\(a_{n}\to\frac{-1}{5}\text{.}\)</span>
 </div>
-</div></div></details></div></article><div class="para" id="section-sequences-12">We can also apply Calculus 1 limits to sequences by using the following theorem.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-sequences-11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.4.1"><a href="#section-sequences-11-2" title="Copy heading and permalink for Solution 9.1.4.1" aria-label="Copy heading and permalink for Solution 9.1.4.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.1.4"><a href="#section-sequences-11" title="Copy heading and permalink for Example 9.1.4" aria-label="Copy heading and permalink for Example 9.1.4">🔗</a></div></article><div class="para" id="section-sequences-12">We can also apply Calculus 1 limits to sequences by using the following theorem.<div class="autopermalink" data-description="Paragraph"><a href="#section-sequences-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="theorem-sequential-and-functional-limits"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.1.5</span><span class="period">.</span><span class="space"> </span><span class="title">Sequential and Functional Limits.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sequential and Functional Limits.</span>
 </h3>
 <div class="para logical" id="theorem-sequential-and-functional-limits-2-1">
 <div class="para">Let <span class="process-math">\(f(x)\)</span> be a function and suppose that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="theorem-sequential-and-functional-limits-2-1-2">
 \begin{equation*}
 \lim_{x\to\infty}f(x) = L\text{.}
 \end{equation*}
 </div>
 <div class="para">Then</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="theorem-sequential-and-functional-limits-2-1-3">
 \begin{equation*}
 \lim_{n\to\infty}f(n) = L
 \end{equation*}
 </div>
 <div class="para">also.</div>
-</div></article><div class="para" id="section-sequences-14">One immediate advantage of <a href="section-sequences.html#theorem-sequential-and-functional-limits" class="xref" data-knowl="./knowl/xref/theorem-sequential-and-functional-limits.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.1.5: Sequential and Functional Limits">Theorem 9.1.5</a> is that L’Hospital’s Rule from <a href="section-l-hospital-s-rule.html" class="internal" title="Section 5.3: L’Hospital’s Rule">Section 5.3</a> applies to sequential limits as well, <em class="emphasis">as long as the sequence consists of values from a differentiable function</em>.</div>
-<article class="example example-like" id="example-finding-a-sequential-limit-using-l-hospital-s-rule"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.1.6</span><span class="period">.</span><span class="space"> </span><span class="title">Finding a Sequential Limit Using L’Hospital’s Rule.</span>
-</h3>
-<div class="para" id="example-finding-a-sequential-limit-using-l-hospital-s-rule-2-1">Let <span class="process-math">\(a_{n} = n^{2}e^{-n}\text{.}\)</span> Find <span class="process-math">\(\lim_{n\to\infty}a_{n}\text{.}\)</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-sequential-and-functional-limits-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-finding-a-sequential-limit-using-l-hospital-s-rule-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="autopermalink" data-description="Theorem 9.1.5: Sequential and Functional Limits"><a href="#theorem-sequential-and-functional-limits" title="Copy heading and permalink for Theorem 9.1.5: Sequential and Functional Limits" aria-label="Copy heading and permalink for Theorem 9.1.5: Sequential and Functional Limits">🔗</a></div></article><div class="para" id="section-sequences-14">One immediate advantage of <a href="section-sequences.html#theorem-sequential-and-functional-limits" class="xref" data-knowl="./knowl/xref/theorem-sequential-and-functional-limits.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.1.5: Sequential and Functional Limits">Theorem 9.1.5</a> is that L’Hospital’s Rule from <a href="section-l-hospital-s-rule.html" class="internal" title="Section 5.3: L’Hospital’s Rule">Section 5.3</a> applies to sequential limits as well, <em class="emphasis">as long as the sequence consists of values from a differentiable function</em>.<div class="autopermalink" data-description="Paragraph"><a href="#section-sequences-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="example-finding-a-sequential-limit-using-l-hospital-s-rule"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Finding a Sequential Limit Using L’Hospital’s Rule.</span>
+</h3>
+<div class="para" id="example-finding-a-sequential-limit-using-l-hospital-s-rule-2-1">Let <span class="process-math">\(a_{n} = n^{2}e^{-n}\text{.}\)</span> Find <span class="process-math">\(\lim_{n\to\infty}a_{n}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-finding-a-sequential-limit-using-l-hospital-s-rule-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-finding-a-sequential-limit-using-l-hospital-s-rule-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="example-finding-a-sequential-limit-using-l-hospital-s-rule-3-1">
 <div class="para">First, note that <span class="process-math">\(a_{n} = f(n)\)</span> where</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-finding-a-sequential-limit-using-l-hospital-s-rule-3-1-2">
 \begin{equation*}
 f(x) = \frac{x^{2}}{e^{x}}\text{.}
 \end{equation*}
 </div>
 <div class="para">Therefore</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-finding-a-sequential-limit-using-l-hospital-s-rule-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="displaymath process-math" id="example-finding-a-sequential-limit-using-l-hospital-s-rule-3-2">
 \begin{align*}
@@ -934,219 +868,298 @@ f(x) = \frac{x^{2}}{e^{x}}\text{.}
 \amp = 0 \text{.}
 \end{align*}
 </div>
-</div></details></div></article><article class="example example-like" id="example-geometric-sequences"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.1.7</span><span class="period">.</span><span class="space"> </span><span class="title">Geometric Sequences.</span>
+<div class="autopermalink" data-description="Solution 9.1.6.1"><a href="#example-finding-a-sequential-limit-using-l-hospital-s-rule-3" title="Copy heading and permalink for Solution 9.1.6.1" aria-label="Copy heading and permalink for Solution 9.1.6.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.1.6: Finding a Sequential Limit Using L’Hospital’s Rule"><a href="#example-finding-a-sequential-limit-using-l-hospital-s-rule" title="Copy heading and permalink for Example 9.1.6: Finding a Sequential Limit Using L’Hospital’s Rule" aria-label="Copy heading and permalink for Example 9.1.6: Finding a Sequential Limit Using L’Hospital’s Rule">🔗</a></div></article><article class="example example-like" id="example-geometric-sequences"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Geometric Sequences.</span>
 </h3>
 <div class="para logical" id="example-geometric-sequences-2-1">
 <div class="para">A <dfn class="terminology">geometric sequence</dfn> is a sequence of the form</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-geometric-sequences-2-1-2">
 \begin{equation*}
 a_{n} = ar^{n}.
 \end{equation*}
 </div>
 <div class="para">Find <span class="process-math">\(\lim_{n\to\infty}a_{n}\text{.}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-geometric-sequences-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-geometric-sequences-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-geometric-sequences-3-1">
+<div class="solutions"><details id="example-geometric-sequences-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-geometric-sequences-3-1">
 <div class="para">This limit depends on whether or not <span class="process-math">\(r\)</span> is in <span class="process-math">\((-1,1]\text{.}\)</span> If <span class="process-math">\(|r| \lt 1\)</span> then <span class="process-math">\(r^{n}\to 0\text{.}\)</span> If <span class="process-math">\(r = 1\)</span> then <span class="process-math">\(r^{n} = 1\)</span> for all <span class="process-math">\(n\text{.}\)</span> Finally, if <span class="process-math">\(r\)</span> is outside of this interval, then <span class="process-math">\(r^{n}\)</span> diverges. Therefore</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-geometric-sequences-3-1-10">
 \begin{equation*}
 a_{n} \to \begin{cases} 0 \amp \text{ if } -1 \lt r \lt 1 \\ a \amp \text{ if } r = 1 \end{cases}
 \end{equation*}
 </div>
 <div class="para">and diverges otherwise.</div>
-</div></div></details></div></article><div class="para" id="section-sequences-17">May decimals can be represented using geometric sequences.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-geometric-sequences-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.7.1"><a href="#example-geometric-sequences-3" title="Copy heading and permalink for Solution 9.1.7.1" aria-label="Copy heading and permalink for Solution 9.1.7.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.1.7: Geometric Sequences"><a href="#example-geometric-sequences" title="Copy heading and permalink for Example 9.1.7: Geometric Sequences" aria-label="Copy heading and permalink for Example 9.1.7: Geometric Sequences">🔗</a></div></article><div class="para" id="section-sequences-17">May decimals can be represented using geometric sequences.<div class="autopermalink" data-description="Paragraph"><a href="#section-sequences-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example---9--repeating"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.1.8</span><span class="period">.</span><span class="space"> </span><span class="title"><span class="process-math">\(.9\)</span> Repeating.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title"><span class="process-math">\(.9\)</span> Repeating.</span>
 </h3>
 <div class="para logical" id="example---9--repeating-2-1">
 <div class="para">Determine the limit of the sequence</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example---9--repeating-2-1-1">
 \begin{equation*}
 \{.9, .99, .999, .9999, .99999, \ldots\}\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example---9--repeating-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example---9--repeating-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example---9--repeating-3-1">
+<div class="solutions"><details id="example---9--repeating-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example---9--repeating-3-1">
 <div class="para">It looks like the terms of the sequence are approaching <span class="process-math">\(1\text{,}\)</span> and we can verify this using a geometric sequence. We can write this sequence as</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example---9--repeating-3-1-2">
 \begin{equation*}
 a_{n} = 1 - (.1)^{n}\quad\text{for}\quad n\geq 1\text{.}
 \end{equation*}
 </div>
 <div class="para">So the limit of the sequence is</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example---9--repeating-3-1-3">
 \begin{equation*}
 \lim_{n\to\infty}a_{n} = 1\text{.}
 \end{equation*}
 </div>
 <div class="para">Note that this suggests the (true!) statement that <span class="process-math">\(.9999\ldots = 1\text{.}\)</span>
 </div>
-</div></div></details></div></article><article class="definition definition-like" id="definition-infinite-limits"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.1.9</span><span class="period">.</span><span class="space"> </span><span class="title">Infinite Limits.</span>
-</h3>
-<div class="para" id="definition-infinite-limits-2-1">Let <span class="process-math">\(a_{n}\)</span> be a sequence. If the terms of <span class="process-math">\(a_{n}\)</span> grow without bound as <span class="process-math">\(n\)</span> increases, we say that <span class="process-math">\(a_{n}\to\infty\text{.}\)</span> If the terms of <span class="process-math">\(a_{n}\)</span> decrease without bound as <span class="process-math">\(n\)</span> increases, we say that <span class="process-math">\(a_{n}\to-\infty\text{.}\)</span>
-</div></article><article class="example example-like" id="example-limit-of-the-fibonacci-sequence"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.1.10</span><span class="period">.</span><span class="space"> </span><span class="title">Limit of the Fibonacci Sequence.</span>
-</h3>
-<div class="para" id="example-limit-of-the-fibonacci-sequence-2-1">Let <span class="process-math">\(F_{n}\)</span> denote the <span class="process-math">\(n^{\text{th}}\)</span> term of the Fibonacci sequence. Determine <span class="process-math">\(\lim_{n\to\infty}F_{n}\text{.}\)</span> Estimate <span class="process-math">\(\lim_{n\to\infty}\frac{F_{n}}{F_{n-1}}\text{.}\)</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example---9--repeating-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-limit-of-the-fibonacci-sequence-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="example-limit-of-the-fibonacci-sequence-3-1">One approach to estimate the limit is to graph the ratio <span class="process-math">\(\frac{F_n}{F_{n-1}}\)</span> to see if it approaches a limiting value. A computer system can handle this easily. The values of <span class="process-math">\(\frac{F_n}{F_{n-1}}\)</span> appear to settle in quickly around <span class="process-math">\(L\approx1.6\text{.}\)</span> <aside class="aside aside-like" id="example-limit-of-the-fibonacci-sequence-3-1-4"><div class="para" id="example-limit-of-the-fibonacci-sequence-3-1-4-1">The actual limiting value is <span class="process-math">\(\varphi = \frac{1+\sqrt{5}}{2}\text{,}\)</span> the <dfn class="terminology">golden ratio</dfn>.</div></aside>
-</div></div></details></div></article><div id="section-sequences-21" class="ptx-sagecell sagecell-sage"><script type="text/x-sage"># plot of F_n / F_(n-1)
+<div class="autopermalink" data-description="Solution 9.1.8.1"><a href="#example---9--repeating-3" title="Copy heading and permalink for Solution 9.1.8.1" aria-label="Copy heading and permalink for Solution 9.1.8.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.1.8: .9 Repeating"><a href="#example---9--repeating" title="Copy heading and permalink for Example 9.1.8: .9 Repeating" aria-label="Copy heading and permalink for Example 9.1.8: .9 Repeating">🔗</a></div></article><article class="definition definition-like" id="definition-infinite-limits"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Infinite Limits.</span>
+</h3>
+<div class="para" id="definition-infinite-limits-2-1">Let <span class="process-math">\(a_{n}\)</span> be a sequence. If the terms of <span class="process-math">\(a_{n}\)</span> grow without bound as <span class="process-math">\(n\)</span> increases, we say that <span class="process-math">\(a_{n}\to\infty\text{.}\)</span> If the terms of <span class="process-math">\(a_{n}\)</span> decrease without bound as <span class="process-math">\(n\)</span> increases, we say that <span class="process-math">\(a_{n}\to-\infty\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#definition-infinite-limits-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 9.1.9: Infinite Limits"><a href="#definition-infinite-limits" title="Copy heading and permalink for Definition 9.1.9: Infinite Limits" aria-label="Copy heading and permalink for Definition 9.1.9: Infinite Limits">🔗</a></div></article><article class="example example-like" id="example-limit-of-the-fibonacci-sequence"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Limit of the Fibonacci Sequence.</span>
+</h3>
+<div class="para" id="example-limit-of-the-fibonacci-sequence-2-1">Let <span class="process-math">\(F_{n}\)</span> denote the <span class="process-math">\(n^{\text{th}}\)</span> term of the Fibonacci sequence. Determine <span class="process-math">\(\lim_{n\to\infty}F_{n}\text{.}\)</span> Estimate <span class="process-math">\(\lim_{n\to\infty}\frac{F_{n}}{F_{n-1}}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-limit-of-the-fibonacci-sequence-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-limit-of-the-fibonacci-sequence-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-limit-of-the-fibonacci-sequence-3-1">One approach to estimate the limit is to graph the ratio <span class="process-math">\(\frac{F_n}{F_{n-1}}\)</span> to see if it approaches a limiting value. A computer system can handle this easily. The values of <span class="process-math">\(\frac{F_n}{F_{n-1}}\)</span> appear to settle in quickly around <span class="process-math">\(L\approx1.6\text{.}\)</span> <details id="example-limit-of-the-fibonacci-sequence-3-1-4" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Aside</span></h4></summary><aside class="aside aside-like knowl__content"><div class="para" id="example-limit-of-the-fibonacci-sequence-3-1-4-1">The actual limiting value is <span class="process-math">\(\varphi = \frac{1+\sqrt{5}}{2}\text{,}\)</span> the <dfn class="terminology">golden ratio</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#example-limit-of-the-fibonacci-sequence-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside></details><div class="autopermalink" data-description="Paragraph"><a href="#example-limit-of-the-fibonacci-sequence-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.10.1"><a href="#example-limit-of-the-fibonacci-sequence-3" title="Copy heading and permalink for Solution 9.1.10.1" aria-label="Copy heading and permalink for Solution 9.1.10.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.1.10: Limit of the Fibonacci Sequence"><a href="#example-limit-of-the-fibonacci-sequence" title="Copy heading and permalink for Example 9.1.10: Limit of the Fibonacci Sequence" aria-label="Copy heading and permalink for Example 9.1.10: Limit of the Fibonacci Sequence">🔗</a></div></article><div id="section-sequences-21" class="ptx-sagecell sagecell-sage"><script type="text/x-sage"># plot of F_n / F_(n-1)
 points([(n, fibonacci(n)/fibonacci(n-1)) for n in range(2, 50)])
 </script></div>
-<div class="para" id="section-sequences-22">To calculate limits, we can use a version of the limit laws.</div>
+<div class="para" id="section-sequences-22">To calculate limits, we can use a version of the limit laws.<div class="autopermalink" data-description="Paragraph"><a href="#section-sequences-22" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="theorem-sequential-limit-laws"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.1.11</span><span class="period">.</span><span class="space"> </span><span class="title">Sequential Limit Laws.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sequential Limit Laws.</span>
 </h3>
-<div class="para" id="theorem-sequential-limit-laws-2-1">Let <span class="process-math">\(\{a_{n}\}\)</span> and <span class="process-math">\(\{b_{n}\}\)</span> be sequences with <span class="process-math">\(a_{n}\to a\)</span> and <span class="process-math">\(b_{n}\to b\text{.}\)</span> Let <span class="process-math">\(c\)</span> be a constant. Then the following are true:</div> <ol class="decimal" id="theorem-sequential-limit-laws-2-2">
-<li id="theorem-sequential-limit-laws-2-2-1"><div class="para" id="p-derived-theorem-sequential-limit-laws-2-2-1"><span class="process-math">\(\displaystyle a_{n} + b_{n} \to a + b.\)</span></div></li>
-<li id="theorem-sequential-limit-laws-2-2-2"><div class="para" id="p-derived-theorem-sequential-limit-laws-2-2-2"><span class="process-math">\(\displaystyle ca_{n}\to ca.\)</span></div></li>
-<li id="theorem-sequential-limit-laws-2-2-3"><div class="para" id="p-derived-theorem-sequential-limit-laws-2-2-3"><span class="process-math">\(\displaystyle a_{n}b_{n}\to ab.\)</span></div></li>
-<li id="theorem-sequential-limit-laws-2-2-4"><div class="para" id="p-derived-theorem-sequential-limit-laws-2-2-4">
+<div class="para" id="theorem-sequential-limit-laws-2-1">Let <span class="process-math">\(\{a_{n}\}\)</span> and <span class="process-math">\(\{b_{n}\}\)</span> be sequences with <span class="process-math">\(a_{n}\to a\)</span> and <span class="process-math">\(b_{n}\to b\text{.}\)</span> Let <span class="process-math">\(c\)</span> be a constant. Then the following are true:<div class="autopermalink" data-description="Paragraph"><a href="#theorem-sequential-limit-laws-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <ol class="decimal" id="theorem-sequential-limit-laws-2-2">
+<li id="theorem-sequential-limit-laws-2-2-1">
+<div class="para" id="p-derived-theorem-sequential-limit-laws-2-2-1"><span class="process-math">\(\displaystyle a_{n} + b_{n} \to a + b.\)</span></div>
+<div class="autopermalink" data-description="Item 1"><a href="#theorem-sequential-limit-laws-2-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="theorem-sequential-limit-laws-2-2-2">
+<div class="para" id="p-derived-theorem-sequential-limit-laws-2-2-2"><span class="process-math">\(\displaystyle ca_{n}\to ca.\)</span></div>
+<div class="autopermalink" data-description="Item 2"><a href="#theorem-sequential-limit-laws-2-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="theorem-sequential-limit-laws-2-2-3">
+<div class="para" id="p-derived-theorem-sequential-limit-laws-2-2-3"><span class="process-math">\(\displaystyle a_{n}b_{n}\to ab.\)</span></div>
+<div class="autopermalink" data-description="Item 3"><a href="#theorem-sequential-limit-laws-2-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="theorem-sequential-limit-laws-2-2-4">
+<div class="para" id="p-derived-theorem-sequential-limit-laws-2-2-4">
 <span class="process-math">\(\frac{a_{n}}{b_{n}}\to\frac{a}{b}\)</span> assuming <span class="process-math">\(b\neq 0\text{.}\)</span>
-</div></li>
-<li id="theorem-sequential-limit-laws-2-2-5"><div class="para" id="p-derived-theorem-sequential-limit-laws-2-2-5">
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#theorem-sequential-limit-laws-2-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="theorem-sequential-limit-laws-2-2-5">
+<div class="para" id="p-derived-theorem-sequential-limit-laws-2-2-5">
 <span class="process-math">\(a_{n}^{p}\to a^{p}\)</span> if <span class="process-math">\(a_{n},p \gt 0\text{.}\)</span>
-</div></li>
-<li id="theorem-sequential-limit-laws-2-2-6"><div class="para" id="p-derived-theorem-sequential-limit-laws-2-2-6">
+</div>
+<div class="autopermalink" data-description="Item 5"><a href="#theorem-sequential-limit-laws-2-2-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+<li id="theorem-sequential-limit-laws-2-2-6">
+<div class="para" id="p-derived-theorem-sequential-limit-laws-2-2-6">
 <span class="process-math">\(f(a_{n})\to f(a)\)</span> if <span class="process-math">\(f\)</span> is continuous at <span class="process-math">\(a\text{.}\)</span>
-</div></li>
-</ol></article><div class="para" id="section-sequences-24">Another useful tool for evaluating limits of recursive sequences is the following result: if <span class="process-math">\(\lim_{n\to\infty}a_{n} = L\text{,}\)</span> then <span class="process-math">\(\lim_{n\to\infty}a_{n-1} = L\)</span> also.</div>
+</div>
+<div class="autopermalink" data-description="Item 6"><a href="#theorem-sequential-limit-laws-2-2-6" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Theorem 9.1.11: Sequential Limit Laws"><a href="#theorem-sequential-limit-laws" title="Copy heading and permalink for Theorem 9.1.11: Sequential Limit Laws" aria-label="Copy heading and permalink for Theorem 9.1.11: Sequential Limit Laws">🔗</a></div></article><div class="para" id="section-sequences-24">Another useful tool for evaluating limits of recursive sequences is the following result: if <span class="process-math">\(\lim_{n\to\infty}a_{n} = L\text{,}\)</span> then <span class="process-math">\(\lim_{n\to\infty}a_{n-1} = L\)</span> also.<div class="autopermalink" data-description="Paragraph"><a href="#section-sequences-24" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-a-limit-from-newton-s-method"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.1.12</span><span class="period">.</span><span class="space"> </span><span class="title">A Limit from Newton’s Method.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A Limit from Newton’s Method.</span>
 </h3>
 <div class="para logical" id="example-a-limit-from-newton-s-method-2-1">
 <div class="para">Find the limit of the sequence</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-a-limit-from-newton-s-method-2-1-1">
 \begin{equation*}
 x_{n} = \frac{1}{2}\left(x_{n} + \frac{2}{x_{n}}\right)\quad\text{where}\quad x_{0} = 1\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-a-limit-from-newton-s-method-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-a-limit-from-newton-s-method-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-a-limit-from-newton-s-method-3-1">
+<div class="solutions"><details id="example-a-limit-from-newton-s-method-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-a-limit-from-newton-s-method-3-1">
 <div class="para">First, assume <span class="process-math">\(\lim_{n\to\infty}x_{n} = x\text{.}\)</span> Then taking the limit of both sides of the recurrence relation gives</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-a-limit-from-newton-s-method-3-1-2">
 \begin{equation*}
 x = \frac{1}{2}\left(x + \frac{2}{x}\right)\text{.}
 \end{equation*}
 </div>
 <div class="para">Solving for <span class="process-math">\(x\text{,}\)</span> we get <span class="process-math">\(x^{2} = 2\text{,}\)</span> which simplifies to <span class="process-math">\(x = \sqrt{2}\text{.}\)</span>
 </div>
-</div></div></details></div></article><article class="example example-like" id="example-a-false-limit"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.1.13</span><span class="period">.</span><span class="space"> </span><span class="title">A False Limit.</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-a-limit-from-newton-s-method-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.12.1"><a href="#example-a-limit-from-newton-s-method-3" title="Copy heading and permalink for Solution 9.1.12.1" aria-label="Copy heading and permalink for Solution 9.1.12.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.1.12: A Limit from Newton’s Method"><a href="#example-a-limit-from-newton-s-method" title="Copy heading and permalink for Example 9.1.12: A Limit from Newton’s Method" aria-label="Copy heading and permalink for Example 9.1.12: A Limit from Newton’s Method">🔗</a></div></article><article class="example example-like" id="example-a-false-limit"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A False Limit.</span>
 </h3>
 <div class="para logical" id="example-a-false-limit-2-1">
 <div class="para">Find the limit of the sequence</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-a-false-limit-2-1-1">
 \begin{equation*}
 s_{n} = 3 - s_{n - 1}\quad\text{where}\quad s_{0} = 1\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-a-false-limit-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-a-false-limit-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-a-false-limit-3-1">
+<div class="solutions"><details id="example-a-false-limit-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-a-false-limit-3-1">
 <div class="para">If we let <span class="process-math">\(s = \lim_{n\to\infty}s_{n}\)</span> and take the limit of both sides of the recurrence, we get <span class="process-math">\(s = 3 - s\)</span> or just <span class="process-math">\(s = \frac{3}{2}\text{.}\)</span> However, the actual terms of the sequence are given by</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-a-false-limit-3-1-4">
 \begin{equation*}
 \{s_{n}\}_{n=0}^{\infty} = \{1, 2, 1, 2, 1, 2, \ldots\}\text{,}
 \end{equation*}
 </div>
 <div class="para">which is clearly divergent! The problem here is that we assumed a limit existed in the first place. <em class="emphasis">This is not always valid</em>. So we need to be careful.</div>
-</div></div></details></div></article><div class="para" id="section-sequences-27">We can check whether or not a sequence is convergent without actually finding a limit, at least in certain cases.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-a-false-limit-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.13.1"><a href="#example-a-false-limit-3" title="Copy heading and permalink for Solution 9.1.13.1" aria-label="Copy heading and permalink for Solution 9.1.13.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.1.13: A False Limit"><a href="#example-a-false-limit" title="Copy heading and permalink for Example 9.1.13: A False Limit" aria-label="Copy heading and permalink for Example 9.1.13: A False Limit">🔗</a></div></article><div class="para" id="section-sequences-27">We can check whether or not a sequence is convergent without actually finding a limit, at least in certain cases.<div class="autopermalink" data-description="Paragraph"><a href="#section-sequences-27" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="theorem-absolute-value-test"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.1.14</span><span class="period">.</span><span class="space"> </span><span class="title">Absolute Value Test.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Absolute Value Test.</span>
 </h3>
-<div class="para" id="theorem-absolute-value-test-2-1">Suppose that <span class="process-math">\(\lim_{n\to\infty}|a_{n}| = 0\text{.}\)</span> Then <span class="process-math">\(a_{n}\to0\)</span> as well.</div></article><article class="theorem theorem-like" id="theorem-the-squeeze-theorem-for-sequences"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.1.15</span><span class="period">.</span><span class="space"> </span><span class="title">The Squeeze Theorem for Sequences.</span>
+<div class="para" id="theorem-absolute-value-test-2-1">Suppose that <span class="process-math">\(\lim_{n\to\infty}|a_{n}| = 0\text{.}\)</span> Then <span class="process-math">\(a_{n}\to0\)</span> as well.<div class="autopermalink" data-description="Paragraph"><a href="#theorem-absolute-value-test-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 9.1.14: Absolute Value Test"><a href="#theorem-absolute-value-test" title="Copy heading and permalink for Theorem 9.1.14: Absolute Value Test" aria-label="Copy heading and permalink for Theorem 9.1.14: Absolute Value Test">🔗</a></div></article><article class="theorem theorem-like" id="theorem-the-squeeze-theorem-for-sequences"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Squeeze Theorem for Sequences.</span>
 </h3>
 <div class="para logical" id="theorem-the-squeeze-theorem-for-sequences-2-1">
 <div class="para">Let <span class="process-math">\(\{a_{n}\}, \{b_{n}\}\)</span> and <span class="process-math">\(\{c_{n}\}\)</span> be sequences such that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="theorem-the-squeeze-theorem-for-sequences-2-1-3">
 \begin{equation*}
 a_{n} \leq b_{n} \leq c_{n}\text{.}
 \end{equation*}
 </div>
 <div class="para">If <span class="process-math">\(a_{n},c_{n}\to L\text{,}\)</span> then <span class="process-math">\(b_{n}\to L\text{.}\)</span>
 </div>
-</div></article><article class="example example-like" id="example-applying-the-squeeze-theorem-and-the-absolute-value-test"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.1.16</span><span class="period">.</span><span class="space"> </span><span class="title">Applying the Squeeze Theorem and the Absolute Value Test.</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-the-squeeze-theorem-for-sequences-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 9.1.15: The Squeeze Theorem for Sequences"><a href="#theorem-the-squeeze-theorem-for-sequences" title="Copy heading and permalink for Theorem 9.1.15: The Squeeze Theorem for Sequences" aria-label="Copy heading and permalink for Theorem 9.1.15: The Squeeze Theorem for Sequences">🔗</a></div></article><article class="example example-like" id="example-applying-the-squeeze-theorem-and-the-absolute-value-test"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Applying the Squeeze Theorem and the Absolute Value Test.</span>
 </h3>
 <div class="para logical" id="example-applying-the-squeeze-theorem-and-the-absolute-value-test-2-1">
 <div class="para">Let</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-applying-the-squeeze-theorem-and-the-absolute-value-test-2-1-1">
 \begin{equation*}
 a_{n} = \frac{(-1)^{n}\sin n}{\frac{n}{2}\cos n + n}\text{.}
 \end{equation*}
 </div>
 <div class="para">Find <span class="process-math">\(\lim_{n\to\infty}a_{n}\text{.}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-applying-the-squeeze-theorem-and-the-absolute-value-test-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-applying-the-squeeze-theorem-and-the-absolute-value-test-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-applying-the-squeeze-theorem-and-the-absolute-value-test-3-1">
+<div class="solutions"><details id="example-applying-the-squeeze-theorem-and-the-absolute-value-test-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-applying-the-squeeze-theorem-and-the-absolute-value-test-3-1">
 <div class="para">This sequence is complicated, so we’ll try comparing with simpler sequences instead. First, we’ll take the absolute value to get rid of the <span class="process-math">\((-1)^{n}\)</span> term:</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-applying-the-squeeze-theorem-and-the-absolute-value-test-3-1-2">
 \begin{equation*}
 |a_{n}| = \frac{|\sin n|}{\left|\frac{n}{2}\cos n + n\right|} = \frac{|\sin n|}{n\left|1 + \frac{1}{2}\cos n\right|}\text{.}
 \end{equation*}
 </div>
 <div class="para">Now we’ll use the fact that <span class="process-math">\(|a_{n}|\geq 0, |\sin n| \leq 1\)</span> and <span class="process-math">\(\left|1 + \frac{1}{2}\cos n\right| \geq \frac{1}{2}\)</span> to write</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-applying-the-squeeze-theorem-and-the-absolute-value-test-3-1-5">
 \begin{equation*}
 0\leq |a_{n}| \leq \frac{1}{\frac{n}{2}} = \frac{2}{n}\text{.}
 \end{equation*}
 </div>
 <div class="para">Since <span class="process-math">\(\frac{2}{n}\to 0\text{,}\)</span> this forces <span class="process-math">\(|a_{n}|\text{,}\)</span> and this <span class="process-math">\(a_{n}\text{,}\)</span> to converge to <span class="process-math">\(0\)</span> as well.</div>
-</div></div></details></div></article><div class="para" id="section-sequences-31">Another important way to check if a sequence converges is the <dfn class="terminology">Monotone Convergence Theorem</dfn> <a href="section-sequences.html#theorem-monotone-convergence-theorem" class="xref" data-knowl="./knowl/xref/theorem-monotone-convergence-theorem.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.1.19: Monotone Convergence Theorem">Theorem 9.1.19</a>.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-applying-the-squeeze-theorem-and-the-absolute-value-test-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.16.1"><a href="#example-applying-the-squeeze-theorem-and-the-absolute-value-test-3" title="Copy heading and permalink for Solution 9.1.16.1" aria-label="Copy heading and permalink for Solution 9.1.16.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.1.16: Applying the Squeeze Theorem and the Absolute Value Test"><a href="#example-applying-the-squeeze-theorem-and-the-absolute-value-test" title="Copy heading and permalink for Example 9.1.16: Applying the Squeeze Theorem and the Absolute Value Test" aria-label="Copy heading and permalink for Example 9.1.16: Applying the Squeeze Theorem and the Absolute Value Test">🔗</a></div></article><div class="para" id="section-sequences-31">Another important way to check if a sequence converges is the <dfn class="terminology">Monotone Convergence Theorem</dfn> <a href="section-sequences.html#theorem-monotone-convergence-theorem" class="xref" data-knowl="./knowl/xref/theorem-monotone-convergence-theorem.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.1.19: Monotone Convergence Theorem">Theorem 9.1.19</a>.<div class="autopermalink" data-description="Paragraph"><a href="#section-sequences-31" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="definition-monotone-sequences"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.1.17</span><span class="period">.</span><span class="space"> </span><span class="title">Monotone Sequences.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.17</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Monotone Sequences.</span>
 </h3>
-<div class="para" id="definition-monotone-sequences-2-1">Let <span class="process-math">\(\{a_{n}\}\)</span> be a sequence. Then <span class="process-math">\(\{a_{n}\}\)</span> is <dfn class="terminology">increasing</dfn> if <span class="process-math">\(a_{n+1} \gt a_{n}\)</span> for all <span class="process-math">\(n\)</span> and <dfn class="terminology">decreasing</dfn> if <span class="process-math">\(a_{n+1}\lt a_{n} \)</span> for all <span class="process-math">\(n\text{.}\)</span> In either case, we say that the sequence is monotone.</div></article><div class="para" id="section-sequences-33">If we add one more condition to a monotone sequence, we get a convergent sequence.</div>
+<div class="para" id="definition-monotone-sequences-2-1">Let <span class="process-math">\(\{a_{n}\}\)</span> be a sequence. Then <span class="process-math">\(\{a_{n}\}\)</span> is <dfn class="terminology">increasing</dfn> if <span class="process-math">\(a_{n+1} \gt a_{n}\)</span> for all <span class="process-math">\(n\)</span> and <dfn class="terminology">decreasing</dfn> if <span class="process-math">\(a_{n+1}\lt a_{n} \)</span> for all <span class="process-math">\(n\text{.}\)</span> In either case, we say that the sequence is monotone.<div class="autopermalink" data-description="Paragraph"><a href="#definition-monotone-sequences-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 9.1.17: Monotone Sequences"><a href="#definition-monotone-sequences" title="Copy heading and permalink for Definition 9.1.17: Monotone Sequences" aria-label="Copy heading and permalink for Definition 9.1.17: Monotone Sequences">🔗</a></div></article><div class="para" id="section-sequences-33">If we add one more condition to a monotone sequence, we get a convergent sequence.<div class="autopermalink" data-description="Paragraph"><a href="#section-sequences-33" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="definition-bounded-sequences"><h3 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">9.1.18</span><span class="period">.</span><span class="space"> </span><span class="title">Bounded Sequences.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.18</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Bounded Sequences.</span>
 </h3>
-<div class="para" id="definition-bounded-sequences-2-1">Let <span class="process-math">\(\{a_{n}\}\)</span> be a sequence. We say that <span class="process-math">\(\{a_{n}\}\)</span> is <dfn class="terminology">bounded</dfn> if there exists some real number <span class="process-math">\(M\)</span> such that <span class="process-math">\(|a_{n}| \leq M\)</span> for all <span class="process-math">\(n\text{.}\)</span>
-</div></article><article class="theorem theorem-like" id="theorem-monotone-convergence-theorem"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.1.19</span><span class="period">.</span><span class="space"> </span><span class="title">Monotone Convergence Theorem.</span>
+<div class="para" id="definition-bounded-sequences-2-1">Let <span class="process-math">\(\{a_{n}\}\)</span> be a sequence. We say that <span class="process-math">\(\{a_{n}\}\)</span> is <dfn class="terminology">bounded</dfn> if there exists some real number <span class="process-math">\(M\)</span> such that <span class="process-math">\(|a_{n}| \leq M\)</span> for all <span class="process-math">\(n\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#definition-bounded-sequences-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 9.1.18: Bounded Sequences"><a href="#definition-bounded-sequences" title="Copy heading and permalink for Definition 9.1.18: Bounded Sequences" aria-label="Copy heading and permalink for Definition 9.1.18: Bounded Sequences">🔗</a></div></article><article class="theorem theorem-like" id="theorem-monotone-convergence-theorem"><h3 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.19</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Monotone Convergence Theorem.</span>
 </h3>
-<div class="para" id="theorem-monotone-convergence-theorem-2-1">Let <span class="process-math">\(\{a_{n}\}\)</span> be a bounded monotone sequence. Then <span class="process-math">\(\{a_{n}\}\)</span> converges.</div></article><article class="example example-like" id="example-applying-the-mct"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.1.20</span><span class="period">.</span><span class="space"> </span><span class="title">Applying the MCT.</span>
+<div class="para" id="theorem-monotone-convergence-theorem-2-1">Let <span class="process-math">\(\{a_{n}\}\)</span> be a bounded monotone sequence. Then <span class="process-math">\(\{a_{n}\}\)</span> converges.<div class="autopermalink" data-description="Paragraph"><a href="#theorem-monotone-convergence-theorem-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 9.1.19: Monotone Convergence Theorem"><a href="#theorem-monotone-convergence-theorem" title="Copy heading and permalink for Theorem 9.1.19: Monotone Convergence Theorem" aria-label="Copy heading and permalink for Theorem 9.1.19: Monotone Convergence Theorem">🔗</a></div></article><article class="example example-like" id="example-applying-the-mct"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.1.20</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Applying the MCT.</span>
 </h3>
 <div class="para logical" id="example-applying-the-mct-2-1">
 <div class="para">Let <span class="process-math">\(\{a_{n}\}\)</span> denote the sequence</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-applying-the-mct-2-1-2">
 \begin{equation*}
 \{\sqrt{2}, \sqrt{2\sqrt{2}}, \sqrt{2\sqrt{2\sqrt{2}}},\ldots\}
 \end{equation*}
 </div>
 <div class="para">Determine if the sequence converges and if so find its limit.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-applying-the-mct-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-applying-the-mct-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-applying-the-mct-3-1">
+<div class="solutions"><details id="example-applying-the-mct-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-applying-the-mct-3-1">
 <div class="para">First, note that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-applying-the-mct-3-1-1">
 \begin{equation*}
 a_{n} = \sqrt{2a_{n-1}}\quad\text{and}\quad a_{1} = \sqrt{2}.
 \end{equation*}
 </div>
 <div class="para">To show this converges, we’ll use the MCT. To do so, we must show that the sequence is bounded and increasing. To show it’s bounded, we’ll guess that <span class="process-math">\(a_{n}\lt 2\)</span> for some <span class="process-math">\(n\text{.}\)</span> Then</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-applying-the-mct-3-1-4">
 \begin{equation*}
 a_{n+1} = \sqrt{2a_{n}}\lt \sqrt{2}\sqrt{2} = 2\text{,}
 \end{equation*}
 </div>
 <div class="para">implying the claim. Now,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-applying-the-mct-3-1-5">
 \begin{equation*}
 a_{n+1} = \sqrt{2}\sqrt{a_{n}} \gt \sqrt{a_{n}^{2}} = a_{n}\text{,}
 \end{equation*}
 </div>
 <div class="para">showing the sequence is increasing. Hence it’s convergent by the MCT. The limit is equal to <span class="process-math">\(2\text{.}\)</span>
 </div>
-</div></div></details></div></article></section></div>
-<div class="ptx-content-footer">
+<div class="autopermalink" data-description="Paragraph"><a href="#example-applying-the-mct-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.1.20.1"><a href="#example-applying-the-mct-3" title="Copy heading and permalink for Solution 9.1.20.1" aria-label="Copy heading and permalink for Solution 9.1.20.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.1.20: Applying the MCT"><a href="#example-applying-the-mct" title="Copy heading and permalink for Example 9.1.20: Applying the MCT" aria-label="Copy heading and permalink for Example 9.1.20: Applying the MCT">🔗</a></div></article><div class="autopermalink" data-description="Section 9.1: Sequences"><a href="#section-sequences" title="Copy heading and permalink for Section 9.1: Sequences" aria-label="Copy heading and permalink for Section 9.1: Sequences">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="series.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="section-series.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
-<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
 </body>
 </html>

@@ -6,17 +6,21 @@
 <!--*                                          *-->
 <!--********************************************-->
 <html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>WVWC-CALC The Divergence, Integral and Comparison Tests</title>
-<meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:type" content="book">
-<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo.jpg">
-<meta property="book:title" content="Calculus Notes">
-<meta property="book:author" content="Jesse Oldroyd
-          ">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -88,12 +92,14 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo-brandlogo.jpg">
+<meta property="book:title" content="Calculus Notes">
+<meta property="book:author" content="Jesse Oldroyd
+          ">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -115,127 +121,22 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.1';
+eBookConfig.runestone_version = '7.11.8';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.87cabc2515250052.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.630d5c4fb4b681eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.97f3ae4f7a71ba18.css">
-<style>
-#theorem-combining-continuous-functions-2-1-4 { counter-set: theorem-combining-continuous-functions-2-1-4 0; }
-#theorem-combining-continuous-functions-2-1-4 > li::marker { content: ""counter(theorem-combining-continuous-functions-2-1-4,decimal)"."; }
-#theorem-combining-continuous-functions-2-1-4 > li { counter-increment: theorem-combining-continuous-functions-2-1-4; }
-#example-derivatives-using-the-power-rule-2-1-1 { counter-set: example-derivatives-using-the-power-rule-2-1-1 0; }
-#example-derivatives-using-the-power-rule-2-1-1 > li::marker { content: ""counter(example-derivatives-using-the-power-rule-2-1-1,decimal)"."; }
-#example-derivatives-using-the-power-rule-2-1-1 > li { counter-increment: example-derivatives-using-the-power-rule-2-1-1; }
-#section-extreme-values-of-functions-4-1-1-1 { counter-set: section-extreme-values-of-functions-4-1-1-1 0; }
-#section-extreme-values-of-functions-4-1-1-1 > li::marker { content: ""counter(section-extreme-values-of-functions-4-1-1-1,decimal)"."; }
-#section-extreme-values-of-functions-4-1-1-1 > li { counter-increment: section-extreme-values-of-functions-4-1-1-1; }
-#example-minimizing-material-costs-3-1-1 { counter-set: example-minimizing-material-costs-3-1-1 0; }
-#example-minimizing-material-costs-3-1-1 > li::marker { content: ""counter(example-minimizing-material-costs-3-1-1,decimal)"."; }
-#example-minimizing-material-costs-3-1-1 > li { counter-increment: example-minimizing-material-costs-3-1-1; }
-#example-distance-on-an-ellipse-3-1-1 { counter-set: example-distance-on-an-ellipse-3-1-1 0; }
-#example-distance-on-an-ellipse-3-1-1 > li::marker { content: ""counter(example-distance-on-an-ellipse-3-1-1,decimal)"."; }
-#example-distance-on-an-ellipse-3-1-1 > li { counter-increment: example-distance-on-an-ellipse-3-1-1; }
-#example-finding-antiderivatives-2-1-1 { counter-set: example-finding-antiderivatives-2-1-1 0; }
-#example-finding-antiderivatives-2-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-2-1-1,decimal)"."; }
-#example-finding-antiderivatives-2-1-1 > li { counter-increment: example-finding-antiderivatives-2-1-1; }
-#example-finding-antiderivatives-3-1-1 { counter-set: example-finding-antiderivatives-3-1-1 0; }
-#example-finding-antiderivatives-3-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-3-1-1,decimal)"."; }
-#example-finding-antiderivatives-3-1-1 > li { counter-increment: example-finding-antiderivatives-3-1-1; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 { counter-set: theorem-more-properties-of-the-definite-integral-2-1-3 0; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li::marker { content: ""counter(theorem-more-properties-of-the-definite-integral-2-1-3,decimal)"."; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li { counter-increment: theorem-more-properties-of-the-definite-integral-2-1-3; }
-#theorem-fundamental-theorem-of-calculus-2-2 { counter-set: theorem-fundamental-theorem-of-calculus-2-2 0; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li::marker { content: ""counter(theorem-fundamental-theorem-of-calculus-2-2,decimal)"."; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li { counter-increment: theorem-fundamental-theorem-of-calculus-2-2; }
-#section-substitution-5-3 { counter-set: section-substitution-5-3 0; }
-#section-substitution-5-3 > li::marker { content: ""counter(section-substitution-5-3,decimal)"."; }
-#section-substitution-5-3 > li { counter-increment: section-substitution-5-3; }
-#algorithm-partial-fractions-algorithm-3-1-2 { counter-set: algorithm-partial-fractions-algorithm-3-1-2 0; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li::marker { content: ""counter(algorithm-partial-fractions-algorithm-3-1-2,decimal)"."; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li { counter-increment: algorithm-partial-fractions-algorithm-3-1-2; }
-#section-applications-to-physics-and-engineering-2-2 { counter-set: section-applications-to-physics-and-engineering-2-2 0; }
-#section-applications-to-physics-and-engineering-2-2 > li::marker { content: ""counter(section-applications-to-physics-and-engineering-2-2,decimal)"."; }
-#section-applications-to-physics-and-engineering-2-2 > li { counter-increment: section-applications-to-physics-and-engineering-2-2; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 { counter-set: subsection-moments-and-centers-of-mass-7-1-3-1 0; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-1-3-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-1-3-1; }
-#subsection-moments-and-centers-of-mass-7-2-1 { counter-set: subsection-moments-and-centers-of-mass-7-2-1 0; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-2-1; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 { counter-set: subsection-moments-and-centers-of-mass-12-1-1-4 0; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-1-1-4,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li { counter-increment: subsection-moments-and-centers-of-mass-12-1-1-4; }
-#subsection-moments-and-centers-of-mass-12-2-1 { counter-set: subsection-moments-and-centers-of-mass-12-2-1 0; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-12-2-1; }
-#example-determining-a-sustainable-population-3-3 { counter-set: example-determining-a-sustainable-population-3-3 0; }
-#example-determining-a-sustainable-population-3-3 > li::marker { content: ""counter(example-determining-a-sustainable-population-3-3,decimal)"."; }
-#example-determining-a-sustainable-population-3-3 > li { counter-increment: example-determining-a-sustainable-population-3-3; }
-#theorem-sequential-limit-laws-2-2 { counter-set: theorem-sequential-limit-laws-2-2 0; }
-#theorem-sequential-limit-laws-2-2 > li::marker { content: ""counter(theorem-sequential-limit-laws-2-2,decimal)"."; }
-#theorem-sequential-limit-laws-2-2 > li { counter-increment: theorem-sequential-limit-laws-2-2; }
-#example-guessing-sums-2-1-1 { counter-set: example-guessing-sums-2-1-1 0; }
-#example-guessing-sums-2-1-1 > li::marker { content: ""counter(example-guessing-sums-2-1-1,decimal)"."; }
-#example-guessing-sums-2-1-1 > li { counter-increment: example-guessing-sums-2-1-1; }
-#example-guessing-sums-3-1-1 { counter-set: example-guessing-sums-3-1-1 0; }
-#example-guessing-sums-3-1-1 > li::marker { content: ""counter(example-guessing-sums-3-1-1,decimal)"."; }
-#example-guessing-sums-3-1-1 > li { counter-increment: example-guessing-sums-3-1-1; }
-#theorem-direct-comparison-test-series-3-1-4 { counter-set: theorem-direct-comparison-test-series-3-1-4 0; }
-#theorem-direct-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-direct-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-direct-comparison-test-series-3-1-4 > li { counter-increment: theorem-direct-comparison-test-series-3-1-4; }
-#theorem-limit-comparison-test-series-3-1-4 { counter-set: theorem-limit-comparison-test-series-3-1-4 0; }
-#theorem-limit-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-limit-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-limit-comparison-test-series-3-1-4 > li { counter-increment: theorem-limit-comparison-test-series-3-1-4; }
-#subsection-alternating-series-9-2 { counter-set: subsection-alternating-series-9-2 0; }
-#subsection-alternating-series-9-2 > li::marker { content: ""counter(subsection-alternating-series-9-2,decimal)"."; }
-#subsection-alternating-series-9-2 > li { counter-increment: subsection-alternating-series-9-2; }
-#theorem-ratio-test-2-1-3 { counter-set: theorem-ratio-test-2-1-3 0; }
-#theorem-ratio-test-2-1-3 > li::marker { content: ""counter(theorem-ratio-test-2-1-3,decimal)"."; }
-#theorem-ratio-test-2-1-3 > li { counter-increment: theorem-ratio-test-2-1-3; }
-#theorem-root-test-2-1-3 { counter-set: theorem-root-test-2-1-3 0; }
-#theorem-root-test-2-1-3 > li::marker { content: ""counter(theorem-root-test-2-1-3,decimal)"."; }
-#theorem-root-test-2-1-3 > li { counter-increment: theorem-root-test-2-1-3; }
-#example-examples-of-power-series-2-1-1 { counter-set: example-examples-of-power-series-2-1-1 0; }
-#example-examples-of-power-series-2-1-1 > li::marker { content: ""counter(example-examples-of-power-series-2-1-1,decimal)"."; }
-#example-examples-of-power-series-2-1-1 > li { counter-increment: example-examples-of-power-series-2-1-1; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 { counter-set: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 0; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li::marker { content: ""counter(theorem-properties-of-vector-addition-and-scalar-multiplication-3-2,decimal)"."; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li { counter-increment: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2; }
-#theorem-properties-of-the-dot-product-3-2 { counter-set: theorem-properties-of-the-dot-product-3-2 0; }
-#theorem-properties-of-the-dot-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-dot-product-3-2,decimal)"."; }
-#theorem-properties-of-the-dot-product-3-2 > li { counter-increment: theorem-properties-of-the-dot-product-3-2; }
-#theorem-properties-of-the-cross-product-3-2 { counter-set: theorem-properties-of-the-cross-product-3-2 0; }
-#theorem-properties-of-the-cross-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-cross-product-3-2,decimal)"."; }
-#theorem-properties-of-the-cross-product-3-2 > li { counter-increment: theorem-properties-of-the-cross-product-3-2; }
-#theorem-vector-derivative-rules-3-2 { counter-set: theorem-vector-derivative-rules-3-2 0; }
-#theorem-vector-derivative-rules-3-2 > li::marker { content: ""counter(theorem-vector-derivative-rules-3-2,decimal)"."; }
-#theorem-vector-derivative-rules-3-2 > li { counter-increment: theorem-vector-derivative-rules-3-2; }
-#subsection-continuous-functions-5 { counter-set: subsection-continuous-functions-5 0; }
-#subsection-continuous-functions-5 > li::marker { content: ""counter(subsection-continuous-functions-5,decimal)"."; }
-#subsection-continuous-functions-5 > li { counter-increment: subsection-continuous-functions-5; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 { counter-set: algorithm-method-of-lagrange-multipliers-3-1-7 0; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li::marker { content: ""counter(algorithm-method-of-lagrange-multipliers-3-1-7,decimal)"."; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li { counter-increment: algorithm-method-of-lagrange-multipliers-3-1-7; }
-#subsection-conservative-vector-fields-2-2 { counter-set: subsection-conservative-vector-fields-2-2 0; }
-#subsection-conservative-vector-fields-2-2 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-2,decimal)"."; }
-#subsection-conservative-vector-fields-2-2 > li { counter-increment: subsection-conservative-vector-fields-2-2; }
-#subsection-conservative-vector-fields-2-3 { counter-set: subsection-conservative-vector-fields-2-3 0; }
-#subsection-conservative-vector-fields-2-3 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-3,decimal)"."; }
-#subsection-conservative-vector-fields-2-3 > li { counter-increment: subsection-conservative-vector-fields-2-3; }
-#gfdl-section4-3 { counter-set: gfdl-section4-3 0; }
-#gfdl-section4-3 > li::marker { content: ""counter(gfdl-section4-3,upper-alpha)"."; }
-#gfdl-section4-3 > li { counter-increment: gfdl-section4-3; }
-</style>
+<script src="_static/prefix-runtime.991c135ccf182bf5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1c010553c35c544c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.677a75a9120449ff.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdn.geogebra.org/apps/deployggb.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" target="_blank" href=""><img src="external/./wvwc-logo.jpg" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes:</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
+<img src="external/./wvwc-logo-brandlogo.jpg" alt="Logo image"><div class="title-container">
+<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
 <p class="byline">Jesse Oldroyd</p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
@@ -431,10 +332,10 @@ true);
 <div class="toc-title-box"><a href="applications-differentiation.html" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Differentiation</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-linear-approximations.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear approximations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related Rates</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related rates</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-l-hospital-s-rule.html" class="internal"><span class="codenumber">5.3</span> <span class="title">L’Hospital’s Rule</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme Values of Functions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization Problems</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme values of functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization problems</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-the-mean-value-theorem.html" class="internal"><span class="codenumber">5.6</span> <span class="title">The Mean Value Theorem</span></a></div>
 <ul class="structural toc-item-list">
@@ -442,8 +343,11 @@ true);
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-the-mean-value-theorem.html#subsection-the-mean-value-theorem" class="internal"><span class="title">The Mean Value Theorem</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and Graphs</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and graphs</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-newton-s-method.html#subsection-newtons-method-optimization" class="internal"><span class="title">Newton’s Method for optimization</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-antiderivatives.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Antiderivatives</span></a></div></li>
 </ul>
 </li>
@@ -606,8 +510,14 @@ true);
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-coordinates-in-3-space.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Coordinates in 3-Space</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -797,43 +707,63 @@ true);
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-the-divergence-integral-and-comparison-tests"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">9.3</span><span class="space"> </span><span class="title">The Divergence, Integral and Comparison Tests</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Divergence, Integral and Comparison Tests</span>
 </h2>
-<section class="introduction" id="introduction-convergence-tests"><div class="para" id="introduction-convergence-tests-1">The Divergence Test proven in <a href="section-the-divergence-integral-and-comparison-tests.html#theorem-divergence-test" class="xref" data-knowl="./knowl/xref/theorem-divergence-test.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.3.1: Divergence Test">Theorem 9.3.1</a> is our first example of a <dfn class="terminology">convergence test</dfn>: a test that determines if a given series converges or diverges. In this section we’ll also introduce two more such tests. It’s important to remember that convergence tests <em class="emphasis">usually cannot be used to evaluate a series</em>. Their primary importance is to check if a given series converges.</div></section><section class="subsection" id="subsection-the-divergence-test"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">The Divergence Test</span>
+<section class="introduction" id="introduction-convergence-tests"><div class="para" id="introduction-convergence-tests-1">The Divergence Test proven in <a href="section-the-divergence-integral-and-comparison-tests.html#theorem-divergence-test" class="xref" data-knowl="./knowl/xref/theorem-divergence-test.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.3.1: Divergence Test">Theorem 9.3.1</a> is our first example of a <dfn class="terminology">convergence test</dfn>: a test that determines if a given series converges or diverges. In this section we’ll also introduce two more such tests. It’s important to remember that convergence tests <em class="emphasis">usually cannot be used to evaluate a series</em>. Their primary importance is to check if a given series converges.<div class="autopermalink" data-description="Paragraph"><a href="#introduction-convergence-tests-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsection-the-divergence-test"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Divergence Test</span>
 </h3>
-<div class="para" id="subsection-the-divergence-test-2">A useful test for divergence of a series involves the long-term behavior of the terms of the series.</div>
+<div class="para" id="subsection-the-divergence-test-2">A useful test for divergence of a series involves the long-term behavior of the terms of the series.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-the-divergence-test-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="theorem-divergence-test"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.3.1</span><span class="period">.</span><span class="space"> </span><span class="title">Divergence Test.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Divergence Test.</span>
 </h4>
-<div class="para" id="theorem-divergence-test-2-1">Consider the series <span class="process-math">\(\sum a_{k}\text{.}\)</span> If <span class="process-math">\(\lim_{k\to\infty}a_{k}\neq0\text{,}\)</span> then <span class="process-math">\(\sum a_{k}\)</span> diverges.</div></article><details id="theorem-divergence-test-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="theorem-divergence-test-3-1">We’ll prove the <dfn class="terminology">contrapositive</dfn> of this statement. That is, we’ll show that if the series converges then the terms go to <span class="process-math">\(0\text{.}\)</span> So suppose <span class="process-math">\(\sum a_{k}\)</span> converges and let <span class="process-math">\(S_{n}\)</span> denote the sequence of partial sums. Then <span class="process-math">\(a_{n+1} = S_{n+1} - S_{n}\)</span> which must go to <span class="process-math">\(0\)</span> since the partial sums converge.</div></article></details><div class="para" id="subsection-the-divergence-test-4">Note that <a href="section-the-divergence-integral-and-comparison-tests.html#theorem-divergence-test" class="xref" data-knowl="./knowl/xref/theorem-divergence-test.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.3.1: Divergence Test">Theorem 9.3.1</a> cannot be used to prove <em class="emphasis">convergence</em>, only divergence. For example, the terms of the harmonic series go to <span class="process-math">\(0\)</span> but the series itself diverges.</div>
+<div class="para" id="theorem-divergence-test-2-1">Consider the series <span class="process-math">\(\sum a_{k}\text{.}\)</span> If <span class="process-math">\(\lim_{k\to\infty}a_{k}\neq0\text{,}\)</span> then <span class="process-math">\(\sum a_{k}\)</span> diverges.<div class="autopermalink" data-description="Paragraph"><a href="#theorem-divergence-test-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 9.3.1: Divergence Test"><a href="#theorem-divergence-test" title="Copy heading and permalink for Theorem 9.3.1: Divergence Test" aria-label="Copy heading and permalink for Theorem 9.3.1: Divergence Test">🔗</a></div></article><details id="theorem-divergence-test-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="theorem-divergence-test-3-1">We’ll prove the <dfn class="terminology">contrapositive</dfn> of this statement. That is, we’ll show that if the series converges then the terms go to <span class="process-math">\(0\text{.}\)</span> So suppose <span class="process-math">\(\sum a_{k}\)</span> converges and let <span class="process-math">\(S_{n}\)</span> denote the sequence of partial sums. Then <span class="process-math">\(a_{n+1} = S_{n+1} - S_{n}\)</span> which must go to <span class="process-math">\(0\)</span> since the partial sums converge.<div class="autopermalink" data-description="Paragraph"><a href="#theorem-divergence-test-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 9.3.1.1"><a href="#theorem-divergence-test-3" title="Copy heading and permalink for Proof 9.3.1.1" aria-label="Copy heading and permalink for Proof 9.3.1.1">🔗</a></div></article></details><div class="para" id="subsection-the-divergence-test-4">Note that <a href="section-the-divergence-integral-and-comparison-tests.html#theorem-divergence-test" class="xref" data-knowl="./knowl/xref/theorem-divergence-test.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.3.1: Divergence Test">Theorem 9.3.1</a> cannot be used to prove <em class="emphasis">convergence</em>, only divergence. For example, the terms of the harmonic series go to <span class="process-math">\(0\)</span> but the series itself diverges.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-the-divergence-test-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-using-the-divergence-test"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.3.2</span><span class="period">.</span><span class="space"> </span><span class="title">Using the Divergence Test.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using the Divergence Test.</span>
 </h4>
-<div class="para" id="example-using-the-divergence-test-2-1">Determine if <span class="process-math">\(\sum_{n=1}^{\infty}\sin n\)</span> diverges.</div>
-<div class="solutions"><details id="example-using-the-divergence-test-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="example-using-the-divergence-test-3-1">Since <span class="process-math">\(\lim_{n\to\infty}\sin n\neq 0\)</span> (in fact, it doesn’t exist at all), the series must diverge.</div></div></details></div></article></section><section class="subsection" id="subsection-the-integral-test"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">The Integral Test</span>
+<div class="para" id="example-using-the-divergence-test-2-1">Determine if <span class="process-math">\(\sum_{n=1}^{\infty}\sin n\)</span> diverges.<div class="autopermalink" data-description="Paragraph"><a href="#example-using-the-divergence-test-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-using-the-divergence-test-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-using-the-divergence-test-3-1">Since <span class="process-math">\(\lim_{n\to\infty}\sin n\neq 0\)</span> (in fact, it doesn’t exist at all), the series must diverge.<div class="autopermalink" data-description="Paragraph"><a href="#example-using-the-divergence-test-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.3.2.1"><a href="#example-using-the-divergence-test-3" title="Copy heading and permalink for Solution 9.3.2.1" aria-label="Copy heading and permalink for Solution 9.3.2.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.3.2: Using the Divergence Test"><a href="#example-using-the-divergence-test" title="Copy heading and permalink for Example 9.3.2: Using the Divergence Test" aria-label="Copy heading and permalink for Example 9.3.2: Using the Divergence Test">🔗</a></div></article><div class="autopermalink" data-description="Subsection: The Divergence Test"><a href="#subsection-the-divergence-test" title="Copy heading and permalink for Subsection: The Divergence Test" aria-label="Copy heading and permalink for Subsection: The Divergence Test">🔗</a></div></section><section class="subsection" id="subsection-the-integral-test"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Integral Test</span>
 </h3>
-<div class="para" id="subsection-the-integral-test-2">The main idea behind the <dfn class="terminology">integral test</dfn> is to relate the value of a series to the value of a certain (improper) integral. This is useful since integrals are often easier to compute than series.</div>
+<div class="para" id="subsection-the-integral-test-2">The main idea behind the <dfn class="terminology">integral test</dfn> is to relate the value of a series to the value of a certain (improper) integral. This is useful since integrals are often easier to compute than series.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-the-integral-test-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="theorem-integral-test"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.3.3</span><span class="period">.</span><span class="space"> </span><span class="title">Integral Test.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Integral Test.</span>
 </h4>
 <div class="para logical" id="theorem-integral-test-2-1">
 <div class="para">Suppose that <span class="process-math">\(f(x)\)</span> is a positive, decreasing function on <span class="process-math">\([1,\infty)\)</span> and let <span class="process-math">\(a_{n} = f(n)\text{.}\)</span> Then</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="theorem-integral-test-2-1-4">
 \begin{equation*}
 \int_{1}^{\infty}f(x)\,dx\quad\text{and}\quad \sum_{n=1}^{\infty}a_{n}
 \end{equation*}
 </div>
 <div class="para">must both converge or both diverge.</div>
-</div></article><article class="remark remark-like" id="subsection-the-integral-test-4"><h4 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">9.3.4</span><span class="period">.</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-integral-test-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 9.3.3: Integral Test"><a href="#theorem-integral-test" title="Copy heading and permalink for Theorem 9.3.3: Integral Test" aria-label="Copy heading and permalink for Theorem 9.3.3: Integral Test">🔗</a></div></article><article class="remark remark-like" id="subsection-the-integral-test-4"><h4 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="subsection-the-integral-test-4-1">It is important to note that the Integral Test is <em class="emphasis">not</em> typically useful in finding the value of a series. It can only be used to determine convergence.</div></article><article class="example example-like" id="example-determining-convergence-using-the-integral-test"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.3.5</span><span class="period">.</span><span class="space"> </span><span class="title">Determining Convergence Using the Integral Test.</span>
+<div class="para" id="subsection-the-integral-test-4-1">It is important to note that the Integral Test is <em class="emphasis">not</em> typically useful in finding the value of a series. It can only be used to determine convergence.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-the-integral-test-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Remark 9.3.4"><a href="#subsection-the-integral-test-4" title="Copy heading and permalink for Remark 9.3.4" aria-label="Copy heading and permalink for Remark 9.3.4">🔗</a></div></article><article class="example example-like" id="example-determining-convergence-using-the-integral-test"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Determining Convergence Using the Integral Test.</span>
 </h4>
-<div class="para" id="example-determining-convergence-using-the-integral-test-2-1">Determine if the series <span class="process-math">\(\sum_{k=0}^{\infty}\frac{1}{1 + k^{2}}\)</span> converges or diverges.</div>
-<div class="solutions"><details id="example-determining-convergence-using-the-integral-test-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-determining-convergence-using-the-integral-test-3-1">
+<div class="para" id="example-determining-convergence-using-the-integral-test-2-1">Determine if the series <span class="process-math">\(\sum_{k=0}^{\infty}\frac{1}{1 + k^{2}}\)</span> converges or diverges.<div class="autopermalink" data-description="Paragraph"><a href="#example-determining-convergence-using-the-integral-test-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-determining-convergence-using-the-integral-test-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-determining-convergence-using-the-integral-test-3-1">
 <div class="para">We can use the Integral Test here since <span class="process-math">\(\frac{1}{1 + k^{2}}\)</span> is positive and decreasing. If we define <span class="process-math">\(f(x) = \frac{1}{1 + x^{2}}\text{,}\)</span> then <span class="process-math">\(\frac{1}{1 + k^{2}} = f(k)\text{.}\)</span> Now we’ll compute <span class="process-math">\(\int_{0}^{\infty}f(x)\,dx\text{:}\)</span>
 </div>
 <div class="displaymath process-math" id="example-determining-convergence-using-the-integral-test-3-1-5">
@@ -844,46 +774,60 @@ true);
 \end{align*}
 </div>
 <div class="para">Since the integral converges, so does the series. In fact, the value of the series is</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-determining-convergence-using-the-integral-test-3-1-6">
 \begin{equation*}
 \frac{\pi\coth\pi + 1}{2}\text{.}
 \end{equation*}
 </div>
-</div></div></details></div></article><article class="example example-like" id="example-the-alternating-harmonic-series"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.3.6</span><span class="period">.</span><span class="space"> </span><span class="title">The Alternating Harmonic Series.</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-determining-convergence-using-the-integral-test-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.3.5.1"><a href="#example-determining-convergence-using-the-integral-test-3" title="Copy heading and permalink for Solution 9.3.5.1" aria-label="Copy heading and permalink for Solution 9.3.5.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.3.5: Determining Convergence Using the Integral Test"><a href="#example-determining-convergence-using-the-integral-test" title="Copy heading and permalink for Example 9.3.5: Determining Convergence Using the Integral Test" aria-label="Copy heading and permalink for Example 9.3.5: Determining Convergence Using the Integral Test">🔗</a></div></article><article class="example example-like" id="example-the-alternating-harmonic-series"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Alternating Harmonic Series.</span>
 </h4>
 <div class="para logical" id="example-the-alternating-harmonic-series-2-1">
 <div class="para">Explain why <a href="section-the-divergence-integral-and-comparison-tests.html#theorem-integral-test" class="xref" data-knowl="./knowl/xref/theorem-integral-test.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.3.3: Integral Test">Theorem 9.3.3</a> cannot be applied to the <dfn class="terminology">alternating harmonic series</dfn>
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-integral-test.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-integral-test.html" id="example-the-alternating-harmonic-series-2-1-3">
 \begin{equation*}
 \sum_{k=1}^{\infty}\frac{(-1)^{k + 1}}{k}\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-the-alternating-harmonic-series-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-the-alternating-harmonic-series-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="example-the-alternating-harmonic-series-3-1">Since <span class="process-math">\(\frac{(-1)^{k+1}}{k}\)</span> is neither decreasing nor positive, the Integral Test doesn’t apply here.</div></div></details></div></article><div class="para" id="subsection-the-integral-test-7">An important corollary to <a href="section-the-divergence-integral-and-comparison-tests.html#theorem-integral-test" class="xref" data-knowl="./knowl/xref/theorem-integral-test.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.3.3: Integral Test">Theorem 9.3.3</a> is that the integral <span class="process-math">\(p\)</span>-test from <a href="section-improper-integrals.html" class="internal" title="Section 7.4: Improper Integrals">Section 7.4</a> applies to series as well.</div>
+<div class="solutions"><details id="example-the-alternating-harmonic-series-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-the-alternating-harmonic-series-3-1">Since <span class="process-math">\(\frac{(-1)^{k+1}}{k}\)</span> is neither decreasing nor positive, the Integral Test doesn’t apply here.<div class="autopermalink" data-description="Paragraph"><a href="#example-the-alternating-harmonic-series-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.3.6.1"><a href="#example-the-alternating-harmonic-series-3" title="Copy heading and permalink for Solution 9.3.6.1" aria-label="Copy heading and permalink for Solution 9.3.6.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.3.6: The Alternating Harmonic Series"><a href="#example-the-alternating-harmonic-series" title="Copy heading and permalink for Example 9.3.6: The Alternating Harmonic Series" aria-label="Copy heading and permalink for Example 9.3.6: The Alternating Harmonic Series">🔗</a></div></article><div class="para" id="subsection-the-integral-test-7">An important corollary to <a href="section-the-divergence-integral-and-comparison-tests.html#theorem-integral-test" class="xref" data-knowl="./knowl/xref/theorem-integral-test.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.3.3: Integral Test">Theorem 9.3.3</a> is that the integral <span class="process-math">\(p\)</span>-test from <a href="section-improper-integrals.html" class="internal" title="Section 7.4: Improper Integrals">Section 7.4</a> applies to series as well.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-the-integral-test-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="theorem-series-p--test"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.3.7</span><span class="period">.</span><span class="space"> </span><span class="title">Series <span class="process-math">\(p\)</span>-Test.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Series <span class="process-math">\(p\)</span>-Test.</span>
 </h4>
-<div class="para" id="theorem-series-p--test-2-1">The series <span class="process-math">\(\sum_{n=1}^{\infty}\frac{1}{n^{p}}\)</span> converges if and only if <span class="process-math">\(p \gt 1\text{.}\)</span>
-</div></article></section><section class="subsection" id="subsection-comparison-tests"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Comparison Tests</span>
+<div class="para" id="theorem-series-p--test-2-1">The series <span class="process-math">\(\sum_{n=1}^{\infty}\frac{1}{n^{p}}\)</span> converges if and only if <span class="process-math">\(p \gt 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#theorem-series-p--test-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 9.3.7: Series p-Test"><a href="#theorem-series-p--test" title="Copy heading and permalink for Theorem 9.3.7: Series p-Test" aria-label="Copy heading and permalink for Theorem 9.3.7: Series p-Test">🔗</a></div></article><div class="autopermalink" data-description="Subsection: The Integral Test"><a href="#subsection-the-integral-test" title="Copy heading and permalink for Subsection: The Integral Test" aria-label="Copy heading and permalink for Subsection: The Integral Test">🔗</a></div></section><section class="subsection" id="subsection-comparison-tests"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Comparison Tests</span>
 </h3>
-<div class="para" id="subsection-comparison-tests-2">The next series is an important example of a divergent series. This is one of the earliest known examples of a divergent series in the history of mathematics and is particularly interesting since it diverges despite its terms getting arbitrarily small.</div>
+<div class="para" id="subsection-comparison-tests-2">The next series is an important example of a divergent series. This is one of the earliest known examples of a divergent series in the history of mathematics and is particularly interesting since it diverges despite its terms getting arbitrarily small.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-comparison-tests-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-the-harmonic-series"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.3.8</span><span class="period">.</span><span class="space"> </span><span class="title">The harmonic series.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.3.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The harmonic series.</span>
 </h4>
 <div class="para logical" id="example-the-harmonic-series-2-1">
 <div class="para">Show that the <dfn class="terminology">harmonic series</dfn>
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-the-harmonic-series-2-1-2">
 \begin{equation*}
 \sum_{k=1}^{\infty}\frac{1}{k} = 1 + \frac{1}{2} + \cdots
 \end{equation*}
 </div>
 <div class="para">is divergent.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-the-harmonic-series-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-the-harmonic-series-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="solutions"><details id="example-the-harmonic-series-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="example-the-harmonic-series-3-1">
 <div class="para">The idea here is to compare this series with a simpler one that we know diverges. We’ll do so by looking at a specific set of partial sums:</div>
 <div class="displaymath process-math" id="example-the-harmonic-series-3-1-1">
@@ -895,99 +839,141 @@ S_{8} \amp \gt 1 + \frac{1}{2} + \frac{1}{2} + \frac{1}{2}
 \end{align*}
 </div>
 <div class="para">and in general</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-the-harmonic-series-3-1-2">
 \begin{equation*}
 S_{2^{n}} \gt 1 + \frac{n}{2}\text{.}
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-the-harmonic-series-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-the-harmonic-series-3-2">
 <div class="para">So it follows that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-the-harmonic-series-3-2-1">
 \begin{equation*}
 \lim_{n\to\infty}S_{n} \geq \lim_{n\to\infty}\left(1 + \frac{n}{2}\right) = \infty\text{.}
 \end{equation*}
 </div>
 <div class="para">Hence the harmonic series is divergent.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-the-harmonic-series-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-</div></details></div></article><article class="theorem theorem-like" id="theorem-direct-comparison-test-series"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.3.9</span><span class="period">.</span><span class="space"> </span><span class="title">Comparison Test.</span>
+<div class="autopermalink" data-description="Solution 9.3.8.1"><a href="#example-the-harmonic-series-3" title="Copy heading and permalink for Solution 9.3.8.1" aria-label="Copy heading and permalink for Solution 9.3.8.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.3.8: The harmonic series"><a href="#example-the-harmonic-series" title="Copy heading and permalink for Example 9.3.8: The harmonic series" aria-label="Copy heading and permalink for Example 9.3.8: The harmonic series">🔗</a></div></article><article class="theorem theorem-like" id="theorem-direct-comparison-test-series"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.3.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Comparison Test.</span>
 </h4>
 <div class="para logical" id="theorem-direct-comparison-test-series-3-1">
 <div class="para">Let <span class="process-math">\(\sum a_{k}\)</span> and <span class="process-math">\(\sum b_{k}\)</span> be series with <em class="emphasis">positive</em> terms. Then</div>
 <ol class="decimal" id="theorem-direct-comparison-test-series-3-1-4">
-<li id="theorem-direct-comparison-test-series-3-1-4-1"><div class="para" id="theorem-direct-comparison-test-series-3-1-4-1-1">If <span class="process-math">\(a_{k}\leq b_{k}\)</span> and <span class="process-math">\(\sum b_{k}\)</span> converges, then so does <span class="process-math">\(\sum a_{k}\text{.}\)</span>
-</div></li>
-<li id="theorem-direct-comparison-test-series-3-1-4-2"><div class="para" id="theorem-direct-comparison-test-series-3-1-4-2-1">If <span class="process-math">\(a_{k} \geq b_{k}\)</span> and <span class="process-math">\(\sum b_{k}\)</span> diverges, then so does <span class="process-math">\(\sum a_{k}\text{.}\)</span>
-</div></li>
+<li id="theorem-direct-comparison-test-series-3-1-4-1">
+<div class="para" id="theorem-direct-comparison-test-series-3-1-4-1-1">If <span class="process-math">\(a_{k}\leq b_{k}\)</span> and <span class="process-math">\(\sum b_{k}\)</span> converges, then so does <span class="process-math">\(\sum a_{k}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#theorem-direct-comparison-test-series-3-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#theorem-direct-comparison-test-series-3-1-4-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="theorem-direct-comparison-test-series-3-1-4-2">
+<div class="para" id="theorem-direct-comparison-test-series-3-1-4-2-1">If <span class="process-math">\(a_{k} \geq b_{k}\)</span> and <span class="process-math">\(\sum b_{k}\)</span> diverges, then so does <span class="process-math">\(\sum a_{k}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#theorem-direct-comparison-test-series-3-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#theorem-direct-comparison-test-series-3-1-4-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
 </ol>
-</div></article><article class="example example-like" id="example-using-the-comparison-test"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.3.10</span><span class="period">.</span><span class="space"> </span><span class="title">Using the Comparison Test.</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-direct-comparison-test-series-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 9.3.9: Comparison Test"><a href="#theorem-direct-comparison-test-series" title="Copy heading and permalink for Theorem 9.3.9: Comparison Test" aria-label="Copy heading and permalink for Theorem 9.3.9: Comparison Test">🔗</a></div></article><article class="example example-like" id="example-using-the-comparison-test"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.3.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using the Comparison Test.</span>
 </h4>
-<div class="para" id="example-using-the-comparison-test-2-1">Show that <span class="process-math">\(\sum_{k=1}^{\infty}\frac{k + 1}{k^{2}}\)</span> diverges.</div></article><div class="para" id="subsection-comparison-tests-6">Sometimes using the Comparison Test requires a little ingenuity.</div>
+<div class="para" id="example-using-the-comparison-test-2-1">Show that <span class="process-math">\(\sum_{k=1}^{\infty}\frac{k + 1}{k^{2}}\)</span> diverges.<div class="autopermalink" data-description="Paragraph"><a href="#example-using-the-comparison-test-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 9.3.10: Using the Comparison Test"><a href="#example-using-the-comparison-test" title="Copy heading and permalink for Example 9.3.10: Using the Comparison Test" aria-label="Copy heading and permalink for Example 9.3.10: Using the Comparison Test">🔗</a></div></article><div class="para" id="subsection-comparison-tests-6">Sometimes using the Comparison Test requires a little ingenuity.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-comparison-tests-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-a-little-ingenuity"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.3.11</span><span class="period">.</span><span class="space"> </span><span class="title">A Little Ingenuity.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.3.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A Little Ingenuity.</span>
 </h4>
-<div class="para" id="example-a-little-ingenuity-2-1">Show that <span class="process-math">\(\sum_{k=1}^{\infty}\frac{k^{2} + k - 1}{k^{4} + 4k^{2} - 3}\)</span> converges.</div></article><div class="para" id="subsection-comparison-tests-8">A test that is sometimes more straightforward is the <dfn class="terminology">Limit Comparison Test</dfn>.</div>
+<div class="para" id="example-a-little-ingenuity-2-1">Show that <span class="process-math">\(\sum_{k=1}^{\infty}\frac{k^{2} + k - 1}{k^{4} + 4k^{2} - 3}\)</span> converges.<div class="autopermalink" data-description="Paragraph"><a href="#example-a-little-ingenuity-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 9.3.11: A Little Ingenuity"><a href="#example-a-little-ingenuity" title="Copy heading and permalink for Example 9.3.11: A Little Ingenuity" aria-label="Copy heading and permalink for Example 9.3.11: A Little Ingenuity">🔗</a></div></article><div class="para" id="subsection-comparison-tests-8">A test that is sometimes more straightforward is the <dfn class="terminology">Limit Comparison Test</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-comparison-tests-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="theorem-limit-comparison-test-series"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">9.3.12</span><span class="period">.</span><span class="space"> </span><span class="title">Limit Comparison Test.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.3.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Limit Comparison Test.</span>
 </h4>
 <div class="para logical" id="theorem-limit-comparison-test-series-3-1">
 <div class="para">Suppose that <span class="process-math">\(\sum a_{k}\)</span> and <span class="process-math">\(\sum b_{k}\)</span> are both series with positive terms, and suppose</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="theorem-limit-comparison-test-series-3-1-3">
 \begin{equation*}
 L = \lim_{k\to\infty}\frac{a_{k}}{b_{k}}
 \end{equation*}
 </div>
 <div class="para">exists. Then</div>
 <ol class="decimal" id="theorem-limit-comparison-test-series-3-1-4">
-<li id="theorem-limit-comparison-test-series-3-1-4-1"><div class="para" id="theorem-limit-comparison-test-series-3-1-4-1-1">if <span class="process-math">\(0 \lt L \lt \infty\text{,}\)</span> then either both series converge or both series diverge.</div></li>
-<li id="theorem-limit-comparison-test-series-3-1-4-2"><div class="para" id="theorem-limit-comparison-test-series-3-1-4-2-1">if <span class="process-math">\(L = 0\)</span> and <span class="process-math">\(\sum b_{k}\)</span> converges, then so does <span class="process-math">\(\sum a_{k}\text{.}\)</span>
-</div></li>
-<li id="theorem-limit-comparison-test-series-3-1-4-3"><div class="para" id="theorem-limit-comparison-test-series-3-1-4-3-1">if <span class="process-math">\(L = \infty\)</span> and <span class="process-math">\(\sum b_{k}\)</span> diverges, then so does <span class="process-math">\(\sum a_{k}\text{.}\)</span>
-</div></li>
+<li id="theorem-limit-comparison-test-series-3-1-4-1">
+<div class="para" id="theorem-limit-comparison-test-series-3-1-4-1-1">if <span class="process-math">\(0 \lt L \lt \infty\text{,}\)</span> then either both series converge or both series diverge.<div class="autopermalink" data-description="Paragraph"><a href="#theorem-limit-comparison-test-series-3-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#theorem-limit-comparison-test-series-3-1-4-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="theorem-limit-comparison-test-series-3-1-4-2">
+<div class="para" id="theorem-limit-comparison-test-series-3-1-4-2-1">if <span class="process-math">\(L = 0\)</span> and <span class="process-math">\(\sum b_{k}\)</span> converges, then so does <span class="process-math">\(\sum a_{k}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#theorem-limit-comparison-test-series-3-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#theorem-limit-comparison-test-series-3-1-4-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="theorem-limit-comparison-test-series-3-1-4-3">
+<div class="para" id="theorem-limit-comparison-test-series-3-1-4-3-1">if <span class="process-math">\(L = \infty\)</span> and <span class="process-math">\(\sum b_{k}\)</span> diverges, then so does <span class="process-math">\(\sum a_{k}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#theorem-limit-comparison-test-series-3-1-4-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#theorem-limit-comparison-test-series-3-1-4-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
 </ol>
-</div></article><div class="para" id="subsection-comparison-tests-10">The quantity <span class="process-math">\(L\)</span> in <a href="section-the-divergence-integral-and-comparison-tests.html#theorem-limit-comparison-test-series" class="xref" data-knowl="./knowl/xref/theorem-limit-comparison-test-series.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.3.12: Limit Comparison Test">Theorem 9.3.12</a> can be thought of as the relative size of <span class="process-math">\(a_{k}\)</span> as compared to <span class="process-math">\(b_{k}\text{.}\)</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-limit-comparison-test-series-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 9.3.12: Limit Comparison Test"><a href="#theorem-limit-comparison-test-series" title="Copy heading and permalink for Theorem 9.3.12: Limit Comparison Test" aria-label="Copy heading and permalink for Theorem 9.3.12: Limit Comparison Test">🔗</a></div></article><div class="para" id="subsection-comparison-tests-10">The quantity <span class="process-math">\(L\)</span> in <a href="section-the-divergence-integral-and-comparison-tests.html#theorem-limit-comparison-test-series" class="xref" data-knowl="./knowl/xref/theorem-limit-comparison-test-series.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.3.12: Limit Comparison Test">Theorem 9.3.12</a> can be thought of as the relative size of <span class="process-math">\(a_{k}\)</span> as compared to <span class="process-math">\(b_{k}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-comparison-tests-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-a-little-less-ingenuity"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.3.13</span><span class="period">.</span><span class="space"> </span><span class="title">A Little Less Ingenuity.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.3.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">A Little Less Ingenuity.</span>
 </h4>
-<div class="para" id="example-a-little-less-ingenuity-2-1">Show that <span class="process-math">\(\sum_{k=1}^{\infty}\frac{k^{2} + k - 1}{k^{4} + 4k^{2} - 3}\)</span> converges.</div>
-<div class="solutions"><details id="example-a-little-less-ingenuity-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-a-little-less-ingenuity-3-1">
+<div class="para" id="example-a-little-less-ingenuity-2-1">Show that <span class="process-math">\(\sum_{k=1}^{\infty}\frac{k^{2} + k - 1}{k^{4} + 4k^{2} - 3}\)</span> converges.<div class="autopermalink" data-description="Paragraph"><a href="#example-a-little-less-ingenuity-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-a-little-less-ingenuity-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-a-little-less-ingenuity-3-1">
 <div class="para">We saw previously that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-limit-comparison-test-series.html ./knowl/xref/theorem-series-p--test.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-limit-comparison-test-series.html ./knowl/xref/theorem-series-p--test.html" id="example-a-little-less-ingenuity-3-1-1">
 \begin{equation*}
 \frac{k^{2} + k - 1}{k^{4} + 4k^{2} - 3} \approx \frac{1}{k^{2}}\text{,}
 \end{equation*}
 </div>
 <div class="para">which suggests comparing the original series with the <span class="process-math">\(p\)</span>-series <span class="process-math">\(\sum\frac{1}{k^{2}}\text{.}\)</span> If we let <span class="process-math">\(a_{k} = \frac{k^{2} + k - 1}{k^{4} + 4k^{2} - 3}\)</span> and <span class="process-math">\(b_{k} = \frac{1}{k^{2}}\text{,}\)</span> then we see that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-limit-comparison-test-series.html ./knowl/xref/theorem-series-p--test.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-limit-comparison-test-series.html ./knowl/xref/theorem-series-p--test.html" id="example-a-little-less-ingenuity-3-1-6">
 \begin{equation*}
 \frac{a_{k}}{b_{k}} \to 1\text{.}
 \end{equation*}
 </div>
 <div class="para">By <a href="section-the-divergence-integral-and-comparison-tests.html#theorem-limit-comparison-test-series" class="xref" data-knowl="./knowl/xref/theorem-limit-comparison-test-series.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.3.12: Limit Comparison Test">Theorem 9.3.12</a> and <a href="section-the-divergence-integral-and-comparison-tests.html#theorem-series-p--test" class="xref" data-knowl="./knowl/xref/theorem-series-p--test.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 9.3.7: Series p-Test">Theorem 9.3.7</a>, the original series converges.</div>
-</div></div></details></div></article><div class="para" id="subsection-comparison-tests-12">The Limit Comparison Test works very well with series containing terms given by a ratio of powers, in conjunction with the <span class="process-math">\(p\)</span>-series Test.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-a-little-less-ingenuity-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.3.13.1"><a href="#example-a-little-less-ingenuity-3" title="Copy heading and permalink for Solution 9.3.13.1" aria-label="Copy heading and permalink for Solution 9.3.13.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.3.13: A Little Less Ingenuity"><a href="#example-a-little-less-ingenuity" title="Copy heading and permalink for Example 9.3.13: A Little Less Ingenuity" aria-label="Copy heading and permalink for Example 9.3.13: A Little Less Ingenuity">🔗</a></div></article><div class="para" id="subsection-comparison-tests-12">The Limit Comparison Test works very well with series containing terms given by a ratio of powers, in conjunction with the <span class="process-math">\(p\)</span>-series Test.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-comparison-tests-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-radical-powers-of-k-"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">9.3.14</span><span class="period">.</span><span class="space"> </span><span class="title">Radical Powers of <span class="process-math">\(k\)</span>.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">9.3.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Radical Powers of <span class="process-math">\(k\)</span>.</span>
 </h4>
 <div class="para logical" id="example-radical-powers-of-k--2-1">
 <div class="para">Does</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-radical-powers-of-k--2-1-1">
 \begin{equation*}
 \sum_{k=55}^{\infty}\frac{k^{3} - 3\sqrt{k} + 1}{\sqrt[4]{k^{10}} + k^{2}}
 \end{equation*}
 </div>
 <div class="para">converge or diverge?</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-radical-powers-of-k--2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-radical-powers-of-k--3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para" id="example-radical-powers-of-k--3-1">The series diverges by comparison with <span class="process-math">\(\frac{1}{k^{1/3}}\text{.}\)</span>
-</div></div></details></div></article></section></section></div>
-<div class="ptx-content-footer">
+<div class="solutions"><details id="example-radical-powers-of-k--3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-radical-powers-of-k--3-1">The series diverges by comparison with <span class="process-math">\(\frac{1}{k^{1/3}}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-radical-powers-of-k--3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 9.3.14.1"><a href="#example-radical-powers-of-k--3" title="Copy heading and permalink for Solution 9.3.14.1" aria-label="Copy heading and permalink for Solution 9.3.14.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 9.3.14: Radical Powers of k"><a href="#example-radical-powers-of-k-" title="Copy heading and permalink for Example 9.3.14: Radical Powers of k" aria-label="Copy heading and permalink for Example 9.3.14: Radical Powers of k">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Comparison Tests"><a href="#subsection-comparison-tests" title="Copy heading and permalink for Subsection: Comparison Tests" aria-label="Copy heading and permalink for Subsection: Comparison Tests">🔗</a></div></section><div class="autopermalink" data-description="Section 9.3: The Divergence, Integral and Comparison Tests"><a href="#section-the-divergence-integral-and-comparison-tests" title="Copy heading and permalink for Section 9.3: The Divergence, Integral and Comparison Tests" aria-label="Copy heading and permalink for Section 9.3: The Divergence, Integral and Comparison Tests">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="section-series.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="section-other-convergence-tests.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
-<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
 </body>
 </html>

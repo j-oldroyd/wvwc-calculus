@@ -6,17 +6,21 @@
 <!--*                                          *-->
 <!--********************************************-->
 <html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>WVWC-CALC Extreme Values</title>
-<meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:type" content="book">
-<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo.jpg">
-<meta property="book:title" content="Calculus Notes">
-<meta property="book:author" content="Jesse Oldroyd
-          ">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -88,12 +92,14 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo-brandlogo.jpg">
+<meta property="book:title" content="Calculus Notes">
+<meta property="book:author" content="Jesse Oldroyd
+          ">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -115,127 +121,22 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.1';
+eBookConfig.runestone_version = '7.11.8';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.87cabc2515250052.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.630d5c4fb4b681eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.97f3ae4f7a71ba18.css">
-<style>
-#theorem-combining-continuous-functions-2-1-4 { counter-set: theorem-combining-continuous-functions-2-1-4 0; }
-#theorem-combining-continuous-functions-2-1-4 > li::marker { content: ""counter(theorem-combining-continuous-functions-2-1-4,decimal)"."; }
-#theorem-combining-continuous-functions-2-1-4 > li { counter-increment: theorem-combining-continuous-functions-2-1-4; }
-#example-derivatives-using-the-power-rule-2-1-1 { counter-set: example-derivatives-using-the-power-rule-2-1-1 0; }
-#example-derivatives-using-the-power-rule-2-1-1 > li::marker { content: ""counter(example-derivatives-using-the-power-rule-2-1-1,decimal)"."; }
-#example-derivatives-using-the-power-rule-2-1-1 > li { counter-increment: example-derivatives-using-the-power-rule-2-1-1; }
-#section-extreme-values-of-functions-4-1-1-1 { counter-set: section-extreme-values-of-functions-4-1-1-1 0; }
-#section-extreme-values-of-functions-4-1-1-1 > li::marker { content: ""counter(section-extreme-values-of-functions-4-1-1-1,decimal)"."; }
-#section-extreme-values-of-functions-4-1-1-1 > li { counter-increment: section-extreme-values-of-functions-4-1-1-1; }
-#example-minimizing-material-costs-3-1-1 { counter-set: example-minimizing-material-costs-3-1-1 0; }
-#example-minimizing-material-costs-3-1-1 > li::marker { content: ""counter(example-minimizing-material-costs-3-1-1,decimal)"."; }
-#example-minimizing-material-costs-3-1-1 > li { counter-increment: example-minimizing-material-costs-3-1-1; }
-#example-distance-on-an-ellipse-3-1-1 { counter-set: example-distance-on-an-ellipse-3-1-1 0; }
-#example-distance-on-an-ellipse-3-1-1 > li::marker { content: ""counter(example-distance-on-an-ellipse-3-1-1,decimal)"."; }
-#example-distance-on-an-ellipse-3-1-1 > li { counter-increment: example-distance-on-an-ellipse-3-1-1; }
-#example-finding-antiderivatives-2-1-1 { counter-set: example-finding-antiderivatives-2-1-1 0; }
-#example-finding-antiderivatives-2-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-2-1-1,decimal)"."; }
-#example-finding-antiderivatives-2-1-1 > li { counter-increment: example-finding-antiderivatives-2-1-1; }
-#example-finding-antiderivatives-3-1-1 { counter-set: example-finding-antiderivatives-3-1-1 0; }
-#example-finding-antiderivatives-3-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-3-1-1,decimal)"."; }
-#example-finding-antiderivatives-3-1-1 > li { counter-increment: example-finding-antiderivatives-3-1-1; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 { counter-set: theorem-more-properties-of-the-definite-integral-2-1-3 0; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li::marker { content: ""counter(theorem-more-properties-of-the-definite-integral-2-1-3,decimal)"."; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li { counter-increment: theorem-more-properties-of-the-definite-integral-2-1-3; }
-#theorem-fundamental-theorem-of-calculus-2-2 { counter-set: theorem-fundamental-theorem-of-calculus-2-2 0; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li::marker { content: ""counter(theorem-fundamental-theorem-of-calculus-2-2,decimal)"."; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li { counter-increment: theorem-fundamental-theorem-of-calculus-2-2; }
-#section-substitution-5-3 { counter-set: section-substitution-5-3 0; }
-#section-substitution-5-3 > li::marker { content: ""counter(section-substitution-5-3,decimal)"."; }
-#section-substitution-5-3 > li { counter-increment: section-substitution-5-3; }
-#algorithm-partial-fractions-algorithm-3-1-2 { counter-set: algorithm-partial-fractions-algorithm-3-1-2 0; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li::marker { content: ""counter(algorithm-partial-fractions-algorithm-3-1-2,decimal)"."; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li { counter-increment: algorithm-partial-fractions-algorithm-3-1-2; }
-#section-applications-to-physics-and-engineering-2-2 { counter-set: section-applications-to-physics-and-engineering-2-2 0; }
-#section-applications-to-physics-and-engineering-2-2 > li::marker { content: ""counter(section-applications-to-physics-and-engineering-2-2,decimal)"."; }
-#section-applications-to-physics-and-engineering-2-2 > li { counter-increment: section-applications-to-physics-and-engineering-2-2; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 { counter-set: subsection-moments-and-centers-of-mass-7-1-3-1 0; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-1-3-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-1-3-1; }
-#subsection-moments-and-centers-of-mass-7-2-1 { counter-set: subsection-moments-and-centers-of-mass-7-2-1 0; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-2-1; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 { counter-set: subsection-moments-and-centers-of-mass-12-1-1-4 0; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-1-1-4,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li { counter-increment: subsection-moments-and-centers-of-mass-12-1-1-4; }
-#subsection-moments-and-centers-of-mass-12-2-1 { counter-set: subsection-moments-and-centers-of-mass-12-2-1 0; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-12-2-1; }
-#example-determining-a-sustainable-population-3-3 { counter-set: example-determining-a-sustainable-population-3-3 0; }
-#example-determining-a-sustainable-population-3-3 > li::marker { content: ""counter(example-determining-a-sustainable-population-3-3,decimal)"."; }
-#example-determining-a-sustainable-population-3-3 > li { counter-increment: example-determining-a-sustainable-population-3-3; }
-#theorem-sequential-limit-laws-2-2 { counter-set: theorem-sequential-limit-laws-2-2 0; }
-#theorem-sequential-limit-laws-2-2 > li::marker { content: ""counter(theorem-sequential-limit-laws-2-2,decimal)"."; }
-#theorem-sequential-limit-laws-2-2 > li { counter-increment: theorem-sequential-limit-laws-2-2; }
-#example-guessing-sums-2-1-1 { counter-set: example-guessing-sums-2-1-1 0; }
-#example-guessing-sums-2-1-1 > li::marker { content: ""counter(example-guessing-sums-2-1-1,decimal)"."; }
-#example-guessing-sums-2-1-1 > li { counter-increment: example-guessing-sums-2-1-1; }
-#example-guessing-sums-3-1-1 { counter-set: example-guessing-sums-3-1-1 0; }
-#example-guessing-sums-3-1-1 > li::marker { content: ""counter(example-guessing-sums-3-1-1,decimal)"."; }
-#example-guessing-sums-3-1-1 > li { counter-increment: example-guessing-sums-3-1-1; }
-#theorem-direct-comparison-test-series-3-1-4 { counter-set: theorem-direct-comparison-test-series-3-1-4 0; }
-#theorem-direct-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-direct-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-direct-comparison-test-series-3-1-4 > li { counter-increment: theorem-direct-comparison-test-series-3-1-4; }
-#theorem-limit-comparison-test-series-3-1-4 { counter-set: theorem-limit-comparison-test-series-3-1-4 0; }
-#theorem-limit-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-limit-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-limit-comparison-test-series-3-1-4 > li { counter-increment: theorem-limit-comparison-test-series-3-1-4; }
-#subsection-alternating-series-9-2 { counter-set: subsection-alternating-series-9-2 0; }
-#subsection-alternating-series-9-2 > li::marker { content: ""counter(subsection-alternating-series-9-2,decimal)"."; }
-#subsection-alternating-series-9-2 > li { counter-increment: subsection-alternating-series-9-2; }
-#theorem-ratio-test-2-1-3 { counter-set: theorem-ratio-test-2-1-3 0; }
-#theorem-ratio-test-2-1-3 > li::marker { content: ""counter(theorem-ratio-test-2-1-3,decimal)"."; }
-#theorem-ratio-test-2-1-3 > li { counter-increment: theorem-ratio-test-2-1-3; }
-#theorem-root-test-2-1-3 { counter-set: theorem-root-test-2-1-3 0; }
-#theorem-root-test-2-1-3 > li::marker { content: ""counter(theorem-root-test-2-1-3,decimal)"."; }
-#theorem-root-test-2-1-3 > li { counter-increment: theorem-root-test-2-1-3; }
-#example-examples-of-power-series-2-1-1 { counter-set: example-examples-of-power-series-2-1-1 0; }
-#example-examples-of-power-series-2-1-1 > li::marker { content: ""counter(example-examples-of-power-series-2-1-1,decimal)"."; }
-#example-examples-of-power-series-2-1-1 > li { counter-increment: example-examples-of-power-series-2-1-1; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 { counter-set: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 0; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li::marker { content: ""counter(theorem-properties-of-vector-addition-and-scalar-multiplication-3-2,decimal)"."; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li { counter-increment: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2; }
-#theorem-properties-of-the-dot-product-3-2 { counter-set: theorem-properties-of-the-dot-product-3-2 0; }
-#theorem-properties-of-the-dot-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-dot-product-3-2,decimal)"."; }
-#theorem-properties-of-the-dot-product-3-2 > li { counter-increment: theorem-properties-of-the-dot-product-3-2; }
-#theorem-properties-of-the-cross-product-3-2 { counter-set: theorem-properties-of-the-cross-product-3-2 0; }
-#theorem-properties-of-the-cross-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-cross-product-3-2,decimal)"."; }
-#theorem-properties-of-the-cross-product-3-2 > li { counter-increment: theorem-properties-of-the-cross-product-3-2; }
-#theorem-vector-derivative-rules-3-2 { counter-set: theorem-vector-derivative-rules-3-2 0; }
-#theorem-vector-derivative-rules-3-2 > li::marker { content: ""counter(theorem-vector-derivative-rules-3-2,decimal)"."; }
-#theorem-vector-derivative-rules-3-2 > li { counter-increment: theorem-vector-derivative-rules-3-2; }
-#subsection-continuous-functions-5 { counter-set: subsection-continuous-functions-5 0; }
-#subsection-continuous-functions-5 > li::marker { content: ""counter(subsection-continuous-functions-5,decimal)"."; }
-#subsection-continuous-functions-5 > li { counter-increment: subsection-continuous-functions-5; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 { counter-set: algorithm-method-of-lagrange-multipliers-3-1-7 0; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li::marker { content: ""counter(algorithm-method-of-lagrange-multipliers-3-1-7,decimal)"."; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li { counter-increment: algorithm-method-of-lagrange-multipliers-3-1-7; }
-#subsection-conservative-vector-fields-2-2 { counter-set: subsection-conservative-vector-fields-2-2 0; }
-#subsection-conservative-vector-fields-2-2 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-2,decimal)"."; }
-#subsection-conservative-vector-fields-2-2 > li { counter-increment: subsection-conservative-vector-fields-2-2; }
-#subsection-conservative-vector-fields-2-3 { counter-set: subsection-conservative-vector-fields-2-3 0; }
-#subsection-conservative-vector-fields-2-3 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-3,decimal)"."; }
-#subsection-conservative-vector-fields-2-3 > li { counter-increment: subsection-conservative-vector-fields-2-3; }
-#gfdl-section4-3 { counter-set: gfdl-section4-3 0; }
-#gfdl-section4-3 > li::marker { content: ""counter(gfdl-section4-3,upper-alpha)"."; }
-#gfdl-section4-3 > li { counter-increment: gfdl-section4-3; }
-</style>
+<script src="_static/prefix-runtime.991c135ccf182bf5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1c010553c35c544c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.677a75a9120449ff.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdn.geogebra.org/apps/deployggb.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" target="_blank" href=""><img src="external/./wvwc-logo.jpg" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes:</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
+<img src="external/./wvwc-logo-brandlogo.jpg" alt="Logo image"><div class="title-container">
+<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
 <p class="byline">Jesse Oldroyd</p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
@@ -431,10 +332,10 @@ true);
 <div class="toc-title-box"><a href="applications-differentiation.html" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Differentiation</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-linear-approximations.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear approximations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related Rates</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related rates</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-l-hospital-s-rule.html" class="internal"><span class="codenumber">5.3</span> <span class="title">L’Hospital’s Rule</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme Values of Functions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization Problems</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme values of functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization problems</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-the-mean-value-theorem.html" class="internal"><span class="codenumber">5.6</span> <span class="title">The Mean Value Theorem</span></a></div>
 <ul class="structural toc-item-list">
@@ -442,8 +343,11 @@ true);
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-the-mean-value-theorem.html#subsection-the-mean-value-theorem" class="internal"><span class="title">The Mean Value Theorem</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and Graphs</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and graphs</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-newton-s-method.html#subsection-newtons-method-optimization" class="internal"><span class="title">Newton’s Method for optimization</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-antiderivatives.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Antiderivatives</span></a></div></li>
 </ul>
 </li>
@@ -606,8 +510,14 @@ true);
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-coordinates-in-3-space.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Coordinates in 3-Space</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -797,79 +707,109 @@ true);
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-extreme-values"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">12.7</span><span class="space"> </span><span class="title">Extreme Values</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.7</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Extreme Values</span>
 </h2>
-<section class="introduction" id="section-extreme-values-2"><div class="para" id="section-extreme-values-2-1">Finding the extreme values of a function remains in important goal for functions of several independent variables.</div></section><section class="subsection" id="subsection-local-maxima-and-minima"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Local Maxima and Minima</span>
+<section class="introduction" id="section-extreme-values-2"><div class="para" id="section-extreme-values-2-1">Finding the extreme values of a function remains in important goal for functions of several independent variables.<div class="autopermalink" data-description="Paragraph"><a href="#section-extreme-values-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="subsection-local-maxima-and-minima"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Local Maxima and Minima</span>
 </h3>
-<div class="para" id="subsection-local-maxima-and-minima-2">One of the most important applications of the derivative in Calculus I is in finding local maxima and minima of functions <span class="process-math">\(y = f(x)\text{.}\)</span> We’d like to extend this concept to functions of multiple variables, but first we need to define what local maxima and minima actually are in this new setting.</div>
+<div class="para" id="subsection-local-maxima-and-minima-2">One of the most important applications of the derivative in Calculus I is in finding local maxima and minima of functions <span class="process-math">\(y = f(x)\text{.}\)</span> We’d like to extend this concept to functions of multiple variables, but first we need to define what local maxima and minima actually are in this new setting.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-local-maxima-and-minima-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="definition definition-like" id="definition-local-maxima-and-minima"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">12.7.1</span><span class="period">.</span><span class="space"> </span><span class="title">Local Maxima and Minima.</span>
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.7.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Local Maxima and Minima.</span>
 </h4>
-<div class="para" id="definition-local-maxima-and-minima-3-1">We say that a function <span class="process-math">\(f(x,y)\)</span> has a local maximum (respectively, local minimum) at <span class="process-math">\((x_{0},y_{0})\)</span> if <span class="process-math">\(f(x,y)\leq f(x_{0},y_{0})\)</span> (respectively, <span class="process-math">\(f(x,y)\geq f(x_{0},y_{0})\)</span>) for all points <span class="process-math">\((x,y)\)</span> contained in some disk centered at <span class="process-math">\((x_{0},y_{0})\text{.}\)</span>
-</div></article><div class="para" id="subsection-local-maxima-and-minima-4">Just as we used derivatives in Calculus I to find maxima and minima, we can use partial derivatives for that purpose here.</div>
+<div class="para" id="definition-local-maxima-and-minima-3-1">We say that a function <span class="process-math">\(f(x,y)\)</span> has a local maximum (respectively, local minimum) at <span class="process-math">\((x_{0},y_{0})\)</span> if <span class="process-math">\(f(x,y)\leq f(x_{0},y_{0})\)</span> (respectively, <span class="process-math">\(f(x,y)\geq f(x_{0},y_{0})\)</span>) for all points <span class="process-math">\((x,y)\)</span> contained in some disk centered at <span class="process-math">\((x_{0},y_{0})\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#definition-local-maxima-and-minima-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 12.7.1: Local Maxima and Minima"><a href="#definition-local-maxima-and-minima" title="Copy heading and permalink for Definition 12.7.1: Local Maxima and Minima" aria-label="Copy heading and permalink for Definition 12.7.1: Local Maxima and Minima">🔗</a></div></article><div class="para" id="subsection-local-maxima-and-minima-4">Just as we used derivatives in Calculus I to find maxima and minima, we can use partial derivatives for that purpose here.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-local-maxima-and-minima-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="theorem-derivatives-at-a-local-maximum-or-minimum"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">12.7.2</span><span class="period">.</span><span class="space"> </span><span class="title">Derivatives at a Local Maximum or Minimum.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.7.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Derivatives at a Local Maximum or Minimum.</span>
 </h4>
 <div class="para logical" id="theorem-derivatives-at-a-local-maximum-or-minimum-2-1">
 <div class="para">Suppose that <span class="process-math">\(f(x,y)\)</span> is differentiable, and has a local maximum or minimum at <span class="process-math">\((x_{0},y_{0})\text{.}\)</span> Then</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="theorem-derivatives-at-a-local-maximum-or-minimum-2-1-3">
 \begin{equation*}
 f_{x}(x_{0},y_{0}) = f_{y}(x_{0},y_{0}) = 0.
 \end{equation*}
 </div>
-</div></article><div class="para" id="subsection-local-maxima-and-minima-6">
-<a href="section-extreme-values.html#theorem-derivatives-at-a-local-maximum-or-minimum" class="xref" data-knowl="./knowl/xref/theorem-derivatives-at-a-local-maximum-or-minimum.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 12.7.2: Derivatives at a Local Maximum or Minimum">Theorem 12.7.2</a> does not tell us if a differentiable function <span class="process-math">\(f(x,y)\)</span> has a local maximum or minimum at <span class="process-math">\((x_{0},y_{0})\text{,}\)</span> but it does tell us where to look. We call <span class="process-math">\((x_{0},y_{0})\)</span> a <dfn class="terminology">critical point</dfn> of <span class="process-math">\(f(x,y)\)</span> if <span class="process-math">\(f_{x}(x_{0},y_{0}) = f_{y}(x_{0},y_{0}) = 0\)</span> or if these partial derivatives fail to exist at <span class="process-math">\((x_{0},y_{0})\text{.}\)</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-derivatives-at-a-local-maximum-or-minimum-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 12.7.2: Derivatives at a Local Maximum or Minimum"><a href="#theorem-derivatives-at-a-local-maximum-or-minimum" title="Copy heading and permalink for Theorem 12.7.2: Derivatives at a Local Maximum or Minimum" aria-label="Copy heading and permalink for Theorem 12.7.2: Derivatives at a Local Maximum or Minimum">🔗</a></div></article><div class="para" id="subsection-local-maxima-and-minima-6">
+<a href="section-extreme-values.html#theorem-derivatives-at-a-local-maximum-or-minimum" class="xref" data-knowl="./knowl/xref/theorem-derivatives-at-a-local-maximum-or-minimum.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 12.7.2: Derivatives at a Local Maximum or Minimum">Theorem 12.7.2</a> does not tell us if a differentiable function <span class="process-math">\(f(x,y)\)</span> has a local maximum or minimum at <span class="process-math">\((x_{0},y_{0})\text{,}\)</span> but it does tell us where to look. We call <span class="process-math">\((x_{0},y_{0})\)</span> a <dfn class="terminology">critical point</dfn> of <span class="process-math">\(f(x,y)\)</span> if <span class="process-math">\(f_{x}(x_{0},y_{0}) = f_{y}(x_{0},y_{0}) = 0\)</span> or if these partial derivatives fail to exist at <span class="process-math">\((x_{0},y_{0})\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-local-maxima-and-minima-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-critical-points-of-an-exponential"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">12.7.3</span><span class="period">.</span><span class="space"> </span><span class="title">Critical points of an exponential.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.7.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Critical points of an exponential.</span>
 </h4>
-<div class="para" id="example-critical-points-of-an-exponential-2-1">Let <span class="process-math">\(f(x,y) = xe^{-x^{2} - y^{2}}\text{.}\)</span> Find its critical points.</div>
-<div class="solutions"><details id="example-critical-points-of-an-exponential-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-critical-points-of-an-exponential-3-1">
+<div class="para" id="example-critical-points-of-an-exponential-2-1">Let <span class="process-math">\(f(x,y) = xe^{-x^{2} - y^{2}}\text{.}\)</span> Find its critical points.<div class="autopermalink" data-description="Paragraph"><a href="#example-critical-points-of-an-exponential-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-critical-points-of-an-exponential-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-critical-points-of-an-exponential-3-1">
 <div class="para">Find the critical points by solving <span class="process-math">\(f_{x} = 0\)</span> and <span class="process-math">\(f_{y} = 0\text{.}\)</span> Since</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-critical-points-of-an-exponential-3-1-3">
 \begin{equation*}
 f_{x} = e^{-x^{2} - y^{2}} -2x^{2}e^{-x^{2} - y^{2}} = e^{-x^{2} - y^{2}}(1 - 2x^{2})
 \end{equation*}
 </div>
 <div class="para">then <span class="process-math">\(f_{x} = 0\)</span> forces <span class="process-math">\(x = \pm\sqrt{\frac{1}{2}}\text{.}\)</span> Similarly, since</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-critical-points-of-an-exponential-3-1-6">
 \begin{equation*}
 f_{y} = -2xye^{-x^{2} - y^{2}}
 \end{equation*}
 </div>
 <div class="para">then <span class="process-math">\(f_{y} = 0\)</span> forces <span class="process-math">\(x = 0\)</span> or <span class="process-math">\(y = 0\text{.}\)</span> So the only points that satisfy <em class="emphasis">both</em> <span class="process-math">\(f_{x} = 0\)</span> and <span class="process-math">\(f_{y} = 0\)</span> are <span class="process-math">\((\pm\sqrt{\frac{1}{2}}, 0).\)</span> So these must be our critical points.</div>
-</div></div></details></div></article><div class="para" id="subsection-local-maxima-and-minima-8">We found the critical points in <a href="section-extreme-values.html#example-critical-points-of-an-exponential" class="xref" data-knowl="./knowl/xref/example-critical-points-of-an-exponential.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 12.7.3: Critical points of an exponential">Example 12.7.3</a> without too much trouble, but these are still not guaranteed to be local maxima or minima. To determine if they are, we need to use the <dfn class="terminology">second derivative test</dfn>.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-critical-points-of-an-exponential-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 12.7.3.1"><a href="#example-critical-points-of-an-exponential-3" title="Copy heading and permalink for Solution 12.7.3.1" aria-label="Copy heading and permalink for Solution 12.7.3.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 12.7.3: Critical points of an exponential"><a href="#example-critical-points-of-an-exponential" title="Copy heading and permalink for Example 12.7.3: Critical points of an exponential" aria-label="Copy heading and permalink for Example 12.7.3: Critical points of an exponential">🔗</a></div></article><div class="para" id="subsection-local-maxima-and-minima-8">We found the critical points in <a href="section-extreme-values.html#example-critical-points-of-an-exponential" class="xref" data-knowl="./knowl/xref/example-critical-points-of-an-exponential.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 12.7.3: Critical points of an exponential">Example 12.7.3</a> without too much trouble, but these are still not guaranteed to be local maxima or minima. To determine if they are, we need to use the <dfn class="terminology">second derivative test</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-local-maxima-and-minima-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="theorem-second-derivative-test"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">12.7.4</span><span class="period">.</span><span class="space"> </span><span class="title">Second Derivative Test.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.7.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Second Derivative Test.</span>
 </h4>
 <div class="para logical" id="theorem-second-derivative-test-3-1">
 <div class="para">Let <span class="process-math">\(f(x,y)\)</span> be a differentiable function with continuous second partial derivatives, and let <span class="process-math">\((x_{0},y_{0})\)</span> be a critical point of <span class="process-math">\(f\text{.}\)</span> Define <span class="process-math">\(D\)</span> to be</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="theorem-second-derivative-test-3-1-5">
 \begin{equation*}
 D(x,y) = f_{xx}f_{yy} - (f_{xy})^{2}
 \end{equation*}
 </div>
 <div class="para">Then we have the following possibilities:</div>
 <ul class="disc" id="theorem-second-derivative-test-3-1-6">
-<li id="theorem-second-derivative-test-3-1-6-1"><div class="para" id="p-derived-theorem-second-derivative-test-3-1-6-1">If <span class="process-math">\(D(x_{0},y_{0}) &gt; 0 \)</span> and <span class="process-math">\(f_{xx}(x_{0},y_{0}) &gt; 0\text{,}\)</span> then <span class="process-math">\((x_{0},y_{0})\)</span> is a local minimum.</div></li>
-<li id="theorem-second-derivative-test-3-1-6-2"><div class="para" id="p-derived-theorem-second-derivative-test-3-1-6-2">If <span class="process-math">\(D(x_{0},y_{0}) &gt; 0 \)</span> and <span class="process-math">\(f_{xx}(x_{0},y_{0}) &lt; 0\text{,}\)</span> then <span class="process-math">\((x_{0},y_{0})\)</span> is a local maximum.</div></li>
-<li id="theorem-second-derivative-test-3-1-6-3"><div class="para" id="p-derived-theorem-second-derivative-test-3-1-6-3">If <span class="process-math">\(D(x_{0},y_{0}) &lt; 0 \text{,}\)</span> then <span class="process-math">\((x_{0},y_{0})\)</span> is a neither a local minimum nor local maximum. In this case we call <span class="process-math">\((x_{0},y_{0})\)</span> a <dfn class="terminology">saddle point</dfn>.</div></li>
-<li id="theorem-second-derivative-test-3-1-6-4"><div class="para" id="p-derived-theorem-second-derivative-test-3-1-6-4">If <span class="process-math">\(D(x_{0},y_{0}) = 0 \text{,}\)</span> the test is inconclusive.</div></li>
+<li id="theorem-second-derivative-test-3-1-6-1">
+<div class="para" id="p-derived-theorem-second-derivative-test-3-1-6-1">If <span class="process-math">\(D(x_{0},y_{0}) &gt; 0 \)</span> and <span class="process-math">\(f_{xx}(x_{0},y_{0}) &gt; 0\text{,}\)</span> then <span class="process-math">\((x_{0},y_{0})\)</span> is a local minimum.</div>
+<div class="autopermalink" data-description="Item"><a href="#theorem-second-derivative-test-3-1-6-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="theorem-second-derivative-test-3-1-6-2">
+<div class="para" id="p-derived-theorem-second-derivative-test-3-1-6-2">If <span class="process-math">\(D(x_{0},y_{0}) &gt; 0 \)</span> and <span class="process-math">\(f_{xx}(x_{0},y_{0}) &lt; 0\text{,}\)</span> then <span class="process-math">\((x_{0},y_{0})\)</span> is a local maximum.</div>
+<div class="autopermalink" data-description="Item"><a href="#theorem-second-derivative-test-3-1-6-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="theorem-second-derivative-test-3-1-6-3">
+<div class="para" id="p-derived-theorem-second-derivative-test-3-1-6-3">If <span class="process-math">\(D(x_{0},y_{0}) &lt; 0 \text{,}\)</span> then <span class="process-math">\((x_{0},y_{0})\)</span> is a neither a local minimum nor local maximum. In this case we call <span class="process-math">\((x_{0},y_{0})\)</span> a <dfn class="terminology">saddle point</dfn>.</div>
+<div class="autopermalink" data-description="Item"><a href="#theorem-second-derivative-test-3-1-6-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="theorem-second-derivative-test-3-1-6-4">
+<div class="para" id="p-derived-theorem-second-derivative-test-3-1-6-4">If <span class="process-math">\(D(x_{0},y_{0}) = 0 \text{,}\)</span> the test is inconclusive.</div>
+<div class="autopermalink" data-description="Item"><a href="#theorem-second-derivative-test-3-1-6-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
 </ul>
-</div></article><div class="para logical" id="subsection-local-maxima-and-minima-10">
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-second-derivative-test-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 12.7.4: Second Derivative Test"><a href="#theorem-second-derivative-test" title="Copy heading and permalink for Theorem 12.7.4: Second Derivative Test" aria-label="Copy heading and permalink for Theorem 12.7.4: Second Derivative Test">🔗</a></div></article><div class="para logical" id="subsection-local-maxima-and-minima-10">
 <div class="para">The quantity <span class="process-math">\(D\)</span> from <a href="section-extreme-values.html#theorem-second-derivative-test" class="xref" data-knowl="./knowl/xref/theorem-second-derivative-test.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 12.7.4: Second Derivative Test">Theorem 12.7.4</a> is actually a determinant:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-second-derivative-test.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-second-derivative-test.html" id="subsection-local-maxima-and-minima-10-3">
 \begin{equation*}
 D(x,y) = \left|\begin{array}{cc} f_{xx} &amp; f_{xy} \\ f_{yx} &amp; f_{yy}\end{array}\right|
 \end{equation*}
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsection-local-maxima-and-minima-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-local-extrema-of-an-exponential"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">12.7.5</span><span class="period">.</span><span class="space"> </span><span class="title">Local extrema of an exponential.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.7.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Local extrema of an exponential.</span>
 </h4>
-<div class="para" id="example-local-extrema-of-an-exponential-2-1">Classify the critical points of the function from <a href="section-extreme-values.html#example-critical-points-of-an-exponential" class="xref" data-knowl="./knowl/xref/example-critical-points-of-an-exponential.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 12.7.3: Critical points of an exponential">Example 12.7.3</a>.</div>
-<div class="solutions"><details id="example-local-extrema-of-an-exponential-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content"><div class="para logical" id="example-local-extrema-of-an-exponential-3-1">
+<div class="para" id="example-local-extrema-of-an-exponential-2-1">Classify the critical points of the function from <a href="section-extreme-values.html#example-critical-points-of-an-exponential" class="xref" data-knowl="./knowl/xref/example-critical-points-of-an-exponential.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 12.7.3: Critical points of an exponential">Example 12.7.3</a>.<div class="autopermalink" data-description="Paragraph"><a href="#example-local-extrema-of-an-exponential-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-local-extrema-of-an-exponential-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="example-local-extrema-of-an-exponential-3-1">
 <div class="para">We have <span class="process-math">\(f(x,y) = xe^{-x^{2} - y^{2}}\text{,}\)</span> and the critical points are <span class="process-math">\((-\sqrt{\frac{1}{2}},0)\)</span> and <span class="process-math">\((\sqrt{\frac{1}{2}},0)\text{.}\)</span> We need to find <span class="process-math">\(D(x,y)\text{.}\)</span> Since <span class="process-math">\(f_{x} = (1 - 2x^{2})e^{-x^{2} - y^{2}}\text{,}\)</span> we get</div>
 <div class="displaymath process-math" id="example-local-extrema-of-an-exponential-3-1-6">
 \begin{align*}
@@ -878,7 +818,7 @@ f_{xy} &amp; = -2y(1-2x^{2})e^{-x^{2} - y^{2}} = f_{yx}
 \end{align*}
 </div>
 <div class="para">and similarly</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-local-extrema-of-an-exponential-3-1-7">
 \begin{equation*}
 f_{yy} = -2xe^{-x^{2} - y^{2}} + 4xy^{2}e^{-x^{2} - y^{2}}
 \end{equation*}
@@ -891,35 +831,44 @@ D\left(-\sqrt{\frac{1}{2}},0\right) &amp; = 4\sqrt{\frac{1}{2}}e^{-\frac{1}{2}}\
 \end{align*}
 </div>
 <div class="para">and <span class="process-math">\(f_{xx}(-\sqrt{\frac{1}{2}},0) &gt;0\)</span> as well. So this is a local minimum. At <span class="process-math">\((\sqrt{\frac{1}{2}},0)\text{,}\)</span> we still have <span class="process-math">\(D&gt;0\text{,}\)</span> but now <span class="process-math">\(f_{xx}&lt;0\text{.}\)</span> So this is a local maximum.</div>
-</div></div></details></div></article></section><section class="subsection" id="subsection-absolute-maxima-and-minima"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Absolute Maxima and Minima</span>
-</h3>
-<div class="para" id="subsection-absolute-maxima-and-minima-2">Even if a function <span class="process-math">\(f(x,y)\)</span> has a local minimum at <span class="process-math">\((x_{0},y_{0})\text{,}\)</span> there’s no guarantee that this is the smallest value the function can take on its domain. A similar statement is also true for local maxima, which leads to the following definition.</div>
-<article class="definition definition-like" id="definition-absolute-maxima-and-minima"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">12.7.6</span><span class="period">.</span><span class="space"> </span><span class="title">Absolute Maxima and Minima.</span>
-</h4>
-<div class="para" id="definition-absolute-maxima-and-minima-3-1">Let <span class="process-math">\(f(x,y)\)</span> be a function defined on the set <span class="process-math">\(D\text{.}\)</span> We call the point <span class="process-math">\((x_{0},y_{0})\)</span> an <dfn class="terminology">absolute minimum</dfn> (respectively, <dfn class="terminology">absolute maximum</dfn>) if <span class="process-math">\(f(x,y)\geq f(x_{0},y_{0})\)</span> (respectively, <span class="process-math">\(f(x,y)\leq f(x_{0},y_{0})\)</span>) for all points <span class="process-math">\((x,y)\)</span> in <span class="process-math">\(R\text{.}\)</span>
-</div></article><div class="para" id="subsection-absolute-maxima-and-minima-4">As a first example, consider <span class="process-math">\(f(x,y) = \sqrt{1 - x^{2} - y^{2}}\text{,}\)</span> which gives the top half of the unit sphere. Using critical points and the second derivative test, we can show that the origin is a local maximum. However, this method is blind to the absolute minimum values of <span class="process-math">\(f(x,y)\text{,}\)</span> which occur at the boundary <span class="process-math">\(x^{2} + y^{2} = 1\text{,}\)</span> where the sphere intersects the <span class="process-math">\(xy\)</span>-plane. So this means we can’t use critical points alone to find absolute maxima and minima, in general. However, the following theorem says that they’ll get us most of the way there.</div>
-<article class="theorem theorem-like" id="theorem-extreme-value-multivariable"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">12.7.7</span><span class="period">.</span><span class="space"> </span><span class="title">Extreme Value Theorem.</span>
-</h4>
-<div class="para" id="theorem-extreme-value-multivariable-3-1">Let <span class="process-math">\(f(x,y)\)</span> be a continuous function defined on a closed and bounded set <span class="process-math">\(D\text{.}\)</span> <details class="ptx-footnote" aria-live="polite" id="theorem-extreme-value-multivariable-3-1-3"><summary class="ptx-footnote__number" title="Footnote 10"><sup> 10 </sup></summary><div class="ptx-footnote__contents" id="theorem-extreme-value-multivariable-3-1-3">This means that <span class="process-math">\(D\)</span> is finite in size and that it includes its boundary.</div></details> Then <span class="process-math">\(f\)</span> is guaranteed to have an absolute maximum and absolute minimum. Furthermore, these must occur either at a critical point or on the boundary of <span class="process-math">\(D\text{.}\)</span>
-</div></article><article class="example example-like" id="example-absolute-values-on-a-triangle"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">12.7.8</span><span class="period">.</span><span class="space"> </span><span class="title">Absolute values on a triangle.</span>
-</h4>
-<div class="para" id="example-absolute-values-on-a-triangle-2-1">Let <span class="process-math">\(f(x,y) = x + y - xy\text{.}\)</span> Find the absolute maxima and minima of <span class="process-math">\(f\)</span> on the triangle with vertices <span class="process-math">\((0,0), (0,2)\)</span> and <span class="process-math">\((4,0)\text{.}\)</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-local-extrema-of-an-exponential-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-absolute-values-on-a-triangle-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="autopermalink" data-description="Solution 12.7.5.1"><a href="#example-local-extrema-of-an-exponential-3" title="Copy heading and permalink for Solution 12.7.5.1" aria-label="Copy heading and permalink for Solution 12.7.5.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 12.7.5: Local extrema of an exponential"><a href="#example-local-extrema-of-an-exponential" title="Copy heading and permalink for Example 12.7.5: Local extrema of an exponential" aria-label="Copy heading and permalink for Example 12.7.5: Local extrema of an exponential">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Local Maxima and Minima"><a href="#subsection-local-maxima-and-minima" title="Copy heading and permalink for Subsection: Local Maxima and Minima" aria-label="Copy heading and permalink for Subsection: Local Maxima and Minima">🔗</a></div></section><section class="subsection" id="subsection-absolute-maxima-and-minima"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Absolute Maxima and Minima</span>
+</h3>
+<div class="para" id="subsection-absolute-maxima-and-minima-2">Even if a function <span class="process-math">\(f(x,y)\)</span> has a local minimum at <span class="process-math">\((x_{0},y_{0})\text{,}\)</span> there’s no guarantee that this is the smallest value the function can take on its domain. A similar statement is also true for local maxima, which leads to the following definition.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-absolute-maxima-and-minima-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="definition-absolute-maxima-and-minima"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.7.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Absolute Maxima and Minima.</span>
+</h4>
+<div class="para" id="definition-absolute-maxima-and-minima-3-1">Let <span class="process-math">\(f(x,y)\)</span> be a function defined on the set <span class="process-math">\(D\text{.}\)</span> We call the point <span class="process-math">\((x_{0},y_{0})\)</span> an <dfn class="terminology">absolute minimum</dfn> (respectively, <dfn class="terminology">absolute maximum</dfn>) if <span class="process-math">\(f(x,y)\geq f(x_{0},y_{0})\)</span> (respectively, <span class="process-math">\(f(x,y)\leq f(x_{0},y_{0})\)</span>) for all points <span class="process-math">\((x,y)\)</span> in <span class="process-math">\(R\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#definition-absolute-maxima-and-minima-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 12.7.6: Absolute Maxima and Minima"><a href="#definition-absolute-maxima-and-minima" title="Copy heading and permalink for Definition 12.7.6: Absolute Maxima and Minima" aria-label="Copy heading and permalink for Definition 12.7.6: Absolute Maxima and Minima">🔗</a></div></article><div class="para" id="subsection-absolute-maxima-and-minima-4">As a first example, consider <span class="process-math">\(f(x,y) = \sqrt{1 - x^{2} - y^{2}}\text{,}\)</span> which gives the top half of the unit sphere. Using critical points and the second derivative test, we can show that the origin is a local maximum. However, this method is blind to the absolute minimum values of <span class="process-math">\(f(x,y)\text{,}\)</span> which occur at the boundary <span class="process-math">\(x^{2} + y^{2} = 1\text{,}\)</span> where the sphere intersects the <span class="process-math">\(xy\)</span>-plane. So this means we can’t use critical points alone to find absolute maxima and minima, in general. However, the following theorem says that they’ll get us most of the way there.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-absolute-maxima-and-minima-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="theorem-extreme-value-multivariable"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.7.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Extreme Value Theorem.</span>
+</h4>
+<div class="para" id="theorem-extreme-value-multivariable-3-1">Let <span class="process-math">\(f(x,y)\)</span> be a continuous function defined on a closed and bounded set <span class="process-math">\(D\text{.}\)</span> <details class="ptx-footnote" aria-live="polite" id="theorem-extreme-value-multivariable-3-1-3"><summary class="ptx-footnote__number" title="Footnote 7"><sup> 7 </sup></summary><div class="ptx-footnote__contents" id="theorem-extreme-value-multivariable-3-1-3">This means that <span class="process-math">\(D\)</span> is finite in size and that it includes its boundary.</div></details> Then <span class="process-math">\(f\)</span> is guaranteed to have an absolute maximum and absolute minimum. Furthermore, these must occur either at a critical point or on the boundary of <span class="process-math">\(D\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#theorem-extreme-value-multivariable-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 12.7.7: Extreme Value Theorem"><a href="#theorem-extreme-value-multivariable" title="Copy heading and permalink for Theorem 12.7.7: Extreme Value Theorem" aria-label="Copy heading and permalink for Theorem 12.7.7: Extreme Value Theorem">🔗</a></div></article><article class="example example-like" id="example-absolute-values-on-a-triangle"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.7.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Absolute values on a triangle.</span>
+</h4>
+<div class="para" id="example-absolute-values-on-a-triangle-2-1">Let <span class="process-math">\(f(x,y) = x + y - xy\text{.}\)</span> Find the absolute maxima and minima of <span class="process-math">\(f\)</span> on the triangle with vertices <span class="process-math">\((0,0), (0,2)\)</span> and <span class="process-math">\((4,0)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-absolute-values-on-a-triangle-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="example-absolute-values-on-a-triangle-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="example-absolute-values-on-a-triangle-3-1">
 <div class="para">We’ll start off by finding any critical points. Since <span class="process-math">\(\grad f = \dotprod{1-y, 1-x}\text{,}\)</span> we see that the only critical point is <span class="process-math">\((1,1)\text{.}\)</span> Now we need to see what happens to <span class="process-math">\(f(x,y)\)</span> on the edges of the triangle, and to do that we need to find equations for the edges. Let <span class="process-math">\(l_{1}\)</span> denote the edge from <span class="process-math">\((0,0)\)</span> to <span class="process-math">\((0,2)\text{,}\)</span> <span class="process-math">\(l_{2}\)</span> the edge from <span class="process-math">\((0,2)\)</span> to <span class="process-math">\((4,0)\)</span> and <span class="process-math">\(l_{3}\)</span> the edge from <span class="process-math">\((0,0)\)</span> to <span class="process-math">\((4,0)\text{.}\)</span> Then <span class="process-math">\(l_{1}\)</span> is given by the equation <span class="process-math">\(x = 0\text{,}\)</span> <span class="process-math">\(l_{2}\)</span> is given by <span class="process-math">\(y = -\frac{1}{2}(x-4)\)</span> and <span class="process-math">\(l_{3}\)</span> is given by <span class="process-math">\(y = 0\text{.}\)</span> So on <span class="process-math">\(l_{1}\)</span> we have <span class="process-math">\(f(x,y) = f(0,y) = y\text{,}\)</span> on <span class="process-math">\(l_{2}\)</span> we have</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-absolute-values-on-a-triangle-3-1-22">
 \begin{equation*}
 f(x,y) = f\left(x,-\frac{1}{2}(x-4)\right) = \frac{1}{2}\left[\left(x-\frac{3}{2}\right)^{2} + \frac{7}{4}\right]
 \end{equation*}
 </div>
 <div class="para">and on <span class="process-math">\(l_{3}\)</span> we have <span class="process-math">\(f(x,y) = f(x,0) = x\text{.}\)</span> We can then set up the following table:</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-absolute-values-on-a-triangle-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figure class="table table-like" id="table-triangle-extrema"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">12.7.9<span class="period">.</span></span><span class="space"> </span>Absolute values on the boundary</figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="table-triangle-extrema"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.7.9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Absolute values on the boundary<div class="autopermalink" data-description="Table 12.7.9: Absolute values on the boundary"><a href="#table-triangle-extrema" title="Copy heading and permalink for Table 12.7.9: Absolute values on the boundary" aria-label="Copy heading and permalink for Table 12.7.9: Absolute values on the boundary">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r0 l0 t3 lines">edge</td>
 <td class="c m b1 r0 l0 t3 lines"><span class="process-math">\(f(x,y)\)</span></td>
@@ -944,41 +893,50 @@ f(x,y) = f\left(x,-\frac{1}{2}(x-4)\right) = \frac{1}{2}\left[\left(x-\frac{3}{2
 <td class="c m b3 r0 l0 t0 lines"><span class="process-math">\(4\)</span></td>
 <td class="c m b3 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
 </tr>
-</table></div></figure><div class="para" id="example-absolute-values-on-a-triangle-3-3">Finally, at the critical point <span class="process-math">\((1,1)\)</span> we have <span class="process-math">\(f(1,1) = 1\text{.}\)</span> So putting this all together, we can say that the absolute maximum of <span class="process-math">\(f(x,y)\)</span> on this triangle is <span class="process-math">\(4\text{,}\)</span> and this is reached at <span class="process-math">\((4,0)\text{.}\)</span> Similarly, the absolute minimum is <span class="process-math">\(0\text{,}\)</span> and this is reached at the origin.</div>
-</div></details></div></article><div class="para" id="subsection-absolute-maxima-and-minima-7">Note that in <a href="section-extreme-values.html#example-absolute-values-on-a-triangle" class="xref" data-knowl="./knowl/xref/example-absolute-values-on-a-triangle.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 12.7.8: Absolute values on a triangle">Example 12.7.8</a>, we don’t actually determine if the critical point is a local maximum or minimum. We just compare the value <span class="process-math">\(f\)</span> reaches at the critical point with its maximum and minimum values on the boundary.</div>
+</table></div></figure><div class="para" id="example-absolute-values-on-a-triangle-3-3">Finally, at the critical point <span class="process-math">\((1,1)\)</span> we have <span class="process-math">\(f(1,1) = 1\text{.}\)</span> So putting this all together, we can say that the absolute maximum of <span class="process-math">\(f(x,y)\)</span> on this triangle is <span class="process-math">\(4\text{,}\)</span> and this is reached at <span class="process-math">\((4,0)\text{.}\)</span> Similarly, the absolute minimum is <span class="process-math">\(0\text{,}\)</span> and this is reached at the origin.<div class="autopermalink" data-description="Paragraph"><a href="#example-absolute-values-on-a-triangle-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 12.7.8.1"><a href="#example-absolute-values-on-a-triangle-3" title="Copy heading and permalink for Solution 12.7.8.1" aria-label="Copy heading and permalink for Solution 12.7.8.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 12.7.8: Absolute values on a triangle"><a href="#example-absolute-values-on-a-triangle" title="Copy heading and permalink for Example 12.7.8: Absolute values on a triangle" aria-label="Copy heading and permalink for Example 12.7.8: Absolute values on a triangle">🔗</a></div></article><div class="para" id="subsection-absolute-maxima-and-minima-7">Note that in <a href="section-extreme-values.html#example-absolute-values-on-a-triangle" class="xref" data-knowl="./knowl/xref/example-absolute-values-on-a-triangle.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 12.7.8: Absolute values on a triangle">Example 12.7.8</a>, we don’t actually determine if the critical point is a local maximum or minimum. We just compare the value <span class="process-math">\(f\)</span> reaches at the critical point with its maximum and minimum values on the boundary.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-absolute-maxima-and-minima-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="example example-like" id="example-absolute-maxima-and-minima-on-a-circular-sector"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">12.7.10</span><span class="period">.</span><span class="space"> </span><span class="title">Absolute maxima and minima on a circular sector.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.7.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Absolute maxima and minima on a circular sector.</span>
 </h4>
 <div class="para logical" id="example-absolute-maxima-and-minima-on-a-circular-sector-2-1">
 <div class="para">Let <span class="process-math">\(f(x,y) = xy^{2}\)</span> and let</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-absolute-maxima-and-minima-on-a-circular-sector-2-1-2">
 \begin{equation*}
 D = \{(x,y) : x,y \geq 0, x^{2} + y^{2} \leq 3\}
 \end{equation*}
 </div>
 <div class="para">Find the absolute maxima and minima of <span class="process-math">\(f\)</span> on <span class="process-math">\(D\text{.}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-absolute-maxima-and-minima-on-a-circular-sector-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="example-absolute-maxima-and-minima-on-a-circular-sector-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="example-absolute-maxima-and-minima-on-a-circular-sector-3-1">First we’ll find the critical point(s). If we compute <span class="process-math">\(\grad f\text{,}\)</span> we get <span class="process-math">\(\grad f = \dotprod{y^{2}, 2xy}\text{.}\)</span> This is <span class="process-math">\(0\)</span> if and only if <span class="process-math">\(y=0\text{,}\)</span> and if <span class="process-math">\(y=0\)</span> then this forces <span class="process-math">\(f(x,y) = f(x,0) = 0\text{.}\)</span>
+<div class="solutions"><details id="example-absolute-maxima-and-minima-on-a-circular-sector-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="example-absolute-maxima-and-minima-on-a-circular-sector-3-1">First we’ll find the critical point(s). If we compute <span class="process-math">\(\grad f\text{,}\)</span> we get <span class="process-math">\(\grad f = \dotprod{y^{2}, 2xy}\text{.}\)</span> This is <span class="process-math">\(0\)</span> if and only if <span class="process-math">\(y=0\text{,}\)</span> and if <span class="process-math">\(y=0\)</span> then this forces <span class="process-math">\(f(x,y) = f(x,0) = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-absolute-maxima-and-minima-on-a-circular-sector-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-absolute-maxima-and-minima-on-a-circular-sector-3-2">
 <div class="para">Now we need to determine the maximum and minimum values of <span class="process-math">\(f(x,y)\)</span> on the boundary of <span class="process-math">\(D\text{.}\)</span> Let <span class="process-math">\(C_{1}\)</span> denote the line segment from <span class="process-math">\((0,0)\)</span> to <span class="process-math">\((\sqrt{3},0)\text{,}\)</span> <span class="process-math">\(C_{2}\)</span> the circular arc from <span class="process-math">\((\sqrt{3},0)\)</span> to <span class="process-math">\((0,\sqrt{3})\)</span> and <span class="process-math">\(C_{3}\)</span> the line segment from <span class="process-math">\((0,\sqrt{3})\)</span> to <span class="process-math">\((0,0)\text{.}\)</span> Then on <span class="process-math">\(C_{1}\)</span> we have <span class="process-math">\(f(x,y) = 0\text{,}\)</span> on <span class="process-math">\(C_{2}\)</span> we have</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="example-absolute-maxima-and-minima-on-a-circular-sector-3-2-15">
 \begin{equation*}
 f(x,y) = xy^{2} = x(3-x^{2})
 \end{equation*}
 </div>
 <div class="para">and on <span class="process-math">\(C_{3}\)</span> we have <span class="process-math">\(f(x,y) = 0\text{.}\)</span> So the smallest value that <span class="process-math">\(f\)</span> takes on the boundary is <span class="process-math">\(0\text{,}\)</span> and the largest value is <span class="process-math">\(2\text{.}\)</span> So the absolute maximum is <span class="process-math">\(2\)</span> and the absolute minimum is <span class="process-math">\(0\text{.}\)</span>
 </div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-absolute-maxima-and-minima-on-a-circular-sector-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-</div></details></div></article></section><section class="conclusion" id="section-extreme-values-5"><div class="para" id="section-extreme-values-5-1">SUGGESTED PROBLEMS: 1, 3, 13, 23</div></section></section></div>
-<div class="ptx-content-footer">
+<div class="autopermalink" data-description="Solution 12.7.10.1"><a href="#example-absolute-maxima-and-minima-on-a-circular-sector-3" title="Copy heading and permalink for Solution 12.7.10.1" aria-label="Copy heading and permalink for Solution 12.7.10.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 12.7.10: Absolute maxima and minima on a circular sector"><a href="#example-absolute-maxima-and-minima-on-a-circular-sector" title="Copy heading and permalink for Example 12.7.10: Absolute maxima and minima on a circular sector" aria-label="Copy heading and permalink for Example 12.7.10: Absolute maxima and minima on a circular sector">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Absolute Maxima and Minima"><a href="#subsection-absolute-maxima-and-minima" title="Copy heading and permalink for Subsection: Absolute Maxima and Minima" aria-label="Copy heading and permalink for Subsection: Absolute Maxima and Minima">🔗</a></div></section><section class="conclusion" id="section-extreme-values-5"><div class="para" id="section-extreme-values-5-1">SUGGESTED PROBLEMS: 1, 3, 13, 23<div class="autopermalink" data-description="Paragraph"><a href="#section-extreme-values-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><div class="autopermalink" data-description="Section 12.7: Extreme Values"><a href="#section-extreme-values" title="Copy heading and permalink for Section 12.7: Extreme Values" aria-label="Copy heading and permalink for Section 12.7: Extreme Values">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="section-directional-derivatives-and-gradients.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="section-lagrange-multipliers.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
-<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
 </body>
 </html>

@@ -6,17 +6,21 @@
 <!--*                                          *-->
 <!--********************************************-->
 <html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>WVWC-CALC Calculus and Polar Coordinates</title>
-<meta name="Keywords" content="Authored in PreTeXt">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:type" content="book">
-<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo.jpg">
-<meta property="book:title" content="Calculus Notes">
-<meta property="book:author" content="Jesse Oldroyd
-          ">
-<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
   "tex": {
@@ -88,12 +92,14 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
-</script><link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
-<script src="https://cdn.geogebra.org/apps/deployggb.js"></script><link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<!--** eBookCongig is necessary to configure interactive       **-->
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="og:image" content="https://j-oldroyd.github.io/wvwc-calculus/output/html/external/./wvwc-logo-brandlogo.jpg">
+<meta property="book:title" content="Calculus Notes">
+<meta property="book:author" content="Jesse Oldroyd
+          ">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -115,127 +121,22 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.5.1';
+eBookConfig.runestone_version = '7.11.8';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.87cabc2515250052.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.630d5c4fb4b681eb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.97f3ae4f7a71ba18.css">
-<style>
-#theorem-combining-continuous-functions-2-1-4 { counter-set: theorem-combining-continuous-functions-2-1-4 0; }
-#theorem-combining-continuous-functions-2-1-4 > li::marker { content: ""counter(theorem-combining-continuous-functions-2-1-4,decimal)"."; }
-#theorem-combining-continuous-functions-2-1-4 > li { counter-increment: theorem-combining-continuous-functions-2-1-4; }
-#example-derivatives-using-the-power-rule-2-1-1 { counter-set: example-derivatives-using-the-power-rule-2-1-1 0; }
-#example-derivatives-using-the-power-rule-2-1-1 > li::marker { content: ""counter(example-derivatives-using-the-power-rule-2-1-1,decimal)"."; }
-#example-derivatives-using-the-power-rule-2-1-1 > li { counter-increment: example-derivatives-using-the-power-rule-2-1-1; }
-#section-extreme-values-of-functions-4-1-1-1 { counter-set: section-extreme-values-of-functions-4-1-1-1 0; }
-#section-extreme-values-of-functions-4-1-1-1 > li::marker { content: ""counter(section-extreme-values-of-functions-4-1-1-1,decimal)"."; }
-#section-extreme-values-of-functions-4-1-1-1 > li { counter-increment: section-extreme-values-of-functions-4-1-1-1; }
-#example-minimizing-material-costs-3-1-1 { counter-set: example-minimizing-material-costs-3-1-1 0; }
-#example-minimizing-material-costs-3-1-1 > li::marker { content: ""counter(example-minimizing-material-costs-3-1-1,decimal)"."; }
-#example-minimizing-material-costs-3-1-1 > li { counter-increment: example-minimizing-material-costs-3-1-1; }
-#example-distance-on-an-ellipse-3-1-1 { counter-set: example-distance-on-an-ellipse-3-1-1 0; }
-#example-distance-on-an-ellipse-3-1-1 > li::marker { content: ""counter(example-distance-on-an-ellipse-3-1-1,decimal)"."; }
-#example-distance-on-an-ellipse-3-1-1 > li { counter-increment: example-distance-on-an-ellipse-3-1-1; }
-#example-finding-antiderivatives-2-1-1 { counter-set: example-finding-antiderivatives-2-1-1 0; }
-#example-finding-antiderivatives-2-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-2-1-1,decimal)"."; }
-#example-finding-antiderivatives-2-1-1 > li { counter-increment: example-finding-antiderivatives-2-1-1; }
-#example-finding-antiderivatives-3-1-1 { counter-set: example-finding-antiderivatives-3-1-1 0; }
-#example-finding-antiderivatives-3-1-1 > li::marker { content: ""counter(example-finding-antiderivatives-3-1-1,decimal)"."; }
-#example-finding-antiderivatives-3-1-1 > li { counter-increment: example-finding-antiderivatives-3-1-1; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 { counter-set: theorem-more-properties-of-the-definite-integral-2-1-3 0; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li::marker { content: ""counter(theorem-more-properties-of-the-definite-integral-2-1-3,decimal)"."; }
-#theorem-more-properties-of-the-definite-integral-2-1-3 > li { counter-increment: theorem-more-properties-of-the-definite-integral-2-1-3; }
-#theorem-fundamental-theorem-of-calculus-2-2 { counter-set: theorem-fundamental-theorem-of-calculus-2-2 0; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li::marker { content: ""counter(theorem-fundamental-theorem-of-calculus-2-2,decimal)"."; }
-#theorem-fundamental-theorem-of-calculus-2-2 > li { counter-increment: theorem-fundamental-theorem-of-calculus-2-2; }
-#section-substitution-5-3 { counter-set: section-substitution-5-3 0; }
-#section-substitution-5-3 > li::marker { content: ""counter(section-substitution-5-3,decimal)"."; }
-#section-substitution-5-3 > li { counter-increment: section-substitution-5-3; }
-#algorithm-partial-fractions-algorithm-3-1-2 { counter-set: algorithm-partial-fractions-algorithm-3-1-2 0; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li::marker { content: ""counter(algorithm-partial-fractions-algorithm-3-1-2,decimal)"."; }
-#algorithm-partial-fractions-algorithm-3-1-2 > li { counter-increment: algorithm-partial-fractions-algorithm-3-1-2; }
-#section-applications-to-physics-and-engineering-2-2 { counter-set: section-applications-to-physics-and-engineering-2-2 0; }
-#section-applications-to-physics-and-engineering-2-2 > li::marker { content: ""counter(section-applications-to-physics-and-engineering-2-2,decimal)"."; }
-#section-applications-to-physics-and-engineering-2-2 > li { counter-increment: section-applications-to-physics-and-engineering-2-2; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 { counter-set: subsection-moments-and-centers-of-mass-7-1-3-1 0; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-1-3-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-1-3-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-1-3-1; }
-#subsection-moments-and-centers-of-mass-7-2-1 { counter-set: subsection-moments-and-centers-of-mass-7-2-1 0; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-7-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-7-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-7-2-1; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 { counter-set: subsection-moments-and-centers-of-mass-12-1-1-4 0; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-1-1-4,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-1-1-4 > li { counter-increment: subsection-moments-and-centers-of-mass-12-1-1-4; }
-#subsection-moments-and-centers-of-mass-12-2-1 { counter-set: subsection-moments-and-centers-of-mass-12-2-1 0; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li::marker { content: ""counter(subsection-moments-and-centers-of-mass-12-2-1,decimal)"."; }
-#subsection-moments-and-centers-of-mass-12-2-1 > li { counter-increment: subsection-moments-and-centers-of-mass-12-2-1; }
-#example-determining-a-sustainable-population-3-3 { counter-set: example-determining-a-sustainable-population-3-3 0; }
-#example-determining-a-sustainable-population-3-3 > li::marker { content: ""counter(example-determining-a-sustainable-population-3-3,decimal)"."; }
-#example-determining-a-sustainable-population-3-3 > li { counter-increment: example-determining-a-sustainable-population-3-3; }
-#theorem-sequential-limit-laws-2-2 { counter-set: theorem-sequential-limit-laws-2-2 0; }
-#theorem-sequential-limit-laws-2-2 > li::marker { content: ""counter(theorem-sequential-limit-laws-2-2,decimal)"."; }
-#theorem-sequential-limit-laws-2-2 > li { counter-increment: theorem-sequential-limit-laws-2-2; }
-#example-guessing-sums-2-1-1 { counter-set: example-guessing-sums-2-1-1 0; }
-#example-guessing-sums-2-1-1 > li::marker { content: ""counter(example-guessing-sums-2-1-1,decimal)"."; }
-#example-guessing-sums-2-1-1 > li { counter-increment: example-guessing-sums-2-1-1; }
-#example-guessing-sums-3-1-1 { counter-set: example-guessing-sums-3-1-1 0; }
-#example-guessing-sums-3-1-1 > li::marker { content: ""counter(example-guessing-sums-3-1-1,decimal)"."; }
-#example-guessing-sums-3-1-1 > li { counter-increment: example-guessing-sums-3-1-1; }
-#theorem-direct-comparison-test-series-3-1-4 { counter-set: theorem-direct-comparison-test-series-3-1-4 0; }
-#theorem-direct-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-direct-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-direct-comparison-test-series-3-1-4 > li { counter-increment: theorem-direct-comparison-test-series-3-1-4; }
-#theorem-limit-comparison-test-series-3-1-4 { counter-set: theorem-limit-comparison-test-series-3-1-4 0; }
-#theorem-limit-comparison-test-series-3-1-4 > li::marker { content: ""counter(theorem-limit-comparison-test-series-3-1-4,decimal)"."; }
-#theorem-limit-comparison-test-series-3-1-4 > li { counter-increment: theorem-limit-comparison-test-series-3-1-4; }
-#subsection-alternating-series-9-2 { counter-set: subsection-alternating-series-9-2 0; }
-#subsection-alternating-series-9-2 > li::marker { content: ""counter(subsection-alternating-series-9-2,decimal)"."; }
-#subsection-alternating-series-9-2 > li { counter-increment: subsection-alternating-series-9-2; }
-#theorem-ratio-test-2-1-3 { counter-set: theorem-ratio-test-2-1-3 0; }
-#theorem-ratio-test-2-1-3 > li::marker { content: ""counter(theorem-ratio-test-2-1-3,decimal)"."; }
-#theorem-ratio-test-2-1-3 > li { counter-increment: theorem-ratio-test-2-1-3; }
-#theorem-root-test-2-1-3 { counter-set: theorem-root-test-2-1-3 0; }
-#theorem-root-test-2-1-3 > li::marker { content: ""counter(theorem-root-test-2-1-3,decimal)"."; }
-#theorem-root-test-2-1-3 > li { counter-increment: theorem-root-test-2-1-3; }
-#example-examples-of-power-series-2-1-1 { counter-set: example-examples-of-power-series-2-1-1 0; }
-#example-examples-of-power-series-2-1-1 > li::marker { content: ""counter(example-examples-of-power-series-2-1-1,decimal)"."; }
-#example-examples-of-power-series-2-1-1 > li { counter-increment: example-examples-of-power-series-2-1-1; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 { counter-set: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 0; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li::marker { content: ""counter(theorem-properties-of-vector-addition-and-scalar-multiplication-3-2,decimal)"."; }
-#theorem-properties-of-vector-addition-and-scalar-multiplication-3-2 > li { counter-increment: theorem-properties-of-vector-addition-and-scalar-multiplication-3-2; }
-#theorem-properties-of-the-dot-product-3-2 { counter-set: theorem-properties-of-the-dot-product-3-2 0; }
-#theorem-properties-of-the-dot-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-dot-product-3-2,decimal)"."; }
-#theorem-properties-of-the-dot-product-3-2 > li { counter-increment: theorem-properties-of-the-dot-product-3-2; }
-#theorem-properties-of-the-cross-product-3-2 { counter-set: theorem-properties-of-the-cross-product-3-2 0; }
-#theorem-properties-of-the-cross-product-3-2 > li::marker { content: ""counter(theorem-properties-of-the-cross-product-3-2,decimal)"."; }
-#theorem-properties-of-the-cross-product-3-2 > li { counter-increment: theorem-properties-of-the-cross-product-3-2; }
-#theorem-vector-derivative-rules-3-2 { counter-set: theorem-vector-derivative-rules-3-2 0; }
-#theorem-vector-derivative-rules-3-2 > li::marker { content: ""counter(theorem-vector-derivative-rules-3-2,decimal)"."; }
-#theorem-vector-derivative-rules-3-2 > li { counter-increment: theorem-vector-derivative-rules-3-2; }
-#subsection-continuous-functions-5 { counter-set: subsection-continuous-functions-5 0; }
-#subsection-continuous-functions-5 > li::marker { content: ""counter(subsection-continuous-functions-5,decimal)"."; }
-#subsection-continuous-functions-5 > li { counter-increment: subsection-continuous-functions-5; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 { counter-set: algorithm-method-of-lagrange-multipliers-3-1-7 0; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li::marker { content: ""counter(algorithm-method-of-lagrange-multipliers-3-1-7,decimal)"."; }
-#algorithm-method-of-lagrange-multipliers-3-1-7 > li { counter-increment: algorithm-method-of-lagrange-multipliers-3-1-7; }
-#subsection-conservative-vector-fields-2-2 { counter-set: subsection-conservative-vector-fields-2-2 0; }
-#subsection-conservative-vector-fields-2-2 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-2,decimal)"."; }
-#subsection-conservative-vector-fields-2-2 > li { counter-increment: subsection-conservative-vector-fields-2-2; }
-#subsection-conservative-vector-fields-2-3 { counter-set: subsection-conservative-vector-fields-2-3 0; }
-#subsection-conservative-vector-fields-2-3 > li::marker { content: ""counter(subsection-conservative-vector-fields-2-3,decimal)"."; }
-#subsection-conservative-vector-fields-2-3 > li { counter-increment: subsection-conservative-vector-fields-2-3; }
-#gfdl-section4-3 { counter-set: gfdl-section4-3 0; }
-#gfdl-section4-3 > li::marker { content: ""counter(gfdl-section4-3,upper-alpha)"."; }
-#gfdl-section4-3 > li { counter-increment: gfdl-section4-3; }
-</style>
+<script src="_static/prefix-runtime.991c135ccf182bf5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1c010553c35c544c.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.677a75a9120449ff.css">
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdn.geogebra.org/apps/deployggb.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" target="_blank" href=""><img src="external/./wvwc-logo.jpg" alt="Logo image"></a><div class="title-container">
-<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes:</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
+<img src="external/./wvwc-logo-brandlogo.jpg" alt="Logo image"><div class="title-container">
+<h1 class="heading"><a href="wvwc-calculus.html"><span class="title">Calculus Notes</span> <span class="subtitle">West Virginia Wesleyan College</span></a></h1>
 <p class="byline">Jesse Oldroyd</p>
 </div>
 </div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
@@ -431,10 +332,10 @@ true);
 <div class="toc-title-box"><a href="applications-differentiation.html" class="internal"><span class="codenumber">5</span> <span class="title">Applications of Differentiation</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-linear-approximations.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Linear approximations</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related Rates</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-related-rates.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Related rates</span></a></div></li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-l-hospital-s-rule.html" class="internal"><span class="codenumber">5.3</span> <span class="title">L’Hospital’s Rule</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme Values of Functions</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization Problems</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-extreme-values-of-functions.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Extreme values of functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-optimization-problems.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Optimization problems</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-the-mean-value-theorem.html" class="internal"><span class="codenumber">5.6</span> <span class="title">The Mean Value Theorem</span></a></div>
 <ul class="structural toc-item-list">
@@ -442,8 +343,11 @@ true);
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-the-mean-value-theorem.html#subsection-the-mean-value-theorem" class="internal"><span class="title">The Mean Value Theorem</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and Graphs</span></a></div></li>
-<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="section-derivatives-and-graphs.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Derivatives and graphs</span></a></div></li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="section-newton-s-method.html" class="internal"><span class="codenumber">5.8</span> <span class="title">Newton’s Method</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-newton-s-method.html#subsection-newtons-method-optimization" class="internal"><span class="title">Newton’s Method for optimization</span></a></div></li></ul>
+</li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-antiderivatives.html" class="internal"><span class="codenumber">5.9</span> <span class="title">Antiderivatives</span></a></div></li>
 </ul>
 </li>
@@ -606,8 +510,14 @@ true);
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="section-coordinates-in-3-space.html" class="internal"><span class="codenumber">11.1</span> <span class="title">Coordinates in 3-Space</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#xyz-coordinates" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-coordinates" class="internal"><span class="title"><span class="process-math">\(xyz\)</span>-coordinates</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="section-coordinates-in-3-space.html#subsection-the-distance-formula" class="internal"><span class="title"></span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-coordinates-in-3-space.html#handout-distance-formula" class="internal"><span class="title">The Distance Formula</span></a></div></li></ul>
+</li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -797,136 +707,164 @@ true);
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-calculus-and-polar-coordinates"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">10.4</span><span class="space"> </span><span class="title">Calculus and Polar Coordinates</span>
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Calculus and Polar Coordinates</span>
 </h2>
 <section class="subsection" id="subsection-areas-of-polar-curves"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Areas of Polar Curves</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Areas of Polar Curves</span>
 </h3>
-<div class="para" id="subsection-areas-of-polar-curves-2">To find the area of a region swept out by a polar curve, we need to reinvent the integral so to speak. In Cartesian coordinates, the integral was based on using rectangles to approximate areas. For polar coordinates, it makes more sense to use circular sectors.</div>
-<div class="para" id="subsection-areas-of-polar-curves-3">Consider a region <span class="process-math">\(R\)</span> bounded by the polar curve <span class="process-math">\(r = f(\theta)\text{:}\)</span>
+<div class="para" id="subsection-areas-of-polar-curves-2">To find the area of a region swept out by a polar curve, we need to reinvent the integral so to speak. In Cartesian coordinates, the integral was based on using rectangles to approximate areas. For polar coordinates, it makes more sense to use circular sectors.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-areas-of-polar-curves-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-areas-of-polar-curves-3">Consider a region <span class="process-math">\(R\)</span> bounded by the polar curve <span class="process-math">\(r = f(\theta)\text{:}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-areas-of-polar-curves-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="figure-polar-region"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-polar-region.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.4.1<span class="period">.</span></span><span class="space"> </span>The polar region <span class="process-math">\(r = f(\theta)\text{.}\)</span></figcaption></figure><div class="para" id="subsection-areas-of-polar-curves-5">To find the area of this region, we’ll approximate it using circular sectors. Since we want to find the area between <span class="process-math">\(\theta=\alpha\)</span> and <span class="process-math">\(\theta=\beta\text{,}\)</span> we’ll break the interval <span class="process-math">\([\alpha,\beta]\)</span> into <span class="process-math">\(n\)</span> subintervals <span class="process-math">\([\theta_{i},\theta_{i+1}]\)</span> of equal length <span class="process-math">\(\Delta\theta\text{,}\)</span> with</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-cartesian-to-polar-method.html ./knowl/xref/theorem-area-in-polar-coordinates.html">
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.4.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The polar region <span class="process-math">\(r = f(\theta)\text{.}\)</span><div class="autopermalink" data-description="Figure 10.4.1"><a href="#figure-polar-region" title="Copy heading and permalink for Figure 10.4.1" aria-label="Copy heading and permalink for Figure 10.4.1">🔗</a></div></figcaption></figure><div class="para" id="subsection-areas-of-polar-curves-5">To find the area of this region, we’ll approximate it using circular sectors. Since we want to find the area between <span class="process-math">\(\theta=\alpha\)</span> and <span class="process-math">\(\theta=\beta\text{,}\)</span> we’ll break the interval <span class="process-math">\([\alpha,\beta]\)</span> into <span class="process-math">\(n\)</span> subintervals <span class="process-math">\([\theta_{i},\theta_{i+1}]\)</span> of equal length <span class="process-math">\(\Delta\theta\text{,}\)</span> with<div class="autopermalink" data-description="Paragraph"><a href="#subsection-areas-of-polar-curves-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-cartesian-to-polar-method.html ./knowl/xref/theorem-area-in-polar-coordinates.html" id="subsection-areas-of-polar-curves-6">
 \begin{equation*}
 \alpha = \theta_{0} &lt; \theta_{1} &lt; \dots &lt; \theta_{n} = \beta.
 \end{equation*}
 </div>
 <figure class="figure figure-like" id="figure-polar-region-1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-polar-region-1.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.4.2<span class="period">.</span></span><span class="space"> </span>Approximating the region with circular sectors.</figcaption></figure><div class="para" id="subsection-areas-of-polar-curves-8">The area of each slice is given by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-cartesian-to-polar-method.html ./knowl/xref/theorem-area-in-polar-coordinates.html">
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.4.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Approximating the region with circular sectors.<div class="autopermalink" data-description="Figure 10.4.2"><a href="#figure-polar-region-1" title="Copy heading and permalink for Figure 10.4.2" aria-label="Copy heading and permalink for Figure 10.4.2">🔗</a></div></figcaption></figure><div class="para" id="subsection-areas-of-polar-curves-8">The area of each slice is given by<div class="autopermalink" data-description="Paragraph"><a href="#subsection-areas-of-polar-curves-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-cartesian-to-polar-method.html ./knowl/xref/theorem-area-in-polar-coordinates.html" id="subsection-areas-of-polar-curves-9">
 \begin{equation*}
 \frac{\text{angle swept out by slice}}{2}(\text{radius})^{2}.
 \end{equation*}
 </div>
-<div class="para" id="subsection-areas-of-polar-curves-10">For one of our slices, this takes the form</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-cartesian-to-polar-method.html ./knowl/xref/theorem-area-in-polar-coordinates.html">
+<div class="para" id="subsection-areas-of-polar-curves-10">For one of our slices, this takes the form<div class="autopermalink" data-description="Paragraph"><a href="#subsection-areas-of-polar-curves-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-cartesian-to-polar-method.html ./knowl/xref/theorem-area-in-polar-coordinates.html" id="subsection-areas-of-polar-curves-11">
 \begin{equation*}
 \frac{\Delta\theta}{2}f(\theta_{i})^{2}.
 \end{equation*}
 </div>
-<div class="para" id="subsection-areas-of-polar-curves-12">Adding these areas up gives us the approximate area of the region. So we can say that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-cartesian-to-polar-method.html ./knowl/xref/theorem-area-in-polar-coordinates.html">
+<div class="para" id="subsection-areas-of-polar-curves-12">Adding these areas up gives us the approximate area of the region. So we can say that<div class="autopermalink" data-description="Paragraph"><a href="#subsection-areas-of-polar-curves-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-cartesian-to-polar-method.html ./knowl/xref/theorem-area-in-polar-coordinates.html" id="subsection-areas-of-polar-curves-13">
 \begin{equation*}
 \text{area of }R \approx \sum_{i=0}^{n}\frac{1}{2}f(\theta_{i})^{2}\Delta\theta.
 \end{equation*}
 </div>
-<div class="para" id="subsection-areas-of-polar-curves-14">As <span class="process-math">\(\Delta\theta\)</span> gets smaller, this approximation should become exact. So we can say</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-cartesian-to-polar-method.html ./knowl/xref/theorem-area-in-polar-coordinates.html">
+<div class="para" id="subsection-areas-of-polar-curves-14">As <span class="process-math">\(\Delta\theta\)</span> gets smaller, this approximation should become exact. So we can say<div class="autopermalink" data-description="Paragraph"><a href="#subsection-areas-of-polar-curves-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-cartesian-to-polar-method.html ./knowl/xref/theorem-area-in-polar-coordinates.html" id="subsection-areas-of-polar-curves-15">
 \begin{equation*}
 \text{area of }R = \lim_{\Delta\theta\to0}\sum_{i=0}^{n}\frac{1}{2}f(\theta_{i})^{2}\Delta\theta.
 \end{equation*}
 </div>
-<div class="para" id="subsection-areas-of-polar-curves-16">This limit is exactly the definition of an integral! So we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-cartesian-to-polar-method.html ./knowl/xref/theorem-area-in-polar-coordinates.html">
+<div class="para" id="subsection-areas-of-polar-curves-16">This limit is exactly the definition of an integral! So we have<div class="autopermalink" data-description="Paragraph"><a href="#subsection-areas-of-polar-curves-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-cartesian-to-polar-method.html ./knowl/xref/theorem-area-in-polar-coordinates.html" id="subsection-areas-of-polar-curves-17">
 \begin{equation*}
 \text{area of }R = \int_{\alpha}^{\beta}\frac{1}{2}f(\theta)^{2}\,d\theta.
 \end{equation*}
 </div>
-<div class="para" id="subsection-areas-of-polar-curves-18">We can summarize this in the following theorem.</div>
+<div class="para" id="subsection-areas-of-polar-curves-18">We can summarize this in the following theorem.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-areas-of-polar-curves-18" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="theorem-area-in-polar-coordinates"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">10.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">Area in Polar Coordinates.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.4.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Area in Polar Coordinates.</span>
 </h4>
 <div class="para logical" id="theorem-area-in-polar-coordinates-3-1">
 <div class="para">Suppose that <span class="process-math">\(R\)</span> is a region bounded by the polar curves <span class="process-math">\(r=f(\theta)\)</span> and <span class="process-math">\(r=g(\theta)\)</span> between <span class="process-math">\(\theta = \alpha\)</span> and <span class="process-math">\(\theta=\beta\text{.}\)</span> If <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are continuous and <span class="process-math">\(f(\theta)\geq g(\theta)\)</span> for <span class="process-math">\(\alpha\leq\theta\leq\beta,\)</span> then the area of <span class="process-math">\(R\)</span> is given by</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="theorem-area-in-polar-coordinates-3-1-11">
 \begin{equation*}
 \int_{\alpha}^{\beta}\frac{1}{2}[f(\theta)^{2}-g(\theta)^{2}]\,d\theta.
 \end{equation*}
 </div>
-</div></article><article class="example example-like" id="example-area-bounded-by-a-cardioid"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.4.4</span><span class="period">.</span><span class="space"> </span><span class="title">Area bounded by a cardioid.</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-area-in-polar-coordinates-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 10.4.3: Area in Polar Coordinates"><a href="#theorem-area-in-polar-coordinates" title="Copy heading and permalink for Theorem 10.4.3: Area in Polar Coordinates" aria-label="Copy heading and permalink for Theorem 10.4.3: Area in Polar Coordinates">🔗</a></div></article><article class="example example-like" id="example-area-bounded-by-a-cardioid"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.4.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Area bounded by a cardioid.</span>
 </h4>
-<div class="para" id="example-area-bounded-by-a-cardioid-2">Consider the cardioid<details class="ptx-footnote" aria-live="polite" id="example-area-bounded-by-a-cardioid-2-1"><summary class="ptx-footnote__number" title="Footnote 4"><sup> 4 </sup></summary><div class="ptx-footnote__contents" id="example-area-bounded-by-a-cardioid-2-1">The name will become clearer once we graph this.</div></details> <span class="process-math">\(r = 4+4\cos\theta\text{.}\)</span> The area is given by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-cartesian-to-polar-method.html">
+<div class="para" id="example-area-bounded-by-a-cardioid-2">Consider the cardioid<details class="ptx-footnote" aria-live="polite" id="example-area-bounded-by-a-cardioid-2-1"><summary class="ptx-footnote__number" title="Footnote 1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="example-area-bounded-by-a-cardioid-2-1">The name will become clearer once we graph this.</div></details> <span class="process-math">\(r = 4+4\cos\theta\text{.}\)</span> The area is given by<div class="autopermalink" data-description="Paragraph"><a href="#example-area-bounded-by-a-cardioid-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-cartesian-to-polar-method.html" id="example-area-bounded-by-a-cardioid-3">
 \begin{equation*}
 \int_{\alpha}^{\beta}\frac{1}{2}(4+4\cos\theta)^{2}\,d\theta = \int_{\alpha}^{\beta}8(1+2\cos\theta+\cos^{2}\theta)\,d\theta
 \end{equation*}
 </div>
-<div class="para" id="example-area-bounded-by-a-cardioid-4">To find this, we’ll need to figure out the limits of integration. For polar plots, the best way to do this is by graphing. We’ll graph <span class="process-math">\(r=4+4\cos\theta\)</span> by using the Cartesian to polar methods described in <a href="section-polar-coordinates.html#subsection-cartesian-to-polar-method" class="internal" title="Subsection: Cartesian to Polar Method">Cartesian to Polar Method</a>. First, we treat this as a Cartesian curve in the <span class="process-math">\(r\theta\)</span>-plane and graph it to get</div>
+<div class="para" id="example-area-bounded-by-a-cardioid-4">To find this, we’ll need to figure out the limits of integration. For polar plots, the best way to do this is by graphing. We’ll graph <span class="process-math">\(r=4+4\cos\theta\)</span> by using the Cartesian to polar methods described in <a href="section-polar-coordinates.html#subsection-cartesian-to-polar-method" class="internal" title="Subsection: Cartesian to Polar Method">Cartesian to Polar Method</a>. First, we treat this as a Cartesian curve in the <span class="process-math">\(r\theta\)</span>-plane and graph it to get<div class="autopermalink" data-description="Paragraph"><a href="#example-area-bounded-by-a-cardioid-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <figure class="figure figure-like" id="figure-cardioid"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-cardioid.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.4.5<span class="period">.</span></span><span class="space"> </span><span class="process-math">\(r = 4 + 4\cos\theta\)</span> as a Cartesian equation.</figcaption></figure><div class="para" id="example-area-bounded-by-a-cardioid-6">Now we can plot the corresponding polar curve:</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.4.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="process-math">\(r = 4 + 4\cos\theta\)</span> as a Cartesian equation.<div class="autopermalink" data-description="Figure 10.4.5"><a href="#figure-cardioid" title="Copy heading and permalink for Figure 10.4.5" aria-label="Copy heading and permalink for Figure 10.4.5">🔗</a></div></figcaption></figure><div class="para" id="example-area-bounded-by-a-cardioid-6">Now we can plot the corresponding polar curve:<div class="autopermalink" data-description="Paragraph"><a href="#example-area-bounded-by-a-cardioid-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <figure class="figure figure-like" id="figure-cardioid-1"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-cardioid-1.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.4.6<span class="period">.</span></span><span class="space"> </span><span class="process-math">\(r = 4 + 4\cos\theta\)</span> as a polar equation.</figcaption></figure><div class="para" id="example-area-bounded-by-a-cardioid-8">The important thing to notice is that we trace out the curve exactly once as <span class="process-math">\(\theta\)</span> goes from <span class="process-math">\(0\)</span> to <span class="process-math">\(2\pi\text{,}\)</span> so our limits should be <span class="process-math">\(0\)</span> and <span class="process-math">\(2\pi\text{.}\)</span> Hence the area of this region is given by</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.4.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="process-math">\(r = 4 + 4\cos\theta\)</span> as a polar equation.<div class="autopermalink" data-description="Figure 10.4.6"><a href="#figure-cardioid-1" title="Copy heading and permalink for Figure 10.4.6" aria-label="Copy heading and permalink for Figure 10.4.6">🔗</a></div></figcaption></figure><div class="para" id="example-area-bounded-by-a-cardioid-8">The important thing to notice is that we trace out the curve exactly once as <span class="process-math">\(\theta\)</span> goes from <span class="process-math">\(0\)</span> to <span class="process-math">\(2\pi\text{,}\)</span> so our limits should be <span class="process-math">\(0\)</span> and <span class="process-math">\(2\pi\text{.}\)</span> Hence the area of this region is given by<div class="autopermalink" data-description="Paragraph"><a href="#example-area-bounded-by-a-cardioid-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-cartesian-to-polar-method.html" id="example-area-bounded-by-a-cardioid-9">
 \begin{align*}
 \int_{0}^{2\pi}8(1+2\cos\theta+\cos^{2}\theta)\,d\theta \amp = 8\theta\Big]_{0}^{2\pi} + 16\sin\theta\Big]_{0}^{2\pi} + 4\int_{0}^{2\pi}(1+\cos2\theta)\,d\theta \\
 \amp = 16\pi + 8\pi \\
 \amp = 24\pi. 
 \end{align*}
-</div></article><article class="example example-like" id="example-area-inside-a-rose-and-outside-a-circle"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.4.7</span><span class="period">.</span><span class="space"> </span><span class="title">Area inside a rose and outside a circle.</span>
+</div>
+<div class="autopermalink" data-description="Example 10.4.4: Area bounded by a cardioid"><a href="#example-area-bounded-by-a-cardioid" title="Copy heading and permalink for Example 10.4.4: Area bounded by a cardioid" aria-label="Copy heading and permalink for Example 10.4.4: Area bounded by a cardioid">🔗</a></div></article><article class="example example-like" id="example-area-inside-a-rose-and-outside-a-circle"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.4.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Area inside a rose and outside a circle.</span>
 </h4>
-<div class="para" id="example-area-inside-a-rose-and-outside-a-circle-2">As another example of the use of <a href="section-calculus-and-polar-coordinates.html#theorem-area-in-polar-coordinates" class="xref" data-knowl="./knowl/xref/theorem-area-in-polar-coordinates.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 10.4.3: Area in Polar Coordinates">Theorem 10.4.3</a>, we’ll find the area of the region contained by the polar curves <span class="process-math">\(r = 4\cos2\theta\)</span> and outside the circle <span class="process-math">\(r=2\text{.}\)</span> Again, a great way to start this problem is to graph the region under consideration.</div>
+<div class="para" id="example-area-inside-a-rose-and-outside-a-circle-2">As another example of the use of <a href="section-calculus-and-polar-coordinates.html#theorem-area-in-polar-coordinates" class="xref" data-knowl="./knowl/xref/theorem-area-in-polar-coordinates.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 10.4.3: Area in Polar Coordinates">Theorem 10.4.3</a>, we’ll find the area of the region contained by the polar curves <span class="process-math">\(r = 4\cos2\theta\)</span> and outside the circle <span class="process-math">\(r=2\text{.}\)</span> Again, a great way to start this problem is to graph the region under consideration.<div class="autopermalink" data-description="Paragraph"><a href="#example-area-inside-a-rose-and-outside-a-circle-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <figure class="figure figure-like" id="figure-rose-circle"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-rose-circle.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.4.8<span class="period">.</span></span><span class="space"> </span>Region contained between polar curves.</figcaption></figure><div class="para" id="example-area-inside-a-rose-and-outside-a-circle-4">With a little bit of work, we can see that the area of one of these shaded regions is given by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-area-in-polar-coordinates.html">
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.4.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Region contained between polar curves.<div class="autopermalink" data-description="Figure 10.4.8"><a href="#figure-rose-circle" title="Copy heading and permalink for Figure 10.4.8" aria-label="Copy heading and permalink for Figure 10.4.8">🔗</a></div></figcaption></figure><div class="para" id="example-area-inside-a-rose-and-outside-a-circle-4">With a little bit of work, we can see that the area of one of these shaded regions is given by<div class="autopermalink" data-description="Paragraph"><a href="#example-area-inside-a-rose-and-outside-a-circle-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-area-in-polar-coordinates.html" id="example-area-inside-a-rose-and-outside-a-circle-5">
 \begin{equation*}
 \int_{-\frac{\pi}{6}}^{\frac{\pi}{6}} \frac{1}{2}[(4\cos2\theta)^{2}-4]\,d\theta
 \end{equation*}
 </div>
-<div class="para" id="example-area-inside-a-rose-and-outside-a-circle-6">and so the area of the entire region is</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-area-in-polar-coordinates.html">
+<div class="para" id="example-area-inside-a-rose-and-outside-a-circle-6">and so the area of the entire region is<div class="autopermalink" data-description="Paragraph"><a href="#example-area-inside-a-rose-and-outside-a-circle-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-area-in-polar-coordinates.html" id="example-area-inside-a-rose-and-outside-a-circle-7">
 \begin{equation*}
 2\int_{-\frac{\pi}{6}}^{\frac{\pi}{6}}[(4\cos2\theta)^{2}-4]\,d\theta.
 \end{equation*}
-</div></article></section><section class="subsection" id="subsection-arc-length-in-polar-coordinates"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Arc Length in Polar Coordinates</span>
+</div>
+<div class="autopermalink" data-description="Example 10.4.7: Area inside a rose and outside a circle"><a href="#example-area-inside-a-rose-and-outside-a-circle" title="Copy heading and permalink for Example 10.4.7: Area inside a rose and outside a circle" aria-label="Copy heading and permalink for Example 10.4.7: Area inside a rose and outside a circle">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Areas of Polar Curves"><a href="#subsection-areas-of-polar-curves" title="Copy heading and permalink for Subsection: Areas of Polar Curves" aria-label="Copy heading and permalink for Subsection: Areas of Polar Curves">🔗</a></div></section><section class="subsection" id="subsection-arc-length-in-polar-coordinates"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Arc Length in Polar Coordinates</span>
 </h3>
-<div class="para" id="subsection-arc-length-in-polar-coordinates-2">Our goal now is to find the length of a polar curve <span class="process-math">\(r=f(\theta)\text{.}\)</span> From <a href="section-calculus-and-parametric-curves.html#subsection-arc-length-parametric-curves" class="internal" title="Subsection: Arc Length of Parametric Curves">Arc Length of Parametric Curves</a> we know how to find the length of a parametric curve, and a polar curve is really just a parametric curve with parametric equations</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-arc-length-parametric-curves.html ./knowl/xref/theorem-arc-length-of-a-polar-curve.html">
+<div class="para" id="subsection-arc-length-in-polar-coordinates-2">Our goal now is to find the length of a polar curve <span class="process-math">\(r=f(\theta)\text{.}\)</span> From <a href="section-calculus-and-parametric-curves.html#subsection-arc-length-parametric-curves" class="internal" title="Subsection: Arc Length of Parametric Curves">Arc Length of Parametric Curves</a> we know how to find the length of a parametric curve, and a polar curve is really just a parametric curve with parametric equations<div class="autopermalink" data-description="Paragraph"><a href="#subsection-arc-length-in-polar-coordinates-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsection-arc-length-parametric-curves.html ./knowl/xref/theorem-arc-length-of-a-polar-curve.html" id="subsection-arc-length-in-polar-coordinates-3">
 \begin{equation*}
 x = r\cos\theta = f(\theta)\cos\theta \quad\text{and}\quad y = r\sin\theta = f(\theta)\sin\theta.
 \end{equation*}
 </div>
-<div class="para" id="subsection-arc-length-in-polar-coordinates-4">Using the formula <span class="process-math">\(L = \int_{a}^{b}\sqrt{(\dv{x}{\theta})^{2}+(\dv{y}{\theta})^{2}}\,d\theta\)</span> and simplifying, we get the following result.</div>
+<div class="para" id="subsection-arc-length-in-polar-coordinates-4">Using the formula <span class="process-math">\(L = \int_{a}^{b}\sqrt{(\dv{x}{\theta})^{2}+(\dv{y}{\theta})^{2}}\,d\theta\)</span> and simplifying, we get the following result.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-arc-length-in-polar-coordinates-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <article class="theorem theorem-like" id="theorem-arc-length-of-a-polar-curve"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">10.4.9</span><span class="period">.</span><span class="space"> </span><span class="title">Arc Length of a Polar Curve.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.4.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Arc Length of a Polar Curve.</span>
 </h4>
 <div class="para logical" id="theorem-arc-length-of-a-polar-curve-3-1">
 <div class="para">The length <span class="process-math">\(L\)</span> of a polar curve <span class="process-math">\(r = f(\theta)\)</span> from <span class="process-math">\(\theta=a\)</span> to <span class="process-math">\(\theta=b\)</span> is given by</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" id="theorem-arc-length-of-a-polar-curve-3-1-5">
 \begin{equation*}
 L = \int_{a}^{b}\sqrt{r^{2} + \left(\dv{r}{\theta}\right)^{2}}\,d\theta.
 \end{equation*}
 </div>
-</div></article><article class="example example-like" id="example-arc-length-of-a-leaf"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">10.4.10</span><span class="period">.</span><span class="space"> </span><span class="title">Arc length of a leaf.</span>
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-arc-length-of-a-polar-curve-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 10.4.9: Arc Length of a Polar Curve"><a href="#theorem-arc-length-of-a-polar-curve" title="Copy heading and permalink for Theorem 10.4.9: Arc Length of a Polar Curve" aria-label="Copy heading and permalink for Theorem 10.4.9: Arc Length of a Polar Curve">🔗</a></div></article><article class="example example-like" id="example-arc-length-of-a-leaf"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.4.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Arc length of a leaf.</span>
 </h4>
-<div class="para" id="example-arc-length-of-a-leaf-2">Let <span class="process-math">\(r = \cos2\theta\text{.}\)</span> Then this gives a four-leaf rose in the polar plane. We want to find the length of one leaf of this rose. As usual, it’s a good idea to graph this curve first.</div>
+<div class="para" id="example-arc-length-of-a-leaf-2">Let <span class="process-math">\(r = \cos2\theta\text{.}\)</span> Then this gives a four-leaf rose in the polar plane. We want to find the length of one leaf of this rose. As usual, it’s a good idea to graph this curve first.<div class="autopermalink" data-description="Paragraph"><a href="#example-arc-length-of-a-leaf-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
 <figure class="figure figure-like" id="figure-rose"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/image-rose.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">10.4.11<span class="period">.</span></span><span class="space"> </span>The four leaf rose <span class="process-math">\(r=\cos2\theta\text{.}\)</span></figcaption></figure><div class="para" id="example-arc-length-of-a-leaf-4">One leaf of the rose should be captured as <span class="process-math">\(\theta\)</span> varies from <span class="process-math">\(-\frac{\pi}{4}\)</span> to <span class="process-math">\(\frac{\pi}{4}\text{,}\)</span> so using <a href="section-calculus-and-polar-coordinates.html#theorem-arc-length-of-a-polar-curve" class="xref" data-knowl="./knowl/xref/theorem-arc-length-of-a-polar-curve.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 10.4.9: Arc Length of a Polar Curve">Theorem 10.4.9</a> we can find the length of this leaf:</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-arc-length-of-a-polar-curve.html">
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">10.4.11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The four leaf rose <span class="process-math">\(r=\cos2\theta\text{.}\)</span><div class="autopermalink" data-description="Figure 10.4.11"><a href="#figure-rose" title="Copy heading and permalink for Figure 10.4.11" aria-label="Copy heading and permalink for Figure 10.4.11">🔗</a></div></figcaption></figure><div class="para" id="example-arc-length-of-a-leaf-4">One leaf of the rose should be captured as <span class="process-math">\(\theta\)</span> varies from <span class="process-math">\(-\frac{\pi}{4}\)</span> to <span class="process-math">\(\frac{\pi}{4}\text{,}\)</span> so using <a href="section-calculus-and-polar-coordinates.html#theorem-arc-length-of-a-polar-curve" class="xref" data-knowl="./knowl/xref/theorem-arc-length-of-a-polar-curve.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 10.4.9: Arc Length of a Polar Curve">Theorem 10.4.9</a> we can find the length of this leaf:<div class="autopermalink" data-description="Paragraph"><a href="#example-arc-length-of-a-leaf-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-arc-length-of-a-polar-curve.html" id="example-arc-length-of-a-leaf-5">
 \begin{equation*}
 L = \int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\sqrt{\cos^{2}2\theta + 4\sin^{2}2\theta}\,d\theta = \int_{-\frac{\pi}{4}}^{\frac{\pi}{4}}\sqrt{1 + 3\sin^{2}2\theta}\,d\theta.
 \end{equation*}
-</div></article><div class="para" id="subsection-arc-length-in-polar-coordinates-7">SUGGESTED PROBLEMS: 1, 3, 7, 9, 15, 19, 35</div></section></section></div>
-<div class="ptx-content-footer">
+</div>
+<div class="autopermalink" data-description="Example 10.4.10: Arc length of a leaf"><a href="#example-arc-length-of-a-leaf" title="Copy heading and permalink for Example 10.4.10: Arc length of a leaf" aria-label="Copy heading and permalink for Example 10.4.10: Arc length of a leaf">🔗</a></div></article><div class="para" id="subsection-arc-length-in-polar-coordinates-7">SUGGESTED PROBLEMS: 1, 3, 7, 9, 15, 19, 35<div class="autopermalink" data-description="Paragraph"><a href="#subsection-arc-length-in-polar-coordinates-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection: Arc Length in Polar Coordinates"><a href="#subsection-arc-length-in-polar-coordinates" title="Copy heading and permalink for Subsection: Arc Length in Polar Coordinates" aria-label="Copy heading and permalink for Subsection: Arc Length in Polar Coordinates">🔗</a></div></section><div class="autopermalink" data-description="Section 10.4: Calculus and Polar Coordinates"><a href="#section-calculus-and-polar-coordinates" title="Copy heading and permalink for Section 10.4: Calculus and Polar Coordinates" aria-label="Copy heading and permalink for Section 10.4: Calculus and Polar Coordinates">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="section-polar-coordinates.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="vectors-space-geometry.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
-<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
 </div>
 </body>
 </html>
