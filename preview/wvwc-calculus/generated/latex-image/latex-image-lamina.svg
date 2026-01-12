@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="197" height="165" viewBox="0 0 197 165">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="197" height="165" viewBox="0 0 197 165">
 <defs>
 <clipPath id="clip_1">
 <path transform="matrix(1,0,0,-1.00002,1.0960007,163.18994)" d="M0 0H194.26456V161.39028H0Z"/>
@@ -35,8 +35,8 @@
 <use data-text="(" xlink:href="#font_4_1" transform="matrix(9.9626,0,0,-9.962799,172.43,29.63327)"/>
 <use data-text="x" xlink:href="#font_3_5" transform="matrix(9.9626,0,0,-9.962799,176.304,29.63327)"/>
 <use data-text=")" xlink:href="#font_4_2" transform="matrix(9.9626,0,0,-9.962799,181.998,29.63327)"/>
-<path transform="matrix(1,0,0,-1.00002,1.0960007,163.18994)" stroke-width=".19925" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#929292" d="M28.56831 65.12009V69.3718M154.2689 65.12009V69.3718"/>
-<path transform="matrix(1,0,0,-1.00002,1.0960007,163.18994)" stroke-width=".19925" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#929292" d=""/>
+<path transform="matrix(1,0,0,-1.00002,1.0960007,163.18994)" stroke-width=".19925" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#7f807f" d="M28.56831 65.12009V69.3718M154.2689 65.12009V69.3718"/>
+<path transform="matrix(1,0,0,-1.00002,1.0960007,163.18994)" stroke-width=".19925" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#7f807f" d=""/>
 <path transform="matrix(1,0,0,-1.00002,1.0960007,163.18994)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M0 67.24594H192.27204"/>
 <path transform="matrix(1,0,0,-1.00002,193.36804,95.94265)" d="M1.99252 0-1.19551 1.59401 0 0-1.19551-1.59401"/>
 <path transform="matrix(1,0,0,-1.00002,1.0960007,163.18994)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M11.42732 0V159.39775"/>
