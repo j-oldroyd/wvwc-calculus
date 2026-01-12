@@ -95,7 +95,6 @@
             parametric_plot3d((x,1,z), (x,-4,4), (z,-4,4))
           </input>
         </sage>
-
         <example xml:id="example-more-equations-in-space" workspace="2in">
           <title>More equations in space</title>
           <statement>
@@ -114,7 +113,6 @@
             </p>
           </solution>
         </example>
-
         <example xml:id="example-intersection-of-a-sphere-and-a-plane" workspace="3in">
           <title>Intersection of a sphere and a plane</title>
           <statement>
@@ -137,15 +135,11 @@
           </solution>
         </example>
       </handout>
-      <figure xml:id="figure-sphere-xz-plane-intersection">
-        <caption>Intersection of the sphere <m>(x+2)^2 + (y-3)^2 + z^2 = 9</m> with the <m>xz</m>-plane.</caption>
-        <interactive xml:id="calcplot3d-sphere-xz-plane-intersection" calcplot3d="type=implicit;equation=(x+2)^2+(y-3)^2+z^2~9;cubes=16;visible=true;fixdomain=true;xmin=-5;xmax=1;ymin=0;ymax=6;zmin=-3;zmax=3;alpha=142;hidemyedges=false;view=0;format=normal;constcol=rgb(255,0,0)&amp;type=implicit;equation=y~0;cubes=16;visible=true;fixdomain=false;xmin=-5;xmax=5;ymin=-5;ymax=5;zmin=-5;zmax=5;alpha=124;hidemyedges=false;view=0;format=normal;constcol=rgb(255,0,0)&amp;type=point;point=(-2,0,0);visible=true;color=rgb(0,0,255);size=4&amp;type=window;hsrmode=0;nomidpts=true;anaglyph=-1;center=9.785420552928016,1.9381426581355918,0.6993909057450174,1;focus=0,0,0,1;up=-0.0788418191491362,0.03859848628809217,0.9961396109027705,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=true;gridcolor=rgb(128,128,128);xmin=-5;xmax=5;ymin=-5;ymax=5;zmin=-5;zmax=5;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;xscalefactor=1;yscalefactor=1;zscalefactor=1;tracemode=0;keep2d=false;zoom=0.385067" variant="minimal"/>
-      </figure>
     </subsection>
 
     <subsection xml:id="subsection-the-distance-formula">
       <handout xml:id="handout-distance-formula">
-        <title>The Distance Formula</title>
+        <title>The distance formula</title>
         <p>
           Recall that the distance between two points
           <m>P_{1}(x_{1},y_{1})</m> and <m>P_{2}(x_{2},y_{2})</m> in
@@ -176,7 +170,8 @@
           <title>Computing distances</title>
           <statement>
             <p>
-              Find the distance between the points <m>P(1, 4, -2)</m> and <m>Q(-1, 0, 2)</m>.
+              Find the distance between the points <m>P(1, 4, -2)</m>
+              and <m>Q(-1, 0, 2)</m>.
             </p>
           </statement>
           <solution>
@@ -220,7 +215,6 @@
             </p>
           </solution>
         </example>
-
         <example xml:id="example-spherical-shells">
           <title>Spherical shells</title>
           <p>
@@ -232,10 +226,6 @@
           </p>
         </example>
       </handout>
-      <figure xml:id="figure-spherical-shells-radii-3-4">
-        <caption>The spherical shells <m>x^2 + y^2 + z^2 = a^2, 3\leq a\leq 4</m>.</caption>
-        <interactive xml:id="calcplot3d-spherical-shells-radii-3-4" variant="controls" aspect="3:2" calcplot3d="type=implicit;equation=x^2+y^2+z^2~a^2;cubes=16;visible=true;fixdomain=false;xmin=-5;xmax=5;ymin=-5;ymax=5;zmin=-5;zmax=5;alpha=-1;hidemyedges=false;view=0;format=normal;constcol=rgb(255,0,0)&amp;type=slider;slider=a;value=3;steps=100;pmin=3;pmax=4;repeat=true;bounce=true;waittime=1;careful=false;noanimate=false;name=-1&amp;type=window;hsrmode=0;nomidpts=false;anaglyph=-1;center=7.6331122627967956,1.981796419405057,6.148827541536563,1;focus=0,0,0,1;up=-0.4299207843228113,-0.37080228549923083,0.8232094413184324,1;transparent=true;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=true;gridcolor=rgb(128,128,128);xmin=-5;xmax=5;ymin=-5;ymax=5;zmin=-5;zmax=5;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;xscalefactor=1;yscalefactor=1;zscalefactor=1;tracemode=1;tracepoint=-2.945243112740431,3,0,1;keep2d=false;zoom=0.369067"/>
-      </figure>
     </subsection>
   </section>
   <section xml:id="section-vectors">
@@ -255,11 +245,18 @@
       </p>
       <figure xml:id="figure-vector-representation">
         <image xml:id="image-vector-representation" width="20%">
-          <latex-image><![CDATA[
+          <description>
+            <p>
+              A graphical representation of a vector as an arrow
+              diagram with initial point <m>A</m> and terminal point
+              <m>B</m>.
+            </p>
+          </description>
+          <shortdescription>an arrow representing a vector</shortdescription>
+          <latex-image label="tikz-vector-representation">
             \begin{tikzpicture}
             \draw[->] (0,0) node[below left]{$A$} -- (3,2) node[right]{$B$};
             \end{tikzpicture}
-            ]]>
           </latex-image>
         </image>
         <caption>A vector.</caption>
@@ -272,387 +269,444 @@
       </p>
     </introduction>
     <subsection xml:id="subsection-addition-and-scalar-multiplication">
-      <title>Addition and Scalar Multiplication</title>
-      <p>
-        Given two vectors <m>\mathbf{x} =
-        \overrightarrow{AB},\mathbf{y}=\overrightarrow{BC}</m>, we can
-        add them to get the new vector
-      </p>
-      <me>\mathbf{x}+\mathbf{y} = \overrightarrow{AC}.</me>
-      <p>
-        So the vector <m>\mathbf{x}+\mathbf{y}</m> is obtained by
-        moving the tail of <m>\mathbf{y}</m> to the tip of
-        <m>\mathbf{x}</m> and then drawing a vector from the tail of
-        <m>\mathbf{x}</m> to the tip of <m>\mathbf{y}</m>.
-      </p>
-      <figure xml:id="figure-vector-addition">
-        <image xml:id="image-vector-addition" width="40%">
-          <latex-image><![CDATA[
-            \begin{tikzpicture}
-            \begin{axis}[xmin=-7,ymin=-7,xmax=7,ymax=10, hide axis]
-            \coordinate (O) at (0,0);
-            \coordinate (x) at (axis direction cs:1,4);
-            \coordinate (y) at (axis direction cs:-2,1);
+      <handout>
+        <title>Vector addition and components.</title>
+        <p>
+          Given two vectors <m>\mathbf{x} =
+          \overrightarrow{AB},\mathbf{y}=\overrightarrow{BC}</m>, we can
+          add them to get the new vector
+        </p>
+        <me>\mathbf{x}+\mathbf{y} = \overrightarrow{AC}.</me>
+        <p>
+          So the vector <m>\mathbf{x}+\mathbf{y}</m> is obtained by
+          moving the tail of <m>\mathbf{y}</m> to the tip of
+          <m>\mathbf{x}</m> and then drawing a vector from the tail of
+          <m>\mathbf{x}</m> to the tip of <m>\mathbf{y}</m>.
+        </p>
+        <figure xml:id="figure-vector-addition">
+          <image xml:id="image-vector-addition" width="40%">
+            <shortdescription>graphical diagram representing vector addition</shortdescription>
+            <description>
+              <p>
+                A pair of graphics demonstrating vector addition using
+                triangles.  Two vectors <m>\mathbf{x}</m> and
+                <m>\mathbf{y}</m> are drawn facing different
+                directions in the diagram on the right.  In the
+                diagram on the left, the tail of the vector
+                <m>\mathbf{y}</m> is placed at the head of the vector
+                <m>\mathbf{x}</m>, forming two sides of a triangle.
+                The remaining side of the triangle is filled in and
+                represents the vector <m>\mathbf{x} + \mathbf{y}</m>.
+              </p>
+            </description>
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[xmin=-7,ymin=-7,xmax=7,ymax=10, hide axis]
+              \coordinate (O) at (0,0);
+              \coordinate (x) at (axis direction cs:1,4);
+              \coordinate (y) at (axis direction cs:-2,1);
 
-            \draw[->] (4,2)--($(4,2)+(x)$) node[midway, right]{$\mathbf{x}$};
-            \draw[->] (4,1)--($(4,1)+(y)$) node[above]{$\mathbf{y}$};
-            \draw[dashed, ->] (O)--($(O)+(x)$) node[midway, right]{$\mathbf{x}$};
-            \draw[dashed, ->] ($(O)+(x)$) -- ($(O)+(x)+(y)$) node[midway,above]{$\mathbf{y}$};
-            \draw[->] (O)--($(O)+(x)+(y)$) node[midway,left]{$\mathbf{x}+\mathbf{y}$};
+              \draw[->] (4,2)--($(4,2)+(x)$) node[midway, right]{$\mathbf{x}$};
+              \draw[->] (4,1)--($(4,1)+(y)$) node[above]{$\mathbf{y}$};
+              \draw[dashed, ->] (O)--($(O)+(x)$) node[midway, right]{$\mathbf{x}$};
+              \draw[dashed, ->] ($(O)+(x)$) -- ($(O)+(x)+(y)$) node[midway,above]{$\mathbf{y}$};
+              \draw[->] (O)--($(O)+(x)+(y)$) node[midway,left]{$\mathbf{x}+\mathbf{y}$};
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+          <caption>Vector addition.</caption>
+        </figure>
+        <p>
+          The sum <m>\mathbf{x}+\mathbf{y}</m> of vectors
+          <m>\mathbf{x},\mathbf{y}</m> can be computed using either the
+          <term>triangle law</term>, illustrated above in <xref
+          ref="figure-vector-addition" text="type-global" />, or the
+          similar <term>parallelogram law</term>.  We can also scale
+          vectors using <term>scalar multiplication</term>: if
+          <m>\alpha</m> is a scalar<fn>In other words, a number.  </fn>
+          then <m>\alpha\mathbf{x}</m> is defined to be the vector that
+          has the same direction as <m>\mathbf{x}</m> if
+          <m>\alpha&gt;0</m> and the opposite direction if
+          <m>\alpha&lt;0</m>, but the magnitude is rescaled by the
+          factor <m>\alpha</m>.
+        </p>
+        <example xml:id="example-vector-subtraction" workspace="2in">
+          <title>Vector subtraction.</title>
+          <statement>
+            <p>
+              Let <m>x</m> and <m>y</m> represent the same vectors
+              given in <xref ref="figure-vector-addition"
+              text="global"/>.  Sketch <me>2\mathbf{x} -
+              \mathbf{y}</me>.
+            </p>
+          </statement>
+        </example>
+        <p>
+          Although it isn't too hard to add and scale vectors
+          visually, it'll be beneficial to do the same algebraically.
+          We can do so by breaking a vector down into its
+          <term>components</term>. Consider a vector in
+          <m>\mathbf{x}</m> in <m>\RR^{2}</m>, and suppose if we move
+          it to the origin then the tip of the vector is at the point
+          <m>(3,-1)</m>.  Then the components of <m>\mathbf{x}</m> are
+          <m>3</m> and <m>-1</m>, and we write <me>\mathbf{x} =
+          \dotprod{3,-1}.</me>
+        </p>
+        <p>
+          Note the use of brackets here, since technically we are saying
+          that the vector <m>\mathbf{x}</m> is distinct from the point
+          <m>(3,-1)</m>, even though they are closely related.  We say
+          that the <term>position vector</term> of a point is the vector
+          whose components are the same as the coordinates of the point.
+          Geometrically, the position vector of a point <m>P</m> is the
+          vector with its tail at the origin and its tip at <m>P</m>.
+        </p>
+        <p>
+          So any vector in <m>\RR^{2}</m> can be represented using
+          components by <m>\mathbf{x} = \dotprod{x_{1},x_{2}}</m>.
+          Similarly, any vector in <m>\RR^{3}</m> can be represented as
+          <m>\mathbf{x} = \dotprod{x_{1},x_{2},x_{3}}</m>.  Once you
+          represent a vector in component form, addition and scalar
+          multiplication is straightforward.
+        </p>
+        <example xml:id="example-vector-addition-with-components" workspace="2in">
+          <title>Vector addition with components</title>
+          <statement>
+            <p>
+              Let <m>\mathbf{a} = \dotprod{-2,1,3}</m> and <m>\mathbf{b} =
+              \dotprod{0,2,1}</m>. Find <m>\mathbf{b}-3\mathbf{a}</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We can do all of the required arithmetic componentwise:
+              <me>\mathbf{b}-3\mathbf{a} = \dotprod{6,-1,-8}.</me>
+            </p>
+          </solution>
+        </example>
+        <p>
+          Finding magnitudes of vectors can also be done by applying
+          the distance formula from <xref
+          ref="section-coordinates-in-3-space" text="type-global" />
+          to the components of the vectors.  The magnitude of a vector
+          <m>\mathbf{x}</m> is denoted by <m>|\mathbf{x}|</m> or
+          <m>\norm{\mathbf{x}}</m>.  Given a vector <m>\mathbf{x} =
+          \dotprod{x_{1},x_{2},x_{3}},</m> its magnitude is
+          <me>\norm{\mathbf{x}} =
+          \sqrt{x_{1}^{2}+x_{2}^{2}+x_{3}^{2}}</me>.
+        </p>
+        <p>
+          For example, the magnitude of <m>\mathbf{b}-3\mathbf{a}</m>
+          from the previous example is
+          <me>\norm{\mathbf{b}-3\mathbf{a}} = \sqrt{36+1+64} =
+          \sqrt{101}</me>.  Note that the magnitude of this vector
+          (and <em>any</em> other) is necessarily nonnegative.
+        </p>
+        <example xml:id="example-a-vector-equation" workspace="2in">
+          <title>A vector equation</title>
+          <statement>
+            <p>
+              Let <m>\mathbf{r} = \dotprod{x,y,z}</m> and
+              <m>\mathbf{r}_{0} = \dotprod{a,b,c}</m>. Let
+              <m>r\geq0</m>. Describe the set of all points <m>(x,y,z)</m> that
+              satisfy the equation <me>\norm{\mathbf{r}-\mathbf{r}_{0}} =
+              r</me>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              This is a sphere of radius <m>r</m>.
+            </p>
+          </solution>
+        </example>
+        <example xml:id="example-finding-position-vectors" workspace="3in">
+          <title>Finding components of vectors</title>
+          <statement>
+            <p>
+              Consider the points <m>A(4,0,-2)</m> and
+              <m>B(4,2,1)</m>.  Find <m>\overrightarrow{AB}</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We want to find the components of the vector
+              <m>\overrightarrow{AB}</m>. We can do this by
+              translating <m>\overrightarrow{AB}</m> to the origin,
+              which is done by subtracting from each coordinate of
+              <m>B</m> the corresponding coordinate of <m>A</m>. So
+              the vector <m>\overrightarrow{AB}</m> is given by
+              <me>\overrightarrow{AB} = \dotprod{4-4,2-0,1+2} =
+              \dotprod{0,2,3}</me>.
+            </p>
+          </solution>
+        </example>
+        <p>
+          In general, given <m>A(x_{1},y_{1},z_{1})</m> and
+          <m>B(x_{2},y_{2},z_{2}),</m> the vector <m>\mathbf{x} =
+          \overrightarrow{AB}</m> is given by
+          <me>\mathbf{x} = \dotprod{x_{2}-x_{1},y_{2}-y_{1},z_{2}-z_{1}}.</me>
+        </p>
+        <theorem xml:id="theorem-properties-of-vector-addition-and-scalar-multiplication">
+          <title>Properties of vector addition and scalar
+          multiplication</title>
+          <idx>
+            <h>vectors</h>
+            <h>properties of vector addition and scalar
+            multiplication</h>
+          </idx>
+          <statement>
+            <p>
+              Let <m>\mathbf{x},\mathbf{y},\mathbf{z}</m> be vectors and
+              let <m>\alpha,\beta</m> be scalars. Then the following are
+              true:
+            </p>
+            <ol cols="2">
+              <li><p>
+                <m>\mathbf{x}+\mathbf{y} = \mathbf{y}+\mathbf{x}</m>.
+              </p></li>
+              <li><p>
+                <m>\mathbf{x}+(\mathbf{y}+\mathbf{z}) =
+                (\mathbf{x}+\mathbf{y})+\mathbf{z}.</m>
+              </p></li>
+              <li><p>
+                <m>\mathbf{x}+\mathbf{0} = \mathbf{x}.</m>
+              </p></li>
+              <li><p>
+                <m>\mathbf{x}+(-\mathbf{x}) = \mathbf{0}.</m>
+              </p></li>
+              <li><p>
+                <m>\alpha(\mathbf{x}+\mathbf{y}) =
+                \alpha\mathbf{x}+\alpha\mathbf{y}.</m>
+              </p></li>
+              <li><p>
+                <m>(\alpha+\beta)\mathbf{x} = \alpha\mathbf{x}+\beta\mathbf{y}</m>
+              </p></li>.
+              <li><p>
+                <m>(\alpha\beta)\mathbf{x} = \alpha(\beta)\mathbf{x}.</m>
+              </p></li>
+              <li><p>
+                <m>1\mathbf{x} = \mathbf{x}.</m>
+              </p></li>
+            </ol>
+          </statement>
+        </theorem>
+      </handout>
+    </subsection>
+    <subsection xml:id="subsection-basis-vectors-and-unit-vectors">
+      <handout>
+        <title>Basis vectors and unit vectors.</title>
+        <p>
+          Every vector in <m>\RR^{3}</m> can be written using three
+          components: <m>\mathbf{x} = \dotprod{x_{1},x_{2},x_{3}}.</m>
+          Each component corresponds to a coordinate axis, and we can
+          rewrite <m>\mathbf{x}</m> as a <term>linear
+          combination</term> of three different vectors, with each
+          vector corresponding to a coordinate axis: <me>\mathbf{x} =
+          x_{1}\dotprod{1,0,0}+x_{2}\dotprod{0,1,0}+x_{3}\dotprod{0,0,1}</me>.
+          These vectors are important enough that we'll give them a
+          name: the <term>standard basis vectors</term>.
+        </p>
+        <definition xml:id="definition-standard-basis-vectors">
+          <title>Standard basis vectors</title>
+          <idx>
+            <h>vectors</h>
+            <h>standard basis</h>
+          </idx>
+          <statement>
+            <p>
+              The standard basis for <m>\RR^{3}</m> is the set
+              <m>\{\mathbf{i},\mathbf{j},\mathbf{k}\}</m>, where
+            </p>
+            <me>\mathbf{i} = \dotprod{1,0,0},\quad\mathbf{j} =
+            \dotprod{0,1,0}\quad\text{and}\quad\mathbf{k} =
+            \dotprod{0,0,1}.</me>
+          </statement>
+        </definition>
+        <p>
+          As we've seen, every vector <m>\mathbf{x}</m> in
+          <m>\RR^{3}</m> can be expressed using only these three
+          vectors. The standard basis has two important properties: it
+          is perpendicular (also called <term>orthogonal</term>) and
+          every vector in the collection has magnitude <m>1</m>. In
+          other words, <me>\norm{\mathbf{i}} = \norm{\mathbf{j}} =
+          \norm{\mathbf{k}} = 1</me>.
+        </p>
+        <p>
+          These vectors are essentially designed to capture the
+          "coordinate directions", and are plotted below.
+        </p>
+        <figure xml:id="figure-standard-basis">
+          <image xml:id="image-standard-basis" width="60%">
+            <latex-image>
+            \begin{tikzpicture} [axis/.style={->,blue,thick},
+            vector/.style={-stealth,red,very thick},
+            vector guide/.style={dashed,red,thick}]
+            \begin{axis}[
+            view={120}{30},
+            axis lines=center,
+            width=15cm,height=15cm,
+            xtick={-2,-1,1,2},ytick={-2,-1,1,2},ztick={-2,-1,1,2},
+            % minor tick={-12,-11,...,12},
+            xmin=-3,xmax=3,ymin=-3,ymax=3,zmin=-3,zmax=3,
+            xlabel={$x$},ylabel={$y$},zlabel={$z$},
+            ]
+
+            %standard tikz coordinate definition using x, y, z coords
+            \coordinate (O) at (0,0,0);
+
+            %tikz-3dplot coordinate definition using x, y, z coords
+
+            \pgfmathsetmacro{\ax}{0.8}
+            \pgfmathsetmacro{\ay}{0.8}
+            \pgfmathsetmacro{\az}{0.8}
+
+            % \coordinate (P) at (\ax,\ay,\az);
+
+            % %draw axes
+            \draw[axis] (0,0,0) -- (1,0,0) node[anchor=north east]{$\mathbf{i}$};
+            \draw[axis] (0,0,0) -- (0,1,0) node[anchor=north west]{$\mathbf{j}$};
+            \draw[axis] (0,0,0) -- (0,0,1) node[anchor=west]{$\mathbf{k}$};
+
+            %draw a vector from O to P
+            % \draw[vector] (O) -- (P);
+
+            %draw guide lines to components
+            % \draw[vector guide]         (O) -- (\ax,\ay,0);
+            % \draw[vector guide] (\ax,\ay,0) -- (P);
+            % \draw[vector guide]         (P) -- (0,0,\az);
+            % \draw[vector guide] (\ax,\ay,0) -- (0,\ay,0);
+            % \draw[vector guide] (\ax,\ay,0) -- (0,\ay,0);
+            % \draw[vector guide] (\ax,\ay,0) -- (\ax,0,0);
+            % \node[anchor=east]
+            % at (\ax,0,0){(\ax, 0, 0)};
+            % \node[anchor=west]
+            % at (0,\ay,0){(0, \ay, 0)};
+            % \node[anchor=south]
+            % at (0,0,\az){(0, 0, \az)};
             \end{axis}
             \end{tikzpicture}
-            ]]>
-          </latex-image>
-        </image>
-        <caption>Vector addition.</caption>
-      </figure>
-      <p>
-        The sum <m>\mathbf{x}+\mathbf{y}</m> of vectors
-        <m>\mathbf{x},\mathbf{y}</m> can be computed using either the
-        <term>triangle law</term>, illustrated above in <xref
-        ref="figure-vector-addition" text="type-global" />, or the
-        similar <term>parallelogram law</term>.  We can also scale
-        vectors using <term>scalar multiplication</term>: if
-        <m>\alpha</m> is a scalar<fn>In other words, a number.  </fn>
-        then <m>\alpha\mathbf{x}</m> is defined to be the vector that
-        has the same direction as <m>\mathbf{x}</m> if
-        <m>\alpha&gt;0</m> and the opposite direction if
-        <m>\alpha&lt;0</m>, but the magnitude is rescaled by the
-        factor <m>\alpha</m>.
-    </p>
-    <example xml:id="example-vector-subtraction">
-      <title>Vector subtraction</title>
-      <p>
-        Using the previous graph, we can compute
-        <m>2\mathbf{x}-\mathbf{y}</m>. We just need to scale the
-        vectors properly and then add <m>2\mathbf{x}</m> to
-        <m>-\mathbf{y}</m>.
-      </p>
-    </example>
-  </subsection>
-  <subsection xml:id="subsection-vector-components">
-    <title>Vector Components</title>
-    <p>
-      Although it isn't too hard to add and scale vectors visually,
-      it'll be beneficial to do the same algebraically.  We can do so
-      by breaking a vector down into its
-      <term>components</term>. Consider a vector in <m>\mathbf{x}</m>
-      in <m>\RR^{2}</m>, and suppose if we move it to the origin then
-      the tip of the vector is at the point <m>(3,-1)</m>.  Then the
-      components of <m>\mathbf{x}</m> are <m>3</m> and <m>-1</m>, and
-      we write <me>\mathbf{x} = \dotprod{3,-1}.</me>
-    </p>
-    <p>
-      Note the use of brackets here, since technically we are saying
-      that the vector <m>\mathbf{x}</m> is distinct from the point
-      <m>(3,-1)</m>, even though they are closely related.  We say
-      that the <term>position vector</term> of a point is the vector
-      whose components are the same as the coordinates of the point.
-      Geometrically, the position vector of a point <m>P</m> is the
-      vector with its tail at the origin and its tip at <m>P</m>.
-    </p>
-    <p>
-      So any vector in <m>\RR^{2}</m> can be represented using
-      components by <m>\mathbf{x} = \dotprod{x_{1},x_{2}}</m>.
-      Similarly, any vector in <m>\RR^{3}</m> can be represented as
-      <m>\mathbf{x} = \dotprod{x_{1},x_{2},x_{3}}</m>.  Once you
-      represent a vector in component form, addition and scalar
-      multiplication is straightforward.
-    </p>
-    <example xml:id="example-vector-addition-with-components">
-      <title>Vector addition with components</title>
-      <p>
-        Let <m>\mathbf{a} = \dotprod{-2,1,3}</m> and <m>\mathbf{b} =
-        \dotprod{0,2,1}</m>. Then
-      </p>
-      <me>\mathbf{b}-3\mathbf{a} = \dotprod{6,-1,-8}.</me>
-    </example>
-    <p>
-      Finding magnitudes of vectors can also be done by applying the
-      distance formula from <xref ref="section-coordinates-in-3-space"
-      text="type-global" /> to the components of the vectors.  The
-      magnitude of a vector <m>\mathbf{x}</m> is denoted by
-      <m>|\mathbf{x}|</m> or <m>\norm{\mathbf{x}}</m>.  For example,
-      the magnitude of <m>\mathbf{b}-3\mathbf{a}</m> from the previous
-      example is <me>\norm{\mathbf{b}-3\mathbf{a}} = \sqrt{36+1+64} =
-      \sqrt{101}.</me>
-    </p>
-    <p>
-      Given a vector <m>\mathbf{x} = \dotprod{x_{1},x_{2},x_{3}},</m>
-      <me>\norm{\mathbf{x}} = \sqrt{x_{1}^{2}+x_{2}^{2}+x_{3}^{2}}.</me>
-    </p>
-    <example xml:id="example-a-vector-equation">
-      <title>A vector equation</title>
-      <p>
-        We can use vectors to describe curves and surfaces. For
-        example, let <m>\mathbf{r} = \dotprod{x,y,z}</m> and
-        <m>\mathbf{r}_{0} = \dotprod{a,b,c}</m>. Let
-        <m>r\geq0</m>. Then the set of all points <m>(x,y,z)</m> that
-        satisfy the equation <me>\norm{\mathbf{r}-\mathbf{r}_{0}} =
-        r</me> has a very nice description: it's just the sphere of
-        radius <m>r</m> centered at <m>(a,b,c)</m>.
-      </p>
-    </example>
-    <example xml:id="example-finding-position-vectors">
-      <title>Finding components of vectors</title>
-      <p>
-        Consider the points <m>A(4,0,-2)</m> and <m>B(4,2,1)</m>. We
-        want to find the components of the vector
-        <m>\overrightarrow{AB}</m>. We can do this by translating
-        <m>\overrightarrow{AB}</m> to the origin, which is done by
-        subtracting from each coordinate of <m>B</m> the corresponding
-        coordinate of <m>A</m>. So the vector
-        <m>\overrightarrow{AB}</m> is given by
-      </p>
-      <me>\overrightarrow{AB} = \dotprod{4-4,2-0,1+2} = \dotprod{0,2,3}.</me>
-    </example>
-
-    <p>
-      In general, given <m>A(x_{1},y_{1},z_{1})</m> and
-      <m>B(x_{2},y_{2},z_{2}),</m> the vector <m>\mathbf{x} =
-      \overrightarrow{AB}</m> is given by
-    </p>
-    <me>\mathbf{x} = \dotprod{x_{2}-x_{1},y_{2}-y_{1},z_{2}-z_{1}}.</me>
-    <theorem xml:id="theorem-properties-of-vector-addition-and-scalar-multiplication">
-      <title>Properties of Vector Addition and Scalar Multiplication</title>
-      <idx><h>vectors</h><h>properties of vector addition and scalar
-      multiplication</h></idx>
-      <statement>
+            </latex-image>
+          </image>
+          <caption>The standard basis.</caption>
+        </figure>
         <p>
-          Let <m>\mathbf{x},\mathbf{y},\mathbf{z}</m> be vectors and
-          let <m>\alpha,\beta</m> be scalars. Then the following are
-          true:
+          This also leads us to our next definition.
         </p>
-        <ol cols="2">
-          <li><p>
-            <m>\mathbf{x}+\mathbf{y} = \mathbf{y}+\mathbf{x}</m>.
-          </p></li>
-          <li><p>
-            <m>\mathbf{x}+(\mathbf{y}+\mathbf{z}) =
-            (\mathbf{x}+\mathbf{y})+\mathbf{z}.</m>
-          </p></li>
-          <li><p>
-            <m>\mathbf{x}+\mathbf{0} = \mathbf{x}.</m>
-          </p></li>
-          <li><p>
-            <m>\mathbf{x}+(-\mathbf{x}) = \mathbf{0}.</m>
-          </p></li>
-          <li><p>
-            <m>\alpha(\mathbf{x}+\mathbf{y}) =
-            \alpha\mathbf{x}+\alpha\mathbf{y}.</m>
-          </p></li>
-          <li><p>
-            <m>(\alpha+\beta)\mathbf{x} = \alpha\mathbf{x}+\beta\mathbf{y}</m>
-          </p></li>.
-          <li><p>
-            <m>(\alpha\beta)\mathbf{x} = \alpha(\beta)\mathbf{x}.</m>
-          </p></li>
-          <li><p>
-            <m>1\mathbf{x} = \mathbf{x}.</m>
-          </p></li>
-        </ol>
-      </statement>
-    </theorem>
-  </subsection>
-  <subsection xml:id="subsection-basis-vectors-and-unit-vectors">
-    <title>Basis Vectors and Unit Vectors</title>
-    <p>
-      Every vector in <m>\RR^{3}</m> can be written using three
-      components: <m>\mathbf{x} = \dotprod{x_{1},x_{2},x_{3}}.</m>
-      Each component corresponds to a coordinate axis, and we can
-      rewrite <m>\mathbf{x}</m> as a <term>linear combination</term>
-      of three different vectors, with each vector corresponding to a
-      coordinate axis:
-    </p>
-    <me>\mathbf{x} =
-    x_{1}\dotprod{1,0,0}+x_{2}\dotprod{0,1,0}+x_{3}\dotprod{0,0,1}.</me>
-    These vectors are important enough that we'll give them a name:
-    the <term>standard basis vectors</term>.
-    <definition xml:id="definition-standard-basis-vectors">
-      <title>Standard Basis Vectors</title>
-      <idx><h>vectors</h><h>standard basis</h></idx>
-      <statement>
+        <definition xml:id="definition-unit-vectors">
+          <title>Unit vectors</title>
+          <idx>
+            <h>vectors</h>
+            <h>unit vectors</h>
+          </idx>
+          <statement>
+            <p>
+              A vector <m>\mathbf{x}</m> is a unit vector if
+              <m>\norm{\mathbf{x}} = 1</m>.
+            </p>
+          </statement>
+        </definition>
         <p>
-          The standard basis for <m>\RR^{3}</m> is the set
-          <m>\{\mathbf{i},\mathbf{j},\mathbf{k}\}</m>, where
+          Unit vectors are useful if we just need to indicate a direction,
+          and we don't care about magnitude. Every nonzero vector can be
+          rescaled to a unit vector: just divide the vector by its norm.
         </p>
-        <me>\mathbf{i} = \dotprod{1,0,0},\quad\mathbf{j} =
-        \dotprod{0,1,0}\quad\text{and}\quad\mathbf{k} =
-        \dotprod{0,0,1}.</me>
-      </statement>
-    </definition>
-    <p>
-      As we've seen, every vector <m>\mathbf{x}</m> in <m>\RR^{3}</m>
-      can be expressed using only these three vectors. The standard
-      basis has two important properties: it is perpendicular (also
-      called <term>orthogonal</term>) and every vector in the
-      collection has magnitude <m>1</m>. In other words,
-    </p>
-    <me>\norm{\mathbf{i}} = \norm{\mathbf{j}} = \norm{\mathbf{k}} = 1.</me>
-    <p>
-      These vectors are essentially designed to capture the
-      "coordinate directions", and are plotted below.
-    </p>
-    <figure xml:id="figure-standard-basis">
-      <image xml:id="image-standard-basis" width="60%">
-        <latex-image><![CDATA[
-          \begin{tikzpicture} [axis/.style={->,blue,thick},
-          vector/.style={-stealth,red,very thick},
-          vector guide/.style={dashed,red,thick}]
-          \begin{axis}[
-          view={120}{30},
-          axis lines=center,
-          width=15cm,height=15cm,
-          xtick={-2,-1,1,2},ytick={-2,-1,1,2},ztick={-2,-1,1,2},
-          % minor tick={-12,-11,...,12},
-          xmin=-3,xmax=3,ymin=-3,ymax=3,zmin=-3,zmax=3,
-          xlabel={$x$},ylabel={$y$},zlabel={$z$},
-          ]
-
-          %standard tikz coordinate definition using x, y, z coords
-          \coordinate (O) at (0,0,0);
-
-          %tikz-3dplot coordinate definition using x, y, z coords
-
-          \pgfmathsetmacro{\ax}{0.8}
-          \pgfmathsetmacro{\ay}{0.8}
-          \pgfmathsetmacro{\az}{0.8}
-
-          % \coordinate (P) at (\ax,\ay,\az);
-
-          % %draw axes
-          \draw[axis] (0,0,0) -- (1,0,0) node[anchor=north east]{$\mathbf{i}$};
-          \draw[axis] (0,0,0) -- (0,1,0) node[anchor=north west]{$\mathbf{j}$};
-          \draw[axis] (0,0,0) -- (0,0,1) node[anchor=west]{$\mathbf{k}$};
-
-          %draw a vector from O to P
-          % \draw[vector] (O) -- (P);
-
-          %draw guide lines to components
-          % \draw[vector guide]         (O) -- (\ax,\ay,0);
-          % \draw[vector guide] (\ax,\ay,0) -- (P);
-          % \draw[vector guide]         (P) -- (0,0,\az);
-          % \draw[vector guide] (\ax,\ay,0) -- (0,\ay,0);
-          % \draw[vector guide] (\ax,\ay,0) -- (0,\ay,0);
-          % \draw[vector guide] (\ax,\ay,0) -- (\ax,0,0);
-          % \node[anchor=east]
-          % at (\ax,0,0){(\ax, 0, 0)};
-          % \node[anchor=west]
-          % at (0,\ay,0){(0, \ay, 0)};
-          % \node[anchor=south]
-          % at (0,0,\az){(0, 0, \az)};
-          \end{axis}
-          \end{tikzpicture}
-          ]]>
-        </latex-image>
-      </image>
-      <caption>The standard basis.</caption>
-    </figure>
-    <p>
-      This also leads us to our next definition.
-    </p>
-    <definition xml:id="definition-unit-vectors">
-      <title>Unit Vectors</title>
-      <idx><h>vectors</h><h>unit vectors</h></idx>
-      <statement>
+        <example xml:id="example-direction-from-one-point-to-another" workspace="3in">
+          <title>Direction from one point to another</title>
+          <statement>
+            <p>
+              Consider the points <m>A(1,2,-1)</m> and
+              <m>B(0,-3,2)</m>. Find the unit vector indicating
+              the direction from <m>A</m> to <m>B</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              First, set
+              <me>\mathbf{x} = \overrightarrow{AB} = \dotprod{-1,-5,3}.</me>
+              Then the unit vector that gives the direction from <m>A</m> to
+              <m>B</m> is given by
+              <md>
+                <mrow>\mathbf{u} &amp; = \frac{\mathbf{x}}{\norm{\mathbf{x}}} </mrow>
+                <mrow> &amp; = \frac{\dotprod{-1,-5,3}}{\sqrt{1+25+9}}
+                </mrow> <mrow> &amp; = \dotprod{-\frac{1}{\sqrt{37}},
+                -\frac{5}{\sqrt{37}}, \frac{3}{\sqrt{37}}}. </mrow>
+              </md>
+            </p>
+          </solution>
+        </example>
+        <example xml:id="example-a-vector-equation-for-the-unit-sphere" workspace="1in">
+          <title>A vector equation for the unit sphere</title>
+          <statement>
+            <p>
+              Determine a vector equation for the unit sphere in
+              <m>\RR^3</m>.
+            </p>
+          </statement>
+        </example>
+      </handout>
+    </subsection>
+    <subsection xml:id="subsection-applications">
+      <handout>
+        <title>Applications</title>
         <p>
-          A vector <m>\mathbf{x}</m> is a unit vector if
-          <m>\norm{\mathbf{x}} = 1</m>.
+          Many physical quantities have both a direction and a magnitude,
+          like velocity, acceleration and forces. Vectors are ideally
+          suited to measure these quantities.
         </p>
-      </statement>
-    </definition>
-    <p>
-      Unit vectors are useful if we just need to indicate a direction,
-      and we don't care about magnitude. Every nonzero vector can be
-      rescaled to a unit vector: just divide the vector by its norm.
-    </p>
-    <example xml:id="example-direction-from-one-point-to-another">
-      <title>Direction from one point to another</title>
-      <p>
-        Consider the points <m>A(1,2,-1)</m> and
-        <m>B(0,-3,2)</m>. Then we can find the unit vector indicating
-        the direction from <m>A</m> to <m>B</m>. First, set
-      </p>
-      <me>\mathbf{x} = \overrightarrow{AB} = \dotprod{-1,-5,3}.</me>
-      <p>
-        Then the unit vector that gives the direction from <m>A</m> to
-        <m>B</m> is given by
-      </p>
-      <md>
-        <mrow>\mathbf{u} &amp; = \frac{\mathbf{x}}{\norm{\mathbf{x}}} </mrow>
-        <mrow> &amp; = \frac{\dotprod{-1,-5,3}}{\sqrt{1+25+9}} </mrow>
-        <mrow> &amp; = \dotprod{-\frac{1}{\sqrt{37}}, -\frac{5}{\sqrt{37}}, \frac{3}{\sqrt{37}}}. </mrow>
-      </md>
-    </example>
-    <example xml:id="example-a-vector-equation-for-the-unit-sphere">
-      <title>A vector equation for the unit sphere</title>
-      <p>
-        Using the concept of a unit vector, we can very easily
-        describe the unit sphere<fn>The sphere of radius <m>1</m>
-        centered at the origin.</fn> using a vector equation. If we
-        set <m>\mathbf{r} = (x,y,z)</m>, then the unit sphere is just
-        the set of all solutions of
-      </p>
-      <me>\norm{\mathbf{r}} = 1.</me>
-    </example>
-  </subsection>
-  <subsection xml:id="subsection-applications">
-    <title>Applications</title>
-    <p>
-      Many physical quantities have both a direction and a magnitude,
-      like velocity, acceleration and forces. Vectors are ideally
-      suited to measure these quantities.
-    </p>
-    <example xml:id="example-weight-of-a-chain">
-      <title>Weight of a chain</title>
-      <p>
-        A still chain is fixed to two ends of a level divide. The
-        tension of the chain at each fixed end can be represented by
-        vectors pointing away from the chain. Call these tension
-        forces <m>\mathbf{T}_{1}</m> and
-        <m>\mathbf{T}_{2}</m>. Suppose we know that each force vector
-        makes an angle of <m>45^{\circ}</m> with the ground on either
-        side of the chain's fixed ends, and that the magnitude of each
-        tension is <quantity><mag>43</mag><unit
-        base="newton"/></quantity>. Then we can use vector addition to
-        find the weight of the chain.
-      </p>
-      <p>
-        Let <m>\mathbf{w}</m> denote the weight of the chain
-        considered as a vector (so that it's pointing down). Since the
-        chain is still, its <term>resultant</term><fn>The sum of all
-        forces acting on the chain.</fn> must be <m>\mathbf{0}</m>. So
-        we can say that
-      </p>
-      <me>\mathbf{T}_{1}+\mathbf{T}_{2} + \mathbf{w} = \mathbf{0}</me>
-      <p>
-        or in other words
-      </p>
-      <me>\mathbf{w} = -\mathbf{T}_{1}-\mathbf{T}_{2}.</me>
-      <p>
-        What we need to find is <m>\norm{\mathbf{w}}</m>, which we can
-        do without too much trouble if we can rewrite the tension
-        vectors in component form. In fact, we have
-      </p>
-      <md>
-        <mrow>\mathbf{T}_{1} &amp; = \dotprod{-\norm{\mathbf{T}_{1}}\cos45^{\circ},\norm{\mathbf{T}_{1}}\sin45^{\circ}} </mrow>
-        <mrow>\mathbf{T}_{2} &amp; = \dotprod{\norm{\mathbf{T}_{2}}\cos45^{\circ},\norm{\mathbf{T}_{2}}\sin45^{\circ}} </mrow>
-      </md>
-      <p>
-        So it follows that
-      </p>
-      <md>
-        <mrow>\norm{\mathbf{w}} &amp; = \norm{-\mathbf{T}_{1}-\mathbf{T}_{2}} </mrow>
-        <mrow> &amp; = \norm{\dotprod{0,-2\cdot43\frac{\sqrt{2}}{2}}}</mrow>
-        <mrow> &amp; = 43\sqrt{2} </mrow>
-      </md>
-      <p>
-        Therefore the chain weighs <m>43\sqrt{2}</m><quantity><unit
-        base="newton"/></quantity>.
-      </p>
-    </example>
-  </subsection>
-</section>
+        <example xml:id="example-weight-of-a-chain" workspace="3in">
+          <title>Weight of a chain</title>
+          <statement>
+            <p>
+              A still chain is fixed to two ends of a level divide. The
+              tension of the chain at each fixed end can be represented by
+              vectors pointing away from the chain. Call these tension
+              forces <m>\mathbf{T}_{1}</m> and
+              <m>\mathbf{T}_{2}</m>. Suppose we know that each force vector
+              makes an angle of <m>45^{\circ}</m> with the ground on either
+              side of the chain's fixed ends, and that the magnitude of each
+              tension is <quantity><mag>43</mag><unit
+              base="newton"/></quantity>.  Use vector addition to
+              find the weight of the chain.
+            </p>
+          </statement>
+          <solution>
+          <p>
+            Let <m>\mathbf{w}</m> denote the weight of the chain
+            considered as a vector (so that it's pointing down). Since
+            the chain is still, its <term>resultant</term><fn>The sum
+            of all forces acting on the chain.</fn> must be
+            <m>\mathbf{0}</m>. So we can say that
+            <me>\mathbf{T}_{1}+\mathbf{T}_{2} + \mathbf{w} =
+            \mathbf{0}</me>, or in other words <me>\mathbf{w} =
+            -\mathbf{T}_{1}-\mathbf{T}_{2}</me>.
+          </p>
+          <p>
+            What we need to find is <m>\norm{\mathbf{w}}</m>, which we can
+            do without too much trouble if we can rewrite the tension
+            vectors in component form. In fact, we have
+            <md>
+              <mrow>\mathbf{T}_{1} &amp; = \dotprod{-\norm{\mathbf{T}_{1}}\cos45^{\circ},\norm{\mathbf{T}_{1}}\sin45^{\circ}} </mrow>
+              <mrow>\mathbf{T}_{2} &amp; = \dotprod{\norm{\mathbf{T}_{2}}\cos45^{\circ},\norm{\mathbf{T}_{2}}\sin45^{\circ}} </mrow>
+            </md>
+            So it follows that
+            <md>
+              <mrow>\norm{\mathbf{w}} &amp; =
+              \norm{-\mathbf{T}_{1}-\mathbf{T}_{2}} </mrow> <mrow>
+              &amp; =
+              \norm{\dotprod{0,-2\cdot43\frac{\sqrt{2}}{2}}}</mrow>
+              <mrow> &amp; = 43\sqrt{2} </mrow>
+            </md>.
+          </p>
+          <p>
+            Therefore, the chain weighs <m>43\sqrt{2}</m><quantity><unit
+            base="newton"/></quantity>.
+          </p>
+          </solution>
+        </example>
+      </handout>
+    </subsection>
+  </section>
 <section xml:id="section-the-dot-product">
   <title>The Dot Product</title>
   <subsection xml:id="subsection-definition-and-properties-of-the-dot-product">
@@ -681,7 +735,15 @@
       <caption>Vector overlap.</caption>
     </figure>
     <p>
-      One way we can measure how much <m>\mathbf{x}</m> and <m>\mathbf{y}</m> overlap is to find <m>\norm{\mathbf{x}+\mathbf{y}}</m>, or equivalently <m>\norm{\mathbf{x}+\mathbf{y}}^{2},</m> since this is larger if <m>\mathbf{x}</m> and <m>\mathbf{y}</m> are more closely aligned.<fn>We are carefully ignoring the case where <m>\mathbf{x}</m> and <m>\mathbf{y}</m> point in opposite directions...</fn> From <xref ref="subsection-vector-components" text="title" />, we know that
+      One way we can measure how much <m>\mathbf{x}</m> and
+      <m>\mathbf{y}</m> overlap is to find
+      <m>\norm{\mathbf{x}+\mathbf{y}}</m>, or equivalently
+      <m>\norm{\mathbf{x}+\mathbf{y}}^{2},</m> since this is larger if
+      <m>\mathbf{x}</m> and <m>\mathbf{y}</m> are more closely
+      aligned.<fn>We are carefully ignoring the case where
+      <m>\mathbf{x}</m> and <m>\mathbf{y}</m> point in opposite
+      directions...</fn> From <xref ref="section-vectors" text="title"
+      />, we know that
     </p>
     <me>\norm{\mathbf{x}+\mathbf{y}}^{2} = (x_{1}+x_{2})^{2} + (y_{1}+y_{2})^{2} + (z_{1}+z_{2})^{2}.</me>
     <p>

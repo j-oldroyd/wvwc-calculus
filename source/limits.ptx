@@ -531,7 +531,7 @@
           that <m>x</m> is approaching into the function
           <m>f(x)</m>. So the limit is then <m>f(a)</m>. If a function
           <m>f(x)</m> is continuous on an interval, then this means
-          that the graph of <m>f(x)</m> has no "gaps" over this
+          that the graph of <m>f(x)</m> has no <q>gaps</q> over this
           interval.
         </p>
 
