@@ -277,7 +277,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.3",
   "title": "Continuity",
-  "body": " Continuity   We saw in that for a function like , we could evaluate by simply plugging in . In other words, . Functions that have this property are extremely important in mathematics, so we give them a name.    Continuous functions   Continuous Functions  continuous functions definition   Let be a function and suppose that is in the domain of . Then we say that is continuous at if . Otherwise, we say that is discontinuous at . We say that is continuous on an interval if it is continuous at every point of an interval. Otherwise, we say that is discontinuous on the interval.     says that it is extremely easy to evaluate limits of continuous functions: just plug the value that is approaching into the function . So the limit is then . If a function is continuous on an interval, then this means that the graph of has no \"gaps\" over this interval.   Determining if a function is continuous   Let . Is continuous on ?    If we graph , then we see that it is discontinuous at . Therefore is discontinuous on the interval .    If we're dealing with a function on a (bounded) closed interval, we need to introduce some new terminology. We say that a function is continuous from the left at if . Similarly, we say that is continuous from the right at if . This is of course assuming that is in the domain of . Finally, we say that is continuous on the closed interval if it is continuous on , continuous from the right at and continuous from the left at . The main idea is still that the graph contains no gaps over this interval.   Continuity over a closed interval   Let be given by . Is continuous over ?    If we graph over this interval, we get the following:   Graphing over      So from the graph it appears that is continuous on this interval.    Remember that we said a function is continuous over an interval if its graph has no gaps over that interval. This is a very rough explanation of continuity, but it should make the following theorem plausible.   Continuous functions   Polynomial, rational, root and trigonometric functions are continuous at every point of their domain.      Combining continuous functions  Although it doesn't directly mention piecewise functions, is still useful for determining if they are continuous. If a piecewise function is defined using any of the functions from , then the only points we really need to check for continuity are the the places where the function \"changes rules\".   Another piecewise function   Over what intervals is the function given by continuous?    We need to check continuity at and . At , we need to make sure that exists and is equal to . Since and it follows that does not exist. So can't be continuous at .  On the other hand, since , it follows that exists and is equal to . Since also equals , is continuous at . So must be continuous on .  Note that we can also verify this result graphically by looking for jumps in the graph. For example, see below produced using Desmos (you can also produce graphs using the Calc button).   Graph of      We can also build more complicated continuous functions out of simpler ones.   Combining continuous functions   Let and be continuous at a point . Then the following statements are true:   is continuous at .   is continuous at .   is continuous at if .   is continuous at if is in the domain of .       Determining where functions are continuous   Let . On what intervals is continuous?    By , should be continuous wherever and are all defined. Since is defined for , is defined for and is defined for , it follows that is continuous on .     Using continuity to evaluate a limit   Evaluate .    Since and are all continuous, this means that must be continuous as well. Therefore       We've seen that continuous functions are precisely those functions that make limits easy to compute. Since the two primary concepts in calculus, the derivative ( ) and the integral ( ), both depend on the concept of a limit, this means that continuous functions themselves will also be extremely important objects going forward.   "
+  "body": " Continuity   We saw in that for a function like , we could evaluate by simply plugging in . In other words, . Functions that have this property are extremely important in mathematics, so we give them a name.    Continuous functions   Continuous Functions  continuous functions definition   Let be a function and suppose that is in the domain of . Then we say that is continuous at if . Otherwise, we say that is discontinuous at . We say that is continuous on an interval if it is continuous at every point of an interval. Otherwise, we say that is discontinuous on the interval.     says that it is extremely easy to evaluate limits of continuous functions: just plug the value that is approaching into the function . So the limit is then . If a function is continuous on an interval, then this means that the graph of has no gaps over this interval.   Determining if a function is continuous   Let . Is continuous on ?    If we graph , then we see that it is discontinuous at . Therefore is discontinuous on the interval .    If we're dealing with a function on a (bounded) closed interval, we need to introduce some new terminology. We say that a function is continuous from the left at if . Similarly, we say that is continuous from the right at if . This is of course assuming that is in the domain of . Finally, we say that is continuous on the closed interval if it is continuous on , continuous from the right at and continuous from the left at . The main idea is still that the graph contains no gaps over this interval.   Continuity over a closed interval   Let be given by . Is continuous over ?    If we graph over this interval, we get the following:   Graphing over      So from the graph it appears that is continuous on this interval.    Remember that we said a function is continuous over an interval if its graph has no gaps over that interval. This is a very rough explanation of continuity, but it should make the following theorem plausible.   Continuous functions   Polynomial, rational, root and trigonometric functions are continuous at every point of their domain.      Combining continuous functions  Although it doesn't directly mention piecewise functions, is still useful for determining if they are continuous. If a piecewise function is defined using any of the functions from , then the only points we really need to check for continuity are the the places where the function \"changes rules\".   Another piecewise function   Over what intervals is the function given by continuous?    We need to check continuity at and . At , we need to make sure that exists and is equal to . Since and it follows that does not exist. So can't be continuous at .  On the other hand, since , it follows that exists and is equal to . Since also equals , is continuous at . So must be continuous on .  Note that we can also verify this result graphically by looking for jumps in the graph. For example, see below produced using Desmos (you can also produce graphs using the Calc button).   Graph of      We can also build more complicated continuous functions out of simpler ones.   Combining continuous functions   Let and be continuous at a point . Then the following statements are true:   is continuous at .   is continuous at .   is continuous at if .   is continuous at if is in the domain of .       Determining where functions are continuous   Let . On what intervals is continuous?    By , should be continuous wherever and are all defined. Since is defined for , is defined for and is defined for , it follows that is continuous on .     Using continuity to evaluate a limit   Evaluate .    Since and are all continuous, this means that must be continuous as well. Therefore       We've seen that continuous functions are precisely those functions that make limits easy to compute. Since the two primary concepts in calculus, the derivative ( ) and the integral ( ), both depend on the concept of a limit, this means that continuous functions themselves will also be extremely important objects going forward.   "
 },
 {
   "id": "definition-continuous-functions",
@@ -4678,7 +4678,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.1",
   "title": "Coordinates in 3-Space",
-  "body": " Coordinates in 3-Space    -coordinates  We're used to Cartesian coordinates in the plane: each point in the plane can be represented by an -coordinate and a -coordinate. This representation is determined by the coordinate axes (the - and -axes). There's nothing preventing us from doing the same for three dimensions. We'll just need three coordinate axes: the -, - and -axes. We typically view the -plane as horizontal, and the -axis as vertical, but there's no mathematical preference either way.  Just as the - and -axes determined the -plane, we can also get the - and -planes. These planes divide space into eight octants . And just as any point in the -plane can be represented by measuring along the -axis and -axis to get a point , we can do the same in space to get a point . The set of all points like this is denoted by , and is the three-dimensional coordinate system .  Given any point in , we can find its projections onto any of the coordinate axes or coordinate planes without too much trouble. The projection onto a line or plane is the point on that line or plane that is closest to the original point .   Projection   Find the projection of the point onto the -plane.    Here's how we can find the projection of the point onto the -plane. Note that the -plane is just the set of all points with -coordinate equation to , so the projection of onto the -plane is the point .     Equations in space   Sketch in .    This is just the set of all points in of the form . This forms a plane in .      More equations in space   Sketch in .    We can do so as follows. First, sketch in the -plane, which will just be the line . Then the surface in represented by is actually the surface consisting of all points directly above and directly below the line in the -plane.     Intersection of a sphere and a plane   Describe the intersection of the sphere given by the equation with the -plane.    We can do this without too much trouble if we remember that the -plane is just the set of all points with -coordinate equal to . So the intersection of this sphere with the -plane traces out the curve in the -plane, which is just the point .      Intersection of the sphere with the -plane.       The Distance Formula  Recall that the distance between two points and in (the -plane) is given by   This is proved using the Pythagorean theorem. We can do the same exact thing in !   Distances in Space  distance formula three dimensions   Let and be two points in . Then the distance between these two points, , is given by      Computing distances   Find the distance between the points and .     lets us find the distance between the points and as follows:     One important use of the distance formula in is that it lets us find equations of spheres. The equation of a sphere of radius and center is given by which is more commonly written as    Equation of a sphere   Show that the equation represents a sphere in .    To see how, we can rearrange the equation and complete the square to get   So this equation describes a sphere of radius centered at .     Spherical shells  We can also use inequalities to describe regions in addition to equalities. For example, describes the region contained between the sphere of radius and the sphere of radius , both centered at the origin.     The spherical shells .     "
+  "body": " Coordinates in 3-Space    -coordinates  We're used to Cartesian coordinates in the plane: each point in the plane can be represented by an -coordinate and a -coordinate. This representation is determined by the coordinate axes (the - and -axes). There's nothing preventing us from doing the same for three dimensions. We'll just need three coordinate axes: the -, - and -axes. We typically view the -plane as horizontal, and the -axis as vertical, but there's no mathematical preference either way.  Just as the - and -axes determined the -plane, we can also get the - and -planes. These planes divide space into eight octants . And just as any point in the -plane can be represented by measuring along the -axis and -axis to get a point , we can do the same in space to get a point . The set of all points like this is denoted by , and is the three-dimensional coordinate system .  Given any point in , we can find its projections onto any of the coordinate axes or coordinate planes without too much trouble. The projection onto a line or plane is the point on that line or plane that is closest to the original point .   Projection   Find the projection of the point onto the -plane.    Here's how we can find the projection of the point onto the -plane. Note that the -plane is just the set of all points with -coordinate equation to , so the projection of onto the -plane is the point .     Equations in space   Sketch in .    This is just the set of all points in of the form . This forms a plane in .      More equations in space   Sketch in .    We can do so as follows. First, sketch in the -plane, which will just be the line . Then the surface in represented by is actually the surface consisting of all points directly above and directly below the line in the -plane.     Intersection of a sphere and a plane   Describe the intersection of the sphere given by the equation with the -plane.    We can do this without too much trouble if we remember that the -plane is just the set of all points with -coordinate equal to . So the intersection of this sphere with the -plane traces out the curve in the -plane, which is just the point .        The distance formula  Recall that the distance between two points and in (the -plane) is given by   This is proved using the Pythagorean theorem. We can do the same exact thing in !   Distances in Space  distance formula three dimensions   Let and be two points in . Then the distance between these two points, , is given by      Computing distances   Find the distance between the points and .     lets us find the distance between the points and as follows:     One important use of the distance formula in is that it lets us find equations of spheres. The equation of a sphere of radius and center is given by which is more commonly written as    Equation of a sphere   Show that the equation represents a sphere in .    To see how, we can rearrange the equation and complete the square to get   So this equation describes a sphere of radius centered at .     Spherical shells  We can also use inequalities to describe regions in addition to equalities. For example, describes the region contained between the sphere of radius and the sphere of radius , both centered at the origin.     "
 },
 {
   "id": "handout-coordinates-2",
@@ -4744,20 +4744,11 @@ var ptx_lunr_docs = [
   "body": " Intersection of a sphere and a plane   Describe the intersection of the sphere given by the equation with the -plane.    We can do this without too much trouble if we remember that the -plane is just the set of all points with -coordinate equal to . So the intersection of this sphere with the -plane traces out the curve in the -plane, which is just the point .   "
 },
 {
-  "id": "figure-sphere-xz-plane-intersection",
-  "level": "2",
-  "url": "section-coordinates-in-3-space.html#figure-sphere-xz-plane-intersection",
-  "type": "Figure",
-  "number": "11.1.5",
-  "title": "",
-  "body": " Intersection of the sphere with the -plane.   "
-},
-{
   "id": "theorem-distances-in-space",
   "level": "2",
   "url": "section-coordinates-in-3-space.html#theorem-distances-in-space",
   "type": "Theorem",
-  "number": "11.1.6",
+  "number": "11.1.5",
   "title": "Distances in Space.",
   "body": " Distances in Space  distance formula three dimensions   Let and be two points in . Then the distance between these two points, , is given by    "
 },
@@ -4766,7 +4757,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-coordinates-in-3-space.html#example-computing-distances",
   "type": "Example",
-  "number": "11.1.7",
+  "number": "11.1.6",
   "title": "Computing distances.",
   "body": " Computing distances   Find the distance between the points and .     lets us find the distance between the points and as follows:    "
 },
@@ -4775,7 +4766,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-coordinates-in-3-space.html#example-equation-of-a-sphere",
   "type": "Example",
-  "number": "11.1.8",
+  "number": "11.1.7",
   "title": "Equation of a sphere.",
   "body": " Equation of a sphere   Show that the equation represents a sphere in .    To see how, we can rearrange the equation and complete the square to get   So this equation describes a sphere of radius centered at .   "
 },
@@ -4784,18 +4775,9 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "section-coordinates-in-3-space.html#example-spherical-shells",
   "type": "Example",
-  "number": "11.1.9",
+  "number": "11.1.8",
   "title": "Spherical shells.",
   "body": " Spherical shells  We can also use inequalities to describe regions in addition to equalities. For example, describes the region contained between the sphere of radius and the sphere of radius , both centered at the origin.  "
-},
-{
-  "id": "figure-spherical-shells-radii-3-4",
-  "level": "2",
-  "url": "section-coordinates-in-3-space.html#figure-spherical-shells-radii-3-4",
-  "type": "Figure",
-  "number": "11.1.10",
-  "title": "",
-  "body": " The spherical shells .   "
 },
 {
   "id": "section-vectors",
@@ -4804,7 +4786,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "11.2",
   "title": "Vectors",
-  "body": " Vectors   One of our goals in this chapter is to adequately describe motion in space. A useful way to do this uses the concept of vector , which we think of as a quantity that has both direction and magnitude\/length. A simple example would be velocity: velocity in space has a direction and also a magnitude (speed). We will typically denote vectors by using boldface letters such as or letters with a bar overhead such as . We represent vectors as arrows with an initial point and a terminal point :      A vector.   We say that two vectors are equivalent , or equal , if they have the same magnitude and direction. We write this as .    Addition and Scalar Multiplication  Given two vectors , we can add them to get the new vector   So the vector is obtained by moving the tail of to the tip of and then drawing a vector from the tail of to the tip of .      Vector addition.   The sum of vectors can be computed using either the triangle law , illustrated above in , or the similar parallelogram law . We can also scale vectors using scalar multiplication : if is a scalar In other words, a number. then is defined to be the vector that has the same direction as if and the opposite direction if , but the magnitude is rescaled by the factor .   Vector subtraction  Using the previous graph, we can compute . We just need to scale the vectors properly and then add to .     Vector Components  Although it isn't too hard to add and scale vectors visually, it'll be beneficial to do the same algebraically. We can do so by breaking a vector down into its components . Consider a vector in in , and suppose if we move it to the origin then the tip of the vector is at the point . Then the components of are and , and we write   Note the use of brackets here, since technically we are saying that the vector is distinct from the point , even though they are closely related. We say that the position vector of a point is the vector whose components are the same as the coordinates of the point. Geometrically, the position vector of a point is the vector with its tail at the origin and its tip at .  So any vector in can be represented using components by . Similarly, any vector in can be represented as . Once you represent a vector in component form, addition and scalar multiplication is straightforward.   Vector addition with components  Let and . Then    Finding magnitudes of vectors can also be done by applying the distance formula from to the components of the vectors. The magnitude of a vector is denoted by or . For example, the magnitude of from the previous example is   Given a vector     A vector equation  We can use vectors to describe curves and surfaces. For example, let and . Let . Then the set of all points that satisfy the equation has a very nice description: it's just the sphere of radius centered at .    Finding components of vectors  Consider the points and . We want to find the components of the vector . We can do this by translating to the origin, which is done by subtracting from each coordinate of the corresponding coordinate of . So the vector is given by    In general, given and the vector is given by    Properties of Vector Addition and Scalar Multiplication  vectors properties of vector addition and scalar multiplication   Let be vectors and let be scalars. Then the following are true:    .                .            Basis Vectors and Unit Vectors  Every vector in can be written using three components: Each component corresponds to a coordinate axis, and we can rewrite as a linear combination of three different vectors, with each vector corresponding to a coordinate axis:  These vectors are important enough that we'll give them a name: the standard basis vectors .  Standard Basis Vectors  vectors standard basis   The standard basis for is the set , where     As we've seen, every vector in can be expressed using only these three vectors. The standard basis has two important properties: it is perpendicular (also called orthogonal ) and every vector in the collection has magnitude . In other words,   These vectors are essentially designed to capture the \"coordinate directions\", and are plotted below.      The standard basis.   This also leads us to our next definition.   Unit Vectors  vectors unit vectors   A vector is a unit vector if .    Unit vectors are useful if we just need to indicate a direction, and we don't care about magnitude. Every nonzero vector can be rescaled to a unit vector: just divide the vector by its norm.   Direction from one point to another  Consider the points and . Then we can find the unit vector indicating the direction from to . First, set   Then the unit vector that gives the direction from to is given by     A vector equation for the unit sphere  Using the concept of a unit vector, we can very easily describe the unit sphere The sphere of radius centered at the origin. using a vector equation. If we set , then the unit sphere is just the set of all solutions of      Applications  Many physical quantities have both a direction and a magnitude, like velocity, acceleration and forces. Vectors are ideally suited to measure these quantities.   Weight of a chain  A still chain is fixed to two ends of a level divide. The tension of the chain at each fixed end can be represented by vectors pointing away from the chain. Call these tension forces and . Suppose we know that each force vector makes an angle of with the ground on either side of the chain's fixed ends, and that the magnitude of each tension is 43 . Then we can use vector addition to find the weight of the chain.  Let denote the weight of the chain considered as a vector (so that it's pointing down). Since the chain is still, its resultant The sum of all forces acting on the chain. must be . So we can say that   or in other words   What we need to find is , which we can do without too much trouble if we can rewrite the tension vectors in component form. In fact, we have   So it follows that   Therefore the chain weighs .    "
+  "body": " Vectors   One of our goals in this chapter is to adequately describe motion in space. A useful way to do this uses the concept of vector , which we think of as a quantity that has both direction and magnitude\/length. A simple example would be velocity: velocity in space has a direction and also a magnitude (speed). We will typically denote vectors by using boldface letters such as or letters with a bar overhead such as . We represent vectors as arrows with an initial point and a terminal point :     A graphical representation of a vector as an arrow diagram with initial point and terminal point .   an arrow representing a vector    A vector.   We say that two vectors are equivalent , or equal , if they have the same magnitude and direction. We write this as .     Vector addition and components.  Given two vectors , we can add them to get the new vector   So the vector is obtained by moving the tail of to the tip of and then drawing a vector from the tail of to the tip of .    graphical diagram representing vector addition   A pair of graphics demonstrating vector addition using triangles. Two vectors and are drawn facing different directions in the diagram on the right. In the diagram on the left, the tail of the vector is placed at the head of the vector , forming two sides of a triangle. The remaining side of the triangle is filled in and represents the vector .     Vector addition.   The sum of vectors can be computed using either the triangle law , illustrated above in , or the similar parallelogram law . We can also scale vectors using scalar multiplication : if is a scalar In other words, a number. then is defined to be the vector that has the same direction as if and the opposite direction if , but the magnitude is rescaled by the factor .   Vector subtraction.   Let and represent the same vectors given in . Sketch .    Although it isn't too hard to add and scale vectors visually, it'll be beneficial to do the same algebraically. We can do so by breaking a vector down into its components . Consider a vector in in , and suppose if we move it to the origin then the tip of the vector is at the point . Then the components of are and , and we write   Note the use of brackets here, since technically we are saying that the vector is distinct from the point , even though they are closely related. We say that the position vector of a point is the vector whose components are the same as the coordinates of the point. Geometrically, the position vector of a point is the vector with its tail at the origin and its tip at .  So any vector in can be represented using components by . Similarly, any vector in can be represented as . Once you represent a vector in component form, addition and scalar multiplication is straightforward.   Vector addition with components   Let and . Find .    We can do all of the required arithmetic componentwise:     Finding magnitudes of vectors can also be done by applying the distance formula from to the components of the vectors. The magnitude of a vector is denoted by or . Given a vector its magnitude is .  For example, the magnitude of from the previous example is . Note that the magnitude of this vector (and any other) is necessarily nonnegative.   A vector equation   Let and . Let . Describe the set of all points that satisfy the equation .    This is a sphere of radius .     Finding components of vectors   Consider the points and . Find .    We want to find the components of the vector . We can do this by translating to the origin, which is done by subtracting from each coordinate of the corresponding coordinate of . So the vector is given by .    In general, given and the vector is given by    Properties of vector addition and scalar multiplication   vectors  properties of vector addition and scalar multiplication    Let be vectors and let be scalars. Then the following are true:    .                .              Basis vectors and unit vectors.  Every vector in can be written using three components: Each component corresponds to a coordinate axis, and we can rewrite as a linear combination of three different vectors, with each vector corresponding to a coordinate axis: . These vectors are important enough that we'll give them a name: the standard basis vectors .   Standard basis vectors   vectors  standard basis    The standard basis for is the set , where     As we've seen, every vector in can be expressed using only these three vectors. The standard basis has two important properties: it is perpendicular (also called orthogonal ) and every vector in the collection has magnitude . In other words, .  These vectors are essentially designed to capture the \"coordinate directions\", and are plotted below.      The standard basis.   This also leads us to our next definition.   Unit vectors   vectors  unit vectors    A vector is a unit vector if .    Unit vectors are useful if we just need to indicate a direction, and we don't care about magnitude. Every nonzero vector can be rescaled to a unit vector: just divide the vector by its norm.   Direction from one point to another   Consider the points and . Find the unit vector indicating the direction from to .    First, set Then the unit vector that gives the direction from to is given by      A vector equation for the unit sphere   Determine a vector equation for the unit sphere in .        Applications  Many physical quantities have both a direction and a magnitude, like velocity, acceleration and forces. Vectors are ideally suited to measure these quantities.   Weight of a chain   A still chain is fixed to two ends of a level divide. The tension of the chain at each fixed end can be represented by vectors pointing away from the chain. Call these tension forces and . Suppose we know that each force vector makes an angle of with the ground on either side of the chain's fixed ends, and that the magnitude of each tension is 43 . Use vector addition to find the weight of the chain.    Let denote the weight of the chain considered as a vector (so that it's pointing down). Since the chain is still, its resultant The sum of all forces acting on the chain. must be . So we can say that , or in other words .  What we need to find is , which we can do without too much trouble if we can rewrite the tension vectors in component form. In fact, we have So it follows that .  Therefore, the chain weighs .      "
 },
 {
   "id": "section-vectors-2-1",
@@ -4822,7 +4804,7 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "11.2.1",
   "title": "",
-  "body": "    A vector.  "
+  "body": "   A graphical representation of a vector as an arrow diagram with initial point and terminal point .   an arrow representing a vector    A vector.  "
 },
 {
   "id": "section-vectors-2-3",
@@ -4840,12 +4822,12 @@ var ptx_lunr_docs = [
   "type": "Figure",
   "number": "11.2.2",
   "title": "",
-  "body": "    Vector addition.  "
+  "body": "  graphical diagram representing vector addition   A pair of graphics demonstrating vector addition using triangles. Two vectors and are drawn facing different directions in the diagram on the right. In the diagram on the left, the tail of the vector is placed at the head of the vector , forming two sides of a triangle. The remaining side of the triangle is filled in and represents the vector .     Vector addition.  "
 },
 {
-  "id": "subsection-addition-and-scalar-multiplication-6",
+  "id": "subsection-addition-and-scalar-multiplication-1-6",
   "level": "2",
-  "url": "section-vectors.html#subsection-addition-and-scalar-multiplication-6",
+  "url": "section-vectors.html#subsection-addition-and-scalar-multiplication-1-6",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4857,22 +4839,22 @@ var ptx_lunr_docs = [
   "url": "section-vectors.html#example-vector-subtraction",
   "type": "Example",
   "number": "11.2.3",
-  "title": "Vector subtraction.",
-  "body": " Vector subtraction  Using the previous graph, we can compute . We just need to scale the vectors properly and then add to .  "
+  "title": "Vector subtraction..",
+  "body": " Vector subtraction.   Let and represent the same vectors given in . Sketch .   "
 },
 {
-  "id": "subsection-vector-components-2",
+  "id": "subsection-addition-and-scalar-multiplication-1-8",
   "level": "2",
-  "url": "section-vectors.html#subsection-vector-components-2",
+  "url": "section-vectors.html#subsection-addition-and-scalar-multiplication-1-8",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "components "
 },
 {
-  "id": "subsection-vector-components-3",
+  "id": "subsection-addition-and-scalar-multiplication-1-9",
   "level": "2",
-  "url": "section-vectors.html#subsection-vector-components-3",
+  "url": "section-vectors.html#subsection-addition-and-scalar-multiplication-1-9",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4885,7 +4867,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "11.2.4",
   "title": "Vector addition with components.",
-  "body": " Vector addition with components  Let and . Then   "
+  "body": " Vector addition with components   Let and . Find .    We can do all of the required arithmetic componentwise:    "
 },
 {
   "id": "example-a-vector-equation",
@@ -4894,7 +4876,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "11.2.5",
   "title": "A vector equation.",
-  "body": " A vector equation  We can use vectors to describe curves and surfaces. For example, let and . Let . Then the set of all points that satisfy the equation has a very nice description: it's just the sphere of radius centered at .  "
+  "body": " A vector equation   Let and . Let . Describe the set of all points that satisfy the equation .    This is a sphere of radius .   "
 },
 {
   "id": "example-finding-position-vectors",
@@ -4903,7 +4885,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "11.2.6",
   "title": "Finding components of vectors.",
-  "body": " Finding components of vectors  Consider the points and . We want to find the components of the vector . We can do this by translating to the origin, which is done by subtracting from each coordinate of the corresponding coordinate of . So the vector is given by   "
+  "body": " Finding components of vectors   Consider the points and . Find .    We want to find the components of the vector . We can do this by translating to the origin, which is done by subtracting from each coordinate of the corresponding coordinate of . So the vector is given by .   "
 },
 {
   "id": "theorem-properties-of-vector-addition-and-scalar-multiplication",
@@ -4911,17 +4893,17 @@ var ptx_lunr_docs = [
   "url": "section-vectors.html#theorem-properties-of-vector-addition-and-scalar-multiplication",
   "type": "Theorem",
   "number": "11.2.7",
-  "title": "Properties of Vector Addition and Scalar Multiplication.",
-  "body": " Properties of Vector Addition and Scalar Multiplication  vectors properties of vector addition and scalar multiplication   Let be vectors and let be scalars. Then the following are true:    .                .         "
+  "title": "Properties of vector addition and scalar multiplication.",
+  "body": " Properties of vector addition and scalar multiplication   vectors  properties of vector addition and scalar multiplication    Let be vectors and let be scalars. Then the following are true:    .                .         "
 },
 {
-  "id": "subsection-basis-vectors-and-unit-vectors-2",
+  "id": "subsection-basis-vectors-and-unit-vectors-1-2",
   "level": "2",
-  "url": "section-vectors.html#subsection-basis-vectors-and-unit-vectors-2",
+  "url": "section-vectors.html#subsection-basis-vectors-and-unit-vectors-1-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "linear combination "
+  "body": "linear combination standard basis vectors "
 },
 {
   "id": "definition-standard-basis-vectors",
@@ -4929,13 +4911,13 @@ var ptx_lunr_docs = [
   "url": "section-vectors.html#definition-standard-basis-vectors",
   "type": "Definition",
   "number": "11.2.8",
-  "title": "Standard Basis Vectors.",
-  "body": " Standard Basis Vectors  vectors standard basis   The standard basis for is the set , where    "
+  "title": "Standard basis vectors.",
+  "body": " Standard basis vectors   vectors  standard basis    The standard basis for is the set , where    "
 },
 {
-  "id": "subsection-basis-vectors-and-unit-vectors-6",
+  "id": "subsection-basis-vectors-and-unit-vectors-1-4",
   "level": "2",
-  "url": "section-vectors.html#subsection-basis-vectors-and-unit-vectors-6",
+  "url": "section-vectors.html#subsection-basis-vectors-and-unit-vectors-1-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4956,8 +4938,8 @@ var ptx_lunr_docs = [
   "url": "section-vectors.html#definition-unit-vectors",
   "type": "Definition",
   "number": "11.2.10",
-  "title": "Unit Vectors.",
-  "body": " Unit Vectors  vectors unit vectors   A vector is a unit vector if .   "
+  "title": "Unit vectors.",
+  "body": " Unit vectors   vectors  unit vectors    A vector is a unit vector if .   "
 },
 {
   "id": "example-direction-from-one-point-to-another",
@@ -4966,7 +4948,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "11.2.11",
   "title": "Direction from one point to another.",
-  "body": " Direction from one point to another  Consider the points and . Then we can find the unit vector indicating the direction from to . First, set   Then the unit vector that gives the direction from to is given by   "
+  "body": " Direction from one point to another   Consider the points and . Find the unit vector indicating the direction from to .    First, set Then the unit vector that gives the direction from to is given by    "
 },
 {
   "id": "example-a-vector-equation-for-the-unit-sphere",
@@ -4975,7 +4957,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "11.2.12",
   "title": "A vector equation for the unit sphere.",
-  "body": " A vector equation for the unit sphere  Using the concept of a unit vector, we can very easily describe the unit sphere The sphere of radius centered at the origin. using a vector equation. If we set , then the unit sphere is just the set of all solutions of   "
+  "body": " A vector equation for the unit sphere   Determine a vector equation for the unit sphere in .   "
 },
 {
   "id": "example-weight-of-a-chain",
@@ -4984,7 +4966,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "11.2.13",
   "title": "Weight of a chain.",
-  "body": " Weight of a chain  A still chain is fixed to two ends of a level divide. The tension of the chain at each fixed end can be represented by vectors pointing away from the chain. Call these tension forces and . Suppose we know that each force vector makes an angle of with the ground on either side of the chain's fixed ends, and that the magnitude of each tension is 43 . Then we can use vector addition to find the weight of the chain.  Let denote the weight of the chain considered as a vector (so that it's pointing down). Since the chain is still, its resultant The sum of all forces acting on the chain. must be . So we can say that   or in other words   What we need to find is , which we can do without too much trouble if we can rewrite the tension vectors in component form. In fact, we have   So it follows that   Therefore the chain weighs .  "
+  "body": " Weight of a chain   A still chain is fixed to two ends of a level divide. The tension of the chain at each fixed end can be represented by vectors pointing away from the chain. Call these tension forces and . Suppose we know that each force vector makes an angle of with the ground on either side of the chain's fixed ends, and that the magnitude of each tension is 43 . Use vector addition to find the weight of the chain.    Let denote the weight of the chain considered as a vector (so that it's pointing down). Since the chain is still, its resultant The sum of all forces acting on the chain. must be . So we can say that , or in other words .  What we need to find is , which we can do without too much trouble if we can rewrite the tension vectors in component form. In fact, we have So it follows that .  Therefore, the chain weighs .   "
 },
 {
   "id": "section-the-dot-product",
