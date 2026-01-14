@@ -4974,8 +4974,8 @@ var ptx_lunr_docs = [
   "url": "section-the-dot-product.html",
   "type": "Section",
   "number": "11.3",
-  "title": "The Dot Product",
-  "body": " The Dot Product   Definition and Properties of the Dot Product  Suppose we're given two vectors. What we'd like to do is to come up with a measure of how much these vectors overlap. Such a measure may be useful for determining if forces are too close together, for example. So consider two vectors and as in the following diagram.      Vector overlap.   One way we can measure how much and overlap is to find , or equivalently since this is larger if and are more closely aligned. We are carefully ignoring the case where and point in opposite directions... From , we know that   This simplifies out to   The only part of this that could possibly depend on how closely and overlap is the middle term . So we'll (optimistically... for now) take what's inside the parentheses and use it as the measure we're looking for.   The Dot Product  dot product definition   Let and . The dot product of with , denoted is given by     The dot product is also sometimes called the scalar product (since it always produces a scalar) or the inner product in other settings.   Computing dot products  Let and . Then   It also doesn't matter what order we take the vectors in for the dot product: we get the same answer regardless. However, it does matter that we only use two vectors. The dot product takes two vectors and gives a scalar. In other words, it is impossible to take the dot product of more than two vectors at a time! So quantities such as are not meaningful.    Properties of the Dot Product  dot product properties   Let and be vectors, and let be a scalar. Then the following properties hold:                     Our goal was to define a measure for how much two given vectors align, or are correlated. The following result tells us that the dot product is actually a reasonable measure of this.   Geometry of the Dot Product  dot product geometry   Let and denote vectors, and let denote the angle between these vectors if the tails of both are moved to the origin. Then      Place both vectors and at the origin, and then draw the vector from the tip of to the tip of , like so:      Geometry of the dot product.   Then and form a triangle. We want to relate the dot product with the angle , so we'll start by using the Law of Cosines to get an equation involving . The Law of Cosines states that   Here's where the dot product comes in. Each squared magnitude can be rewritten as a dot product using , so in particular we have   Plugging this into gives us the following:   Which finally simplifies down to     It's usually easier to use to compute dot products. However, gives us extremely useful geometric information about the dot product. For example, we get the following result very quickly: two vectors and are perpendicular if and only if .    Checking orthogonality using the dot product  Let and Then we can say right away that these vectors are not orthogonal to each other since .    Finding angles between lines  Consider the lines and in , plotted below:      Angle between lines.   Suppose we want to find the acute angle these lines make with each other. We can do so by finding vectors and that point in the same directions as these lines. We'll start by finding the vector which points in the same direction as the line . To do so, we need two points on this line: and . So we can take to be   Similarly, since and both lie on , we can take   Then by we know that   So the acute angle between these two lines is given by      Projections  Consider two vectors and arranged as follows:      The vectors and .   Now draw a line from the tip of to the point on that is closest to the tip of ; such a line must be orthogonal to . This point on defines a new vector that we call the projection of onto ; we denote this vector by .      The projection of onto .   The projection can be thought of as the vector parallel to that best approximates . What we'd like to do now is to actually find a formula for this projection. If we let denote the acute angle between the vectors and , then   Since the projection must also be parallel to , then this is enough information to state exactly what should be: We can simplify this formula somewhat by making use of .   Vector Projection Formulas  vectors vector projection   Let and denote vectors in or . Then the projection of onto is given by      Finding vector projections  Let and . Then by the projection of onto is given by    Another example of vector projection is computing work done by a force. In particular, suppose we have a force and some displacement vector . We define the work done by along to be the product of the component of along times the distance moved. If we let denote the acute angle between and , then the work done is given by   which is exactly equal to by .   Finding work done by a force  Suppose a force moves a particle from the point to the point , where the force is measured in newtons and the distance in meters. We want to find the work done by this force on the particle. To do so, we need the displacement :   So the work done is   joules.    "
+  "title": "The dot product",
+  "body": " The dot product    Definition and properties of the dot product  Suppose we're given two vectors. What we'd like to do is to come up with a measure of how much these vectors overlap. Such a measure may be useful for determining if forces are too close together, for example. So consider two vectors and as in the following diagram.      Vector overlap.   One way we can measure how much and overlap is to find , or equivalently since this is larger if and are more closely aligned. We are carefully ignoring the case where and point in opposite directions... From , we know that .  This simplifies out to   The only part of this that could possibly depend on how closely and overlap is the middle term . So we'll (optimistically... for now) take what's inside the parentheses and use it as the measure we're looking for.   The dot product   dot product  definition    Let and . The dot product of with , denoted is given by     The dot product is also sometimes called the scalar product (since it always produces a scalar) or the inner product in other settings.   Computing dot products   Let and . Find and .    Then .  It also doesn't matter what order we take the vectors in for the dot product: we get the same answer regardless. However, it does matter that we only use two vectors. The dot product takes two vectors and gives a scalar. In other words, it is impossible to take the dot product of more than two vectors at a time! So quantities such as are not meaningful.     Properties of the dot product  dot product properties   Let and be vectors, and let be a scalar. Then the following properties hold:                     Our goal was to define a measure for how much two given vectors align, or are correlated. The following result tells us that the dot product is actually a reasonable measure of this.   Geometry of the dot product   dot product  geometry    Let and denote vectors, and let denote the angle between these vectors if the tails of both are moved to the origin. Then .    Place both vectors and at the origin, and then draw the vector from the tip of to the tip of , like so:      Geometry of the dot product.   Then and form a triangle. We want to relate the dot product with the angle , so we'll start by using the Law of Cosines to get an equation involving . The Law of Cosines states that .  Here's where the dot product comes in. Each squared magnitude can be rewritten as a dot product using , so in particular we have .  Plugging this into gives us the following: Which finally simplifies down to .     It's usually easier to use to compute dot products. However, gives us extremely useful geometric information about the dot product. For example, we get the following result very quickly: two vectors and are perpendicular if and only if .    Checking orthogonality using the dot product   Determine if the vectors and are orthogonal to each other.    These vectors are not orthogonal.     Finding angles between lines   Consider the lines and in , plotted below:      Angle between lines.   Find the angle these lines make with each other.    Find the acute angle these lines make with each other. We can do so by finding vectors and that point in the same directions as these lines. We'll start by finding the vector which points in the same direction as the line . To do so, we need two points on this line: and . So we can take to be .  Similarly, since and both lie on , we can take . Then by we know that . So the acute angle between these two lines is given by .        Projections  Consider two vectors and arranged as follows:      The vectors and .   Now draw a line from the tip of to the point on that is closest to the tip of ; such a line must be orthogonal to . This point on defines a new vector that we call the projection of onto ; we denote this vector by .      The projection of onto .   The projection can be thought of as the vector parallel to that best approximates . What we'd like to do now is to actually find a formula for this projection. If we let denote the acute angle between the vectors and , then .  Since the projection must also be parallel to , then this is enough information to state exactly what should be: We can simplify this formula somewhat by making use of .   Vector projection formulas   vectors  vector projection    Let and denote vectors in or . Then the projection of onto is given by .     Finding vector projections  Let and . Find .   By the projection of onto is given by .    Another example of vector projection is computing work done by a force. In particular, suppose we have a force and some displacement vector . We define the work done by along to be the product of the component of along times the distance moved. If we let denote the acute angle between and , then the work done is given by , which is exactly equal to by .   Finding work done by a force   Suppose a force moves a particle from the point to the point , where the force is measured in newtons and the distance in meters. Find the work done by this force on the particle.    The work done is joules.      "
 },
 {
   "id": "figure-vector-dot-product",
@@ -4992,13 +4992,13 @@ var ptx_lunr_docs = [
   "url": "section-the-dot-product.html#definition-the-dot-product",
   "type": "Definition",
   "number": "11.3.2",
-  "title": "The Dot Product.",
-  "body": " The Dot Product  dot product definition   Let and . The dot product of with , denoted is given by    "
+  "title": "The dot product.",
+  "body": " The dot product   dot product  definition    Let and . The dot product of with , denoted is given by    "
 },
 {
-  "id": "subsection-definition-and-properties-of-the-dot-product-10",
+  "id": "subsection-definition-and-properties-of-the-dot-product-1-8",
   "level": "2",
-  "url": "section-the-dot-product.html#subsection-definition-and-properties-of-the-dot-product-10",
+  "url": "section-the-dot-product.html#subsection-definition-and-properties-of-the-dot-product-1-8",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -5011,7 +5011,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "11.3.3",
   "title": "Computing dot products.",
-  "body": " Computing dot products  Let and . Then   It also doesn't matter what order we take the vectors in for the dot product: we get the same answer regardless. However, it does matter that we only use two vectors. The dot product takes two vectors and gives a scalar. In other words, it is impossible to take the dot product of more than two vectors at a time! So quantities such as are not meaningful.  "
+  "body": " Computing dot products   Let and . Find and .    Then .  It also doesn't matter what order we take the vectors in for the dot product: we get the same answer regardless. However, it does matter that we only use two vectors. The dot product takes two vectors and gives a scalar. In other words, it is impossible to take the dot product of more than two vectors at a time! So quantities such as are not meaningful.   "
 },
 {
   "id": "theorem-properties-of-the-dot-product",
@@ -5019,8 +5019,8 @@ var ptx_lunr_docs = [
   "url": "section-the-dot-product.html#theorem-properties-of-the-dot-product",
   "type": "Theorem",
   "number": "11.3.4",
-  "title": "Properties of the Dot Product.",
-  "body": " Properties of the Dot Product  dot product properties   Let and be vectors, and let be a scalar. Then the following properties hold:                    "
+  "title": "Properties of the dot product.",
+  "body": " Properties of the dot product  dot product properties   Let and be vectors, and let be a scalar. Then the following properties hold:                    "
 },
 {
   "id": "theorem-geometry-of-the-dot-product",
@@ -5028,22 +5028,13 @@ var ptx_lunr_docs = [
   "url": "section-the-dot-product.html#theorem-geometry-of-the-dot-product",
   "type": "Theorem",
   "number": "11.3.5",
-  "title": "Geometry of the Dot Product.",
-  "body": " Geometry of the Dot Product  dot product geometry   Let and denote vectors, and let denote the angle between these vectors if the tails of both are moved to the origin. Then    "
+  "title": "Geometry of the dot product.",
+  "body": " Geometry of the dot product   dot product  geometry    Let and denote vectors, and let denote the angle between these vectors if the tails of both are moved to the origin. Then .    Place both vectors and at the origin, and then draw the vector from the tip of to the tip of , like so:      Geometry of the dot product.   Then and form a triangle. We want to relate the dot product with the angle , so we'll start by using the Law of Cosines to get an equation involving . The Law of Cosines states that .  Here's where the dot product comes in. Each squared magnitude can be rewritten as a dot product using , so in particular we have .  Plugging this into gives us the following: Which finally simplifies down to .   "
 },
 {
-  "id": "subsection-definition-and-properties-of-the-dot-product-15",
+  "id": "subsection-definition-and-properties-of-the-dot-product-1-13",
   "level": "2",
-  "url": "section-the-dot-product.html#subsection-definition-and-properties-of-the-dot-product-15",
-  "type": "Proof",
-  "number": "1",
-  "title": "",
-  "body": " Place both vectors and at the origin, and then draw the vector from the tip of to the tip of , like so:      Geometry of the dot product.   Then and form a triangle. We want to relate the dot product with the angle , so we'll start by using the Law of Cosines to get an equation involving . The Law of Cosines states that   Here's where the dot product comes in. Each squared magnitude can be rewritten as a dot product using , so in particular we have   Plugging this into gives us the following:   Which finally simplifies down to   "
-},
-{
-  "id": "subsection-definition-and-properties-of-the-dot-product-16",
-  "level": "2",
-  "url": "section-the-dot-product.html#subsection-definition-and-properties-of-the-dot-product-16",
+  "url": "section-the-dot-product.html#subsection-definition-and-properties-of-the-dot-product-1-13",
   "type": "Remark",
   "number": "11.3.7",
   "title": "",
@@ -5056,7 +5047,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "11.3.8",
   "title": "Checking orthogonality using the dot product.",
-  "body": " Checking orthogonality using the dot product  Let and Then we can say right away that these vectors are not orthogonal to each other since .  "
+  "body": " Checking orthogonality using the dot product   Determine if the vectors and are orthogonal to each other.    These vectors are not orthogonal.   "
 },
 {
   "id": "example-finding-angles-between-lines",
@@ -5065,7 +5056,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "11.3.9",
   "title": "Finding angles between lines.",
-  "body": " Finding angles between lines  Consider the lines and in , plotted below:      Angle between lines.   Suppose we want to find the acute angle these lines make with each other. We can do so by finding vectors and that point in the same directions as these lines. We'll start by finding the vector which points in the same direction as the line . To do so, we need two points on this line: and . So we can take to be   Similarly, since and both lie on , we can take   Then by we know that   So the acute angle between these two lines is given by   "
+  "body": " Finding angles between lines   Consider the lines and in , plotted below:      Angle between lines.   Find the angle these lines make with each other.    Find the acute angle these lines make with each other. We can do so by finding vectors and that point in the same directions as these lines. We'll start by finding the vector which points in the same direction as the line . To do so, we need two points on this line: and . So we can take to be .  Similarly, since and both lie on , we can take . Then by we know that . So the acute angle between these two lines is given by .   "
 },
 {
   "id": "figure-orthogonal-projection-1",
@@ -5077,9 +5068,9 @@ var ptx_lunr_docs = [
   "body": "    The vectors and .  "
 },
 {
-  "id": "subsection-projections-4",
+  "id": "subsection-projections-1-4",
   "level": "2",
-  "url": "section-the-dot-product.html#subsection-projections-4",
+  "url": "section-the-dot-product.html#subsection-projections-1-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -5100,8 +5091,8 @@ var ptx_lunr_docs = [
   "url": "section-the-dot-product.html#theorem-vector-projection-formulas",
   "type": "Theorem",
   "number": "11.3.13",
-  "title": "Vector Projection Formulas.",
-  "body": " Vector Projection Formulas  vectors vector projection   Let and denote vectors in or . Then the projection of onto is given by    "
+  "title": "Vector projection formulas.",
+  "body": " Vector projection formulas   vectors  vector projection    Let and denote vectors in or . Then the projection of onto is given by .   "
 },
 {
   "id": "example-finding-vector-projections",
@@ -5110,7 +5101,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "11.3.14",
   "title": "Finding vector projections.",
-  "body": " Finding vector projections  Let and . Then by the projection of onto is given by   "
+  "body": " Finding vector projections  Let and . Find .   By the projection of onto is given by .   "
 },
 {
   "id": "example-finding-work-done-by-a-force",
@@ -5119,7 +5110,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "11.3.15",
   "title": "Finding work done by a force.",
-  "body": " Finding work done by a force  Suppose a force moves a particle from the point to the point , where the force is measured in newtons and the distance in meters. We want to find the work done by this force on the particle. To do so, we need the displacement :   So the work done is   joules.  "
+  "body": " Finding work done by a force   Suppose a force moves a particle from the point to the point , where the force is measured in newtons and the distance in meters. Find the work done by this force on the particle.    The work done is joules.   "
 },
 {
   "id": "section-the-cross-product",

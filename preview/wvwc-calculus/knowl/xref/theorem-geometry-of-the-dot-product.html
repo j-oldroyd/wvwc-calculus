@@ -18,16 +18,63 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<article class="theorem theorem-like"><h4 class="heading">
-<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Geometry of the Dot Product.</span>
-</h4>
-<div class="para">Let <span class="process-math">\(\mathbf{a}\)</span> and <span class="process-math">\(\mathbf{b}\)</span> denote vectors, and let <span class="process-math">\(0\leq\theta\leq\pi\)</span> denote the angle between these vectors if the tails of both are moved to the origin. Then<div class="autopermalink" data-description="Paragraph"><a href="#theorem-geometry-of-the-dot-product-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
+<article class="theorem theorem-like"><h5 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Geometry of the dot product.</span>
+</h5>
+<div class="para logical">
+<div class="para">Let <span class="process-math">\(\mathbf{a}\)</span> and <span class="process-math">\(\mathbf{b}\)</span> denote vectors, and let <span class="process-math">\(0\leq\theta\leq\pi\)</span> denote the angle between these vectors if the tails of both are moved to the origin. Then</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathbf{a}\cdot\mathbf{b} = \norm{\mathbf{a}}\norm{\mathbf{b}}\cos\theta.
+\mathbf{a}\cdot\mathbf{b} =
+\norm{\mathbf{a}}\norm{\mathbf{b}}\cos\theta\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Theorem 11.3.5: Geometry of the Dot Product"><a href="#theorem-geometry-of-the-dot-product" title="Copy heading and permalink for Theorem 11.3.5: Geometry of the Dot Product" aria-label="Copy heading and permalink for Theorem 11.3.5: Geometry of the Dot Product">🔗</a></div></article><span class="incontext"><a class="internal" href="section-the-dot-product.html#theorem-geometry-of-the-dot-product">in-context</a></span>
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-geometry-of-the-dot-product-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 11.3.5: Geometry of the dot product"><a href="#theorem-geometry-of-the-dot-product" title="Copy heading and permalink for Theorem 11.3.5: Geometry of the dot product" aria-label="Copy heading and permalink for Theorem 11.3.5: Geometry of the dot product">🔗</a></div></article><details class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h5 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h5></summary><article class="hiddenproof knowl__content"><div class="para">Place both vectors <span class="process-math">\(\mathbf{a}\)</span> and <span class="process-math">\(\mathbf{b}\)</span> at the origin, and then draw the vector <span class="process-math">\(\mathbf{a}-\mathbf{b}\)</span> from the tip of <span class="process-math">\(\mathbf{b}\)</span> to the tip of <span class="process-math">\(\mathbf{a}\text{,}\)</span> like so:<div class="autopermalink" data-description="Paragraph"><a href="#theorem-geometry-of-the-dot-product-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="generated/latex-image/image-dot-product-geometry.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">11.3.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Geometry of the dot product.<div class="autopermalink" data-description="Figure 11.3.6"><a href="#figure-dot-product-geometry" title="Copy heading and permalink for Figure 11.3.6" aria-label="Copy heading and permalink for Figure 11.3.6">🔗</a></div></figcaption></figure><div class="para logical">
+<div class="para">Then <span class="process-math">\(\mathbf{a},\mathbf{b}\)</span> and <span class="process-math">\(\mathbf{a}-\mathbf{b}\)</span> form a triangle. We want to relate the dot product <span class="process-math">\(\mathbf{a}\cdot\mathbf{b}\)</span> with the angle <span class="process-math">\(\theta\text{,}\)</span> so we’ll start by using the Law of Cosines to get an equation involving <span class="process-math">\(\theta\text{.}\)</span> The Law of Cosines states that</div>
+<div class="displaymath process-math">
+\begin{equation}
+\norm{\mathbf{a}-\mathbf{b}}^{2}
+= \norm{\mathbf{a}}^{2}+\norm{\mathbf{b}}^{2}
+-2\norm{\mathbf{a}}\norm{\mathbf{b}}\cos\theta\text{.}\tag{11.3.1}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-geometry-of-the-dot-product-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">Here’s where the dot product comes in. Each squared magnitude can be rewritten as a dot product using <a href="section-the-dot-product.html#theorem-properties-of-the-dot-product" class="xref" data-knowl="./knowl/xref/theorem-properties-of-the-dot-product.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 11.3.4: Properties of the dot product">Theorem 11.3.4</a>, so in particular we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-properties-of-the-dot-product.html">
+\begin{equation*}
+\norm{\mathbf{a}-\mathbf{b}}^{2} =
+(\mathbf{a}-\mathbf{b})\cdot(\mathbf{a}-\mathbf{b}) =
+\norm{\mathbf{a}}^{2}-2(\mathbf{a}\cdot\mathbf{b}) +
+\norm{\mathbf{b}}^{2}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-geometry-of-the-dot-product-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">Plugging this into <a href="section-the-dot-product.html#equation-law-of-cosines" class="xref" data-knowl="./knowl/xref/equation-law-of-cosines.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 11.3.1">(11.3.1)</a> gives us the following:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/equation-law-of-cosines.html">
+\begin{equation*}
+\norm{\mathbf{a}}^{2}-2(\mathbf{a}\cdot\mathbf{b})+\norm{\mathbf{b}}^{2}
+= \norm{\mathbf{a}}^{2}+\norm{\mathbf{b}}^{2} -
+2\norm{\mathbf{a}}\norm{\mathbf{b}}\cos\theta
+\end{equation*}
+</div>
+<div class="para">Which finally simplifies down to</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/equation-law-of-cosines.html">
+\begin{equation*}
+\mathbf{a}\cdot\mathbf{b} =
+\norm{\mathbf{a}}\norm{\mathbf{b}}\cos\theta\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#theorem-geometry-of-the-dot-product-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 11.3.5.1"><a href="#theorem-geometry-of-the-dot-product-4" title="Copy heading and permalink for Proof 11.3.5.1" aria-label="Copy heading and permalink for Proof 11.3.5.1">🔗</a></div></article></details><span class="incontext"><a class="internal" href="section-the-dot-product.html#theorem-geometry-of-the-dot-product">in-context</a></span>
 </body>
 </html>
