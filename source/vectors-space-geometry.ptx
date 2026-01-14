@@ -710,15 +710,19 @@
 <section xml:id="section-the-dot-product">
   <title>The Dot Product</title>
   <subsection xml:id="subsection-definition-and-properties-of-the-dot-product">
-    <title>Definition and Properties of the Dot Product</title>
+    <handout>
+    <title>Definition and properties of the dot product</title>
     <p>
-      Suppose we're given two vectors. What we'd like to do is to come up with a measure of how much these vectors overlap.
-      Such a measure may be useful for determining if forces are too close together, for example.
-      So consider two vectors <m>\mathbf{x} = \dotprod{x_{1},y_{1},z_{1}}</m> and <m>\mathbf{y} = \dotprod{x_{2},y_{2},z_{2}}</m> as in the following diagram.
+      Suppose we're given two vectors. What we'd like to do is to come
+      up with a measure of how much these vectors overlap.  Such a
+      measure may be useful for determining if forces are too close
+      together, for example.  So consider two vectors <m>\mathbf{x} =
+      \dotprod{x_{1},y_{1},z_{1}}</m> and <m>\mathbf{y} =
+      \dotprod{x_{2},y_{2},z_{2}}</m> as in the following diagram.
     </p>
     <figure xml:id="figure-vector-dot-product">
       <image xml:id="image-vector-dot-product" width="40%">
-        <latex-image><![CDATA[
+        <latex-image>
           \begin{tikzpicture}
           \begin{axis}[xmin=-7,ymin=-7,xmax=7,ymax=7, hide axis]
           \coordinate (O) at (0,0);
@@ -729,7 +733,6 @@
           \draw[->] (1,1)--($(1,1)+(y)$) node[above]{$\mathbf{y}$};
           \end{axis}
           \end{tikzpicture}
-          ]]>
         </latex-image>
       </image>
       <caption>Vector overlap.</caption>
@@ -743,42 +746,76 @@
       aligned.<fn>We are carefully ignoring the case where
       <m>\mathbf{x}</m> and <m>\mathbf{y}</m> point in opposite
       directions...</fn> From <xref ref="section-vectors" text="title"
-      />, we know that
+      />, we know that <me>\norm{\mathbf{x}+\mathbf{y}}^{2} =
+      (x_{1}+x_{2})^{2} + (y_{1}+y_{2})^{2} + (z_{1}+z_{2})^{2}</me>.
     </p>
-    <me>\norm{\mathbf{x}+\mathbf{y}}^{2} = (x_{1}+x_{2})^{2} + (y_{1}+y_{2})^{2} + (z_{1}+z_{2})^{2}.</me>
     <p>
       This simplifies out to
-    </p>
     <md>
-      <mrow>\norm{\mathbf{x}+\mathbf{y}}^{2} &amp; = (x_{1}+x_{2})^{2} + (y_{1}+y_{2})^{2} + (z_{1}+z_{2})^{2} </mrow>
-      <mrow> &amp; = (x_{1}^{2}+y_{1}^{2}+z_{1}^{2}) + 2(x_{1}x_{2} + y_{1}y_{2} + z_{1}z_{2}) + (x_{2}^{2} + y_{2}^{2} + z_{2}^{2}) </mrow>
-      <mrow> &amp; = \norm{\mathbf{x}}^{2} + 2(x_{1}x_{2} + y_{1}y_{2} + z_{1}z_{2}) + \norm{\mathbf{y}}^{2}. </mrow>
+      <mrow>\norm{\mathbf{x}+\mathbf{y}}^{2} &amp; = (x_{1}+x_{2})^{2}
+      + (y_{1}+y_{2})^{2} + (z_{1}+z_{2})^{2} </mrow> <mrow> &amp; =
+      (x_{1}^{2}+y_{1}^{2}+z_{1}^{2}) + 2(x_{1}x_{2} + y_{1}y_{2} +
+      z_{1}z_{2}) + (x_{2}^{2} + y_{2}^{2} + z_{2}^{2}) </mrow> <mrow>
+      &amp; = \norm{\mathbf{x}}^{2} + 2(x_{1}x_{2} + y_{1}y_{2} +
+      z_{1}z_{2}) + \norm{\mathbf{y}}^{2} </mrow>.
     </md>
+    </p>
     <p>
-      The only part of this that could possibly depend on how closely <m>\mathbf{x}</m> and <m>\mathbf{y}</m> overlap is the middle term <m>2(x_{1}x_{2}+y_{1}y_{2}+z_{1}z_{2})</m>. So we'll (optimistically... for now) take what's inside the parentheses and use it as the measure we're looking for.
+      The only part of this that could possibly depend on how closely
+      <m>\mathbf{x}</m> and <m>\mathbf{y}</m> overlap is the middle
+      term <m>2(x_{1}x_{2}+y_{1}y_{2}+z_{1}z_{2})</m>. So we'll
+      (optimistically... for now) take what's inside the parentheses
+      and use it as the measure we're looking for.
     </p>
     <definition xml:id="definition-the-dot-product">
-      <title>The Dot Product</title>
-      <idx><h>dot product</h><h>definition</h></idx>
+      <title>The dot product</title>
+      <idx>
+        <h>dot product</h>
+        <h>definition</h>
+      </idx>
       <statement>
         <p>
-          Let <m>\mathbf{x} = \dotprod{x_{1},y_{1},z_{1}}</m> and <m>\mathbf{y} = \dotprod{x_{2},y_{2},z_{2}}</m>. The <term>dot product</term> of <m>\mathbf{x}</m> with <m>\mathbf{y}</m>, denoted <m>\mathbf{x}\cdot\mathbf{y},</m> is given by
+          Let <m>\mathbf{x} = \dotprod{x_{1},y_{1},z_{1}}</m> and
+          <m>\mathbf{y} = \dotprod{x_{2},y_{2},z_{2}}</m>. The
+          <term>dot product</term> of <m>\mathbf{x}</m> with
+          <m>\mathbf{y}</m>, denoted <m>\mathbf{x}\cdot\mathbf{y},</m>
+          is given by
         </p>
         <me>\mathbf{x}\cdot\mathbf{y} = x_{1}x_{2}+y_{1}y_{2}+z_{1}z_{2}.</me>
       </statement>
     </definition>
     <p>
-      The dot product is also sometimes called the <term>scalar product</term> (since it always produces a scalar) or the <term>inner product</term> in other settings.
+      The dot product is also sometimes called the <term>scalar
+      product</term> (since it always produces a scalar) or the
+      <term>inner product</term> in other settings.
     </p>
-    <example xml:id="example-computing-dot-products">
+    <example xml:id="example-computing-dot-products" workspace="2in">
       <title>Computing dot products</title>
-      <p>
-        Let <m>\mathbf{x} = \dotprod{1,3,-1},\mathbf{y} = \dotprod{-3,1,0}</m> and <m>\mathbf{z} = \dotprod{1,1,1}</m>. Then
-      </p>
-      <me>\mathbf{x}\cdot\mathbf{z} = 1+3-1 = 3\quad\text{and}\quad\mathbf{x}\cdot\mathbf{y} = -3+3+0 = 0.</me>
-      <p>
-        It also doesn't matter what order we take the vectors in for the dot product: we get the same answer regardless. However, it does matter that we only use two vectors. The dot product takes two vectors and gives a scalar. In other words, <em>it is impossible to take the dot product of more than two vectors at a time!</em> So quantities such as <m>\mathbf{x}\cdot\mathbf{y}\cdot\mathbf{z}</m> are not meaningful.
-      </p>
+      <statement>
+        <p>
+          Let <m>\mathbf{x} = \dotprod{1,3,-1},\mathbf{y} =
+          \dotprod{-3,1,0}</m> and <m>\mathbf{z} =
+          \dotprod{1,1,1}</m>.  Find <m>\mathbf{x}\cdot\mathbf{y}</m>
+          and <m>\mathbf{x}\cdot\mathbf{z}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Then <me>\mathbf{x}\cdot\mathbf{z} =
+          1+3-1 = 3\quad\text{and}\quad\mathbf{x}\cdot\mathbf{y} =
+          -3+3+0 = 0</me>.
+        </p>
+        <p>
+          It also doesn't matter what order we take the vectors in for
+          the dot product: we get the same answer regardless. However,
+          it does matter that we only use two vectors. The dot product
+          takes two vectors and gives a scalar. In other words, <em>it
+          is impossible to take the dot product of more than two vectors
+          at a time!</em> So quantities such as
+          <m>\mathbf{x}\cdot\mathbf{y}\cdot\mathbf{z}</m> are not
+          meaningful.
+        </p>
+      </solution>
     </example>
     <theorem xml:id="theorem-properties-of-the-dot-product">
       <title>Properties of the Dot Product</title>
@@ -821,11 +858,14 @@
     </theorem>
     <proof>
       <p>
-        Place both vectors <m>\mathbf{a}</m> and <m>\mathbf{b}</m> at the origin, and then draw the vector <m>\mathbf{a}-\mathbf{b}</m> from the tip of <m>\mathbf{b}</m> to the tip of <m>\mathbf{a}</m>, like so:
+        Place both vectors <m>\mathbf{a}</m> and <m>\mathbf{b}</m> at
+        the origin, and then draw the vector
+        <m>\mathbf{a}-\mathbf{b}</m> from the tip of <m>\mathbf{b}</m>
+        to the tip of <m>\mathbf{a}</m>, like so:
       </p>
       <figure xml:id="figure-dot-product-geometry">
         <image xml:id="image-dot-product-geometry" width="60%">
-          <latex-image><![CDATA[
+          <latex-image>
             \begin{tikzpicture} [axis/.style={->,blue,thick},
             vector/.style={-stealth,red,very thick},
             vector guide/.style={dashed,red,thick}]
@@ -860,88 +900,133 @@
 
             \end{axis}
             \end{tikzpicture}
-            ]]>
           </latex-image>
         </image>
         <caption>Geometry of the dot product.</caption>
       </figure>
       <p>
-        Then <m>\mathbf{a},\mathbf{b}</m> and <m>\mathbf{a}-\mathbf{b}</m> form a triangle. We want to relate the dot product <m>\mathbf{a}\cdot\mathbf{b}</m> with the angle <m>\theta</m>, so we'll start by using the Law of Cosines to get an equation involving <m>\theta</m>. The Law of Cosines states that
+        Then <m>\mathbf{a},\mathbf{b}</m> and
+        <m>\mathbf{a}-\mathbf{b}</m> form a triangle. We want to
+        relate the dot product <m>\mathbf{a}\cdot\mathbf{b}</m> with
+        the angle <m>\theta</m>, so we'll start by using the Law of
+        Cosines to get an equation involving <m>\theta</m>. The Law of
+        Cosines states that <men
+        xml:id="equation-law-of-cosines">\norm{\mathbf{a}-\mathbf{b}}^{2}
+        = \norm{\mathbf{a}}^{2}+\norm{\mathbf{b}}^{2}
+        -2\norm{\mathbf{a}}\norm{\mathbf{b}}\cos\theta</men>.
       </p>
-      <men xml:id="equation-law-of-cosines">\norm{\mathbf{a}-\mathbf{b}}^{2} = \norm{\mathbf{a}}^{2}+\norm{\mathbf{b}}^{2} -2\norm{\mathbf{a}}\norm{\mathbf{b}}\cos\theta.</men>
       <p>
-        Here's where the dot product comes in. Each squared magnitude can be rewritten as a dot product using <xref ref="theorem-properties-of-the-dot-product" text="type-global" />, so in particular we have
+        Here's where the dot product comes in. Each squared magnitude
+        can be rewritten as a dot product using <xref
+        ref="theorem-properties-of-the-dot-product" text="type-global"
+        />, so in particular we have
+        <me>\norm{\mathbf{a}-\mathbf{b}}^{2} =
+        (\mathbf{a}-\mathbf{b})\cdot(\mathbf{a}-\mathbf{b}) =
+        \norm{\mathbf{a}}^{2}-2(\mathbf{a}\cdot\mathbf{b}) +
+        \norm{\mathbf{b}}^{2}</me>.
       </p>
-      <me>\norm{\mathbf{a}-\mathbf{b}}^{2} = (\mathbf{a}-\mathbf{b})\cdot(\mathbf{a}-\mathbf{b}) = \norm{\mathbf{a}}^{2}-2(\mathbf{a}\cdot\mathbf{b}) + \norm{\mathbf{b}}^{2}.</me>
       <p>
-        Plugging this into <xref ref="equation-law-of-cosines" /> gives us the following:
+        Plugging this into <xref ref="equation-law-of-cosines" />
+        gives us the following:
+        <me>\norm{\mathbf{a}}^{2}-2(\mathbf{a}\cdot\mathbf{b})+\norm{\mathbf{b}}^{2}
+        = \norm{\mathbf{a}}^{2}+\norm{\mathbf{b}}^{2} -
+        2\norm{\mathbf{a}}\norm{\mathbf{b}}\cos\theta</me> Which
+        finally simplifies down to <me>\mathbf{a}\cdot\mathbf{b} =
+        \norm{\mathbf{a}}\norm{\mathbf{b}}\cos\theta</me>.
       </p>
-      <me>\norm{\mathbf{a}}^{2}-2(\mathbf{a}\cdot\mathbf{b})+\norm{\mathbf{b}}^{2} = \norm{\mathbf{a}}^{2}+\norm{\mathbf{b}}^{2} - 2\norm{\mathbf{a}}\norm{\mathbf{b}}\cos\theta</me>
-      <p>
-        Which finally simplifies down to
-      </p>
-      <me>\mathbf{a}\cdot\mathbf{b} = \norm{\mathbf{a}}\norm{\mathbf{b}}\cos\theta.</me>
     </proof>
     <remark>
       <p>
-        It's usually easier to use <xref ref="definition-the-dot-product" text="type-global" /> to compute dot products. However, <xref ref="theorem-geometry-of-the-dot-product" text="type-global" /> gives us extremely useful geometric information about the dot product. For example, we get the following result very quickly: two vectors <m>\mathbf{a}</m> and <m>\mathbf{b}</m> are perpendicular if and only if <m>\mathbf{a}\cdot\mathbf{b} = 0</m>.
+        It's usually easier to use <xref
+        ref="definition-the-dot-product" text="type-global" /> to
+        compute dot products. However, <xref
+        ref="theorem-geometry-of-the-dot-product" text="type-global"
+        /> gives us extremely useful geometric information about the
+        dot product. For example, we get the following result very
+        quickly: two vectors <m>\mathbf{a}</m> and <m>\mathbf{b}</m>
+        are perpendicular if and only if <m>\mathbf{a}\cdot\mathbf{b}
+        = 0</m>.
       </p>
     </remark>
     <example xml:id="example-checking-orthogonality-using-the-dot-product">
       <title>Checking orthogonality using the dot product</title>
-      <p>
-        Let <m>\mathbf{a} = \dotprod{0,1,-3}</m> and <m>\mathbf{b} = \dotprod{1,1,2}.</m> Then we can say right away that these vectors are <em>not</em> orthogonal to each other since <m>\mathbf{a}\cdot\mathbf{b} = -5 \neq 0</m>.
-      </p>
+      <statement>
+        <p>
+          Determine if the vectors <m>\mathbf{a} =
+          \dotprod{0,1,-3}</m> and <m>\mathbf{b} =
+          \dotprod{1,1,2}</m> are orthogonal to each other.
+        </p>
+      </statement>
+      <solution>
+        <p>
+           These vectors are not orthogonal.
+        </p>
+      </solution>
     </example>
     <example xml:id="example-finding-angles-between-lines">
       <title>Finding angles between lines</title>
-      <p>
-        Consider the lines <m>x+2y = 7</m> and <m>5x-y = 2</m> in <m>\RR^{2}</m>, plotted below:
-      </p>
-      <figure xml:id="figure-angle-between-lines">
-        <image xml:id="image-angle-between-lines" width="80%">
-          <latex-image><![CDATA[
-            \begin{tikzpicture}
-            \begin{axis}[myaxis, xmin = -6, xmax = 6, ymin = -6, ymax = 6, legend pos = south east]
-            \addplot[blue]{(7-x)/2};
-            \addlegendentry{$x+2y=7$};
-            \addplot[green!60!blue!40]{5*x+2};
-            \addlegendentry{$5x-y=2$};
+      <statement>
+        <p>
+          Consider the lines <m>x+2y = 7</m> and <m>5x-y = 2</m> in
+          <m>\RR^{2}</m>, plotted below:
+        </p>
+        <figure xml:id="figure-angle-between-lines">
+          <image xml:id="image-angle-between-lines" width="80%">
+            <latex-image>
+              \begin{tikzpicture}
+              \begin{axis}[myaxis, xmin = -6, xmax = 6, ymin = -6, ymax = 6, legend pos = south east]
+              \addplot[blue]{(7-x)/2};
+              \addlegendentry{$x+2y=7$};
+              \addplot[green!60!blue!40]{5*x+2};
+              \addlegendentry{$5x-y=2$};
 
-            % Intersection and related points
-            \coordinate (intersect) at (1,3);
-            \coordinate (p1) at (5,1);
-            \coordinate (p2) at (2,8);
+              % Intersection and related points
+              \coordinate (intersect) at (1,3);
+              \coordinate (p1) at (5,1);
+              \coordinate (p2) at (2,8);
 
-            % Draw angle between lines
-            \begin{scope}
-            \clip (p1)--(intersect)--(p2) -- cycle;
-            \draw[<->, dashed] (intersect) circle (4cm) node[right,xshift=-2pt,yshift=7.5pt]{$\theta$};
-            \end{scope}
-            \end{axis}
-            \end{tikzpicture}
-            ]]>
-          </latex-image>
-        </image>
-        <caption>Angle between lines.</caption>
-      </figure>
-      <p>
-        Suppose we want to find the acute angle <m>\theta</m> these lines make with each other. We can do so by finding vectors <m>\mathbf{a}</m> and <m>\mathbf{b}</m> that point in the same directions as these lines. We'll start by finding the vector <m>\mathbf{a}</m> which points in the same direction as the line <m>x+2y=7</m>. To do so, we need two points on this line: <m>A_{1} = (7,0)</m> and <m>A_{2} = (5,1)</m>. So we can take <m>\mathbf{a}</m> to be
-      </p>
-      <me>\mathbf{a} = \overrightarrow{A_{1}A_{2}} = \dotprod{-2,1}.</me>
-      <p>
-        Similarly, since <m>B_{1} = (0,-2)</m> and <m>B_{2} = (1,3)</m> both lie on <m>5x-y = 2</m>, we can take
-      </p>
-      <me>\mathbf{b} = \overrightarrow{B_{1}B_{2}} = \dotprod{1,5}.</me>
-      <p>
-        Then by <xref ref="theorem-geometry-of-the-dot-product" text="type-global" /> we know that
-      </p>
-      <me>\cos\theta = \frac{\mathbf{a}\cdot\mathbf{b}}{\norm{\mathbf{a}}\norm{\mathbf{b}}} = \frac{3}{\sqrt{5}\sqrt{26}} = \frac{3}{\sqrt{130}}.</me>
-      <p>
-        So the acute angle between these two lines is given by
-      </p>
-      <me>\theta = \cos^{-1}\frac{3}{\sqrt{130}}.</me>
+              % Draw angle between lines
+              \begin{scope}
+              \clip (p1)--(intersect)--(p2) -- cycle;
+              \draw[<->, dashed] (intersect) circle (4cm) node[right,xshift=-2pt,yshift=7.5pt]{$\theta$};
+              \end{scope}
+              \end{axis}
+              \end{tikzpicture}
+            </latex-image>
+          </image>
+          <caption>Angle between lines.</caption>
+        </figure>
+        <p>
+          Find the angle these lines make with each other.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Find the acute angle <m>\theta</m> these lines make with each
+          other. We can do so by finding vectors <m>\mathbf{a}</m> and
+          <m>\mathbf{b}</m> that point in the same directions as these
+          lines. We'll start by finding the vector <m>\mathbf{a}</m>
+          which points in the same direction as the line
+          <m>x+2y=7</m>. To do so, we need two points on this line:
+          <m>A_{1} = (7,0)</m> and <m>A_{2} = (5,1)</m>. So we can take
+          <m>\mathbf{a}</m> to be <me>\mathbf{a} =
+          \overrightarrow{A_{1}A_{2}} = \dotprod{-2,1}</me>.
+        </p>
+        <p>
+          Similarly, since <m>B_{1} = (0,-2)</m> and <m>B_{2} =
+          (1,3)</m> both lie on <m>5x-y = 2</m>, we can take
+          <me>\mathbf{b} = \overrightarrow{B_{1}B_{2}} =
+          \dotprod{1,5}</me>.  Then by <xref
+          ref="theorem-geometry-of-the-dot-product" text="type-global"
+          /> we know that <me>\cos\theta =
+          \frac{\mathbf{a}\cdot\mathbf{b}}{\norm{\mathbf{a}}\norm{\mathbf{b}}}
+          = \frac{3}{\sqrt{5}\sqrt{26}} = \frac{3}{\sqrt{130}}</me>.  So
+          the acute angle between these two lines is given by <me>\theta
+          = \cos^{-1}\frac{3}{\sqrt{130}}</me>.
+        </p>
+      </solution>
     </example>
+  </handout>
   </subsection>
   <subsection xml:id="subsection-projections">
     <title>Projections</title>
