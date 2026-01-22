@@ -136,7 +136,6 @@
         </example>
       </handout>
     </subsection>
-
     <subsection xml:id="subsection-the-distance-formula">
       <handout xml:id="handout-distance-formula">
         <title>The distance formula</title>
@@ -1189,202 +1188,251 @@
   </subsection>
 </section>
 <section xml:id="section-the-cross-product">
-  <title>The Cross Product</title>
+  <title>The cross product</title>
   <introduction>
     <p>
-      The dot product, and in particular <xref ref="theorem-geometry-of-the-dot-product" text="type-global" />, gives us a good way to tell if two vectors are perpendicular.
-      However, it says nothing about how to <em>construct</em> perpendicular vectors.
-      The next vector operation, the <term>cross product</term>, is the tool we'll use for that goal.
+      The dot product, and in particular <xref
+      ref="theorem-geometry-of-the-dot-product" text="type-global" />,
+      gives us a good way to tell if two vectors are perpendicular.
+      However, it says nothing about how to <em>construct</em>
+      perpendicular vectors.  The next vector operation, the
+      <term>cross product</term>, is the tool we'll use for that goal.
     </p>
   </introduction>
   <subsection xml:id="subsection-definition-and-properties-of-the-cross-product">
-    <title>Definition and Properties of the Cross Product</title>
-    <definition xml:id="definition-the-cross-product">
-      <idx><h>cross product</h><h>definition</h></idx>
-      <title>The Cross Product</title>
-      <statement>
-        <p>
-          Let <m>\mathbf{x} = \dotprod{x_{1},y_{1},z_{1}}</m> and <m>\mathbf{y} = \dotprod{x_{2},y_{2},z_{2}}</m>. Then the cross product of <m>\mathbf{x}</m> with <m>\mathbf{y}</m> is the new vector <m>\mathbf{x}\times\mathbf{y}</m> given by
-        </p>
-        <me>\mathbf{x}\times\mathbf{y} = \dotprod{y_{1}z_{2}-z_{1}y_{2}, z_{1}x_{2}-x_{1}z_{2}, x_{1}y_{2} - y_{1}x_{2}}.</me>
-      </statement>
-    </definition>
-    <example xml:id="example-cross-product-of-basis-vectors">
-      <title>Cross product of basis vectors</title>
+    <handout>
+      <title>Definition and properties of the cross product</title>
+      <definition xml:id="definition-the-cross-product">
+        <idx>
+          <h>cross product</h>
+          <h>definition</h>
+        </idx>
+        <title>The Cross Product</title>
+        <statement>
+          <p>
+            Let <m>\mathbf{x} = \dotprod{x_{1},y_{1},z_{1}}</m> and
+            <m>\mathbf{y} = \dotprod{x_{2},y_{2},z_{2}}</m>. Then the
+            cross product of <m>\mathbf{x}</m> with <m>\mathbf{y}</m> is
+            the new vector <m>\mathbf{x}\times\mathbf{y}</m> given by
+          </p>
+          <me>\mathbf{x}\times\mathbf{y} =
+          \dotprod{y_{1}z_{2}-z_{1}y_{2}, z_{1}x_{2}-x_{1}z_{2},
+          x_{1}y_{2} - y_{1}x_{2}}</me>.
+        </statement>
+      </definition>
+      <example xml:id="example-cross-product-of-basis-vectors" workspace="2in">
+        <title>Cross product of basis vectors</title>
+        <statement>
+          <p>
+            Compute <m>\mathbf{i}\times\mathbf{k}</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            We have <m>\mathbf{i}\times\mathbf{k} = -\mathbf{j}</m>.
+            Note that <m>\mathbf{k}\times\mathbf{i} = \mathbf{j}</m>, so
+            order matters.
+          </p>
+        </solution>
+      </example>
       <p>
-        Let's start by computing <m>\mathbf{i}\times\mathbf{k}</m> using the definition. If we do so, we have
+        This formula is a lot to remember, so it's beneficial to find
+        another way to express it. One way is by using
+        <term>determinants</term>. In particular, if <m>\mathbf{x} =
+        \dotprod{x_{1},y_{1},z_{1}}</m> and <m>\mathbf{y} =
+        \dotprod{x_{2},y_{2},z_{2}}</m>, then <men
+        xml:id="equation-cross-product-determinant">\mathbf{x}\times\mathbf{y}
+        = \left|\begin{array}{ccc} \mathbf{i} &amp; \mathbf{j} &amp;
+        \mathbf{k} \\ x_{1} &amp; y_{1} &amp; z_{1} \\ x_{2} &amp; y_{2}
+        &amp; z_{2} \end{array}\right|</men>.
       </p>
-      <me>\mathbf{i}\times\mathbf{k} = \dotprod{0,-1,0} = -\mathbf{j}.</me>
-      <p>
-        On the other hand, we also have <m>\mathbf{k}\times\mathbf{i} = \mathbf{j}</m>. This points out the very important fact that <em>order matters for cross products</em>.
-      </p>
-    </example>
-    <p>
-      This formula is a lot to remember, so it's beneficial to find another way to express it. One way is by using <term>determinants</term>. In particular, if <m>\mathbf{x} = \dotprod{x_{1},y_{1},z_{1}}</m> and <m>\mathbf{y} = \dotprod{x_{2},y_{2},z_{2}}</m>, then
-    </p>
-    <men xml:id="equation-cross-product-determinant">\mathbf{x}\times\mathbf{y} = \left|\begin{array}{ccc}
-      \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ x_{1} &amp; y_{1} &amp; z_{1} \\ x_{2} &amp; y_{2} &amp; z_{2} \end{array}\right|</men>
       <example xml:id="example-another-cross-product">
         <title>Another cross product</title>
-        <p>
-          <xref ref="equation-cross-product-determinant" text="type-global" /> is useful to use if you're dealing with vectors that aren't as simple as the basis vectors <m>\mathbf{i},\mathbf{j},\mathbf{k}</m>. For example, let <m>\mathbf{a} = \dotprod{-1,2,0}</m> and <m>\mathbf{b} = \dotprod{2,4,1}</m>. Then
-        </p>
-        <md>
-          <mrow>\mathbf{a}\times\mathbf{b} &amp; = \left|\begin{array}{ccc}
-            \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
-            -1 &amp; 2 &amp; 0 \\
-            2 &amp; 4 &amp; 1 \end{array}\right| </mrow>
-            <mrow> &amp; = \mathbf{i}\left|\begin{array}{cc} 2 &amp; 0 \\ 4 &amp; 1\end{array}\right| - \mathbf{j}\left|\begin{array}{cc} -1 &amp; 0 \\ 2 &amp; 1\end{array}\right| + \mathbf{k}\left|\begin{array}{cc} -1 &amp; 2 \\ 2 &amp; 4\end{array}\right|</mrow>
-            <mrow> &amp; = 2\mathbf{i}+\mathbf{j}-8\mathbf{k}</mrow>
-            <mrow> &amp; = \dotprod{2,1,-8}. </mrow>
-          </md>
-        </example>
-        <p>
-          Remember that we said the cross product is our tool for finding perpendicular vectors. So it might be nice if we made sure it actually did that. As a quick check, we'll compute <m>\mathbf{a}\cdot(\mathbf{a}\times\mathbf{b})</m> and <m>\mathbf{b}\cdot(\mathbf{a}\times\mathbf{b})</m>, with these vectors coming from <xref ref="equation-cross-product-determinant" text="type-global" />. If we do so, we obtain
-        </p>
+        <statement>
+          <p>
+            Let <m>\mathbf{a} = \dotprod{-1,2,0}</m> and <m>\mathbf{b}
+            = \dotprod{2,4,1}</m>.  Find <m>\mathbf{a}\times\mathbf{b}</m>.
+          </p>
+        </statement>
+        <solution>
+          <p>
+            <xref ref="equation-cross-product-determinant"
+                  text="type-global" /> is useful to use if you're dealing
+            with vectors that aren't as simple as the basis vectors
+            <m>\mathbf{i},\mathbf{j},\mathbf{k}</m>. For example,
+            <md>
+              <mrow>\mathbf{a}\times\mathbf{b} \amp =
+              \left|\begin{array}{ccc} \mathbf{i} \amp \mathbf{j} \amp
+              \mathbf{k} \\ -1 \amp 2 \amp 0 \\ 2 \amp 4 \amp 1
+              \end{array}\right| </mrow> <mrow> \amp =
+              \mathbf{i}\left|\begin{array}{cc} 2 \amp 0 \\ 4 \amp
+              1\end{array}\right| - \mathbf{j}\left|\begin{array}{cc}
+              -1 \amp 0 \\ 2 \amp 1\end{array}\right| +
+              \mathbf{k}\left|\begin{array}{cc} -1 \amp 2 \\ 2 \amp
+              4\end{array}\right|</mrow> <mrow> \amp =
+              2\mathbf{i}+\mathbf{j}-8\mathbf{k}</mrow> <mrow> \amp =
+              \dotprod{2,1,-8} </mrow> </md>.
+          </p>
+        </solution>
+      </example>
+      <p>
+        Remember that we said the cross product is our tool for
+        finding perpendicular vectors. So it might be nice if we made
+        sure it actually did that. As a quick check, we'll compute
+        <m>\mathbf{a}\cdot(\mathbf{a}\times\mathbf{b})</m> and
+        <m>\mathbf{b}\cdot(\mathbf{a}\times\mathbf{b})</m>, with these
+        vectors coming from <xref
+        ref="equation-cross-product-determinant" text="type-global"
+        />. If we do so, we obtain
         <md>
           <mrow>\mathbf{a}\cdot(\mathbf{a}\times\mathbf{b}) &amp; = -2 + 2 = 0 </mrow>
-          <mrow>\mathbf{b}\cdot(\mathbf{a}\times\mathbf{b}) &amp; = 4 + 4 - 8 = 0 </mrow>
+          <mrow>\mathbf{b}\cdot(\mathbf{a}\times\mathbf{b}) &amp; = 4 +
+          4 - 8 = 0 </mrow> </md>.
+      </p>
+      <p>
+        Since these dot products are zero, this means that both
+        <m>\mathbf{a}</m> and <m>\mathbf{b}</m> are perpendicular to
+        the cross product <m>\mathbf{a}\times\mathbf{b}</m>. This is
+        also true in general.
+      </p>
+      <theorem xml:id="theorem-orthogonality-of-the-cross-product">
+        <title>Orthogonality of the Cross Product</title>
+        <idx><h>cross product</h><h>orthogonality</h></idx>
+        <statement>
+          <p>
+            <m>\mathbf{a}\times\mathbf{b}</m> is always orthogonal to both <m>\mathbf{a}</m> and <m>\mathbf{b}</m>.
+          </p>
+        </statement>
+      </theorem>
+      <p>
+        So the cross product always produces orthogonal vectors. To determine the direction of the cross product <m>\mathbf{a}\times\mathbf{b}</m>, we use the <term>right-hand rule</term>: sweep your right hand from <m>\mathbf{a}</m> to <m>\mathbf{b}</m> and stick your thumb up. Then <m>\mathbf{a}\times\mathbf{b}</m> is parallel to your thumb.
+      </p>
+      <p>
+        We would also like to know the magnitude of the cross product. We can just compute it using <xref ref="definition-the-cross-product" text="type-global" /> and find the magnitude using our usual formula. If we do so, we obtain (after a lot of simplifying!)
+      </p>
+      <me>\norm{\mathbf{a}\times\mathbf{b}}^{2} = \norm{\mathbf{a}}^{2}\norm{\mathbf{b}}^{2}\sin^{2}\theta,</me>
+      <p>
+        which reduces to the following result.
+      </p>
+      <theorem xml:id="theorem-magnitude-of-the-cross-product">
+        <title>Magnitude of the Cross Product</title>
+        <idx><h>cross product</h><h>magnitude</h></idx>
+        <statement>
+          <p>
+            Let <m>\theta</m> denote the acute angle between the vectors <m>\mathbf{a}</m> and <m>\mathbf{b}</m>, so that <m>0\leq\theta\leq\pi</m>. Then
+          </p>
+          <me>\norm{\mathbf{a}\times\mathbf{b}} = \norm{\mathbf{a}}\norm{\mathbf{b}}\sin\theta.</me>
+        </statement>
+      </theorem>
+      <p>
+        So in particular, two nonzero vectors <m>\mathbf{x}</m> and <m>\mathbf{y}</m> are parallel (i.e. have <m>\theta=0</m>) if and only if <m>\mathbf{a}\times\mathbf{b} = \mathbf{0}</m>.
+      </p>
+
+      <example xml:id="example-testing-collinearity">
+        <title>Testing collinearity</title>
+        <p>
+          We say that three points <m>P,Q</m> and <m>R</m> are <term>collinear</term> if they all lie on the same line. Suppose we want to check if the points <m>P(-2,0,1), Q(-1,2,4)</m> and <m>R(1,6,10)</m> are collinear or not. How can we do so? If we start by defining
+        </p>
+        <me>\mathbf{u} = \vec{PQ} = \dotprod{1,2,3}\quad\text{and}\quad \mathbf{v} = \vec{QR} = \dotprod{2,4,6},</me>
+        <p>
+          then we can say that all three points lie on the same line if and only if <m>\mathbf{u}</m> and <m>\mathbf{v}</m> are parallel to each other. So we'll compute their cross product to get <m>\mathbf{u}\times\mathbf{v} = \mathbf{0}</m>. Since these vectors are parallel, then the three given points must lie on the same line.
+        </p>
+      </example>
+
+      <p>
+        Another important property of the magnitude of the cross product is the following: <m>\norm{\mathbf{a}\times\mathbf{b}}</m> is exactly equal to the area of the parallelogram determined by <m>\mathbf{a}</m> and <m>\mathbf{b}</m>.
+      </p>
+
+      <example xml:id="example-areas-of-triangles">
+        <title>Area of a triangle</title>
+        <p>
+          Suppose that we want the area of the triangle with vertices <m>P(1,2,-1), Q(2,0,0)</m> and <m>R(1,-1,-2)</m>. To start, we need to find vectors that determine the triangle. We can use
+        </p>
+        <me>\mathbf{u} = \vec{PQ} = \dotprod{1,-2,1}\quad\text{and}\quad\mathbf{v} = \vec{PR} = \dotprod{0,-3,-1}.</me>
+        <p>
+          Now, the triangle determined by <m>\mathbf{u}</m> and <m>\mathbf{v}</m> is precisely half of the parallelogram determined by these same vectors, so the area of this triangle is equal to <m>\frac{1}{2}\norm{\mathbf{u}\times\mathbf{v}}</m>. We can use Sage as in the cell below to find the cross product of these vectors. Doing so, we get <m>\mathbf{u}\times\mathbf{v} = \dotprod{5,1,-3}.</m> So the area of the triangle with vertices <m>P,Q</m> and <m>R</m> is
+        </p>
+        <md>
+          <mrow>\operatorname{area} \triangle PQR &amp; = \frac{1}{2}\norm{\mathbf{u}\times\mathbf{v}} </mrow>
+          <mrow> &amp; = \frac{1}{2}\norm{\dotprod{5,1,-3}} </mrow>
+          <mrow> &amp; = \frac{1}{2}\sqrt{35}. </mrow>
+        </md>
+      </example>
+      <sage>
+        <input>
+          u = vector([1,-2,1])
+          v = vector([0,-3,-1])
+          u.cross_product(v)
+        </input>
+        <output>
+          (5, 1, -3)
+        </output>
+      </sage>
+      <theorem xml:id="theorem-properties-of-the-cross-product">
+        <title>Properties of the Cross Product</title>
+        <idx><h>cross product</h><h>properties</h></idx>
+        <statement>
+          <p>
+            Let <m>\mathbf{a},\mathbf{b},\mathbf{c}</m> be vectors and <m>c</m> a scalar. Then the following properties are true:
+          </p>
+          <ol cols="2">
+            <li><m>\mathbf{a}\times\mathbf{b} = -\mathbf{b}\times\mathbf{a}</m></li>
+            <li><m>(c\mathbf{a})\times\mathbf{b} = c(\mathbf{a}\times\mathbf{b}) = \mathbf{a}\times(c\mathbf{b})</m></li>
+            <li><m>\mathbf{a}\times(\mathbf{b}+\mathbf{c}) = \mathbf{a}\times\mathbf{b}+\mathbf{a}\times\mathbf{c}</m></li>
+            <li><m>(\mathbf{a}+\mathbf{b})\times\mathbf{c} = \mathbf{a}\times\mathbf{c}+\mathbf{b}\times\mathbf{c}</m></li>
+            <li><m>\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c}) = (\mathbf{a}\times\mathbf{b})\cdot\mathbf{c}</m></li>
+          </ol>
+        </statement>
+      </theorem>
+      <p>
+        The last item above is an important relationship between the cross product and dot product called the <term>scalar triple product</term>. There is an important geometric significance to this new product.
+      </p>
+      <theorem xml:id="theorem-geometry-of-the-scalar-triple-product">
+        <idx>scalar triple product</idx>
+        <title>Geometry of the Scalar Triple Product</title>
+        <statement>
+          <p>
+            Let <m>\mathbf{a},\mathbf{b}</m> and <m>\mathbf{c}</m> be vectors in <m>\RR^{3}</m>. Then <m>|\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})|</m> is equal to the volume of the parallelepiped determined by <m>\mathbf{a},\mathbf{b}</m> and <m>\mathbf{c}</m>.
+          </p>
+        </statement>
+      </theorem>
+      <example xml:id="example-testing-if-vectors-are-coplanar">
+        <title>Testing if vectors are coplanar</title>
+        <p>
+          We say that three vectors <m>\mathbf{u},\mathbf{v}</m> and <m>\mathbf{w}</m> are <term>coplanar</term> if they can all lie in a single plane. For example, <m>\mathbf{i},\mathbf{k}</m> and <m>\dotprod{-4,0,56}</m> are coplanar since they lie in the <m>xz</m>-plane, but <m>\mathbf{i},\mathbf{j}</m> and <m>\mathbf{k}</m> are not coplanar. Suppose we're given <m>\mathbf{u} = \dotprod{-3,2,1},\mathbf{v} = \dotprod{1,2,0}</m> and <m>\mathbf{w} = \dotprod{1,1,1}</m>. These vectors are coplanar if and only if the parallelepiped determined by these vectors has zero volume (i.e. is flat). Since
+        </p>
+        <me>\mathbf{u}\cdot(\mathbf{v}\times\mathbf{w}) = -9,</me>
+        <p>
+          these vectors are <em>not</em> coplanar.
+        </p>
+      </example>
+
+      <example xml:id="example-another-way-to-compute-cross-products">
+        <title>Another way to compute cross products</title>
+        <p>
+          Using <xref ref="theorem-properties-of-the-cross-product" text="type-global" /> and the facts that
+        </p>
+        <md>
+          <mrow>\mathbf{i}\times\mathbf{j} &amp; = \mathbf{k} </mrow>
+          <mrow>\mathbf{j}\times\mathbf{k} &amp; = \mathbf{i} </mrow>
+          <mrow>\mathbf{k}\times\mathbf{i} &amp; = \mathbf{j} </mrow>
+          <mrow>\mathbf{a}\times\mathbf{a} &amp; = \mathbf{0} </mrow>
         </md>
         <p>
-          Since these dot products are zero, this means that both <m>\mathbf{a}</m> and <m>\mathbf{b}</m> are perpendicular to the cross product <m>\mathbf{a}\times\mathbf{b}</m>. This is also true in general.
+          gives us another way to compute cross products that doesn't involve determinants. As an example, let <m>\mathbf{u} = \dotprod{1,4,-3}</m> and <m>\mathbf{v} = \dotprod{0,2,1}.</m> Then
         </p>
-        <theorem xml:id="theorem-orthogonality-of-the-cross-product">
-          <title>Orthogonality of the Cross Product</title>
-          <idx><h>cross product</h><h>orthogonality</h></idx>
-          <statement>
-            <p>
-              <m>\mathbf{a}\times\mathbf{b}</m> is always orthogonal to both <m>\mathbf{a}</m> and <m>\mathbf{b}</m>.
-            </p>
-          </statement>
-        </theorem>
-        <p>
-          So the cross product always produces orthogonal vectors. To determine the direction of the cross product <m>\mathbf{a}\times\mathbf{b}</m>, we use the <term>right-hand rule</term>: sweep your right hand from <m>\mathbf{a}</m> to <m>\mathbf{b}</m> and stick your thumb up. Then <m>\mathbf{a}\times\mathbf{b}</m> is parallel to your thumb.
-        </p>
-        <p>
-          We would also like to know the magnitude of the cross product. We can just compute it using <xref ref="definition-the-cross-product" text="type-global" /> and find the magnitude using our usual formula. If we do so, we obtain (after a lot of simplifying!)
-        </p>
-        <me>\norm{\mathbf{a}\times\mathbf{b}}^{2} = \norm{\mathbf{a}}^{2}\norm{\mathbf{b}}^{2}\sin^{2}\theta,</me>
-        <p>
-          which reduces to the following result.
-        </p>
-        <theorem xml:id="theorem-magnitude-of-the-cross-product">
-          <title>Magnitude of the Cross Product</title>
-          <idx><h>cross product</h><h>magnitude</h></idx>
-          <statement>
-            <p>
-              Let <m>\theta</m> denote the acute angle between the vectors <m>\mathbf{a}</m> and <m>\mathbf{b}</m>, so that <m>0\leq\theta\leq\pi</m>. Then
-            </p>
-            <me>\norm{\mathbf{a}\times\mathbf{b}} = \norm{\mathbf{a}}\norm{\mathbf{b}}\sin\theta.</me>
-          </statement>
-        </theorem>
-        <p>
-          So in particular, two nonzero vectors <m>\mathbf{x}</m> and <m>\mathbf{y}</m> are parallel (i.e. have <m>\theta=0</m>) if and only if <m>\mathbf{a}\times\mathbf{b} = \mathbf{0}</m>.
-        </p>
-
-        <example xml:id="example-testing-collinearity">
-          <title>Testing collinearity</title>
-          <p>
-            We say that three points <m>P,Q</m> and <m>R</m> are <term>collinear</term> if they all lie on the same line. Suppose we want to check if the points <m>P(-2,0,1), Q(-1,2,4)</m> and <m>R(1,6,10)</m> are collinear or not. How can we do so? If we start by defining
-          </p>
-          <me>\mathbf{u} = \vec{PQ} = \dotprod{1,2,3}\quad\text{and}\quad \mathbf{v} = \vec{QR} = \dotprod{2,4,6},</me>
-          <p>
-            then we can say that all three points lie on the same line if and only if <m>\mathbf{u}</m> and <m>\mathbf{v}</m> are parallel to each other. So we'll compute their cross product to get <m>\mathbf{u}\times\mathbf{v} = \mathbf{0}</m>. Since these vectors are parallel, then the three given points must lie on the same line.
-          </p>
-        </example>
-
-        <p>
-          Another important property of the magnitude of the cross product is the following: <m>\norm{\mathbf{a}\times\mathbf{b}}</m> is exactly equal to the area of the parallelogram determined by <m>\mathbf{a}</m> and <m>\mathbf{b}</m>.
-        </p>
-
-        <example xml:id="example-areas-of-triangles">
-          <title>Area of a triangle</title>
-          <p>
-            Suppose that we want the area of the triangle with vertices <m>P(1,2,-1), Q(2,0,0)</m> and <m>R(1,-1,-2)</m>. To start, we need to find vectors that determine the triangle. We can use
-          </p>
-          <me>\mathbf{u} = \vec{PQ} = \dotprod{1,-2,1}\quad\text{and}\quad\mathbf{v} = \vec{PR} = \dotprod{0,-3,-1}.</me>
-          <p>
-            Now, the triangle determined by <m>\mathbf{u}</m> and <m>\mathbf{v}</m> is precisely half of the parallelogram determined by these same vectors, so the area of this triangle is equal to <m>\frac{1}{2}\norm{\mathbf{u}\times\mathbf{v}}</m>. We can use Sage as in the cell below to find the cross product of these vectors. Doing so, we get <m>\mathbf{u}\times\mathbf{v} = \dotprod{5,1,-3}.</m> So the area of the triangle with vertices <m>P,Q</m> and <m>R</m> is
-          </p>
-          <md>
-            <mrow>\operatorname{area} \triangle PQR &amp; = \frac{1}{2}\norm{\mathbf{u}\times\mathbf{v}} </mrow>
-            <mrow> &amp; = \frac{1}{2}\norm{\dotprod{5,1,-3}} </mrow>
-            <mrow> &amp; = \frac{1}{2}\sqrt{35}. </mrow>
-          </md>
-        </example>
-        <sage>
-          <input>
-            u = vector([1,-2,1])
-            v = vector([0,-3,-1])
-            u.cross_product(v)
-          </input>
-          <output>
-            (5, 1, -3)
-          </output>
-        </sage>
-        <theorem xml:id="theorem-properties-of-the-cross-product">
-          <title>Properties of the Cross Product</title>
-          <idx><h>cross product</h><h>properties</h></idx>
-          <statement>
-            <p>
-              Let <m>\mathbf{a},\mathbf{b},\mathbf{c}</m> be vectors and <m>c</m> a scalar. Then the following properties are true:
-            </p>
-            <ol cols="2">
-              <li><m>\mathbf{a}\times\mathbf{b} = -\mathbf{b}\times\mathbf{a}</m></li>
-              <li><m>(c\mathbf{a})\times\mathbf{b} = c(\mathbf{a}\times\mathbf{b}) = \mathbf{a}\times(c\mathbf{b})</m></li>
-              <li><m>\mathbf{a}\times(\mathbf{b}+\mathbf{c}) = \mathbf{a}\times\mathbf{b}+\mathbf{a}\times\mathbf{c}</m></li>
-              <li><m>(\mathbf{a}+\mathbf{b})\times\mathbf{c} = \mathbf{a}\times\mathbf{c}+\mathbf{b}\times\mathbf{c}</m></li>
-              <li><m>\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c}) = (\mathbf{a}\times\mathbf{b})\cdot\mathbf{c}</m></li>
-            </ol>
-          </statement>
-        </theorem>
-        <p>
-          The last item above is an important relationship between the cross product and dot product called the <term>scalar triple product</term>. There is an important geometric significance to this new product.
-        </p>
-        <theorem xml:id="theorem-geometry-of-the-scalar-triple-product">
-          <idx>scalar triple product</idx>
-          <title>Geometry of the Scalar Triple Product</title>
-          <statement>
-            <p>
-              Let <m>\mathbf{a},\mathbf{b}</m> and <m>\mathbf{c}</m> be vectors in <m>\RR^{3}</m>. Then <m>|\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})|</m> is equal to the volume of the parallelepiped determined by <m>\mathbf{a},\mathbf{b}</m> and <m>\mathbf{c}</m>.
-            </p>
-          </statement>
-        </theorem>
-        <example xml:id="example-testing-if-vectors-are-coplanar">
-          <title>Testing if vectors are coplanar</title>
-          <p>
-            We say that three vectors <m>\mathbf{u},\mathbf{v}</m> and <m>\mathbf{w}</m> are <term>coplanar</term> if they can all lie in a single plane. For example, <m>\mathbf{i},\mathbf{k}</m> and <m>\dotprod{-4,0,56}</m> are coplanar since they lie in the <m>xz</m>-plane, but <m>\mathbf{i},\mathbf{j}</m> and <m>\mathbf{k}</m> are not coplanar. Suppose we're given <m>\mathbf{u} = \dotprod{-3,2,1},\mathbf{v} = \dotprod{1,2,0}</m> and <m>\mathbf{w} = \dotprod{1,1,1}</m>. These vectors are coplanar if and only if the parallelepiped determined by these vectors has zero volume (i.e. is flat). Since
-          </p>
-          <me>\mathbf{u}\cdot(\mathbf{v}\times\mathbf{w}) = -9,</me>
-          <p>
-            these vectors are <em>not</em> coplanar.
-          </p>
-        </example>
-
-        <example xml:id="example-another-way-to-compute-cross-products">
-          <title>Another way to compute cross products</title>
-          <p>
-            Using <xref ref="theorem-properties-of-the-cross-product" text="type-global" /> and the facts that
-          </p>
-          <md>
-            <mrow>\mathbf{i}\times\mathbf{j} &amp; = \mathbf{k} </mrow>
-            <mrow>\mathbf{j}\times\mathbf{k} &amp; = \mathbf{i} </mrow>
-            <mrow>\mathbf{k}\times\mathbf{i} &amp; = \mathbf{j} </mrow>
-            <mrow>\mathbf{a}\times\mathbf{a} &amp; = \mathbf{0} </mrow>
-          </md>
-          <p>
-            gives us another way to compute cross products that doesn't involve determinants. As an example, let <m>\mathbf{u} = \dotprod{1,4,-3}</m> and <m>\mathbf{v} = \dotprod{0,2,1}.</m> Then
-          </p>
-          <md>
-            <mrow>\mathbf{u}\times\mathbf{v} &amp; = (\mathbf{i}+4\mathbf{j}-3\mathbf{k})\times(2\mathbf{j}+\mathbf{k}) </mrow>
-            <mrow> &amp; = 2\mathbf{i}\times\mathbf{j} + \mathbf{i}\times\mathbf{k} +8\mathbf{j}\times\mathbf{j} + 4\mathbf{j}\times\mathbf{k} - 6\mathbf{k}\times\mathbf{j} -3\mathbf{k}\times\mathbf{k} </mrow>
-            <mrow> &amp; = 2\mathbf{k}-\mathbf{j}+4\mathbf{i}-6\mathbf{i} </mrow>
-            <mrow> &amp; = \dotprod{-2,-1,2}. </mrow>
-          </md>
-        </example>
+        <md>
+          <mrow>\mathbf{u}\times\mathbf{v} &amp; = (\mathbf{i}+4\mathbf{j}-3\mathbf{k})\times(2\mathbf{j}+\mathbf{k}) </mrow>
+          <mrow> &amp; = 2\mathbf{i}\times\mathbf{j} + \mathbf{i}\times\mathbf{k} +8\mathbf{j}\times\mathbf{j} + 4\mathbf{j}\times\mathbf{k} - 6\mathbf{k}\times\mathbf{j} -3\mathbf{k}\times\mathbf{k} </mrow>
+          <mrow> &amp; = 2\mathbf{k}-\mathbf{j}+4\mathbf{i}-6\mathbf{i} </mrow>
+          <mrow> &amp; = \dotprod{-2,-1,2}. </mrow>
+        </md>
+      </example>
+    </handout>
       </subsection>
-      <subsection xml:id="subsection-torque">
-        <title>Torque</title>
+<subsection xml:id="subsection-torque">
+  <handout>
+    <title>Torque</title>
         <p>
           Consider a force <m>\mathbf{F}</m> acting on a rigid body at some position <m>\mathbf{r}</m>. This force applies a turning affect to the body, that we measure by <term>torque</term>.
         </p>
@@ -1426,6 +1474,7 @@
             <mrow> \amp = \dotprod{.077, 0, 0}. </mrow>
           </md>
         </example>
+      </handout>
       </subsection>
     </section>
     <section xml:id="section-equations-of-lines-and-planes">
