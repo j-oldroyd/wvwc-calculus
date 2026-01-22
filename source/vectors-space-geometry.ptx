@@ -1246,7 +1246,7 @@
         \mathbf{k} \\ x_{1} &amp; y_{1} &amp; z_{1} \\ x_{2} &amp; y_{2}
         &amp; z_{2} \end{array}\right|</men>.
       </p>
-      <example xml:id="example-another-cross-product">
+      <example xml:id="example-another-cross-product" workspace="3in">
         <title>Another cross product</title>
         <statement>
           <p>
@@ -1265,12 +1265,6 @@
               \left|\begin{array}{ccc} \mathbf{i} \amp \mathbf{j} \amp
               \mathbf{k} \\ -1 \amp 2 \amp 0 \\ 2 \amp 4 \amp 1
               \end{array}\right| </mrow> <mrow> \amp =
-              \mathbf{i}\left|\begin{array}{cc} 2 \amp 0 \\ 4 \amp
-              1\end{array}\right| - \mathbf{j}\left|\begin{array}{cc}
-              -1 \amp 0 \\ 2 \amp 1\end{array}\right| +
-              \mathbf{k}\left|\begin{array}{cc} -1 \amp 2 \\ 2 \amp
-              4\end{array}\right|</mrow> <mrow> \amp =
-              2\mathbf{i}+\mathbf{j}-8\mathbf{k}</mrow> <mrow> \amp =
               \dotprod{2,1,-8} </mrow> </md>.
           </p>
         </solution>
@@ -1296,72 +1290,117 @@
         also true in general.
       </p>
       <theorem xml:id="theorem-orthogonality-of-the-cross-product">
-        <title>Orthogonality of the Cross Product</title>
-        <idx><h>cross product</h><h>orthogonality</h></idx>
+        <title>Orthogonality of the cross product</title>
+        <idx>
+          <h>cross product</h>
+          <h>orthogonality</h>
+        </idx>
         <statement>
           <p>
-            <m>\mathbf{a}\times\mathbf{b}</m> is always orthogonal to both <m>\mathbf{a}</m> and <m>\mathbf{b}</m>.
+            <m>\mathbf{a}\times\mathbf{b}</m> is always orthogonal to
+            both <m>\mathbf{a}</m> and <m>\mathbf{b}</m>.
           </p>
         </statement>
       </theorem>
       <p>
-        So the cross product always produces orthogonal vectors. To determine the direction of the cross product <m>\mathbf{a}\times\mathbf{b}</m>, we use the <term>right-hand rule</term>: sweep your right hand from <m>\mathbf{a}</m> to <m>\mathbf{b}</m> and stick your thumb up. Then <m>\mathbf{a}\times\mathbf{b}</m> is parallel to your thumb.
+        So the cross product always produces orthogonal vectors. To
+        determine the direction of the cross product
+        <m>\mathbf{a}\times\mathbf{b}</m>, we use the <term>right-hand
+        rule</term>: sweep your right hand from <m>\mathbf{a}</m> to
+        <m>\mathbf{b}</m> and stick your thumb up. Then
+        <m>\mathbf{a}\times\mathbf{b}</m> is parallel to your thumb.
       </p>
       <p>
-        We would also like to know the magnitude of the cross product. We can just compute it using <xref ref="definition-the-cross-product" text="type-global" /> and find the magnitude using our usual formula. If we do so, we obtain (after a lot of simplifying!)
-      </p>
-      <me>\norm{\mathbf{a}\times\mathbf{b}}^{2} = \norm{\mathbf{a}}^{2}\norm{\mathbf{b}}^{2}\sin^{2}\theta,</me>
-      <p>
+        We would also like to know the magnitude of the cross
+        product. We can just compute it using <xref
+        ref="definition-the-cross-product" text="type-global" /> and
+        find the magnitude using our usual formula. If we do so, we
+        obtain (after a lot of simplifying!)
+        <me>\norm{\mathbf{a}\times\mathbf{b}}^{2} =
+        \norm{\mathbf{a}}^{2}\norm{\mathbf{b}}^{2}\sin^{2}\theta,</me>
         which reduces to the following result.
       </p>
       <theorem xml:id="theorem-magnitude-of-the-cross-product">
         <title>Magnitude of the Cross Product</title>
-        <idx><h>cross product</h><h>magnitude</h></idx>
+        <idx>
+          <h>cross product</h>
+          <h>magnitude</h>
+        </idx>
         <statement>
           <p>
-            Let <m>\theta</m> denote the acute angle between the vectors <m>\mathbf{a}</m> and <m>\mathbf{b}</m>, so that <m>0\leq\theta\leq\pi</m>. Then
+            Let <m>\theta</m> denote the acute angle between the
+            vectors <m>\mathbf{a}</m> and <m>\mathbf{b}</m>, so that
+            <m>0\leq\theta\leq\pi</m>. Then
+            <me>\norm{\mathbf{a}\times\mathbf{b}} =
+            \norm{\mathbf{a}}\norm{\mathbf{b}}\sin\theta</me>.
           </p>
-          <me>\norm{\mathbf{a}\times\mathbf{b}} = \norm{\mathbf{a}}\norm{\mathbf{b}}\sin\theta.</me>
         </statement>
       </theorem>
       <p>
-        So in particular, two nonzero vectors <m>\mathbf{x}</m> and <m>\mathbf{y}</m> are parallel (i.e. have <m>\theta=0</m>) if and only if <m>\mathbf{a}\times\mathbf{b} = \mathbf{0}</m>.
+        So in particular, two nonzero vectors <m>\mathbf{x}</m> and
+        <m>\mathbf{y}</m> are parallel (i.e. have <m>\theta=0</m>) if
+        and only if <m>\mathbf{a}\times\mathbf{b} = \mathbf{0}</m>.
       </p>
 
-      <example xml:id="example-testing-collinearity">
+      <example xml:id="example-testing-collinearity" workspace="3in">
         <title>Testing collinearity</title>
+        <statement>
         <p>
-          We say that three points <m>P,Q</m> and <m>R</m> are <term>collinear</term> if they all lie on the same line. Suppose we want to check if the points <m>P(-2,0,1), Q(-1,2,4)</m> and <m>R(1,6,10)</m> are collinear or not. How can we do so? If we start by defining
+          We say that three points <m>P,Q</m> and <m>R</m> are
+          <term>collinear</term> if they all lie on the same
+          line. Determine if the points <m>P(-2,0,1),
+          Q(-1,2,4)</m> and <m>R(1,6,10)</m> are collinear or not.
         </p>
-        <me>\mathbf{u} = \vec{PQ} = \dotprod{1,2,3}\quad\text{and}\quad \mathbf{v} = \vec{QR} = \dotprod{2,4,6},</me>
-        <p>
-          then we can say that all three points lie on the same line if and only if <m>\mathbf{u}</m> and <m>\mathbf{v}</m> are parallel to each other. So we'll compute their cross product to get <m>\mathbf{u}\times\mathbf{v} = \mathbf{0}</m>. Since these vectors are parallel, then the three given points must lie on the same line.
-        </p>
+        </statement>
+        <solution>
+          <p>
+            Let
+            <me>\mathbf{u} = \vec{PQ} =
+            \dotprod{1,2,3}\quad\text{and}\quad \mathbf{v} = \vec{QR} =
+            \dotprod{2,4,6}</me>.  Since these vectors are parallel, then
+            the three given points must lie on the same line.
+          </p>
+        </solution>
       </example>
-
       <p>
-        Another important property of the magnitude of the cross product is the following: <m>\norm{\mathbf{a}\times\mathbf{b}}</m> is exactly equal to the area of the parallelogram determined by <m>\mathbf{a}</m> and <m>\mathbf{b}</m>.
+        Another important property of the magnitude of the cross
+        product is the following:
+        <m>\norm{\mathbf{a}\times\mathbf{b}}</m> is exactly equal to
+        the area of the parallelogram determined by <m>\mathbf{a}</m>
+        and <m>\mathbf{b}</m>.
       </p>
-
-      <example xml:id="example-areas-of-triangles">
+      <example xml:id="example-areas-of-triangles" workspace="4in">
         <title>Area of a triangle</title>
+        <statement>
         <p>
-          Suppose that we want the area of the triangle with vertices <m>P(1,2,-1), Q(2,0,0)</m> and <m>R(1,-1,-2)</m>. To start, we need to find vectors that determine the triangle. We can use
+          Find the area of the triangle with vertices <m>P(1,2,-1),
+          Q(2,0,0)</m> and <m>R(1,-1,-2)</m>.
         </p>
-        <me>\mathbf{u} = \vec{PQ} = \dotprod{1,-2,1}\quad\text{and}\quad\mathbf{v} = \vec{PR} = \dotprod{0,-3,-1}.</me>
-        <p>
-          Now, the triangle determined by <m>\mathbf{u}</m> and <m>\mathbf{v}</m> is precisely half of the parallelogram determined by these same vectors, so the area of this triangle is equal to <m>\frac{1}{2}\norm{\mathbf{u}\times\mathbf{v}}</m>. We can use Sage as in the cell below to find the cross product of these vectors. Doing so, we get <m>\mathbf{u}\times\mathbf{v} = \dotprod{5,1,-3}.</m> So the area of the triangle with vertices <m>P,Q</m> and <m>R</m> is
-        </p>
-        <md>
-          <mrow>\operatorname{area} \triangle PQR &amp; = \frac{1}{2}\norm{\mathbf{u}\times\mathbf{v}} </mrow>
-          <mrow> &amp; = \frac{1}{2}\norm{\dotprod{5,1,-3}} </mrow>
-          <mrow> &amp; = \frac{1}{2}\sqrt{35}. </mrow>
-        </md>
+        </statement>
+        <solution>
+          <p>
+            To start, let <me>\mathbf{u} = \vec{PQ} =
+            \dotprod{1,-2,1}\quad\text{and}\quad\mathbf{v} = \vec{PR}
+            = \dotprod{0,-3,-1}</me>.  Then the triangle determined by
+            <m>\mathbf{u}</m> and <m>\mathbf{v}</m> is precisely half
+            of the parallelogram determined by these same vectors.  We
+            can use Sage as in the cell below to find the cross
+            product of these vectors.  Doing so, we get
+            <m>\mathbf{u}\times\mathbf{v} = \dotprod{5,1,-3}</m>.  So
+            the area of the triangle with vertices <m>P,Q</m> and
+            <m>R</m> is
+            <md>
+              <mrow>\operatorname{area} \triangle PQR &amp; =
+              \frac{1}{2}\norm{\mathbf{u}\times\mathbf{v}} </mrow>
+              <mrow> &amp; = \frac{1}{2}\norm{\dotprod{5,1,-3}} </mrow>
+              <mrow> &amp; = \frac{1}{2}\sqrt{35} </mrow>
+              </md>.
+          </p>
+        </solution>
       </example>
       <sage>
         <input>
-          u = vector([1,-2,1])
-          v = vector([0,-3,-1])
+          u = vector([1,-2,1]) v = vector([0,-3,-1])
           u.cross_product(v)
         </input>
         <output>
@@ -1373,110 +1412,173 @@
         <idx><h>cross product</h><h>properties</h></idx>
         <statement>
           <p>
-            Let <m>\mathbf{a},\mathbf{b},\mathbf{c}</m> be vectors and <m>c</m> a scalar. Then the following properties are true:
+            Let <m>\mathbf{a},\mathbf{b},\mathbf{c}</m> be vectors and
+            <m>c</m> a scalar. Then the following properties are true:
           </p>
           <ol cols="2">
-            <li><m>\mathbf{a}\times\mathbf{b} = -\mathbf{b}\times\mathbf{a}</m></li>
-            <li><m>(c\mathbf{a})\times\mathbf{b} = c(\mathbf{a}\times\mathbf{b}) = \mathbf{a}\times(c\mathbf{b})</m></li>
-            <li><m>\mathbf{a}\times(\mathbf{b}+\mathbf{c}) = \mathbf{a}\times\mathbf{b}+\mathbf{a}\times\mathbf{c}</m></li>
-            <li><m>(\mathbf{a}+\mathbf{b})\times\mathbf{c} = \mathbf{a}\times\mathbf{c}+\mathbf{b}\times\mathbf{c}</m></li>
-            <li><m>\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c}) = (\mathbf{a}\times\mathbf{b})\cdot\mathbf{c}</m></li>
+            <li><m>\mathbf{a}\times\mathbf{b} =
+            -\mathbf{b}\times\mathbf{a}</m></li>
+            <li><m>(c\mathbf{a})\times\mathbf{b} =
+            c(\mathbf{a}\times\mathbf{b}) =
+            \mathbf{a}\times(c\mathbf{b})</m></li>
+            <li><m>\mathbf{a}\times(\mathbf{b}+\mathbf{c}) =
+            \mathbf{a}\times\mathbf{b}+\mathbf{a}\times\mathbf{c}</m></li>
+            <li><m>(\mathbf{a}+\mathbf{b})\times\mathbf{c} =
+            \mathbf{a}\times\mathbf{c}+\mathbf{b}\times\mathbf{c}</m></li>
+            <li><m>\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c}) =
+            (\mathbf{a}\times\mathbf{b})\cdot\mathbf{c}</m></li>
           </ol>
         </statement>
       </theorem>
       <p>
-        The last item above is an important relationship between the cross product and dot product called the <term>scalar triple product</term>. There is an important geometric significance to this new product.
+        The last item above is an important relationship between the
+        cross product and dot product called the <term>scalar triple
+        product</term>. There is an important geometric significance
+        to this new product.
       </p>
       <theorem xml:id="theorem-geometry-of-the-scalar-triple-product">
         <idx>scalar triple product</idx>
         <title>Geometry of the Scalar Triple Product</title>
         <statement>
           <p>
-            Let <m>\mathbf{a},\mathbf{b}</m> and <m>\mathbf{c}</m> be vectors in <m>\RR^{3}</m>. Then <m>|\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})|</m> is equal to the volume of the parallelepiped determined by <m>\mathbf{a},\mathbf{b}</m> and <m>\mathbf{c}</m>.
+            Let <m>\mathbf{a},\mathbf{b}</m> and <m>\mathbf{c}</m> be
+            vectors in <m>\RR^{3}</m>. Then
+            <m>|\mathbf{a}\cdot(\mathbf{b}\times\mathbf{c})|</m> is
+            equal to the volume of the parallelepiped determined by
+            <m>\mathbf{a},\mathbf{b}</m> and <m>\mathbf{c}</m>.
           </p>
         </statement>
       </theorem>
-      <example xml:id="example-testing-if-vectors-are-coplanar">
+      <example xml:id="example-testing-if-vectors-are-coplanar" workspace="3in">
         <title>Testing if vectors are coplanar</title>
         <p>
-          We say that three vectors <m>\mathbf{u},\mathbf{v}</m> and <m>\mathbf{w}</m> are <term>coplanar</term> if they can all lie in a single plane. For example, <m>\mathbf{i},\mathbf{k}</m> and <m>\dotprod{-4,0,56}</m> are coplanar since they lie in the <m>xz</m>-plane, but <m>\mathbf{i},\mathbf{j}</m> and <m>\mathbf{k}</m> are not coplanar. Suppose we're given <m>\mathbf{u} = \dotprod{-3,2,1},\mathbf{v} = \dotprod{1,2,0}</m> and <m>\mathbf{w} = \dotprod{1,1,1}</m>. These vectors are coplanar if and only if the parallelepiped determined by these vectors has zero volume (i.e. is flat). Since
-        </p>
-        <me>\mathbf{u}\cdot(\mathbf{v}\times\mathbf{w}) = -9,</me>
-        <p>
+          We say that three vectors <m>\mathbf{u},\mathbf{v}</m> and
+          <m>\mathbf{w}</m> are <term>coplanar</term> if they can all
+          lie in a single plane.  For example,
+          <m>\mathbf{i},\mathbf{k}</m> and <m>\dotprod{-4,0,56}</m>
+          are coplanar since they lie in the <m>xz</m>-plane, but
+          <m>\mathbf{i},\mathbf{j}</m> and <m>\mathbf{k}</m> are not
+          coplanar.  Suppose we're given <m>\mathbf{u} =
+          \dotprod{-3,2,1},\mathbf{v} = \dotprod{1,2,0}</m> and
+          <m>\mathbf{w} = \dotprod{1,1,1}</m>.  These vectors are
+          coplanar if and only if the parallelepiped determined by
+          these vectors has zero volume (i.e. is flat).  Since
+          <me>\mathbf{u}\cdot(\mathbf{v}\times\mathbf{w}) = -9,</me>
           these vectors are <em>not</em> coplanar.
         </p>
       </example>
 
-      <example xml:id="example-another-way-to-compute-cross-products">
+      <example xml:id="example-another-way-to-compute-cross-products" workspace="3in">
         <title>Another way to compute cross products</title>
         <p>
-          Using <xref ref="theorem-properties-of-the-cross-product" text="type-global" /> and the facts that
-        </p>
+          Using <xref ref="theorem-properties-of-the-cross-product"
+          text="type-global" /> and the facts that
         <md>
           <mrow>\mathbf{i}\times\mathbf{j} &amp; = \mathbf{k} </mrow>
           <mrow>\mathbf{j}\times\mathbf{k} &amp; = \mathbf{i} </mrow>
           <mrow>\mathbf{k}\times\mathbf{i} &amp; = \mathbf{j} </mrow>
           <mrow>\mathbf{a}\times\mathbf{a} &amp; = \mathbf{0} </mrow>
         </md>
-        <p>
-          gives us another way to compute cross products that doesn't involve determinants. As an example, let <m>\mathbf{u} = \dotprod{1,4,-3}</m> and <m>\mathbf{v} = \dotprod{0,2,1}.</m> Then
-        </p>
+          gives us another way to compute cross products that doesn't
+          involve determinants. As an example, let <m>\mathbf{u} =
+          \dotprod{1,4,-3}</m> and <m>\mathbf{v} =
+          \dotprod{0,2,1}.</m> Then
         <md>
-          <mrow>\mathbf{u}\times\mathbf{v} &amp; = (\mathbf{i}+4\mathbf{j}-3\mathbf{k})\times(2\mathbf{j}+\mathbf{k}) </mrow>
-          <mrow> &amp; = 2\mathbf{i}\times\mathbf{j} + \mathbf{i}\times\mathbf{k} +8\mathbf{j}\times\mathbf{j} + 4\mathbf{j}\times\mathbf{k} - 6\mathbf{k}\times\mathbf{j} -3\mathbf{k}\times\mathbf{k} </mrow>
+          <mrow>\mathbf{u}\times\mathbf{v} &amp; =
+          (\mathbf{i}+4\mathbf{j}-3\mathbf{k})\times(2\mathbf{j}+\mathbf{k})
+          </mrow>
           <mrow> &amp; = 2\mathbf{k}-\mathbf{j}+4\mathbf{i}-6\mathbf{i} </mrow>
           <mrow> &amp; = \dotprod{-2,-1,2}. </mrow>
         </md>
+        </p>
       </example>
     </handout>
-      </subsection>
-<subsection xml:id="subsection-torque">
-  <handout>
-    <title>Torque</title>
+  </subsection>
+  <subsection xml:id="subsection-torque">
+    <handout>
+      <title>Torque</title>
+      <p>
+        Consider a force <m>\mathbf{F}</m> acting on a rigid body at
+        some position <m>\mathbf{r}</m>. This force applies a
+        turning affect to the body, that we measure by
+        <term>torque</term>.
+      </p>
+      <definition xml:id="definition-torque">
+        <title>Torque</title>
+        <idx>torque</idx>
+        <statement>
+          <p>
+            The torque <m>\boldsymbol{\tau}</m> of a force
+            <m>\mathbf{F}</m> acting at a position <m>\mathbf{r}</m>
+            is defined to be the vector
+          </p>
+          <me>\boldsymbol{\tau} = \mathbf{r}\times\mathbf{F}.</me>
+        </statement>
+      </definition>
+      <p>
+        As one example of torque, consider a wrench applied to a
+        bolt. The force is exerted at the end of the wrench, and the
+        torque is a vector that's parallel to the axis of rotation of
+        the bolt.  The torque is greater if the force is applied at a
+        direction perpendicular (or nearly so) to that of the wrench,
+        and smaller if the force is nearly parallel to the direction
+        of the wrench.  As a quick check, the torque is
+        <m>\mathbf{0}</m> if the force is exactly parallel to the
+        direction of the wrench, which makes sense: if we're pushing
+        or pulling the wrench, the bolt won't rotate at all.
+      </p>
+      <example xml:id="example-torque-and-hex-keys">
+        <title>Torque and hex keys</title>
         <p>
-          Consider a force <m>\mathbf{F}</m> acting on a rigid body at some position <m>\mathbf{r}</m>. This force applies a turning affect to the body, that we measure by <term>torque</term>.
+          A hex key (Allen wrench) with a short arm of length
+          <quantity><mag>27</mag><unit base="meter"
+          prefix="milli"/></quantity> and a long arm length of
+          <quantity><mag>154</mag><unit base="meter"
+          prefix="milli"/></quantity> is applied to a bolt, with the
+          short arm attached to the bolt. To turn the bolt, a force of
+          <quantity><mag>0.5</mag><unit base="newton"/></quantity> is
+          applied to the long arm of the hex key turning the bolt
+          counterclockwise when viewed from the positive
+          <m>x</m>-axis, and is exactly perpendicular to both the
+          short arm and long arm of the hex key. We want to find the
+          torque of this force on the bolt.
         </p>
-        <definition xml:id="definition-torque">
-          <title>Torque</title>
-          <idx>torque</idx>
-          <statement>
-            <p>
-              The torque <m>\boldsymbol{\tau}</m> of a force <m>\mathbf{F}</m> acting at a position <m>\mathbf{r}</m> is defined to be the vector
-            </p>
-            <me>\boldsymbol{\tau} = \mathbf{r}\times\mathbf{F}.</me>
-          </statement>
-        </definition>
         <p>
-          As one example of torque, consider a wrench applied to a bolt. The force is exerted at the end of the wrench, and the torque is a vector that's parallel to the axis of rotation of the bolt. The torque is greater if the force is applied at a direction perpendicular (or nearly so) to that of the wrench, and smaller if the force is nearly parallel to the direction of the wrench. As a quick check, the torque is <m>\mathbf{0}</m> if the force is exactly parallel to the direction of the wrench, which makes sense: if we're pushing or pulling the wrench, the bolt won't rotate at all.
+          One way we can do this is to imagine the bolt sitting at the
+          origin, and the hex key is (initially) in the
+          <m>xy</m>-plane. Note that once the force is applied, it
+          will begin to rotate the hex key out of the
+          <m>xy</m>-plane. Now, the torque is defined by
+          <me>\boldsymbol{\tau} = \mathbf{r}\times\mathbf{F}</me>
+          where <m>\mathbf{r}</m> is the vector from the <em>axis of
+          rotation</em> of the bolt to the point where the force
+          <m>\mathbf{F}</m> is applied.
         </p>
-
-        <example xml:id="example-torque-and-hex-keys">
-          <title>Torque and hex keys</title>
+        <aside>
           <p>
-            A hex key (Allen wrench) with a short arm of length <quantity><mag>27</mag><unit base="meter" prefix="milli"/></quantity> and a long arm length of <quantity><mag>154</mag><unit base="meter" prefix="milli"/></quantity> is applied to a bolt, with the short arm attached to the bolt. To turn the bolt, a force of <quantity><mag>0.5</mag><unit base="newton"/></quantity> is applied to the long arm of the hex key turning the bolt counterclockwise when viewed from the positive <m>x</m>-axis, and is exactly perpendicular to both the short arm and long arm of the hex key. We want to find the torque of this force on the bolt.
+            If we were using a standard wrench, then we could simply
+            let <m>\mathbf{r}</m> be the position vector with initial
+            point at the bolt and terminal point at where the force is
+            applied.
           </p>
-          <p>
-            One way we can do this is to imagine the bolt sitting at the origin, and the hex key is (initially) in the <m>xy</m>-plane. Note that once the force is applied, it will begin to rotate the hex key out of the <m>xy</m>-plane. Now, the torque is defined by
-            <me>\boldsymbol{\tau} = \mathbf{r}\times\mathbf{F}</me>
-            where <m>\mathbf{r}</m> is the vector from the <em>axis of rotation</em> of the bolt to the point where the force <m>\mathbf{F}</m> is applied.
-          </p>
-          <aside>
-            <p>
-              If we were using a standard wrench, then we could simply let <m>\mathbf{r}</m> be the position vector with initial point at the bolt and terminal point at where the force is applied.
-            </p>
-          </aside>
-          <p>
-            We can find <m>\mathbf{r}</m> without too much trouble: it's <m>\mathbf{r} = \dotprod{0,.154,0}</m>. To find the force <m>\mathbf{F}</m>, note that it's perpendicular to both the long arm and short arm of the bolt. So <m>\mathbf{F} = \dotprod{0,0,.5}</m> in order to guarantee counterclockwise rotation of the bolt when viewed from the positive <m>x</m>-axis. So the torque is given by
-          </p>
-          <md>
-            <mrow>\boldsymbol{\tau} \amp= \mathbf{r}\times\mathbf{F} </mrow>
-            <mrow> \amp = \dotprod{0,.154,0}\times\dotprod{0,0,.5} </mrow>
-            <mrow> \amp = \dotprod{.077, 0, 0}. </mrow>
-          </md>
-        </example>
-      </handout>
-      </subsection>
-    </section>
+        </aside>
+        <p>
+          We can find <m>\mathbf{r}</m> without too much trouble: it's
+          <m>\mathbf{r} = \dotprod{0,.154,0}</m>. To find the force
+          <m>\mathbf{F}</m>, note that it's perpendicular to both the
+          long arm and short arm of the bolt. So <m>\mathbf{F} =
+          \dotprod{0,0,.5}</m> in order to guarantee counterclockwise
+          rotation of the bolt when viewed from the positive
+          <m>x</m>-axis. So the torque is given by
+            <md> <mrow>\boldsymbol{\tau} \amp=
+            \mathbf{r}\times\mathbf{F} </mrow> <mrow> \amp =
+            \dotprod{0,.154,0}\times\dotprod{0,0,.5} </mrow> <mrow>
+            \amp = \dotprod{.077, 0, 0} </mrow> </md>.
+        </p>
+      </example>
+    </handout>
+  </subsection>
+</section>
     <section xml:id="section-equations-of-lines-and-planes">
       <title>Equations of Lines and Planes</title>
       <introduction>
