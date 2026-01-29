@@ -42,7 +42,8 @@
         </p>
 
         <figure xml:id="figure-math-valley">
-          <caption>A mathematical valley minus a mathematical ant</caption>
+          <caption>A mathematical valley minus a mathematical
+          ant</caption>
           <image xml:id="image-math-valley" width="50%">
             <asymptote>
               import graph;
@@ -69,6 +70,7 @@
           number <m>f(x)</m> (the output) as the number <m>x</m> (the
           input) approaches some particular value.
         </p>
+
         <aside>
           <p>
             Actually, functions are much more general than this.  But

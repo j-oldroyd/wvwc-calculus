@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!--********************************************************************
-
-*********************************************************************-->
-<!-- This file was originally part of the book     -->
-<!-- (as copied on 2015/07/12)                     -->
-<!--                                               -->
-<!--   Abstract Algebra: Theory and Applications   -->
-<!--                                               -->
-<!-- Copyright (C) 1997-2014  Thomas W. Judson     -->
-
 <chapter xml:id="vectors-space-geometry" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>Vectors and Euclidean Space</title>
   <introduction>
@@ -1580,15 +1570,18 @@
   </subsection>
 </section>
     <section xml:id="section-equations-of-lines-and-planes">
-      <title>Equations of Lines and Planes</title>
+      <title>Equations of lines and planes</title>
       <introduction>
         <p>
-          Recall that the equation of a line in <m>\RR^{2}</m> has the general form <m>ax+by + c = 0</m>.
-          However, this equation does not give a line in <m>\RR^{3}</m>.
-          In fact, it actually gives a plane, as we'll see! What we want to do now is find exactly how to describe a given line or plane.
+          Recall that the equation of a line in <m>\RR^{2}</m> has the
+          general form <m>ax+by + c = 0</m>.  However, this equation
+          does not give a line in <m>\RR^{3}</m>.  In fact, it
+          actually gives a plane, as we'll see! What we want to do now
+          is find exactly how to describe a given line or plane.
         </p>
       </introduction>
       <subsection xml:id="subsection-equations-of-lines">
+        <handout>
         <title>Equations of Lines</title>
         <p>
           First, suppose we have a line <m>L</m> in <m>\RR^{3}</m> as follows:
@@ -1632,7 +1625,9 @@
           <caption>A line in <m>\mathbb{R}^{3}</m>.</caption>
         </figure>
         <p>
-          Our goal is to find an equation that describes this line. Imagine that we have a vector <m>\mathbf{r}_{0}</m> pointing from the origin to the point <m>A</m>, like so:
+          Our goal is to find an equation that describes this
+          line. Imagine that we have a vector <m>\mathbf{r}_{0}</m>
+          pointing from the origin to the point <m>A</m>, like so:
         </p>
         <figure xml:id="figure-line-in-space-1">
           <image xml:id="image-line-in-space-1" width="90%">
@@ -1676,7 +1671,11 @@
           <caption>Tracing out <m>L</m> using vectors.</caption>
         </figure>
         <p>
-          Then we can get to every other point on the line by starting from <m>\mathbf{r}_{0}</m>. In particular, if <m>\mathbf{u}</m> is any vector parallel to <m>\vec{AB}</m>, then <m>\mathbf{r} = \mathbf{r}_{0}+\mathbf{u}</m> must also be on the line <m>L</m>:
+          Then we can get to every other point on the line by starting
+          from <m>\mathbf{r}_{0}</m>. In particular, if
+          <m>\mathbf{u}</m> is any vector parallel to <m>\vec{AB}</m>,
+          then <m>\mathbf{r} = \mathbf{r}_{0}+\mathbf{u}</m> must also
+          be on the line <m>L</m>:
         </p>
         <figure xml:id="figure-line-in-space-2">
           <image xml:id="image-line-in-space-2" width="90%">
@@ -1722,118 +1721,195 @@
           <caption>Tracing out <m>L</m> using vectors.</caption>
         </figure>
         <p>
-          So to get all possible points on <m>L</m>, we just need to look at all possible vectors <m>\mathbf{r} = \mathbf{r}_{0}+\mathbf{u}</m>, where <m>\mathbf{u}</m> is any vector parallel to <m>\vec{AB}</m>. If we set <m>\mathbf{v} = \vec{AB}</m>,<fn>We don't actually have to pick <m>\mathbf{v} = \vec{AB}</m>, we just need <m>\mathbf{v}</m> to be parallel to <m>\vec{AB}</m>.</fn> then
+          So to get all possible points on <m>L</m>, we just need to
+          look at all possible vectors <m>\mathbf{r} =
+          \mathbf{r}_{0}+\mathbf{u}</m>, where <m>\mathbf{u}</m> is
+          any vector parallel to <m>\vec{AB}</m>. If we set
+          <m>\mathbf{v} = \vec{AB}</m>,<fn>We don't actually have to
+          pick <m>\mathbf{v} = \vec{AB}</m>, we just need
+          <m>\mathbf{v}</m> to be parallel to <m>\vec{AB}</m>.</fn>
+          then
         </p>
         <me>\mathbf{r} = \mathbf{r}_{0}+t\mathbf{v}</me>
         <p>
-          will trace out all points on <m>L</m> as <m>t</m> varies from <m>-\infty</m> to <m>\infty</m>.
+          will trace out all points on <m>L</m> as <m>t</m> varies
+          from <m>-\infty</m> to <m>\infty</m>.
         </p>
         <theorem xml:id="theorem-parametric-equations-of-a-line">
-          <title>Parametric Equations of a Line</title>
-          <idx><h>lines</h><h>parametric equations in <m>\RR^{3}</m></h></idx>
+          <title>Parametric equations of a line</title>
+          <idx>
+            <h>lines</h>
+            <h>parametric equations in <m>\RR^{3}</m></h>
+          </idx>
           <statement>
             <p>
-              If <m>P_{0}(x_{0},y_{0},z_{0})</m> is a point on a line <m>L</m>, and if <m>\mathbf{v} = \dotprod{a,b,c}</m> is parallel to <m>L</m>, then
-            </p>
-            <me>\mathbf{r} = \mathbf{r}_{0}+t\mathbf{v}</me>
-            <p>
+              If <m>P_{0}(x_{0},y_{0},z_{0})</m> is a point on a line
+              <m>L</m>, and if <m>\mathbf{v} = \dotprod{a,b,c}</m> is
+              parallel to <m>L</m>, then
+              <me>\mathbf{r} = \mathbf{r}_{0}+t\mathbf{v}</me>
               traces out <m>L</m>, where
-            </p>
-            <me>\mathbf{r} = \dotprod{x,y,z},\quad\mathbf{r}_{0} = \dotprod{x_{0},y_{0},z_{0}}.</me>
-            <p>
+              <me>\mathbf{r} = \dotprod{x,y,z},\quad\mathbf{r}_{0} = \dotprod{x_{0},y_{0},z_{0}}.</me>
               We can also write this as the system of equations
+              <me>x = x_{0}+ta,\quad y=y_{0}+tb\quad\text{and}\quad z = z_{0}+tc.</me>
             </p>
-            <me>x = x_{0}+ta,\quad y=y_{0}+tb\quad\text{and}\quad z = z_{0}+tc.</me>
           </statement>
         </theorem>
-        <example xml:id="example-equation-of-a-line-with-a-given-direction-and-point">
+        <example xml:id="example-equation-of-a-line-with-a-given-direction-and-point" workspace="3in">
           <title>Equation of a line with a given direction and point</title>
-          <p>
-            Suppose we want to find the equation of a line <m>L</m> that passes through <m>(2,5,-3)</m> and is perpendicular to <m>\mathbf{u} = \dotprod{2,1,2}</m>. <xref ref="theorem-parametric-equations-of-a-line" text="type-global" /> says that we only need to find the right choices for <m>\mathbf{r}_{0}</m> and <m>\mathbf{v}</m> in order to get the equation of such a line, and we can write down one of these right away:
-          </p>
-          <me>\mathbf{r}_{0} = \dotprod{2,5,-3}.</me>
-          <p>
-            So we just need to find <m>\mathbf{v}</m>. Since <m>L</m> is orthogonal to <m>\mathbf{u} = \dotprod{2,1,2}</m>, this means we want <m>\mathbf{v}</m> to be orthogonal to <m>\mathbf{u}</m> as well. A great way to find such a <m>\mathbf{v}</m> is to use the cross product. If <m>\mathbf{w}</m> is any nonzero vector, then <m>\mathbf{u}\times\mathbf{w}</m> must be orthogonal to both <m>\mathbf{u}</m> and <m>\mathbf{w}</m>, and in particular it must be orthogonal to <m>\mathbf{u}</m>. So we can take
-          </p>
-          <me>\mathbf{v} = \dotprod{2,1,2}\times\mathbf{i} = \dotprod{0,2,-1}.</me>
-          <p>
-            So the equation of this line is
-          </p>
-          <me>\mathbf{r} = \dotprod{2,1+2t,2-t}</me>
-          <p>
-            As <m>t</m> varies, this will trace out our line.
-          </p>
+          <statement>
+            <p>
+              Find the equation of a line <m>L</m> that passes through
+              <m>(2,5,-3)</m> and is perpendicular to <m>\mathbf{u} =
+              \dotprod{2,1,2}</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              <xref ref="theorem-parametric-equations-of-a-line"
+              text="type-global" /> says that we only need to find the
+              right choices for <m>\mathbf{r}_{0}</m> and
+              <m>\mathbf{v}</m> in order to get the equation of such a
+              line, and we can write down one of these right away:
+              <me>\mathbf{r}_{0} = \dotprod{2,5,-3}</me>.  So we just
+              need to find <m>\mathbf{v}</m>, which we can find by
+              choosing a specific example and verifying with the dot
+              product or by using the cross product.
+            </p>
+            <p>
+              One such equation of a required line is
+              <me>\mathbf{r} = \dotprod{2,1+2t,2-t}</me>.
+            </p>
+          </solution>
         </example>
         <p>
-          When we begin working with line integrals, we'll need to know how to parameterize a line segment, so we'll discuss that now. Suppose we have a line segment between two points <m>P_{0}</m> and <m>P_{1}</m>. Let <m>\mathbf{r}_{0}</m> and <m>\mathbf{r}_{1}</m> denote the corresponding position vectors of these points (i.e. the vectors whose components are given by the coordinates of these points). Then the equation of the <em>line</em> between <m>P_{0}</m> and <m>P_{1}</m> is given by
+          When we begin working with line integrals, we'll need to
+          know how to parameterize a line segment, so we'll discuss
+          that now. Suppose we have a line segment between two points
+          <m>P_{0}</m> and <m>P_{1}</m>. Let <m>\mathbf{r}_{0}</m> and
+          <m>\mathbf{r}_{1}</m> denote the corresponding position
+          vectors of these points (i.e. the vectors whose components
+          are given by the coordinates of these points). Then the
+          equation of the <em>line</em> between <m>P_{0}</m> and
+          <m>P_{1}</m> is given by <me>\mathbf{r}] =
+          \mathbf{r}_{0}+t(\mathbf{r}_{1}-\mathbf{r}_{0}) =
+          (1-t)\mathbf{r}_{0}+t\mathbf{r}_{1}</me>.
         </p>
-        <me>\mathbf{r}] = \mathbf{r}_{0}+t(\mathbf{r}_{1}-\mathbf{r}_{0}) = (1-t)\mathbf{r}_{0}+t\mathbf{r}_{1}.</me>
         <p>
-          To get the line segment we're actually looking for, we just need to restrict <m>t</m> to the interval <m>0\leq t\leq 1</m>. So we can say that
-        </p>
-        <me>\mathbf{r} = (1-t)\mathbf{r}_{0}+t\mathbf{r}_{1} \quad\text{with}\quad0\leq t\leq 1</me>
-        <p>
+          To get the line segment we're actually looking for, we just
+          need to restrict <m>t</m> to the interval <m>0\leq t\leq
+          1</m>.  So we can say that
+          <me>\mathbf{r} = (1-t)\mathbf{r}_{0}+t\mathbf{r}_{1} \quad\text{with}\quad0\leq t\leq 1</me>
           traces out the line segment between <m>P_{0}</m> and <m>P_{1}</m>.
         </p>
+      </handout>
       </subsection>
       <subsection xml:id="subsection-equations-of-planes">
-        <title>Equations of Planes</title>
+        <handout>
+        <title>Equations of planes</title>
         <p>
-          Now we move on to finding the equation of a plane. We'll try a vector approach to this like we did for lines, and this won't be too bad to do. We just need to keep the following in mind:
+          Now we move on to finding the equation of a plane.  We'll try
+          a vector approach to this like we did for lines, and this
+          won't be too bad to do.  We just need to keep the following
+          in mind:
         </p>
         <observation xml:id="observation-vectors-and-planes">
           <p>
-            A plane in <m>\RR^{3}</m> is uniquely determined by specifying a single point for it to pass through and a direction for it to face.
+            A plane in <m>\RR^{3}</m> is uniquely determined by
+            specifying a single point for it to pass through and a
+            direction for it to face.
           </p>
         </observation>
         <p>
-          So in particular, vectors will provide a nice way to specify the direction of a plane, and any vector that does so must be orthogonal to the plane. If a (nonzero) vector <m>\mathbf{n}</m> is orthogonal to a given plane, then we call <m>\mathbf{n}</m> a <term>normal vector</term> to the plane. Now we can build up an equation of a given plane.
+          So in particular, vectors will provide a nice way to specify
+          the direction of a plane, and any vector that does so must
+          be orthogonal to the plane. If a (nonzero) vector
+          <m>\mathbf{n}</m> is orthogonal to a given plane, then we
+          call <m>\mathbf{n}</m> a <term>normal vector</term> to the
+          plane. Now we can build up an equation of a given plane.
         </p>
         <p>
-          Let <m>P_{0}(x_{0},y_{0},z_{0})</m> denote a point on the plane, and let <m>\mathbf{n} = \dotprod{a,b,c}</m> be a normal vector to the plane. If <m>\mathbf{r}=\dotprod{x,y,z}</m> is the position vector of any other point on the plane, then it must be true that <m>\mathbf{n}\cdot(\mathbf{r}-\mathbf{r}_{0}) = 0</m>, where <m>\mathbf{r}_{0}</m> is the position vector of <m>P_{0}</m>. We can summarize this in the following theorem.
+          Let <m>P_{0}(x_{0},y_{0},z_{0})</m> denote a point on the
+          plane, and let <m>\mathbf{n} = \dotprod{a,b,c}</m> be a
+          normal vector to the plane. If
+          <m>\mathbf{r}=\dotprod{x,y,z}</m> is the position vector of
+          any other point on the plane, then it must be true that
+          <m>\mathbf{n}\cdot(\mathbf{r}-\mathbf{r}_{0}) = 0</m>, where
+          <m>\mathbf{r}_{0}</m> is the position vector of
+          <m>P_{0}</m>. We can summarize this in the following
+          theorem.
         </p>
         <theorem xml:id="theorem-vector-and-scalar-equations-of-a-plane">
-          <title>Vector and Scalar Equations of a Plane</title>
-          <idx><h>planes</h><h>vector and scalar equations</h></idx>
+          <title>Vector and scalar equations of a plane</title>
+          <idx>
+            <h>planes</h>
+            <h>vector and scalar equations</h>
+          </idx>
           <statement>
             <p>
-              If <m>\mathbf{r}_{0} = \dotprod{x_{0},y_{0},z_{0}}</m> is the position vector for some point on a plane with normal vector <m>\mathbf{n} = \dotprod{a,b,c}</m>, then the position vector <m>\mathbf{r} = \dotprod{x,y,z}</m> of any other point on the plane must satisfy the <term>vector equation of the plane</term>:
+              If <m>\mathbf{r}_{0} = \dotprod{x_{0},y_{0},z_{0}}</m>
+              is the position vector for some point on a plane with
+              normal vector <m>\mathbf{n} = \dotprod{a,b,c}</m>, then
+              the position vector <m>\mathbf{r} = \dotprod{x,y,z}</m>
+              of any other point on the plane must satisfy the
+              <term>vector equation of the plane</term>:
+              <me>\mathbf{n}\cdot(\mathbf{r}-\mathbf{r}_{0}) = 0</me>.
+              Equivalently, any point <m>(x,y,z)</m> must also satisfy
+              the equivalent <term>scalar equation of the
+              plane</term>:
+              <me>a(x-x_{0})+b(y-y_{0})+c(z-z_{0}) = 0</me>.
             </p>
-            <me>\mathbf{n}\cdot(\mathbf{r}-\mathbf{r}_{0}) = 0.</me>
-            <p>
-              Equivalently, any point <m>(x,y,z)</m> must also satisfy the equivalent <term>scalar equation of the plane</term>:
-            </p>
-            <me>a(x-x_{0})+b(y-y_{0})+c(z-z_{0}) = 0.</me>
           </statement>
         </theorem>
-        <example xml:id="example-equation-of-a-plane-ortho">
+        <example xml:id="example-equation-of-a-plane-ortho" workspace="4in">
           <title>Equation of a plane orthogonal to a line</title>
-          <p>
-            Consider the two lines in <m>\RR^{3}</m> determined by the equations
-          </p>
-          <md>
-            <mrow>\mathbf{r}_{1} &amp; = \dotprod{1,1,0} + t\dotprod{1,-1,2} </mrow>
-            <mrow>\mathbf{r}_{2} &amp; = \dotprod{2,0,2} + s\dotprod{-1,1,0} </mrow>
-          </md>
-          <p>
-            We want to find the equation of the plane that contains the intersection of these two lines and is orthogonal to the first line. By <xref ref="theorem-vector-and-scalar-equations-of-a-plane" text="type-global" />, we need a point on the plane and a normal vector. Since the plane must contain the intersection of these two lines, that's our point. To find it, we'll set <m>\mathbf{r}_{1} = \mathbf{r}_{2}</m> and go from there:
-          </p>
-          <md>
-            <mrow>\mathbf{r}_{1}=\mathbf{r}_{2} &amp; \Rightarrow \dotprod{-1,1,-2} + \dotprod{t+s,s-t,2t} = \mathbf{0} </mrow>
-            <mrow> &amp; \Rightarrow t+s-1 = s-t+1 = 2t-2 = 0 </mrow>
-            <mrow> &amp; \Rightarrow t = 1\quad\text{and}\quad s=0 </mrow>
-          </md>
-          <p>
-            So the position vector <m>\mathbf{r}_{0}</m> of the point where these lines intersect is given by <m>\mathbf{r}_{0} = \dotprod{2,0,2}</m>. We also need a normal vector to the plane, but this is easy to find: since the plane needs to be orthogonal to the first line, we can just take <m>\mathbf{n} = \dotprod{1,-1,2}</m>. So the equation of our plane is
-          </p>
-          <me>\dotprod{1,-1,2}\cdot\dotprod{x-2,y,z-2} = 0</me>
-          <p>
-            or equivalently
-          </p>
-          <me>x-y+2z -6 = 0.</me>
-          <p>
-            This plane is plotted below using the Sage cell immediately after this example.
-          </p>
+          <statement>
+            <p>
+              Consider the two lines in <m>\RR^{3}</m> determined by the equations
+              <md>
+                <mrow>\mathbf{r}_{1} &amp; = \dotprod{1,1,0} + t\dotprod{1,-1,2} </mrow>
+                <mrow>\mathbf{r}_{2} &amp; = \dotprod{2,0,2} + s\dotprod{-1,1,0} </mrow>
+              </md>
+              Find the equation of the plane that contains the
+              intersection of these two lines and that is also
+              orthogonal to the first line.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We want to find the equation of the plane that contains
+              the intersection of these two lines and is orthogonal to
+              the first line. By <xref
+              ref="theorem-vector-and-scalar-equations-of-a-plane"
+              text="type-global" />, we need a point on the plane and a
+              normal vector. Since the plane must contain the
+              intersection of these two lines, that's our point. To find
+              it, we'll set <m>\mathbf{r}_{1} = \mathbf{r}_{2}</m> and
+              go from there:
+              <md>
+                <mrow>\mathbf{r}_{1}=\mathbf{r}_{2} &amp; \Rightarrow \dotprod{-1,1,-2} + \dotprod{t+s,s-t,2t} = \mathbf{0} </mrow>
+                <mrow> &amp; \Rightarrow t+s-1 = s-t+1 = 2t-2 = 0 </mrow>
+                <mrow> &amp; \Rightarrow t = 1\quad\text{and}\quad s=0 </mrow>
+              </md>.
+            </p>
+            <p>
+              So the position vector <m>\mathbf{r}_{0}</m> of the point
+              where these lines intersect is given by <m>\mathbf{r}_{0}
+              = \dotprod{2,0,2}</m>. We also need a normal vector to the
+              plane, but this is easy to find: since the plane needs to
+              be orthogonal to the first line, we can just take
+              <m>\mathbf{n} = \dotprod{1,-1,2}</m>.
+            </p>
+            <p>
+              So the equation of our plane is
+              <me>\dotprod{1,-1,2}\cdot\dotprod{x-2,y,z-2} = 0</me>
+              or equivalently
+              <me>x-y+2z -6 = 0</me>.
+            </p>
+            <p>
+              This plane is plotted below using the Sage cell
+              immediately after this example.
+            </p>
+          </solution>
         </example>
         <sage>
           <input>
@@ -1845,36 +1921,63 @@
         </sage>
         <p>
           We can rewrite the equation of a plane in the form
+          <me>ax+by+cz+d = 0</me>.  A normal vector to this plane is
+          given by <m>\mathbf{n} = \dotprod{a,b,c}</m>.
         </p>
-        <me>ax+by+cz+d = 0.</me>
-        <p>
-          A normal vector to this plane is given by <m>\mathbf{n} = \dotprod{a,b,c}</m>.
-        </p>
-        <example xml:id="example-equation-of-a-line-orthogonal-to-a-plane">
+        <example xml:id="example-equation-of-a-line-orthogonal-to-a-plane" workspace="2in">
           <title>Equation of a line orthogonal to a plane</title>
-          <p>
-            Suppose we're given the plane <m>3x-5z+2 = 0</m>, and we want to find the equation of the line orthogonal to this plane and passing through the point <m>(3,-1,2)</m>. Then the equation of this line is
-          </p>
-          <me>\mathbf{r} = \mathbf{r}_{0}+t\mathbf{v}</me>
-          <p>
-            where <m>\mathbf{r}_{0} = \dotprod{3,-1,2}</m> and <m>\mathbf{v}</m> is a vector parallel to the line. Since the line must be orthogonal to the plane, we can take <m>\mathbf{v} = \dotprod{3,0,-5}</m>. So the equation of this line is
-          </p>
-          <me>\mathbf{r} = \dotprod{3,-1,2}+\dotprod{3t,0,-5t}.</me>
+          <statement>
+            <p>
+              Find the equation of the line passing through the point
+              <m>(3, -1, 2)</m> and orthogonal to the plane <m>3x - 5z
+              + 2 =0</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              The the equation of this line is <me>\mathbf{r} =
+              \mathbf{r}_{0}+t\mathbf{v}</me> where <m>\mathbf{r}_{0} =
+              \dotprod{3,-1,2}</m> and <m>\mathbf{v}</m> is a vector
+              parallel to the line. Since the line must be orthogonal to
+              the plane, we can take <m>\mathbf{v} =
+              \dotprod{3,0,-5}</m>. So the equation of this line is
+              <me>\mathbf{r} = \dotprod{3,-1,2}+\dotprod{3t,0,-5t}</me>.
+            </p>
+          </solution>
         </example>
-        <example xml:id="example-equation-of-a-line-of-intersection-between-two-planes">
+        <example xml:id="example-equation-of-a-line-of-intersection-between-two-planes" workspace="3in">
           <title>Equation of a plane containing a line and a point</title>
-          <p>
-            Suppose we're trying to find a plane containing the point <m>(1,2,0)</m> and containing the line <m>\mathbf{r} = \dotprod{3-t,2,5+2t}</m>. To get the equation of this plane, we also need a normal vector to the plane. We can find the normal vector by computing the cross product of two vectors parallel to the plane.
-          </p>
-          <p>
-            First, since the plane contains the line <m>\dotprod{3-t,2,5+2t},</m> the direction of this line must be parallel to the plane. So we know that <m>\mathbf{v} = \dotprod{-1,0,2}</m> is parallel to the plane. To get another vector parallel to this plane, we can use the given point and a second point in the plane, say <m>(3,2,5)</m>, which comes from the line (just set <m>t=0</m>). So the vector <m>\mathbf{u} = \dotprod{3-1,2-2,5-0} = \dotprod{2,0,5}</m> must also be parallel to the plane. Hence a normal vector to this plane is
-          </p>
-          <me>\mathbf{n} = \mathbf{u}\times\mathbf{v} = \dotprod{0,9,0}.</me>
-          <p>
-            So an equation of this plane is given by
-          </p>
-          <me>9(y-2) = 0.</me>
+          <statement>
+            <p>
+              Find a plane containing the point <m>(1, 2, 0)</m> and the line <m>\mathbf{r} = \dotprod{3-t, 2, 5 + 2t}</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              To get the equation of this plane, we also need a normal
+              vector to the plane.  We can find the normal vector by
+              computing the cross product of two vectors parallel to the
+              plane.
+            </p>
+            <p>
+              First, since the plane contains the line
+              <m>\dotprod{3-t,2,5+2t},</m> the direction of this line
+              must be parallel to the plane. So we know that
+              <m>\mathbf{v} = \dotprod{-1,0,2}</m> is parallel to the
+              plane. To get another vector parallel to this plane, we
+              can use the given point and a second point in the plane,
+              say <m>(3,2,5)</m>, which comes from the line (just set
+              <m>t=0</m>). So the vector <m>\mathbf{u} =
+              \dotprod{3-1,2-2,5-0} = \dotprod{2,0,5}</m> must also be
+              parallel to the plane. Hence a normal vector to this plane
+              is
+              <me>\mathbf{n} = \mathbf{u}\times\mathbf{v} = \dotprod{0,9,0}</me>.
+              So an equation of this plane is given by
+              <me>9(y-2) = 0</me>.
+            </p>
+          </solution>
         </example>
+      </handout>
       </subsection>
     </section>
     <section xml:id="section-cylinders-and-quadric-surfaces">
