@@ -5397,8 +5397,8 @@ var ptx_lunr_docs = [
   "url": "section-cylinders-and-quadric-surfaces.html",
   "type": "Section",
   "number": "11.6",
-  "title": "Cylinders and Quadric Surfaces",
-  "body": " Cylinders and Quadric Surfaces   Before we move on to doing calculus with vectors, we'll briefly take a look at more graphs in . In particular, we'll look at cylinders and quadric surfaces .    Cylinders   cylinders definition  Cylinders   A cylinder is the collection of all lines parallel to a given line and passing through some plane curve.    A basic example of a cylinder is the set of all lines passing through the unit circle in the -plane and parallel to the -axis. In , this is just the graph of . The graph of this cylinder is provided below.   The cylinder    For our purposes, equations that give a cylinder will often be missing a variable.   A sinusoidal cylinder  Consider the equation in . This equation is missing the variable , which suggests that the graph of this equation should be a cylinder. However, it's not going to look like the cylinders we may be used to at this point. In fact, this is just the set of all lines passing through the curve in the -plane and parallel to the -axis. It's graph is given below.     The cylinder     Another cylinder  Consider the cylinder given by the set of all lines passing through the plane curve in the -plane and parallel to the line in defined by the equation   What does this cylinder look like? Well, we can view it as essentially a \"sheet\" of lines cutting through the -plane at the line . If we try to imagine this, then this suggests that this cylinder should probably be a plane! In fact, this cylinder is exactly the plane containing the point and parallel to the line given above. As the line itself is parallel to the -plane, the resulting cylinder is just the -plane.     Quadric Surfaces  A quadric surface is any surface that is the graph of an equation of the form   A useful tool for graphing quadric surfaces (and others in ) is the concept of a trace , which is what the curve looks like in a plane parallel to the one the coordinate planes. This amounts to setting either, or equal to a constant and graphing the resulting equation.   An ellipsoid  Consider the equation   If we want to graph this, we can graph a few of it's traces to get an idea of what it looks like. Let's graph traces parallel the -plane to start. This means we'll set equal to different constants. For , we get the equation   which we rewrite as   This is an ellipse in the -plane, with minor axis and major axis . We can graph another trace, say in the -plane, we get   which is an ellipse with minor axis and major axis . Similarly, in the -plane we have an ellipse with minor axis and major axis . Putting these together gives us a rough idea of the shape of this surface, which we call an ellipsoid .    Region between surfaces  Suppose we want to sketch the region between the surface and the cylinder for . First, we can graph . If we look at the horizontal traces of this surface, we get circles of varying radii. As increases, the radii of these circles increase as well. This surface is just a cone! So we're describing the region of this cone bounded between and , and contained inside the cylinder .    The region contained between and     "
+  "title": "Cylinders and quadric surfaces",
+  "body": " Cylinders and quadric surfaces   Before we move on to doing calculus with vectors, we'll briefly take a look at more graphs in . In particular, we'll look at cylinders and quadric surfaces .     Cylinders   cylinders definition  Cylinders   A cylinder is the collection of all lines parallel to a given line and passing through some plane curve.    A basic example of a cylinder is the set of all lines passing through the unit circle in the -plane and parallel to the -axis. In , this is just the graph of . The graph of this cylinder is provided below.   The cylinder    For our purposes, equations that give a cylinder will often be missing a variable.   A sinusoidal cylinder  Consider the equation in . This equation is missing the variable , which suggests that the graph of this equation should be a cylinder. However, it's not going to look like the cylinders we may be used to at this point. In fact, this is just the set of all lines passing through the curve in the -plane and parallel to the -axis. It's graph is given below.     The cylinder     Another cylinder  Consider the cylinder given by the set of all lines passing through the plane curve in the -plane and parallel to the line in defined by the equation What does this cylinder look like? Well, we can view it as essentially a \"sheet\" of lines cutting through the -plane at the line . If we try to imagine this, then this suggests that this cylinder should probably be a plane! In fact, this cylinder is exactly the plane containing the point and parallel to the line given above. As the line itself is parallel to the -plane, the resulting cylinder is just the -plane.       Quadric surfaces  A quadric surface is any surface that is the graph of an equation of the form   A useful tool for graphing quadric surfaces (and others in ) is the concept of a trace , which is what the curve looks like in a plane parallel to the one the coordinate planes. This amounts to setting either, or equal to a constant and graphing the resulting equation.   An ellipsoid  Consider the equation   If we want to graph this, we can graph a few of it's traces to get an idea of what it looks like. Let's graph traces parallel the -plane to start. This means we'll set equal to different constants. For , we get the equation   which we rewrite as   This is an ellipse in the -plane, with minor axis and major axis . We can graph another trace, say in the -plane, we get   which is an ellipse with minor axis and major axis . Similarly, in the -plane we have an ellipse with minor axis and major axis . Putting these together gives us a rough idea of the shape of this surface, which we call an ellipsoid .    Region between surfaces  Suppose we want to sketch the region between the surface and the cylinder for . First, we can graph . If we look at the horizontal traces of this surface, we get circles of varying radii. As increases, the radii of these circles increase as well. This surface is just a cone! So we're describing the region of this cone bounded between and , and contained inside the cylinder .    The region contained between and      "
 },
 {
   "id": "section-cylinders-and-quadric-surfaces-2-1",
@@ -5419,9 +5419,9 @@ var ptx_lunr_docs = [
   "body": " cylinders definition  Cylinders   A cylinder is the collection of all lines parallel to a given line and passing through some plane curve.   "
 },
 {
-  "id": "subsection-cylinders-4",
+  "id": "subsection-cylinders-1-4",
   "level": "2",
-  "url": "section-cylinders-and-quadric-surfaces.html#subsection-cylinders-4",
+  "url": "section-cylinders-and-quadric-surfaces.html#subsection-cylinders-1-4",
   "type": "Figure",
   "number": "11.6.2",
   "title": "",
@@ -5437,9 +5437,9 @@ var ptx_lunr_docs = [
   "body": " A sinusoidal cylinder  Consider the equation in . This equation is missing the variable , which suggests that the graph of this equation should be a cylinder. However, it's not going to look like the cylinders we may be used to at this point. In fact, this is just the set of all lines passing through the curve in the -plane and parallel to the -axis. It's graph is given below.  "
 },
 {
-  "id": "subsection-cylinders-7",
+  "id": "subsection-cylinders-1-7",
   "level": "2",
-  "url": "section-cylinders-and-quadric-surfaces.html#subsection-cylinders-7",
+  "url": "section-cylinders-and-quadric-surfaces.html#subsection-cylinders-1-7",
   "type": "Figure",
   "number": "11.6.4",
   "title": "",
@@ -5452,21 +5452,21 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "11.6.5",
   "title": "Another cylinder.",
-  "body": " Another cylinder  Consider the cylinder given by the set of all lines passing through the plane curve in the -plane and parallel to the line in defined by the equation   What does this cylinder look like? Well, we can view it as essentially a \"sheet\" of lines cutting through the -plane at the line . If we try to imagine this, then this suggests that this cylinder should probably be a plane! In fact, this cylinder is exactly the plane containing the point and parallel to the line given above. As the line itself is parallel to the -plane, the resulting cylinder is just the -plane.  "
+  "body": " Another cylinder  Consider the cylinder given by the set of all lines passing through the plane curve in the -plane and parallel to the line in defined by the equation What does this cylinder look like? Well, we can view it as essentially a \"sheet\" of lines cutting through the -plane at the line . If we try to imagine this, then this suggests that this cylinder should probably be a plane! In fact, this cylinder is exactly the plane containing the point and parallel to the line given above. As the line itself is parallel to the -plane, the resulting cylinder is just the -plane.  "
 },
 {
-  "id": "subsection-quadric-surfaces-2",
+  "id": "subsection-quadric-surfaces-1-2",
   "level": "2",
-  "url": "section-cylinders-and-quadric-surfaces.html#subsection-quadric-surfaces-2",
+  "url": "section-cylinders-and-quadric-surfaces.html#subsection-quadric-surfaces-1-2",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "quadric surface "
 },
 {
-  "id": "subsection-quadric-surfaces-4",
+  "id": "subsection-quadric-surfaces-1-4",
   "level": "2",
-  "url": "section-cylinders-and-quadric-surfaces.html#subsection-quadric-surfaces-4",
+  "url": "section-cylinders-and-quadric-surfaces.html#subsection-quadric-surfaces-1-4",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -5491,9 +5491,9 @@ var ptx_lunr_docs = [
   "body": " Region between surfaces  Suppose we want to sketch the region between the surface and the cylinder for . First, we can graph . If we look at the horizontal traces of this surface, we get circles of varying radii. As increases, the radii of these circles increase as well. This surface is just a cone! So we're describing the region of this cone bounded between and , and contained inside the cylinder .  "
 },
 {
-  "id": "subsection-quadric-surfaces-7",
+  "id": "subsection-quadric-surfaces-1-7",
   "level": "2",
-  "url": "section-cylinders-and-quadric-surfaces.html#subsection-quadric-surfaces-7",
+  "url": "section-cylinders-and-quadric-surfaces.html#subsection-quadric-surfaces-1-7",
   "type": "Figure",
   "number": "11.6.8",
   "title": "",
