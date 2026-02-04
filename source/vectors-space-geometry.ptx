@@ -2120,7 +2120,7 @@
     </subsection>
   </section>
   <section xml:id="section-vector-functions">
-    <title>Vector Functions</title>
+    <title>Vector functions</title>
     <introduction>
       <p>
         Recall from <xref ref="subsection-equations-of-lines" text="title" /> that the equation of a line can be written as
@@ -2135,6 +2135,7 @@
       </p>
     </introduction>
     <subsection xml:id="limits-with-space-curves">
+      <handout>
       <title>Limits with Space Curves</title>
       <p>
         We can take limits with vector functions just as we can with regular functions.
@@ -2146,7 +2147,7 @@
       <p>
         In other words, if you want to take the limit of a vector function you can just take the limits of the component functions.
       </p>
-      <example xml:id="example-limit-of-a-vector-function">
+      <example xml:id="example-limit-of-a-vector-function" workspace="2in">
         <title>Limit of a vector function</title>
         <p>
           Let
@@ -2161,7 +2162,7 @@
         Just as in Calculus I, we say that a vector function <m>\mathbf{r}(t)</m> is <term>continuous</term> at <m>t=a</m> if <m>\lim_{t\to a}\mathbf{r}(t) = \mathbf{r}(a)</m>.
         In general, a vector function is continuous wherever <em>all</em> of its components functions are continuous.
       </p>
-      <example xml:id="example-a-horiztonal-helix">
+      <example xml:id="example-a-horiztonal-helix" workspace="2in">
         <title>A horiztonal helix</title>
         <p>
           Let <m>\mathbf{r}(t) = \dotprod{\sin\pi t, t, \cos\pi t}</m>, and suppose we want to sketch this function. One way to do so is to plug in values for <m>t</m> and connect the resulting points with a curve, but we can also do the following to get an idea of what this looks like. First, note that we have <m>x = \sin\pi t</m> and <m>z=\cos\pi t</m>. So <m>x^{2}+z^{2} = 1</m>, which means that this looks like the unit circle in the <m>xz</m>-plane, traced <em>clockwise</em>. Since we also have <m>y=t</m>, this curve moves farther along the <m>y</m>-axis as <m>t</m> increases. If we trace this out, we get a helix (see the below plot). We can also see from the graph that it has no jumps or gaps, so <m>\mathbf{r}(t)</m> is continuous everywhere.
@@ -2195,10 +2196,10 @@
           plt.show()
         </input>
       </sage>
-      <example xml:id="example-finding-vector-functions">
+      <example xml:id="example-finding-vector-functions" workspace="3in">
         <title>Finding vector functions</title>
         <p>
-          Consider the cylinder <m>x^{2}+y^{2}=4</m> and the surface <m>z=xy</m>, and suppose we want to trace out there intersection with a vector function. Here's how we can do this. First, we'll come up with the <m>x</m> and <m>y</m> components of <m>\mathbf{r}(t)</m>. Since <m>x^{2}+y^{2} = 4</m>, this suggests that we should take
+          Consider the cylinder <m>x^{2}+y^{2}=4</m> and the surface <m>z=xy</m>, and suppose we want to trace out their intersection with a vector function. Here's how we can do this. First, we'll come up with the <m>x</m> and <m>y</m> components of <m>\mathbf{r}(t)</m>. Since <m>x^{2}+y^{2} = 4</m>, this suggests that we should take
         </p>
         <md>
           <mrow>x &amp; = 2\cos t </mrow>
@@ -2245,9 +2246,11 @@
           plt.show()
         </input>
       </sage>
+    </handout>
     </subsection>
     <subsection xml:id="subsection-derivatives-with-space-curves">
-      <title>Derivatives with Space Curves</title>
+      <handout>
+      <title>Derivatives with space curves</title>
       <p>
         Now that we know how to take limits with vector functions, we can take derivatives as well.
       </p>
@@ -2271,7 +2274,7 @@
       <p>
         We also have the usual ideas from Calculus I and physics regarding motion: velocity is the derivative of position and acceleration is the derivative of velocity.
       </p>
-      <example xml:id="example-velocity-on-a-saddle">
+      <example xml:id="example-velocity-on-a-saddle" workspace="2in">
         <title>Velocity on a saddle</title>
         <p>
           A particle moves counterclockwise along the "saddle" <m>\mathbf{r}(t) = \dotprod{2\cos t, 2\sin t, 2\sin 2t}</m>. We want its velocity at <m>t=\frac{\pi}{2}</m>. First, find <m>\mathbf{r}^\prime</m> to get
@@ -2289,7 +2292,7 @@
         <caption>Motion along the saddle traced by <m>\vb{r}(t)</m> in <xref ref="example-velocity-on-a-saddle" text="type-global" /></caption>
         <interactive xml:id="calcplot3d-velocity-on-a-saddle" calcplot3d="type=spacecurve;spacecurve=curve;x=2cos(t);y=2sin(t);z=2sin(2t);visible=true;width=2;view=0;tmin=-10;tmax=10;tsteps=100;color=rgb(255,0,0);showtrace=true;tval=4.199999999999999;constcol=true;twod=false;arrows=0;showpt=true;trace=true;vel=true;acc=true;osc=false;k=false;repeat=false;bounce=false;dashed=false;tanline=false;dropcurtain=false;showtvector=true;shownvector=false;showbvector=false;showtnbeqs=false;showtnblabels=false;showoscplane=false;showrectplane=false;shownormplane=false;optimizecurve=true;maxjointangle=10&amp;type=window;hsrmode=3;nomidpts=true;anaglyph=-1;center=9.929061391261872,1.1887230763648262,-0.026025684742049693,1;focus=0,0,0,1;up=-0.1309608224183076,0.23562729869603305,0.962979251646021,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-2;xmax=2;ymin=-2;ymax=2;zmin=-2;zmax=2;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;xscalefactor=1;yscalefactor=1;zscalefactor=1;tracemode=0;keep2d=false;zoom=0.885333" variant="controls" aspect="3:2" width="90%"/>
       </figure>
-      <example xml:id="example-tangents-on-a-circle">
+      <example xml:id="example-tangents-on-a-circle" workspace="3in">
         <title>Tangents on a circle</title>
         <p>
           A particle moves along the circle <m>y^{2}+z^{2}=5</m> in the <m>yz</m>-plane, counterclockwise and with an angular frequency of <quantity><mag>5\pi</mag><unit base="radian"/><per base="second"/></quantity>. Then we can assume that its position is described by
@@ -2320,13 +2323,16 @@
           </ol>
         </statement>
       </theorem>
+    </handout>
     </subsection>
     <subsection xml:id="subsection-integrals-with-space-curves">
-      <title>Integrals with Space Curves</title>
+      <handout>
+      <title>Integrals with space curves</title>
       <p>
         We can also integrate vector functions without too much trouble. Just as taking the derivative of a vector function reduces down to differentiating each component, integrating a vector function reduces down to integrating each component. If <m>\mathbf{r}(t) = \dotprod{f(t),g(t),h(t)},</m> then
       </p>
       <men xml:id="equation-vector-function-integration">\int_{a}^{b}\mathbf{r}(t)\,dt = \dotprod{\int_{a}^{b}f(t)\,dt,\int_{a}^{b}g(t)\,dt,\int_{a}^{b}h(t)\,dt}.</men>
+      </handout>
     </subsection>
   </section>
   <section xml:id="section-arc-length-and-curvature">
