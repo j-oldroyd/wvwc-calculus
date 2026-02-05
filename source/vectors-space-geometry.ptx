@@ -2556,7 +2556,8 @@
     </subsection>
   </section>
   <section xml:id="section-motion-in-space">
-    <title>Motion in Space</title>
+    <handout>
+    <title>Motion in space</title>
     <p>
       We now move on to examining motion in <m>\RR^{3}</m>. First, recall that <m>\mathbf{r}(t)</m> represents the position vector of some particle moving along a curve in space, then its velocity <m>\mathbf{t}(t)</m> and acceleration <m>\mathbf{a}(t)</m> are given by
     </p>
@@ -2567,7 +2568,7 @@
     <p>
       The speed of the particle is just the magnitude of the velocity: <m>\norm{\mathbf{v}(t)}</m>.
     </p>
-    <example xml:id="example-motion-of-a-projectile">
+    <example xml:id="example-motion-of-a-projectile" workspace="3in">
       <title>Motion of a projectile</title>
       <statement>
         <p>
@@ -2626,7 +2627,7 @@
     <p>
       <m>a_{T}</m> represents how much of the acceleration is directed tangent to the curve <m>\mathbf{r}(t)</m>, whereas <m>a_{N}</m> represents how much of the acceleration is directed perpendicular to the tangent.
     </p>
-    <example xml:id="example-components-of-acceleration-for-a-projectile">
+    <example xml:id="example-components-of-acceleration-for-a-projectile" workspace="2in">
       <title>Components of acceleration for a projectile</title>
       <statement>
         <p>
@@ -2665,8 +2666,6 @@
         show(T)
       </input>
     </sage>
+  </handout>
   </section>
-    <!-- I'm keeping these here for now in case I need to see how this is done later. -->
-<!--     <xi:include href="./sage/integers-sage.xml" />
-<xi:include href="./sage/integers-sage-exercises.xml" /> -->
 </chapter>
