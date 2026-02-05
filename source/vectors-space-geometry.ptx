@@ -2336,9 +2336,10 @@
     </subsection>
   </section>
   <section xml:id="section-arc-length-and-curvature">
-    <title>Arc Length and Curvature</title>
+    <title>Arc length and curvature</title>
     <subsection xml:id="subsection-arc-length">
-      <title>Arc Length</title>
+      <handout>
+      <title>Arc length</title>
       <p>
         Suppose some particle travels along the space curve given by <m>\mathbf{r}(t)</m> for <m>a\leq t\leq b</m>. What we'd like to do is determine how far the particle travels over this time interval. Recall that distance is just speed multiplied by time, and the speed of this particle is given by <m>\norm{\mathbf{r}^\prime(t)}</m>. So we can imagine that the distance traveled by this particle over some infinitesimal time interval <m>dt</m> to be given by <m>\norm{\mathbf{r}^\prime(t)}\,dt</m>. So adding up all of these distances from <m>t=a</m> to <m>t=b</m> should give us the arc length. This suggests (but does not prove!) the following formula for arc length:
       </p>
@@ -2346,7 +2347,7 @@
       <p>
         <xref ref="equation-arc-length-formula" text="type-global" /> gives the length <m>L</m> of the space curve <m>\mathbf{r}(t)</m> from <m>t=a</m> to <m>t=b</m>, assuming that the integral exists.
       </p>
-      <example xml:id="example-arc-length-of-a-helix">
+      <example xml:id="example-arc-length-of-a-helix" workspace="2in">
         <title>Arc length of a helix</title>
         <p>
           Suppose we want to find the arc length of the helix <m>\mathbf{r}(t) = \dotprod{\cos 3t,\sin 3t, t}</m> from <m>t=0</m> to <m>t=1</m>. Then this is given by
@@ -2360,7 +2361,7 @@
       <p>
         If we can then solve for <m>t</m> in terms of <m>s</m>, this parametrizes the curve <m>\mathbf{r}(t)</m> in terms of the arc length variable <m>s</m>.
       </p>
-      <example xml:id="example-reparametrizing-a-space-curve">
+      <example xml:id="example-reparametrizing-a-space-curve" workspace="3in">
         <title>Reparametrizing a space curve</title>
         <p>
           Suppose we're given the space curve
@@ -2411,8 +2412,10 @@
           plt.show()
         </input>
       </sage>
+    </handout>
     </subsection>
     <subsection xml:id="subsection-curvature">
+      <handout>
       <title>Curvature</title>
       <p>
         What we want to do now is measure how much a curve "turns" at some point. First, we call a space curve <m>\mathbf{r}(t)</m> <term>smooth</term> on some interval <m>I</m> if <m>\mathbf{r}^\prime(t)\neq0</m> for any <m>t</m> in <m>I</m>. Now, if we want to measure how quickly a curve is changing direction then we can use the unit tangent vector <m>\mathbf{T}(t)</m> to measure this. In particular, the derivative of the unit tangent should provide a good measure of how quickly a curve turns. However, we don't want to let the specific parametrization of the curve affect this; in other words, the rate at which a curve is turning should not depend on the speed at which the curve is traveled. This leads to the following definition.
@@ -2430,7 +2433,7 @@
           </p>
         </statement>
       </definition>
-      <example xml:id="example-computing-a-curvature">
+      <example xml:id="example-computing-a-curvature" workspace="3in">
         <title>Computing a curvature</title>
         <p>
           Consider the curve <m>\mathbf{r}(t) = \dotprod{t,\frac{1}{2}t^{2},t^{2}}.</m> We'll try to find the curvature by making use of <xref ref="definition-curvature" text="type-global" />. First, we need to find <m>\mathbf{T}</m> so we can take its derivative:
@@ -2452,7 +2455,7 @@
           <mrow> &amp; = \sqrt{5}(1+5t^{2})^{-3/2} </mrow>
         </md>
       </example>
-      <example xml:id="example-using-curvature">
+      <example xml:id="example-using-curvature" workspace="2in">
         <title>Using curvature</title>
         <p>
           Consider the curve <m>\mathbf{r}(t) = \dotprod{t,\frac{1}{2}t^{2},t^{2}}</m> once again. We'll try to find where this curve turns the fastest. To do this, we look at the curvature <m>\kappa(t)</m> we found from <xref ref="example-computing-a-curvature" text="type-global" />:
@@ -2478,7 +2481,7 @@
       <p>
         The formula in <xref ref="theorem-alternative-curvature-formula" text="type-global" /> may look worse than the formula given in <xref ref="definition-curvature" text="type-global" />, but it has one significant advantage: we don't need to differentiate any magnitudes, which is required in the previous formula to compute <m>\mathbf{T}^\prime(t)</m>.
       </p>
-      <example xml:id="example-using-the-alternative-formula">
+      <example xml:id="example-using-the-alternative-formula" workspace="2in">
         <title>Using the alternative formula</title>
         <statement>
           <p>
@@ -2494,9 +2497,11 @@
           <me>\kappa(t) = \frac{\norm{\dotprod{2e^{t}(t-1),-e^{t},2}}}{\norm{\dotprod{1,2t,e^{t}}}^{3}} = \frac{\sqrt{4e^{2t}(t-1)^{2}+e^{2t}+4}}{(1+4t^{2}+e^{2t})^{3/2}}.</me>
         </statement>
       </example>
+    </handout>
     </subsection>
     <subsection xml:id="subsection-normal-and-binormal-vectors">
-      <title>Normal and Binormal Vectors</title>
+      <handout>
+      <title>Normal and binormal vectors</title>
       <p>
         Consider a curve <m>\mathbf{r}(t)</m>. Then the direction of the curve is given by the unit tangent vector <m>\mathbf{T}(t) = \frac{\mathbf{r}^\prime(t)}{\norm{\mathbf{r}^\prime(t)}}</m>. If we differentiate <m>\mathbf{T}(t)</m> to get <m>\mathbf{T}^{\prime}(t)</m>, we can view this vector as telling us the direction the curve is turning. This leads us to the concept of <term>unit normal vectors</term> to a space curve.
       </p>
@@ -2514,7 +2519,7 @@
         </statement>
       </definition>
 
-      <example xml:id="example-unit-normal-on-a-circle">
+      <example xml:id="example-unit-normal-on-a-circle" workspace="3in">
         <title>Unit normal on a circle</title>
         <statement>
           <p>
@@ -2547,6 +2552,7 @@
           <me>\mathbf{B}(t) = \mathbf{T}(t)\times\mathbf{N}(t).</me>
         </statement>
       </definition>
+      </handout>
     </subsection>
   </section>
   <section xml:id="section-motion-in-space">
