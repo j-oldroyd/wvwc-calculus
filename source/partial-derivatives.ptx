@@ -36,8 +36,11 @@
                 <m>t</m>.
             </p>
             <definition xml:id="definition-functions-of-two-variables">
-                <idx><h>functions of several variables</h><h>two variables</h></idx>
-                <title>Functions of Two Variables</title>
+              <idx>
+                <h>functions of several variables</h>
+                <h>two variables</h>
+              </idx>
+              <title>Functions of Two Variables</title>
                 <statement>
                     <p>
                         A <term>function of two variables</term> is a rule <m>f</m> or <m>z = f(x,y)</m> that assigns pairs <m>(x,y)</m> of real numbers to real numbers.
