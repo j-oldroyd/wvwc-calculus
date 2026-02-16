@@ -1679,7 +1679,7 @@
       </p>
       <figure xml:id="figure-line-in-space-2">
         <image xml:id="image-line-in-space-2" width="90%">
-          <latex-image><![CDATA[
+          <latex-image>
             \begin{tikzpicture} [axis/.style={->,blue,thick},
             vector/.style={-stealth,red,very thick},
             vector guide/.style={dashed,red,thick}]
@@ -1715,7 +1715,6 @@
             \draw[vector] (O)--(4,1.5,.5) node[pos=1.2]{$\mathbf{r} = \mathbf{r}_{0}+\mathbf{u}$};
             \end{axis}
             \end{tikzpicture}
-            ]]>
           </latex-image>
         </image>
         <caption>Tracing out <m>L</m> using vectors.</caption>

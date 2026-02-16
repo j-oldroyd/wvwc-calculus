@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<!--********************************************************************
-
-*********************************************************************-->
-<!-- This file was originally part of the book     -->
-<!-- (as copied on 2015/07/12)                     -->
-<!--                                               -->
-<!--   Abstract Algebra: Theory and Applications   -->
-<!--                                               -->
-<!-- Copyright (C) 1997-2014  Thomas W. Judson     -->
-
 <chapter xml:id="partial-derivatives" xmlns:xi="http://www.w3.org/2001/XInclude">
     <title>Partial Derivatives</title>
     <introduction>
         <p>
-            For functions that depend on a single independent variable such as <m>x</m> or <m>t</m>, derivatives are useful because they represent how the function itself changes as the independent variable changes.
-            However, there are many situations where it makes sense to consider functions of more than one independent variable.
-            Therefore, we will want to extend the notion of derivative to include these functions as well.
-            Our primary tool for this will be the <term>partial derivative</term>, which we'll see in <xref ref="section-partial-derivatives" text="type-global" />.
+            For functions that depend on a single independent variable
+            such as <m>x</m> or <m>t</m>, derivatives are useful
+            because they represent how the function itself changes as
+            the independent variable changes.  However, there are many
+            situations where it makes sense to consider functions of
+            more than one independent variable.  Therefore, we will
+            want to extend the notion of derivative to include these
+            functions as well.  Our primary tool for this will be the
+            <term>partial derivative</term>, which we'll see in <xref
+            ref="section-partial-derivatives" text="type-global" />.
             But we'll need to build up some terminology to get there.
         </p>
     </introduction>
@@ -25,18 +21,26 @@
         <title>Functions of Several Independent Variables</title>
         <introduction>
             <p>
-                Now we need to consider calculus with functions of more than one independent variable.
+                Now we need to consider calculus with functions of
+                more than one independent variable.
             </p>
         </introduction>
         <subsection xml:id="subsection-functions-of-two-variables">
             <title>Functions of Two Variables</title>
             <p>
-                A function of several variables is a function that depends on more than one independent variable.
-                One such example comes from differential equations, where quantities such as the temperature of a metal rod depend on both a position <m>x</m> and a time <m>t</m>.
+                A function of several variables is a function that
+                depends on more than one independent variable.  One
+                such example comes from differential equations, where
+                quantities such as the temperature of a metal rod
+                depend on both a position <m>x</m> and a time
+                <m>t</m>.
             </p>
             <definition xml:id="definition-functions-of-two-variables">
-                <idx><h>functions of several variables</h><h>two variables</h></idx>
-                <title>Functions of Two Variables</title>
+              <idx>
+                <h>functions of several variables</h>
+                <h>two variables</h>
+              </idx>
+              <title>Functions of Two Variables</title>
                 <statement>
                     <p>
                         A <term>function of two variables</term> is a rule <m>f</m> or <m>z = f(x,y)</m> that assigns pairs <m>(x,y)</m> of real numbers to real numbers.
