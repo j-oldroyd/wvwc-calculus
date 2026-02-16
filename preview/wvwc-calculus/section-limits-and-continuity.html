@@ -121,14 +121,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.12';
+eBookConfig.runestone_version = '7.11.14';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.0d5f811896ddeac1.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.e2abc79debce15fd.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.d892923478694492.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.1d6e4aba17c2c7f2.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.6ec5960970d8b364.css">
 <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdn.geogebra.org/apps/deployggb.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -644,6 +644,7 @@ true);
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-limits-and-continuity.html#subsection-limits" class="internal"><span class="title">Limits</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-limits-and-continuity.html#subsection-continuous-functions" class="internal"><span class="title">Continuous Functions</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-limits-and-continuity.html#section-limits-and-continuity-5" class="internal"><span class="title">Guided notes</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-partial-derivatives.html" class="internal"><span class="codenumber">12.3</span> <span class="title">Partial Derivatives</span></a></div></li>
@@ -759,7 +760,35 @@ true);
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-limits-and-continuity"><h2 class="heading hide-type">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-solution-checkbox">Hide solutions</label><input type="checkbox" id="hide-solution-checkbox">
+</div></div>
+<div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="section" id="section-limits-and-continuity"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Limits and Continuity</span>
 </h2>
 <section class="introduction" id="section-limits-and-continuity-2"><div class="para" id="section-limits-and-continuity-2-1">In this section we begin extending calculus concepts from one dimension to higher dimensions, starting with limits.<div class="autopermalink" data-description="Paragraph"><a href="#section-limits-and-continuity-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -910,8 +939,27 @@ true);
 </div>
 <div class="autopermalink" data-description="Solution 12.2.5.1"><a href="#example-limit-of-a-continuous-function-3" title="Copy heading and permalink for Solution 12.2.5.1" aria-label="Copy heading and permalink for Solution 12.2.5.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Example 12.2.5: Limit of a continuous function"><a href="#example-limit-of-a-continuous-function" title="Copy heading and permalink for Example 12.2.5: Limit of a continuous function" aria-label="Copy heading and permalink for Example 12.2.5: Limit of a continuous function">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Continuous Functions"><a href="#subsection-continuous-functions" title="Copy heading and permalink for Subsection: Continuous Functions" aria-label="Copy heading and permalink for Subsection: Continuous Functions">🔗</a></div></section><section class="conclusion" id="section-limits-and-continuity-5"><div class="para" id="section-limits-and-continuity-5-1">SUGGESTED PROBLEMS: 3, 11, 19, 23, 31<div class="autopermalink" data-description="Paragraph"><a href="#section-limits-and-continuity-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 12.2: Limits and Continuity"><a href="#section-limits-and-continuity" title="Copy heading and permalink for Section 12.2: Limits and Continuity" aria-label="Copy heading and permalink for Section 12.2: Limits and Continuity">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Example 12.2.5: Limit of a continuous function"><a href="#example-limit-of-a-continuous-function" title="Copy heading and permalink for Example 12.2.5: Limit of a continuous function" aria-label="Copy heading and permalink for Example 12.2.5: Limit of a continuous function">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Continuous Functions"><a href="#subsection-continuous-functions" title="Copy heading and permalink for Subsection: Continuous Functions" aria-label="Copy heading and permalink for Subsection: Continuous Functions">🔗</a></div></section><section class="handout" id="section-limits-and-continuity-5" data-margins="0.75in 0.75in 0.75in 0.75in"><h3 class="heading hide-type">
+<span class="type">Handout</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Guided notes</span><div class="print-links"><a href="?printpreview=section-limits-and-continuity-5" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h3>
+<div class="para" id="section-limits-and-continuity-5-2">
+<a href="section-limits-and-continuity.html#definition-limit-of-a-function-of-two-variables" class="xref" data-knowl="./knowl/xref/definition-limit-of-a-function-of-two-variables.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 12.2.1: Limit of a Function of Two Variables">Definition 12.2.1 Limit of a Function of Two Variables</a>.<div class="workspace" data-space="2in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-limits-and-continuity-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-limits-and-continuity-5-3">
+<a href="section-limits-and-continuity.html#example-showing-a-limit-exists" class="xref" data-knowl="./knowl/xref/example-showing-a-limit-exists.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 12.2.3: Showing a limit exists">Example 12.2.3 Showing a limit exists</a><div class="workspace" data-space="2in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-limits-and-continuity-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-limits-and-continuity-5-4">
+<a href="section-limits-and-continuity.html#definition-continuous-function-of-two-variables" class="xref" data-knowl="./knowl/xref/definition-continuous-function-of-two-variables.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 12.2.4: Continuous Function of Two Variables">Definition 12.2.4 Continuous Function of Two Variables</a><div class="workspace" data-space="2in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-limits-and-continuity-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-limits-and-continuity-5-5">
+<a href="section-limits-and-continuity.html#example-limit-of-a-continuous-function" class="xref" data-knowl="./knowl/xref/example-limit-of-a-continuous-function.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 12.2.5: Limit of a continuous function">Example 12.2.5 Limit of a continuous function</a><div class="workspace" data-space="2in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-limits-and-continuity-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Handout: Guided notes"><a href="#section-limits-and-continuity-5" title="Copy heading and permalink for Handout: Guided notes" aria-label="Copy heading and permalink for Handout: Guided notes">🔗</a></div></section><div class="autopermalink" data-description="Section 12.2: Limits and Continuity"><a href="#section-limits-and-continuity" title="Copy heading and permalink for Section 12.2: Limits and Continuity" aria-label="Copy heading and permalink for Section 12.2: Limits and Continuity">🔗</a></div></section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="section-functions-of-several-independent-variables.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="section-partial-derivatives.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
