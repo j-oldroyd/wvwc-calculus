@@ -12,7 +12,6 @@
   <section xml:id="section-coordinates-in-3-space">
     <title>Coordinates in 3-Space</title>
     <subsection xml:id="xyz-coordinates">
-      <handout xml:id="handout-coordinates">
         <title><m>xyz</m>-coordinates</title>
         <p>
           We're used to Cartesian coordinates in the plane: each point
@@ -124,10 +123,8 @@
             </p>
           </solution>
         </example>
-      </handout>
     </subsection>
     <subsection xml:id="subsection-the-distance-formula">
-      <handout xml:id="handout-distance-formula">
         <title>The distance formula</title>
         <p>
           Recall that the distance between two points
@@ -214,7 +211,6 @@
             centered at the origin.
           </p>
         </example>
-      </handout>
     </subsection>
   </section>
   <section xml:id="section-vectors">
@@ -258,8 +254,7 @@
       </p>
     </introduction>
     <subsection xml:id="subsection-addition-and-scalar-multiplication">
-      <handout>
-        <title>Vector addition and components.</title>
+        <title>Vector addition and components</title>
         <p>
           Given two vectors <m>\mathbf{x} =
           \overrightarrow{AB},\mathbf{y}=\overrightarrow{BC}</m>, we can
@@ -480,10 +475,8 @@
             </ol>
           </statement>
         </theorem>
-      </handout>
     </subsection>
     <subsection xml:id="subsection-basis-vectors-and-unit-vectors">
-      <handout>
         <title>Basis vectors and unit vectors.</title>
         <p>
           Every vector in <m>\RR^{3}</m> can be written using three
@@ -633,10 +626,8 @@
             </p>
           </statement>
         </example>
-      </handout>
     </subsection>
     <subsection xml:id="subsection-applications">
-      <handout>
         <title>Applications</title>
         <p>
           Many physical quantities have both a direction and a magnitude,
@@ -693,13 +684,11 @@
           </p>
           </solution>
         </example>
-      </handout>
     </subsection>
   </section>
   <section xml:id="section-the-dot-product">
     <title>The dot product</title>
     <subsection xml:id="subsection-definition-and-properties-of-the-dot-product">
-      <handout>
         <title>Definition and properties of the dot product</title>
         <p>
           Suppose we're given two vectors. What we'd like to do is to come
@@ -1028,10 +1017,8 @@
             </p>
           </solution>
         </example>
-      </handout>
     </subsection>
     <subsection xml:id="subsection-projections">
-      <handout>
         <title>Projections</title>
         <p>
           Consider two vectors <m>\mathbf{a}</m> and <m>\mathbf{b}</m>
@@ -1174,7 +1161,6 @@
             </p>
           </solution>
         </example>
-      </handout>
     </subsection>
   </section>
   <section xml:id="section-the-cross-product">
@@ -1190,7 +1176,6 @@
       </p>
     </introduction>
     <subsection xml:id="subsection-definition-and-properties-of-the-cross-product">
-      <handout>
         <title>Definition and properties of the cross product</title>
         <definition xml:id="definition-the-cross-product">
           <idx>
@@ -1482,10 +1467,8 @@
           </md>
           </p>
         </example>
-      </handout>
     </subsection>
     <subsection xml:id="subsection-torque">
-      <handout>
         <title>Torque</title>
         <p>
           Consider a force <m>\mathbf{F}</m> acting on a rigid body at
@@ -1566,7 +1549,6 @@
               \amp = \dotprod{.077, 0, 0} </mrow> </md>.
           </p>
         </example>
-      </handout>
     </subsection>
   </section>
   <section xml:id="section-equations-of-lines-and-planes">
@@ -1581,7 +1563,6 @@
       </p>
     </introduction>
     <subsection xml:id="subsection-equations-of-lines">
-      <handout>
       <title>Equations of Lines</title>
       <p>
         First, suppose we have a line <m>L</m> in <m>\RR^{3}</m> as follows:
@@ -1800,10 +1781,8 @@
         <me>\mathbf{r} = (1-t)\mathbf{r}_{0}+t\mathbf{r}_{1} \quad\text{with}\quad0\leq t\leq 1</me>
         traces out the line segment between <m>P_{0}</m> and <m>P_{1}</m>.
       </p>
-    </handout>
     </subsection>
     <subsection xml:id="subsection-equations-of-planes">
-      <handout>
       <title>Equations of planes</title>
       <p>
         Now we move on to finding the equation of a plane.  We'll try
@@ -1976,7 +1955,6 @@
           </p>
         </solution>
       </example>
-    </handout>
     </subsection>
   </section>
   <section xml:id="section-cylinders-and-quadric-surfaces">
@@ -1988,7 +1966,6 @@
       </p>
     </introduction>
     <subsection xml:id="subsection-cylinders">
-      <handout>
       <title>Cylinders</title>
       <definition xml:id="definition-cylinders">
         <idx><h>cylinders</h><h>definition</h></idx>
@@ -2064,10 +2041,8 @@
           As the line itself is parallel to the <m>xy</m>-plane, the resulting cylinder is just the <m>xy</m>-plane.
         </p>
       </example>
-    </handout>
     </subsection>
     <subsection xml:id="subsection-quadric-surfaces">
-      <handout>
       <title>Quadric surfaces</title>
       <p>
         A <term>quadric surface</term> is any surface that is the graph of an equation of the form
@@ -2115,7 +2090,6 @@
         <caption>The region contained between <m>z = \sqrt{x^2+y^2}</m> and <m>x^2+y^2=1</m></caption>
         <interactive xml:id="calcplot3d-region-between-cylinder-and-cone" calcplot3d="type=region;region=x;visible=true;alpha=-1;hidemyedges=false;view=0;top2d=sqrt(1-x^2);bot2d=-sqrt(1-x^2);umin=-1;umax=1;top3d=sqrt(x^2+y^2);bot3d=0;grid=25,25;showriemann=false;xnum=4;ynum=4;partition=Inner;heightpt=0;showpts=false;mode=rect;polarform=t;polartop=2;polarbottom=0;polarmin=%CF%80/4;polarmax=3%CF%80/4&amp;type=window;hsrmode=3;nomidpts=true;anaglyph=-1;center=5.382667951410254,3.9875169883799115,7.4247285467037045,1;focus=0,0,0,1;up=-0.8231816381618245,0.059896334124169365,0.5646099713534122,1;transparent=false;alpha=140;twoviews=false;unlinkviews=false;axisextension=0.7;xaxislabel=x;yaxislabel=y;zaxislabel=z;edgeson=true;faceson=true;showbox=true;showaxes=true;showticks=true;perspective=true;centerxpercent=0.5;centerypercent=0.5;rotationsteps=30;autospin=true;xygrid=false;yzgrid=false;xzgrid=false;gridsonbox=true;gridplanes=false;gridcolor=rgb(128,128,128);xmin=-2;xmax=2;ymin=-2;ymax=2;zmin=-2;zmax=2;xscale=1;yscale=1;zscale=1;zcmin=-4;zcmax=4;xscalefactor=1;yscalefactor=1;zscalefactor=1;showtraceplane=true;tracemode=0;keep2d=false;zoom=1.145333" variant="minimal"/>
       </figure>
-    </handout>
     </subsection>
   </section>
   <section xml:id="section-vector-functions">
@@ -2134,7 +2108,6 @@
       </p>
     </introduction>
     <subsection xml:id="limits-with-space-curves">
-      <handout>
       <title>Limits with Space Curves</title>
       <p>
         We can take limits with vector functions just as we can with regular functions.
@@ -2245,10 +2218,8 @@
           plt.show()
         </input>
       </sage>
-    </handout>
     </subsection>
     <subsection xml:id="subsection-derivatives-with-space-curves">
-      <handout>
       <title>Derivatives with space curves</title>
       <p>
         Now that we know how to take limits with vector functions, we can take derivatives as well.
@@ -2322,22 +2293,18 @@
           </ol>
         </statement>
       </theorem>
-    </handout>
     </subsection>
     <subsection xml:id="subsection-integrals-with-space-curves">
-      <handout>
       <title>Integrals with space curves</title>
       <p>
         We can also integrate vector functions without too much trouble. Just as taking the derivative of a vector function reduces down to differentiating each component, integrating a vector function reduces down to integrating each component. If <m>\mathbf{r}(t) = \dotprod{f(t),g(t),h(t)},</m> then
       </p>
       <men xml:id="equation-vector-function-integration">\int_{a}^{b}\mathbf{r}(t)\,dt = \dotprod{\int_{a}^{b}f(t)\,dt,\int_{a}^{b}g(t)\,dt,\int_{a}^{b}h(t)\,dt}.</men>
-      </handout>
     </subsection>
   </section>
   <section xml:id="section-arc-length-and-curvature">
     <title>Arc length and curvature</title>
     <subsection xml:id="subsection-arc-length">
-      <handout>
       <title>Arc length</title>
       <p>
         Suppose some particle travels along the space curve given by <m>\mathbf{r}(t)</m> for <m>a\leq t\leq b</m>. What we'd like to do is determine how far the particle travels over this time interval. Recall that distance is just speed multiplied by time, and the speed of this particle is given by <m>\norm{\mathbf{r}^\prime(t)}</m>. So we can imagine that the distance traveled by this particle over some infinitesimal time interval <m>dt</m> to be given by <m>\norm{\mathbf{r}^\prime(t)}\,dt</m>. So adding up all of these distances from <m>t=a</m> to <m>t=b</m> should give us the arc length. This suggests (but does not prove!) the following formula for arc length:
@@ -2411,10 +2378,8 @@
           plt.show()
         </input>
       </sage>
-    </handout>
     </subsection>
     <subsection xml:id="subsection-curvature">
-      <handout>
       <title>Curvature</title>
       <p>
         What we want to do now is measure how much a curve "turns" at some point. First, we call a space curve <m>\mathbf{r}(t)</m> <term>smooth</term> on some interval <m>I</m> if <m>\mathbf{r}^\prime(t)\neq0</m> for any <m>t</m> in <m>I</m>. Now, if we want to measure how quickly a curve is changing direction then we can use the unit tangent vector <m>\mathbf{T}(t)</m> to measure this. In particular, the derivative of the unit tangent should provide a good measure of how quickly a curve turns. However, we don't want to let the specific parametrization of the curve affect this; in other words, the rate at which a curve is turning should not depend on the speed at which the curve is traveled. This leads to the following definition.
@@ -2496,10 +2461,8 @@
           <me>\kappa(t) = \frac{\norm{\dotprod{2e^{t}(t-1),-e^{t},2}}}{\norm{\dotprod{1,2t,e^{t}}}^{3}} = \frac{\sqrt{4e^{2t}(t-1)^{2}+e^{2t}+4}}{(1+4t^{2}+e^{2t})^{3/2}}.</me>
         </statement>
       </example>
-    </handout>
     </subsection>
     <subsection xml:id="subsection-normal-and-binormal-vectors">
-      <handout>
       <title>Normal and binormal vectors</title>
       <p>
         Consider a curve <m>\mathbf{r}(t)</m>. Then the direction of the curve is given by the unit tangent vector <m>\mathbf{T}(t) = \frac{\mathbf{r}^\prime(t)}{\norm{\mathbf{r}^\prime(t)}}</m>. If we differentiate <m>\mathbf{T}(t)</m> to get <m>\mathbf{T}^{\prime}(t)</m>, we can view this vector as telling us the direction the curve is turning. This leads us to the concept of <term>unit normal vectors</term> to a space curve.
@@ -2551,11 +2514,9 @@
           <me>\mathbf{B}(t) = \mathbf{T}(t)\times\mathbf{N}(t).</me>
         </statement>
       </definition>
-      </handout>
     </subsection>
   </section>
   <section xml:id="section-motion-in-space">
-    <handout>
     <title>Motion in space</title>
     <p>
       We now move on to examining motion in <m>\RR^{3}</m>. First, recall that <m>\mathbf{r}(t)</m> represents the position vector of some particle moving along a curve in space, then its velocity <m>\mathbf{t}(t)</m> and acceleration <m>\mathbf{a}(t)</m> are given by
@@ -2665,6 +2626,5 @@
         show(T)
       </input>
     </sage>
-  </handout>
   </section>
 </chapter>
