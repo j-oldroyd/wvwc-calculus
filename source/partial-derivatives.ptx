@@ -554,11 +554,24 @@
                 </solution>
             </example>
         </subsection>
-        <conclusion>
-            <p>
-                SUGGESTED PROBLEMS: 1, 15, 19
-            </p>
-        </conclusion>
+        <handout>
+          <title>Guided notes</title>
+          <p workspace="2in">
+            <xref ref="theorem-tangent-planes-to-surfaces" text="type-global-title"/>
+          </p>
+          <p workspace="2in">
+            <xref ref="example-approximations-by-tangent-planes" text="type-global-title"/>
+          </p>
+          <p workspace="2in">
+            <xref ref="definition-linearization" text="type-global-title"/>
+          </p>
+          <p workspace="2in">
+            <xref ref="example-linearization-of-an-exponential-and-a-sinusoid" text="type-global-title"/>
+          </p>
+          <p workspace="2in">
+            <xref ref="example-linearization-in-three-variables" text="type-global-title"/>
+          </p>
+        </handout>
     </section>
     <section xml:id="section-the-chain-rule-in-several-variables">
         <title>The Chain Rule in Several Variables</title>
