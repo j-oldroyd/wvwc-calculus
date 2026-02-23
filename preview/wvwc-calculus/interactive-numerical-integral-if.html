@@ -141,7 +141,7 @@ window.MathJax = {
 \definecolor{fillinmathshade}{gray}{0.9}
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
-<div style="width:600px; height:750px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><pre class="ptx-sagecell sage-interact"><script type="text/x-sage">var('x')
+<div style="aspect-ratio: 0.8;"><pre class="ptx-sagecell sage-interact"><script type="text/x-sage">var('x')
 @interact
 def riemann(n = slider(1,100,1,4), rule = selector(['Midpoint', 'Left endpoint', 'Right endpoint'], buttons = True), f = input_box(default = "sin(3*x)", type = str, width=40), a = input_box(default = "0", type = str, width=6), b = input_box(default = "pi", type = str,width=6)):
     #sage_eval used to allow for input of 'pi'
