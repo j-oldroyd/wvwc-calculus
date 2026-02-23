@@ -556,20 +556,30 @@
         </subsection>
         <handout>
           <title>Guided notes</title>
-          <p workspace="2in">
+          <p>
             <xref ref="theorem-tangent-planes-to-surfaces" text="type-global-title"/>
           </p>
-          <p workspace="2in">
+          <p workspace="1in">
+          </p>
+          <p>
             <xref ref="example-approximations-by-tangent-planes" text="type-global-title"/>
           </p>
-          <p workspace="2in">
+          <p workspace="1.5in">
+          </p>
+          <p>
             <xref ref="definition-linearization" text="type-global-title"/>
           </p>
-          <p workspace="2in">
+          <p workspace="1in">
+          </p>
+          <p>
             <xref ref="example-linearization-of-an-exponential-and-a-sinusoid" text="type-global-title"/>
           </p>
           <p workspace="2in">
+          </p>
+          <p>
             <xref ref="example-linearization-in-three-variables" text="type-global-title"/>
+          </p>
+          <p workspace="2in">
           </p>
         </handout>
     </section>
