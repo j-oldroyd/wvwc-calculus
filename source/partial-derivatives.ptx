@@ -584,7 +584,7 @@
         </handout>
     </section>
     <section xml:id="section-the-chain-rule-in-several-variables">
-        <title>The Chain Rule in Several Variables</title>
+        <title>The Chain Rule in several variables</title>
         <p>
             Recall that from Calc I, we know that
             <me>\dv{}{x}f(g(x)) = \dv{f}{g}\dv{g}{x} = f'(g(x))g'(x).</me>
@@ -733,11 +733,34 @@
                 </p>
             </solution>
         </example>
-        <conclusion>
-            <p>
-                SUGGESTED PROBLEMS: 1, 7, 11, 15, 21
-            </p>
-        </conclusion>
+        <handout>
+          <title>Guided notes</title>
+          <p>
+            <xref ref="theorem-chain-rule-for-one-independent-variable" text="type-global-title"/>
+          </p>
+          <p workspace="1in">
+          </p>
+          <p>
+            <xref ref="example-using-multivariable-chain-rule" text="type-global-title"/>
+          </p>
+          <p workspace="3in">
+          </p>
+          <p>
+            <xref ref="theorem-chain-rule-with-two-independent-variables" text="type-global-title"/>
+          </p>
+          <p workspace="1in">
+          </p>
+          <p>
+            <xref ref="example-chain-rule-two-variables" text="type-global-title"/>
+          </p>
+          <p workspace="3in">
+          </p>
+          <p>
+            <xref ref="example-chain-rule-from-a-tree-diagram" text="type-global-title"/>
+          </p>
+          <p workspace="2in">
+          </p>
+        </handout>
     </section>
     <section xml:id="section-directional-derivatives-and-gradients">
         <title>Directional Derivatives and Gradients</title>
