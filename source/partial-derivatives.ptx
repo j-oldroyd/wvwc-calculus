@@ -952,11 +952,39 @@
                 </solution>
             </example>
         </subsection>
-        <conclusion>
-            <p>
-                SUGGESTED PROBLEMS: 1, 3, 11, 15, 21
-            </p>
-        </conclusion>
+        <handout>
+          <title>Guided notes</title>
+          <p>
+            <xref ref="theorem-computing-the-directional-derivative" text="type-global-title"/>
+          </p>
+          <p workspace="1in">
+          </p>
+          <p>
+            <xref ref="example-computing-a-directional-derivative" text="type-global-title"/>
+          </p>
+          <p workspace="2in">
+          </p>
+          <p>
+            <xref ref="definition-gradient-of-a-function" text="type-global-title"/>
+          </p>
+          <p workspace="1in">
+          </p>
+          <p>
+            <xref ref="example-directional-derivative-using-the-gradient" text="type-global-title"/>
+          </p>
+          <p workspace="2in">
+          </p>
+          <p>
+            <xref ref="theorem-direction-of-greatest-increase-and-decrease" text="type-global-title"/>
+          </p>
+          <p workspace="1in">
+          </p>
+          <p>
+            <xref ref="example-finding-the-direction-and-rate-of-maximum-decrease" text="type-global-title"/>
+          </p>
+          <p workspace="1in">
+          </p>
+        </handout>
     </section>
     <section xml:id="section-extreme-values">
         <title>Extreme Values</title>
