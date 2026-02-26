@@ -608,6 +608,7 @@ true);
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-directional-derivatives-and-gradients.html#subsection-the-directional-derivative" class="internal"><span class="title">The Directional Derivative</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-directional-derivatives-and-gradients.html#subsection-gradients" class="internal"><span class="title">Gradients</span></a></div></li>
+<li class="toc-item toc-handout"><div class="toc-title-box"><a href="section-directional-derivatives-and-gradients.html#section-directional-derivatives-and-gradients-5" class="internal"><span class="title">Guided notes</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -707,7 +708,35 @@ true);
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-directional-derivatives-and-gradients"><h2 class="heading hide-type">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-solution-checkbox">Hide solutions</label><input type="checkbox" id="hide-solution-checkbox">
+</div></div>
+<div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="section" id="section-directional-derivatives-and-gradients"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">12.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Directional Derivatives and Gradients</span>
 </h2>
 <section class="introduction" id="section-directional-derivatives-and-gradients-2"><div class="para" id="section-directional-derivatives-and-gradients-2-1">For a differentiable function <span class="process-math">\(f(x,y)\text{,}\)</span> the partial derivatives <span class="process-math">\(f_{x}\)</span> and <span class="process-math">\(f_{y}\)</span> give the rates of change of <span class="process-math">\(f\)</span> in the directions of the <span class="process-math">\(x\)</span>-axis and <span class="process-math">\(y\)</span>-axis, respectively. To put this another way, <span class="process-math">\(f_{x}\)</span> gives the rate of change of <span class="process-math">\(f\)</span> in the direction of the vector <span class="process-math">\(\vb{i}\text{,}\)</span> and <span class="process-math">\(f_{y}\)</span> gives the rate of change in the direction of the vector <span class="process-math">\(\vb{j}\text{.}\)</span> But we have infinitely many directions to work with. How can we find the rate of change of <span class="process-math">\(f\)</span> in <em class="emphasis">any</em> direction? We’ll look at two tools to help us with this: directional derivatives and gradients.<div class="autopermalink" data-description="Paragraph"><a href="#section-directional-derivatives-and-gradients-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -911,8 +940,53 @@ D_{\vb{u}}f = \grad f\cdot\frac{\vb{u}}{|\vb{u}|} = |\grad f| \cos\theta,
 </div>
 <div class="autopermalink" data-description="Solution 12.6.8.1"><a href="#example-finding-the-direction-and-rate-of-maximum-decrease-3" title="Copy heading and permalink for Solution 12.6.8.1" aria-label="Copy heading and permalink for Solution 12.6.8.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Example 12.6.8: Finding the direction and rate of maximum decrease"><a href="#example-finding-the-direction-and-rate-of-maximum-decrease" title="Copy heading and permalink for Example 12.6.8: Finding the direction and rate of maximum decrease" aria-label="Copy heading and permalink for Example 12.6.8: Finding the direction and rate of maximum decrease">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Gradients"><a href="#subsection-gradients" title="Copy heading and permalink for Subsection: Gradients" aria-label="Copy heading and permalink for Subsection: Gradients">🔗</a></div></section><section class="conclusion" id="section-directional-derivatives-and-gradients-5"><div class="para" id="section-directional-derivatives-and-gradients-5-1">SUGGESTED PROBLEMS: 1, 3, 11, 15, 21<div class="autopermalink" data-description="Paragraph"><a href="#section-directional-derivatives-and-gradients-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><div class="autopermalink" data-description="Section 12.6: Directional Derivatives and Gradients"><a href="#section-directional-derivatives-and-gradients" title="Copy heading and permalink for Section 12.6: Directional Derivatives and Gradients" aria-label="Copy heading and permalink for Section 12.6: Directional Derivatives and Gradients">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Example 12.6.8: Finding the direction and rate of maximum decrease"><a href="#example-finding-the-direction-and-rate-of-maximum-decrease" title="Copy heading and permalink for Example 12.6.8: Finding the direction and rate of maximum decrease" aria-label="Copy heading and permalink for Example 12.6.8: Finding the direction and rate of maximum decrease">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Gradients"><a href="#subsection-gradients" title="Copy heading and permalink for Subsection: Gradients" aria-label="Copy heading and permalink for Subsection: Gradients">🔗</a></div></section><section class="handout" id="section-directional-derivatives-and-gradients-5" data-margins="0.75in 0.75in 0.75in 0.75in"><h3 class="heading hide-type">
+<span class="type">Handout</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Guided notes</span><div class="print-links"><a href="?printpreview=section-directional-derivatives-and-gradients-5" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h3>
+<div class="para" id="section-directional-derivatives-and-gradients-5-2">
+<a href="section-directional-derivatives-and-gradients.html#theorem-computing-the-directional-derivative" class="xref" data-knowl="./knowl/xref/theorem-computing-the-directional-derivative.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 12.6.2: Computing the Directional Derivative">Theorem 12.6.2 Computing the Directional Derivative</a><div class="autopermalink" data-description="Paragraph"><a href="#section-directional-derivatives-and-gradients-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-directional-derivatives-and-gradients-5-3">
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-directional-derivatives-and-gradients-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-directional-derivatives-and-gradients-5-4">
+<a href="section-directional-derivatives-and-gradients.html#example-computing-a-directional-derivative" class="xref" data-knowl="./knowl/xref/example-computing-a-directional-derivative.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 12.6.3: Computing a directional derivative">Example 12.6.3 Computing a directional derivative</a><div class="autopermalink" data-description="Paragraph"><a href="#section-directional-derivatives-and-gradients-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-directional-derivatives-and-gradients-5-5">
+<div class="workspace" data-space="2in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-directional-derivatives-and-gradients-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-directional-derivatives-and-gradients-5-6">
+<a href="section-directional-derivatives-and-gradients.html#definition-gradient-of-a-function" class="xref" data-knowl="./knowl/xref/definition-gradient-of-a-function.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 12.6.4: Gradient of a Function">Definition 12.6.4 Gradient of a Function</a><div class="autopermalink" data-description="Paragraph"><a href="#section-directional-derivatives-and-gradients-5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-directional-derivatives-and-gradients-5-7">
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-directional-derivatives-and-gradients-5-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-directional-derivatives-and-gradients-5-8">
+<a href="section-directional-derivatives-and-gradients.html#example-directional-derivative-using-the-gradient" class="xref" data-knowl="./knowl/xref/example-directional-derivative-using-the-gradient.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 12.6.6: Directional derivative using the gradient">Example 12.6.6 Directional derivative using the gradient</a><div class="autopermalink" data-description="Paragraph"><a href="#section-directional-derivatives-and-gradients-5-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-directional-derivatives-and-gradients-5-9">
+<div class="workspace" data-space="2in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-directional-derivatives-and-gradients-5-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-directional-derivatives-and-gradients-5-10">
+<a href="section-directional-derivatives-and-gradients.html#theorem-direction-of-greatest-increase-and-decrease" class="xref" data-knowl="./knowl/xref/theorem-direction-of-greatest-increase-and-decrease.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 12.6.7: Direction of Greatest Increase and Decrease">Theorem 12.6.7 Direction of Greatest Increase and Decrease</a><div class="autopermalink" data-description="Paragraph"><a href="#section-directional-derivatives-and-gradients-5-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-directional-derivatives-and-gradients-5-11">
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-directional-derivatives-and-gradients-5-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-directional-derivatives-and-gradients-5-12">
+<a href="section-directional-derivatives-and-gradients.html#example-finding-the-direction-and-rate-of-maximum-decrease" class="xref" data-knowl="./knowl/xref/example-finding-the-direction-and-rate-of-maximum-decrease.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 12.6.8: Finding the direction and rate of maximum decrease">Example 12.6.8 Finding the direction and rate of maximum decrease</a><div class="autopermalink" data-description="Paragraph"><a href="#section-directional-derivatives-and-gradients-5-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="section-directional-derivatives-and-gradients-5-13">
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-directional-derivatives-and-gradients-5-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Handout: Guided notes"><a href="#section-directional-derivatives-and-gradients-5" title="Copy heading and permalink for Handout: Guided notes" aria-label="Copy heading and permalink for Handout: Guided notes">🔗</a></div></section><div class="autopermalink" data-description="Section 12.6: Directional Derivatives and Gradients"><a href="#section-directional-derivatives-and-gradients" title="Copy heading and permalink for Section 12.6: Directional Derivatives and Gradients" aria-label="Copy heading and permalink for Section 12.6: Directional Derivatives and Gradients">🔗</a></div></section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="section-the-chain-rule-in-several-variables.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="section-extreme-values.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
