@@ -987,489 +987,632 @@
         </handout>
     </section>
     <section xml:id="section-extreme-values">
-        <title>Extreme Values</title>
-        <introduction>
-            <p>
-                Finding the extreme values of a function remains in important goal for functions of several independent variables.
-            </p>
-        </introduction>
-        <subsection xml:id="subsection-local-maxima-and-minima">
-            <title>Local Maxima and Minima</title>
-            <p>
-                One of the most important applications of the derivative in Calculus I is in finding local maxima and minima of functions <m>y = f(x)</m>.
-                We'd like to extend this concept to functions of multiple variables, but first we need to define what local maxima and minima actually are in this new setting.
-            </p>
-            <definition xml:id="definition-local-maxima-and-minima">
-                <idx><h>maxima and minima</h><h>local</h></idx>
-                <title>Local Maxima and Minima</title>
-                <statement>
-                    <p>
-                        We say that a function <m>f(x,y)</m> has a local maximum (respectively, local minimum) at <m>(x_{0},y_{0})</m> if <m>f(x,y)\leq f(x_{0},y_{0})</m> (respectively, <m>f(x,y)\geq f(x_{0},y_{0})</m>) for all points <m>(x,y)</m> contained in some disk centered at <m>(x_{0},y_{0})</m>.
-                    </p>
-                </statement>
-            </definition>
-            <p>
-                Just as we used derivatives in Calculus I to find maxima and minima, we can use partial derivatives for that purpose here.
-            </p>
-            <theorem xml:id="theorem-derivatives-at-a-local-maximum-or-minimum">
-                <title>Derivatives at a Local Maximum or Minimum</title>
-                <statement>
-                    <p>
-                        Suppose that <m>f(x,y)</m> is differentiable, and has a local maximum or minimum at <m>(x_{0},y_{0})</m>.
-                        Then
-                        <me>f_{x}(x_{0},y_{0}) = f_{y}(x_{0},y_{0}) = 0.</me>
-                    </p>
-                </statement>
-            </theorem>
-            <p>
-                <xref ref="theorem-derivatives-at-a-local-maximum-or-minimum" text="global-type" /> does not tell us if a differentiable function <m>f(x,y)</m> has a local maximum or minimum at <m>(x_{0},y_{0})</m>, but it does tell us where to look.
-                We call <m>(x_{0},y_{0})</m> a <term>critical point</term> of <m>f(x,y)</m> if <m>f_{x}(x_{0},y_{0}) = f_{y}(x_{0},y_{0}) = 0</m> or if these partial derivatives fail to exist at <m>(x_{0},y_{0})</m>.
-            </p>
-            <example xml:id="example-critical-points-of-an-exponential">
-                <title>Critical points of an exponential</title>
-                <statement>
-                    <p>
-                        Let <m>f(x,y) = xe^{-x^{2} - y^{2}}</m>.
-                        Find its critical points.
-                    </p>
-                </statement>
-                <solution>
-                    <p>
-                        Find the critical points by solving <m>f_{x} = 0</m> and <m>f_{y} = 0</m>.
-                        Since
-                        <me>f_{x} = e^{-x^{2} - y^{2}} -2x^{2}e^{-x^{2} - y^{2}} = e^{-x^{2} - y^{2}}(1 - 2x^{2})</me>
-                        then <m>f_{x} = 0</m> forces <m>x = \pm\sqrt{\frac{1}{2}}</m>.
-                        Similarly, since
-                        <me>f_{y} = -2xye^{-x^{2} - y^{2}}</me>
-                        then <m>f_{y} = 0</m> forces <m>x = 0</m> or <m>y = 0</m>.
-                        So the only points that satisfy <em>both</em> <m>f_{x} = 0</m> and <m>f_{y} = 0</m> are <m>(\pm\sqrt{\frac{1}{2}}, 0).</m>
-                        So these must be our critical points.
-                    </p>
-                </solution>
-            </example>
-            <p>
-                We found the critical points in <xref ref="example-critical-points-of-an-exponential" text="type-global" /> without too much trouble, but these are still not guaranteed to be local maxima or minima.
-                To determine if they are, we need to use the <term>second derivative test</term>.
-            </p>
-            <theorem xml:id="theorem-second-derivative-test">
-                <idx><h>maxima and minima</h><h>second derivative test</h></idx>
-                <title>Second Derivative Test</title>
-                <statement>
-                    <p>
-                        Let <m>f(x,y)</m> be a differentiable function with continuous second partial derivatives, and let <m>(x_{0},y_{0})</m> be a critical point of <m>f</m>.
-                        Define <m>D</m> to be
-                        <me>D(x,y) = f_{xx}f_{yy} - (f_{xy})^{2}</me>
-                        Then we have the following possibilities:
-                        <ul>
-                            <li>If <m>D(x_{0},y_{0}) &gt; 0 </m> and <m>f_{xx}(x_{0},y_{0}) &gt; 0</m>, then <m>(x_{0},y_{0})</m> is a local minimum.</li>
-                            <li>If <m>D(x_{0},y_{0}) &gt; 0 </m> and <m>f_{xx}(x_{0},y_{0}) &lt; 0</m>, then <m>(x_{0},y_{0})</m> is a local maximum.</li>
-                            <li>If <m>D(x_{0},y_{0}) &lt; 0 </m>, then <m>(x_{0},y_{0})</m> is a neither a local minimum nor local maximum. In this case we call <m>(x_{0},y_{0})</m> a <term>saddle point</term>.</li>
-                            <li>If <m>D(x_{0},y_{0}) = 0 </m>, the test is inconclusive.</li>
-                        </ul>
-                    </p>
-                </statement>
-            </theorem>
-            <p>
-                The quantity <m>D</m> from <xref ref="theorem-second-derivative-test" text="type-global" /> is actually a determinant:
-                <me>D(x,y) = \left|\begin{array}{cc} f_{xx} &amp; f_{xy} \\ f_{yx} &amp; f_{yy}\end{array}\right|</me>
-            </p>
-            <example xml:id="example-local-extrema-of-an-exponential">
-                <title>Local extrema of an exponential</title>
-                <statement>
-                    <p>
-                        Classify the critical points of the function from <xref ref="example-critical-points-of-an-exponential" text="type-global" />.
-                    </p>
-                </statement>
-                <solution>
-                    <p>
-                        We have <m>f(x,y) = xe^{-x^{2} - y^{2}}</m>, and the critical points are <m>(-\sqrt{\frac{1}{2}},0)</m> and <m>(\sqrt{\frac{1}{2}},0)</m>.
-                        We need to find <m>D(x,y)</m>.
-                        Since <m>f_{x} = (1 - 2x^{2})e^{-x^{2} - y^{2}}</m>, we get
-                        <md>
-                            <mrow>f_{xx} &amp; = -4xe^{-x^{2} - y^{2}} - 2x(1 - 2x^{2})e^{-x^{2} - y^{2}} </mrow>
-                            <mrow>f_{xy} &amp; = -2y(1-2x^{2})e^{-x^{2} - y^{2}} = f_{yx} </mrow>
-                        </md>
-                        and similarly
-                        <me>f_{yy} = -2xe^{-x^{2} - y^{2}} + 4xy^{2}e^{-x^{2} - y^{2}}</me>
-                        At <m>(-\sqrt{\frac{1}{2}},0)</m>, we have
-                        <md>
-                            <mrow>D\left(-\sqrt{\frac{1}{2}},0\right) &amp; = 4\sqrt{\frac{1}{2}}e^{-\frac{1}{2}}\cdot2\sqrt{\frac{1}{2}}e^{-\frac{1}{2}}</mrow>
-                            <mrow> &amp; &gt; 0 </mrow>
-                        </md>
-                        and <m>f_{xx}(-\sqrt{\frac{1}{2}},0) &gt;0</m> as well.
-                        So this is a local minimum.
-                        At <m>(\sqrt{\frac{1}{2}},0)</m>, we still have <m>D&gt;0</m>, but now <m>f_{xx}&lt;0</m>.
-                        So this is a local maximum.
-                    </p>
-                </solution>
-            </example>
-        </subsection>
-        <subsection xml:id="subsection-absolute-maxima-and-minima">
-            <title>Absolute Maxima and Minima</title>
-            <p>
-                Even if a function <m>f(x,y)</m> has a local minimum at <m>(x_{0},y_{0})</m>, there's no guarantee that this is the smallest value the function can take on its domain.
-                A similar statement is also true for local maxima, which leads to the following definition.
-            </p>
-                <definition xml:id="definition-absolute-maxima-and-minima">
-                    <idx><h>maxima and minima</h><h>absolute</h></idx>
-                    <title>Absolute Maxima and Minima</title>
-                    <statement>
-                        <p>
-                            Let <m>f(x,y)</m> be a function defined on the set <m>D</m>.
-                            We call the point <m>(x_{0},y_{0})</m> an <term>absolute minimum</term> (respectively, <term>absolute maximum</term>) if <m>f(x,y)\geq f(x_{0},y_{0})</m> (respectively, <m>f(x,y)\leq f(x_{0},y_{0})</m>) for all points <m>(x,y)</m> in <m>R</m>.
-                        </p>
-                    </statement>
-                </definition>
-            <p>
-                As a first example, consider <m>f(x,y) = \sqrt{1 - x^{2} - y^{2}}</m>, which gives the top half of the unit sphere.
-                Using critical points and the second derivative test, we can show that the origin is a local maximum.
-                However, this method is blind to the absolute minimum values of <m>f(x,y)</m>, which occur at the boundary <m>x^{2} + y^{2} = 1</m>, where the sphere intersects the <m>xy</m>-plane.
-                So this means we can't use critical points alone to find absolute maxima and minima, in general.
-                However, the following theorem says that they'll get us most of the way there.
-            </p>
-            <theorem xml:id="theorem-extreme-value-multivariable">
-                <idx><h>Extreme Value Theorem</h><h>functions of several variables</h></idx>
-                <title>Extreme Value Theorem</title>
-                <statement>
-                    <p>
-                        Let <m>f(x,y)</m> be a continuous function defined on a closed and bounded set <m>D</m>.
-                        <fn>This means that <m>D</m> is finite in size and that it includes its boundary.</fn>
-                        Then <m>f</m> is guaranteed to have an absolute maximum and absolute minimum.
-                        Furthermore, these must occur either at a critical point or on the boundary of <m>D</m>.
-                    </p>
-                </statement>
-            </theorem>
-            <example xml:id="example-absolute-values-on-a-triangle">
-                <title>Absolute values on a triangle</title>
-                <statement>
-                    <p>
-                        Let <m>f(x,y) = x + y - xy</m>.
-                        Find the absolute maxima and minima of <m>f</m> on the triangle with vertices <m>(0,0), (0,2)</m> and <m>(4,0)</m>.
-                    </p>
-                </statement>
-                <solution>
-                    <p>
-                        We'll start off by finding any critical points.
-                        Since <m>\grad f = \dotprod{1-y, 1-x}</m>, we see that the only critical point is <m>(1,1)</m>.
-                        Now we need to see what happens to <m>f(x,y)</m> on the edges of the triangle, and to do that we need to find equations for the edges.
-                        Let <m>l_{1}</m> denote the edge from <m>(0,0)</m> to <m>(0,2)</m>, <m>l_{2}</m> the edge from <m>(0,2)</m> to <m>(4,0)</m> and <m>l_{3}</m> the edge from <m>(0,0)</m> to <m>(4,0)</m>.
-                        Then <m>l_{1}</m> is given by the equation <m>x = 0</m>, <m>l_{2}</m> is given by <m>y = -\frac{1}{2}(x-4)</m> and <m>l_{3}</m> is given by <m>y = 0</m>.
-                        So on <m>l_{1}</m> we have <m>f(x,y) = f(0,y) = y</m>, on <m>l_{2}</m> we have
-                        <me>f(x,y) = f\left(x,-\frac{1}{2}(x-4)\right) = \frac{1}{2}\left[\left(x-\frac{3}{2}\right)^{2} + \frac{7}{4}\right]</me>
-                        and on <m>l_{3}</m> we have <m>f(x,y) = f(x,0) = x</m>.
-                        We can then set up the following table:
-                    </p>
-                    <table xml:id="table-triangle-extrema">
-                        <title>Absolute values on the boundary</title>
-                        <tabular halign="center" top="major">
-                            <row top="major" bottom="minor">
-                                <cell>edge</cell>
-                                <cell><m>f(x,y)</m></cell>
-                                <cell>max</cell>
-                                <cell>min</cell>
-                            </row>
-                            <row>
-                                <cell><m>l_{1}</m></cell>
-                                <cell><m>y</m></cell>
-                                <cell><m>2</m></cell>
-                                <cell><m>0</m></cell>
-                            </row>
-                            <row>
-                                <cell><m>l_{2}</m></cell>
-                                <cell><m>\frac{1}{2}\left[\left(x-\frac{3}{2}\right)^{2} + \frac{7}{4}\right]</m></cell>
-                                <cell><m>\frac{1}{2}\left[\left(4-\frac{3}{2}\right)^{2} + \frac{7}{4}\right] = 4</m></cell>
-                                <cell><m>\frac{7}{8}</m></cell>
-                            </row>
-                            <row bottom="major">
-                                <cell><m>l_{3}</m></cell>
-                                <cell><m>x</m></cell>
-                                <cell><m>4</m></cell>
-                                <cell><m>0</m></cell>
-                            </row>
-                        </tabular>
-                    </table>
-                    <p>
-                        Finally, at the critical point <m>(1,1)</m> we have <m>f(1,1) = 1</m>.
-                        So putting this all together, we can say that the absolute maximum of <m>f(x,y)</m> on this triangle is <m>4</m>, and this is reached at <m>(4,0)</m>.
-                        Similarly, the absolute minimum is <m>0</m>, and this is reached at the origin.
-                    </p>
-                </solution>
-            </example>
-            <p>
-                Note that in <xref ref="example-absolute-values-on-a-triangle" text="type-global" />, we don't actually determine if the critical point is a local maximum or minimum.
-                We just compare the value <m>f</m> reaches at the critical point with its maximum and minimum values on the boundary.
-            </p>
-            <example xml:id="example-absolute-maxima-and-minima-on-a-circular-sector">
-                <title>Absolute maxima and minima on a circular sector</title>
-                <statement>
-                    <p>
-                        Let <m>f(x,y) = xy^{2}</m> and let
-                        <me>D = \{(x,y) : x,y \geq 0, x^{2} + y^{2} \leq 3\}</me>
-                        Find the absolute maxima and minima of <m>f</m> on <m>D</m>.
-                    </p>
-                </statement>
-                <solution>
-                    <p>
-                        First we'll find the critical point(s).
-                        If we compute <m>\grad f</m>, we get <m>\grad f = \dotprod{y^{2}, 2xy}</m>.
-                        This is <m>0</m> if and only if <m>y=0</m>, and if <m>y=0</m> then this forces <m>f(x,y) = f(x,0) = 0</m>.
-                    </p>
-                    <p>
-                        Now we need to determine the maximum and minimum values of <m>f(x,y)</m> on the boundary of <m>D</m>.
-                        Let <m>C_{1}</m> denote the line segment from <m>(0,0)</m> to <m>(\sqrt{3},0)</m>, <m>C_{2}</m> the circular arc from <m>(\sqrt{3},0)</m> to <m>(0,\sqrt{3})</m> and <m>C_{3}</m> the line segment from <m>(0,\sqrt{3})</m> to <m>(0,0)</m>.
-                        Then on <m>C_{1}</m> we have <m>f(x,y) = 0</m>, on <m>C_{2}</m> we have
-                        <me>f(x,y) = xy^{2} = x(3-x^{2})</me>
-                        and on <m>C_{3}</m> we have <m>f(x,y) = 0</m>.
-                        So the smallest value that <m>f</m> takes on the boundary is <m>0</m>, and the largest value is <m>2</m>.
-                        So the absolute maximum is <m>2</m> and the absolute minimum is <m>0</m>.
-                    </p>
-                </solution>
-            </example>
-        </subsection>
-        <conclusion>
-            <p>
-                SUGGESTED PROBLEMS: 1, 3, 13, 23
-            </p>
-        </conclusion>
-    </section>
-    <section xml:id="section-lagrange-multipliers">
-        <title>Lagrange Multipliers</title>
+      <title>Extreme values</title>
+      <introduction>
         <p>
-            <xref ref="theorem-second-derivative-test" text="type-global" /> is useful for finding local maxima and minima of a function <m>f(x,y)</m>, but it's often the case where we have an additional restriction on the variables <m>x</m> and <m>y</m>, which we interpret as an equality <m>g(x,y) = k</m> for some constant <m>k</m>.
-            Geometrically, this reduces down to finding the maximum and minimum values of <m>f(x,y)</m> on the curve <m>g(x,y) = k</m>.
-            This problem can be attacked algebraically using contours, as in the example below.
+          Finding the extreme values of a function remains in
+          important goal for functions of several independent
+          variables.
         </p>
-        <example xml:id="example-constrained-optimization-using-contours">
-          <title>Constrained Optimization Using Contours</title>
+      </introduction>
+      <subsection xml:id="subsection-local-maxima-and-minima">
+        <title>Local Maxima and Minima</title>
+        <p>
+          One of the most important applications of the derivative in
+          Calculus I is in finding local maxima and minima of
+          functions <m>y = f(x)</m>.  We'd like to extend this concept
+          to functions of multiple variables, but first we need to
+          define what local maxima and minima actually are in this new
+          setting.
+        </p>
+        <definition xml:id="definition-local-maxima-and-minima">
+          <idx><h>maxima and minima</h><h>local</h></idx>
+          <title>Local Maxima and Minima</title>
           <statement>
             <p>
-              Estimate the minimum and maximum values of <m>f(x,y) = x^2 + 2y^2</m> subject to the constraint <m>g(x,y) = x^2 + y^2 = 1</m>.
+              We say that a function <m>f(x,y)</m> has a local maximum
+              (respectively, local minimum) at <m>(x_{0},y_{0})</m> if
+              <m>f(x,y)\leq f(x_{0},y_{0})</m> (respectively,
+              <m>f(x,y)\geq f(x_{0},y_{0})</m>) for all points
+              <m>(x,y)</m> contained in some disk centered at
+              <m>(x_{0},y_{0})</m>.
+            </p>
+          </statement>
+        </definition>
+        <p>
+          Just as we used derivatives in Calculus I to find maxima and
+          minima, we can use partial derivatives for that purpose
+          here.
+        </p>
+        <theorem xml:id="theorem-derivatives-at-a-local-maximum-or-minimum">
+          <title>Derivatives at a Local Maximum or Minimum</title>
+          <statement>
+            <p>
+              Suppose that <m>f(x,y)</m> is differentiable, and has a
+              local maximum or minimum at <m>(x_{0},y_{0})</m>.  Then
+              <me>f_{x}(x_{0},y_{0}) = f_{y}(x_{0},y_{0}) = 0.</me>
+            </p>
+          </statement>
+        </theorem>
+        <p>
+          <xref
+          ref="theorem-derivatives-at-a-local-maximum-or-minimum"
+          text="global-type" /> does not tell us if a differentiable
+          function <m>f(x,y)</m> has a local maximum or minimum at
+          <m>(x_{0},y_{0})</m>, but it does tell us where to look.  We
+          call <m>(x_{0},y_{0})</m> a <term>critical point</term> of
+          <m>f(x,y)</m> if <m>f_{x}(x_{0},y_{0}) = f_{y}(x_{0},y_{0})
+          = 0</m> or if these partial derivatives fail to exist at
+          <m>(x_{0},y_{0})</m>.
+        </p>
+        <example xml:id="example-critical-points-of-an-exponential">
+          <title>Critical points of an exponential</title>
+          <statement>
+            <p>
+              Let <m>f(x,y) = xe^{-x^{2} - y^{2}}</m>.
+              Find its critical points.
             </p>
           </statement>
           <solution>
             <p>
-              The constraint is represented as a contour plot of <m>g(x,y)</m>.
-              We can compare this with contours of <m>f(x,y)</m>, and any point where there two contours intersect is a point for which the constraint is satisfied.
+              Find the critical points by solving <m>f_{x} = 0</m> and <m>f_{y} = 0</m>.
+              Since
+              <me>f_{x} = e^{-x^{2} - y^{2}} -2x^{2}e^{-x^{2} - y^{2}} = e^{-x^{2} - y^{2}}(1 - 2x^{2})</me>
+              then <m>f_{x} = 0</m> forces <m>x = \pm\sqrt{\frac{1}{2}}</m>.
+              Similarly, since
+              <me>f_{y} = -2xye^{-x^{2} - y^{2}}</me>
+              then <m>f_{y} = 0</m> forces <m>x = 0</m> or <m>y = 0</m>.
+              So the only points that satisfy <em>both</em> <m>f_{x} = 0</m> and <m>f_{y} = 0</m> are <m>(\pm\sqrt{\frac{1}{2}}, 0).</m>
+              So these must be our critical points.
             </p>
-            <figure xml:id="figure-lagrange-contour-example">
-              <caption><p>An interactive contour plot of <m>f(x,y) = s</m> and <m>g(x,y) = 1</m>.</p></caption>
-              <interactive desmos="j3cspl30hv" />
-              </figure>
-              <p>
-                Using these contours, we see that the maximum value of <m>f</m> subject to <m>g = 1</m> appears to be <m>2</m>, while the minimum value of <m>f</m> subject to <m>g=1</m> appears to be <m>1</m>.
-              </p>
           </solution>
         </example>
         <p>
-            Although the graphical approach used in <xref ref="example-constrained-optimization-using-contours" text="type-global" /> and specifically in <xref ref="figure-lagrange-contour-example" text="type-global" /> is useful for estimating solutions of constrained optimization problems in two dimensions, it's neither exact nor easy to visualize in higher dimensions.
-            We therefore want to determine an algebraic approach for solving these problems.
-            In these cases, <xref ref="theorem-second-derivative-test" text="type-global" /> is not as useful because there's no guarantee that the critical points of <m>f</m> will lie on the curve <m>g(x,y) = k</m>.
-            For this scenario, we must use the method of <term>Lagrange multipliers</term>.
+          We found the critical points in <xref
+          ref="example-critical-points-of-an-exponential"
+          text="type-global" /> without too much trouble, but these
+          are still not guaranteed to be local maxima or minima.  To
+          determine if they are, we need to use the <term>second
+          derivative test</term>.
         </p>
-        <algorithm xml:id="algorithm-method-of-lagrange-multipliers">
-            <idx><h>Lagrange multipliers</h></idx>
-            <title>Method of Lagrange Multipliers</title>
-            <statement>
-                <p>
-                    Suppose that <m>f</m> and <m>g</m> are both differentiable functions, and suppose that <m>\grad g\neq\vb{0}</m> on the curve <m>g(x,y) = k</m>.
-                    To find the extreme values of <m>f(x,y)</m> subject to the constraint <m>g(x,y) = k</m>, perform the following steps:
-                    <ol>
-                        <li>
-                            Find all points <m>(x_{0},y_{0})</m> such that <m>\grad f(x_{0},y_{0}) = \lambda \grad g(x_{0},y_{0})</m>, where <m>\lambda</m> is a constant we call the <term>Lagrange multiplier</term>.
-                        </li>
-                        <li>
-                            Compute <m>f</m> at all points from the first step and compare values to find any maxima or minima.
-                        </li>
-                    </ol>
-                </p>
-            </statement>
-        </algorithm>
-        <example xml:id="example-maximizing-volume">
-            <!-- Stolen from Stewart... -->
-            <title>Maximizing volume</title>
-            <statement>
-                <p>
-                    A lidless box may be made from <quantity><mag>12</mag><unit base="meter" exp="2" /></quantity> of material.
-                    What dimensions give the maximum volume?
-                </p>
-            </statement>
-            <solution>
-                <p>
-                    If we denote the dimensions of the box by <m>x,y,z</m>, then the function we need to maximize is <m>V(x,y,z) = xyz</m>.
-                    However, not all dimensions are valid since we're only allowed to use <quantity><mag>12</mag><unit base="meter" exp="2" /></quantity> of material.
-                    This means that the surface area of the box, which is given by <m>A(x,y,z) = xy + 2xz + 2yz</m>, must be equal to <m>12</m>.
-                    So our constraint is that <m>A(x,y,z) = 12</m>, and because we have this constraint we'll try to solve this using <xref ref="algorithm-method-of-lagrange-multipliers" text="type-global" />.
-                </p>
-                <p>
-                    To begin, we need to solve <m>\grad V = \lambda \grad A</m>.
-                    Equivalently, we need to solve the system
-                    <md>
-                        <mrow>V_{x} &amp; = \lambda A_{x} </mrow>
-                        <mrow>V_{y} &amp; = \lambda A_{y} </mrow>
-                        <mrow>V_{z} &amp; = \lambda A_{z} </mrow>
-                    </md>
-                    which turns into
-                    <md>
-                        <mrow>yz &amp; = \lambda(y + 2z) </mrow>
-                        <mrow>xz &amp; = \lambda(x + 2z) </mrow>
-                        <mrow>xy &amp; = \lambda(2x + 2y) </mrow>
-                    </md>
-                    Now, we don't actually need to find a value for <m>\lambda</m>.
-                    We just need values for <m>x,y,z</m>.
-                    If we multiply these equations by <m>x</m>, <m>y</m> and <m>z</m> respectively, then we get
-                    <md>
-                        <mrow>xyz &amp; = \lambda(xy + 2xz) </mrow>
-                        <mrow>xyz &amp; = \lambda(xy + 2yz) </mrow>
-                        <mrow>xyz &amp; = \lambda(2xz + 2yz) </mrow>
-                    </md>
-                    or just
-                    <me>\lambda(xy + 2xz) = \lambda(xy + 2yz) = \lambda(2xz + 2yz)</me>
-                    We can also divide by <m>\lambda</m>, since there's no way <m>\lambda</m> could equal <m>0</m> and satisfy the above equations (since <m>x,y,z</m> are all positive).
-                    This gives us
-                    <men xml:id="equation-lagrange-example-1">xy + 2xz = xy + 2yz = 2xz + 2yz</men>
-                </p>
-                <p>
-                    The first two expressions in <xref ref="equation-lagrange-example-1" text="type-global" /> simplify to <m>x=y</m>, while the first and third reduce to <m>x = 2z</m>.
-                    So
-                    <me>x = y = 2z</me>.
-                    But these variables also need to satisfy <m>A(x,y,z) = 12</m>:
-                    <md>
-                        <mrow>12 &amp; = xy + 2xz + 2yz </mrow>
-                        <mrow> &amp; = 4z^{2} + 4z^{2} + 4z^{2} </mrow>
-                        <mrow> &amp; = 12z^{2} </mrow>
-                    </md>
-                    Therefore <m>z = \pm1</m>, so we take <m>z=1</m> (since we're dealing with dimensions).
-                    This also means that <m>x = y = 2(1) = 2</m>.
-                    So the point <m>(2,2,1)</m> is therefore our candidate for the dimensions that maximize volume subject to the constraint <m>A = 12</m>.
-                </p>
-                <p>
-                    In order to actually verify that <m>V(2,2,1) = 4</m> is actually the largest possible volume we can obtain, we need to show that it's actually a maximum and not a minimum.
-                    This means we need to find another point <m>(x,y,z)</m> that also satisfies <m>A = 12</m>, and show that it gives a smaller value for <m>V</m>.
-                    One such point is just <m>(-2,-2,-1)</m>, and <m>V(-2,-2,-1) = -4 &lt; V(2,2,1)</m>.
-                    So <m>4</m> is actually a maximum value and not a minimum value.
-                </p>
-            </solution>
+        <theorem xml:id="theorem-second-derivative-test">
+          <idx><h>maxima and minima</h><h>second derivative test</h></idx>
+          <title>Second Derivative Test</title>
+          <statement>
+            <p>
+              Let <m>f(x,y)</m> be a differentiable function with
+              continuous second partial derivatives, and let
+              <m>(x_{0},y_{0})</m> be a critical point of <m>f</m>.
+              Define <m>D</m> to be <me>D(x,y) = f_{xx}f_{yy} -
+              (f_{xy})^{2}</me> Then we have the following
+              possibilities:
+              <ul>
+                <li>If <m>D(x_{0},y_{0}) &gt; 0 </m> and <m>f_{xx}(x_{0},y_{0}) &gt; 0</m>, then <m>(x_{0},y_{0})</m> is a local minimum.</li>
+                <li>If <m>D(x_{0},y_{0}) &gt; 0 </m> and <m>f_{xx}(x_{0},y_{0}) &lt; 0</m>, then <m>(x_{0},y_{0})</m> is a local maximum.</li>
+                <li>If <m>D(x_{0},y_{0}) &lt; 0 </m>, then <m>(x_{0},y_{0})</m> is a neither a local minimum nor local maximum. In this case we call <m>(x_{0},y_{0})</m> a <term>saddle point</term>.</li>
+                <li>If <m>D(x_{0},y_{0}) = 0 </m>, the test is inconclusive.</li>
+              </ul>
+            </p>
+          </statement>
+        </theorem>
+        <p>
+          The quantity <m>D</m> from <xref ref="theorem-second-derivative-test" text="type-global" /> is actually a determinant:
+          <me>D(x,y) = \left|\begin{array}{cc} f_{xx} &amp; f_{xy} \\ f_{yx} &amp; f_{yy}\end{array}\right|</me>
+        </p>
+        <example xml:id="example-local-extrema-of-an-exponential">
+          <title>Local extrema of an exponential</title>
+          <statement>
+            <p>
+              Classify the critical points of the function from <xref ref="example-critical-points-of-an-exponential" text="type-global" />.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We have <m>f(x,y) = xe^{-x^{2} - y^{2}}</m>, and the critical points are <m>(-\sqrt{\frac{1}{2}},0)</m> and <m>(\sqrt{\frac{1}{2}},0)</m>.
+              We need to find <m>D(x,y)</m>.
+              Since <m>f_{x} = (1 - 2x^{2})e^{-x^{2} - y^{2}}</m>, we get
+              <md>
+                <mrow>f_{xx} &amp; = -4xe^{-x^{2} - y^{2}} - 2x(1 - 2x^{2})e^{-x^{2} - y^{2}} </mrow>
+                <mrow>f_{xy} &amp; = -2y(1-2x^{2})e^{-x^{2} - y^{2}} = f_{yx} </mrow>
+              </md>
+              and similarly
+              <me>f_{yy} = -2xe^{-x^{2} - y^{2}} + 4xy^{2}e^{-x^{2} - y^{2}}</me>
+              At <m>(-\sqrt{\frac{1}{2}},0)</m>, we have
+              <md>
+                <mrow>D\left(-\sqrt{\frac{1}{2}},0\right) &amp; = 4\sqrt{\frac{1}{2}}e^{-\frac{1}{2}}\cdot2\sqrt{\frac{1}{2}}e^{-\frac{1}{2}}</mrow>
+                <mrow> &amp; &gt; 0 </mrow>
+              </md>
+              and <m>f_{xx}(-\sqrt{\frac{1}{2}},0) &gt;0</m> as well.
+              So this is a local minimum.
+              At <m>(\sqrt{\frac{1}{2}},0)</m>, we still have <m>D&gt;0</m>, but now <m>f_{xx}&lt;0</m>.
+              So this is a local maximum.
+            </p>
+          </solution>
+        </example>
+      </subsection>
+      <subsection xml:id="subsection-absolute-maxima-and-minima">
+        <title>Absolute Maxima and Minima</title>
+        <p>
+          Even if a function <m>f(x,y)</m> has a local minimum at <m>(x_{0},y_{0})</m>, there's no guarantee that this is the smallest value the function can take on its domain.
+          A similar statement is also true for local maxima, which leads to the following definition.
+        </p>
+        <definition xml:id="definition-absolute-maxima-and-minima">
+          <idx><h>maxima and minima</h><h>absolute</h></idx>
+          <title>Absolute Maxima and Minima</title>
+          <statement>
+            <p>
+              Let <m>f(x,y)</m> be a function defined on the set <m>D</m>.
+              We call the point <m>(x_{0},y_{0})</m> an <term>absolute minimum</term> (respectively, <term>absolute maximum</term>) if <m>f(x,y)\geq f(x_{0},y_{0})</m> (respectively, <m>f(x,y)\leq f(x_{0},y_{0})</m>) for all points <m>(x,y)</m> in <m>R</m>.
+            </p>
+          </statement>
+        </definition>
+        <p>
+          As a first example, consider <m>f(x,y) = \sqrt{1 - x^{2} -
+          y^{2}}</m>, which gives the top half of the unit sphere.
+          Using critical points and the second derivative test, we can
+          show that the origin is a local maximum.  However, this
+          method is blind to the absolute minimum values of
+          <m>f(x,y)</m>, which occur at the boundary <m>x^{2} + y^{2}
+          = 1</m>, where the sphere intersects the <m>xy</m>-plane.
+          So this means we can't use critical points alone to find
+          absolute maxima and minima, in general.  However, the
+          following theorem says that they'll get us most of the way
+          there.
+        </p>
+        <theorem xml:id="theorem-extreme-value-multivariable">
+          <idx><h>Extreme Value Theorem</h><h>functions of several variables</h></idx>
+          <title>Extreme Value Theorem</title>
+          <statement>
+            <p>
+              Let <m>f(x,y)</m> be a continuous function defined on a
+              closed and bounded set <m>D</m>.  <fn>This means that
+              <m>D</m> is finite in size and that it includes its
+              boundary.</fn> Then <m>f</m> is guaranteed to have an
+              absolute maximum and absolute minimum.  Furthermore,
+              these must occur either at a critical point or on the
+              boundary of <m>D</m>.
+            </p>
+          </statement>
+        </theorem>
+        <example xml:id="example-absolute-values-on-a-triangle">
+          <title>Absolute values on a triangle</title>
+          <statement>
+            <p>
+              Let <m>f(x,y) = x + y - xy</m>.  Find the absolute
+              maxima and minima of <m>f</m> on the triangle with
+              vertices <m>(0,0), (0,2)</m> and <m>(4,0)</m>.
+            </p>
+          </statement>
+          <solution>
+            <p>
+              We'll start off by finding any critical points.  Since
+              <m>\grad f = \dotprod{1-y, 1-x}</m>, we see that the
+              only critical point is <m>(1,1)</m>.  Now we need to see
+              what happens to <m>f(x,y)</m> on the edges of the
+              triangle, and to do that we need to find equations for
+              the edges.  Let <m>l_{1}</m> denote the edge from
+              <m>(0,0)</m> to <m>(0,2)</m>, <m>l_{2}</m> the edge from
+              <m>(0,2)</m> to <m>(4,0)</m> and <m>l_{3}</m> the edge
+              from <m>(0,0)</m> to <m>(4,0)</m>.  Then <m>l_{1}</m> is
+              given by the equation <m>x = 0</m>, <m>l_{2}</m> is
+              given by <m>y = -\frac{1}{2}(x-4)</m> and <m>l_{3}</m>
+              is given by <m>y = 0</m>.  So on <m>l_{1}</m> we have
+              <m>f(x,y) = f(0,y) = y</m>, on <m>l_{2}</m> we have
+              <me>f(x,y) = f\left(x,-\frac{1}{2}(x-4)\right) =
+              \frac{1}{2}\left[\left(x-\frac{3}{2}\right)^{2} +
+              \frac{7}{4}\right]</me> and on <m>l_{3}</m> we have
+              <m>f(x,y) = f(x,0) = x</m>.  We can then set up the
+              following table:
+            </p>
+            <table xml:id="table-triangle-extrema">
+              <title>Absolute values on the boundary</title>
+              <tabular halign="center" top="major">
+                <row top="major" bottom="minor">
+                  <cell>edge</cell>
+                  <cell><m>f(x,y)</m></cell>
+                  <cell>max</cell>
+                  <cell>min</cell>
+                </row>
+                <row>
+                  <cell><m>l_{1}</m></cell>
+                  <cell><m>y</m></cell>
+                  <cell><m>2</m></cell>
+                  <cell><m>0</m></cell>
+                </row>
+                <row>
+                  <cell><m>l_{2}</m></cell>
+                  <cell><m>\frac{1}{2}\left[\left(x-\frac{3}{2}\right)^{2} + \frac{7}{4}\right]</m></cell>
+                  <cell><m>\frac{1}{2}\left[\left(4-\frac{3}{2}\right)^{2} + \frac{7}{4}\right] = 4</m></cell>
+                  <cell><m>\frac{7}{8}</m></cell>
+                </row>
+                <row bottom="major">
+                  <cell><m>l_{3}</m></cell>
+                  <cell><m>x</m></cell>
+                  <cell><m>4</m></cell>
+                  <cell><m>0</m></cell>
+                </row>
+              </tabular>
+            </table>
+            <p>
+              Finally, at the critical point <m>(1,1)</m> we have
+              <m>f(1,1) = 1</m>.  So putting this all together, we can
+              say that the absolute maximum of <m>f(x,y)</m> on this
+              triangle is <m>4</m>, and this is reached at
+              <m>(4,0)</m>.  Similarly, the absolute minimum is
+              <m>0</m>, and this is reached at the origin.
+            </p>
+          </solution>
         </example>
         <p>
-            The points we'll obtain using Lagrange multipliers will be either maxima or minima, but the method itself doesn't always tell us which is which.
-            As in the last example, sometimes it's up to us to find that on our own.
-        </p>
-        <example xml:id="example-extreme-values-on-a-paraboloid">
-            <!-- Stolen from Stewart... -->
-            <title>Extreme values on a paraboloid</title>
-            <statement>
-                <p>
-                    Find the absolute maxima and minima for <m>f(x,y) = x^{2} + 2y^{2}</m> over this disk <m>x^{2} + y^{2} \leq 1</m>.
-                </p>
-            </statement>
-            <solution>
-                <p>
-                    First, recall from <xref ref="section-extreme-values" text="type-global" /> that the absolute maxima and minima of a differentiable function over a bounded set occur at either a critical point or somewhere on the boundary.
-                    So first, we need to find if <m>f(x,y)</m> has any critical points inside the disk.
-                    If we solve <m>f_{x} = f_{y} = 0</m>, then we quickly get that <m>(0,0)</m> is a critical point, and hence a possible maximum or minimum value.
-                    The only other place we need to check is the boundary <m>x^{2} + y^{2} = 1</m>, and this is something we can use Lagrange multipliers for.
-                </p>
-                <p>
-                    Set <m>g(x,y) = x^{2} + y^{2}</m>.
-                    Then we need to find the extreme values of <m>f</m> subject to the constraint <m>g = 1</m>.
-                    The system of equations we need to solve is then
-                    <md>
-                        <mrow>2x &amp; = \lambda(2x) &amp; \Rightarrow x = \lambda x </mrow>
-                        <mrow>4y &amp; = \lambda(2y) &amp; \Rightarrow 2y = \lambda y</mrow>
-                        <mrow>x^{2} + y^{2} &amp; = 1 </mrow>
-                    </md>
-                    The first equation is true if <m>\lambda = 1</m>, but then this forces <m>y = 0</m> in the second equation.
-                    If we then plug <m>y = 0</m> into the constraint, this forces <m>x = \pm1</m>.
-                    So the case <m>\lambda=1</m> gives us two points to test: <m>(-1,0)</m> and <m>(1,0)</m>.
-                    On the other hand, the second equation is true if <m>\lambda = 2</m>.
-                    This then forces <m>x = 0</m> and <m>y = \pm 1</m>, which gives us the points <m>(0,-1)</m> and <m>(0,1)</m>.
-                    Finally, if <m>\lambda\neq1,2</m>, then this forces <m>x = y = 0</m>.
-                    But there's no way to satisfy the constraint if <m>x = y = 0</m>, so we discard this possibility.
-                </p>
-                <p>
-                    So we have five points that we need to check, which we arrange in the following table:
-                    <table xml:id="table-lagrange-example-2">
-                        <title>Absolute values on the disk</title>
-                        <tabular halign="center" top="major">
-                            <row top="major" bottom="minor">
-                                <cell><m>(x,y)</m></cell>
-                                <cell><m>f(x,y)</m></cell>
-                            </row>
-                            <row>
-                                <cell><m>(0,0)</m></cell>
-                                <cell><m>0</m></cell>
-                            </row>
-                            <row>
-                                <cell><m>(-1,0)</m></cell>
-                                <cell><m>1</m></cell>
-                            </row>
-                            <row>
-                                <cell><m>(1,0)</m></cell>
-                                <cell><m>1</m></cell>
-                            </row>
-                            <row>
-                                <cell><m>(0,-1)</m></cell>
-                                <cell><m>2</m></cell>
-                            </row>
-                            <row bottom="major">
-                                <cell><m>(0,1)</m></cell>
-                                <cell><m>2</m></cell>
-                            </row>
-                        </tabular>
-                    </table>
-                    So the absolute minimum is <m>0</m>, which occurs at the origin.
-                    The absolute maximum is <m>2</m>, which occurs at the points <m>(0,\pm1)</m>.
-                </p>
-            </solution>
-        </example>
-        <example xml:id="example-maximizing-the-volume-of-a-prism-within-an-ellipsoid">
-            <title>Maximizing the volume of a prism within an ellipsoid</title>
-            <statement>
-                <p>
-                    A rectangular prism, centered at the origin and with sides parallel to the coordinate planes, is inscribed within the ellipsoid <m>x^{2} + \frac{y^{2}}{4} + \frac{z^{2}}{4} = 1</m>.
-                    Find the dimensions of the prism that maximize the volume.
-                </p>
-            </statement>
-            <solution>
-                <p>
-                    Let <m>(x,y,z)</m> denote the corner of the prism located in the first octant.
-                    Then we want to maximize <m>V(x,y,z) = (2x)(2y)(2z)</m> subject to the constraint <m>g(x,y,z) = x^{2} + \frac{y^{2}}{4} + \frac{z^{2}}{4} = 1</m>.
-                    So we'll use the method of Lagrange multipliers again to get the system
-                    <md>
-                        <mrow>8yz &amp; = 2\lambda x </mrow>
-                        <mrow>8xz &amp; = \frac{\lambda}{2}y </mrow>
-                        <mrow>8xy &amp; = \frac{\lambda}{2}z </mrow>
-                        <mrow>x^{2} + \frac{y^{2}}{4} + \frac{z^{2}}{4} &amp; =1 </mrow>
-                    </md>
-                    We can assume that <m>x,y,z</m> are all positive (since we're trying to find the <em>maximum</em> volume), so we can go ahead and solve each equation for <m>\lambda</m> to get
-                    <me>\lambda = \frac{4yz}{x} = \frac{16xz}{y} = \frac{16xy}{z}</me>
-                    Setting the first two fractions equal and simplifying gives <m>y^{2} = 4x^{2}</m>.
-                    Similarly, the second and third fractions give <m>y^{2} = z^{2}</m>.
-                    So
-                    <me>y^{2} = z^{2} = 4x^{2}.</me>
-                </p>
-                <p>
-                    Now we plug this into our constraint to get
-                    <md>
-                        <mrow>1 &amp; = x^{2} + \frac{y^{2}}{4} + \frac{z^{2}}{4} = 1 </mrow>
-                        <mrow> &amp; = 3x^{2} </mrow>
-                    </md>
-                    so <m>x = \pm\sqrt{\frac{1}{3}}</m>.
-                    Since we're assuming that <m>(x,y,z)</m> lies in the first octant, this means that <m>x &gt; 0</m>, along with <m>y </m>and <m>z</m>.
-                    So
-                    <md>
-                        <mrow>x &amp; = \sqrt{\frac{1}{3}} </mrow>
-                        <mrow>y &amp; = 2\sqrt{\frac{1}{3}} </mrow>
-                        <mrow>z &amp; = 2\sqrt{\frac{1}{3}} </mrow>
-                    </md>
-                    To check that these values actually maximize <m>V(x,y,z)</m>, we can compare them with the point <m>(1,0,0)</m>, which also satisfies the constraint <m>g = 1</m>.
-                    Since <m>V(1,0,0) = 0</m>, this means that the dimensions that maximize the volume are given by
-                    <me>\frac{2}{\sqrt{3}}\times\frac{4}{\sqrt{3}}\times\frac{4}{\sqrt{3}}</me>
-                </p>
-            </solution>
-        </example>
-        <p>
-            SUGGESTED PROBLEMS: 1-11 odd, 17, 19
-        </p>
-    </section>
+          Note that in <xref
+          ref="example-absolute-values-on-a-triangle"
+          text="type-global" />, we don't actually determine if the
+          critical point is a local maximum or minimum.  We just
+          compare the value <m>f</m> reaches at the critical point
+          with its maximum and minimum values on the boundary.
+       </p>
+       <example xml:id="example-absolute-maxima-and-minima-on-a-circular-sector">
+         <title>Absolute maxima and minima on a circular sector</title>
+         <statement>
+           <p>
+             Let <m>f(x,y) = xy^{2}</m> and let
+             <me>D = \{(x,y) : x,y \geq 0, x^{2} + y^{2} \leq 3\}</me>
+             Find the absolute maxima and minima of <m>f</m> on <m>D</m>.
+           </p>
+         </statement>
+         <solution>
+           <p>
+             First we'll find the critical point(s).
+             If we compute <m>\grad f</m>, we get <m>\grad f = \dotprod{y^{2}, 2xy}</m>.
+             This is <m>0</m> if and only if <m>y=0</m>, and if <m>y=0</m> then this forces <m>f(x,y) = f(x,0) = 0</m>.
+           </p>
+           <p>
+             Now we need to determine the maximum and minimum values of <m>f(x,y)</m> on the boundary of <m>D</m>.
+             Let <m>C_{1}</m> denote the line segment from <m>(0,0)</m> to <m>(\sqrt{3},0)</m>, <m>C_{2}</m> the circular arc from <m>(\sqrt{3},0)</m> to <m>(0,\sqrt{3})</m> and <m>C_{3}</m> the line segment from <m>(0,\sqrt{3})</m> to <m>(0,0)</m>.
+             Then on <m>C_{1}</m> we have <m>f(x,y) = 0</m>, on <m>C_{2}</m> we have
+             <me>f(x,y) = xy^{2} = x(3-x^{2})</me>
+             and on <m>C_{3}</m> we have <m>f(x,y) = 0</m>.
+             So the smallest value that <m>f</m> takes on the boundary is <m>0</m>, and the largest value is <m>2</m>.
+             So the absolute maximum is <m>2</m> and the absolute minimum is <m>0</m>.
+           </p>
+         </solution>
+       </example>
+     </subsection>
+     <handout>
+       <title>Guided notes</title>
+       <p>
+         <xref ref="theorem-derivatives-at-a-local-maximum-or-minimum" text="type-global-title"/>
+       </p>
+       <p>
+         <xref ref="example-critical-points-of-an-exponential" text="type-global-title"/>
+       </p>
+       <p>
+         <xref ref="example-local-extrema-of-an-exponential" text="type-global-title"/>
+       </p>
+       <p>
+         <xref ref="example-absolute-values-on-a-triangle" text="type-global-title"/>
+       </p>
+     </handout>
+   </section>
+   <section xml:id="section-lagrange-multipliers">
+     <title>Lagrange multipliers</title>
+     <p>
+       <xref ref="theorem-second-derivative-test" text="type-global"
+       /> is useful for finding local maxima and minima of a function
+       <m>f(x,y)</m>, but it's often the case where we have an
+       additional restriction on the variables <m>x</m> and <m>y</m>,
+       which we interpret as an equality <m>g(x,y) = k</m> for some
+       constant <m>k</m>.  Geometrically, this reduces down to finding
+       the maximum and minimum values of <m>f(x,y)</m> on the curve
+       <m>g(x,y) = k</m>.  This problem can be attacked algebraically
+       using contours, as in the example below.
+     </p>
+     <example xml:id="example-constrained-optimization-using-contours">
+       <title>Constrained Optimization Using Contours</title>
+       <statement>
+         <p>
+           Estimate the minimum and maximum values of <m>f(x,y) = x^2
+           + 2y^2</m> subject to the constraint <m>g(x,y) = x^2 + y^2
+           = 1</m>.
+         </p>
+       </statement>
+       <solution>
+         <p>
+           The constraint is represented as a contour plot of <m>g(x,y)</m>.
+           We can compare this with contours of <m>f(x,y)</m>, and any point where there two contours intersect is a point for which the constraint is satisfied.
+         </p>
+         <figure xml:id="figure-lagrange-contour-example">
+           <caption><p>An interactive contour plot of <m>f(x,y) = s</m> and <m>g(x,y) = 1</m>.</p></caption>
+           <interactive desmos="j3cspl30hv" />
+         </figure>
+         <p>
+           Using these contours, we see that the maximum value of
+           <m>f</m> subject to <m>g = 1</m> appears to be <m>2</m>,
+           while the minimum value of <m>f</m> subject to <m>g=1</m>
+           appears to be <m>1</m>.
+         </p>
+       </solution>
+     </example>
+     <p>
+       Although the graphical approach used in <xref
+       ref="example-constrained-optimization-using-contours"
+       text="type-global" /> and specifically in <xref
+       ref="figure-lagrange-contour-example" text="type-global" /> is
+       useful for estimating solutions of constrained optimization
+       problems in two dimensions, it's neither exact nor easy to
+       visualize in higher dimensions.  We therefore want to determine
+       an algebraic approach for solving these problems.  In these
+       cases, <xref ref="theorem-second-derivative-test"
+       text="type-global" /> is not as useful because there's no
+       guarantee that the critical points of <m>f</m> will lie on the
+       curve <m>g(x,y) = k</m>.  For this scenario, we must use the
+       method of <term>Lagrange multipliers</term>.
+     </p>
+     <algorithm xml:id="algorithm-method-of-lagrange-multipliers">
+       <idx><h>Lagrange multipliers</h></idx>
+       <title>Method of Lagrange Multipliers</title>
+       <statement>
+         <p>
+           Suppose that <m>f</m> and <m>g</m> are both differentiable
+           functions, and suppose that <m>\grad g\neq\vb{0}</m> on the
+           curve <m>g(x,y) = k</m>.  To find the extreme values of
+           <m>f(x,y)</m> subject to the constraint <m>g(x,y) = k</m>,
+           perform the following steps:
+           <ol>
+             <li>
+               Find all points <m>(x_{0},y_{0})</m> such that <m>\grad
+               f(x_{0},y_{0}) = \lambda \grad g(x_{0},y_{0})</m>,
+               where <m>\lambda</m> is a constant we call the
+               <term>Lagrange multiplier</term>.
+             </li>
+             <li>
+               Compute <m>f</m> at all points from the first step and
+               compare values to find any maxima or minima.
+             </li>
+           </ol>
+         </p>
+       </statement>
+     </algorithm>
+     <example xml:id="example-maximizing-volume">
+       <!-- Stolen from Stewart... -->
+       <title>Maximizing volume</title>
+       <statement>
+         <p>
+           A lidless box may be made from <quantity><mag>12</mag><unit
+           base="meter" exp="2" /></quantity> of material.  What
+           dimensions give the maximum volume?
+         </p>
+       </statement>
+       <solution>
+         <p>
+           If we denote the dimensions of the box by <m>x,y,z</m>,
+           then the function we need to maximize is <m>V(x,y,z) =
+           xyz</m>.  However, not all dimensions are valid since we're
+           only allowed to use <quantity><mag>12</mag><unit
+           base="meter" exp="2" /></quantity> of material.  This means
+           that the surface area of the box, which is given by
+           <m>A(x,y,z) = xy + 2xz + 2yz</m>, must be equal to
+           <m>12</m>.  So our constraint is that <m>A(x,y,z) = 12</m>,
+           and because we have this constraint we'll try to solve this
+           using <xref ref="algorithm-method-of-lagrange-multipliers"
+           text="type-global" />.
+         </p>
+         <p>
+           To begin, we need to solve <m>\grad V = \lambda \grad A</m>.
+           Equivalently, we need to solve the system
+           <md>
+             <mrow>V_{x} &amp; = \lambda A_{x} </mrow>
+             <mrow>V_{y} &amp; = \lambda A_{y} </mrow>
+             <mrow>V_{z} &amp; = \lambda A_{z} </mrow>
+           </md>
+           which turns into
+           <md>
+             <mrow>yz &amp; = \lambda(y + 2z) </mrow>
+             <mrow>xz &amp; = \lambda(x + 2z) </mrow>
+             <mrow>xy &amp; = \lambda(2x + 2y) </mrow>
+           </md>
+           Now, we don't actually need to find a value for
+           <m>\lambda</m>.  We just need values for <m>x,y,z</m>.  If
+           we multiply these equations by <m>x</m>, <m>y</m> and
+           <m>z</m> respectively, then we get
+           <md>
+             <mrow>xyz &amp; = \lambda(xy + 2xz) </mrow>
+             <mrow>xyz &amp; = \lambda(xy + 2yz) </mrow>
+             <mrow>xyz &amp; = \lambda(2xz + 2yz) </mrow>
+           </md>
+           or just
+           <me>\lambda(xy + 2xz) = \lambda(xy + 2yz) = \lambda(2xz + 2yz)</me>
+           We can also divide by <m>\lambda</m>, since there's no way <m>\lambda</m> could equal <m>0</m> and satisfy the above equations (since <m>x,y,z</m> are all positive).
+           This gives us
+           <men xml:id="equation-lagrange-example-1">xy + 2xz = xy + 2yz = 2xz + 2yz</men>
+         </p>
+         <p>
+           The first two expressions in <xref
+           ref="equation-lagrange-example-1" text="type-global" />
+           simplify to <m>x=y</m>, while the first and third reduce to
+           <m>x = 2z</m>.  So <me>x = y = 2z</me>.  But these
+           variables also need to satisfy <m>A(x,y,z) = 12</m>:
+           <md>
+             <mrow>12 &amp; = xy + 2xz + 2yz </mrow>
+             <mrow> &amp; = 4z^{2} + 4z^{2} + 4z^{2} </mrow>
+             <mrow> &amp; = 12z^{2} </mrow>
+           </md>
+           Therefore <m>z = \pm1</m>, so we take <m>z=1</m> (since
+           we're dealing with dimensions).  This also means that <m>x
+           = y = 2(1) = 2</m>.  So the point <m>(2,2,1)</m> is
+           therefore our candidate for the dimensions that maximize
+           volume subject to the constraint <m>A = 12</m>.
+         </p>
+         <p>
+           In order to actually verify that <m>V(2,2,1) = 4</m> is
+           actually the largest possible volume we can obtain, we need
+           to show that it's actually a maximum and not a minimum.
+           This means we need to find another point <m>(x,y,z)</m>
+           that also satisfies <m>A = 12</m>, and show that it gives a
+           smaller value for <m>V</m>.  One such point is just
+           <m>(-2,-2,-1)</m>, and <m>V(-2,-2,-1) = -4 &lt;
+           V(2,2,1)</m>.  So <m>4</m> is actually a maximum value and
+           not a minimum value.
+         </p>
+       </solution>
+     </example>
+     <p>
+       The points we'll obtain using Lagrange multipliers will be
+       either maxima or minima, but the method itself doesn't always
+       tell us which is which.  As in the last example, sometimes it's
+       up to us to find that on our own.
+     </p>
+     <example xml:id="example-extreme-values-on-a-paraboloid">
+       <!-- Stolen from Stewart... -->
+       <title>Extreme values on a paraboloid</title>
+       <statement>
+         <p>
+           Find the absolute maxima and minima for <m>f(x,y) = x^{2} +
+           2y^{2}</m> over this disk <m>x^{2} + y^{2} \leq 1</m>.
+         </p>
+       </statement>
+       <solution>
+         <p>
+           First, recall from <xref ref="section-extreme-values"
+           text="type-global" /> that the absolute maxima and minima
+           of a differentiable function over a bounded set occur at
+           either a critical point or somewhere on the boundary.  So
+           first, we need to find if <m>f(x,y)</m> has any critical
+           points inside the disk.  If we solve <m>f_{x} = f_{y} =
+           0</m>, then we quickly get that <m>(0,0)</m> is a critical
+           point, and hence a possible maximum or minimum value.  The
+           only other place we need to check is the boundary <m>x^{2}
+           + y^{2} = 1</m>, and this is something we can use Lagrange
+           multipliers for.
+         </p>
+         <p>
+           Set <m>g(x,y) = x^{2} + y^{2}</m>.  Then we need to find
+           the extreme values of <m>f</m> subject to the constraint
+           <m>g = 1</m>.  The system of equations we need to solve is
+           then
+           <md>
+             <mrow>2x &amp; = \lambda(2x) &amp; \Rightarrow x = \lambda x </mrow>
+             <mrow>4y &amp; = \lambda(2y) &amp; \Rightarrow 2y = \lambda y</mrow>
+             <mrow>x^{2} + y^{2} &amp; = 1 </mrow>
+           </md>
+           The first equation is true if <m>\lambda = 1</m>, but then
+           this forces <m>y = 0</m> in the second equation.  If we
+           then plug <m>y = 0</m> into the constraint, this forces
+           <m>x = \pm1</m>.  So the case <m>\lambda=1</m> gives us two
+           points to test: <m>(-1,0)</m> and <m>(1,0)</m>.  On the
+           other hand, the second equation is true if <m>\lambda =
+           2</m>.  This then forces <m>x = 0</m> and <m>y = \pm 1</m>,
+           which gives us the points <m>(0,-1)</m> and <m>(0,1)</m>.
+           Finally, if <m>\lambda\neq1,2</m>, then this forces <m>x =
+           y = 0</m>.  But there's no way to satisfy the constraint if
+           <m>x = y = 0</m>, so we discard this possibility.
+         </p>
+         <p>
+           So we have five points that we need to check, which we
+           arrange in the following table:
+           <table xml:id="table-lagrange-example-2">
+             <title>Absolute values on the disk</title>
+             <tabular halign="center" top="major">
+               <row top="major" bottom="minor">
+                 <cell><m>(x,y)</m></cell>
+                 <cell><m>f(x,y)</m></cell>
+               </row>
+               <row>
+                 <cell><m>(0,0)</m></cell>
+                 <cell><m>0</m></cell>
+               </row>
+               <row>
+                 <cell><m>(-1,0)</m></cell>
+                 <cell><m>1</m></cell>
+               </row>
+               <row>
+                 <cell><m>(1,0)</m></cell>
+                 <cell><m>1</m></cell>
+               </row>
+               <row>
+                 <cell><m>(0,-1)</m></cell>
+                 <cell><m>2</m></cell>
+               </row>
+               <row bottom="major">
+                 <cell><m>(0,1)</m></cell>
+                 <cell><m>2</m></cell>
+               </row>
+             </tabular>
+           </table>
+           So the absolute minimum is <m>0</m>, which occurs at the
+           origin.  The absolute maximum is <m>2</m>, which occurs at
+           the points <m>(0,\pm1)</m>.
+         </p>
+       </solution>
+     </example>
+     <example xml:id="example-maximizing-the-volume-of-a-prism-within-an-ellipsoid">
+       <title>Maximizing the volume of a prism within an
+       ellipsoid</title>
+       <statement>
+         <p>
+           A rectangular prism, centered at the origin and with sides
+           parallel to the coordinate planes, is inscribed within the
+           ellipsoid <m>x^{2} + \frac{y^{2}}{4} + \frac{z^{2}}{4} =
+           1</m>.  Find the dimensions of the prism that maximize the
+           volume.
+         </p>
+       </statement>
+       <solution>
+         <p>
+           Let <m>(x,y,z)</m> denote the corner of the prism located
+           in the first octant.  Then we want to maximize <m>V(x,y,z)
+           = (2x)(2y)(2z)</m> subject to the constraint <m>g(x,y,z) =
+           x^{2} + \frac{y^{2}}{4} + \frac{z^{2}}{4} = 1</m>.  So
+           we'll use the method of Lagrange multipliers again to get
+           the system
+           <md>
+             <mrow>8yz &amp; = 2\lambda x </mrow>
+             <mrow>8xz &amp; = \frac{\lambda}{2}y </mrow>
+             <mrow>8xy &amp; = \frac{\lambda}{2}z </mrow>
+             <mrow>x^{2} + \frac{y^{2}}{4} + \frac{z^{2}}{4} &amp; =1 </mrow>
+           </md>
+           We can assume that <m>x,y,z</m> are all positive (since
+           we're trying to find the <em>maximum</em> volume), so we
+           can go ahead and solve each equation for <m>\lambda</m> to
+           get <me>\lambda = \frac{4yz}{x} = \frac{16xz}{y} =
+           \frac{16xy}{z}</me> Setting the first two fractions equal
+           and simplifying gives <m>y^{2} = 4x^{2}</m>.  Similarly,
+           the second and third fractions give <m>y^{2} = z^{2}</m>.
+           So <me>y^{2} = z^{2} = 4x^{2}.</me>
+         </p>
+         <p>
+           Now we plug this into our constraint to get
+           <md>
+             <mrow>1 &amp; = x^{2} + \frac{y^{2}}{4} + \frac{z^{2}}{4} = 1 </mrow>
+             <mrow> &amp; = 3x^{2} </mrow>
+           </md>
+           so <m>x = \pm\sqrt{\frac{1}{3}}</m>.  Since we're assuming
+           that <m>(x,y,z)</m> lies in the first octant, this means
+           that <m>x &gt; 0</m>, along with <m>y</m> and <m>z</m>.  So
+           <md>
+             <mrow>x &amp; = \sqrt{\frac{1}{3}} </mrow>
+             <mrow>y &amp; = 2\sqrt{\frac{1}{3}} </mrow>
+             <mrow>z &amp; = 2\sqrt{\frac{1}{3}} </mrow>
+           </md>
+           To check that these values actually maximize
+           <m>V(x,y,z)</m>, we can compare them with the point
+           <m>(1,0,0)</m>, which also satisfies the constraint <m>g =
+           1</m>.  Since <m>V(1,0,0) = 0</m>, this means that the
+           dimensions that maximize the volume are given by
+           <me>\frac{2}{\sqrt{3}}\times\frac{4}{\sqrt{3}}\times\frac{4}{\sqrt{3}}</me>
+         </p>
+       </solution>
+     </example>
+     <handout>
+       <p>
+         <xref ref="example-maximizing-volume" text="type-global-title"/>
+       </p>
+       <p>
+         <xref ref="example-extreme-values-on-a-paraboloid" text="type-global-title"/>
+       </p>
+       <p>
+         <xref ref="example-maximizing-the-volume-of-a-prism-within-an-ellipsoid" text="type-global-title"/>
+       </p>
+     </handout>
+   </section>
 </chapter>
