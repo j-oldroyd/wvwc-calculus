@@ -121,15 +121,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.18';
+eBookConfig.runestone_version = '7.11.19';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.1d92cd109bc12c4d.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.74f6fa0c85f09c79.css">
+<script src="_static/prefix-runtime.998c9d9ee2a5e7ac.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
 <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdn.geogebra.org/apps/deployggb.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -631,8 +631,9 @@ true);
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="section-double-integrals-over-rectangles.html" class="internal"><span class="codenumber">13.1</span> <span class="title">Double integrals over rectangles</span></a></div>
 <ul class="structural toc-item-list active">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-double-integrals-over-rectangles.html#subsection-riemann-sums" class="internal"><span class="title">Riemann sums.</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-double-integrals-over-rectangles.html#subsection-riemann-sums" class="internal"><span class="title">Riemann sums</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-double-integrals-over-rectangles.html#subsection-fubini-s-theorem" class="internal"><span class="title">Fubini’s theorem</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="section-double-integrals-over-rectangles.html#section-double-integrals-over-rectangles-5" class="internal"><span class="title">Guided notes</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-double-integrals-over-general-regions.html" class="internal"><span class="codenumber">13.2</span> <span class="title">Double integrals over general regions</span></a></div></li>
@@ -712,21 +713,51 @@ true);
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-double-integrals-over-rectangles"><h2 class="heading hide-type">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-solution-checkbox">Hide solutions</label><input type="checkbox" id="hide-solution-checkbox">
+</div></div>
+<div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="section" id="section-double-integrals-over-rectangles"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">13.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Double integrals over rectangles</span>
 </h2>
-<section class="introduction" id="section-double-integrals-over-rectangles-2"><div class="para" id="section-double-integrals-over-rectangles-2-1">We want to try to find the volume under the surface <span class="process-math">\(z = f(x,y)\)</span> and above some rectangle <span class="process-math">\(R\)</span> in the <span class="process-math">\(xy\)</span>-plane. If <span class="process-math">\(f(x,y)\)</span> is a constant function, then this is easy: the resulting surface and the <span class="process-math">\(xy\)</span>-plane then form a rectangular prism. If <span class="process-math">\(f(x,y)\)</span> is more complicated, then we might not have a nice volume formula to use. However, we can steal an idea from Calculus I and try to approximate the volume by using simpler shapes; in this case, rectangular prisms.<div class="autopermalink" data-description="Paragraph"><a href="#section-double-integrals-over-rectangles-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="section-double-integrals-over-rectangles-2"><div class="para" id="section-double-integrals-over-rectangles-2-1">We want to try to find the volume under the surface <span class="process-math">\(z =
+f(x,y)\)</span> and above some rectangle <span class="process-math">\(R\)</span> in the <span class="process-math">\(xy\)</span>-plane.  If <span class="process-math">\(f(x,y)\)</span> is a constant function, then this is easy: the resulting surface and the <span class="process-math">\(xy\)</span>-plane then form a rectangular prism.  If <span class="process-math">\(f(x,y)\)</span> is more complicated, then we might not have a nice volume formula to use.  However, we can steal an idea from Calculus I and try to approximate the volume by using simpler shapes; in this case, rectangular prisms.<div class="autopermalink" data-description="Paragraph"><a href="#section-double-integrals-over-rectangles-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><section class="subsection" id="subsection-riemann-sums"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Riemann sums.</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Riemann sums</span>
 </h3>
 <div class="para logical" id="subsection-riemann-sums-2">
 <div class="para">Given a continuous function <span class="process-math">\(f(x,y)\)</span> defined over the rectangle</div>
 <div class="displaymath process-math" id="subsection-riemann-sums-2-2">
 \begin{equation*}
-R = \{(x,y) : a\leq x\leq b, c\leq y\leq d\}
+R = \{(x,y) : a\leq x\leq b, c\leq y\leq
+d\}
 \end{equation*}
 </div>
-<div class="para">to approximate the volume under <span class="process-math">\(f\)</span> and above <span class="process-math">\(R\)</span> we’ll divide the rectangle up into smaller rectangles. In particular, let’s divide the intervals <span class="process-math">\([a,b]\)</span> and <span class="process-math">\([c,d]\)</span> into subintervals <span class="process-math">\([x_{i},x_{i+1}], [y_{j},y_{j+1}],\)</span> where</div>
+<div class="para">to approximate the volume under <span class="process-math">\(f\)</span> and above <span class="process-math">\(R\)</span> we’ll divide the rectangle up into smaller rectangles.  In particular, let’s divide the intervals <span class="process-math">\([a,b]\)</span> and <span class="process-math">\([c,d]\)</span> into subintervals <span class="process-math">\([x_{i},x_{i+1}], [y_{j},y_{j+1}],\)</span> where</div>
 <div class="displaymath process-math" id="subsection-riemann-sums-2-8">
 \begin{align*}
 a = x_{0} \amp &lt; x_{1} &lt; x_{2} &lt; \dots &lt; x_{m} = b \\
@@ -738,39 +769,45 @@ c = y_{0} \amp &lt; y_{1} &lt; y_{2} &lt; \dots &lt; y_{n} = d \\
 <div class="para">If we let <span class="process-math">\(R_{ij}\)</span> denote the subrectangle given by</div>
 <div class="displaymath process-math" id="subsection-riemann-sums-2-10">
 \begin{equation*}
-R_{ij} = \{(x,y) : x_{i}\leq x\leq x_{i+1}, y_{j}\leq y\leq y_{j+1}\}
+R_{ij} = \{(x,y) : x_{i}\leq x\leq x_{i+1}, y_{j}\leq
+y\leq y_{j+1}\}
 \end{equation*}
 </div>
 <div class="para">then the volume under <span class="process-math">\(f(x,y)\)</span> and above <span class="process-math">\(R_{ij}\)</span> is about equal to</div>
 <div class="displaymath process-math" id="subsection-riemann-sums-2-13">
 \begin{equation*}
-f(x_{i},y_{j})\Delta x\Delta y
+f(x_{i},y_{j})\Delta
+x\Delta y
 \end{equation*}
 </div>
 <div class="para">Hence the volume under <span class="process-math">\(f(x,y)\)</span> and above <span class="process-math">\(R\)</span> should be about equal to</div>
 <div class="displaymath process-math" id="subsection-riemann-sums-2-16">
 \begin{equation*}
-\sum_{i=0}^{m}\sum_{j=0}^{n}f(x_{i},y_{j})\Delta x\Delta y
+\sum_{i=0}^{m}\sum_{j=0}^{n}f(x_{i},y_{j})\Delta x\Delta
+y
 \end{equation*}
 </div>
-<div class="para">If we replace <span class="process-math">\(\Delta x\Delta y\)</span> with <span class="process-math">\(\Delta A\)</span> and send <span class="process-math">\(\Delta A\to0\text{,}\)</span> this approximation becomes exact. This gives us the following definition.</div>
+<div class="para">If we replace <span class="process-math">\(\Delta x\Delta y\)</span> with <span class="process-math">\(\Delta
+A\)</span> and send <span class="process-math">\(\Delta A\to0\text{,}\)</span> this approximation becomes exact.  This gives us the following definition.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#subsection-riemann-sums-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="definition-double-integral-over-a-rectangle"><h4 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">13.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Double integral over a rectangle.</span>
 </h4>
 <div class="para logical" id="definition-double-integral-over-a-rectangle-3-1">
-<div class="para">Let <span class="process-math">\(f(x,y)\)</span> be a function defined over the rectangle <span class="process-math">\(R\text{.}\)</span> Then the <dfn class="terminology">double integral</dfn> of <span class="process-math">\(f(x,y)\)</span> over <span class="process-math">\(R\)</span> is defined to be</div>
+<div class="para">Let <span class="process-math">\(f(x,y)\)</span> be a function defined over the rectangle <span class="process-math">\(R\text{.}\)</span>  Then the <dfn class="terminology">double integral</dfn> of <span class="process-math">\(f(x,y)\)</span> over <span class="process-math">\(R\)</span> is defined to be</div>
 <div class="displaymath process-math" id="definition-double-integral-over-a-rectangle-3-1-6">
 \begin{equation*}
-\iint_{R}f(x,y)\,dA = \lim_{\Delta A\to0}\sum_{i=0}^{m}\sum_{j=0}^{n}f(x_{i},y_{j})\Delta A
+\iint_{R}f(x,y)\,dA = \lim_{\Delta
+A\to0}\sum_{i=0}^{m}\sum_{j=0}^{n}f(x_{i},y_{j})\Delta
+A
 \end{equation*}
 </div>
 <div class="para">If the limit exists, we say that <span class="process-math">\(f\)</span> is <dfn class="terminology">integrable</dfn> over <span class="process-math">\(R\text{.}\)</span>
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#definition-double-integral-over-a-rectangle-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 13.1.1: Double integral over a rectangle"><a href="#definition-double-integral-over-a-rectangle" title="Copy heading and permalink for Definition 13.1.1: Double integral over a rectangle" aria-label="Copy heading and permalink for Definition 13.1.1: Double integral over a rectangle">🔗</a></div></article><div class="para" id="subsection-riemann-sums-4">The geometric intuition behind the double integral is that it represents a volume under a surface. Negative values for a double integral indicate that a surface tends to lie below the <span class="process-math">\(xy\)</span>-plane, while positive values indicate that the surface tends to lie above the <span class="process-math">\(xy\)</span>-plane. Furthermore, continuous functions are integrable over any rectangle <span class="process-math">\(R\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-riemann-sums-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Definition 13.1.1: Double integral over a rectangle"><a href="#definition-double-integral-over-a-rectangle" title="Copy heading and permalink for Definition 13.1.1: Double integral over a rectangle" aria-label="Copy heading and permalink for Definition 13.1.1: Double integral over a rectangle">🔗</a></div></article><div class="para" id="subsection-riemann-sums-4">The geometric intuition behind the double integral is that it represents a volume under a surface.  Negative values for a double integral indicate that a surface tends to lie below the <span class="process-math">\(xy\)</span>-plane, while positive values indicate that the surface tends to lie above the <span class="process-math">\(xy\)</span>-plane.  Furthermore, continuous functions are integrable over any rectangle <span class="process-math">\(R\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-riemann-sums-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-double-integrals-by-volume"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">13.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Double integrals by volume.</span>
@@ -788,7 +825,7 @@ R = \{(x,y) : 0\leq x\leq 5, 0\leq y\leq 3\}
 </div>
 <div class="solutions"><details id="example-double-integrals-by-volume-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="example-double-integrals-by-volume-3-1">
-<div class="para">If we graph <span class="process-math">\(f(x,y)\text{,}\)</span> we get a triangular cylinder running along the <span class="process-math">\(y\)</span> axis. The volume of this cylinder over <span class="process-math">\(R\)</span> is just the area of the triangular "base" times the "height," or just</div>
+<div class="para">If we graph <span class="process-math">\(f(x,y)\text{,}\)</span> we get a triangular cylinder running along the <span class="process-math">\(y\)</span> axis.  The volume of this cylinder over <span class="process-math">\(R\)</span> is just the area of the triangular "base" times the "height," or just</div>
 <div class="displaymath process-math" id="example-double-integrals-by-volume-3-1-4">
 \begin{equation*}
 \frac{1}{2}5\cdot5\cdot3 = \frac{75}{2}
@@ -804,10 +841,10 @@ R = \{(x,y) : 0\leq x\leq 5, 0\leq y\leq 3\}
 </div>
 <div class="autopermalink" data-description="Solution 13.1.2.1"><a href="#example-double-integrals-by-volume-3" title="Copy heading and permalink for Solution 13.1.2.1" aria-label="Copy heading and permalink for Solution 13.1.2.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Example 13.1.2: Double integrals by volume"><a href="#example-double-integrals-by-volume" title="Copy heading and permalink for Example 13.1.2: Double integrals by volume" aria-label="Copy heading and permalink for Example 13.1.2: Double integrals by volume">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Riemann sums."><a href="#subsection-riemann-sums" title="Copy heading and permalink for Subsection: Riemann sums." aria-label="Copy heading and permalink for Subsection: Riemann sums.">🔗</a></div></section><section class="subsection" id="subsection-fubini-s-theorem"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Example 13.1.2: Double integrals by volume"><a href="#example-double-integrals-by-volume" title="Copy heading and permalink for Example 13.1.2: Double integrals by volume" aria-label="Copy heading and permalink for Example 13.1.2: Double integrals by volume">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Riemann sums"><a href="#subsection-riemann-sums" title="Copy heading and permalink for Subsection: Riemann sums" aria-label="Copy heading and permalink for Subsection: Riemann sums">🔗</a></div></section><section class="subsection" id="subsection-fubini-s-theorem"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Fubini’s theorem</span>
 </h3>
-<div class="para" id="subsection-fubini-s-theorem-2">Now that we have a definition for the double integral, we want to find a better way of computing it. Thankfully, we do have such a method: Fubini’s theorem.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-fubini-s-theorem-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsection-fubini-s-theorem-2">Now that we have a definition for the double integral, we want to find a better way of computing it.  Thankfully, we do have such a method: Fubini’s theorem.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-fubini-s-theorem-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="theorem-fubini-s-theorem"><h4 class="heading">
 <span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">13.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Fubini’s theorem.</span>
@@ -816,13 +853,16 @@ R = \{(x,y) : 0\leq x\leq 5, 0\leq y\leq 3\}
 <div class="para">Let <span class="process-math">\(f(x,y)\)</span> be continuous on the rectangle</div>
 <div class="displaymath process-math" id="theorem-fubini-s-theorem-2-1-2">
 \begin{equation*}
-R = \{(x,y) : a\leq x\leq b, c\leq y\leq d\}
+R =
+\{(x,y) : a\leq x\leq b, c\leq y\leq d\}
 \end{equation*}
 </div>
 <div class="para">Then</div>
 <div class="displaymath process-math" id="theorem-fubini-s-theorem-2-1-3">
 \begin{equation*}
-\iint_{R}f(x,y)\,dA = \int_{a}^{b}\left[\int_{c}^{d}f(x,y)\,dy\right]\,dx = \int_{c}^{d}\left[\int_{a}^{b}f(x,y)\,dx\right]\,dy
+\iint_{R}f(x,y)\,dA =
+\int_{a}^{b}\left[\int_{c}^{d}f(x,y)\,dy\right]\,dx =
+\int_{c}^{d}\left[\int_{a}^{b}f(x,y)\,dx\right]\,dy
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#theorem-fubini-s-theorem-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -843,7 +883,7 @@ R = \{(x,y) : 0\leq x\leq 5, 0\leq y\leq 3\}
 </div>
 <div class="solutions"><details id="example-double-integrals-by-fubini-s-theorem-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="example-double-integrals-by-fubini-s-theorem-3-1">
-<div class="para">We found this previously in <a href="section-double-integrals-over-rectangles.html#example-double-integrals-by-volume" class="xref" data-knowl="./knowl/xref/example-double-integrals-by-volume.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 13.1.2: Double integrals by volume">Example 13.1.2</a>, so we’ll try it again using Fubini’s theorem and see if we get the same answer. By <a href="section-double-integrals-over-rectangles.html#theorem-fubini-s-theorem" class="xref" data-knowl="./knowl/xref/theorem-fubini-s-theorem.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 13.1.3: Fubini’s theorem">Theorem 13.1.3</a>, we have</div>
+<div class="para">We found this previously in <a href="section-double-integrals-over-rectangles.html#example-double-integrals-by-volume" class="xref" data-knowl="./knowl/xref/example-double-integrals-by-volume.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 13.1.2: Double integrals by volume">Example 13.1.2</a>, so we’ll try it again using Fubini’s theorem and see if we get the same answer.  By <a href="section-double-integrals-over-rectangles.html#theorem-fubini-s-theorem" class="xref" data-knowl="./knowl/xref/theorem-fubini-s-theorem.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 13.1.3: Fubini’s theorem">Theorem 13.1.3</a>, we have</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-double-integrals-by-volume.html ./knowl/xref/theorem-fubini-s-theorem.html" id="example-double-integrals-by-fubini-s-theorem-3-1-3">
 \begin{align*}
 \iint_{R}f(x,y)\,dA \amp = \int_{0}^{3}\left[\int_{0}^{5}(5-x)\,dx\right]\,dy \\
@@ -857,7 +897,7 @@ R = \{(x,y) : 0\leq x\leq 5, 0\leq y\leq 3\}
 <div class="autopermalink" data-description="Solution 13.1.4.1"><a href="#example-double-integrals-by-fubini-s-theorem-3" title="Copy heading and permalink for Solution 13.1.4.1" aria-label="Copy heading and permalink for Solution 13.1.4.1">🔗</a></div>
 </div></details></div>
 <div class="autopermalink" data-description="Example 13.1.4: Double integrals by Fubini’s theorem"><a href="#example-double-integrals-by-fubini-s-theorem" title="Copy heading and permalink for Example 13.1.4: Double integrals by Fubini’s theorem" aria-label="Copy heading and permalink for Example 13.1.4: Double integrals by Fubini’s theorem">🔗</a></div></article><div class="para logical" id="subsection-fubini-s-theorem-5">
-<div class="para">The double integral, like the Calculus I integral, derivative and partial derivatives, is <em class="emphasis">linear</em>. This means that you can break it up over addition and pull constants outside of it. In other words, if <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are integrable and if <span class="process-math">\(c\)</span> is a constant, then</div>
+<div class="para">The double integral, like the Calculus I integral, derivative and partial derivatives, is <em class="emphasis">linear</em>.  This means that you can break it up over addition and pull constants outside of it.  In other words, if <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are integrable and if <span class="process-math">\(c\)</span> is a constant, then</div>
 <div class="displaymath process-math" id="subsection-fubini-s-theorem-5-5">
 \begin{align*}
 \iint_{R}(f(x,y) + g(x,y))\,dA \amp = \iint_{R}f(x,y)\,dA + \iint_{R}g(x,y)\,dA \\
@@ -873,7 +913,7 @@ R = \{(x,y) : 0\leq x\leq 5, 0\leq y\leq 3\}
 <div class="para">Find</div>
 <div class="displaymath process-math" id="example-double-integral-of-a-logarithm-2-1-1">
 \begin{equation*}
-\int_{1}^{3}\int_{1}^{3}\frac{\ln(xy)}{xy}\,dy\,dx
+\int_{1}^{3}\int_{1}^{3}\frac{\ln(xy)}{xy}\,dy\,dx\text{.}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#example-double-integral-of-a-logarithm-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -898,7 +938,77 @@ R = \{(x,y) : 0\leq x\leq 5, 0\leq y\leq 3\}
 </div>
 <div class="autopermalink" data-description="Solution 13.1.5.1"><a href="#example-double-integral-of-a-logarithm-3" title="Copy heading and permalink for Solution 13.1.5.1" aria-label="Copy heading and permalink for Solution 13.1.5.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Example 13.1.5: Double integral of a logarithm"><a href="#example-double-integral-of-a-logarithm" title="Copy heading and permalink for Example 13.1.5: Double integral of a logarithm" aria-label="Copy heading and permalink for Example 13.1.5: Double integral of a logarithm">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Fubini’s theorem"><a href="#subsection-fubini-s-theorem" title="Copy heading and permalink for Subsection: Fubini’s theorem" aria-label="Copy heading and permalink for Subsection: Fubini’s theorem">🔗</a></div></section><div class="autopermalink" data-description="Section 13.1: Double integrals over rectangles"><a href="#section-double-integrals-over-rectangles" title="Copy heading and permalink for Section 13.1: Double integrals over rectangles" aria-label="Copy heading and permalink for Section 13.1: Double integrals over rectangles">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Example 13.1.5: Double integral of a logarithm"><a href="#example-double-integral-of-a-logarithm" title="Copy heading and permalink for Example 13.1.5: Double integral of a logarithm" aria-label="Copy heading and permalink for Example 13.1.5: Double integral of a logarithm">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Fubini’s theorem"><a href="#subsection-fubini-s-theorem" title="Copy heading and permalink for Subsection: Fubini’s theorem" aria-label="Copy heading and permalink for Subsection: Fubini’s theorem">🔗</a></div></section><section class="worksheet" id="section-double-integrals-over-rectangles-5" data-margins="0.75in 0.75in 0.75in 0.75in"><h3 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Guided notes</span><div class="print-links"><a href="?printpreview=section-double-integrals-over-rectangles-5" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h3>
+<article class="exercise exercise-like" id="section-double-integrals-over-rectangles-5-2"><h4 class="heading">
+<span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Example 13.1.2 Double integrals by volume.</span>
+</h4>
+<div class="para logical" id="section-double-integrals-over-rectangles-5-2-2-1">
+<div class="para">Let <span class="process-math">\(f(x,y) = 5 - x\)</span> and let</div>
+<div class="displaymath process-math" id="section-double-integrals-over-rectangles-5-2-2-1-2">
+\begin{equation*}
+R = \{(x,y) : 0\leq
+x\leq 5, 0\leq y\leq 3\}
+\end{equation*}
+</div>
+<div class="para">Find <span class="process-math">\(\iint_{R}f(x,y)\,dA\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-double-integrals-over-rectangles-5-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="2in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 1: Example 13.1.2 Double integrals by volume"><a href="#section-double-integrals-over-rectangles-5-2" title="Copy heading and permalink for Worksheet Exercise 1: Example 13.1.2 Double integrals by volume" aria-label="Copy heading and permalink for Worksheet Exercise 1: Example 13.1.2 Double integrals by volume">🔗</a></div></article><article class="exercise exercise-like" id="section-double-integrals-over-rectangles-5-3"><h4 class="heading">
+<span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 13.1.3 Fubini’s theorem.</span>
+</h4>
+<div class="para logical" id="section-double-integrals-over-rectangles-5-3-2-1">
+<div class="para">Let <span class="process-math">\(f(x,y)\)</span> be continuous on the rectangle</div>
+<div class="displaymath process-math" id="section-double-integrals-over-rectangles-5-3-2-1-2">
+\begin{equation*}
+R =
+\{(x,y) : a\leq x\leq b, c\leq y\leq d\}
+\end{equation*}
+</div>
+<div class="para">Then</div>
+<div class="displaymath process-math" id="section-double-integrals-over-rectangles-5-3-2-1-3">
+\begin{equation*}
+\iint_{R}f(x,y)\,dA =
+\int_{a}^{b}\left[\int_{c}^{d}f(x,y)\,dy\right]\,dx =
+\int_{c}^{d}\left[\int_{a}^{b}f(x,y)\,dx\right]\,dy
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-double-integrals-over-rectangles-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="1in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 2: Theorem 13.1.3 Fubini’s theorem"><a href="#section-double-integrals-over-rectangles-5-3" title="Copy heading and permalink for Worksheet Exercise 2: Theorem 13.1.3 Fubini’s theorem" aria-label="Copy heading and permalink for Worksheet Exercise 2: Theorem 13.1.3 Fubini’s theorem">🔗</a></div></article><article class="exercise exercise-like" id="section-double-integrals-over-rectangles-5-4"><h4 class="heading">
+<span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Example 13.1.4 Double integrals by Fubini’s theorem.</span>
+</h4>
+<div class="para logical" id="section-double-integrals-over-rectangles-5-4-2-1">
+<div class="para">Let <span class="process-math">\(f(x,y) = 5 - x\)</span> and let</div>
+<div class="displaymath process-math" id="section-double-integrals-over-rectangles-5-4-2-1-2">
+\begin{equation*}
+R = \{(x,y) : 0\leq x\leq 5, 0\leq y\leq 3\}
+\end{equation*}
+</div>
+<div class="para">Find <span class="process-math">\(\iint_{R}f(x,y)\,dA\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-double-integrals-over-rectangles-5-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="2in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 3: Example 13.1.4 Double integrals by Fubini’s theorem"><a href="#section-double-integrals-over-rectangles-5-4" title="Copy heading and permalink for Worksheet Exercise 3: Example 13.1.4 Double integrals by Fubini’s theorem" aria-label="Copy heading and permalink for Worksheet Exercise 3: Example 13.1.4 Double integrals by Fubini’s theorem">🔗</a></div></article><article class="exercise exercise-like" id="section-double-integrals-over-rectangles-5-5"><h4 class="heading">
+<span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Example 13.1.5 Double integral of a logarithm.</span>
+</h4>
+<div class="para logical" id="section-double-integrals-over-rectangles-5-5-2-1">
+<div class="para">Find</div>
+<div class="displaymath process-math" id="section-double-integrals-over-rectangles-5-5-2-1-1">
+\begin{equation*}
+\int_{1}^{3}\int_{1}^{3}\frac{\ln(xy)}{xy}\,dy\,dx\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-double-integrals-over-rectangles-5-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="2in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 4: Example 13.1.5 Double integral of a logarithm"><a href="#section-double-integrals-over-rectangles-5-5" title="Copy heading and permalink for Worksheet Exercise 4: Example 13.1.5 Double integral of a logarithm" aria-label="Copy heading and permalink for Worksheet Exercise 4: Example 13.1.5 Double integral of a logarithm">🔗</a></div></article><div class="autopermalink" data-description="Worksheet: Guided notes"><a href="#section-double-integrals-over-rectangles-5" title="Copy heading and permalink for Worksheet: Guided notes" aria-label="Copy heading and permalink for Worksheet: Guided notes">🔗</a></div></section><div class="autopermalink" data-description="Section 13.1: Double integrals over rectangles"><a href="#section-double-integrals-over-rectangles" title="Copy heading and permalink for Section 13.1: Double integrals over rectangles" aria-label="Copy heading and permalink for Section 13.1: Double integrals over rectangles">🔗</a></div></section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="multiple-integrals.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="section-double-integrals-over-general-regions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
