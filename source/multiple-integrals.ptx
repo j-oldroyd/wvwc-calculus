@@ -245,30 +245,41 @@
     <title>Double integrals over general regions</title>
     <introduction>
       <p>
-        <xref ref="section-double-integrals-over-rectangles" text="type-global" /> shows how to define the double integral over a rectangle <m>R</m>.
-        Now we want to extend it to more general regions.
-        We'll be skipping an issue with how to actually define such an integral in terms of Riemann sums, but the main idea is to take a function defined over some general region <m>D</m> and then extend it to cover a rectangular region <m>R</m>.
-        Then we can just use <xref ref="definition-double-integral-over-a-rectangle" text="type-global" /> to define this new integral as well.
+        <xref ref="section-double-integrals-over-rectangles"
+        text="type-global" /> shows how to define the double integral
+        over a rectangle <m>R</m>.  Now we want to extend it to more
+        general regions.  We'll be skipping an issue with how to
+        actually define such an integral in terms of Riemann sums, but
+        the main idea is to take a function defined over some general
+        region <m>D</m> and then extend it to cover a rectangular
+        region <m>R</m>.  Then we can just use <xref
+        ref="definition-double-integral-over-a-rectangle"
+        text="type-global" /> to define this new integral as well.
       </p>
       <p>
-        Our primary tool for computing double integrals will still be <xref ref="theorem-fubini-s-theorem" text="type-global" />.
-        The main difficulty we'll encounter (aside from the usual integration issues) is how to properly set up limits for <m>x</m> and <m>y</m> for some region <m>D</m>.
+        Our primary tool for computing double integrals will still be
+        <xref ref="theorem-fubini-s-theorem" text="type-global" />.
+        The main difficulty we'll encounter (aside from the usual
+        integration issues) is how to properly set up limits for
+        <m>x</m> and <m>y</m> for some region <m>D</m>.
       </p>
     </introduction>
     <example xml:id="example-integrating-over-a-region-defined-by-a-parabola">
       <title>Integrating over a region defined by a parabola</title>
       <statement>
         <p>
-          Let <m>f(x,y) = \frac{y}{x^{5}+1}</m> and let <m>D</m> be the region under the parabola <m>y = x^{2}</m>, above the <m>x</m>-axis and between <m>x=0</m> and <m>x=1</m>.
-          Find <m>\iint_{D}f(x,y)\,dA</m>.
+          Let <m>f(x,y) = \frac{y}{x^{5}+1}</m> and let <m>D</m> be
+          the region under the parabola <m>y = x^{2}</m>, above the
+          <m>x</m>-axis and between <m>x=0</m> and <m>x=1</m>.  Find
+          <m>\iint_{D}f(x,y)\,dA</m>.
         </p>
       </statement>
       <solution>
         <p>
-          The first step is to determine limits for <m>x</m> and <m>y</m> that describe this region.
-          One possible description is the following:
-          <me>D = \{(x,y) : 0\leq y\leq x^{2}, 0\leq x\leq 1\}</me>
-          If we use this, we can write
+          The first step is to determine limits for <m>x</m> and
+          <m>y</m> that describe this region.  One possible
+          description is the following: <me>D = \{(x,y) : 0\leq y\leq
+          x^{2}, 0\leq x\leq 1\}</me>. If we use this, we can write
           <md>
             <mrow>\iint_{D}\frac{y}{x^{5}+1}\,dA \amp = \int_{0}^{1}\int_{0}^{x^{2}}\frac{y}{x^{5}+1}\,dy\,dx </mrow>
             <mrow> \amp = \frac{1}{2}\int_{0}^{1}\frac{1}{x^{5}+1}y^{2}\bigg|_{y=0}^{x^{2}}\,dx </mrow>
@@ -278,46 +289,83 @@
           </md>
         </p>
         <p>
-          We also could have described <m>D</m> as the set of all points
-          <me>D = \{(x,y) : \sqrt{y} \leq x\leq 1, 0\leq y\leq 1\}</me>
-          If we do this instead, we get
-          <me>\iint_{D}\frac{y}{x^{5}+1}\,dA = \int_{0}^{1}\int_{\sqrt{y}}^{1}\frac{y}{x^{5}+1}\,dx\,dy </me>
-          By <xref ref="theorem-fubini-s-theorem" text="type-global" />, this is guaranteed to equal <m>\frac{1}{10}\ln2</m>.
-          However, the actual process of computing the double integral using this choice for the limits is much more difficult, since we would need to integrate <m>\frac{1}{x^{5}+1}</m> with respect to <m>x</m>.
+          We also could have described <m>D</m> as the set of all
+          points <me>D = \{(x,y) : \sqrt{y} \leq x\leq 1, 0\leq y\leq
+          1\}</me> If we do this instead, we get
+          <me>\iint_{D}\frac{y}{x^{5}+1}\,dA =
+          \int_{0}^{1}\int_{\sqrt{y}}^{1}\frac{y}{x^{5}+1}\,dx\,dy
+          </me> By <xref ref="theorem-fubini-s-theorem"
+          text="type-global" />, this is guaranteed to equal
+          <m>\frac{1}{10}\ln2</m>.  However, the actual process of
+          computing the double integral using this choice for the
+          limits is much more difficult, since we would need to
+          integrate <m>\frac{1}{x^{5}+1}</m> with respect to <m>x</m>.
         </p>
       </solution>
     </example>
     <p>
-      There are several important things we can take away from the above example:
+      There are several important things we can take away from the
+      above example:
       <ul>
-        <li>Much of the difficulty in computing double integrals lies in finding limits that describe the region you're integrating over. In general, it's a good idea to sketch the region you're integrating over in order to figure out what your limits should be.</li>
-        <li>There can be multiple ways to describe a single region. This leads to multiple ways of setting up limits for double integrals over this region. If the integrand is continuous, then <xref ref="theorem-fubini-s-theorem" text="type-global" /> guarantees that these different methods will all produce the same value.</li>
-        <li>It's important to choose limits in such a way as to make computing the double integral more manageable.</li>
-        <li>When finding limits for a double integral, the outermost limits <em>must be constant</em> since the double integral must eventually simplify to a constant. In other words, we don't really have a notion of an "indefinite" double integral.</li>
+        <li>
+          Much of the difficulty in computing double integrals lies in
+          finding limits that describe the region you're integrating
+          over. In general, it's a good idea to sketch the region
+          you're integrating over in order to figure out what your
+          limits should be.
+        </li>
+        <li>
+          There can be multiple ways to describe a single region. This
+          leads to multiple ways of setting up limits for double
+          integrals over this region. If the integrand is continuous,
+          then <xref ref="theorem-fubini-s-theorem" text="type-global"
+          /> guarantees that these different methods will all produce
+          the same value.
+        </li>
+        <li>
+          It's important to choose limits in such a way as to make
+          computing the double integral more manageable.
+        </li>
+        <li>
+          When finding limits for a double integral, the outermost
+          limits <em>must be constant</em> since the double integral
+          must eventually simplify to a constant. In other words, we
+          don't really have a notion of an "indefinite" double
+          integral.
+        </li>
       </ul>
     </p>
     <example xml:id="example-reversing-the-order-of-integration">
       <title>Reversing the order of integration</title>
       <statement>
         <p>
-          Compute <m>\int_{0}^{\sqrt{\pi}}\int_{y}^{\sqrt{\pi}}\cos x^{2}\,dx\,dy</m>.
+          Compute <m>\int_{0}^{\sqrt{\pi}}\int_{y}^{\sqrt{\pi}}\cos
+          x^{2}\,dx\,dy</m>.
         </p>
       </statement>
       <solution>
         <p>
-          If we try to integrate with respect to <m>x</m> right away, then we're stuck: <m>\cos x^{2}</m> has no elementary antiderivative, which for us means that we can only integrate it using power series.
-          However, it is continuous, so <xref ref="theorem-fubini-s-theorem" text="type-global" /> tells us that if we can integrate it with respect to <m>y</m> first and then <m>x</m> (i.e. replace <m>dx\,dy</m> with <m>dy\,dx</m>), we'll still get the same answer.
-          And integrating <m>\cos x^{2}</m> with respect to <m>y</m> is actually very easy.
-          This is called <term>reversing the order of integration</term>.
+          If we try to integrate with respect to <m>x</m> right away,
+          then we're stuck: <m>\cos x^{2}</m> has no elementary
+          antiderivative, which for us means that we can only
+          integrate it using power series.  However, it is continuous,
+          so <xref ref="theorem-fubini-s-theorem" text="type-global"
+          /> tells us that if we can integrate it with respect to
+          <m>y</m> first and then <m>x</m> (i.e. replace <m>dx\,dy</m>
+          with <m>dy\,dx</m>), we'll still get the same answer.  And
+          integrating <m>\cos x^{2}</m> with respect to <m>y</m> is
+          actually very easy.  This is called <term>reversing the
+          order of integration</term>.
         </p>
         <p>
-          In order to change the order of integration, we need to change the limits.
-          The region we're integrating over is the region
-          <me>D = \{(x,y) : y\leq x\leq \sqrt{\pi}, 0\leq y\leq\sqrt{\pi}\}</me>
-          If we sketch this, we see that this is just the region below the line <m>y = x</m>, above the <m>x</m>-axis and bounded from <m>x=0</m> to <m>x=\sqrt{\pi}</m>.
-          So we can also write
-          <me>D = \{(x,y) : 0\leq y\leq x, 0\leq x\leq\sqrt{\pi}\}</me>
-          Therefore
+          In order to change the order of integration, we need to
+          change the limits.  The region we're integrating over is the
+          region <me>D = \{(x,y) : y\leq x\leq \sqrt{\pi}, 0\leq
+          y\leq\sqrt{\pi}\}</me> If we sketch this, we see that this
+          is just the region below the line <m>y = x</m>, above the
+          <m>x</m>-axis and bounded from <m>x=0</m> to
+          <m>x=\sqrt{\pi}</m>.  So we can also write <me>D = \{(x,y) :
+          0\leq y\leq x, 0\leq x\leq\sqrt{\pi}\}</me> Therefore
           <md>
             <mrow>\int_{0}^{\sqrt{\pi}}\int_{y}^{\sqrt{\pi}}\cos x^{2}\,dx\,dy \amp = \int_{0}^{\sqrt{\pi}}\int_{0}^{x}\cos x^{2}\,dy\,dx </mrow>
             <mrow> \amp = \int_{0}^{\sqrt{\pi}}y\cos x^{2}\bigg|_{y=0}^{x}\,dx </mrow>
@@ -329,23 +377,26 @@
       </solution>
     </example>
     <p>
-      Sometimes, the order of integration can be chosen to make the limits of integration easier to set up.
+      Sometimes, the order of integration can be chosen to make the
+      limits of integration easier to set up.
     </p>
     <example xml:id="example-integrating-over-a-triangle">
       <title>Integrating over a triangle</title>
       <statement>
         <p>
-          Integrate <m>f(x,y) = x^{2} + y^{2}</m> over the triangle <m>T</m> with vertices <m>(0,0), (1,1)</m> and <m>(0,2)</m>.
+          Integrate <m>f(x,y) = x^{2} + y^{2}</m> over the triangle
+          <m>T</m> with vertices <m>(0,0), (1,1)</m> and <m>(0,2)</m>.
         </p>
       </statement>
       <solution>
         <p>
-          If we wanted to integrate with respect to <m>x</m> first, we would have to break our double integral up into two different double integrals.
-          This is because the limits for <m>x</m> change halfway up the triangle.
-          So it'd be better for us to integrate with respect to <m>y</m> first.
-          Since
-          <me>T = \{(x,y) : x \leq y \leq 2-x, 0\leq x\leq 1</me>
-          we have
+          If we wanted to integrate with respect to <m>x</m> first, we
+          would have to break our double integral up into two
+          different double integrals.  This is because the limits for
+          <m>x</m> change halfway up the triangle.  So it'd be better
+          for us to integrate with respect to <m>y</m> first.  Since
+          <me>T = \{(x,y) : x \leq y \leq 2-x, 0\leq x\leq 1</me> we
+          have
           <md>
             <mrow>\iint_{T}(x^{2} + y^{2})\,dA \amp = \int_{0}^{1}\int_{x}^{2-x}(x^{2} + y^{2})\,dy\,dx </mrow>
             <mrow> \amp = \int_{0}^{1}\left[x^{2}y + \frac{y^{3}}{3}\right]_{y=x}^{2-x}\,dx </mrow>
@@ -358,11 +409,44 @@
       </solution>
     </example>
     <p>
-      Besides finding volumes, we can also use double integrals to find areas.
-      If <m>D</m> is some region in the <m>xy</m>-plane, then <m>\iint_{D}\,dA</m> represents the volume under the surface <m>z=1</m> and above <m>D</m>.
-      This is a solid with the constant height of <m>1</m>, so the volume should be equal to the area of <m>D</m> times <m>1</m>.
-      That is, <m>\iint_{D}\,dA</m> is equal to the area of <m>D</m>.
+      Besides finding volumes, we can also use double integrals to
+      find areas.  If <m>D</m> is some region in the <m>xy</m>-plane,
+      then <m>\iint_{D}\,dA</m> represents the volume under the
+      surface <m>z=1</m> and above <m>D</m>.  This is a solid with the
+      constant height of <m>1</m>, so the volume should be equal to
+      the area of <m>D</m> times <m>1</m>.  That is,
+      <m>\iint_{D}\,dA</m> is equal to the area of <m>D</m>.
     </p>
+    <worksheet>
+      <exercise workspace="2in">
+        <title><xref ref="example-integrating-over-a-region-defined-by-a-parabola" text="type-global-title"/></title>
+        <statement>
+          <p>
+            Let <m>f(x,y) = \frac{y}{x^{5}+1}</m> and let <m>D</m> be
+            the region under the parabola <m>y = x^{2}</m>, above the
+            <m>x</m>-axis and between <m>x=0</m> and <m>x=1</m>.  Find
+            <m>\iint_{D}f(x,y)\,dA</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title><xref ref="example-reversing-the-order-of-integration" text="type-global-title"/></title>
+        <statement>
+          <p>
+            Compute <m>\int_{0}^{\sqrt{\pi}}\int_{y}^{\sqrt{\pi}}\cos x^{2}\,dx\,dy</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title><xref ref="example-integrating-over-a-triangle" text="type-global-title"/></title>
+        <statement>
+          <p>
+            Integrate <m>f(x,y) = x^{2} + y^{2}</m> over the triangle
+            <m>T</m> with vertices <m>(0,0), (1,1)</m> and <m>(0,2)</m>.
+          </p>
+        </statement>
+      </exercise>
+    </worksheet>
   </section>
   <section xml:id="section-double-integrals-in-polar-coordinates">
     <title>Double integrals in polar coordinates</title>
