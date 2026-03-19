@@ -6541,7 +6541,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "13.3",
   "title": "Double integrals in polar coordinates",
-  "body": " Double integrals in polar coordinates  Recall that the double integral was defined by first setting up a rectangular grid. The reason we used a rectangular grid was because we were working in Cartesian coordinates, so this made the most sense. If we're dealing with a circular region of integration, then using Cartesian coordinates is very awkward. However, polar coordinates from work very nicely with circular regions. So we want to find out how to set up double integrals using polar coordinates.  If we're given a function , then it's not too hard to convert this to the polar form . Just replace with and with . The tricky part with setting up double integrals in polar coordinates is how to deal with the area element  , which in Cartesian coordinates is just or . To figure out what should be in polar coordinates, i.e. in terms of and , consider the following \"polar rectangle\":     A polar grid.    Let represent the area of one of these sectors. If we let denote the distance from the origin to one sector, the length of a sector and the angle spanned by a sector, then we can say that If we assume that and are both small (which means the polar grid in is very fine), then So . As and approach , this becomes more exact, and we get .    double integrals  polar coordinates   Double integrals in polar coordinates   Let be a continuous function. Then and limits are chosen using polar coordinates.     Integrating over a circular sector   Find     If we sketch the region of integration, we see that it is the part of the unit circle in the third quadrant. So we'll switch to polar coordinates to solve this integral:     Polar coordinates may also be used, surprisingly, to evaluate the Gaussian integral  .   The Gaussian integral   We have      First, let . We'll show that . We have Since , this gives     Computing the volume of a sphere   Find the volume of a sphere of radius .    First, we can center the sphere at the origin without loss of generality. Such a sphere is given by . If we solve for , we get Let denote the disk of radius in the -plane centered at the origin. Then the volume of the sphere is     "
+  "body": " Double integrals in polar coordinates  Recall that the double integral was defined by first setting up a rectangular grid. The reason we used a rectangular grid was because we were working in Cartesian coordinates, so this made the most sense. If we're dealing with a circular region of integration, then using Cartesian coordinates is very awkward. However, polar coordinates from work very nicely with circular regions. So we want to find out how to set up double integrals using polar coordinates.  If we're given a function , then it's not too hard to convert this to the polar form . Just replace with and with . The tricky part with setting up double integrals in polar coordinates is how to deal with the area element  , which in Cartesian coordinates is just or . To figure out what should be in polar coordinates, i.e. in terms of and , consider the following \"polar rectangle\":     A polar grid.    Let represent the area of one of these sectors. If we let denote the distance from the origin to one sector, the length of a sector and the angle spanned by a sector, then we can say that If we assume that and are both small (which means the polar grid in is very fine), then So . As and approach , this becomes more exact, and we get .    double integrals  polar coordinates   Double integrals in polar coordinates   Let be a continuous function. Then and limits are chosen using polar coordinates.     Integrating over a circular sector   Find .    If we sketch the region of integration, we see that it is the part of the unit circle in the third quadrant. So we'll switch to polar coordinates to solve this integral: .    Polar coordinates may also be used, surprisingly, to evaluate the Gaussian integral  .   The Gaussian integral   We have      First, let . We'll show that . We have Since , this gives .    Computing the volume of a sphere   Find the volume of a sphere of radius .    First, we can center the sphere at the origin without loss of generality. Such a sphere is given by . If we solve for , we get . Let denote the disk of radius in the -plane centered at the origin. Then the volume of the sphere is      Guided notes       Let be a continuous function. Then and limits are chosen using polar coordinates.         Find .         Find the volume of a sphere of radius .     "
 },
 {
   "id": "section-double-integrals-in-polar-coordinates-3",
@@ -6568,7 +6568,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "13.3.3",
   "title": "Integrating over a circular sector.",
-  "body": " Integrating over a circular sector   Find     If we sketch the region of integration, we see that it is the part of the unit circle in the third quadrant. So we'll switch to polar coordinates to solve this integral:    "
+  "body": " Integrating over a circular sector   Find .    If we sketch the region of integration, we see that it is the part of the unit circle in the third quadrant. So we'll switch to polar coordinates to solve this integral: .   "
 },
 {
   "id": "section-double-integrals-in-polar-coordinates-7",
@@ -6595,7 +6595,7 @@ var ptx_lunr_docs = [
   "type": "Proof",
   "number": "13.3.1",
   "title": "",
-  "body": " First, let . We'll show that . We have Since , this gives   "
+  "body": " First, let . We'll show that . We have Since , this gives .  "
 },
 {
   "id": "example-computing-volume-of-a-sphere",
@@ -6604,7 +6604,34 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "13.3.5",
   "title": "Computing the volume of a sphere.",
-  "body": " Computing the volume of a sphere   Find the volume of a sphere of radius .    First, we can center the sphere at the origin without loss of generality. Such a sphere is given by . If we solve for , we get Let denote the disk of radius in the -plane centered at the origin. Then the volume of the sphere is    "
+  "body": " Computing the volume of a sphere   Find the volume of a sphere of radius .    First, we can center the sphere at the origin without loss of generality. Such a sphere is given by . If we solve for , we get . Let denote the disk of radius in the -plane centered at the origin. Then the volume of the sphere is    "
+},
+{
+  "id": "section-double-integrals-in-polar-coordinates-11-2",
+  "level": "2",
+  "url": "section-double-integrals-in-polar-coordinates.html#section-double-integrals-in-polar-coordinates-11-2",
+  "type": "Worksheet Exercise",
+  "number": "13.3.1",
+  "title": "Theorem 13.3.2 Double integrals in polar coordinates.",
+  "body": "     Let be a continuous function. Then and limits are chosen using polar coordinates.   "
+},
+{
+  "id": "section-double-integrals-in-polar-coordinates-11-3",
+  "level": "2",
+  "url": "section-double-integrals-in-polar-coordinates.html#section-double-integrals-in-polar-coordinates-11-3",
+  "type": "Worksheet Exercise",
+  "number": "13.3.2",
+  "title": "Example 13.3.3 Integrating over a circular sector.",
+  "body": "     Find .   "
+},
+{
+  "id": "section-double-integrals-in-polar-coordinates-11-4",
+  "level": "2",
+  "url": "section-double-integrals-in-polar-coordinates.html#section-double-integrals-in-polar-coordinates-11-4",
+  "type": "Worksheet Exercise",
+  "number": "13.3.3",
+  "title": "Example 13.3.5 Computing the volume of a sphere.",
+  "body": "     Find the volume of a sphere of radius .   "
 },
 {
   "id": "section-applications-of-double-integrals",
@@ -6613,7 +6640,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "13.4",
   "title": "Applications of double integrals",
-  "body": " Applications of double integrals   Mass.  Consider a thin plate in the -plane, say the region . If the density of the plate at is constant, say , then the mass of the plate is just the density times the area. On the other hand, if the density is varies then this becomes more complicated, and we must use double integrals. In particular, the mass of a plate contained in the region in the -plane with density is given by    Mass of a triangular plate   Find the mass of the plate contained in the triangular region bounded by lines and , given that the density is .    The mass is     The moments of the mass contained in and with density are defined as follows: If we let denote the total mass, then we also define the center of mass (or centroid ) to be the point , where    Center of mass of an annulus   Find the center of mass of the plate outside of the circle and inside the circle , with density .    The mass is given by The moments are and likewise . So the center of mass is .     "
+  "body": " Applications of double integrals   Mass  Consider a thin plate in the -plane, say the region . If the density of the plate at is constant, say , then the mass of the plate is just the density times the area. On the other hand, if the density is varies then this becomes more complicated, and we must use double integrals. In particular, the mass of a plate contained in the region in the -plane with density is given by    Mass of a triangular plate   Find the mass of the plate contained in the triangular region bounded by lines and , given that the density is .    The mass is     The moments of the mass contained in and with density are defined as follows: If we let denote the total mass, then we also define the center of mass (or centroid ) to be the point , where    Center of mass of an annulus   Find the center of mass of the plate outside of the circle and inside the circle , with density .    The mass is given by The moments are and likewise . So the center of mass is .     "
 },
 {
   "id": "example-mass-of-a-triangular-plate",
