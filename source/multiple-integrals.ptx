@@ -456,20 +456,30 @@
   <section xml:id="section-double-integrals-in-polar-coordinates">
     <title>Double integrals in polar coordinates</title>
     <p>
-      Recall that the double integral was defined by first setting up a rectangular grid.
-      The reason we used a rectangular grid was because we were working in Cartesian coordinates, so this made the most sense.
-      If we're dealing with a circular region of integration, then using Cartesian coordinates is very awkward.
-      However, polar coordinates from <xref ref="section-polar-coordinates" text="type-global" /> work very nicely with circular regions.
-      So we want to find out how to set up double integrals using polar coordinates.
+      Recall that the double integral was defined by first setting up
+      a rectangular grid.  The reason we used a rectangular grid was
+      because we were working in Cartesian coordinates, so this made
+      the most sense.  If we're dealing with a circular region of
+      integration, then using Cartesian coordinates is very awkward.
+      However, polar coordinates from <xref
+      ref="section-polar-coordinates" text="type-global" /> work very
+      nicely with circular regions.  So we want to find out how to set
+      up double integrals using polar coordinates.
     </p>
     <p>
-      If we're given a function <m>f(x,y)</m>, then it's not too hard to convert this to the polar form <m>f(r,\theta)</m>.
-      Just replace <m>x</m> with <m>r\cos\theta</m> and <m>y</m> with <m>r\sin\theta</m>.
-      The tricky part with setting up double integrals in polar coordinates is how to deal with the <term>area element</term> <m>dA</m>, which in Cartesian coordinates is just <m>dx\,dy</m> or <m>dy\,dx</m>.
-      To figure out what <m>dA</m> should be in polar coordinates, i.e. in terms of <m>r</m> and <m>\theta</m>, consider the following "polar rectangle":
+      If we're given a function <m>f(x,y)</m>, then it's not too hard
+      to convert this to the polar form <m>f(r,\theta)</m>.  Just
+      replace <m>x</m> with <m>r\cos\theta</m> and <m>y</m> with
+      <m>r\sin\theta</m>.  The tricky part with setting up double
+      integrals in polar coordinates is how to deal with the
+      <term>area element</term> <m>dA</m>, which in Cartesian
+      coordinates is just <m>dx\,dy</m> or <m>dy\,dx</m>.  To figure
+      out what <m>dA</m> should be in polar coordinates, i.e. in terms
+      of <m>r</m> and <m>\theta</m>, consider the following "polar
+      rectangle":
       <figure xml:id="figure-polar-rectangle">
         <image xml:id="image-polar-rectangle">
-          <latex-image><![CDATA[
+          <latex-image>
             \begin{tikzpicture}[scale=1.5]
 
             \draw[thick,->] (0,0) -- (5,0);
@@ -494,7 +504,7 @@
 
             \begin{scope}
 
-            % connect points & shade
+            % connect points and shade
             \path[clip] ((14:4) arc (14:74:4) -- (74:2) arc (74:14:2) -- (14:4);
             \draw[thick, black] (0,0) circle (2);
             \draw[thick, black] (0,0) circle (4);
@@ -520,7 +530,6 @@
             \draw (44.2:1.25) arc (44.2:34.2:1.25);
             \node at (40:1.5) [black]{$\Delta\theta$};
             \end{tikzpicture}
-            ]]>
           </latex-image>
         </image>
         <caption>A polar grid.</caption>
@@ -528,60 +537,103 @@
     </p>
     <p>
       Let <m>\Delta A</m> represent the area of one of these sectors.
-      If we let <m>r</m> denote the distance from the origin to one sector, <m>\Delta r</m> the length of a sector and <m>\Delta\theta</m> the angle spanned by a sector, then we can say that
+      If we let <m>r</m> denote the distance from the origin to one
+      sector, <m>\Delta r</m> the length of a sector and
+      <m>\Delta\theta</m> the angle spanned by a sector, then we can
+      say that
       <md>
-        <mrow>\Delta A \amp \approx \frac{1}{2}[r\cos(\Delta\theta)][r\sin(\Delta\theta)] - \frac{1}{2}[(r-\Delta r)\cos(\Delta\theta)][(r-\Delta r)\sin(\Delta\theta)] </mrow>
-        <mrow> \amp = r\Delta r\cos(\Delta\theta)\sin(\Delta\theta) - \frac{1}{2}(\Delta r)^{2}\cos(\Delta\theta)\sin(\Delta\theta)</mrow>
+        <mrow>
+          \Delta A \amp \approx
+          \frac{1}{2}[r\cos(\Delta\theta)][r\sin(\Delta\theta)] -
+          \frac{1}{2}[(r-\Delta r)\cos(\Delta\theta)][(r-\Delta
+          r)\sin(\Delta\theta)]
+        </mrow>
+        <mrow>
+          \amp = r\Delta r\cos(\Delta\theta)\sin(\Delta\theta) -
+          \frac{1}{2}(\Delta
+          r)^{2}\cos(\Delta\theta)\sin(\Delta\theta)
+        </mrow>
       </md>
-      If we assume that <m>\Delta r</m> and <m>\Delta\theta</m> are both small (which means the polar grid in <xref ref="figure-polar-rectangle" text="type-global" /> is very fine), then
+      If we assume that <m>\Delta r</m> and <m>\Delta\theta</m> are
+      both small (which means the polar grid in <xref
+      ref="figure-polar-rectangle" text="type-global" /> is very
+      fine), then
       <md>
-        <mrow>\cos(\Delta\theta) \amp \approx 1 </mrow>
-        <mrow>\sin(\Delta\theta) \amp \approx \Delta\theta </mrow>
-        <mrow>(\Delta r)^{2} \amp \approx 0 </mrow>
+        <mrow>
+          \cos(\Delta\theta) \amp \approx 1
+        </mrow>
+        <mrow>
+          \sin(\Delta\theta) \amp \approx \Delta\theta
+        </mrow>
+        <mrow>
+          (\Delta r)^{2} \amp \approx 0
+        </mrow>
       </md>
-      So
-      <me>\Delta A \approx r\Delta r\Delta\theta</me>.
-      As <m>\Delta r</m> and <m>\Delta\theta</m> approach <m>0</m>, this becomes more exact, and we get
-      <me>dA = r\,dr\,d\theta</me>.
+      So <me>\Delta A \approx r\Delta r\Delta\theta</me>.  As
+      <m>\Delta r</m> and <m>\Delta\theta</m> approach <m>0</m>, this
+      becomes more exact, and we get <me>dA = r\,dr\,d\theta</me>.
     </p>
     <theorem xml:id="theorem-double-integrals-in-polar-coordinates">
       <idx>
-        <h>double integrals</h>
-        <h>polar coordinates</h>
+        <h>
+          double integrals
+        </h>
+        <h>
+          polar coordinates
+        </h>
       </idx>
-      <title>Double integrals in polar coordinates</title>
+      <title>
+        Double integrals in polar coordinates
+      </title>
       <statement>
         <p>
-          Let <m>f(x,y)</m> be a continuous function.
-          Then
-          <me>\iint_{D}f(x,y)\,dA = \iint_{D}f(r\cos\theta,r\sin\theta)r\,dr\,d\theta</me>
-          and limits are chosen using polar coordinates.
+          Let <m>f(x,y)</m> be a continuous function.  Then
+          <me>\iint_{D}f(x,y)\,dA =
+          \iint_{D}f(r\cos\theta,r\sin\theta)r\,dr\,d\theta</me> and
+          limits are chosen using polar coordinates.
         </p>
       </statement>
     </theorem>
     <example xml:id="example-integrating-over-a-circular-sector">
-      <title>Integrating over a circular sector</title>
+      <title>
+        Integrating over a circular sector
+      </title>
       <statement>
         <p>
           Find
-          <me>\int_{-1}^{0}\int_{-\sqrt{1-x^{2}}}^{0}\frac{2}{1+\sqrt{x^{2} + y^{2}}}\,dy\,dx</me>
+          <me>\int_{-1}^{0}\int_{-\sqrt{1-x^{2}}}^{0}\frac{2}{1+\sqrt{x^{2}
+          + y^{2}}}\,dy\,dx</me>.
         </p>
       </statement>
       <solution>
         <p>
-          If we sketch the region of integration, we see that it is the part of the unit circle in the third quadrant.
-          So we'll switch to polar coordinates to solve this integral:
+          If we sketch the region of integration, we see that it is
+          the part of the unit circle in the third quadrant.  So we'll
+          switch to polar coordinates to solve this integral:
           <md>
-            <mrow>\int_{-1}^{0}\int_{-\sqrt{1-x^{2}}}^{0}\frac{2}{1+\sqrt{x^{2} + y^{2}}}\,dy\,dx \amp = \int_{\pi}^{\frac{3\pi}{2}}\int_{0}^{1}\frac{2}{1+r}r\,dr\,d\theta </mrow>
-            <mrow> \amp = 2\int_{\pi}^{\frac{3\pi}{2}} \frac{r}{1+r}\,dr\,d\theta </mrow>
-            <mrow> \amp = 2\int_{\pi}^{\frac{3\pi}{2}} \bigg[r - \ln(1+r)\bigg]_{r=0}^{1}\,d\theta </mrow>
-            <mrow> \amp = \pi(1-\ln2) </mrow>
-          </md>
+            <mrow>
+              \int_{-1}^{0}\int_{-\sqrt{1-x^{2}}}^{0}\frac{2}{1+\sqrt{x^{2}
+              + y^{2}}}\,dy\,dx \amp =
+              \int_{\pi}^{\frac{3\pi}{2}}\int_{0}^{1}\frac{2}{1+r}r\,dr\,d\theta
+            </mrow>
+            <mrow>
+              \amp = 2\int_{\pi}^{\frac{3\pi}{2}} \frac{r}{1+r}\,dr\,d\theta
+            </mrow>
+            <mrow>
+              \amp = 2\int_{\pi}^{\frac{3\pi}{2}} \bigg[r -
+              \ln(1+r)\bigg]_{r=0}^{1}\,d\theta
+            </mrow>
+            <mrow>
+              \amp = \pi(1-\ln2)
+            </mrow>
+          </md>.
         </p>
       </solution>
     </example>
     <p>
-      Polar coordinates may also be used, surprisingly, to evaluate the <term>Gaussian integral</term> <m>\int_{-\infty}^{\infty}e^{-x^{2}}\,dx</m>.
+      Polar coordinates may also be used, surprisingly, to evaluate
+      the <term>Gaussian integral</term>
+      <m>\int_{-\infty}^{\infty}e^{-x^{2}}\,dx</m>.
     </p>
     <theorem xml:id="theorem-the-gaussian-integral">
       <title>The Gaussian integral</title>
@@ -598,15 +650,31 @@
         We'll show that <m>I^{2} = \pi</m>.
         We have
         <md>
-          <mrow>I^{2} \amp = \left(\int_{-\infty}^{\infty}e^{-x^{2}}\,dx\right)\left(\int_{-\infty}^{\infty}e^{-y^{2}}\,dy\right) </mrow>
-          <mrow> \amp = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}e^{-(x^{2} + y^{2})}\,dx\,dy </mrow>
-          <mrow> \amp = \int_{0}^{2\pi}\int_{0}^{\infty}e^{-r^{2}}r\,dr\,d\theta </mrow>
-          <mrow> \amp = \int_{0}^{2\pi} \lim_{b\to\infty}\frac{-1}{2}e^{-r^{2}}\bigg]_{r=0}^{b}\,d\theta </mrow>
-          <mrow> \amp = \int_{0}^{2\pi} \frac{1}{2}\,d\theta </mrow>
-          <mrow> \amp = \pi </mrow>
+          <mrow>
+            I^{2} \amp =
+            \left(\int_{-\infty}^{\infty}e^{-x^{2}}\,dx\right)\left(\int_{-\infty}^{\infty}e^{-y^{2}}\,dy\right)
+          </mrow>
+          <mrow>
+            \amp =
+            \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}e^{-(x^{2} +
+            y^{2})}\,dx\,dy
+          </mrow>
+          <mrow>
+            \amp = \int_{0}^{2\pi}\int_{0}^{\infty}e^{-r^{2}}r\,dr\,d\theta
+          </mrow>
+          <mrow>
+            \amp = \int_{0}^{2\pi}
+            \lim_{b\to\infty}\frac{-1}{2}e^{-r^{2}}\bigg]_{r=0}^{b}\,d\theta
+          </mrow>
+          <mrow>
+            \amp = \int_{0}^{2\pi} \frac{1}{2}\,d\theta
+          </mrow>
+          <mrow>
+            \amp = \pi
+          </mrow>
         </md>
         Since <m>I^{2} = \pi</m>, this gives
-        <me>\int_{-\infty}^{\infty}e^{-x^{2}}\,dx = \sqrt{\pi}</me>
+        <me>\int_{-\infty}^{\infty}e^{-x^{2}}\,dx = \sqrt{\pi}</me>.
       </p>
     </proof>
     <example xml:id="example-computing-volume-of-a-sphere">
@@ -618,21 +686,74 @@
       </statement>
       <solution>
         <p>
-          First, we can center the sphere at the origin without loss of generality.
-          Such a sphere is given by <m>x^{2} + y^{2} + z^{2} = \rho^{2}</m>.
-          If we solve for <m>z</m>, we get
-          <me>z = \pm\sqrt{\rho^{2} - x^{2} - y^{2}}</me>
-          Let <m>D</m> denote the disk of radius <m>\rho</m> in the <m>xy</m>-plane centered at the origin.
-          Then the volume of the sphere is
+          First, we can center the sphere at the origin without loss
+          of generality.  Such a sphere is given by <m>x^{2} + y^{2} +
+          z^{2} = \rho^{2}</m>.  If we solve for <m>z</m>, we get
+          <me>z = \pm\sqrt{\rho^{2} - x^{2} - y^{2}}</me>. Let <m>D</m>
+          denote the disk of radius <m>\rho</m> in the <m>xy</m>-plane
+          centered at the origin.  Then the volume of the sphere is
           <md>
-            <mrow>2\iint_{D}\sqrt{\rho^{2} - x^{2} - y^{2}}\,dA \amp = 2\int_{0}^{2\pi}\int_{0}^{\rho}\sqrt{\rho^{2} - r^{2}}r\,dr\,d\theta </mrow>
-            <mrow> \amp = -\int_{0}^{2\pi}\int_{\rho^{2}}^{0}\sqrt{u}\,du\,d\theta </mrow>
-            <mrow> \amp = \frac{2}{3}\int_{0}^{2\pi}u^{3/2}\bigg]_{u=0}^{\rho^{2}}\,d\theta </mrow>
-            <mrow> \amp = \frac{4\pi}{3}\rho^{3} </mrow>
+            <mrow>
+              2\iint_{D}\sqrt{\rho^{2} - x^{2} - y^{2}}\,dA \amp =
+              2\int_{0}^{2\pi}\int_{0}^{\rho}\sqrt{\rho^{2} -
+              r^{2}}r\,dr\,d\theta
+            </mrow>
+            <mrow>
+              \amp = -\int_{0}^{2\pi}\int_{\rho^{2}}^{0}\sqrt{u}\,du\,d\theta
+            </mrow>
+            <mrow>
+              \amp = \frac{2}{3}\int_{0}^{2\pi}u^{3/2}\bigg]_{u=0}^{\rho^{2}}\,d\theta
+            </mrow>
+            <mrow>
+              \amp = \frac{4\pi}{3}\rho^{3}
+            </mrow>
           </md>
         </p>
       </solution>
     </example>
+    <worksheet>
+      <title>
+        Guided notes
+      </title>
+      <exercise workspace="1in">
+        <title>
+          <xref ref="theorem-double-integrals-in-polar-coordinates"
+                text="type-global-title"/>
+        </title>
+        <statement>
+          <p>
+            Let <m>f(x,y)</m> be a continuous function.  Then
+            <me>\iint_{D}f(x,y)\,dA =
+            \iint_{D}f(r\cos\theta,r\sin\theta)r\,dr\,d\theta</me> and
+            limits are chosen using polar coordinates.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="example-integrating-over-a-circular-sector"
+                text="type-global-title"/>
+        </title>
+        <statement>
+          <p>
+            Find
+            <me>\int_{-1}^{0}\int_{-\sqrt{1-x^{2}}}^{0}\frac{2}{1+\sqrt{x^{2}
+            + y^{2}}}\,dy\,dx</me>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="example-computing-volume-of-a-sphere"
+                text="type-global-title"/>
+        </title>
+        <statement>
+          <p>
+            Find the volume of a sphere of radius <m>\rho</m>.
+          </p>
+        </statement>
+      </exercise>
+    </worksheet>
   </section>
   <section xml:id="section-applications-of-double-integrals">
     <title>Applications of double integrals</title>
