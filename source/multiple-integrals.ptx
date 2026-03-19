@@ -418,6 +418,9 @@
       <m>\iint_{D}\,dA</m> is equal to the area of <m>D</m>.
     </p>
     <worksheet>
+      <title>
+        Guided notes
+      </title>
       <exercise workspace="2in">
         <title><xref ref="example-integrating-over-a-region-defined-by-a-parabola" text="type-global-title"/></title>
         <statement>
@@ -433,7 +436,8 @@
         <title><xref ref="example-reversing-the-order-of-integration" text="type-global-title"/></title>
         <statement>
           <p>
-            Compute <m>\int_{0}^{\sqrt{\pi}}\int_{y}^{\sqrt{\pi}}\cos x^{2}\,dx\,dy</m>.
+            Compute <m>\int_{0}^{\sqrt{\pi}}\int_{y}^{\sqrt{\pi}}\cos
+            x^{2}\,dx\,dy</m>.
           </p>
         </statement>
       </exercise>
@@ -442,7 +446,8 @@
         <statement>
           <p>
             Integrate <m>f(x,y) = x^{2} + y^{2}</m> over the triangle
-            <m>T</m> with vertices <m>(0,0), (1,1)</m> and <m>(0,2)</m>.
+            <m>T</m> with vertices <m>(0,0), (1,1)</m> and
+            <m>(0,2)</m>.
           </p>
         </statement>
       </exercise>
