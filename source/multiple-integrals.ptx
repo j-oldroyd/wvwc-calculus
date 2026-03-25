@@ -865,6 +865,9 @@
       </example>
     </subsection>
     <worksheet>
+      <title>
+        Guided notes
+      </title>
       <exercise workspace="2in">
         <title>
           <xref ref="example-mass-of-a-triangular-plate"/>
@@ -1065,6 +1068,9 @@
       </solution>
     </example>
     <worksheet>
+      <title>
+        Guided notes
+      </title>
       <exercise workspace="2in">
         <title>
           <xref ref="theorem-fubini-s-theorem-for-triple-integrals"/>
