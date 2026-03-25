@@ -6388,7 +6388,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "13.1",
   "title": "Double integrals over rectangles",
-  "body": " Double integrals over rectangles   We want to try to find the volume under the surface and above some rectangle in the -plane. If is a constant function, then this is easy: the resulting surface and the -plane then form a rectangular prism. If is more complicated, then we might not have a nice volume formula to use. However, we can steal an idea from Calculus I and try to approximate the volume by using simpler shapes; in this case, rectangular prisms.    Riemann sums  Given a continuous function defined over the rectangle to approximate the volume under and above we'll divide the rectangle up into smaller rectangles. In particular, let's divide the intervals and into subintervals where If we let denote the subrectangle given by then the volume under and above is about equal to Hence the volume under and above should be about equal to If we replace with and send , this approximation becomes exact. This gives us the following definition.    double integrals  over a rectangle   Double integral over a rectangle   Let be a function defined over the rectangle . Then the double integral of over is defined to be If the limit exists, we say that is integrable over .    The geometric intuition behind the double integral is that it represents a volume under a surface. Negative values for a double integral indicate that a surface tends to lie below the -plane, while positive values indicate that the surface tends to lie above the -plane. Furthermore, continuous functions are integrable over any rectangle .   Double integrals by volume   Let and let Find .    If we graph , we get a triangular cylinder running along the axis. The volume of this cylinder over is just the area of the triangular \"base\" times the \"height,\" or just So       Fubini's theorem  Now that we have a definition for the double integral, we want to find a better way of computing it. Thankfully, we do have such a method: Fubini's theorem.   Fubini's theorem   Let be continuous on the rectangle Then      Double integrals by Fubini's theorem   Let and let Find .    We found this previously in , so we'll try it again using Fubini's theorem and see if we get the same answer. By , we have     The double integral, like the Calculus I integral, derivative and partial derivatives, is linear . This means that you can break it up over addition and pull constants outside of it. In other words, if and are integrable and if is a constant, then    Double integral of a logarithm   Find .    First, note that To find the first double integral on the right, first we integrate with respect to to get Now we can use -sub with and to get The same exact process shows that must also equal . Therefore       Guided notes     Let and let Find .       Let be continuous on the rectangle Then        Let and let Find .       Find .     "
+  "body": " Double integrals over rectangles   We want to try to find the volume under the surface and above some rectangle in the -plane. If is a constant function, then this is easy: the resulting surface and the -plane then form a rectangular prism. If is more complicated, then we might not have a nice volume formula to use. However, we can steal an idea from Calculus I and try to approximate the volume by using simpler shapes; in this case, rectangular prisms.    Riemann sums  Given a continuous function defined over the rectangle to approximate the volume under and above we'll divide the rectangle up into smaller rectangles. In particular, let's divide the intervals and into subintervals where If we let denote the subrectangle given by then the volume under and above is about equal to . Hence the volume under and above should be about equal to . If we replace with and send , this approximation becomes exact. This gives us the following definition.    double integrals  over a rectangle   Double integral over a rectangle   Let be a function defined over the rectangle . Then the double integral of over is defined to be If the limit exists, we say that is integrable over .    The geometric intuition behind the double integral is that it represents a volume under a surface. Negative values for a double integral indicate that a surface tends to lie below the -plane, while positive values indicate that the surface tends to lie above the -plane. Furthermore, continuous functions are integrable over any rectangle .   Double integrals by volume   Let and let . Find .    If we graph , we get a triangular cylinder running along the axis. The volume of this cylinder over is just the area of the triangular \"base\" times the \"height,\" or just . So .      Fubini's theorem  Now that we have a definition for the double integral, we want to find a better way of computing it. Thankfully, we do have such a method: Fubini's theorem.   Fubini's theorem   Let be continuous on the rectangle . Then .     Double integrals by Fubini's theorem   Let and let Find .    We found this previously in , so we'll try it again using Fubini's theorem and see if we get the same answer. By , we have .    The double integral, like the Calculus I integral, derivative and partial derivatives, is linear . This means that you can break it up over addition and pull constants outside of it. In other words, if and are integrable and if is a constant, then .   Double integral of a logarithm   Find .    First, note that . To find the first double integral on the right, first we integrate with respect to to get . Now we can use -sub with and to get . The same exact process shows that must also equal . Therefore .      Guided notes       Let and let Find .         Let be continuous on the rectangle Then          Let and let Find .         Find .     "
 },
 {
   "id": "definition-double-integral-over-a-rectangle",
@@ -6406,7 +6406,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "13.1.2",
   "title": "Double integrals by volume.",
-  "body": " Double integrals by volume   Let and let Find .    If we graph , we get a triangular cylinder running along the axis. The volume of this cylinder over is just the area of the triangular \"base\" times the \"height,\" or just So    "
+  "body": " Double integrals by volume   Let and let . Find .    If we graph , we get a triangular cylinder running along the axis. The volume of this cylinder over is just the area of the triangular \"base\" times the \"height,\" or just . So .   "
 },
 {
   "id": "theorem-fubini-s-theorem",
@@ -6415,7 +6415,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "13.1.3",
   "title": "Fubini’s theorem.",
-  "body": " Fubini's theorem   Let be continuous on the rectangle Then    "
+  "body": " Fubini's theorem   Let be continuous on the rectangle . Then .   "
 },
 {
   "id": "example-double-integrals-by-fubini-s-theorem",
@@ -6424,7 +6424,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "13.1.4",
   "title": "Double integrals by Fubini’s theorem.",
-  "body": " Double integrals by Fubini's theorem   Let and let Find .    We found this previously in , so we'll try it again using Fubini's theorem and see if we get the same answer. By , we have    "
+  "body": " Double integrals by Fubini's theorem   Let and let Find .    We found this previously in , so we'll try it again using Fubini's theorem and see if we get the same answer. By , we have .   "
 },
 {
   "id": "example-double-integral-of-a-logarithm",
@@ -6433,7 +6433,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "13.1.5",
   "title": "Double integral of a logarithm.",
-  "body": " Double integral of a logarithm   Find .    First, note that To find the first double integral on the right, first we integrate with respect to to get Now we can use -sub with and to get The same exact process shows that must also equal . Therefore    "
+  "body": " Double integral of a logarithm   Find .    First, note that . To find the first double integral on the right, first we integrate with respect to to get . Now we can use -sub with and to get . The same exact process shows that must also equal . Therefore .   "
 },
 {
   "id": "section-double-integrals-over-rectangles-5-2",
@@ -6442,7 +6442,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "Example 13.1.2 Double integrals by volume.",
-  "body": "   Let and let Find .   "
+  "body": "     Let and let Find .   "
 },
 {
   "id": "section-double-integrals-over-rectangles-5-3",
@@ -6451,7 +6451,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "Theorem 13.1.3 Fubini’s theorem.",
-  "body": "   Let be continuous on the rectangle Then    "
+  "body": "     Let be continuous on the rectangle Then    "
 },
 {
   "id": "section-double-integrals-over-rectangles-5-4",
@@ -6460,7 +6460,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "3",
   "title": "Example 13.1.4 Double integrals by Fubini’s theorem.",
-  "body": "   Let and let Find .   "
+  "body": "     Let and let Find .   "
 },
 {
   "id": "section-double-integrals-over-rectangles-5-5",
@@ -6469,7 +6469,7 @@ var ptx_lunr_docs = [
   "type": "Worksheet Exercise",
   "number": "4",
   "title": "Example 13.1.5 Double integral of a logarithm.",
-  "body": "   Find .   "
+  "body": "     Find .   "
 },
 {
   "id": "section-double-integrals-over-general-regions",
@@ -6640,7 +6640,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "13.4",
   "title": "Applications of double integrals",
-  "body": " Applications of double integrals   Mass  Consider a thin plate in the -plane, say the region . If the density of the plate at is constant, say , then the mass of the plate is just the density times the area. On the other hand, if the density is varies then this becomes more complicated, and we must use double integrals. In particular, the mass of a plate contained in the region in the -plane with density is given by    Mass of a triangular plate   Find the mass of the plate contained in the triangular region bounded by lines and , given that the density is .    The mass is     The moments of the mass contained in and with density are defined as follows: If we let denote the total mass, then we also define the center of mass (or centroid ) to be the point , where    Center of mass of an annulus   Find the center of mass of the plate outside of the circle and inside the circle , with density .    The mass is given by The moments are and likewise . So the center of mass is .     "
+  "body": " Applications of double integrals   Mass  Consider a thin plate in the -plane, say the region . If the density of the plate at is constant, say , then the mass of the plate is just the density times the area. On the other hand, if the density is varies then this becomes more complicated, and we must use double integrals. In particular, the mass of a plate contained in the region in the -plane with density is given by    Mass of a triangular plate   Find the mass of the plate contained in the triangular region bounded by lines and , given that the density is .    The mass is     The moments of the mass contained in and with density are defined as follows: If we let denote the total mass, then we also define the center of mass (or centroid ) to be the point , where    Center of mass of an annulus   Find the center of mass of the plate outside of the circle and inside the circle , with density .    The mass is given by The moments are and likewise . So the center of mass is .           Find the mass of the plate contained in the triangular region bounded by lines and , given that the density is .         Find the center of mass of the plate outside of the circle and inside the circle , with density .     "
 },
 {
   "id": "example-mass-of-a-triangular-plate",
@@ -6670,13 +6670,31 @@ var ptx_lunr_docs = [
   "body": " Center of mass of an annulus   Find the center of mass of the plate outside of the circle and inside the circle , with density .    The mass is given by The moments are and likewise . So the center of mass is .   "
 },
 {
+  "id": "section-applications-of-double-integrals-3-1",
+  "level": "2",
+  "url": "section-applications-of-double-integrals.html#section-applications-of-double-integrals-3-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Example 13.4.1.",
+  "body": "     Find the mass of the plate contained in the triangular region bounded by lines and , given that the density is .   "
+},
+{
+  "id": "section-applications-of-double-integrals-3-2",
+  "level": "2",
+  "url": "section-applications-of-double-integrals.html#section-applications-of-double-integrals-3-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Example 13.4.2.",
+  "body": "     Find the center of mass of the plate outside of the circle and inside the circle , with density .   "
+},
+{
   "id": "section-triple-integrals",
   "level": "1",
   "url": "section-triple-integrals.html",
   "type": "Section",
   "number": "13.5",
   "title": "Triple integrals",
-  "body": " Triple integrals  In , we have This represents the area under and over . Furthermore, gives the length of . In , we have This represents the volume under and above the region , where . Furthermore, gives the area of .  We can extend all of this to by introducing the concept of the triple integral .    triple integrals  rectangular coordinates   Triple integrals over a rectangle   Let be defined on some region in . Then the triple integral of over is given by where . If the limit exists, we say that is integrable on .    For a double integral in rectangular coordinates, we have or . Similarly, for a triple integral in rectangular coordinates we have six different choices for :  Absolute values on the disk                Just as we can view as an infinitesimal length and as an infinitesimal area, represents an infinitesimal volume.  Our main use for will be to recognize a triple integral \"in the wild,\" but we won't actually use it to compute integrals. For this purpose, we still use Fubini's theorem.    Fubini's theorem  triple integrals   Fubini's theorem for triple integrals   Suppose is a continuous function on the closed and bounded region in . Then can be computed as an iterated integral, and the answer does not depend on the choice of .     A triple integral over a rectangular prism   Compute , where     We'll integrate using . Then we have     An unfortunate side effect of increasing the dimension for our integral is that we lose a little bit of geometric intuition. For instance, is indeed calculating a \"volume,\" but the volume in question is for a four dimensional region (the graph of over the rectangular prism). We can only really visualize the \"base\" of this region, which served as our region of integration in . Even so, the triple integral can still tell us important things about functions of three variables.   Finding an average value   Find the average value of the function over the region given in .    First, let denote the volume of . Then the average value of over is just     We can also compute triple integrals over more general regions.   Volume using triple integrals   Find the volume of the region bounded by the cylinder and the planes and .    If we let denote this region, then its volume is given by . The volume is then     When setting up limits for triple integrals, say using , then the limits on the innermost integral are typically functions of and , the limits on the middle integral are functions of and the limits on the outermost integral are constant. We can also change the order of integration to make an integral more tractable.   Changing the order of integration   Compute .    This looks awful to integrate with respect to first, so we'll try changing the order of integration. looks easiest, so let's try using instead. If we sketch the region, we see that the limits are actually the same, expect we just need to swap the middle and innermost integrals. So     "
+  "body": " Triple integrals  In , we have This represents the area under and over . Furthermore, gives the length of . In , we have This represents the volume under and above the region , where . Furthermore, gives the area of .  We can extend all of this to by introducing the concept of the triple integral .    triple integrals  rectangular coordinates   Triple integrals over a rectangle   Let be defined on some region in . Then the triple integral of over is given by where . If the limit exists, we say that is integrable on .    For a double integral in rectangular coordinates, we have or . Similarly, for a triple integral in rectangular coordinates we have six different choices for :  Absolute values on the disk                Just as we can view as an infinitesimal length and as an infinitesimal area, represents an infinitesimal volume.  Our main use for will be to recognize a triple integral \"in the wild,\" but we won't actually use it to compute integrals. For this purpose, we still use Fubini's theorem.    Fubini's theorem  triple integrals   Fubini's theorem for triple integrals   Suppose is a continuous function on the closed and bounded region in . Then can be computed as an iterated integral, and the answer does not depend on the choice of .     A triple integral over a rectangular prism   Compute , where     We'll integrate using . Then we have     An unfortunate side effect of increasing the dimension for our integral is that we lose a little bit of geometric intuition. For instance, is indeed calculating a \"volume,\" but the volume in question is for a four dimensional region (the graph of over the rectangular prism). We can only really visualize the \"base\" of this region, which served as our region of integration in . Even so, the triple integral can still tell us important things about functions of three variables.   Finding an average value   Find the average value of the function over the region given in .    First, let denote the volume of . Then the average value of over is just     We can also compute triple integrals over more general regions.   Volume using triple integrals   Find the volume of the region bounded by the cylinder and the planes and .    If we let denote this region, then its volume is given by . The volume is then     When setting up limits for triple integrals, say using , then the limits on the innermost integral are typically functions of and , the limits on the middle integral are functions of and the limits on the outermost integral are constant. We can also change the order of integration to make an integral more tractable.   Changing the order of integration   Compute .    This looks awful to integrate with respect to first, so we'll try changing the order of integration. looks easiest, so let's try using instead. If we sketch the region, we see that the limits are actually the same, expect we just need to swap the middle and innermost integrals. So           Suppose is a continuous function on the closed and bounded region in . Then can be computed as an iterated integral, and the answer does not depend on the choice of .         Compute , where          Find the average value of the function over the region given in .         Find the volume of the region bounded by the cylinder and the planes and .         Compute .     "
 },
 {
   "id": "section-triple-integrals-3",
@@ -6749,6 +6767,51 @@ var ptx_lunr_docs = [
   "number": "13.5.7",
   "title": "Changing the order of integration.",
   "body": " Changing the order of integration   Compute .    This looks awful to integrate with respect to first, so we'll try changing the order of integration. looks easiest, so let's try using instead. If we sketch the region, we see that the limits are actually the same, expect we just need to swap the middle and innermost integrals. So    "
+},
+{
+  "id": "section-triple-integrals-15-1",
+  "level": "2",
+  "url": "section-triple-integrals.html#section-triple-integrals-15-1",
+  "type": "Worksheet Exercise",
+  "number": "13.5.1",
+  "title": "Theorem 13.5.3.",
+  "body": "     Suppose is a continuous function on the closed and bounded region in . Then can be computed as an iterated integral, and the answer does not depend on the choice of .   "
+},
+{
+  "id": "section-triple-integrals-15-2",
+  "level": "2",
+  "url": "section-triple-integrals.html#section-triple-integrals-15-2",
+  "type": "Worksheet Exercise",
+  "number": "13.5.2",
+  "title": "Example 13.5.4.",
+  "body": "     Compute , where    "
+},
+{
+  "id": "section-triple-integrals-15-3",
+  "level": "2",
+  "url": "section-triple-integrals.html#section-triple-integrals-15-3",
+  "type": "Worksheet Exercise",
+  "number": "13.5.3",
+  "title": "Example 13.5.5.",
+  "body": "     Find the average value of the function over the region given in .   "
+},
+{
+  "id": "section-triple-integrals-15-4",
+  "level": "2",
+  "url": "section-triple-integrals.html#section-triple-integrals-15-4",
+  "type": "Worksheet Exercise",
+  "number": "13.5.4",
+  "title": "Example 13.5.6.",
+  "body": "     Find the volume of the region bounded by the cylinder and the planes and .   "
+},
+{
+  "id": "section-triple-integrals-15-5",
+  "level": "2",
+  "url": "section-triple-integrals.html#section-triple-integrals-15-5",
+  "type": "Worksheet Exercise",
+  "number": "13.5.5",
+  "title": "Example 13.5.7.",
+  "body": "     Compute .   "
 },
 {
   "id": "section-cylindrical-coordinates",
