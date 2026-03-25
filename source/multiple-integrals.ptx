@@ -1064,6 +1064,70 @@
         </p>
       </solution>
     </example>
+    <worksheet>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="theorem-fubini-s-theorem-for-triple-integrals"/>
+        </title>
+        <statement>
+          <p>
+            Suppose <m>f(x,y,z)</m> is a continuous function on the
+            closed and bounded region <m>D</m> in <m>\RR^{3}</m>.
+            Then <m>\iiint_{D}f(x,y,z)\,dV</m> can be computed as an
+            iterated integral, and the answer does not depend on the
+            choice of <m>dV</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="example-a-triple-integral-over-a-rectangular-prism"/>
+        </title>
+        <statement>
+          <p>
+            Compute <m>\iiint_{D}xyze^{-x^{2} - y^{2}}\,dV</m>, where
+            <me>D = \{(x,y) : 0\leq x\leq\sqrt{\ln2}, 0\leq
+            y\leq\sqrt{\ln4}, 0\leq z\leq 1\}</me>
+        </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="example-finding-an-average-value"/>
+        </title>
+        <statement>
+          <p>
+            Find the average value of the function <m>f(x,y,z) =
+            xyze^{-x^{2} - y^{2}}</m> over the region <m>D</m> given in
+            <xref
+              ref="example-a-triple-integral-over-a-rectangular-prism"
+              text="type-global" />.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="example-volume-using-triple-integrals"/>
+        </title>
+        <statement>
+          <p>
+            Find the volume of the region bounded by the cylinder <m>y
+            = x^{2}</m> and the planes <m>z = 3-y</m> and <m>z=0</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="example-changing-the-order-of-integration"/>
+        </title>
+        <statement>
+          <p>
+            Compute
+            <m>\int_{1}^{4}\int_{z}^{4z}\int_{0}^{\pi^{2}}\frac{\sin\sqrt{yz}}{x^{3/2}}\,dy\,dx\,dz</m>.
+          </p>
+        </statement>
+      </exercise>
+    </worksheet>
   </section>
   <section xml:id="section-cylindrical-coordinates">
     <title>Triple integrals in cylindrical coordinates</title>
