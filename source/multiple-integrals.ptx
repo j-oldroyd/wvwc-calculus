@@ -864,6 +864,34 @@
         </solution>
       </example>
     </subsection>
+    <worksheet>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="example-mass-of-a-triangular-plate"/>
+        </title>
+        <statement>
+          <p>
+            Find the mass of the plate contained in the triangular
+            region <m>D</m> bounded by lines <m>y=x, y = 6</m> and
+            <m>2x+y = 6</m>, given that the density is <m>\rho(x,y) =
+            x^{2}</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="example-center-of-mass-of-an-annulus"/>
+        </title>
+        <statement>
+          <p>
+            Find the center of mass of the plate <m>D</m> outside of
+            the circle <m>x^{2}+y^{2} = 1</m> and inside the circle
+            <m>x^{2} + y^{2} = 4</m>, with density <m>\rho(x,y) =
+            \frac{1}{\sqrt{x^{2} + y^{2}}}</m>.
+          </p>
+        </statement>
+      </exercise>
+    </worksheet>
   </section>
   <section xml:id="section-triple-integrals">
     <title>Triple integrals</title>
