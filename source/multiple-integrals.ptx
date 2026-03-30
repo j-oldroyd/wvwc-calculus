@@ -1164,28 +1164,40 @@
   <section xml:id="section-cylindrical-coordinates">
     <title>Triple integrals in cylindrical coordinates</title>
     <p>
-      In <xref ref="section-polar-coordinates" text="type-global" />, we saw that introducing a new coordinate system made certain double integrals much easier to work with.
-      The same idea works with triple integrals.
-      The first such system we'll look at is <term>cylindrical coordinates</term>, which are useful for computing triple integrals over cylindrical regions.
-      To convert Cartesian coordinates <m>(x,y,z)</m> into cylindrical coordinates <m>(r,\theta,z)</m>, simply replace <m>x,y</m> with polar coordinates, and use <m>dV = r\,dr\,d\theta\,dz</m>.
-      We leave <m>z</m> alone.
+      In <xref ref="section-polar-coordinates" text="type-global" />,
+      we saw that introducing a new coordinate system made certain
+      double integrals much easier to work with.  The same idea works
+      with triple integrals.  The first such system we'll look at is
+      <term>cylindrical coordinates</term>, which are useful for
+      computing triple integrals over cylindrical regions.  To convert
+      Cartesian coordinates <m>(x,y,z)</m> into cylindrical
+      coordinates <m>(r,\theta,z)</m>, simply replace <m>x,y</m> with
+      polar coordinates, and use <m>dV = r\,dr\,d\theta\,dz</m>.  We
+      leave <m>z</m> alone.
     </p>
     <example xml:id="example-computing-a-triple-integral-over-a-cylinder">
       <title>Computing a triple integral over a cylinder</title>
       <statement>
         <p>
-          Let <m>D</m> be the cylinder in <m>\RR^{3}</m> with height <m>2</m> and base given by the circle of radius <m>4</m> centered at the origin, restricted to the first and second octants.
-          Let <m>f(x,y,z) = \frac{z}{1+x^{2}+y^{2}}</m>.
+          Let <m>D</m> be the cylinder in <m>\RR^{3}</m> with height
+          <m>2</m> and base given by the circle of radius <m>4</m>
+          centered at the origin, restricted to the first and second
+          octants.  Let <m>f(x,y,z) = \frac{z}{1+x^{2}+y^{2}}</m>.
           Compute <m>\iiint_{D}f(x,y,z)\,dV</m>.
         </p>
       </statement>
       <solution>
         <p>
-          Since we're dealing with a cylinder, we'll switch to cylindrical coordinates <m>r\,dr\,d\theta\,dz</m>:
+          Since we're dealing with a cylinder, we'll switch to
+          cylindrical coordinates <m>r\,dr\,d\theta\,dz</m>:
           <md>
-            <mrow>\iiint_{D}f(x,y,z)\,dV \amp = \int_{0}^{2}\int_{0}^{\pi}\int_{0}^{4}\frac{r}{1+r^{2}}\,dr\,d\theta\,dz </mrow>
-            <mrow> \amp = \pi\ln17 </mrow>
-          </md>
+            <mrow>
+              \iiint_{D}f(x,y,z)\,dV \amp = \int_{0}^{2}\int_{0}^{\pi}\int_{0}^{4}\frac{r}{1+r^{2}}\,dr\,d\theta\,dz
+            </mrow>
+            <mrow>
+              \amp = \pi\ln17
+            </mrow>
+          </md>.
         </p>
       </solution>
     </example>
@@ -1193,7 +1205,9 @@
       <title>Volume of a cylindrical region</title>
       <statement>
         <p>
-          Find the volume of the region below the inverted cone <m>z = 9 - 3\sqrt{x^{2} + y^{2}}</m> and in the first and second octants.
+          Find the volume of the region below the inverted cone <m>z =
+          9 - 3\sqrt{x^{2} + y^{2}}</m> and in the first and second
+          octants.
         </p>
       </statement>
       <solution>
@@ -1242,6 +1256,48 @@
         </p>
       </solution>
     </example>
+    <worksheet>
+      <title>
+        Guided notes
+      </title>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="example-computing-a-triple-integral-over-a-cylinder"/>
+        </title>
+        <statement>
+          <p>
+            Let <m>D</m> be the cylinder in <m>\RR^{3}</m> with height
+            <m>2</m> and base given by the circle of radius <m>4</m>
+            centered at the origin, restricted to the first and second
+            octants.  Let <m>f(x,y,z) = \frac{z}{1+x^{2}+y^{2}}</m>.
+            Compute <m>\iiint_{D}f(x,y,z)\,dV</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="example-cylindrical-volume"/>
+        </title>
+        <statement>
+        <p>
+          Find the volume of the region below the inverted cone <m>z =
+          9 - 3\sqrt{x^{2} + y^{2}}</m> and in the first and second
+          octants.
+        </p>
+        </statement>
+      </exercise>
+      <exercise>
+        <title>
+          <xref ref="example-finding-the-volume-of-the-unit-sphere"/>
+        </title>
+        <statement>
+          <p>
+            Find the volume of the unit sphere; that is, the sphere of
+            radius <m>1</m> centered at the origin.
+        </p>
+        </statement>
+      </exercise>
+    </worksheet>
   </section>
   <section xml:id="section-triple-integrals-in-spherical-coordinates">
     <title>Triple integrals in spherical coordinates</title>
