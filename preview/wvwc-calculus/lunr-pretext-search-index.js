@@ -6640,7 +6640,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "13.4",
   "title": "Applications of double integrals",
-  "body": " Applications of double integrals   Mass  Consider a thin plate in the -plane, say the region . If the density of the plate at is constant, say , then the mass of the plate is just the density times the area. On the other hand, if the density is varies then this becomes more complicated, and we must use double integrals. In particular, the mass of a plate contained in the region in the -plane with density is given by    Mass of a triangular plate   Find the mass of the plate contained in the triangular region bounded by lines and , given that the density is .    The mass is     The moments of the mass contained in and with density are defined as follows: If we let denote the total mass, then we also define the center of mass (or centroid ) to be the point , where    Center of mass of an annulus   Find the center of mass of the plate outside of the circle and inside the circle , with density .    The mass is given by The moments are and likewise . So the center of mass is .           Find the mass of the plate contained in the triangular region bounded by lines and , given that the density is .         Find the center of mass of the plate outside of the circle and inside the circle , with density .     "
+  "body": " Applications of double integrals   Mass  Consider a thin plate in the -plane, say the region . If the density of the plate at is constant, say , then the mass of the plate is just the density times the area. On the other hand, if the density is varies then this becomes more complicated, and we must use double integrals. In particular, the mass of a plate contained in the region in the -plane with density is given by .   Mass of a triangular plate   Find the mass of the plate contained in the triangular region bounded by lines and , given that the density is .    The mass is .    The moments of the mass contained in and with density are defined as follows: . If we let denote the total mass, then we also define the center of mass (or centroid ) to be the point , where .   Center of mass of an annulus   Find the center of mass of the plate outside of the circle and inside the circle , with density .    The mass is given by The moments are and likewise . So the center of mass is .      Guided notes       Find the mass of the plate contained in the triangular region bounded by lines and , given that the density is .         Find the center of mass of the plate outside of the circle and inside the circle , with density .     "
 },
 {
   "id": "example-mass-of-a-triangular-plate",
@@ -6649,7 +6649,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "13.4.1",
   "title": "Mass of a triangular plate.",
-  "body": " Mass of a triangular plate   Find the mass of the plate contained in the triangular region bounded by lines and , given that the density is .    The mass is    "
+  "body": " Mass of a triangular plate   Find the mass of the plate contained in the triangular region bounded by lines and , given that the density is .    The mass is .   "
 },
 {
   "id": "subsection-mass-4",
@@ -6670,18 +6670,18 @@ var ptx_lunr_docs = [
   "body": " Center of mass of an annulus   Find the center of mass of the plate outside of the circle and inside the circle , with density .    The mass is given by The moments are and likewise . So the center of mass is .   "
 },
 {
-  "id": "section-applications-of-double-integrals-3-1",
+  "id": "section-applications-of-double-integrals-3-2",
   "level": "2",
-  "url": "section-applications-of-double-integrals.html#section-applications-of-double-integrals-3-1",
+  "url": "section-applications-of-double-integrals.html#section-applications-of-double-integrals-3-2",
   "type": "Worksheet Exercise",
   "number": "1",
   "title": "Example 13.4.1.",
   "body": "     Find the mass of the plate contained in the triangular region bounded by lines and , given that the density is .   "
 },
 {
-  "id": "section-applications-of-double-integrals-3-2",
+  "id": "section-applications-of-double-integrals-3-3",
   "level": "2",
-  "url": "section-applications-of-double-integrals.html#section-applications-of-double-integrals-3-2",
+  "url": "section-applications-of-double-integrals.html#section-applications-of-double-integrals-3-3",
   "type": "Worksheet Exercise",
   "number": "2",
   "title": "Example 13.4.2.",
@@ -6694,7 +6694,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "13.5",
   "title": "Triple integrals",
-  "body": " Triple integrals  In , we have This represents the area under and over . Furthermore, gives the length of . In , we have This represents the volume under and above the region , where . Furthermore, gives the area of .  We can extend all of this to by introducing the concept of the triple integral .    triple integrals  rectangular coordinates   Triple integrals over a rectangle   Let be defined on some region in . Then the triple integral of over is given by where . If the limit exists, we say that is integrable on .    For a double integral in rectangular coordinates, we have or . Similarly, for a triple integral in rectangular coordinates we have six different choices for :  Absolute values on the disk                Just as we can view as an infinitesimal length and as an infinitesimal area, represents an infinitesimal volume.  Our main use for will be to recognize a triple integral \"in the wild,\" but we won't actually use it to compute integrals. For this purpose, we still use Fubini's theorem.    Fubini's theorem  triple integrals   Fubini's theorem for triple integrals   Suppose is a continuous function on the closed and bounded region in . Then can be computed as an iterated integral, and the answer does not depend on the choice of .     A triple integral over a rectangular prism   Compute , where     We'll integrate using . Then we have     An unfortunate side effect of increasing the dimension for our integral is that we lose a little bit of geometric intuition. For instance, is indeed calculating a \"volume,\" but the volume in question is for a four dimensional region (the graph of over the rectangular prism). We can only really visualize the \"base\" of this region, which served as our region of integration in . Even so, the triple integral can still tell us important things about functions of three variables.   Finding an average value   Find the average value of the function over the region given in .    First, let denote the volume of . Then the average value of over is just     We can also compute triple integrals over more general regions.   Volume using triple integrals   Find the volume of the region bounded by the cylinder and the planes and .    If we let denote this region, then its volume is given by . The volume is then     When setting up limits for triple integrals, say using , then the limits on the innermost integral are typically functions of and , the limits on the middle integral are functions of and the limits on the outermost integral are constant. We can also change the order of integration to make an integral more tractable.   Changing the order of integration   Compute .    This looks awful to integrate with respect to first, so we'll try changing the order of integration. looks easiest, so let's try using instead. If we sketch the region, we see that the limits are actually the same, expect we just need to swap the middle and innermost integrals. So           Suppose is a continuous function on the closed and bounded region in . Then can be computed as an iterated integral, and the answer does not depend on the choice of .         Compute , where          Find the average value of the function over the region given in .         Find the volume of the region bounded by the cylinder and the planes and .         Compute .     "
+  "body": " Triple integrals  In , we have This represents the area under and over . Furthermore, gives the length of . In , we have This represents the volume under and above the region , where . Furthermore, gives the area of .  We can extend all of this to by introducing the concept of the triple integral .    triple integrals  rectangular coordinates   Triple integrals over a rectangle   Let be defined on some region in . Then the triple integral of over is given by where . If the limit exists, we say that is integrable on .    For a double integral in rectangular coordinates, we have or . Similarly, for a triple integral in rectangular coordinates we have six different choices for :  Absolute values on the disk                Just as we can view as an infinitesimal length and as an infinitesimal area, represents an infinitesimal volume.  Our main use for will be to recognize a triple integral \"in the wild,\" but we won't actually use it to compute integrals. For this purpose, we still use Fubini's theorem.    Fubini's theorem  triple integrals   Fubini's theorem for triple integrals   Suppose is a continuous function on the closed and bounded region in . Then can be computed as an iterated integral, and the answer does not depend on the choice of .     A triple integral over a rectangular prism   Compute , where     We'll integrate using . Then we have     An unfortunate side effect of increasing the dimension for our integral is that we lose a little bit of geometric intuition. For instance, is indeed calculating a \"volume,\" but the volume in question is for a four dimensional region (the graph of over the rectangular prism). We can only really visualize the \"base\" of this region, which served as our region of integration in . Even so, the triple integral can still tell us important things about functions of three variables.   Finding an average value   Find the average value of the function over the region given in .    First, let denote the volume of . Then the average value of over is just     We can also compute triple integrals over more general regions.   Volume using triple integrals   Find the volume of the region bounded by the cylinder and the planes and .    If we let denote this region, then its volume is given by . The volume is then     When setting up limits for triple integrals, say using , then the limits on the innermost integral are typically functions of and , the limits on the middle integral are functions of and the limits on the outermost integral are constant. We can also change the order of integration to make an integral more tractable.   Changing the order of integration   Compute .    This looks awful to integrate with respect to first, so we'll try changing the order of integration. looks easiest, so let's try using instead. If we sketch the region, we see that the limits are actually the same, expect we just need to swap the middle and innermost integrals. So      Guided notes       Suppose is a continuous function on the closed and bounded region in . Then can be computed as an iterated integral, and the answer does not depend on the choice of .         Compute , where          Find the average value of the function over the region given in .         Find the volume of the region bounded by the cylinder and the planes and .         Compute .     "
 },
 {
   "id": "section-triple-integrals-3",
@@ -6769,45 +6769,45 @@ var ptx_lunr_docs = [
   "body": " Changing the order of integration   Compute .    This looks awful to integrate with respect to first, so we'll try changing the order of integration. looks easiest, so let's try using instead. If we sketch the region, we see that the limits are actually the same, expect we just need to swap the middle and innermost integrals. So    "
 },
 {
-  "id": "section-triple-integrals-15-1",
+  "id": "section-triple-integrals-15-2",
   "level": "2",
-  "url": "section-triple-integrals.html#section-triple-integrals-15-1",
+  "url": "section-triple-integrals.html#section-triple-integrals-15-2",
   "type": "Worksheet Exercise",
   "number": "13.5.1",
   "title": "Theorem 13.5.3.",
   "body": "     Suppose is a continuous function on the closed and bounded region in . Then can be computed as an iterated integral, and the answer does not depend on the choice of .   "
 },
 {
-  "id": "section-triple-integrals-15-2",
+  "id": "section-triple-integrals-15-3",
   "level": "2",
-  "url": "section-triple-integrals.html#section-triple-integrals-15-2",
+  "url": "section-triple-integrals.html#section-triple-integrals-15-3",
   "type": "Worksheet Exercise",
   "number": "13.5.2",
   "title": "Example 13.5.4.",
   "body": "     Compute , where    "
 },
 {
-  "id": "section-triple-integrals-15-3",
+  "id": "section-triple-integrals-15-4",
   "level": "2",
-  "url": "section-triple-integrals.html#section-triple-integrals-15-3",
+  "url": "section-triple-integrals.html#section-triple-integrals-15-4",
   "type": "Worksheet Exercise",
   "number": "13.5.3",
   "title": "Example 13.5.5.",
   "body": "     Find the average value of the function over the region given in .   "
 },
 {
-  "id": "section-triple-integrals-15-4",
+  "id": "section-triple-integrals-15-5",
   "level": "2",
-  "url": "section-triple-integrals.html#section-triple-integrals-15-4",
+  "url": "section-triple-integrals.html#section-triple-integrals-15-5",
   "type": "Worksheet Exercise",
   "number": "13.5.4",
   "title": "Example 13.5.6.",
   "body": "     Find the volume of the region bounded by the cylinder and the planes and .   "
 },
 {
-  "id": "section-triple-integrals-15-5",
+  "id": "section-triple-integrals-15-6",
   "level": "2",
-  "url": "section-triple-integrals.html#section-triple-integrals-15-5",
+  "url": "section-triple-integrals.html#section-triple-integrals-15-6",
   "type": "Worksheet Exercise",
   "number": "13.5.5",
   "title": "Example 13.5.7.",
@@ -6820,7 +6820,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "13.6",
   "title": "Triple integrals in cylindrical coordinates",
-  "body": " Triple integrals in cylindrical coordinates  In , we saw that introducing a new coordinate system made certain double integrals much easier to work with. The same idea works with triple integrals. The first such system we'll look at is cylindrical coordinates , which are useful for computing triple integrals over cylindrical regions. To convert Cartesian coordinates into cylindrical coordinates , simply replace with polar coordinates, and use . We leave alone.   Computing a triple integral over a cylinder   Let be the cylinder in with height and base given by the circle of radius centered at the origin, restricted to the first and second octants. Let . Compute .    Since we're dealing with a cylinder, we'll switch to cylindrical coordinates :      Volume of a cylindrical region   Find the volume of the region below the inverted cone and in the first and second octants.    First, let denote the region in question. Then . The graph of this region isn't too difficult to find, especially using resources such as CalcPlot3D , and is given by    However, this region is much easier to describe in cylindrical coorindates: . Hence the volume is .     Volume of the unit sphere   Find the volume of the unit sphere; that is, the sphere of radius centered at the origin.    The unit sphere is specified by the inequalities . It's much easier to describe this region using cylindrical coordinates: . By symmetry, the volume must be .    "
+  "body": " Triple integrals in cylindrical coordinates  In , we saw that introducing a new coordinate system made certain double integrals much easier to work with. The same idea works with triple integrals. The first such system we'll look at is cylindrical coordinates , which are useful for computing triple integrals over cylindrical regions. To convert Cartesian coordinates into cylindrical coordinates , simply replace with polar coordinates, and use . We leave alone.   Computing a triple integral over a cylinder   Let be the cylinder in with height and base given by the circle of radius centered at the origin, restricted to the first and second octants. Let . Compute .    Since we're dealing with a cylinder, we'll switch to cylindrical coordinates : .     Volume of a cylindrical region   Find the volume of the region below the inverted cone and in the first and second octants.    First, let denote the region in question. Then . The graph of this region isn't too difficult to find, especially using resources such as CalcPlot3D , and is given by    However, this region is much easier to describe in cylindrical coorindates: . Hence the volume is .     Volume of the unit sphere   Find the volume of the unit sphere; that is, the sphere of radius centered at the origin.    The unit sphere is specified by the inequalities . It's much easier to describe this region using cylindrical coordinates: . By symmetry, the volume must be .     Guided notes       Let be the cylinder in with height and base given by the circle of radius centered at the origin, restricted to the first and second octants. Let . Compute .         Find the volume of the region below the inverted cone and in the first and second octants.         Find the volume of the unit sphere; that is, the sphere of radius centered at the origin.     "
 },
 {
   "id": "section-cylindrical-coordinates-2",
@@ -6838,7 +6838,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "13.6.1",
   "title": "Computing a triple integral over a cylinder.",
-  "body": " Computing a triple integral over a cylinder   Let be the cylinder in with height and base given by the circle of radius centered at the origin, restricted to the first and second octants. Let . Compute .    Since we're dealing with a cylinder, we'll switch to cylindrical coordinates :    "
+  "body": " Computing a triple integral over a cylinder   Let be the cylinder in with height and base given by the circle of radius centered at the origin, restricted to the first and second octants. Let . Compute .    Since we're dealing with a cylinder, we'll switch to cylindrical coordinates : .   "
 },
 {
   "id": "example-cylindrical-volume",
@@ -6859,13 +6859,40 @@ var ptx_lunr_docs = [
   "body": " Volume of the unit sphere   Find the volume of the unit sphere; that is, the sphere of radius centered at the origin.    The unit sphere is specified by the inequalities . It's much easier to describe this region using cylindrical coordinates: . By symmetry, the volume must be .   "
 },
 {
+  "id": "section-cylindrical-coordinates-6-2",
+  "level": "2",
+  "url": "section-cylindrical-coordinates.html#section-cylindrical-coordinates-6-2",
+  "type": "Worksheet Exercise",
+  "number": "13.6.1",
+  "title": "Example 13.6.1.",
+  "body": "     Let be the cylinder in with height and base given by the circle of radius centered at the origin, restricted to the first and second octants. Let . Compute .   "
+},
+{
+  "id": "section-cylindrical-coordinates-6-3",
+  "level": "2",
+  "url": "section-cylindrical-coordinates.html#section-cylindrical-coordinates-6-3",
+  "type": "Worksheet Exercise",
+  "number": "13.6.2",
+  "title": "Example 13.6.2.",
+  "body": "     Find the volume of the region below the inverted cone and in the first and second octants.   "
+},
+{
+  "id": "section-cylindrical-coordinates-6-4",
+  "level": "2",
+  "url": "section-cylindrical-coordinates.html#section-cylindrical-coordinates-6-4",
+  "type": "Worksheet Exercise",
+  "number": "13.6.3",
+  "title": "Example 13.6.4.",
+  "body": "     Find the volume of the unit sphere; that is, the sphere of radius centered at the origin.   "
+},
+{
   "id": "section-triple-integrals-in-spherical-coordinates",
   "level": "1",
   "url": "section-triple-integrals-in-spherical-coordinates.html",
   "type": "Section",
   "number": "13.7",
   "title": "Triple integrals in spherical coordinates",
-  "body": " Triple integrals in spherical coordinates  Although cylindrical coordinates worked just fine in , it makes more sense to use a coordinate system based on spheres in this case. These situations call for spherical coordinates .  Just as any point in can be represented as a point in polar coordinates, we can represent any point in using the spherical coordinates . Here, is distance from the origin, is the angle the point makes with the -axis and is the angle the point makes with the -axis. In general, . corresponds to a point on the positive -axis, while corresponds to a point on the negative -axis.  Using triangles, we have the conversion formulas . Note that .  Just as constant limits in Cartesian coordinates correspond to rectangular regions of integration, constant limits in spherical coordinates give rise to spherical regions of integration.   Sketching a spherical region   Sketch the region determined by the spherical inequalities .    If we wish to compute integrals using spherical coordinates, then we must alter just as we did in . In particular, we use .   Volume of the unit sphere in spherical coordinates   Find the volume of the unit sphere .    The volume of can be found using the triple integral . Because of the spherical region of integration, this is best found using spherical coordinates. So .    The integrand can also suggest a transformation to spherical coordinates. In particular, integrands depending on are often made easier by converting to spherical.   Average value over the unit sphere   Let . Find the average value of over the unit sphere.    By definition, the average value of is given by . We'll follow the same strategy we used in to compute this integral. If we convert to spherical coordinates, we get . So the average value of over is .    "
+  "body": " Triple integrals in spherical coordinates  Although cylindrical coordinates worked just fine in , it makes more sense to use a coordinate system based on spheres in this case. These situations call for spherical coordinates .  Just as any point in can be represented as a point in polar coordinates, we can represent any point in using the spherical coordinates . Here, is distance from the origin, is the angle the point makes with the -axis and is the angle the point makes with the -axis. In general, . corresponds to a point on the positive -axis, while corresponds to a point on the negative -axis.  Using triangles, we have the conversion formulas . Note that .  Just as constant limits in Cartesian coordinates correspond to rectangular regions of integration, constant limits in spherical coordinates give rise to spherical regions of integration.   Sketching a spherical region   Sketch the region determined by the spherical inequalities .    If we wish to compute integrals using spherical coordinates, then we must alter just as we did in . In particular, we use .   Volume of the unit sphere in spherical coordinates   Find the volume of the unit sphere .    The volume of can be found using the triple integral . Because of the spherical region of integration, this is best found using spherical coordinates. So .    The integrand can also suggest a transformation to spherical coordinates. In particular, integrands depending on are often made easier by converting to spherical.   Average value over the unit sphere   Let . Find the average value of over the unit sphere.    By definition, the average value of is given by . We'll follow the same strategy we used in to compute this integral. If we convert to spherical coordinates, we get . So the average value of over is .     Guided notes       Sketch the region determined by the spherical inequalities .         Find the volume of the unit sphere .         Let . Find the average value of over the unit sphere.     "
 },
 {
   "id": "section-triple-integrals-in-spherical-coordinates-2",
@@ -6904,13 +6931,40 @@ var ptx_lunr_docs = [
   "body": " Average value over the unit sphere   Let . Find the average value of over the unit sphere.    By definition, the average value of is given by . We'll follow the same strategy we used in to compute this integral. If we convert to spherical coordinates, we get . So the average value of over is .   "
 },
 {
+  "id": "section-triple-integrals-in-spherical-coordinates-11-2",
+  "level": "2",
+  "url": "section-triple-integrals-in-spherical-coordinates.html#section-triple-integrals-in-spherical-coordinates-11-2",
+  "type": "Worksheet Exercise",
+  "number": "13.7.1",
+  "title": "Example 13.7.1.",
+  "body": "     Sketch the region determined by the spherical inequalities .   "
+},
+{
+  "id": "section-triple-integrals-in-spherical-coordinates-11-3",
+  "level": "2",
+  "url": "section-triple-integrals-in-spherical-coordinates.html#section-triple-integrals-in-spherical-coordinates-11-3",
+  "type": "Worksheet Exercise",
+  "number": "13.7.2",
+  "title": "Example 13.7.2.",
+  "body": "     Find the volume of the unit sphere .   "
+},
+{
+  "id": "section-triple-integrals-in-spherical-coordinates-11-4",
+  "level": "2",
+  "url": "section-triple-integrals-in-spherical-coordinates.html#section-triple-integrals-in-spherical-coordinates-11-4",
+  "type": "Worksheet Exercise",
+  "number": "13.7.3",
+  "title": "Example 13.7.3.",
+  "body": "     Let . Find the average value of over the unit sphere.   "
+},
+{
   "id": "section-change-of-variables",
   "level": "1",
   "url": "section-change-of-variables.html",
   "type": "Section",
   "number": "13.8",
   "title": "Change of variables",
-  "body": " Change of variables   The goal now is to determine a general method to change coordinates in multiple integrals. We'll start with double integrals.    Change of variables in double integrals.  Any change of coordinates involves a transformation between new variables and the original variables . We indicate this as follows: . In , the transformation was just .  So the goal behind integrating with change of variables is to find relate the integral , where is in the -plane, to a new integral , where is in the -plane. The main issue with such a transformation is one that we're familiar with from working with polar coordinates: in the first set of coordinates is not necessarily equal to in the new set of coordinates. In general we'll need a scaling factor that depends on and . As it turns out, the proper scaling factor comes from a determinant.    Jacobian    or  The Jacobian of   The Jacobian of a transformation   The Jacobian determinant , or more simply the Jacobian , of the coordinate transformation and is defined by .     The Jacobian for polar coordinates   Determine for the coordinate transformation from polar coordinates to Cartesian coordinates.    The coordinate transformation here is given by . We have . Hence, .    Since the change of variables technique usually involves introducing new variables in an integration problem to replace old variables, we will often need to compute the Jacobian of a transformation defined in terms of and (or and ).   Finding the Jacobian of a linear transformation   Compute for the linear transformation  .    We need to get and in terms of and first. Since , it follows that . Hence .    The Jacobian helps us compute integrals in the following way: when making the change of variables , the area element becomes . This is the multivariable equivalent of -substitution and converting an integral in terms of into an integral in terms of and .   Change of variables in two dimensions   Find the volume of the region under the surface and over the region bounded by , and .    Both the integrand and the region of integration are awful here, but if we set and then the limits of integration become very simple: . See . The integrand gets better too: . So we can write . Essentially, we're moving from integrating over a diamond in the -plane to integrating over a square in the -plane. If we can find , we can start computing the integral.     The region of integration in the -plane.       The region of integration in the -plane.        To find , we need to get in terms of in order to use . Since and , we get . Hence , and we have .     Integrating between hyperbolas   Compute where is the region bounded between the curves , , and in the first quadrant.    The integrand doesn't look too bad at first, but the region of integration would be very annoying here:   A region of integration defined by hyperbolas.      To deal with this, we'll use the change of variables and . The corresponding limits are and , and our integral becomes . We also get that the Jacobian is . Therefore .      Change of variables in triple integrals.  The change of variables technique also carries over directly to triple integrals and beyond. We just need to compute determinants (or larger) instead of .   Volume of a region between planes   Find the volume of the region bounded by the planes , , , , and .    If we let denote the region we're trying to find the volume of, then the volume of this region is just , where , and .     Transforming to a spherical region   Evaluate where .   Problem adapted from Exercise 21 on page 1137 in Thomas' Calculus , edition.     The region of integration is an ellipsoid, but if we can change this to a sphere then we can use spherical coordinates to help us. A quick fix is to set . Then these new variables satisfy and so the corresponding region in -space is the unit sphere.  Now we need to find . Thankfully, this is straightforward and we get . Therefore , which we can actually integrate without too much trouble.     "
+  "body": " Change of variables   The goal now is to determine a general method to change coordinates in multiple integrals. We'll start with double integrals.    Change of variables in double integrals.  Any change of coordinates involves a transformation between new variables and the original variables . We indicate this as follows: . In , the transformation was just .  So the goal behind integrating with change of variables is to find relate the integral , where is in the -plane, to a new integral , where is in the -plane. The main issue with such a transformation is one that we're familiar with from working with polar coordinates: in the first set of coordinates is not necessarily equal to in the new set of coordinates. In general we'll need a scaling factor that depends on and . As it turns out, the proper scaling factor comes from a determinant.    Jacobian    or  The Jacobian of   The Jacobian of a transformation   The Jacobian determinant , or more simply the Jacobian , of the coordinate transformation and is defined by .     The Jacobian for polar coordinates   Determine for the coordinate transformation from polar coordinates to Cartesian coordinates.    The coordinate transformation here is given by . We have . Hence, .    Since the change of variables technique usually involves introducing new variables in an integration problem to replace old variables, we will often need to compute the Jacobian of a transformation defined in terms of and (or and ).   Finding the Jacobian of a linear transformation   Compute for the linear transformation  .    We need to get and in terms of and first. Since , it follows that . Hence .    The Jacobian helps us compute integrals in the following way: when making the change of variables , the area element becomes . This is the multivariable equivalent of -substitution and converting an integral in terms of into an integral in terms of and .   Change of variables in two dimensions   Find the volume of the region under the surface and over the region bounded by , and .    Both the integrand and the region of integration are awful here, but if we set and then the limits of integration become very simple: . See . The integrand gets better too: . So we can write . Essentially, we're moving from integrating over a diamond in the -plane to integrating over a square in the -plane. If we can find , we can start computing the integral.     The region of integration in the -plane.       The region of integration in the -plane.        To find , we need to get in terms of in order to use . Since and , we get . Hence , and we have .     Integrating between hyperbolas   Compute where is the region bounded between the curves , , and in the first quadrant.    The integrand doesn't look too bad at first, but the region of integration would be very annoying here:   A region of integration defined by hyperbolas.      To deal with this, we'll use the change of variables and . The corresponding limits are and , and our integral becomes . We also get that the Jacobian is . Therefore .      Change of variables in triple integrals.  The change of variables technique also carries over directly to triple integrals and beyond. We just need to compute determinants (or larger) instead of .   Volume of a region between planes   Find the volume of the region bounded by the planes , , , , and .    If we let denote the region we're trying to find the volume of, then the volume of this region is just , where , and .     Transforming to a spherical region   Evaluate where .   Problem adapted from Exercise 21 on page 1137 in Thomas' Calculus , edition.     The region of integration is an ellipsoid, but if we can change this to a sphere then we can use spherical coordinates to help us. A quick fix is to set . Then these new variables satisfy and so the corresponding region in -space is the unit sphere.  Now we need to find . Thankfully, this is straightforward and we get . Therefore , which we can actually integrate without too much trouble.      Guided notes       The Jacobian determinant , or more simply the Jacobian , of the coordinate transformation and is defined by .         Determine for the coordinate transformation from polar coordinates to Cartesian coordinates.         Compute for the linear transformation  .         Find the volume of the region under the surface and over the region bounded by , and .         Compute where is the region bounded between the curves , , and in the first quadrant.         Find the volume of the region bounded by the planes , , , , and .         Evaluate where .     "
 },
 {
   "id": "definition-jacobian",
@@ -6974,6 +7028,69 @@ var ptx_lunr_docs = [
   "number": "13.8.9",
   "title": "Transforming to a spherical region.",
   "body": " Transforming to a spherical region   Evaluate where .   Problem adapted from Exercise 21 on page 1137 in Thomas' Calculus , edition.     The region of integration is an ellipsoid, but if we can change this to a sphere then we can use spherical coordinates to help us. A quick fix is to set . Then these new variables satisfy and so the corresponding region in -space is the unit sphere.  Now we need to find . Thankfully, this is straightforward and we get . Therefore , which we can actually integrate without too much trouble.   "
+},
+{
+  "id": "section-change-of-variables-5-2",
+  "level": "2",
+  "url": "section-change-of-variables.html#section-change-of-variables-5-2",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Definition 13.8.1.",
+  "body": "     The Jacobian determinant , or more simply the Jacobian , of the coordinate transformation and is defined by .   "
+},
+{
+  "id": "section-change-of-variables-5-3",
+  "level": "2",
+  "url": "section-change-of-variables.html#section-change-of-variables-5-3",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Example 13.8.2.",
+  "body": "     Determine for the coordinate transformation from polar coordinates to Cartesian coordinates.   "
+},
+{
+  "id": "section-change-of-variables-5-4",
+  "level": "2",
+  "url": "section-change-of-variables.html#section-change-of-variables-5-4",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Example 13.8.3.",
+  "body": "     Compute for the linear transformation  .   "
+},
+{
+  "id": "section-change-of-variables-5-5",
+  "level": "2",
+  "url": "section-change-of-variables.html#section-change-of-variables-5-5",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Example 13.8.4.",
+  "body": "     Find the volume of the region under the surface and over the region bounded by , and .   "
+},
+{
+  "id": "section-change-of-variables-5-6",
+  "level": "2",
+  "url": "section-change-of-variables.html#section-change-of-variables-5-6",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "Example 13.8.6.",
+  "body": "     Compute where is the region bounded between the curves , , and in the first quadrant.   "
+},
+{
+  "id": "section-change-of-variables-5-7",
+  "level": "2",
+  "url": "section-change-of-variables.html#section-change-of-variables-5-7",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "Example 13.8.8.",
+  "body": "     Find the volume of the region bounded by the planes , , , , and .   "
+},
+{
+  "id": "section-change-of-variables-5-8",
+  "level": "2",
+  "url": "section-change-of-variables.html#section-change-of-variables-5-8",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "Example 13.8.9.",
+  "body": "     Evaluate where .   "
 },
 {
   "id": "section-vector-fields",

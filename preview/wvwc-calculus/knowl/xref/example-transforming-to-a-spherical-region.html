@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">13.8.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Transforming to a spherical region.</span>
+</h4>
+<div class="para logical">
+<div class="para">Evaluate</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\iiint_{D}\abs{xyz}\,dV
+\end{equation*}
+</div>
+<div class="para">where</div>
+<div class="displaymath process-math">
+\begin{equation*}
+D = \set{(x,y,z) : x^{2} + \frac{y^{2}}{9} + \frac{z^{2}}{4} \leq 1}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-transforming-to-a-spherical-region-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <details class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading"><span class="type">Aside</span></h5></summary><aside class="aside aside-like knowl__content"><div class="para">Problem adapted from Exercise 21 on page 1137 in <em class="emphasis">Thomas’ Calculus</em>, <span class="process-math">\(11^{\text{th}}\)</span> edition.<div class="autopermalink" data-description="Paragraph"><a href="#example-transforming-to-a-spherical-region-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside></details><div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">The region of integration is an ellipsoid, but if we can change this to a sphere then we can use spherical coordinates to help us. A quick fix is to set</div>
+<div class="displaymath process-math">
+\begin{equation*}
+u = x, v = \frac{y}{3} \qq{and} w = \frac{z}{2}\text{.}
+\end{equation*}
+</div>
+<div class="para">Then these new variables satisfy</div>
+<div class="displaymath process-math">
+\begin{equation*}
+u^{2} + v^{2} + w^{2} \leq 1
+\end{equation*}
+</div>
+<div class="para">and so the corresponding region <span class="process-math">\(S\)</span> in <span class="process-math">\(uvw\)</span>-space is the unit sphere.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-transforming-to-a-spherical-region-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">Now we need to find <span class="process-math">\(J(u,v,w)\text{.}\)</span> Thankfully, this is straightforward and we get <span class="process-math">\(\abs{J(u,v,w)} = \frac{1}{6}\text{.}\)</span> Therefore</div>
+<div class="displaymath process-math">
+\begin{align*}
+\iiint_{D}\abs{xyz}\,dV \amp = \iiint_{S}\abs{uvw}\,du\,dv\,dw \\
+\amp = 8\iiint_{S'}\abs{uvw}\,du\,dv\,dw \\
+\amp = 8\int_{0}^{\frac{\pi}{2}}\int_{0}^{\frac{\pi}{2}}\int_{0}^{1}(\rho^{3}\sin^{2}\varphi\cos\varphi\sin\theta\cos\theta)\rho^{2}\sin\varphi\,d\rho\,d\varphi\,d\theta \\
+\amp = 8\int_{0}^{\frac{\pi}{2}}\int_{0}^{\frac{\pi}{2}}\int_{0}^{1}\rho^{5}\sin^{3}\varphi\cos\varphi\sin\theta\cos\theta\,d\rho\,d\varphi\,d\theta\text{,}
+\end{align*}
+</div>
+<div class="para">which we can actually integrate without too much trouble.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-transforming-to-a-spherical-region-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 13.8.9.1"><a href="#example-transforming-to-a-spherical-region-3" title="Copy heading and permalink for Solution 13.8.9.1" aria-label="Copy heading and permalink for Solution 13.8.9.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 13.8.9: Transforming to a spherical region"><a href="#example-transforming-to-a-spherical-region" title="Copy heading and permalink for Example 13.8.9: Transforming to a spherical region" aria-label="Copy heading and permalink for Example 13.8.9: Transforming to a spherical region">🔗</a></div></article><span class="incontext"><a class="internal" href="section-change-of-variables.html#example-transforming-to-a-spherical-region">in-context</a></span>
+</body>
+</html>

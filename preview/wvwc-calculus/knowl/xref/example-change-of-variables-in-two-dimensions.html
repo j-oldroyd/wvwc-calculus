@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">13.8.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Change of variables in two dimensions.</span>
+</h4>
+<div class="para">Find the volume of the region under the surface <span class="process-math">\(z = \sqrt{y^{2} - x^{2}}\)</span> and over the region <span class="process-math">\(R\)</span> bounded by <span class="process-math">\(y - x = 0, y - x = 2, y + x = 0\text{,}\)</span> and <span class="process-math">\(y + x = 2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-change-of-variables-in-two-dimensions-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">Both the integrand and the region of integration are awful here, but if we set <span class="process-math">\(u = y - x\)</span> and <span class="process-math">\(v = y + x\)</span> then the limits of integration become very simple:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/figure-change-of-variables-in-two-dimensions.html">
+\begin{equation*}
+0 \leq u,v \leq 2\text{.}
+\end{equation*}
+</div>
+<div class="para">See <a href="section-change-of-variables.html#figure-change-of-variables-in-two-dimensions" class="xref" data-knowl="./knowl/xref/figure-change-of-variables-in-two-dimensions.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 13.8.5">Figure 13.8.5</a>. The integrand gets better too: <span class="process-math">\(\sqrt{y^{2} - x^{2}} = \sqrt{uv}\text{.}\)</span> So we can write</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/figure-change-of-variables-in-two-dimensions.html">
+\begin{equation*}
+\iint_{R}\sqrt{y^{2} - x^{2}}\,dA = \int_{0}^{2}\int_{0}^{2}\sqrt{uv}|J(u,v)|\,du\,dv\text{.}
+\end{equation*}
+</div>
+<div class="para">Essentially, we’re moving from integrating over a diamond in the <span class="process-math">\(xy\)</span>-plane to integrating over a square in the <span class="process-math">\(uv\)</span>-plane. If we can find <span class="process-math">\(J(u,v)\text{,}\)</span> we can start computing the integral.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-change-of-variables-in-two-dimensions-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:50% 50%;column-gap:0%;">
+<div class="sbspanel sbspanel--top top" style=""><figure class="figure figure-like"><div class="image-box"><img src="generated/latex-image/latex-image-change-of-variables-xy-region-integration.svg" role="img" class="contained"></div>
+<figcaption><span class="codenumber">(a)</span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The region of integration in the <span class="process-math">\(xy\)</span>-plane.<div class="autopermalink" data-description="Figure 13.8.5.(a)"><a href="#figure-change-of-variables-in-two-dimensions-1-1" title="Copy heading and permalink for Figure 13.8.5.(a)" aria-label="Copy heading and permalink for Figure 13.8.5.(a)">🔗</a></div></figcaption></figure></div>
+<div class="sbspanel sbspanel--top top" style=""><figure class="figure figure-like"><div class="image-box"><img src="generated/latex-image/latex-image-change-of-variables-uv-region-integration.svg" role="img" class="contained"></div>
+<figcaption><span class="codenumber">(b)</span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The region of integration in the <span class="process-math">\(uv\)</span>-plane.<div class="autopermalink" data-description="Figure 13.8.5.(b)"><a href="#figure-change-of-variables-in-two-dimensions-1-2" title="Copy heading and permalink for Figure 13.8.5.(b)" aria-label="Copy heading and permalink for Figure 13.8.5.(b)">🔗</a></div></figcaption></figure></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">13.8.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" data-description="Figure 13.8.5"><a href="#figure-change-of-variables-in-two-dimensions" title="Copy heading and permalink for Figure 13.8.5" aria-label="Copy heading and permalink for Figure 13.8.5">🔗</a></div></figcaption></figure><div class="para logical">
+<div class="para">To find <span class="process-math">\(J(u,v)\text{,}\)</span> we need to get <span class="process-math">\(x,y\)</span> in terms of <span class="process-math">\(u,v\)</span> in order to use <a href="section-change-of-variables.html#definition-jacobian" class="xref" data-knowl="./knowl/xref/definition-jacobian.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 13.8.1: The Jacobian of a transformation">Definition 13.8.1</a>. Since <span class="process-math">\(u + v = 2y\)</span> and <span class="process-math">\(u - v = -2x\text{,}\)</span> we get</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-jacobian.html">
+\begin{equation*}
+x = \frac{v - u}{2} \qq{and} y = \frac{v + u}{2}\text{.}
+\end{equation*}
+</div>
+<div class="para">Hence</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-jacobian.html">
+\begin{equation*}
+J(u,v) = \left|\begin{array}{cc}-\frac{1}{2} \amp \frac{1}{2} \\ \frac{1}{2} \amp \frac{1}{2}\end{array}\right| = -\frac{1}{2}\text{,}
+\end{equation*}
+</div>
+<div class="para">and we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-jacobian.html">
+\begin{align*}
+\iint_{R}\sqrt{y^{2} - x^{2}}\,dA \amp = \frac{1}{2}\int_{0}^{2}\int_{0}^{2}\sqrt{uv}\,du\,dv \\
+\amp = \frac{1}{2}\left(\int_{0}^{2}\sqrt{u}\,du\right)^{2} \\
+\amp = \frac{16}{9} \text{.}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-change-of-variables-in-two-dimensions-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 13.8.4.1"><a href="#example-change-of-variables-in-two-dimensions-3" title="Copy heading and permalink for Solution 13.8.4.1" aria-label="Copy heading and permalink for Solution 13.8.4.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 13.8.4: Change of variables in two dimensions"><a href="#example-change-of-variables-in-two-dimensions" title="Copy heading and permalink for Example 13.8.4: Change of variables in two dimensions" aria-label="Copy heading and permalink for Example 13.8.4: Change of variables in two dimensions">🔗</a></div></article><span class="incontext"><a class="internal" href="section-change-of-variables.html#example-change-of-variables-in-two-dimensions">in-context</a></span>
+</body>
+</html>
