@@ -1386,39 +1386,40 @@
       <title>
         Guided notes
       </title>
-    <exercise workspace="2in">
-      <title>
-        <xref ref="example-sketching-a-spherical-region"/>
-      </title>
-      <statement>
-        <p>
-          Sketch the region determined by the spherical inequalities
-          <me>2\leq \rho\leq 3, 0\leq \varphi\leq \frac{\pi}{4}
-          \qq{and} \frac{3\pi}{2}\leq \theta\leq 2\pi</me>.
-        </p>
-      </statement>
-    </exercise>
-    <exercise workspace="2in">
-      <title>
-        <xref ref="example-volume-of-the-unit-sphere-spherical-coordinates"/>
-      </title>
-      <statement>
-        <p>
-          Find the volume of the unit sphere <m>S^{2}</m>.
-        </p>
-      </statement>
-    </exercise>
-    <exercise workspace="2in">
-      <title>
-        <xref ref="example-average-value-inside-of-the-unit-sphere"/>
-      </title>
-      <statement>
-        <p>
-          Let <m>f(x,y,z) = e^{-(x^{2} + y^{2} + z^{2})^{3/2}}</m>.
-          Find the average value of <m>f</m> over the unit sphere.
-        </p>
-      </statement>
-    </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="example-sketching-a-spherical-region"/>
+        </title>
+        <statement>
+          <p>
+            Sketch the region determined by the spherical inequalities
+            <me>2\leq \rho\leq 3, 0\leq \varphi\leq \frac{\pi}{4}
+            \qq{and} \frac{3\pi}{2}\leq \theta\leq 2\pi</me>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="example-volume-of-the-unit-sphere-spherical-coordinates"/>
+        </title>
+        <statement>
+          <p>
+            Find the volume of the unit sphere <m>S^{2}</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="example-average-value-inside-of-the-unit-sphere"/>
+        </title>
+        <statement>
+          <p>
+            Let <m>f(x,y,z) = e^{-(x^{2} + y^{2} + z^{2})^{3/2}}</m>.
+            Find the average value of <m>f</m> over the unit sphere.
+          </p>
+        </statement>
+      </exercise>
+    </worksheet>
   </section>
   <section xml:id="section-change-of-variables">
     <title>Change of variables</title>
@@ -1740,5 +1741,98 @@
         </solution>
       </example>
     </subsection>
+    <worksheet>
+      <title>
+        Guided notes
+      </title>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="definition-jacobian"/>
+        </title>
+        <statement>
+          <p>
+            The <term>Jacobian determinant</term>, or more simply the
+            <term>Jacobian</term>, of the coordinate transformation
+            <m>x = g(u,v)</m> and <m>y = h(u,v)</m> is defined by
+            <me>J(u,v) = \pdv{(x,y)}{(u,v)} = \left|\begin{array}{cc}
+            x_{u} \amp x_{v} \\ y_{u} \amp
+            y_{v}\end{array}\right|</me>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="example-jacobian-in-polar-coordinates"/>
+        </title>
+        <statement>
+          <p>
+            Determine <m>J(r,\theta)</m> for the coordinate
+            transformation from polar coordinates to Cartesian
+            coordinates.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="example-finding-jacobian"/>
+        </title>
+        <statement>
+          <p>
+            Compute <m>J(u,v)</m> for the <em>linear transformation</em>
+            <me>u = x + 4y \qq{and} v = 3x + 2y</me>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="4in">
+        <title>
+          <xref ref="example-change-of-variables-in-two-dimensions"/>
+        </title>
+        <statement>
+          <p>
+            Find the volume of the region under the surface <m>z =
+            \sqrt{y^{2} - x^{2}}</m> and over the region <m>R</m>
+            bounded by <m>y - x = 0, y - x = 2, y + x = 0</m>, and
+            <m>y + x = 2</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="4in">
+        <title>
+          <xref ref="example-integrating-between-hyperbolas"/>
+        </title>
+        <statement>
+          <p>
+            Compute <m>\iint_{R}e^{xy}\,dA</m> where <m>R</m> is the
+            region bounded between the curves <m>xy = 1</m>, <m>xy =
+            4</m>, <m>y = x</m> and <m>y = 3x</m> in the first
+            quadrant.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="4in">
+        <title>
+          <xref ref="example-volume-of-a-region-between-planes"/>
+        </title>
+        <statement>
+          <p>
+            Find the volume of the region bounded by the planes <m>y -
+            2x = 0</m>, <m>y - 2x = 1</m>, <m>z - 3y = 0</m>, <m>z -
+            3y = 1</m>, <m>z - 4x = 0</m> and <m>z - 4x = 3</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="4in">
+        <title>
+          <xref ref="example-transforming-to-a-spherical-region"/>
+        </title>
+        <statement>
+          <p>
+            Evaluate <me>\iiint_{D}\abs{xyz}\,dV</me> where <me>D =
+            \set{(x,y,z) : x^{2} + \frac{y^{2}}{9} + \frac{z^{2}}{4}
+            \leq 1}</me>.
+          </p>
+        </statement>
+      </exercise>
+    </worksheet>
   </section>
 </chapter>
