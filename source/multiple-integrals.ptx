@@ -1286,7 +1286,7 @@
         </p>
         </statement>
       </exercise>
-      <exercise>
+      <exercise workspace="2in">
         <title>
           <xref ref="example-finding-the-volume-of-the-unit-sphere"/>
         </title>
@@ -1382,6 +1382,43 @@
         </p>
       </solution>
     </example>
+    <worksheet>
+      <title>
+        Guided notes
+      </title>
+    <exercise workspace="2in">
+      <title>
+        <xref ref="example-sketching-a-spherical-region"/>
+      </title>
+      <statement>
+        <p>
+          Sketch the region determined by the spherical inequalities
+          <me>2\leq \rho\leq 3, 0\leq \varphi\leq \frac{\pi}{4}
+          \qq{and} \frac{3\pi}{2}\leq \theta\leq 2\pi</me>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="2in">
+      <title>
+        <xref ref="example-volume-of-the-unit-sphere-spherical-coordinates"/>
+      </title>
+      <statement>
+        <p>
+          Find the volume of the unit sphere <m>S^{2}</m>.
+        </p>
+      </statement>
+    </exercise>
+    <exercise workspace="2in">
+      <title>
+        <xref ref="example-average-value-inside-of-the-unit-sphere"/>
+      </title>
+      <statement>
+        <p>
+          Let <m>f(x,y,z) = e^{-(x^{2} + y^{2} + z^{2})^{3/2}}</m>.
+          Find the average value of <m>f</m> over the unit sphere.
+        </p>
+      </statement>
+    </exercise>
   </section>
   <section xml:id="section-change-of-variables">
     <title>Change of variables</title>
