@@ -957,7 +957,9 @@
       For a double integral in rectangular coordinates, we have <m>dA = dx\,dy</m> or <m>dy\,dx</m>.
       Similarly, for a triple integral in rectangular coordinates we have six different choices for <m>dV</m>:
       <table xml:id="table-volume-elements">
-        <title>Absolute values on the disk</title>
+        <title>
+          Volume elements in <m>\RR^3</m>
+        </title>
         <tabular halign="center" top="major">
           <row top="major">
             <cell><m>dx\,dy\,dz</m></cell>
@@ -1005,14 +1007,38 @@
           We'll integrate using <m>dV = dx\,dy\,dz</m>.
           Then we have
           <md>
-            <mrow>\iiint_{D}xyze^{-x^{2} - y^{2}}\,dV \amp = \int_{0}^{1}\int_{0}^{\sqrt{\ln4}}\int_{0}^{\sqrt{\ln2}} xyze^{-x^{2} - y^{2}}\,dx\,dy\,dz </mrow>
-            <mrow> \amp = \int_{0}^{1}\int_{0}^{\sqrt{\ln4}}\left[-\frac{yze^{-x^{2} - y^{2}}}{2}\right]_{x=0}^{\sqrt{\ln2}} </mrow>
-            <mrow> \amp = -\frac{1}{2}\int_{0}^{1}\int_{0}^{\sqrt{\ln4}} yz(e^{-\ln2 - y^{2}} - e^{-y^{2}})\,dy\,dz </mrow>
-            <mrow> \amp = -\frac{e^{-\ln2} - 1}{2}\int_{0}^{1}\int_{0}^{\sqrt{\ln4}} yze^{-y^{2}}\,dy\,dz </mrow>
-            <mrow> \amp = \frac{-\frac{1}{2}}{4}\int_{0}^{1}\left[ze^{-y^{2}}\right]_{y=0}^{\sqrt{\ln4}}\,dz </mrow>
-            <mrow> \amp = \frac{\frac{3}{4}}{8}\int_{0}^{1}z\,dz </mrow>
-            <mrow> \amp = \frac{3}{32}\frac{1}{2} </mrow>
-            <mrow> \amp = \frac{3}{64} </mrow>
+            <mrow>
+              \iiint_{D}xyze^{-x^{2} - y^{2}}\,dV \amp =
+              \int_{0}^{1}\int_{0}^{\sqrt{\ln4}}\int_{0}^{\sqrt{\ln2}}
+              xyze^{-x^{2} - y^{2}}\,dx\,dy\,dz
+            </mrow>
+            <mrow>
+              \amp =
+              \int_{0}^{1}\int_{0}^{\sqrt{\ln4}}\left[-\frac{yze^{-x^{2}
+              - y^{2}}}{2}\right]_{x=0}^{\sqrt{\ln2}}\,dy\,dz
+            </mrow>
+            <mrow>
+              \amp = -\frac{1}{2}\int_{0}^{1}\int_{0}^{\sqrt{\ln4}}
+              yz(e^{-\ln2 - y^{2}} - e^{-y^{2}})\,dy\,dz
+            </mrow>
+            <mrow>
+              \amp = -\frac{e^{-\ln2} -
+              1}{2}\int_{0}^{1}\int_{0}^{\sqrt{\ln4}}
+              yze^{-y^{2}}\,dy\,dz
+            </mrow>
+            <mrow>
+              \amp = \frac{-\frac{1}{2}}{4}
+              \int_{0}^{1}\left[ze^{-y^{2}}\right]_{y=0}^{\sqrt{\ln4}}\,dz
+            </mrow>
+            <mrow>
+              \amp = \frac{\frac{3}{4}}{8}\int_{0}^{1}z\,dz
+            </mrow>
+            <mrow>
+              \amp = \frac{3}{32}\frac{1}{2}
+            </mrow>
+            <mrow>
+              \amp = \frac{3}{64}
+            </mrow>
           </md>
         </p>
       </solution>
@@ -1192,7 +1218,8 @@
           cylindrical coordinates <m>r\,dr\,d\theta\,dz</m>:
           <md>
             <mrow>
-              \iiint_{D}f(x,y,z)\,dV \amp = \int_{0}^{2}\int_{0}^{\pi}\int_{0}^{4}\frac{r}{1+r^{2}}\,dr\,d\theta\,dz
+              \iiint_{D}f(x,y,z)\,dV \amp =
+              \int_{0}^{2}\int_{0}^{\pi}\int_{0}^{4}\frac{rz}{1+r^{2}}\,dr\,d\theta\,dz
             </mrow>
             <mrow>
               \amp = \pi\ln17
