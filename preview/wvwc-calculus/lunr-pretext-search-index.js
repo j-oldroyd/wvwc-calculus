@@ -7099,7 +7099,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "14.1",
   "title": "Vector fields",
-  "body": " Vector fields   Consider the function . The gradient of this function is . We can view the gradient as a function that assigns the vector to each point in the plane. We often draw these vectors so that they're rescaled or normalized.     Rescaled gradient field for .       Normalized gradient field .       Such functions are the main object of this section.    Vector Fields in and   vector fields  Vector Fields   A vector field is a function that assigns vectors to points.    A vector field on would look like . Similarly, a vector field on would be .   Sketching a Vector Field   Sketch .    Our sketch looks like      Note that the vectors in get extremely small as increases, so it may be better to represent the vector field using normalized vectors instead.     A Vector Field in   Sketch .    An interactive sketch from CalcPlot3D is given below:  A vector field in -space.     The vector field rotates about the -axis in the counterclockwise direction, flowing upwards if and flowing downwards if .    A velocity field is just a vector field that assigns velocities to points.   Particle Trapped in a Velocity Field   At time seconds, a particle is at position . The particle is within the velocity field . Estimate the particle's position at seconds.    Since the particle starts at , its velocity at time is given by . Hence the displacement of the particle from to seconds should be approximately , which gives the new position as roughly .    In , we're actually attempting to approximate the integral curve for that passes through . For velocity fields these are also known as streamlines , while for magnetic fields these can be known as field lines . For a velocity field, streamlines represent the valid paths a particle subject to the field can travel. By sketching , we see that every streamline of is parallel to .    Gradient Fields and Potential Functions  Recall that the gradient of a function is a kind of derivative of that function. Hence we can view the original scalar function , also known as the potential function , as a kind of antiderivative for the gradient . Since the gradient is also a vector field, called the gradient field , this means that vector fields that have a corresponding potential function should obey familiar rules from calculus. In particular, they obey a version of the Fundamental Theorem of Calculus (see ).   Gradient Field for Gravitational Potential   Find the gradient field associated to .    We can find the gradient field right away: .    A vector field is conservative if it can be written as the gradient of some corresponding potential function , that is, . In physics, the convention is often written .    SUGGESTED PROBLEMS: 3, 5, 7, 11, 13, 21, 31   "
+  "body": " Vector fields   Consider the function . The gradient of this function is . We can view the gradient as a function that assigns the vector to each point in the plane. We often draw these vectors so that they're rescaled or normalized.     Rescaled gradient field for .       Normalized gradient field .       Such functions are the main object of this section.    Vector Fields in and    vector fields   Vector Fields   A vector field is a function that assigns vectors to points.    A vector field on would look like . Similarly, a vector field on would be .   Sketching a Vector Field   Sketch .    Our sketch looks like      Note that the vectors in get extremely small as increases, so it may be better to represent the vector field using normalized vectors instead.     A Vector Field in   Sketch .    An interactive sketch from CalcPlot3D is given below:  A vector field in -space.     The vector field rotates about the -axis in the counterclockwise direction, flowing upwards if and flowing downwards if .    A velocity field is just a vector field that assigns velocities to points.   Particle Trapped in a Velocity Field   At time seconds, a particle is at position . The particle is within the velocity field . Estimate the particle's position at seconds.    Since the particle starts at , its velocity at time is given by . Hence the displacement of the particle from to seconds should be approximately , which gives the new position as roughly .    In , we're actually attempting to approximate the integral curve for that passes through . For velocity fields these are also known as streamlines , while for magnetic fields these can be known as field lines . For a velocity field, streamlines represent the valid paths a particle subject to the field can travel. By sketching , we see that every streamline of is parallel to .    Gradient Fields and Potential Functions  Recall that the gradient of a function is a kind of derivative of that function. Hence we can view the original scalar function , also known as the potential function , as a kind of antiderivative for the gradient . Since the gradient is also a vector field, called the gradient field , this means that vector fields that have a corresponding potential function should obey familiar rules from calculus. In particular, they obey a version of the Fundamental Theorem of Calculus (see ).   Gradient Field for Gravitational Potential   Find the gradient field associated to .    We can find the gradient field right away: .    A vector field is conservative if it can be written as the gradient of some corresponding potential function , that is, . In physics, the convention is often written .    Guided notes       Sketch .         At time seconds, a particle is at position . The particle is within the velocity field . Estimate the particle's position at seconds.         Find the gradient field associated to .     "
 },
 {
   "id": "figure-the-gradient-field-for--grad-f-",
@@ -7117,7 +7117,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "14.1.2",
   "title": "Vector Fields.",
-  "body": " vector fields  Vector Fields   A vector field is a function that assigns vectors to points.   "
+  "body": "  vector fields   Vector Fields   A vector field is a function that assigns vectors to points.   "
 },
 {
   "id": "example-sketching-a-vector-field",
@@ -7190,6 +7190,33 @@ var ptx_lunr_docs = [
   "number": "",
   "title": "",
   "body": "conservative "
+},
+{
+  "id": "section-vector-fields-5-2",
+  "level": "2",
+  "url": "section-vector-fields.html#section-vector-fields-5-2",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Example 14.1.3.",
+  "body": "     Sketch .   "
+},
+{
+  "id": "section-vector-fields-5-3",
+  "level": "2",
+  "url": "section-vector-fields.html#section-vector-fields-5-3",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Example 14.1.7.",
+  "body": "     At time seconds, a particle is at position . The particle is within the velocity field . Estimate the particle's position at seconds.   "
+},
+{
+  "id": "section-vector-fields-5-4",
+  "level": "2",
+  "url": "section-vector-fields.html#section-vector-fields-5-4",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Example 14.1.8.",
+  "body": "     Find the gradient field associated to .   "
 },
 {
   "id": "section-line-integrals",
