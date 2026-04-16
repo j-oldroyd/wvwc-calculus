@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: denver                         *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.2.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Flow along a circle.</span>
+</h4>
+<div class="para logical">
+<div class="para">Let <span class="process-math">\(C\)</span> denote the segment of the parabola <span class="process-math">\(y =
+\cos x\)</span> traversed once from <span class="process-math">\(x = -\frac{\pi}{2}\)</span> to <span class="process-math">\(x = \frac{\pi}{2}\text{,}\)</span> and let</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vb{F} =
+\dotprod{y^{2}, -x}\text{.}
+\end{equation*}
+</div>
+<div class="para">Does <span class="process-math">\(\vb{F}\)</span> tend to flow with or against <span class="process-math">\(C\text{?}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-flow-along-a-circle-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para">If we graph <span class="process-math">\(\vb{F}\)</span> and <span class="process-math">\(C\text{,}\)</span> we get the following: <figure class="figure figure-like"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><div class="asymptote-box" style="padding-top: 99.3435658787038%"><iframe src="generated/asymptote/image-flow-over-cosine-.html" class="asymptote"></iframe></div></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.2.8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Flow over <span class="process-math">\(y = \cos x\text{.}\)</span><div class="autopermalink" data-description="Figure 14.2.8"><a href="#figure-flow-over-cosine-" title="Copy heading and permalink for Figure 14.2.8" aria-label="Copy heading and permalink for Figure 14.2.8">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Paragraph"><a href="#example-flow-along-a-circle-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical">
+<div class="para">
+<a href="section-line-integrals.html#figure-flow-over-cosine-" class="xref" data-knowl="./knowl/xref/figure-flow-over-cosine-.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 14.2.8">Figure 14.2.8</a> suggests that <span class="process-math">\(\vb{F}\)</span> flows with <span class="process-math">\(C\text{,}\)</span> and we can verify this by computing <span class="process-math">\(\int_{C}\vb{F}\cdot
+d\vb{r}\text{:}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/figure-flow-over-cosine-.html">
+\begin{align*}
+\int_{C}\vb{F}\cdot d\vb{r} \amp =
+\int_{-\pi/2}^{\pi/2} \dotprod{\cos^{2}t,
+-t}\cdot\dotprod{1,-\sin t}\,dt\\
+\amp = \int_{-\pi/2}^{\pi/2} \brackets{\cos^{2}t + t\sin t}\,dt\\
+\amp = \int_{-\pi/2}^{\pi/2} \brackets{
+\frac{1}{2}\parens{1 + \cos 2t} + t\sin t}\,dt\\
+\amp = \brackets{\frac{1}{2}\parens{ t +
+\frac{1}{2}\sin 2t} - t\cos t + \sin
+t}_{-\pi/2}^{\pi/2}\\
+\amp = \frac{\pi}{2} + 2 \text{.}
+\end{align*}
+</div>
+<div class="para">Since the result is positive, this tells us that <span class="process-math">\(\vb{F}\)</span> tends to flow with <span class="process-math">\(C\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#example-flow-along-a-circle-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 14.2.7.1"><a href="#example-flow-along-a-circle-3" title="Copy heading and permalink for Solution 14.2.7.1" aria-label="Copy heading and permalink for Solution 14.2.7.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 14.2.7: Flow along a circle"><a href="#example-flow-along-a-circle" title="Copy heading and permalink for Example 14.2.7: Flow along a circle" aria-label="Copy heading and permalink for Example 14.2.7: Flow along a circle">🔗</a></div></article><span class="incontext"><a class="internal" href="section-line-integrals.html#example-flow-along-a-circle">in-context</a></span>
+</body>
+</html>
