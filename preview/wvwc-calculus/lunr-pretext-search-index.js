@@ -7396,7 +7396,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "14.3",
   "title": "The fundamental theorem for line integrals",
-  "body": " The fundamental theorem for line integrals   From , we know that integrals and derivatives are closely related: . We want to extend this result to line integrals of vector fields over curves. In particular, we want to prove a relationship of the form where and are the endpoints of the curve . This is the content of the main result in this section: .    Path independence  Unless otherwise mentioned, we'll assume that we're always working with an open, simply connected domain  . This is a region that, roughly, does not contain its boundary and does not contain any holes. A curve contained in is closed if its initial and terminal points are the same. We'll denote the boundary of by .  Unless mentioned otherwise, we assume is traversed counterclockwise is is in the -plane.  We often denote line integrals over closed curves using the symbol .  The mathematical definition of a conservative vector field is that it's the gradient of some scalar function.   conservative vector field mathematical definition  Conservative vector fields (mathematical definition)   Let be a vector field. We say that is conservative on a domain if on for some scalar function .    However, we also have a physical definition! Which may be useful. This definition relies on the concept of path independence .   vector fields path independence  Path independence   A vector field is path independent on a domain if for any piecewise smooth paths in with the same endpoints. Equivalently, is path independent if for any piecewise smooth closed curve in .     Conservative vector fields (physical definition)  conservative vector field physical definition   Let denote a (vector) force field. We say that is conservative on a domain if is path independent on .    In physical terms, says that the work done by a conservative force on a particle moving along a path depends only on the initial and terminal points of the path. Equivalently, the work done on a closed path must always be .  These two definitions are related by .   line integrals Fundamental Theorem of Line Integrals  Fundamental theorem of line integrals   Suppose that is a conservative vector field (in the sense of ) with continuous components on an open simply connected region . Then is path independent. Furthermore, if and is a curve in with initial point and terminal point , then .     An awful example   Let and let be the path in the -plane composed of the line segment from to followed by the circular arc from to followed by the logarithmic arc from to . Find .     is piecewise smooth and consists of the components . To find , we can find for and add the resulting values. So let's do that! . Similarly, and finally  . Putting this all together, we get .  Now let's compare this approach with using . Since , is conservative by definition. Hence applies, and (setting ) we get .     Using potential to find work done   Let be a force field and let denote the parabolic arc from to . Find the work done by along .    The work done is just . Note that , and so the work done is just by .      Conservative vector fields   shows that line integrals involving conservative vector fields are straightforward to evaluate if we know a corresponding potential function. So now we want to do two things:   Given a vector field , determine if it's conservative.      Given a conservative vector field , determine a potential function .     For the first, we can use our intuition that conservative vector fields shouldn't rotate. So let's assume that is a (differentiable) vector field on and let be a point in the plane. We can estimate the rotation, or circulation , of at by constructing a rectangle with length and height at and measuring how flows counterclockwise around the rectangle. If we do so, then we can estimate the circulation along each side as follows: . Therefore the total circulation near should be about . If we divide by to normalize, then we can say that the circulation is about .   Conservative vector fields are irrotational   Let be a continuously differentiable vector field on an open simply connected region in . Then is conservative on this region if and only if .     Finding a line integral   Let and let denote the ellipse . Find .    We can parameterize and then compute as in , but we'll first check if is conservative. Since , it follows that is conservative. Hence .    The quantity in is called the (two-dimensional) curl of and is denoted by . This represents the tendency of to rotate counterclockwise around a given point. This can be extended to three dimensions using the following formula: where . The direction of provides the axis of rotation at a point, and its magnitude is the tendency of to rotate counterclockwise around this axis of rotation (viewed head on).   Testing a vector field in   Let . Determine if is conservative.   This is taken from Example 2 on page 1165 of Thomas' Calculus , edition.     We need to check if . So we compute this like a cross product, giving . Hence the vector field is irrotational and therefore conservative.    So now we have a good test for if a vector field is conservative. Next, we want to be able to find a corresponding potential function to a conservative vector field.  Consider the vector field from . We know this is conservative, so there must exist a corresponding potential function such that . To find this, we start by noting that whatever is, its partial derivatives must be the components of . In particular, . Now we look at to pin down : , and so . Finally, and so . Therefore a potential function for is .   Line integral along an elliptical arc   Compute , where .    First, we'll check if is conservative. If it is, we can use . Since , we see that is in fact conservative.  Now we need to find a potential function . Since , we can integrate with respect to to get . Now differentiate with respect to to get . Hence a potential function for is , and so .     "
+  "body": " The fundamental theorem for line integrals   From , we know that integrals and derivatives are closely related: . We want to extend this result to line integrals of vector fields over curves. In particular, we want to prove a relationship of the form where and are the endpoints of the curve . This is the content of the main result in this section: .    Path independence  Unless otherwise mentioned, we'll assume that we're always working with an open, simply connected domain  . This is a region that, roughly, does not contain its boundary and does not contain any holes. A curve contained in is closed if its initial and terminal points are the same. We'll denote the boundary of by .   Unless mentioned otherwise, we assume is traversed counterclockwise is is in the -plane.   We often denote line integrals over closed curves using the symbol .  The mathematical definition of a conservative vector field is that it's the gradient of some scalar function.    conservative vector field  mathematical definition   Conservative vector fields (mathematical definition)   Let be a vector field. We say that is conservative on a domain if on for some scalar function .    However, we also have a physical definition! Which may be useful. This definition relies on the concept of path independence .    vector fields  path independence   Path independence   A vector field is path independent on a domain if for any piecewise smooth paths in with the same endpoints. Equivalently, is path independent if for any piecewise smooth closed curve in .     Conservative vector fields (physical definition)   conservative vector field  physical definition    Let denote a (vector) force field. We say that is conservative on a domain if is path independent on .    In physical terms, says that the work done by a conservative force on a particle moving along a path depends only on the initial and terminal points of the path. Equivalently, the work done on a closed path must always be .  These two definitions are related by .    line integrals  Fundamental Theorem of Line Integrals   Fundamental theorem of line integrals   Suppose that is a conservative vector field (in the sense of ) with continuous components on an open simply connected region . Then is path independent. Furthermore, if and is a curve in with initial point and terminal point , then .     An awful example   Let and let be the path in the -plane composed of the line segment from to followed by the circular arc from to followed by the logarithmic arc from to . Find .     is piecewise smooth and consists of the components . To find , we can find for and add the resulting values. So let's do that! . Similarly, and finally  . Putting this all together, we get .  Now let's compare this approach with using . Since , is conservative by definition. Hence applies, and (setting ) we get .     Using potential to find work done   Let be a force field and let denote the parabolic arc from to . Find the work done by along .    The work done is just . Note that , and so the work done is just by .      Conservative vector fields   shows that line integrals involving conservative vector fields are straightforward to evaluate if we know a corresponding potential function. So now we want to do two things:   Given a vector field , determine if it's conservative.      Given a conservative vector field , determine a potential function .     For the first, we can use our intuition that conservative vector fields shouldn't rotate. So let's assume that is a (differentiable) vector field on and let be a point in the plane. We can estimate the rotation, or circulation , of at by constructing a rectangle with length and height at and measuring how flows counterclockwise around the rectangle. If we do so, then we can estimate the circulation along each side as follows: . Therefore the total circulation near should be about . If we divide by to normalize, then we can say that the circulation is about .   Conservative vector fields are irrotational   Let be a continuously differentiable vector field on an open simply connected region in . Then is conservative on this region if and only if .     Finding a line integral   Let and let denote the ellipse . Find .    We can parameterize and then compute as in , but we'll first check if is conservative. Since , it follows that is conservative. Hence .    The quantity in is called the (two-dimensional) curl of and is denoted by . This represents the tendency of to rotate counterclockwise around a given point. This can be extended to three dimensions using the following formula: where . The direction of provides the axis of rotation at a point, and its magnitude is the tendency of to rotate counterclockwise around this axis of rotation (viewed head on).   Testing a vector field in   Let . Determine if is conservative.   This is taken from Example 2 on page 1165 of Thomas' Calculus , edition.     We need to check if . So we compute this like a cross product, giving . Hence the vector field is irrotational and therefore conservative.    So now we have a good test for if a vector field is conservative. Next, we want to be able to find a corresponding potential function to a conservative vector field.  Consider the vector field from . We know this is conservative, so there must exist a corresponding potential function such that . To find this, we start by noting that whatever is, its partial derivatives must be the components of . In particular, . Now we look at to pin down : , and so . Finally, and so . Therefore a potential function for is .   Line integral along an elliptical arc   Compute , where .    First, we'll check if is conservative. If it is, we can use . Since , we see that is in fact conservative.  Now we need to find a potential function . Since , we can integrate with respect to to get . Now differentiate with respect to to get . Hence a potential function for is , and so .           Let be a vector field. We say that is conservative on a domain if on for some scalar function .         Suppose that is a conservative vector field (in the sense of ) with continuous components on an open simply connected region . Then is path independent. Furthermore, if and is a curve in with initial point and terminal point , then .         Let and let be the path in the -plane composed of the line segment from to followed by the circular arc from to followed by the logarithmic arc from to . Find .         Let be a force field and let denote the parabolic arc from to . Find the work done by along .         Let be a continuously differentiable vector field on an open simply connected region in . Then is conservative on this region if and only if .         Let and let denote the ellipse . Find .         Let . Determine if is conservative.   This is taken from Example 2 on page 1165 of Thomas' Calculus , edition.          Compute , where .     "
 },
 {
   "id": "subsection-path-independence-2",
@@ -7414,12 +7414,12 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "14.3.1",
   "title": "Conservative vector fields (mathematical definition).",
-  "body": " conservative vector field mathematical definition  Conservative vector fields (mathematical definition)   Let be a vector field. We say that is conservative on a domain if on for some scalar function .   "
+  "body": "  conservative vector field  mathematical definition   Conservative vector fields (mathematical definition)   Let be a vector field. We say that is conservative on a domain if on for some scalar function .   "
 },
 {
-  "id": "subsection-path-independence-5",
+  "id": "subsection-path-independence-7",
   "level": "2",
-  "url": "section-the-fundamental-theorem-for-line-integrals.html#subsection-path-independence-5",
+  "url": "section-the-fundamental-theorem-for-line-integrals.html#subsection-path-independence-7",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -7432,7 +7432,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "14.3.2",
   "title": "Path independence.",
-  "body": " vector fields path independence  Path independence   A vector field is path independent on a domain if for any piecewise smooth paths in with the same endpoints. Equivalently, is path independent if for any piecewise smooth closed curve in .   "
+  "body": "  vector fields  path independence   Path independence   A vector field is path independent on a domain if for any piecewise smooth paths in with the same endpoints. Equivalently, is path independent if for any piecewise smooth closed curve in .   "
 },
 {
   "id": "definition-conservative-vector-fields-physical-definition",
@@ -7441,7 +7441,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "14.3.3",
   "title": "Conservative vector fields (physical definition).",
-  "body": " Conservative vector fields (physical definition)  conservative vector field physical definition   Let denote a (vector) force field. We say that is conservative on a domain if is path independent on .   "
+  "body": " Conservative vector fields (physical definition)   conservative vector field  physical definition    Let denote a (vector) force field. We say that is conservative on a domain if is path independent on .   "
 },
 {
   "id": "theorem-fundamental-theorem-line-integrals",
@@ -7450,7 +7450,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "14.3.4",
   "title": "Fundamental theorem of line integrals.",
-  "body": " line integrals Fundamental Theorem of Line Integrals  Fundamental theorem of line integrals   Suppose that is a conservative vector field (in the sense of ) with continuous components on an open simply connected region . Then is path independent. Furthermore, if and is a curve in with initial point and terminal point , then .   "
+  "body": "  line integrals  Fundamental Theorem of Line Integrals   Fundamental theorem of line integrals   Suppose that is a conservative vector field (in the sense of ) with continuous components on an open simply connected region . Then is path independent. Furthermore, if and is a curve in with initial point and terminal point , then .   "
 },
 {
   "id": "example-an-awful-example",
@@ -7514,6 +7514,78 @@ var ptx_lunr_docs = [
   "number": "14.3.10",
   "title": "Line integral along an elliptical arc.",
   "body": " Line integral along an elliptical arc   Compute , where .    First, we'll check if is conservative. If it is, we can use . Since , we see that is in fact conservative.  Now we need to find a potential function . Since , we can integrate with respect to to get . Now differentiate with respect to to get . Hence a potential function for is , and so .   "
+},
+{
+  "id": "section-the-fundamental-theorem-for-line-integrals-5-1",
+  "level": "2",
+  "url": "section-the-fundamental-theorem-for-line-integrals.html#section-the-fundamental-theorem-for-line-integrals-5-1",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Definition 14.3.1.",
+  "body": "     Let be a vector field. We say that is conservative on a domain if on for some scalar function .   "
+},
+{
+  "id": "section-the-fundamental-theorem-for-line-integrals-5-2",
+  "level": "2",
+  "url": "section-the-fundamental-theorem-for-line-integrals.html#section-the-fundamental-theorem-for-line-integrals-5-2",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Theorem 14.3.4.",
+  "body": "     Suppose that is a conservative vector field (in the sense of ) with continuous components on an open simply connected region . Then is path independent. Furthermore, if and is a curve in with initial point and terminal point , then .   "
+},
+{
+  "id": "section-the-fundamental-theorem-for-line-integrals-5-3",
+  "level": "2",
+  "url": "section-the-fundamental-theorem-for-line-integrals.html#section-the-fundamental-theorem-for-line-integrals-5-3",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Example 14.3.5.",
+  "body": "     Let and let be the path in the -plane composed of the line segment from to followed by the circular arc from to followed by the logarithmic arc from to . Find .   "
+},
+{
+  "id": "section-the-fundamental-theorem-for-line-integrals-5-4",
+  "level": "2",
+  "url": "section-the-fundamental-theorem-for-line-integrals.html#section-the-fundamental-theorem-for-line-integrals-5-4",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Example 14.3.6.",
+  "body": "     Let be a force field and let denote the parabolic arc from to . Find the work done by along .   "
+},
+{
+  "id": "section-the-fundamental-theorem-for-line-integrals-5-5",
+  "level": "2",
+  "url": "section-the-fundamental-theorem-for-line-integrals.html#section-the-fundamental-theorem-for-line-integrals-5-5",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "Theorem 14.3.7.",
+  "body": "     Let be a continuously differentiable vector field on an open simply connected region in . Then is conservative on this region if and only if .   "
+},
+{
+  "id": "section-the-fundamental-theorem-for-line-integrals-5-6",
+  "level": "2",
+  "url": "section-the-fundamental-theorem-for-line-integrals.html#section-the-fundamental-theorem-for-line-integrals-5-6",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "Example 14.3.8.",
+  "body": "     Let and let denote the ellipse . Find .   "
+},
+{
+  "id": "section-the-fundamental-theorem-for-line-integrals-5-7",
+  "level": "2",
+  "url": "section-the-fundamental-theorem-for-line-integrals.html#section-the-fundamental-theorem-for-line-integrals-5-7",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "Example 14.3.9.",
+  "body": "     Let . Determine if is conservative.   This is taken from Example 2 on page 1165 of Thomas' Calculus , edition.    "
+},
+{
+  "id": "section-the-fundamental-theorem-for-line-integrals-5-8",
+  "level": "2",
+  "url": "section-the-fundamental-theorem-for-line-integrals.html#section-the-fundamental-theorem-for-line-integrals-5-8",
+  "type": "Worksheet Exercise",
+  "number": "8",
+  "title": "Example 14.3.8.",
+  "body": "     Compute , where .   "
 },
 {
   "id": "section-green-s-theorem",

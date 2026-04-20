@@ -121,14 +121,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.13.4';
+eBookConfig.runestone_version = '7.13.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.b76b8eace4405b9e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.52176322e2c1dde5.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.bbf2283c5c1d4f99.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
 <script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdn.geogebra.org/apps/deployggb.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -698,6 +698,7 @@ true);
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-the-fundamental-theorem-for-line-integrals.html#subsection-path-independence" class="internal"><span class="title">Path independence</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="section-the-fundamental-theorem-for-line-integrals.html#subsection-conservative-vector-fields" class="internal"><span class="title">Conservative vector fields</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="section-the-fundamental-theorem-for-line-integrals.html#section-the-fundamental-theorem-for-line-integrals-5" class="internal"><span class="title">Worksheet</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section"><div class="toc-title-box"><a href="section-green-s-theorem.html" class="internal"><span class="codenumber">14.4</span> <span class="title">Green’s Theorem</span></a></div></li>
@@ -734,20 +735,50 @@ true);
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="section-the-fundamental-theorem-for-line-integrals"><h2 class="heading hide-type">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<div class="print-preview-header">
+<h2 class="print-preview">Print preview</h2>
+<div class="print-controls">
+<div class="print-controls-toggles">
+<form class="papersize-select" id="papersize-select">
+<span class="name">Paper size</span><label><input type="radio" name="papersize" value="a4">A4
+        </label><label><input type="radio" name="papersize" value="letter">Letter
+        </label>
+</form>
+<details class="print-options"><summary>Additional printing options</summary><div class="hide-solutions-options"><div class="hide-option">
+<label for="hide-solution-checkbox">Hide solutions</label><input type="checkbox" id="hide-solution-checkbox">
+</div></div>
+<div class="header-footer-options">
+<div class="header-option">
+<span class="title">Print headers</span><label>First page<input type="checkbox" id="print-first-page-header-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-header-checkbox" checked></label>
+</div>
+<div class="footer-option">
+<span class="title">Print footers</span><label>First page<input type="checkbox" id="print-first-page-footer-checkbox" checked></label><label>Running<input type="checkbox" id="print-running-footer-checkbox" checked></label>
+</div>
+</div>
+<div class="highlight-workspace-option">
+<label for="highlight-workspace-checkbox">Highlight workspace</label><input type="checkbox" id="highlight-workspace-checkbox">
+</div></details>
+</div>
+<button class="print-button" title="Print" onClick="window.print()"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span><span class="name">Print</span></button>
+</div>
+</div>
+<section class="section" id="section-the-fundamental-theorem-for-line-integrals"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The fundamental theorem for line integrals</span>
 </h2>
 <section class="introduction" id="section-the-fundamental-theorem-for-line-integrals-2"><div class="para logical" id="section-the-fundamental-theorem-for-line-integrals-2-1">
 <div class="para">From <a href="section-the-fundamental-theorem-of-calculus.html#theorem-fundamental-theorem-of-calculus" class="xref" data-knowl="./knowl/xref/theorem-fundamental-theorem-of-calculus.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 6.4.2: Fundamental Theorem of Calculus">Theorem 6.4.2</a>, we know that integrals and derivatives are closely related:</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-fundamental-theorem-of-calculus.html ./knowl/xref/theorem-fundamental-theorem-line-integrals.html" id="section-the-fundamental-theorem-for-line-integrals-2-1-2">
 \begin{equation*}
-\int_{a}^{b}\dv{f}{x}\,dx = f(b) - f(a)\text{.}
+\int_{a}^{b}\dv{f}{x}\,dx = f(b) -
+f(a)\text{.}
 \end{equation*}
 </div>
-<div class="para">We want to extend this result to line integrals of vector fields over curves. In particular, we want to prove a relationship of the form</div>
+<div class="para">We want to extend this result to line integrals of vector fields over curves.  In particular, we want to prove a relationship of the form</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-fundamental-theorem-of-calculus.html ./knowl/xref/theorem-fundamental-theorem-line-integrals.html" id="section-the-fundamental-theorem-for-line-integrals-2-1-3">
 \begin{equation*}
-\int_{C}\grad f\cdot d\vb{r} = \int_{A}^{B}\grad f\cdot d\vb{r} = f(B) - f(A)
+\int_{C}\grad f\cdot d\vb{r} =
+\int_{A}^{B}\grad f\cdot d\vb{r} = f(B) - f(A)
 \end{equation*}
 </div>
 <div class="para">where <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are the endpoints of the curve <span class="process-math">\(C\text{.}\)</span> This is the content of the main result in this section: <a href="section-the-fundamental-theorem-for-line-integrals.html#theorem-fundamental-theorem-line-integrals" class="xref" data-knowl="./knowl/xref/theorem-fundamental-theorem-line-integrals.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 14.3.4: Fundamental theorem of line integrals">Theorem 14.3.4</a>.</div>
@@ -755,17 +786,19 @@ true);
 </div></section><section class="subsection" id="subsection-path-independence"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Path independence</span>
 </h3>
-<div class="para" id="subsection-path-independence-2">Unless otherwise mentioned, we’ll assume that we’re always working with an <dfn class="terminology">open, simply connected domain</dfn> <span class="process-math">\(D\text{.}\)</span> This is a region that, roughly, does not contain its boundary and does not contain any holes. A curve <span class="process-math">\(C\)</span> contained in <span class="process-math">\(D\)</span> is <dfn class="terminology">closed</dfn> if its initial and terminal points are the same. We’ll denote the <dfn class="terminology">boundary</dfn> of <span class="process-math">\(D\)</span> by <span class="process-math">\(\partial D\text{.}\)</span> <details id="subsection-path-independence-2-9" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Aside</span></h4></summary><aside class="aside aside-like knowl__content"><div class="para" id="subsection-path-independence-2-9-1">Unless mentioned otherwise, we assume <span class="process-math">\(\partial D\)</span> is traversed counterclockwise is <span class="process-math">\(D\)</span> is in the <span class="process-math">\(xy\)</span>-plane.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-path-independence-2-9-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></aside></details> We often denote line integrals over closed curves using the symbol <span class="process-math">\(\oint\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-path-independence-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsection-path-independence-2">Unless otherwise mentioned, we’ll assume that we’re always working with an <dfn class="terminology">open, simply connected domain</dfn> <span class="process-math">\(D\text{.}\)</span>  This is a region that, roughly, does not contain its boundary and does not contain any holes.  A curve <span class="process-math">\(C\)</span> contained in <span class="process-math">\(D\)</span> is <dfn class="terminology">closed</dfn> if its initial and terminal points are the same.  We’ll denote the <dfn class="terminology">boundary</dfn> of <span class="process-math">\(D\)</span> by <span class="process-math">\(\partial D\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-path-independence-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsection-path-independence-3">The mathematical definition of a conservative vector field is that it’s the gradient of some scalar function.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-path-independence-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<details id="subsection-path-independence-3" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Aside</span></h4></summary><aside class="aside aside-like knowl__content"><div class="para" id="subsection-path-independence-3-1">Unless mentioned otherwise, we assume <span class="process-math">\(\partial D\)</span> is traversed counterclockwise is <span class="process-math">\(D\)</span> is in the <span class="process-math">\(xy\)</span>-plane.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-path-independence-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside></details><div class="para" id="subsection-path-independence-4">We often denote line integrals over closed curves using the symbol <span class="process-math">\(\oint\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-path-independence-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsection-path-independence-5">The mathematical definition of a conservative vector field is that it’s the gradient of some scalar function.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-path-independence-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="definition-conservative-vector-fields-mathematical-definition"><h4 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conservative vector fields (mathematical definition).</span>
 </h4>
-<div class="para" id="definition-conservative-vector-fields-mathematical-definition-3-1">Let <span class="process-math">\(\vb{F}\)</span> be a vector field. We say that <span class="process-math">\(\vb{F}\)</span> is <dfn class="terminology">conservative</dfn> on a domain <span class="process-math">\(D\)</span> if <span class="process-math">\(\vb{F} = \grad f\)</span> on <span class="process-math">\(D\)</span> for some scalar function <span class="process-math">\(f\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#definition-conservative-vector-fields-mathematical-definition-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="definition-conservative-vector-fields-mathematical-definition-3-1">Let <span class="process-math">\(\vb{F}\)</span> be a vector field.  We say that <span class="process-math">\(\vb{F}\)</span> is <dfn class="terminology">conservative</dfn> on a domain <span class="process-math">\(D\)</span> if <span class="process-math">\(\vb{F} = \grad f\)</span> on <span class="process-math">\(D\)</span> for some scalar function <span class="process-math">\(f\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#definition-conservative-vector-fields-mathematical-definition-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 14.3.1: Conservative vector fields (mathematical definition)"><a href="#definition-conservative-vector-fields-mathematical-definition" title="Copy heading and permalink for Definition 14.3.1: Conservative vector fields (mathematical definition)" aria-label="Copy heading and permalink for Definition 14.3.1: Conservative vector fields (mathematical definition)">🔗</a></div></article><div class="para" id="subsection-path-independence-5">However, we also have a physical definition! Which may be useful. This definition relies on the concept of <dfn class="terminology">path independence</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-path-independence-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Definition 14.3.1: Conservative vector fields (mathematical definition)"><a href="#definition-conservative-vector-fields-mathematical-definition" title="Copy heading and permalink for Definition 14.3.1: Conservative vector fields (mathematical definition)" aria-label="Copy heading and permalink for Definition 14.3.1: Conservative vector fields (mathematical definition)">🔗</a></div></article><div class="para" id="subsection-path-independence-7">However, we also have a physical definition!  Which may be useful.  This definition relies on the concept of <dfn class="terminology">path independence</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-path-independence-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="definition definition-like" id="definition-path-independence"><h4 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Path independence.</span>
@@ -774,7 +807,8 @@ true);
 <div class="para">A vector field <span class="process-math">\(\vb{F}\)</span> is path independent on a domain <span class="process-math">\(D\)</span> if</div>
 <div class="displaymath process-math" id="definition-path-independence-3-1-3">
 \begin{equation*}
-\int_{C_{1}}\vb{F}\dr = \int_{C_{2}}\vb{F}\cdot d\vb{r}
+\int_{C_{1}}\vb{F}\dr =
+\int_{C_{2}}\vb{F}\cdot d\vb{r}
 \end{equation*}
 </div>
 <div class="para">for any piecewise smooth paths in <span class="process-math">\(D\)</span> with the same endpoints. Equivalently, <span class="process-math">\(\vb{F}\)</span> is path independent if</div>
@@ -790,17 +824,18 @@ true);
 <div class="autopermalink" data-description="Definition 14.3.2: Path independence"><a href="#definition-path-independence" title="Copy heading and permalink for Definition 14.3.2: Path independence" aria-label="Copy heading and permalink for Definition 14.3.2: Path independence">🔗</a></div></article><article class="definition definition-like" id="definition-conservative-vector-fields-physical-definition"><h4 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conservative vector fields (physical definition).</span>
 </h4>
-<div class="para" id="definition-conservative-vector-fields-physical-definition-3-1">Let <span class="process-math">\(\vb{F}\)</span> denote a (vector) force field. We say that <span class="process-math">\(\vb{F}\)</span> is conservative on a domain <span class="process-math">\(D\)</span> if <span class="process-math">\(\vb{F}\)</span> is path independent on <span class="process-math">\(D\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#definition-conservative-vector-fields-physical-definition-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="definition-conservative-vector-fields-physical-definition-3-1">Let <span class="process-math">\(\vb{F}\)</span> denote a (vector) force field.  We say that <span class="process-math">\(\vb{F}\)</span> is conservative on a domain <span class="process-math">\(D\)</span> if <span class="process-math">\(\vb{F}\)</span> is path independent on <span class="process-math">\(D\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#definition-conservative-vector-fields-physical-definition-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 14.3.3: Conservative vector fields (physical definition)"><a href="#definition-conservative-vector-fields-physical-definition" title="Copy heading and permalink for Definition 14.3.3: Conservative vector fields (physical definition)" aria-label="Copy heading and permalink for Definition 14.3.3: Conservative vector fields (physical definition)">🔗</a></div></article><div class="para" id="subsection-path-independence-8">In physical terms, <a href="section-the-fundamental-theorem-for-line-integrals.html#definition-conservative-vector-fields-physical-definition" class="xref" data-knowl="./knowl/xref/definition-conservative-vector-fields-physical-definition.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 14.3.3: Conservative vector fields (physical definition)">Definition 14.3.3</a> says that the work done by a conservative force <span class="process-math">\(\vb{F}\)</span> on a particle moving along a path depends only on the initial and terminal points of the path. Equivalently, the work done on a closed path must always be <span class="process-math">\(0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-path-independence-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Definition 14.3.3: Conservative vector fields (physical definition)"><a href="#definition-conservative-vector-fields-physical-definition" title="Copy heading and permalink for Definition 14.3.3: Conservative vector fields (physical definition)" aria-label="Copy heading and permalink for Definition 14.3.3: Conservative vector fields (physical definition)">🔗</a></div></article><div class="para" id="subsection-path-independence-10">In physical terms, <a href="section-the-fundamental-theorem-for-line-integrals.html#definition-conservative-vector-fields-physical-definition" class="xref" data-knowl="./knowl/xref/definition-conservative-vector-fields-physical-definition.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 14.3.3: Conservative vector fields (physical definition)">Definition 14.3.3</a> says that the work done by a conservative force <span class="process-math">\(\vb{F}\)</span> on a particle moving along a path depends only on the initial and terminal points of the path.  Equivalently, the work done on a closed path must always be <span class="process-math">\(0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsection-path-independence-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="subsection-path-independence-9">These two definitions are related by <a href="section-the-fundamental-theorem-for-line-integrals.html#theorem-fundamental-theorem-line-integrals" class="xref" data-knowl="./knowl/xref/theorem-fundamental-theorem-line-integrals.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 14.3.4: Fundamental theorem of line integrals">Theorem 14.3.4</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-path-independence-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="subsection-path-independence-11">These two definitions are related by <a href="section-the-fundamental-theorem-for-line-integrals.html#theorem-fundamental-theorem-line-integrals" class="xref" data-knowl="./knowl/xref/theorem-fundamental-theorem-line-integrals.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 14.3.4: Fundamental theorem of line integrals">Theorem 14.3.4</a>.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-path-independence-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="theorem-fundamental-theorem-line-integrals"><h4 class="heading">
 <span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Fundamental theorem of line integrals.</span>
 </h4>
 <div class="para logical" id="theorem-fundamental-theorem-line-integrals-3-1">
-<div class="para">Suppose that <span class="process-math">\(\vb{F}\)</span> is a conservative vector field (in the sense of <a href="section-the-fundamental-theorem-for-line-integrals.html#definition-conservative-vector-fields-mathematical-definition" class="xref" data-knowl="./knowl/xref/definition-conservative-vector-fields-mathematical-definition.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 14.3.1: Conservative vector fields (mathematical definition)">Definition 14.3.1</a>) with continuous components on an open simply connected region <span class="process-math">\(D\text{.}\)</span> Then <span class="process-math">\(\vb{F}\)</span> is path independent. Furthermore, if <span class="process-math">\(\vb{F} = \grad f\)</span> and <span class="process-math">\(C\)</span> is a curve in <span class="process-math">\(D\)</span> with initial point <span class="process-math">\(A\)</span> and terminal point <span class="process-math">\(B\text{,}\)</span> then</div>
+<div class="para">Suppose that <span class="process-math">\(\vb{F}\)</span> is a conservative vector field (in the sense of <a href="section-the-fundamental-theorem-for-line-integrals.html#definition-conservative-vector-fields-mathematical-definition" class="xref" data-knowl="./knowl/xref/definition-conservative-vector-fields-mathematical-definition.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 14.3.1: Conservative vector fields (mathematical definition)">Definition 14.3.1</a>) with continuous components on an open simply connected region <span class="process-math">\(D\text{.}\)</span>  Then <span class="process-math">\(\vb{F}\)</span> is path independent.  Furthermore, if <span class="process-math">\(\vb{F} = \grad
+f\)</span> and <span class="process-math">\(C\)</span> is a curve in <span class="process-math">\(D\)</span> with initial point <span class="process-math">\(A\)</span> and terminal point <span class="process-math">\(B\text{,}\)</span> then</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-conservative-vector-fields-mathematical-definition.html" id="theorem-fundamental-theorem-line-integrals-3-1-10">
 \begin{equation*}
 \int_{C}\vb{F}\cdot d\vb{r} = f(B) - f(A)\text{.}
@@ -811,7 +846,7 @@ true);
 <div class="autopermalink" data-description="Theorem 14.3.4: Fundamental theorem of line integrals"><a href="#theorem-fundamental-theorem-line-integrals" title="Copy heading and permalink for Theorem 14.3.4: Fundamental theorem of line integrals" aria-label="Copy heading and permalink for Theorem 14.3.4: Fundamental theorem of line integrals">🔗</a></div></article><article class="example example-like" id="example-an-awful-example"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">An awful example.</span>
 </h4>
-<div class="para" id="example-an-awful-example-2-1">Let <span class="process-math">\(\vb{F} = \grad(x^{2}y^{3})\)</span> and let <span class="process-math">\(C\)</span> be the path in the <span class="process-math">\(xy\)</span>-plane composed of the line segment from <span class="process-math">\((-1,1)\)</span> to <span class="process-math">\((0,1)\)</span> followed by the circular arc from <span class="process-math">\((0,1)\)</span> to <span class="process-math">\((1,0)\)</span> followed by the logarithmic arc <span class="process-math">\(y = \ln x\)</span> from <span class="process-math">\((1,0)\)</span> to <span class="process-math">\((e,1)\text{.}\)</span> Find <span class="process-math">\(\int_{C}\vb{F}\cdot\vb{T}\dd{s}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-an-awful-example-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-an-awful-example-2-1">Let <span class="process-math">\(\vb{F} = \grad(x^{2}y^{3})\)</span> and let <span class="process-math">\(C\)</span> be the path in the <span class="process-math">\(xy\)</span>-plane composed of the line segment from <span class="process-math">\((-1,1)\)</span> to <span class="process-math">\((0,1)\)</span> followed by the circular arc from <span class="process-math">\((0,1)\)</span> to <span class="process-math">\((1,0)\)</span> followed by the logarithmic arc <span class="process-math">\(y = \ln x\)</span> from <span class="process-math">\((1,0)\)</span> to <span class="process-math">\((e,1)\text{.}\)</span>  Find <span class="process-math">\(\int_{C}\vb{F}\cdot\vb{T}\dd{s}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-an-awful-example-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="example-an-awful-example-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="example-an-awful-example-3-1">
@@ -819,16 +854,22 @@ true);
 <span class="process-math">\(C\)</span> is piecewise smooth and consists of the components</div>
 <div class="displaymath process-math" id="example-an-awful-example-3-1-2">
 \begin{align*}
-C_{1} \amp : \vb{r}_{1}(t) = \dotprod{t - 1, 1}, 0\leq t\leq 1 \\
-C_{2} \amp : \vb{r}_{2}(t) = \dotprod{\sin t, \cos t}, 0\leq t\leq \frac{\pi}{2} \\
-C_{3} \amp : \vb{r}_{3}(t) = \dotprod{t, \ln t}, 1\leq t\leq e \text{.}
+C_{1} \amp : \vb{r}_{1}(t) = \dotprod{t - 1, 1},
+0\leq t\leq 1 \\
+C_{2} \amp : \vb{r}_{2}(t) = \dotprod{\sin t, \cos
+t}, 0\leq t\leq \frac{\pi}{2} \\
+C_{3} \amp : \vb{r}_{3}(t) = \dotprod{t, \ln t},
+1\leq t\leq e \text{.}
 \end{align*}
 </div>
-<div class="para">To find <span class="process-math">\(\int_{C}\vb{F}\cdot\vb{T}\dd{s}\text{,}\)</span> we can find <span class="process-math">\(\int_{C_{i}}\vb{F}\cdot\vb{T}\dd{s}\)</span> for <span class="process-math">\(1\leq i\leq 3\)</span> and add the resulting values. So let’s do that!</div>
+<div class="para">To find <span class="process-math">\(\int_{C}\vb{F}\cdot\vb{T}\dd{s}\text{,}\)</span> we can find <span class="process-math">\(\int_{C_{i}}\vb{F}\cdot\vb{T}\dd{s}\)</span> for <span class="process-math">\(1\leq i\leq
+3\)</span> and add the resulting values.  So let’s do that!</div>
 <div class="displaymath process-math" id="example-an-awful-example-3-1-6">
 \begin{align*}
-\int_{C_{1}}\vb{F}\cdot d\vb{r} \amp = \int_{C_{1}} \dotprod{2xy^{3}, 3x^{2}y^{2}}\dr\\
-\amp = \int_{0}^{1}\dotprod{2(t-1), 3(t-1)^{2}}\cdot\dotprod{1, 0}\,dt \\
+\int_{C_{1}}\vb{F}\cdot d\vb{r} \amp =
+\int_{C_{1}} \dotprod{2xy^{3}, 3x^{2}y^{2}}\dr\\
+\amp = \int_{0}^{1}\dotprod{2(t-1),
+3(t-1)^{2}}\cdot\dotprod{1, 0}\,dt \\
 \amp = \brackets{t^{2} - 2t}_{0}^{1} \\
 \amp = -1 \text{.}
 \end{align*}
@@ -836,7 +877,9 @@ C_{3} \amp : \vb{r}_{3}(t) = \dotprod{t, \ln t}, 1\leq t\leq e \text{.}
 <div class="para">Similarly,</div>
 <div class="displaymath process-math" id="example-an-awful-example-3-1-7">
 \begin{align*}
-\int_{C_{2}} \vb{F}\dr \amp = \int_{0}^{\frac{\pi}{2}}\dotprod{2\sin t\cos^{3}t, 3\sin^{2}t\cos^{2}t}\cdot\dotprod{\cos t, -\sin t}\,dt \\
+\int_{C_{2}} \vb{F}\dr \amp =
+\int_{0}^{\frac{\pi}{2}}\dotprod{2\sin t\cos^{3}t,
+3\sin^{2}t\cos^{2}t}\cdot\dotprod{\cos t, -\sin t}\,dt\\
 \amp = 0
 \end{align*}
 </div>
@@ -844,7 +887,9 @@ C_{3} \amp : \vb{r}_{3}(t) = \dotprod{t, \ln t}, 1\leq t\leq e \text{.}
 </div>
 <div class="displaymath process-math" id="example-an-awful-example-3-1-9">
 \begin{align*}
-\int_{C_{3}}\vb{F}\dr \amp = \int_{1}^{e}\dotprod{2t(\ln t)^{3}, 3t^{2}(\ln t)^{2}}\cdot\dotprod{1, \frac{1}{t}}\,dt \\
+\int_{C_{3}}\vb{F}\dr \amp =
+\int_{1}^{e}\dotprod{2t(\ln t)^{3}, 3t^{2}(\ln
+t)^{2}}\cdot\dotprod{1, \frac{1}{t}}\,dt \\
 \amp = e^{2}\text{.}
 \end{align*}
 </div>
@@ -857,10 +902,13 @@ C_{3} \amp : \vb{r}_{3}(t) = \dotprod{t, \ln t}, 1\leq t\leq e \text{.}
 <div class="autopermalink" data-description="Paragraph"><a href="#example-an-awful-example-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-an-awful-example-3-2">
-<div class="para">Now let’s compare this approach with using <a href="section-the-fundamental-theorem-for-line-integrals.html#theorem-fundamental-theorem-line-integrals" class="xref" data-knowl="./knowl/xref/theorem-fundamental-theorem-line-integrals.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 14.3.4: Fundamental theorem of line integrals">Theorem 14.3.4</a>. Since <span class="process-math">\(\vb{F} = \grad(x^{2}y^{3})\text{,}\)</span> <span class="process-math">\(\vb{F}\)</span> is conservative by definition. Hence <a href="section-the-fundamental-theorem-for-line-integrals.html#theorem-fundamental-theorem-line-integrals" class="xref" data-knowl="./knowl/xref/theorem-fundamental-theorem-line-integrals.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 14.3.4: Fundamental theorem of line integrals">Theorem 14.3.4</a> applies, and (setting <span class="process-math">\(f(x,y) = x^{2}y^{3}\)</span>) we get</div>
+<div class="para">Now let’s compare this approach with using <a href="section-the-fundamental-theorem-for-line-integrals.html#theorem-fundamental-theorem-line-integrals" class="xref" data-knowl="./knowl/xref/theorem-fundamental-theorem-line-integrals.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 14.3.4: Fundamental theorem of line integrals">Theorem 14.3.4</a>.  Since <span class="process-math">\(\vb{F} =
+\grad(x^{2}y^{3})\text{,}\)</span> <span class="process-math">\(\vb{F}\)</span> is conservative by definition.  Hence <a href="section-the-fundamental-theorem-for-line-integrals.html#theorem-fundamental-theorem-line-integrals" class="xref" data-knowl="./knowl/xref/theorem-fundamental-theorem-line-integrals.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 14.3.4: Fundamental theorem of line integrals">Theorem 14.3.4</a> applies, and (setting <span class="process-math">\(f(x,y) =
+x^{2}y^{3}\)</span>) we get</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-fundamental-theorem-line-integrals.html ./knowl/xref/theorem-fundamental-theorem-line-integrals.html" id="example-an-awful-example-3-2-6">
 \begin{equation*}
-\int_{C}\vb{F}\dr = f(e, 1) - f(-1, 1) = e^{2} - 1\text{.}
+\int_{C}\vb{F}\dr = f(e, 1) -
+f(-1, 1) = e^{2} - 1\text{.}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#example-an-awful-example-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -870,14 +918,16 @@ C_{3} \amp : \vb{r}_{3}(t) = \dotprod{t, \ln t}, 1\leq t\leq e \text{.}
 <div class="autopermalink" data-description="Example 14.3.5: An awful example"><a href="#example-an-awful-example" title="Copy heading and permalink for Example 14.3.5: An awful example" aria-label="Copy heading and permalink for Example 14.3.5: An awful example">🔗</a></div></article><article class="example example-like" id="example-using-potential-to-find-work-done"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Using potential to find work done.</span>
 </h4>
-<div class="para" id="example-using-potential-to-find-work-done-2-1">Let <span class="process-math">\(\vb{F} = \dotprod{xy^{2}, x^{2}y}\)</span> be a force field and let <span class="process-math">\(C\)</span> denote the parabolic arc <span class="process-math">\(y = x^{2}\)</span> from <span class="process-math">\((1,1)\)</span> to <span class="process-math">\((3,9)\text{.}\)</span> Find the work done by <span class="process-math">\(\vb{F}\)</span> along <span class="process-math">\(C\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-using-potential-to-find-work-done-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-using-potential-to-find-work-done-2-1">Let <span class="process-math">\(\vb{F} = \dotprod{xy^{2}, x^{2}y}\)</span> be a force field and let <span class="process-math">\(C\)</span> denote the parabolic arc <span class="process-math">\(y =
+x^{2}\)</span> from <span class="process-math">\((1,1)\)</span> to <span class="process-math">\((3,9)\text{.}\)</span>  Find the work done by <span class="process-math">\(\vb{F}\)</span> along <span class="process-math">\(C\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-using-potential-to-find-work-done-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="example-using-potential-to-find-work-done-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="example-using-potential-to-find-work-done-3-1">
-<div class="para">The work done is just <span class="process-math">\(\int_{C}\vb{F}\dr\text{.}\)</span> Note that <span class="process-math">\(\vb{F} = \grad(\frac{1}{2}x^{2}y^{2})\text{,}\)</span> and so the work done is just</div>
+<div class="para">The work done is just <span class="process-math">\(\int_{C}\vb{F}\dr\text{.}\)</span>  Note that <span class="process-math">\(\vb{F} = \grad(\frac{1}{2}x^{2}y^{2})\text{,}\)</span> and so the work done is just</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-fundamental-theorem-line-integrals.html" id="example-using-potential-to-find-work-done-3-1-3">
 \begin{equation*}
-\frac{1}{2}3^{2}9^{2} - \frac{1}{2}1^{2}1^{2}
+\frac{1}{2}3^{2}9^{2} -
+\frac{1}{2}1^{2}1^{2}
 \end{equation*}
 </div>
 <div class="para">by <a href="section-the-fundamental-theorem-for-line-integrals.html#theorem-fundamental-theorem-line-integrals" class="xref" data-knowl="./knowl/xref/theorem-fundamental-theorem-line-integrals.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 14.3.4: Fundamental theorem of line integrals">Theorem 14.3.4</a>.</div>
@@ -890,7 +940,7 @@ C_{3} \amp : \vb{r}_{3}(t) = \dotprod{t, \ln t}, 1\leq t\leq e \text{.}
 </h3>
 <div class="para logical" id="subsection-conservative-vector-fields-2">
 <div class="para">
-<a href="section-the-fundamental-theorem-for-line-integrals.html#theorem-fundamental-theorem-line-integrals" class="xref" data-knowl="./knowl/xref/theorem-fundamental-theorem-line-integrals.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 14.3.4: Fundamental theorem of line integrals">Theorem 14.3.4</a> shows that line integrals involving conservative vector fields are straightforward to evaluate if we know a corresponding potential function. So now we want to do two things:</div>
+<a href="section-the-fundamental-theorem-for-line-integrals.html#theorem-fundamental-theorem-line-integrals" class="xref" data-knowl="./knowl/xref/theorem-fundamental-theorem-line-integrals.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 14.3.4: Fundamental theorem of line integrals">Theorem 14.3.4</a> shows that line integrals involving conservative vector fields are straightforward to evaluate if we know a corresponding potential function.  So now we want to do two things:</div>
 <ol class="decimal" id="subsection-conservative-vector-fields-2-2"><li id="subsection-conservative-vector-fields-2-2-1">
 <div class="para" id="subsection-conservative-vector-fields-2-2-1-1">Given a vector field <span class="process-math">\(\vb{F}\text{,}\)</span> determine if it’s conservative.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-conservative-vector-fields-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -904,19 +954,20 @@ C_{3} \amp : \vb{r}_{3}(t) = \dotprod{t, \ln t}, 1\leq t\leq e \text{.}
 <div class="autopermalink" data-description="Paragraph"><a href="#subsection-conservative-vector-fields-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsection-conservative-vector-fields-3">
-<div class="para">For the first, we can use our intuition that conservative vector fields shouldn’t rotate. So let’s assume that <span class="process-math">\(\vb{F} = \dotprod{P,Q}\)</span> is a (differentiable) vector field on <span class="process-math">\(\RR^{2}\)</span> and let <span class="process-math">\((x,y)\)</span> be a point in the plane. We can estimate the rotation, or <em class="emphasis">circulation</em>, of <span class="process-math">\(\vb{F}\)</span> at <span class="process-math">\((x,y)\)</span> by constructing a rectangle with length <span class="process-math">\(\Delta x\)</span> and height <span class="process-math">\(\Delta y\)</span> at <span class="process-math">\((x,y)\)</span> and measuring how <span class="process-math">\(\vb{F}\)</span> flows counterclockwise around the rectangle. If we do so, then we can estimate the circulation along each side as follows:</div>
+<div class="para">For the first, we can use our intuition that conservative vector fields shouldn’t rotate.  So let’s assume that <span class="process-math">\(\vb{F} = \dotprod{P,Q}\)</span> is a (differentiable) vector field on <span class="process-math">\(\RR^{2}\)</span> and let <span class="process-math">\((x,y)\)</span> be a point in the plane.  We can estimate the rotation, or <em class="emphasis">circulation</em>, of <span class="process-math">\(\vb{F}\)</span> at <span class="process-math">\((x,y)\)</span> by constructing a rectangle with length <span class="process-math">\(\Delta x\)</span> and height <span class="process-math">\(\Delta y\)</span> at <span class="process-math">\((x,y)\)</span> and measuring how <span class="process-math">\(\vb{F}\)</span> flows counterclockwise around the rectangle.  If we do so, then we can estimate the circulation along each side as follows:</div>
 <div class="displaymath process-math" id="subsection-conservative-vector-fields-3-11">
 \begin{align*}
-\text{Top:} \amp P(x,y + \Delta y)\cdot(-\Delta x\vb{i})\\
-\text{Bottom:} \amp P(x, y)\cdot(\Delta x)\vb{i}\\
-\text{Left:} \amp Q(x,y)\cdot(-\Delta y\vb{j})\\
-\text{Right:} \amp Q(x + \Delta x,y)\cdot(\Delta y\vb{j})\text{.}
+\text{Top:} \amp\amp P(x,y + \Delta y)\cdot(-\Delta x\vb{i})\\
+\text{Bottom:} \amp\amp P(x, y)\cdot(\Delta x)\vb{i}\\
+\text{Left:} \amp\amp Q(x,y)\cdot(-\Delta y\vb{j})\\
+\text{Right:} \amp\amp Q(x + \Delta x,y)\cdot(\Delta y\vb{j})\text{.}
 \end{align*}
 </div>
 <div class="para">Therefore the total circulation near <span class="process-math">\((x,y)\)</span> should be about</div>
 <div class="displaymath process-math" id="subsection-conservative-vector-fields-3-13">
 \begin{equation*}
-\Delta x\vb{i}\brackets{P(x,y) - P(x, y + \Delta y)} + \Delta y\vb{j}\brackets{Q(x + \Delta x, y) - Q(x,y)}\text{.}
+\Delta x\vb{i}\brackets{P(x,y) - P(x, y + \Delta y)} +
+\Delta y\vb{j}\brackets{Q(x + \Delta x, y) - Q(x,y)}\text{.}
 \end{equation*}
 </div>
 <div class="para">If we divide by <span class="process-math">\(\Delta x\Delta y\)</span> to normalize, then we can say that the circulation is about</div>
@@ -931,10 +982,11 @@ C_{3} \amp : \vb{r}_{3}(t) = \dotprod{t, \ln t}, 1\leq t\leq e \text{.}
 <span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Conservative vector fields are irrotational.</span>
 </h4>
 <div class="para logical" id="theorem-conservative-vector-fields-are-irrotational-2-1">
-<div class="para">Let <span class="process-math">\(\vb{F} = \dotprod{P,Q}\)</span> be a continuously differentiable vector field on an open simply connected region in <span class="process-math">\(\RR^{2}\text{.}\)</span> Then <span class="process-math">\(\vb{F}\)</span> is conservative on this region if and only if</div>
+<div class="para">Let <span class="process-math">\(\vb{F} = \dotprod{P,Q}\)</span> be a continuously differentiable vector field on an open simply connected region in <span class="process-math">\(\RR^{2}\text{.}\)</span>  Then <span class="process-math">\(\vb{F}\)</span> is conservative on this region if and only if</div>
 <div class="displaymath process-math" id="theorem-conservative-vector-fields-are-irrotational-2-1-4">
 \begin{equation*}
-\pdv{Q}{x} - \pdv{P}{y} = 0\text{.}
+\pdv{Q}{x}
+- \pdv{P}{y} = 0\text{.}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#theorem-conservative-vector-fields-are-irrotational-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -943,10 +995,12 @@ C_{3} \amp : \vb{r}_{3}(t) = \dotprod{t, \ln t}, 1\leq t\leq e \text{.}
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.3.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Finding a line integral.</span>
 </h4>
 <div class="para logical" id="example-finding-a-line-integral-2-1">
-<div class="para">Let <span class="process-math">\(\vb{F} = (3x^{2} + 2y^{2})\vb{i} + (4xy - e^{-y^{2}})\vb{j}\)</span> and let <span class="process-math">\(C\)</span> denote the ellipse</div>
+<div class="para">Let <span class="process-math">\(\vb{F} = (3x^{2} + 2y^{2})\vb{i} + (4xy -
+e^{-y^{2}})\vb{j}\)</span> and let <span class="process-math">\(C\)</span> denote the ellipse</div>
 <div class="displaymath process-math" id="example-finding-a-line-integral-2-1-3">
 \begin{equation*}
-\frac{(x-1)^{2}}{9} + \frac{(3y + 2)^{2}}{10} = 5\text{.}
+\frac{(x-1)^{2}}{9} + \frac{(3y + 2)^{2}}{10} =
+5\text{.}
 \end{equation*}
 </div>
 <div class="para">Find <span class="process-math">\(\oint_{C}\vb{F}\cdot\vb{T}\dd{s}\text{.}\)</span>
@@ -954,53 +1008,61 @@ C_{3} \amp : \vb{r}_{3}(t) = \dotprod{t, \ln t}, 1\leq t\leq e \text{.}
 <div class="autopermalink" data-description="Paragraph"><a href="#example-finding-a-line-integral-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="example-finding-a-line-integral-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="example-finding-a-line-integral-3-1">We can parameterize <span class="process-math">\(C\)</span> and then compute <span class="process-math">\(\oint_{C}\vb{F}\dr\)</span> as in <a href="section-line-integrals.html" class="internal" title="Section 14.2: Line integrals">Section 14.2</a>, but we’ll first check if <span class="process-math">\(\vb{F}\)</span> is conservative. Since <span class="process-math">\(\pdv{Q}{x} = 4y = \pdv{P}{y}\text{,}\)</span> it follows that <span class="process-math">\(\vb{F}\)</span> is conservative. Hence <span class="process-math">\(\oint_{C}\vb{F}\dr = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-finding-a-line-integral-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-finding-a-line-integral-3-1">We can parameterize <span class="process-math">\(C\)</span> and then compute <span class="process-math">\(\oint_{C}\vb{F}\dr\)</span> as in <a href="section-line-integrals.html" class="internal" title="Section 14.2: Line integrals">Section 14.2</a>, but we’ll first check if <span class="process-math">\(\vb{F}\)</span> is conservative.  Since <span class="process-math">\(\pdv{Q}{x} = 4y = \pdv{P}{y}\text{,}\)</span> it follows that <span class="process-math">\(\vb{F}\)</span> is conservative.  Hence <span class="process-math">\(\oint_{C}\vb{F}\dr = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#example-finding-a-line-integral-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 14.3.8.1"><a href="#example-finding-a-line-integral-3" title="Copy heading and permalink for Solution 14.3.8.1" aria-label="Copy heading and permalink for Solution 14.3.8.1">🔗</a></div>
 </div></details></div>
 <div class="autopermalink" data-description="Example 14.3.8: Finding a line integral"><a href="#example-finding-a-line-integral" title="Copy heading and permalink for Example 14.3.8: Finding a line integral" aria-label="Copy heading and permalink for Example 14.3.8: Finding a line integral">🔗</a></div></article><div class="para logical" id="subsection-conservative-vector-fields-6">
-<div class="para">The quantity <span class="process-math">\(\pdv{Q}{x} - \pdv{P}{y}\)</span> in <a href="section-the-fundamental-theorem-for-line-integrals.html#theorem-conservative-vector-fields-are-irrotational" class="xref" data-knowl="./knowl/xref/theorem-conservative-vector-fields-are-irrotational.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 14.3.7: Conservative vector fields are irrotational">Theorem 14.3.7</a> is called the (two-dimensional) <dfn class="terminology">curl</dfn> of <span class="process-math">\(\vb{F}\)</span> and is denoted by <span class="process-math">\(\curlt \vb{F}\text{.}\)</span> This represents the tendency of <span class="process-math">\(\vb{F}\)</span> to rotate counterclockwise around a given point. This can be extended to three dimensions using the following formula:</div>
+<div class="para">The quantity <span class="process-math">\(\pdv{Q}{x} - \pdv{P}{y}\)</span> in <a href="section-the-fundamental-theorem-for-line-integrals.html#theorem-conservative-vector-fields-are-irrotational" class="xref" data-knowl="./knowl/xref/theorem-conservative-vector-fields-are-irrotational.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 14.3.7: Conservative vector fields are irrotational">Theorem 14.3.7</a> is called the (two-dimensional) <dfn class="terminology">curl</dfn> of <span class="process-math">\(\vb{F}\)</span> and is denoted by <span class="process-math">\(\curlt
+\vb{F}\text{.}\)</span>  This represents the tendency of <span class="process-math">\(\vb{F}\)</span> to rotate counterclockwise around a given point.  This can be extended to three dimensions using the following formula:</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/theorem-conservative-vector-fields-are-irrotational.html" id="subsection-conservative-vector-fields-6-7">
 \begin{equation*}
 \curlt\vb{F} = \curl\vb{F}
 \end{equation*}
 </div>
-<div class="para">where <span class="process-math">\(\nabla = \dotprod{\pdv{}{x}, \pdv{}{y}, \pdv{}{z}}\text{.}\)</span> The direction of <span class="process-math">\(\curl\vb{F}\)</span> provides the <em class="emphasis">axis of rotation</em> at a point, and its magnitude is the tendency of <span class="process-math">\(\vb{F}\)</span> to rotate counterclockwise around this axis of rotation (viewed head on).</div>
+<div class="para">where <span class="process-math">\(\nabla =
+\dotprod{\pdv{}{x}, \pdv{}{y}, \pdv{}{z}}\text{.}\)</span>  The direction of <span class="process-math">\(\curl\vb{F}\)</span> provides the <em class="emphasis">axis of rotation</em> at a point, and its magnitude is the tendency of <span class="process-math">\(\vb{F}\)</span> to rotate counterclockwise around this axis of rotation (viewed head on).</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#subsection-conservative-vector-fields-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="example-testing-a-vector-field-in-RR3"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.3.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Testing a vector field in <span class="process-math">\(\RR^{3}\)</span>.</span>
 </h4>
-<div class="para" id="example-testing-a-vector-field-in-RR3-2-1">Let <span class="process-math">\(\vb{F} = \dotprod{e^{x}\cos y + yz, xz - e^{x}\sin y, xy + z}\text{.}\)</span> Determine if <span class="process-math">\(\vb{F}\)</span> is conservative.<div class="autopermalink" data-description="Paragraph"><a href="#example-testing-a-vector-field-in-RR3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-testing-a-vector-field-in-RR3-2-1">Let <span class="process-math">\(\vb{F} = \dotprod{e^{x}\cos y + yz, xz - e^{x}\sin
+y, xy + z}\text{.}\)</span>  Determine if <span class="process-math">\(\vb{F}\)</span> is conservative.<div class="autopermalink" data-description="Paragraph"><a href="#example-testing-a-vector-field-in-RR3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <details id="example-testing-a-vector-field-in-RR3-2-2" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading"><span class="type">Aside</span></h5></summary><aside class="aside aside-like knowl__content"><div class="para" id="example-testing-a-vector-field-in-RR3-2-2-1">This is taken from Example 2 on page 1165 of <em class="emphasis">Thomas’ Calculus</em>, <span class="process-math">\(11^{\text{th}}\)</span> edition.<div class="autopermalink" data-description="Paragraph"><a href="#example-testing-a-vector-field-in-RR3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></aside></details><div class="solutions"><details id="example-testing-a-vector-field-in-RR3-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="example-testing-a-vector-field-in-RR3-3-1">We need to check if <span class="process-math">\(\curl\vb{F} = \vb{0}\text{.}\)</span> So we compute this like a cross product, giving <span class="process-math">\(\vb{0}\text{.}\)</span> Hence the vector field is irrotational and therefore conservative.<div class="autopermalink" data-description="Paragraph"><a href="#example-testing-a-vector-field-in-RR3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-testing-a-vector-field-in-RR3-3-1">We need to check if <span class="process-math">\(\curl\vb{F} = \vb{0}\text{.}\)</span>  So we compute this like a cross product, giving <span class="process-math">\(\vb{0}\text{.}\)</span> Hence the vector field is irrotational and therefore conservative.<div class="autopermalink" data-description="Paragraph"><a href="#example-testing-a-vector-field-in-RR3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 14.3.9.1"><a href="#example-testing-a-vector-field-in-RR3-3" title="Copy heading and permalink for Solution 14.3.9.1" aria-label="Copy heading and permalink for Solution 14.3.9.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Example 14.3.9: Testing a vector field in \RR^{3}"><a href="#example-testing-a-vector-field-in-RR3" title="Copy heading and permalink for Example 14.3.9: Testing a vector field in \RR^{3}" aria-label="Copy heading and permalink for Example 14.3.9: Testing a vector field in \RR^{3}">🔗</a></div></article><div class="para" id="subsection-conservative-vector-fields-8">So now we have a good test for if a vector field is conservative. Next, we want to be able to find a corresponding potential function to a conservative vector field.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-conservative-vector-fields-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Example 14.3.9: Testing a vector field in \RR^{3}"><a href="#example-testing-a-vector-field-in-RR3" title="Copy heading and permalink for Example 14.3.9: Testing a vector field in \RR^{3}" aria-label="Copy heading and permalink for Example 14.3.9: Testing a vector field in \RR^{3}">🔗</a></div></article><div class="para" id="subsection-conservative-vector-fields-8">So now we have a good test for if a vector field is conservative.  Next, we want to be able to find a corresponding potential function to a conservative vector field.<div class="autopermalink" data-description="Paragraph"><a href="#subsection-conservative-vector-fields-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="subsection-conservative-vector-fields-9">
-<div class="para">Consider the vector field <span class="process-math">\(\vb{F}\)</span> from <a href="section-the-fundamental-theorem-for-line-integrals.html#example-testing-a-vector-field-in-RR3" class="xref" data-knowl="./knowl/xref/example-testing-a-vector-field-in-RR3.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 14.3.9: Testing a vector field in \RR^{3}">Example 14.3.9</a>. We know this is conservative, so there must exist a corresponding potential function <span class="process-math">\(f(x,y,z)\)</span> such that <span class="process-math">\(\grad f = \vb{F}\text{.}\)</span> To find this, we start by noting that whatever <span class="process-math">\(f\)</span> is, its partial derivatives must be the components of <span class="process-math">\(\vb{F}\text{.}\)</span> In particular,</div>
+<div class="para">Consider the vector field <span class="process-math">\(\vb{F}\)</span> from <a href="section-the-fundamental-theorem-for-line-integrals.html#example-testing-a-vector-field-in-RR3" class="xref" data-knowl="./knowl/xref/example-testing-a-vector-field-in-RR3.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 14.3.9: Testing a vector field in \RR^{3}">Example 14.3.9</a>.  We know this is conservative, so there must exist a corresponding potential function <span class="process-math">\(f(x,y,z)\)</span> such that <span class="process-math">\(\grad f = \vb{F}\text{.}\)</span>  To find this, we start by noting that whatever <span class="process-math">\(f\)</span> is, its partial derivatives must be the components of <span class="process-math">\(\vb{F}\text{.}\)</span>  In particular,</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-testing-a-vector-field-in-RR3.html" id="subsection-conservative-vector-fields-9-7">
 \begin{equation*}
-\pdv{f}{x} = e^{x}\cos y + yz \implies f = e^{x}\cos y + xyz + g(y,z)\text{.}
+\pdv{f}{x} =
+e^{x}\cos y + yz \implies f = e^{x}\cos y + xyz + g(y,z)\text{.}
 \end{equation*}
 </div>
 <div class="para">Now we look at <span class="process-math">\(\pdv{f}{y}\)</span> to pin down <span class="process-math">\(g(y,z)\text{:}\)</span>
 </div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-testing-a-vector-field-in-RR3.html" id="subsection-conservative-vector-fields-9-10">
 \begin{equation*}
-\pdv{f}{y} = xz - e^{x}\sin y = -e^{x}\sin y + xz + \pdv{g}{y} \implies \pdv{g}{y} = 0\text{,}
+\pdv{f}{y} = xz - e^{x}\sin y = -e^{x}\sin y + xz +
+\pdv{g}{y} \implies \pdv{g}{y} = 0\text{,}
 \end{equation*}
 </div>
-<div class="para">and so <span class="process-math">\(g(y,z) = g(z)\text{.}\)</span> Finally,</div>
+<div class="para">and so <span class="process-math">\(g(y,z) =
+g(z)\text{.}\)</span>  Finally,</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-testing-a-vector-field-in-RR3.html" id="subsection-conservative-vector-fields-9-12">
 \begin{equation*}
-\pdv{f}{z} = xy + z = xy + g'(z) \implies g'(z) = z
+\pdv{f}{z} = xy + z = xy + g'(z)
+\implies g'(z) = z
 \end{equation*}
 </div>
-<div class="para">and so <span class="process-math">\(g(z) = \frac{z^{2}}{2} + C\text{.}\)</span> Therefore a potential function for <span class="process-math">\(\vb{F}\)</span> is</div>
+<div class="para">and so <span class="process-math">\(g(z) = \frac{z^{2}}{2} +
+C\text{.}\)</span>  Therefore a potential function for <span class="process-math">\(\vb{F}\)</span> is</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-testing-a-vector-field-in-RR3.html" id="subsection-conservative-vector-fields-9-15">
 \begin{equation*}
 f(x,y,z) = e^{x}\cos y + xyz + \frac{z^{2}}{2}\text{.}
@@ -1012,41 +1074,138 @@ f(x,y,z) = e^{x}\cos y + xyz + \frac{z^{2}}{2}\text{.}
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">14.3.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Line integral along an elliptical arc.</span>
 </h4>
 <div class="para logical" id="example-line-integral-along-an-elliptical-arc-2-1">
-<div class="para">Compute <span class="process-math">\(\int_{C}(1 + xy)e^{xy}\,dx + x^{2}e^{xy}\,dy\text{,}\)</span> where</div>
+<div class="para">Compute <span class="process-math">\(\int_{C}(1 + xy)e^{xy}\,dx +
+x^{2}e^{xy}\,dy\text{,}\)</span> where</div>
 <div class="displaymath process-math" id="example-line-integral-along-an-elliptical-arc-2-1-2">
 \begin{equation*}
-C: \vb{r}(t) = \cos t\vb{i} + 2\sin t\vb{j}, 0\leq t\leq \frac{\pi}{2}\text{.}
+C: \vb{r}(t) = \cos t\vb{i}
++ 2\sin t\vb{j}, 0\leq t\leq \frac{\pi}{2}\text{.}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#example-line-integral-along-an-elliptical-arc-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions"><details id="example-line-integral-along-an-elliptical-arc-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
-<div class="para" id="example-line-integral-along-an-elliptical-arc-3-1">First, we’ll check if <span class="process-math">\(\vb{F}\)</span> is conservative. If it is, we can use <a href="section-the-fundamental-theorem-for-line-integrals.html#theorem-fundamental-theorem-line-integrals" class="xref" data-knowl="./knowl/xref/theorem-fundamental-theorem-line-integrals.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 14.3.4: Fundamental theorem of line integrals">Theorem 14.3.4</a>. Since <span class="process-math">\(\pdv{Q}{x} - \pdv{P}{y} = 2xe^{xy} + x^{2}ye^{xy} - \brackets{xe^{xy} + \parens{x + x^{2}y}e^{xy}} = 0\text{,}\)</span> we see that <span class="process-math">\(\vb{F}\)</span> is in fact conservative.<div class="autopermalink" data-description="Paragraph"><a href="#example-line-integral-along-an-elliptical-arc-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="example-line-integral-along-an-elliptical-arc-3-1">First, we’ll check if <span class="process-math">\(\vb{F}\)</span> is conservative.  If it is, we can use <a href="section-the-fundamental-theorem-for-line-integrals.html#theorem-fundamental-theorem-line-integrals" class="xref" data-knowl="./knowl/xref/theorem-fundamental-theorem-line-integrals.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 14.3.4: Fundamental theorem of line integrals">Theorem 14.3.4</a>.  Since <span class="process-math">\(\pdv{Q}{x} - \pdv{P}{y} =
+2xe^{xy} + x^{2}ye^{xy} - \brackets{xe^{xy} + \parens{x +
+x^{2}y}e^{xy}} = 0\text{,}\)</span> we see that <span class="process-math">\(\vb{F}\)</span> is in fact conservative.<div class="autopermalink" data-description="Paragraph"><a href="#example-line-integral-along-an-elliptical-arc-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="example-line-integral-along-an-elliptical-arc-3-2">
 <div class="para">Now we need to find a potential function <span class="process-math">\(f(x,y)\text{.}\)</span> Since <span class="process-math">\(f_{x} = (1 + xy)e^{xy}\text{,}\)</span> we can integrate with respect to <span class="process-math">\(x\)</span> to get</div>
 <div class="displaymath process-math" id="example-line-integral-along-an-elliptical-arc-3-2-4">
 \begin{equation*}
-f(x,y) = xe^{xy} + g(y)\text{.}
+f(x,y) = xe^{xy} +
+g(y)\text{.}
 \end{equation*}
 </div>
 <div class="para">Now differentiate with respect to <span class="process-math">\(y\)</span> to get</div>
 <div class="displaymath process-math" id="example-line-integral-along-an-elliptical-arc-3-2-6">
 \begin{equation*}
-x^{2}e^{xy} = x^{2}e^{xy} + g^{\prime}(y) \implies g(y) = C\text{.}
+x^{2}e^{xy} = x^{2}e^{xy} + g^{\prime}(y) \implies
+g(y) = C\text{.}
 \end{equation*}
 </div>
 <div class="para">Hence a potential function for <span class="process-math">\(\vb{F}\)</span> is <span class="process-math">\(f = xe^{xy}\text{,}\)</span> and so</div>
 <div class="displaymath process-math" id="example-line-integral-along-an-elliptical-arc-3-2-9">
 \begin{equation*}
-\int_{C}(1 + xy)e^{xy}\,dx + x^{2}e^{xy}\,dy = -1\text{.}
+\int_{C}(1
++ xy)e^{xy}\,dx + x^{2}e^{xy}\,dy = -1\text{.}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#example-line-integral-along-an-elliptical-arc-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 14.3.10.1"><a href="#example-line-integral-along-an-elliptical-arc-3" title="Copy heading and permalink for Solution 14.3.10.1" aria-label="Copy heading and permalink for Solution 14.3.10.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Example 14.3.10: Line integral along an elliptical arc"><a href="#example-line-integral-along-an-elliptical-arc" title="Copy heading and permalink for Example 14.3.10: Line integral along an elliptical arc" aria-label="Copy heading and permalink for Example 14.3.10: Line integral along an elliptical arc">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Conservative vector fields"><a href="#subsection-conservative-vector-fields" title="Copy heading and permalink for Subsection: Conservative vector fields" aria-label="Copy heading and permalink for Subsection: Conservative vector fields">🔗</a></div></section><div class="autopermalink" data-description="Section 14.3: The fundamental theorem for line integrals"><a href="#section-the-fundamental-theorem-for-line-integrals" title="Copy heading and permalink for Section 14.3: The fundamental theorem for line integrals" aria-label="Copy heading and permalink for Section 14.3: The fundamental theorem for line integrals">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Example 14.3.10: Line integral along an elliptical arc"><a href="#example-line-integral-along-an-elliptical-arc" title="Copy heading and permalink for Example 14.3.10: Line integral along an elliptical arc" aria-label="Copy heading and permalink for Example 14.3.10: Line integral along an elliptical arc">🔗</a></div></article><div class="autopermalink" data-description="Subsection: Conservative vector fields"><a href="#subsection-conservative-vector-fields" title="Copy heading and permalink for Subsection: Conservative vector fields" aria-label="Copy heading and permalink for Subsection: Conservative vector fields">🔗</a></div></section><section class="worksheet" id="section-the-fundamental-theorem-for-line-integrals-5" data-margins="0.75in 0.75in 0.75in 0.75in"><h3 class="heading hide-type">
+<span class="type">Worksheet</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Worksheet</span><div class="print-links"><a href="?printpreview=section-the-fundamental-theorem-for-line-integrals-5" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
+</h3>
+<article class="exercise exercise-like" id="section-the-fundamental-theorem-for-line-integrals-5-1"><h4 class="heading">
+<span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Definition 14.3.1.</span>
+</h4>
+<div class="para" id="section-the-fundamental-theorem-for-line-integrals-5-1-2-1">Let <span class="process-math">\(\vb{F}\)</span> be a vector field.  We say that <span class="process-math">\(\vb{F}\)</span> is <dfn class="terminology">conservative</dfn> on a domain <span class="process-math">\(D\)</span> if <span class="process-math">\(\vb{F} = \grad f\)</span> on <span class="process-math">\(D\)</span> for some scalar function <span class="process-math">\(f\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#section-the-fundamental-theorem-for-line-integrals-5-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="2in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 1: Definition 14.3.1"><a href="#section-the-fundamental-theorem-for-line-integrals-5-1" title="Copy heading and permalink for Worksheet Exercise 1: Definition 14.3.1" aria-label="Copy heading and permalink for Worksheet Exercise 1: Definition 14.3.1">🔗</a></div></article><article class="exercise exercise-like" id="section-the-fundamental-theorem-for-line-integrals-5-2"><h4 class="heading">
+<span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 14.3.4.</span>
+</h4>
+<div class="para logical" id="section-the-fundamental-theorem-for-line-integrals-5-2-2-1">
+<div class="para">Suppose that <span class="process-math">\(\vb{F}\)</span> is a conservative vector field (in the sense of <a href="section-the-fundamental-theorem-for-line-integrals.html#definition-conservative-vector-fields-mathematical-definition" class="xref" data-knowl="./knowl/xref/definition-conservative-vector-fields-mathematical-definition.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 14.3.1: Conservative vector fields (mathematical definition)">Definition 14.3.1</a>) with continuous components on an open simply connected region <span class="process-math">\(D\text{.}\)</span>  Then <span class="process-math">\(\vb{F}\)</span> is path independent.  Furthermore, if <span class="process-math">\(\vb{F} = \grad
+f\)</span> and <span class="process-math">\(C\)</span> is a curve in <span class="process-math">\(D\)</span> with initial point <span class="process-math">\(A\)</span> and terminal point <span class="process-math">\(B\text{,}\)</span> then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/definition-conservative-vector-fields-mathematical-definition.html" id="section-the-fundamental-theorem-for-line-integrals-5-2-2-1-10">
+\begin{equation*}
+\int_{C}\vb{F}\cdot d\vb{r} = f(B) - f(A)\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-the-fundamental-theorem-for-line-integrals-5-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="2in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 2: Theorem 14.3.4"><a href="#section-the-fundamental-theorem-for-line-integrals-5-2" title="Copy heading and permalink for Worksheet Exercise 2: Theorem 14.3.4" aria-label="Copy heading and permalink for Worksheet Exercise 2: Theorem 14.3.4">🔗</a></div></article><article class="exercise exercise-like" id="section-the-fundamental-theorem-for-line-integrals-5-3"><h4 class="heading">
+<span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Example 14.3.5.</span>
+</h4>
+<div class="para" id="section-the-fundamental-theorem-for-line-integrals-5-3-2-1">Let <span class="process-math">\(\vb{F} = \grad(x^{2}y^{3})\)</span> and let <span class="process-math">\(C\)</span> be the path in the <span class="process-math">\(xy\)</span>-plane composed of the line segment from <span class="process-math">\((-1,1)\)</span> to <span class="process-math">\((0,1)\)</span> followed by the circular arc from <span class="process-math">\((0,1)\)</span> to <span class="process-math">\((1,0)\)</span> followed by the logarithmic arc <span class="process-math">\(y = \ln x\)</span> from <span class="process-math">\((1,0)\)</span> to <span class="process-math">\((e,1)\text{.}\)</span>  Find <span class="process-math">\(\int_{C}\vb{F}\cdot\vb{T}\dd{s}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#section-the-fundamental-theorem-for-line-integrals-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="3in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 3: Example 14.3.5"><a href="#section-the-fundamental-theorem-for-line-integrals-5-3" title="Copy heading and permalink for Worksheet Exercise 3: Example 14.3.5" aria-label="Copy heading and permalink for Worksheet Exercise 3: Example 14.3.5">🔗</a></div></article><article class="exercise exercise-like" id="section-the-fundamental-theorem-for-line-integrals-5-4"><h4 class="heading">
+<span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Example 14.3.6.</span>
+</h4>
+<div class="para" id="section-the-fundamental-theorem-for-line-integrals-5-4-2-1">Let <span class="process-math">\(\vb{F} = \dotprod{xy^{2}, x^{2}y}\)</span> be a force field and let <span class="process-math">\(C\)</span> denote the parabolic arc <span class="process-math">\(y =
+x^{2}\)</span> from <span class="process-math">\((1,1)\)</span> to <span class="process-math">\((3,9)\text{.}\)</span>  Find the work done by <span class="process-math">\(\vb{F}\)</span> along <span class="process-math">\(C\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#section-the-fundamental-theorem-for-line-integrals-5-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="2in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 4: Example 14.3.6"><a href="#section-the-fundamental-theorem-for-line-integrals-5-4" title="Copy heading and permalink for Worksheet Exercise 4: Example 14.3.6" aria-label="Copy heading and permalink for Worksheet Exercise 4: Example 14.3.6">🔗</a></div></article><article class="exercise exercise-like" id="section-the-fundamental-theorem-for-line-integrals-5-5"><h4 class="heading">
+<span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Theorem 14.3.7.</span>
+</h4>
+<div class="para logical" id="section-the-fundamental-theorem-for-line-integrals-5-5-2-1">
+<div class="para">Let <span class="process-math">\(\vb{F} = \dotprod{P,Q}\)</span> be a continuously differentiable vector field on an open simply connected region in <span class="process-math">\(\RR^{2}\text{.}\)</span>  Then <span class="process-math">\(\vb{F}\)</span> is conservative on this region if and only if</div>
+<div class="displaymath process-math" id="section-the-fundamental-theorem-for-line-integrals-5-5-2-1-4">
+\begin{equation*}
+\pdv{Q}{x}
+- \pdv{P}{y} = 0\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-the-fundamental-theorem-for-line-integrals-5-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="2in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 5: Theorem 14.3.7"><a href="#section-the-fundamental-theorem-for-line-integrals-5-5" title="Copy heading and permalink for Worksheet Exercise 5: Theorem 14.3.7" aria-label="Copy heading and permalink for Worksheet Exercise 5: Theorem 14.3.7">🔗</a></div></article><article class="exercise exercise-like" id="section-the-fundamental-theorem-for-line-integrals-5-6"><h4 class="heading">
+<span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Example 14.3.8.</span>
+</h4>
+<div class="para logical" id="section-the-fundamental-theorem-for-line-integrals-5-6-2-1">
+<div class="para">Let <span class="process-math">\(\vb{F} = (3x^{2} + 2y^{2})\vb{i} + (4xy -
+e^{-y^{2}})\vb{j}\)</span> and let <span class="process-math">\(C\)</span> denote the ellipse</div>
+<div class="displaymath process-math" id="section-the-fundamental-theorem-for-line-integrals-5-6-2-1-3">
+\begin{equation*}
+\frac{(x-1)^{2}}{9} + \frac{(3y + 2)^{2}}{10} =
+5\text{.}
+\end{equation*}
+</div>
+<div class="para">Find <span class="process-math">\(\oint_{C}\vb{F}\cdot\vb{T}\dd{s}\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-the-fundamental-theorem-for-line-integrals-5-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="2in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 6: Example 14.3.8"><a href="#section-the-fundamental-theorem-for-line-integrals-5-6" title="Copy heading and permalink for Worksheet Exercise 6: Example 14.3.8" aria-label="Copy heading and permalink for Worksheet Exercise 6: Example 14.3.8">🔗</a></div></article><article class="exercise exercise-like" id="section-the-fundamental-theorem-for-line-integrals-5-7"><h4 class="heading">
+<span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Example 14.3.9.</span>
+</h4>
+<div class="para" id="section-the-fundamental-theorem-for-line-integrals-5-7-2-1">Let <span class="process-math">\(\vb{F} = \dotprod{e^{x}\cos y + yz, xz - e^{x}\sin
+y, xy + z}\text{.}\)</span>  Determine if <span class="process-math">\(\vb{F}\)</span> is conservative.<div class="autopermalink" data-description="Paragraph"><a href="#section-the-fundamental-theorem-for-line-integrals-5-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <details id="section-the-fundamental-theorem-for-line-integrals-5-7-2-2" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h5 class="heading"><span class="type">Aside</span></h5></summary><aside class="aside aside-like knowl__content"><div class="para" id="section-the-fundamental-theorem-for-line-integrals-5-7-2-2-1">This is taken from Example 2 on page 1165 of <em class="emphasis">Thomas’ Calculus</em>, <span class="process-math">\(11^{\text{th}}\)</span> edition.<div class="autopermalink" data-description="Paragraph"><a href="#section-the-fundamental-theorem-for-line-integrals-5-7-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></aside></details><div class="workspace" data-space="2in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 7: Example 14.3.9"><a href="#section-the-fundamental-theorem-for-line-integrals-5-7" title="Copy heading and permalink for Worksheet Exercise 7: Example 14.3.9" aria-label="Copy heading and permalink for Worksheet Exercise 7: Example 14.3.9">🔗</a></div></article><article class="exercise exercise-like" id="section-the-fundamental-theorem-for-line-integrals-5-8"><h4 class="heading">
+<span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Example 14.3.8.</span>
+</h4>
+<div class="para logical" id="section-the-fundamental-theorem-for-line-integrals-5-8-2-1">
+<div class="para">Compute <span class="process-math">\(\int_{C}(1 + xy)e^{xy}\,dx +
+x^{2}e^{xy}\,dy\text{,}\)</span> where</div>
+<div class="displaymath process-math" id="section-the-fundamental-theorem-for-line-integrals-5-8-2-1-2">
+\begin{equation*}
+C: \vb{r}(t) = \cos t\vb{i}
++ 2\sin t\vb{j}, 0\leq t\leq \frac{\pi}{2}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#section-the-fundamental-theorem-for-line-integrals-5-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="workspace" data-space="2in"></div>
+<div class="autopermalink" data-description="Worksheet Exercise 8: Example 14.3.8"><a href="#section-the-fundamental-theorem-for-line-integrals-5-8" title="Copy heading and permalink for Worksheet Exercise 8: Example 14.3.8" aria-label="Copy heading and permalink for Worksheet Exercise 8: Example 14.3.8">🔗</a></div></article><div class="autopermalink" data-description="Worksheet"><a href="#section-the-fundamental-theorem-for-line-integrals-5" title="Copy heading and permalink for Worksheet" aria-label="Copy heading and permalink for Worksheet">🔗</a></div></section><div class="autopermalink" data-description="Section 14.3: The fundamental theorem for line integrals"><a href="#section-the-fundamental-theorem-for-line-integrals" title="Copy heading and permalink for Section 14.3: The fundamental theorem for line integrals" aria-label="Copy heading and permalink for Section 14.3: The fundamental theorem for line integrals">🔗</a></div></section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="section-line-integrals.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="section-green-s-theorem.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
