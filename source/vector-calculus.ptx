@@ -1742,9 +1742,91 @@
         </p>
       </statement>
     </example>
-    <p>
-      SUGGESTED PROBLEMS: 1, 3, 5, 9, 17
-    </p>
+    <worksheet>
+      <title>Guided notes</title>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="theorem-green-s-theorem"/>
+        </title>
+        <statement>
+          <p>
+            Let <m>C</m> be a positively oriented, piecewise smooth,
+            simple closed curve in the plane containing some region
+            <m>D</m>.  Let <m>\vb{F} = \dotprod{P,Q}</m> denote a vector
+            field that is continuously differentiable on an open, simply
+            connected domain containing <m>C</m>.  Then
+            <me>\oint_{C}\vb{F}\cdot\vb{T}\dd{s} =
+            \iint_{D}\brackets{\pdv{Q}{x} - \pdv{P}{y}}\,dA</me>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="example-green-s-theorem-on-a-triangle"/>
+        </title>
+        <statement>
+          <p>
+            Compute <m>\oint_{C}\vb{F}\dr</m>, where <m>\vb{F} =
+            \dotprod{-3y, 3x}</m> and <m>C</m> is the triangle with
+            vertices <m>(0,0), (1,0)</m> and <m>(0,2)</m> traversed once
+            counterclockwise.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="example-work-with-green-s-theorem"/>
+        </title>
+        <statement>
+          <p>
+            Find the work done by <m>\vb{F} = \dotprod{y + e^{-x^{3}},
+            2x + \cos y^{2}}</m> along the boundary of the region
+            bounded by <m>y = x^{2}</m> and <m>x = y^{2}</m>, traversed
+            <em>clockwise</em> exactly once.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="example-circulation-along-an-annulus"/>
+        </title>
+        <statement>
+          <p>
+            Does <m>\vb{F} = (1 - y^{3})\vb{i} + (x^{3} +
+            e^{y^{2}})\vb{j}</m> flow with the boundary of the annulus
+            <m>D</m> bounded by <m>x^{2} + y^{2} = 1</m> and <m>x^{2} +
+            y^{2} = 9</m>?  Here, assume that the boundary of <m>D</m>
+            is oriented in a way that is consistent with Green's
+            Theorem.
+          </p>
+      </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="theorem-green-s-theorem-for-flux-integrals"/>
+        </title>
+        <statement>
+          <p>
+            Let <m>\vb{F}</m>, <m>C</m> and <m>D</m> satisfy the same
+            hypotheses as in <xref ref="theorem-green-s-theorem"
+            text="type-global" />.  Then
+            <me>\oint_{C}\vb{F}\cdot\vb{n}\dd{s} =
+            \iint_{D}\brackets{\pdv{P}{x} + \pdv{Q}{y}}\,dA</me>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="example-flux-across-a-square"/>
+        </title>
+        <statement>
+          <p>
+            Does <m>\vb{F} = \dotprod{y^{2} - x^{2}, x^{2} + y^{2}}</m>
+            tend to flow out of the unit square?
+          </p>
+        </statement>
+      </exercise>
+    </worksheet>
   </section>
   <section xml:id="section-curl-and-divergence" label="section-curl-and-divergence">
     <title>Curl and Divergence</title>
