@@ -7594,7 +7594,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "14.4",
   "title": "Green’s Theorem",
-  "body": " Green's Theorem  Recall that is the circulation of along . Likewise, is a measure of how rotates counterclockwise. These two quantities are tied together by Green's Theorem.   Green's Theorem  Green's Theorem   Let be a positively oriented, piecewise smooth, simple closed curve in the plane containing some region . Let denote a vector field that is continuously differentiable on an open, simply connected domain containing . Then .     Green's Theorem on a Triangle   Compute , where and is the triangle with vertices and traversed once counterclockwise.    First, note that isn't conservative and so we can't just say the integral is . Finding the line integral directly would require computing three separate line integrals, so we'll try Green's Theorem instead.  Let denote the inside of the triangle. Then we have , which simplifies to .     Work with Green's Theorem   Find the work done by along the boundary of the region bounded by and , traversed clockwise exactly once.     Circulation Along an Annulus   Does flow with the boundary of the annulus bounded by and ? Here, assume that the boundary of is oriented in a way that is consistent with Green's Theorem.     applies to circulation integrals, but there's also a version for flux integrals.   Green's Theorem flux integrals  Green's Theorem for Flux Integrals   Let , and satisfy the same hypotheses as in . Then .    The quantity is known as the divergence of , and measures how flows across a point.   Flux Across a Square   Does tend to flow out of the unit square?    SUGGESTED PROBLEMS: 1, 3, 5, 9, 17  "
+  "body": " Green's Theorem  Recall that is the circulation of along . Likewise, is a measure of how rotates counterclockwise. These two quantities are tied together by Green's Theorem.   Green's Theorem  Green's Theorem   Let be a positively oriented, piecewise smooth, simple closed curve in the plane containing some region . Let denote a vector field that is continuously differentiable on an open, simply connected domain containing . Then .     Green's Theorem on a Triangle   Compute , where and is the triangle with vertices and traversed once counterclockwise.    First, note that isn't conservative and so we can't just say the integral is . Finding the line integral directly would require computing three separate line integrals, so we'll try Green's Theorem instead.  Let denote the inside of the triangle. Then we have , which simplifies to .     Work with Green's Theorem   Find the work done by along the boundary of the region bounded by and , traversed clockwise exactly once.     Circulation Along an Annulus   Does flow with the boundary of the annulus bounded by and ? Here, assume that the boundary of is oriented in a way that is consistent with Green's Theorem.     applies to circulation integrals, but there's also a version for flux integrals.   Green's Theorem flux integrals  Green's Theorem for Flux Integrals   Let , and satisfy the same hypotheses as in . Then .    The quantity is known as the divergence of , and measures how flows across a point.   Flux Across a Square   Does tend to flow out of the unit square?     Guided notes       Let be a positively oriented, piecewise smooth, simple closed curve in the plane containing some region . Let denote a vector field that is continuously differentiable on an open, simply connected domain containing . Then .         Compute , where and is the triangle with vertices and traversed once counterclockwise.         Find the work done by along the boundary of the region bounded by and , traversed clockwise exactly once.         Does flow with the boundary of the annulus bounded by and ? Here, assume that the boundary of is oriented in a way that is consistent with Green's Theorem.         Let , and satisfy the same hypotheses as in . Then .         Does tend to flow out of the unit square?     "
 },
 {
   "id": "theorem-green-s-theorem",
@@ -7658,6 +7658,60 @@ var ptx_lunr_docs = [
   "number": "14.4.6",
   "title": "Flux Across a Square.",
   "body": " Flux Across a Square   Does tend to flow out of the unit square?   "
+},
+{
+  "id": "section-green-s-theorem-11-2",
+  "level": "2",
+  "url": "section-green-s-theorem.html#section-green-s-theorem-11-2",
+  "type": "Worksheet Exercise",
+  "number": "14.4.1",
+  "title": "Theorem 14.4.1.",
+  "body": "     Let be a positively oriented, piecewise smooth, simple closed curve in the plane containing some region . Let denote a vector field that is continuously differentiable on an open, simply connected domain containing . Then .   "
+},
+{
+  "id": "section-green-s-theorem-11-3",
+  "level": "2",
+  "url": "section-green-s-theorem.html#section-green-s-theorem-11-3",
+  "type": "Worksheet Exercise",
+  "number": "14.4.2",
+  "title": "Example 14.4.2.",
+  "body": "     Compute , where and is the triangle with vertices and traversed once counterclockwise.   "
+},
+{
+  "id": "section-green-s-theorem-11-4",
+  "level": "2",
+  "url": "section-green-s-theorem.html#section-green-s-theorem-11-4",
+  "type": "Worksheet Exercise",
+  "number": "14.4.3",
+  "title": "Example 14.4.3.",
+  "body": "     Find the work done by along the boundary of the region bounded by and , traversed clockwise exactly once.   "
+},
+{
+  "id": "section-green-s-theorem-11-5",
+  "level": "2",
+  "url": "section-green-s-theorem.html#section-green-s-theorem-11-5",
+  "type": "Worksheet Exercise",
+  "number": "14.4.4",
+  "title": "Example 14.4.4.",
+  "body": "     Does flow with the boundary of the annulus bounded by and ? Here, assume that the boundary of is oriented in a way that is consistent with Green's Theorem.   "
+},
+{
+  "id": "section-green-s-theorem-11-6",
+  "level": "2",
+  "url": "section-green-s-theorem.html#section-green-s-theorem-11-6",
+  "type": "Worksheet Exercise",
+  "number": "14.4.5",
+  "title": "Theorem 14.4.5.",
+  "body": "     Let , and satisfy the same hypotheses as in . Then .   "
+},
+{
+  "id": "section-green-s-theorem-11-7",
+  "level": "2",
+  "url": "section-green-s-theorem.html#section-green-s-theorem-11-7",
+  "type": "Worksheet Exercise",
+  "number": "14.4.6",
+  "title": "Example 14.4.6.",
+  "body": "     Does tend to flow out of the unit square?   "
 },
 {
   "id": "section-curl-and-divergence",
