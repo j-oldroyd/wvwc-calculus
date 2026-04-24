@@ -1664,33 +1664,49 @@
   <section xml:id="section-green-s-theorem" label="section-green-s-theorem">
     <title>Green's Theorem</title>
     <p>
-      Recall that <m>\int_{C}\vb{F}\cdot\vb{T}\dd{s} = \int_{C} P\,dx + Q\,dy</m> is the <xref ref="definition-line-integral-of-a-vector-field" text="custom">circulation</xref> of <m>\vb{F}</m> along <m>C</m>.
-      Likewise, <m>Q_{x} - P_{y}</m> is a measure of how <m>\vb{F}</m> rotates counterclockwise.
-      These two quantities are tied together by Green's Theorem.
+      Recall that <m>\int_{C}\vb{F}\cdot\vb{T}\dd{s} = \int_{C} P\,dx
+      + Q\,dy</m> is the <xref
+      ref="definition-line-integral-of-a-vector-field"
+      text="custom">circulation</xref> of <m>\vb{F}</m> along
+      <m>C</m>.  Likewise, <m>Q_{x} - P_{y}</m> is a measure of how
+      <m>\vb{F}</m> rotates counterclockwise.  These two quantities
+      are tied together by Green's Theorem.
     </p>
-    <theorem xml:id="theorem-green-s-theorem" label="theorem-green-s-theorem">
-      <idx><h>Green's Theorem</h></idx>
+    <theorem xml:id="theorem-green-s-theorem"
+             label="theorem-green-s-theorem">
+      <idx>
+        <h>Green's Theorem</h>
+      </idx>
       <title>Green's Theorem</title>
       <statement>
         <p>
-          Let <m>C</m> be a positively oriented, piecewise smooth, simple closed curve in the plane containing some region <m>D</m>.
-          Let <m>\vb{F} = \dotprod{P,Q}</m> denote a vector field that is continuously differentiable on an open, simply connected domain containing <m>C</m>.
-          Then
-          <me>\oint_{C}\vb{F}\cdot\vb{T}\dd{s} = \iint_{D}\brackets{\pdv{Q}{x} - \pdv{P}{y}}\,dA</me>.
+          Let <m>C</m> be a positively oriented, piecewise smooth,
+          simple closed curve in the plane containing some region
+          <m>D</m>.  Let <m>\vb{F} = \dotprod{P,Q}</m> denote a vector
+          field that is continuously differentiable on an open, simply
+          connected domain containing <m>C</m>.  Then
+          <me>\oint_{C}\vb{F}\cdot\vb{T}\dd{s} =
+          \iint_{D}\brackets{\pdv{Q}{x} - \pdv{P}{y}}\,dA</me>.
         </p>
       </statement>
     </theorem>
-    <example xml:id="example-green-s-theorem-on-a-triangle" label="example-green-s-theorem-on-a-triangle">
-      <title>Green's Theorem on a Triangle</title>
+    <example xml:id="example-green-s-theorem-on-a-triangle"
+             label="example-green-s-theorem-on-a-triangle">
+      <title>Green's Theorem on a triangle</title>
       <statement>
         <p>
-          Compute <m>\oint_{C}\vb{F}\dr</m>, where <m>\vb{F} = \dotprod{-3y, 3x}</m> and <m>C</m> is the triangle with vertices <m>(0,0), (1,0)</m> and <m>(0,2)</m> traversed once counterclockwise.
+          Compute <m>\oint_{C}\vb{F}\dr</m>, where <m>\vb{F} =
+          \dotprod{-3y, 3x}</m> and <m>C</m> is the triangle with
+          vertices <m>(0,0), (1,0)</m> and <m>(0,2)</m> traversed once
+          counterclockwise.
         </p>
       </statement>
       <solution>
         <p>
-          First, note that <m>\vb{F}</m> isn't conservative and so we can't just say the integral is <m>0</m>.
-          Finding the line integral directly would require computing three separate line integrals, so we'll try Green's Theorem instead.
+          First, note that <m>\vb{F}</m> isn't conservative and so we
+          can't just say the integral is <m>0</m>.  Finding the line
+          integral directly would require computing three separate
+          line integrals, so we'll try Green's Theorem instead.
         </p>
         <p>
           Let <m>D</m> denote the inside of the triangle.
@@ -1700,45 +1716,66 @@
         </p>
       </solution>
     </example>
-    <example xml:id="example-work-with-green-s-theorem" label="example-work-with-green-s-theorem">
+    <example xml:id="example-work-with-green-s-theorem"
+             label="example-work-with-green-s-theorem">
       <title>Work with Green's Theorem</title>
       <statement>
         <p>
-          Find the work done by <m>\vb{F} = \dotprod{y + e^{-x^{3}}, 2x + \cos y^{2}}</m> along the boundary of the region bounded by <m>y = x^{2}</m> and <m>x = y^{2}</m>, traversed <em>clockwise</em> exactly once.
+          Find the work done by <m>\vb{F} = \dotprod{y + e^{-x^{3}},
+          2x + \cos y^{2}}</m> along the boundary of the region
+          bounded by <m>y = x^{2}</m> and <m>x = y^{2}</m>, traversed
+          <em>clockwise</em> exactly once.
         </p>
       </statement>
     </example>
-    <example xml:id="example-circulation-along-an-annulus" label="example-circulation-along-an-annulus">
+    <example xml:id="example-circulation-along-an-annulus"
+             label="example-circulation-along-an-annulus">
       <title>Circulation Along an Annulus</title>
       <statement>
         <p>
-          Does <m>\vb{F} = (1 - y^{3})\vb{i} + (x^{3} + e^{y^{2}})\vb{j}</m> flow with the boundary of the annulus <m>D</m> bounded by <m>x^{2} + y^{2} = 1</m> and <m>x^{2} + y^{2} = 9</m>?
-          Here, assume that the boundary of <m>D</m> is oriented in a way that is consistent with Green's Theorem.
+          Does <m>\vb{F} = (1 - y^{3})\vb{i} + (x^{3} +
+          e^{y^{2}})\vb{j}</m> flow with the boundary of the annulus
+          <m>D</m> bounded by <m>x^{2} + y^{2} = 1</m> and <m>x^{2} +
+          y^{2} = 9</m>?  Here, assume that the boundary of <m>D</m>
+          is oriented in a way that is consistent with Green's
+          Theorem.
         </p>
       </statement>
     </example>
     <p>
-      <xref ref="theorem-green-s-theorem" text="title" /> applies to circulation integrals, but there's also a version for flux integrals.
+      <xref ref="theorem-green-s-theorem" text="title" /> applies to
+      circulation integrals, but there's also a version for flux
+      integrals.
     </p>
-    <theorem xml:id="theorem-green-s-theorem-for-flux-integrals" label="theorem-green-s-theorem-for-flux-integrals">
-      <idx><h>Green's Theorem</h><h>flux integrals</h></idx>
-      <title>Green's Theorem for Flux Integrals</title>
+    <theorem xml:id="theorem-green-s-theorem-for-flux-integrals"
+             label="theorem-green-s-theorem-for-flux-integrals">
+      <idx>
+        <h>Green's Theorem</h>
+        <h>flux integrals</h>
+      </idx>
+      <title>Green's Theorem for flux integrals</title>
       <statement>
         <p>
-          Let <m>\vb{F}</m>, <m>C</m> and <m>D</m> satisfy the same hypotheses as in <xref ref="theorem-green-s-theorem" text="type-global" />.
-          Then
-          <me>\oint_{C}\vb{F}\cdot\vb{n}\dd{s} = \iint_{D}\brackets{\pdv{P}{x} + \pdv{Q}{y}}\,dA</me>.
+          Let <m>\vb{F}</m>, <m>C</m> and <m>D</m> satisfy the same
+          hypotheses as in <xref ref="theorem-green-s-theorem"
+          text="type-global" />.  Then
+          <me>\oint_{C}\vb{F}\cdot\vb{n}\dd{s} =
+          \iint_{D}\brackets{\pdv{P}{x} + \pdv{Q}{y}}\,dA</me>.
         </p>
       </statement>
     </theorem>
     <p>
-      The quantity <m>P_{x} + Q_{y}</m> is known as the <term>divergence</term> of <m>\vb{F}</m>, and measures how <m>\vb{F}</m> flows across a point.
+      The quantity <m>P_{x} + Q_{y}</m> is known as the
+      <term>divergence</term> of <m>\vb{F}</m>, and measures how
+      <m>\vb{F}</m> flows across a point.
     </p>
-    <example xml:id="example-flux-across-a-square" label="example-flux-across-a-square">
-      <title>Flux Across a Square</title>
+    <example xml:id="example-flux-across-a-square"
+             label="example-flux-across-a-square">
+      <title>Flux across a square</title>
       <statement>
         <p>
-          Does <m>\vb{F} = \dotprod{y^{2} - x^{2}, x^{2} + y^{2}}</m> tend to flow out of the unit square?
+          Does <m>\vb{F} = \dotprod{y^{2} - x^{2}, x^{2} + y^{2}}</m>
+          tend to flow out of the unit square?
         </p>
       </statement>
     </example>
