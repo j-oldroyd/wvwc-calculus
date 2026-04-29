@@ -7594,7 +7594,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "14.4",
   "title": "Green’s Theorem",
-  "body": " Green's Theorem  Recall that is the circulation of along . Likewise, is a measure of how rotates counterclockwise. These two quantities are tied together by Green's Theorem.   Green's Theorem  Green's Theorem   Let be a positively oriented, piecewise smooth, simple closed curve in the plane containing some region . Let denote a vector field that is continuously differentiable on an open, simply connected domain containing . Then .     Green's Theorem on a Triangle   Compute , where and is the triangle with vertices and traversed once counterclockwise.    First, note that isn't conservative and so we can't just say the integral is . Finding the line integral directly would require computing three separate line integrals, so we'll try Green's Theorem instead.  Let denote the inside of the triangle. Then we have , which simplifies to .     Work with Green's Theorem   Find the work done by along the boundary of the region bounded by and , traversed clockwise exactly once.     Circulation Along an Annulus   Does flow with the boundary of the annulus bounded by and ? Here, assume that the boundary of is oriented in a way that is consistent with Green's Theorem.     applies to circulation integrals, but there's also a version for flux integrals.   Green's Theorem flux integrals  Green's Theorem for Flux Integrals   Let , and satisfy the same hypotheses as in . Then .    The quantity is known as the divergence of , and measures how flows across a point.   Flux Across a Square   Does tend to flow out of the unit square?     Guided notes       Let be a positively oriented, piecewise smooth, simple closed curve in the plane containing some region . Let denote a vector field that is continuously differentiable on an open, simply connected domain containing . Then .         Compute , where and is the triangle with vertices and traversed once counterclockwise.         Find the work done by along the boundary of the region bounded by and , traversed clockwise exactly once.         Does flow with the boundary of the annulus bounded by and ? Here, assume that the boundary of is oriented in a way that is consistent with Green's Theorem.         Let , and satisfy the same hypotheses as in . Then .         Does tend to flow out of the unit square?     "
+  "body": " Green's Theorem  Recall that is the circulation of along . Likewise, is a measure of how rotates counterclockwise. These two quantities are tied together by Green's Theorem.    Green's Theorem   Green's Theorem   Let be a positively oriented, piecewise smooth, simple closed curve in the plane containing some region . Let denote a vector field that is continuously differentiable on an open, simply connected domain containing . Then .     Green's Theorem on a triangle   Compute , where and is the triangle with vertices and traversed once counterclockwise.    First, note that isn't conservative and so we can't just say the integral is . Finding the line integral directly would require computing three separate line integrals, so we'll try Green's Theorem instead.  Let denote the inside of the triangle. Then we have , which simplifies to .     Work with Green's Theorem   Find the work done by along the boundary of the region bounded by and , traversed clockwise exactly once.     Circulation Along an Annulus   Does flow with the boundary of the annulus bounded by and ? Here, assume that the boundary of is oriented in a way that is consistent with Green's Theorem.     applies to circulation integrals, but there's also a version for flux integrals.    Green's Theorem  flux integrals   Green's Theorem for flux integrals   Let , and satisfy the same hypotheses as in . Then .    The quantity is known as the divergence of , and measures how flows across a point.   Flux across a square   Does tend to flow out of the unit square?     Guided notes       Let be a positively oriented, piecewise smooth, simple closed curve in the plane containing some region . Let denote a vector field that is continuously differentiable on an open, simply connected domain containing . Then .         Compute , where and is the triangle with vertices and traversed once counterclockwise.         Find the work done by along the boundary of the region bounded by and , traversed clockwise exactly once.         Does flow with the boundary of the annulus bounded by and ? Here, assume that the boundary of is oriented in a way that is consistent with Green's Theorem.         Let , and satisfy the same hypotheses as in . Then .         Does tend to flow out of the unit square?     "
 },
 {
   "id": "theorem-green-s-theorem",
@@ -7603,7 +7603,7 @@ var ptx_lunr_docs = [
   "type": "Theorem",
   "number": "14.4.1",
   "title": "Green’s Theorem.",
-  "body": " Green's Theorem  Green's Theorem   Let be a positively oriented, piecewise smooth, simple closed curve in the plane containing some region . Let denote a vector field that is continuously differentiable on an open, simply connected domain containing . Then .   "
+  "body": "  Green's Theorem   Green's Theorem   Let be a positively oriented, piecewise smooth, simple closed curve in the plane containing some region . Let denote a vector field that is continuously differentiable on an open, simply connected domain containing . Then .   "
 },
 {
   "id": "example-green-s-theorem-on-a-triangle",
@@ -7611,8 +7611,8 @@ var ptx_lunr_docs = [
   "url": "section-green-s-theorem.html#example-green-s-theorem-on-a-triangle",
   "type": "Example",
   "number": "14.4.2",
-  "title": "Green’s Theorem on a Triangle.",
-  "body": " Green's Theorem on a Triangle   Compute , where and is the triangle with vertices and traversed once counterclockwise.    First, note that isn't conservative and so we can't just say the integral is . Finding the line integral directly would require computing three separate line integrals, so we'll try Green's Theorem instead.  Let denote the inside of the triangle. Then we have , which simplifies to .   "
+  "title": "Green’s Theorem on a triangle.",
+  "body": " Green's Theorem on a triangle   Compute , where and is the triangle with vertices and traversed once counterclockwise.    First, note that isn't conservative and so we can't just say the integral is . Finding the line integral directly would require computing three separate line integrals, so we'll try Green's Theorem instead.  Let denote the inside of the triangle. Then we have , which simplifies to .   "
 },
 {
   "id": "example-work-with-green-s-theorem",
@@ -7638,8 +7638,8 @@ var ptx_lunr_docs = [
   "url": "section-green-s-theorem.html#theorem-green-s-theorem-for-flux-integrals",
   "type": "Theorem",
   "number": "14.4.5",
-  "title": "Green’s Theorem for Flux Integrals.",
-  "body": " Green's Theorem flux integrals  Green's Theorem for Flux Integrals   Let , and satisfy the same hypotheses as in . Then .   "
+  "title": "Green’s Theorem for flux integrals.",
+  "body": "  Green's Theorem  flux integrals   Green's Theorem for flux integrals   Let , and satisfy the same hypotheses as in . Then .   "
 },
 {
   "id": "section-green-s-theorem-9",
@@ -7656,8 +7656,8 @@ var ptx_lunr_docs = [
   "url": "section-green-s-theorem.html#example-flux-across-a-square",
   "type": "Example",
   "number": "14.4.6",
-  "title": "Flux Across a Square.",
-  "body": " Flux Across a Square   Does tend to flow out of the unit square?   "
+  "title": "Flux across a square.",
+  "body": " Flux across a square   Does tend to flow out of the unit square?   "
 },
 {
   "id": "section-green-s-theorem-11-2",
@@ -7719,8 +7719,8 @@ var ptx_lunr_docs = [
   "url": "section-curl-and-divergence.html",
   "type": "Section",
   "number": "14.5",
-  "title": "Curl and Divergence",
-  "body": " Curl and Divergence   In this section we look at two different analogues of the derivative for vector fields. Once we have these versions of the derivative, we'll also be able to state a corresponding version of the , just as the corresponds to the gradient.    Curl  In we introduced the operator, which in is given by . In this class, has no meaning when by itself. However, it gains meaning when multiplied by a scalar function , leaving the gradient . We also used it to define the curl , which we repeat below.   vector fields curl in  Curl of a Vector Field in   Let be a vector field in with continuously differentiable components. The curl of is the vector .    We've already seen a couple nice properties of curls. First, the curl vector gives the axis of rotation about which tends to rotate counterclockwise when viewed head on, and is a measure of the amount of rotation. Second, the curl can be used to determine if a vector field is conservative or not.   Conservative Vector Fields in   Let denote a continuously differentiable vector field on an open set containing the simply connected region . Then is conservative if and only if .     Determining Rotation in a Vector Field   Suppose the vector field represents a swirling fluid. Within this fluid you place a small paddle wheel at the point . When viewed from directly above, will the paddle wheel tend to rotate clockwise or counterclockwise?    First we need to get a measure of the rotation of , so we compute the curl: , which is just at our point. This provides the axis around which the paddle wheel rotates counterclockwise. And since , the paddle wheel does not appear to rotate at all when viewed from above.      Divergence  Our second notion of derivative for vector fields is the divergence . If is a continuously differentiable vector field, then we define the divergence of to be the scalar function given by . The divergence of a vector field is a measure of outflow minus inflow . If , then we say that is incompressible or solenoidal (just as we say that is irrotational if ).   Divergence on a Rectangle   Let and let denote the unit circle, traversed counterclockwise once. Find the divergence of at and . Then find the net divergence of through the interior of .    At , . At this particular point, outflow is balanced with inflow. Likewise, at we can see that inflow is greater than outflow.  We can compute the net divergence as , where is the interior of the unit circle. This is equal to , which means the net flow throughout is . By , this is also equal to the net flux across .      Laplacian  From the divergence we get another useful form of (second) derivative for scalar functions. First, let be a differentiable scalar function. Then we can compute its gradient . This is a vector field that represents how changes. Now, since is a vector field we can also consider its curl and divergence. If is nice enough we know that , which is not particularly useful in this case. But if we take the divergence, we get .   Laplacian  Laplacian   Let be a twice differentiable scalar function on . The Laplacian of is the function given by .     extends to other dimensions in the obvious way. The Laplacian is useful since it provides a measure of how a function's value at a point differs from the average value at nearby points.   Laplacians and Average Values   Let and let . Let denote the unit circle traversed once counterclockwise. Find the average values of on , their specific values at and the Laplacians at .    If we compute the average values, we get . Furthermore, . We also have and .    To see how the Laplacian can arise, consider the following situation explained in Evans' Partial Differential Equations , edition. We have some density function ; this could be mass density, charge density, etc. Now we'll let denote the flux of . It's often reasonable to assume that the flux is proportional to the negative of the gradient of : where . This means that the quantity flows from regions of higher concentration to regions of lower concentration. If represents a quantity in equilibrium within some region , then the net flux across should be . In terms of , we have .  Now we'll make the argument that since the above should be true for arbitrary subregions of . But , which means that .  We say that a function is harmonic if its Laplacian is . The equation is known as Laplace's equation . Harmonic functions are extremely useful, as they represent quantities in a kind of equilibrium state. If represents chemical concentration, temperature or electrostatic potential, then Laplace's equation is Fick's law of diffusion, Fourier's law of heat conduction or Ohm's law of electrical conduction, respectively. See Evans text for more.  Laplacians also appear in certain integral identities.   Green's First Identity  Green's First Identity   Let denote a simply connected region with piecewise smooth boundary . Suppose that is continuously differentiable and is twice continuously differentiable on an open domain containing . Then .    Since the right hand side involves a flux integral, this suggests that may prove useful. Applying this to gives .  Now, recall that is a kind of derivative operator. For this reason, it also satisfies a version of the product rule: . Plugging this into the double integral and rearranging proves the result.      acts as a kind of integration by parts in higher dimensions.     SUGGESTED PROBLEMS: 1-9 odd, 10, 11-15 odd.   "
+  "title": "Curl and divergence",
+  "body": " Curl and divergence   In this section we look at two different analogues of the derivative for vector fields. Once we have these versions of the derivative, we'll also be able to state a corresponding version of the , just as the corresponds to the gradient.    Curl  In we introduced the operator, which in is given by . In this class, has no meaning when by itself. However, it gains meaning when multiplied by a scalar function , leaving the gradient . We also used it to define the curl , which we repeat below.    vector fields  curl in   Curl of a vector field in   Let be a vector field in with continuously differentiable components. The curl of is the vector .    We've already seen a couple nice properties of curls. First, the curl vector gives the axis of rotation about which tends to rotate counterclockwise when viewed head on, and is a measure of the amount of rotation. Second, the curl can be used to determine if a vector field is conservative or not.   Conservative vector fields in   Let denote a continuously differentiable vector field on an open set containing the simply connected region . Then is conservative if and only if .     Determining rotation in a vector field   Suppose the vector field represents a swirling fluid. Within this fluid you place a small paddle wheel at the point . When viewed from directly above, will the paddle wheel tend to rotate clockwise or counterclockwise?    First we need to get a measure of the rotation of , so we compute the curl: , which is just at our point. This provides the axis around which the paddle wheel rotates counterclockwise. And since , the paddle wheel does not appear to rotate at all when viewed from above.      Divergence  Our second notion of derivative for vector fields is the divergence . If is a continuously differentiable vector field, then we define the divergence of to be the scalar function given by . The divergence of a vector field is a measure of outflow minus inflow . If , then we say that is incompressible or solenoidal (just as we say that is irrotational if ).   Divergence on a rectangle   Let and let denote the unit circle, traversed counterclockwise once. Find the divergence of at and . Then find the net divergence of through the interior of .    At , . At this particular point, outflow is balanced with inflow. Likewise, at we can see that inflow is greater than outflow.  We can compute the net divergence as , where is the interior of the unit circle. This is equal to , which means the net flow throughout is . By , this is also equal to the net flux across .      Laplacian  From the divergence we get another useful form of (second) derivative for scalar functions. First, let be a differentiable scalar function. Then we can compute its gradient . This is a vector field that represents how changes. Now, since is a vector field we can also consider its curl and divergence. If is nice enough we know that , which is not particularly useful in this case. But if we take the divergence, we get .    Laplacian   Laplacian   Let be a twice differentiable scalar function on . The Laplacian of is the function given by .     extends to other dimensions in the obvious way. The Laplacian is useful since it provides a measure of how a function's value at a point differs from the average value at nearby points.   Laplacians and average values   Let and let . Let denote the unit circle traversed once counterclockwise. Find the average values of on , their specific values at and the Laplacians at .    If we compute the average values, we get . Furthermore, . We also have and .    To see how the Laplacian can arise, consider the following situation explained in Evans' Partial Differential Equations , edition. We have some density function ; this could be mass density, charge density, etc. Now we'll let denote the flux of . It's often reasonable to assume that the flux is proportional to the negative of the gradient of : where . This means that the quantity flows from regions of higher concentration to regions of lower concentration. If represents a quantity in equilibrium within some region , then the net flux across should be . In terms of , we have .  Now we'll make the argument that since the above should be true for arbitrary subregions of . But , which means that .  We say that a function is harmonic if its Laplacian is . The equation is known as Laplace's equation . Harmonic functions are extremely useful, as they represent quantities in a kind of equilibrium state. If represents chemical concentration, temperature or electrostatic potential, then Laplace's equation is Fick's law of diffusion, Fourier's law of heat conduction or Ohm's law of electrical conduction, respectively. See Evans text for more.  Laplacians also appear in certain integral identities.   Green's First Identity  Green's First Identity   Let denote a simply connected region with piecewise smooth boundary . Suppose that is continuously differentiable and is twice continuously differentiable on an open domain containing . Then .    Since the right hand side involves a flux integral, this suggests that may prove useful. Applying this to gives .  Now, recall that is a kind of derivative operator. For this reason, it also satisfies a version of the product rule: . Plugging this into the double integral and rearranging proves the result.      acts as a kind of integration by parts in higher dimensions.     Guided notes       Let be a vector field in with continuously differentiable components. The curl of is the vector .         Let denote a continuously differentiable vector field on an open set containing the simply connected region . Then is conservative if and only if .         Suppose the vector field represents a swirling fluid. Within this fluid you place a small paddle wheel at the point . When viewed from directly above, will the paddle wheel tend to rotate clockwise or counterclockwise?         Let and let denote the unit circle, traversed counterclockwise once. Find the divergence of at and . Then find the net divergence of through the interior of .         Let , and satisfy the same hypotheses as in . Then .         Let be a twice differentiable scalar function on . The Laplacian of is the function given by .         Let and let . Let denote the unit circle traversed once counterclockwise. Find the average values of on , their specific values at and the Laplacians at .         Let denote a simply connected region with piecewise smooth boundary . Suppose that is continuously differentiable and is twice continuously differentiable on an open domain containing . Then .     "
 },
 {
   "id": "subsection-curl-2",
@@ -7737,8 +7737,8 @@ var ptx_lunr_docs = [
   "url": "section-curl-and-divergence.html#definition-curl-of-a-vector-field-in--rr-3-m-",
   "type": "Definition",
   "number": "14.5.1",
-  "title": "Curl of a Vector Field in <span class=\"process-math\">\\(\\RR^{3}\\)<\/span>.",
-  "body": " vector fields curl in  Curl of a Vector Field in   Let be a vector field in with continuously differentiable components. The curl of is the vector .   "
+  "title": "Curl of a vector field in <span class=\"process-math\">\\(\\RR^{3}\\)<\/span>.",
+  "body": "  vector fields  curl in   Curl of a vector field in   Let be a vector field in with continuously differentiable components. The curl of is the vector .   "
 },
 {
   "id": "theorem-conservative-vector-fields-in--rr-3-m-",
@@ -7746,8 +7746,8 @@ var ptx_lunr_docs = [
   "url": "section-curl-and-divergence.html#theorem-conservative-vector-fields-in--rr-3-m-",
   "type": "Theorem",
   "number": "14.5.2",
-  "title": "Conservative Vector Fields in <span class=\"process-math\">\\(\\RR^{3}\\)<\/span>.",
-  "body": " Conservative Vector Fields in   Let denote a continuously differentiable vector field on an open set containing the simply connected region . Then is conservative if and only if .   "
+  "title": "Conservative vector fields in <span class=\"process-math\">\\(\\RR^{3}\\)<\/span>.",
+  "body": " Conservative vector fields in   Let denote a continuously differentiable vector field on an open set containing the simply connected region . Then is conservative if and only if .   "
 },
 {
   "id": "example-determining-rotation-in-a-vector-field",
@@ -7755,8 +7755,8 @@ var ptx_lunr_docs = [
   "url": "section-curl-and-divergence.html#example-determining-rotation-in-a-vector-field",
   "type": "Example",
   "number": "14.5.3",
-  "title": "Determining Rotation in a Vector Field.",
-  "body": " Determining Rotation in a Vector Field   Suppose the vector field represents a swirling fluid. Within this fluid you place a small paddle wheel at the point . When viewed from directly above, will the paddle wheel tend to rotate clockwise or counterclockwise?    First we need to get a measure of the rotation of , so we compute the curl: , which is just at our point. This provides the axis around which the paddle wheel rotates counterclockwise. And since , the paddle wheel does not appear to rotate at all when viewed from above.   "
+  "title": "Determining rotation in a vector field.",
+  "body": " Determining rotation in a vector field   Suppose the vector field represents a swirling fluid. Within this fluid you place a small paddle wheel at the point . When viewed from directly above, will the paddle wheel tend to rotate clockwise or counterclockwise?    First we need to get a measure of the rotation of , so we compute the curl: , which is just at our point. This provides the axis around which the paddle wheel rotates counterclockwise. And since , the paddle wheel does not appear to rotate at all when viewed from above.   "
 },
 {
   "id": "subsection-divergence-2",
@@ -7773,8 +7773,8 @@ var ptx_lunr_docs = [
   "url": "section-curl-and-divergence.html#example-divergence-on-a-rectangle",
   "type": "Example",
   "number": "14.5.4",
-  "title": "Divergence on a Rectangle.",
-  "body": " Divergence on a Rectangle   Let and let denote the unit circle, traversed counterclockwise once. Find the divergence of at and . Then find the net divergence of through the interior of .    At , . At this particular point, outflow is balanced with inflow. Likewise, at we can see that inflow is greater than outflow.  We can compute the net divergence as , where is the interior of the unit circle. This is equal to , which means the net flow throughout is . By , this is also equal to the net flux across .   "
+  "title": "Divergence on a rectangle.",
+  "body": " Divergence on a rectangle   Let and let denote the unit circle, traversed counterclockwise once. Find the divergence of at and . Then find the net divergence of through the interior of .    At , . At this particular point, outflow is balanced with inflow. Likewise, at we can see that inflow is greater than outflow.  We can compute the net divergence as , where is the interior of the unit circle. This is equal to , which means the net flow throughout is . By , this is also equal to the net flux across .   "
 },
 {
   "id": "definition-laplacian",
@@ -7783,7 +7783,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "14.5.5",
   "title": "Laplacian.",
-  "body": " Laplacian  Laplacian   Let be a twice differentiable scalar function on . The Laplacian of is the function given by .   "
+  "body": "  Laplacian   Laplacian   Let be a twice differentiable scalar function on . The Laplacian of is the function given by .   "
 },
 {
   "id": "example-laplacians-and-average-values",
@@ -7791,8 +7791,8 @@ var ptx_lunr_docs = [
   "url": "section-curl-and-divergence.html#example-laplacians-and-average-values",
   "type": "Example",
   "number": "14.5.6",
-  "title": "Laplacians and Average Values.",
-  "body": " Laplacians and Average Values   Let and let . Let denote the unit circle traversed once counterclockwise. Find the average values of on , their specific values at and the Laplacians at .    If we compute the average values, we get . Furthermore, . We also have and .   "
+  "title": "Laplacians and average values.",
+  "body": " Laplacians and average values   Let and let . Let denote the unit circle traversed once counterclockwise. Find the average values of on , their specific values at and the Laplacians at .    If we compute the average values, we get . Furthermore, . We also have and .   "
 },
 {
   "id": "subsection-laplacian-8",
@@ -7811,6 +7811,78 @@ var ptx_lunr_docs = [
   "number": "14.5.7",
   "title": "Green’s First Identity.",
   "body": " Green's First Identity  Green's First Identity   Let denote a simply connected region with piecewise smooth boundary . Suppose that is continuously differentiable and is twice continuously differentiable on an open domain containing . Then .    Since the right hand side involves a flux integral, this suggests that may prove useful. Applying this to gives .  Now, recall that is a kind of derivative operator. For this reason, it also satisfies a version of the product rule: . Plugging this into the double integral and rearranging proves the result.   "
+},
+{
+  "id": "section-curl-and-divergence-6-2",
+  "level": "2",
+  "url": "section-curl-and-divergence.html#section-curl-and-divergence-6-2",
+  "type": "Worksheet Exercise",
+  "number": "1",
+  "title": "Definition 14.5.1.",
+  "body": "     Let be a vector field in with continuously differentiable components. The curl of is the vector .   "
+},
+{
+  "id": "section-curl-and-divergence-6-3",
+  "level": "2",
+  "url": "section-curl-and-divergence.html#section-curl-and-divergence-6-3",
+  "type": "Worksheet Exercise",
+  "number": "2",
+  "title": "Theorem 14.5.2.",
+  "body": "     Let denote a continuously differentiable vector field on an open set containing the simply connected region . Then is conservative if and only if .   "
+},
+{
+  "id": "section-curl-and-divergence-6-4",
+  "level": "2",
+  "url": "section-curl-and-divergence.html#section-curl-and-divergence-6-4",
+  "type": "Worksheet Exercise",
+  "number": "3",
+  "title": "Example 14.5.3.",
+  "body": "     Suppose the vector field represents a swirling fluid. Within this fluid you place a small paddle wheel at the point . When viewed from directly above, will the paddle wheel tend to rotate clockwise or counterclockwise?   "
+},
+{
+  "id": "section-curl-and-divergence-6-5",
+  "level": "2",
+  "url": "section-curl-and-divergence.html#section-curl-and-divergence-6-5",
+  "type": "Worksheet Exercise",
+  "number": "4",
+  "title": "Example 14.5.4.",
+  "body": "     Let and let denote the unit circle, traversed counterclockwise once. Find the divergence of at and . Then find the net divergence of through the interior of .   "
+},
+{
+  "id": "section-curl-and-divergence-6-6",
+  "level": "2",
+  "url": "section-curl-and-divergence.html#section-curl-and-divergence-6-6",
+  "type": "Worksheet Exercise",
+  "number": "5",
+  "title": "Theorem 14.4.5.",
+  "body": "     Let , and satisfy the same hypotheses as in . Then .   "
+},
+{
+  "id": "section-curl-and-divergence-6-7",
+  "level": "2",
+  "url": "section-curl-and-divergence.html#section-curl-and-divergence-6-7",
+  "type": "Worksheet Exercise",
+  "number": "6",
+  "title": "Definition 14.5.5.",
+  "body": "     Let be a twice differentiable scalar function on . The Laplacian of is the function given by .   "
+},
+{
+  "id": "section-curl-and-divergence-6-8",
+  "level": "2",
+  "url": "section-curl-and-divergence.html#section-curl-and-divergence-6-8",
+  "type": "Worksheet Exercise",
+  "number": "7",
+  "title": "Example 14.5.6.",
+  "body": "     Let and let . Let denote the unit circle traversed once counterclockwise. Find the average values of on , their specific values at and the Laplacians at .   "
+},
+{
+  "id": "section-curl-and-divergence-6-9",
+  "level": "2",
+  "url": "section-curl-and-divergence.html#section-curl-and-divergence-6-9",
+  "type": "Worksheet Exercise",
+  "number": "8",
+  "title": "Theorem 14.5.7.",
+  "body": "     Let denote a simply connected region with piecewise smooth boundary . Suppose that is continuously differentiable and is twice continuously differentiable on an open domain containing . Then .   "
 },
 {
   "id": "section-parametric-surfaces-and-areas",
