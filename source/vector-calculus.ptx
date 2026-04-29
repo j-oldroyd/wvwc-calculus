@@ -1865,135 +1865,193 @@
       </exercise>
     </worksheet>
   </section>
-  <section xml:id="section-curl-and-divergence" label="section-curl-and-divergence">
-    <title>Curl and Divergence</title>
+  <section xml:id="section-curl-and-divergence"
+           label="section-curl-and-divergence">
+    <title>Curl and divergence</title>
     <introduction>
       <p>
-        In this section we look at two different analogues of the derivative for vector fields.
-        Once we have these versions of the derivative, we'll also be able to state a corresponding version of the <xref ref="theorem-fundamental-theorem-of-calculus" text="title" />, just as the <xref ref="theorem-fundamental-theorem-line-integrals" text="title" /> corresponds to the gradient.
+        In this section we look at two different analogues of the
+        derivative for vector fields.  Once we have these versions of
+        the derivative, we'll also be able to state a corresponding
+        version of the <xref
+        ref="theorem-fundamental-theorem-of-calculus" text="title" />,
+        just as the <xref
+        ref="theorem-fundamental-theorem-line-integrals" text="title"
+        /> corresponds to the gradient.
       </p>
     </introduction>
-    <subsection xml:id="subsection-curl" label="subsection-curl">
+    <subsection xml:id="subsection-curl"
+                label="subsection-curl">
       <title>Curl</title>
       <p>
-        In <xref ref="section-the-fundamental-theorem-for-line-integrals" text="type-global" /> we introduced the <m>\del</m> operator, which in <m>\RR^{3}</m> is given by
-        <me>\del = \dotprod{\pdv{}{x}, \pdv{}{y}, \pdv{}{z}}</me>.
-        In this class, <m>\del</m> has no meaning when by itself.
-        However, it gains meaning when <q>multiplied</q> by a scalar function <m>f</m>, leaving the gradient <m>\grad f</m>.
-        We also used it to define the <term>curl</term>, which we repeat below.
+        In <xref
+        ref="section-the-fundamental-theorem-for-line-integrals"
+        text="type-global" /> we introduced the <m>\del</m> operator,
+        which in <m>\RR^{3}</m> is given by <me>\del =
+        \dotprod{\pdv{}{x}, \pdv{}{y}, \pdv{}{z}}</me>.  In this
+        class, <m>\del</m> has no meaning when by itself.  However, it
+        gains meaning when <q>multiplied</q> by a scalar function
+        <m>f</m>, leaving the gradient <m>\grad f</m>.  We also used
+        it to define the <term>curl</term>, which we repeat below.
       </p>
-      <definition xml:id="definition-curl-of-a-vector-field-in--rr-3-m-" label="definition-curl-of-a-vector-field-in--rr-3-m-">
-        <idx><h>vector fields</h><h>curl in <m>\RR^{3}</m></h></idx>
-        <title>Curl of a Vector Field in <m>\RR^{3}</m></title>
+      <definition xml:id="definition-curl-of-a-vector-field-in--rr-3-m-"
+                  label="definition-curl-of-a-vector-field-in--rr-3-m-">
+        <idx>
+          <h>vector fields</h>
+          <h>curl in <m>\RR^{3}</m></h>
+        </idx>
+        <title>Curl of a vector field in <m>\RR^{3}</m></title>
         <statement>
           <p>
-            Let <m>\vb{F} = P\vb{i} + Q\vb{j} + R\vb{k}</m> be a vector field in <m>\RR^{3}</m> with continuously differentiable components.
-            The curl of <m>\vb{F}</m> is the vector
-            <me>\curlt{\vb{F}} = \curl\vb{F} = \parens{\pdv{R}{y} - \pdv{Q}{z}}\vb{i} + \parens{\pdv{P}{z} - \pdv{R}{x}}\vb{j} + \parens{\pdv{Q}{x} - \pdv{P}{y}}\vb{k}</me>.
+            Let <m>\vb{F} = P\vb{i} + Q\vb{j} + R\vb{k}</m> be a
+            vector field in <m>\RR^{3}</m> with continuously
+            differentiable components.  The curl of <m>\vb{F}</m> is
+            the vector <me>\curlt{\vb{F}} = \curl\vb{F} =
+            \parens{\pdv{R}{y} - \pdv{Q}{z}}\vb{i} +
+            \parens{\pdv{P}{z} - \pdv{R}{x}}\vb{j} +
+            \parens{\pdv{Q}{x} - \pdv{P}{y}}\vb{k}</me>.
           </p>
         </statement>
       </definition>
       <p>
-        We've already seen a couple nice properties of curls.
-        First, the curl vector gives the axis of rotation about which <m>\vb{F}</m> tends to rotate counterclockwise when viewed head on, and <m>\norm{\curl\vb{F}}</m> is a measure of the amount of rotation.
-        Second, the curl can be used to determine if a vector field is conservative or not.
+        We've already seen a couple nice properties of curls.  First,
+        the curl vector gives the axis of rotation about which
+        <m>\vb{F}</m> tends to rotate counterclockwise when viewed
+        head on, and <m>\norm{\curl\vb{F}}</m> is a measure of the
+        amount of rotation.  Second, the curl can be used to determine
+        if a vector field is conservative or not.
       </p>
-      <theorem xml:id="theorem-conservative-vector-fields-in--rr-3-m-" label="theorem-conservative-vector-fields-in--rr-3-m-">
-        <title>Conservative Vector Fields in <m>\RR^{3}</m></title>
+      <theorem xml:id="theorem-conservative-vector-fields-in--rr-3-m-"
+               label="theorem-conservative-vector-fields-in--rr-3-m-">
+        <title>Conservative vector fields in <m>\RR^{3}</m></title>
         <statement>
           <p>
-            Let <m>\vb{F}</m> denote a continuously differentiable vector field on an open set containing the simply connected region <m>D</m>.
-            Then <m>\vb{F}</m> is conservative if and only if <m>\curl\vb{F} = \vb{0}</m>.
+            Let <m>\vb{F}</m> denote a continuously differentiable
+            vector field on an open set containing the simply
+            connected region <m>D</m>.  Then <m>\vb{F}</m> is
+            conservative if and only if <m>\curl\vb{F} = \vb{0}</m>.
           </p>
         </statement>
       </theorem>
-      <example xml:id="example-determining-rotation-in-a-vector-field" label="example-determining-rotation-in-a-vector-field">
-        <title>Determining Rotation in a Vector Field</title>
+      <example xml:id="example-determining-rotation-in-a-vector-field"
+               label="example-determining-rotation-in-a-vector-field">
+        <title>Determining rotation in a vector field</title>
         <statement>
           <p>
-            Suppose the vector field <m>\vb{F} = \dotprod{1, \sin z, x - yz^{2}}</m> represents a swirling fluid.
-            Within this fluid you place a small paddle wheel at the point <m>(1,-2,0)</m>.
-            When viewed from directly above, will the paddle wheel tend to rotate clockwise or counterclockwise?
+            Suppose the vector field <m>\vb{F} = \dotprod{1, \sin z, x
+            - yz^{2}}</m> represents a swirling fluid.  Within this
+            fluid you place a small paddle wheel at the point
+            <m>(1,-2,0)</m>.  When viewed from directly above, will
+            the paddle wheel tend to rotate clockwise or
+            counterclockwise?
           </p>
         </statement>
         <solution>
           <p>
-            First we need to get a measure of the rotation of <m>\vb{F}</m>, so we compute the curl:
-            <me>\curl\vb{F} = \dotprod{-z^{2} - \cos z, -1, 0}</me>,
-            which is just <m>\dotprod{-1, -1, 0}</m> at our point.
-            This provides the axis around which the paddle wheel rotates counterclockwise.
-            And since <m>\curl\vb{F}\cdot\vb{k} = 0</m>, the paddle wheel does not appear to rotate at all when viewed from above.
+            First we need to get a measure of the rotation of
+            <m>\vb{F}</m>, so we compute the curl: <me>\curl\vb{F} =
+            \dotprod{-z^{2} - \cos z, -1, 0}</me>, which is just
+            <m>\dotprod{-1, -1, 0}</m> at our point.  This provides
+            the axis around which the paddle wheel rotates
+            counterclockwise.  And since <m>\curl\vb{F}\cdot\vb{k} =
+            0</m>, the paddle wheel does not appear to rotate at all
+            when viewed from above.
           </p>
         </solution>
       </example>
     </subsection>
-    <subsection xml:id="subsection-divergence" label="subsection-divergence">
+    <subsection xml:id="subsection-divergence"
+                label="subsection-divergence">
       <title>Divergence</title>
       <p>
-        Our second notion of derivative for vector fields is the <term>divergence</term>.
-        If <m>\vb{F}</m> is a continuously differentiable vector field, then we define the divergence of <m>\vb{F}</m> to be the <em>scalar</em> function <m>\divt\vb{F}</m> given by
-        <me>\divt\vb{F} = \div\vb{F}</me>.
-        The divergence of a vector field is a measure of <q>outflow minus inflow</q>.
-        If <m>\div\vb{F} = 0</m>, then we say that <m>\vb{F}</m> is <term>incompressible</term> or <term>solenoidal</term> (just as we say that <m>\vb{F}</m> is irrotational if <m>\curl\vb{F} = \vb{0}</m>).
+        Our second notion of derivative for vector fields is the
+        <term>divergence</term>.  If <m>\vb{F}</m> is a continuously
+        differentiable vector field, then we define the divergence of
+        <m>\vb{F}</m> to be the <em>scalar</em> function
+        <m>\divt\vb{F}</m> given by <me>\divt\vb{F} = \div\vb{F}</me>.
+        The divergence of a vector field is a measure of <q>outflow
+        minus inflow</q>.  If <m>\div\vb{F} = 0</m>, then we say that
+        <m>\vb{F}</m> is <term>incompressible</term> or
+        <term>solenoidal</term> (just as we say that <m>\vb{F}</m> is
+        irrotational if <m>\curl\vb{F} = \vb{0}</m>).
       </p>
-      <example xml:id="example-divergence-on-a-rectangle" label="example-divergence-on-a-rectangle">
-        <title>Divergence on a Rectangle</title>
+      <example xml:id="example-divergence-on-a-rectangle"
+               label="example-divergence-on-a-rectangle">
+        <title>Divergence on a rectangle</title>
         <statement>
           <p>
-            Let <m>\vb{F} = \dotprod{xy, x}</m> and let <m>C</m> denote the unit circle, traversed counterclockwise once.
-            Find the divergence of <m>\vb{F}</m> at <m>(-1,0)</m> and <m>(0,-1)</m>.
-            Then find the <em>net divergence</em> of <m>\vb{F}</m> through the interior of <m>C</m>.
+            Let <m>\vb{F} = \dotprod{xy, x}</m> and let <m>C</m>
+            denote the unit circle, traversed counterclockwise once.
+            Find the divergence of <m>\vb{F}</m> at <m>(-1,0)</m> and
+            <m>(0,-1)</m>.  Then find the <em>net divergence</em> of
+            <m>\vb{F}</m> through the interior of <m>C</m>.
           </p>
         </statement>
         <solution>
           <p>
-            At <m>(-1,0)</m>, <m>\div\vb{F} = y = 0</m>.
-            At this particular point, outflow is balanced with inflow.
-            Likewise, at <m>(0,-1)</m> we can see that inflow is greater than outflow.
+            At <m>(-1,0)</m>, <m>\div\vb{F} = y = 0</m>.  At this
+            particular point, outflow is balanced with inflow.
+            Likewise, at <m>(0,-1)</m> we can see that inflow is
+            greater than outflow.
           </p>
           <p>
-            We can compute the net divergence as <m>\iint_{D}\div\vb{F}\,dA</m>, where <m>D</m> is the interior of the unit circle.
-            This is equal to <m>0</m>, which means the net flow throughout <m>D</m> is <m>0</m>.
-            By <xref ref="theorem-green-s-theorem-for-flux-integrals" text="type-global" />, this is also equal to the net flux across <m>C</m>.
+            We can compute the net divergence as
+            <m>\iint_{D}\div\vb{F}\,dA</m>, where <m>D</m> is the
+            interior of the unit circle.  This is equal to <m>0</m>,
+            which means the net flow throughout <m>D</m> is <m>0</m>.
+            By <xref ref="theorem-green-s-theorem-for-flux-integrals"
+            text="type-global" />, this is also equal to the net flux
+            across <m>C</m>.
           </p>
         </solution>
       </example>
     </subsection>
-    <subsection xml:id="subsection-laplacian" label="subsection-laplacian">
+    <subsection xml:id="subsection-laplacian"
+                label="subsection-laplacian">
       <title>Laplacian</title>
       <p>
-        From the divergence we get another useful form of (second) derivative for scalar functions.
-        First, let <m>f(x,y,z)</m> be a differentiable scalar function.
-        Then we can compute its gradient <m>\grad f</m>.
-        This is a vector field that represents how <m>f</m> changes.
-        Now, since <m>\grad f</m> is a vector field we can also consider its curl and divergence.
-        If <m>f</m> is <q>nice enough</q> we know that <m>\curl(\grad f) = \vb{0}</m>, which is not particularly useful in this case.
-        But if we take the divergence, we get
-        <me>\div(\grad f) = f_{xx} + f_{yy} + f_{zz}</me>.
+        From the divergence we get another useful form of (second)
+        derivative for scalar functions.  First, let <m>f(x,y,z)</m>
+        be a differentiable scalar function.  Then we can compute its
+        gradient <m>\grad f</m>.  This is a vector field that
+        represents how <m>f</m> changes.  Now, since <m>\grad f</m> is
+        a vector field we can also consider its curl and divergence.
+        If <m>f</m> is <q>nice enough</q> we know that <m>\curl(\grad
+        f) = \vb{0}</m>, which is not particularly useful in this
+        case.  But if we take the divergence, we get <me>\div(\grad f)
+        = f_{xx} + f_{yy} + f_{zz}</me>.
       </p>
-      <definition xml:id="definition-laplacian" label="definition-laplacian">
-        <idx><h>Laplacian</h></idx>
+      <definition xml:id="definition-laplacian"
+                  label="definition-laplacian">
+        <idx>
+          <h>Laplacian</h>
+        </idx>
         <title>Laplacian</title>
         <statement>
           <p>
-            Let <m>f</m> be a twice differentiable scalar function on <m>\RR^{3}</m>.
-            The <term>Laplacian</term> of <m>f</m> is the function
-            <me>\div(\grad f) = \del^{2}f = \Delta f</me>
+            Let <m>f</m> be a twice differentiable scalar function on
+            <m>\RR^{3}</m>.  The <term>Laplacian</term> of <m>f</m> is
+            the function <me>\div(\grad f) = \del^{2}f = \Delta f</me>
             given by <m>f_{xx} + f_{yy} + f_{zz}</m>.
           </p>
         </statement>
       </definition>
       <p>
-        <xref ref="definition-laplacian" text="type-global" /> extends to other dimensions in the obvious way.
-        The Laplacian is useful since it provides a measure of how a function's value at a point differs from the average value at nearby points.
+        <xref ref="definition-laplacian" text="type-global" /> extends
+        to other dimensions in the obvious way.  The Laplacian is
+        useful since it provides a measure of how a function's value
+        at a point differs from the average value at nearby points.
       </p>
-      <example xml:id="example-laplacians-and-average-values" label="example-laplacians-and-average-values">
-        <title>Laplacians and Average Values</title>
+      <example xml:id="example-laplacians-and-average-values"
+               label="example-laplacians-and-average-values">
+        <title>Laplacians and average values</title>
         <statement>
           <p>
-            Let <m>f_{1} = x^{2} + y^{2}</m> and let <m>f_{2} = x^{2} - y^{2}</m>.
-            Let <m>C</m> denote the unit circle traversed once counterclockwise.
-            Find the average values of <m>f_{i}</m> on <m>C</m>, their specific values at <m>(0,0)</m> and the Laplacians at <m>(0,0)</m>.
+            Let <m>f_{1} = x^{2} + y^{2}</m> and let <m>f_{2} = x^{2}
+            - y^{2}</m>.  Let <m>C</m> denote the unit circle
+            traversed once counterclockwise.  Find the average values
+            of <m>f_{i}</m> on <m>C</m>, their specific values at
+            <m>(0,0)</m> and the Laplacians at <m>(0,0)</m>.
           </p>
         </statement>
         <solution>
@@ -2009,67 +2067,204 @@
         </solution>
       </example>
       <p>
-        To see how the Laplacian can arise, consider the following situation explained in Evans' <em>Partial Differential Equations</em>, <m>2^{\text{nd}}</m> edition.
-        We have some <em>density</em> function <m>f</m>; this could be mass density, charge density, etc.
-        Now we'll let <m>\vb{F}</m> denote the flux of <m>f</m>.
-        It's often reasonable to assume that the flux is proportional to the negative of the gradient of <m>f</m>: <m>\vb{F} = -a\grad f</m> where <m>a \gt 0</m>.
-        This means that the quantity flows from regions of higher concentration to regions of lower concentration.
-        If <m>f</m> represents a quantity in equilibrium within some region <m>D</m>, then the net flux across <m>D</m> should be <m>0</m>.
-        In terms of <xref ref="theorem-green-s-theorem-for-flux-integrals" text="type-global" />, we have
-        <me>\iint_{D}\div\vb{F}\,dA = \oint_{\partial D}\vb{F}\cdot\vb{n}\dd{s} = 0</me>.
+        To see how the Laplacian can arise, consider the following
+        situation explained in Evans' <em>Partial Differential
+        Equations</em>, <m>2^{\text{nd}}</m> edition.  We have some
+        <em>density</em> function <m>f</m>; this could be mass
+        density, charge density, etc.  Now we'll let <m>\vb{F}</m>
+        denote the flux of <m>f</m>.  It's often reasonable to assume
+        that the flux is proportional to the negative of the gradient
+        of <m>f</m>: <m>\vb{F} = -a\grad f</m> where <m>a \gt 0</m>.
+        This means that the quantity flows from regions of higher
+        concentration to regions of lower concentration.  If <m>f</m>
+        represents a quantity in equilibrium within some region
+        <m>D</m>, then the net flux across <m>D</m> should be
+        <m>0</m>.  In terms of <xref
+        ref="theorem-green-s-theorem-for-flux-integrals"
+        text="type-global" />, we have <me>\iint_{D}\div\vb{F}\,dA =
+        \oint_{\partial D}\vb{F}\cdot\vb{n}\dd{s} = 0</me>.
       </p>
       <p>
-        Now we'll make the argument that <m>\div\vb{F} = 0</m> since the above should be true for arbitrary subregions of <m>D</m>.
-        But
-        <me>\div\vb{F} = -a\div(\grad f) = -a\del^{2}f</me>,
-        which means that <m>\Delta f = 0</m>.
+        Now we'll make the argument that <m>\div\vb{F} = 0</m> since
+        the above should be true for arbitrary subregions of <m>D</m>.
+        But <me>\div\vb{F} = -a\div(\grad f) = -a\del^{2}f</me>, which
+        means that <m>\Delta f = 0</m>.
       </p>
       <p>
-        We say that a function is <term>harmonic</term> if its Laplacian is <m>0</m>.
-        The equation <m>\Delta f = 0</m> is known as <term>Laplace's equation</term>.
-        Harmonic functions are extremely useful, as they represent quantities in a kind of equilibrium state.
-        If <m>f</m> represents chemical concentration, temperature or electrostatic potential, then Laplace's equation is Fick's law of diffusion, Fourier's law of heat conduction or Ohm's law of electrical conduction, respectively.
-        See Evans text for more.
+        We say that a function is <term>harmonic</term> if its
+        Laplacian is <m>0</m>.  The equation <m>\Delta f = 0</m> is
+        known as <term>Laplace's equation</term>.  Harmonic functions
+        are extremely useful, as they represent quantities in a kind
+        of equilibrium state.  If <m>f</m> represents chemical
+        concentration, temperature or electrostatic potential, then
+        Laplace's equation is Fick's law of diffusion, Fourier's law
+        of heat conduction or Ohm's law of electrical conduction,
+        respectively.  See Evans text for more.
       </p>
       <p>
         Laplacians also appear in certain integral identities.
       </p>
-      <theorem xml:id="theorem-green-s-first-identity" label="theorem-green-s-first-identity">
+      <theorem xml:id="theorem-green-s-first-identity"
+               label="theorem-green-s-first-identity">
         <idx>Green's First Identity</idx>
         <title>Green's First Identity</title>
         <statement>
           <p>
-            Let <m>D</m> denote a simply connected region with piecewise smooth boundary <m>\partial D</m>.
-            Suppose that <m>f</m> is continuously differentiable and <m>g</m> is twice continuously differentiable on an open domain containing <m>D</m>.
-            Then
-            <me>\iint_{D}f\del^{2}g\,dA = \oint_{\partial D}f(\grad g)\dn - \iint_{D}\grad f\cdot \grad g\,dA</me>.
+            Let <m>D</m> denote a simply connected region with
+            piecewise smooth boundary <m>\partial D</m>.  Suppose that
+            <m>f</m> is continuously differentiable and <m>g</m> is
+            twice continuously differentiable on an open domain
+            containing <m>D</m>.  Then <me>\iint_{D}f\del^{2}g\,dA =
+            \oint_{\partial D}f(\grad g)\dn - \iint_{D}\grad f\cdot
+            \grad g\,dA</me>.
           </p>
         </statement>
         <proof>
           <p>
-            Since the right hand side involves a flux integral, this suggests that <xref ref="theorem-green-s-theorem-for-flux-integrals" text="title" /> may prove useful.
-            Applying this to <m>\oint_{\partial D}f(\grad g)\dn</m> gives
-            <me>\oint_{\partial D}f(\grad g)\dn = \iint_{D}\div(f\grad g)\,dA</me>.
+            Since the right hand side involves a flux integral, this
+            suggests that <xref
+            ref="theorem-green-s-theorem-for-flux-integrals"
+            text="title" /> may prove useful.  Applying this to
+            <m>\oint_{\partial D}f(\grad g)\dn</m> gives
+            <me>\oint_{\partial D}f(\grad g)\dn = \iint_{D}\div(f\grad
+            g)\,dA</me>.
           </p>
           <p>
-            Now, recall that <m>\div</m> is a kind of derivative operator.
-            For this reason, it also satisfies a version of the product rule:
-            <me>\div(f\grad g) = \grad f\cdot \grad g + f \div(\grad g) = \grad f\cdot\grad g + f\del^{2}g</me>.
-            Plugging this into the double integral and rearranging proves the result.
+            Now, recall that <m>\div</m> is a kind of derivative
+            operator.  For this reason, it also satisfies a version of
+            the product rule: <me>\div(f\grad g) = \grad f\cdot \grad
+            g + f \div(\grad g) = \grad f\cdot\grad g +
+            f\del^{2}g</me>.  Plugging this into the double integral
+            and rearranging proves the result.
           </p>
         </proof>
       </theorem>
       <aside>
         <p>
-          <xref ref="theorem-green-s-first-identity" text="type-global" /> acts as a kind of <q>integration by parts</q> in higher dimensions.
+          <xref ref="theorem-green-s-first-identity"
+          text="type-global" /> acts as a kind of <q>integration by
+          parts</q> in higher dimensions.
         </p>
       </aside>
     </subsection>
-    <conclusion>
-      <p>
-        SUGGESTED PROBLEMS: 1-9 odd, 10, 11-15 odd.
-      </p>
-    </conclusion>
+    <worksheet>
+      <title>Guided notes</title>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="definition-curl-of-a-vector-field-in--rr-3-m-"/>
+        </title>
+        <statement>
+          <p>
+            Let <m>\vb{F} = P\vb{i} + Q\vb{j} + R\vb{k}</m> be a
+            vector field in <m>\RR^{3}</m> with continuously
+            differentiable components.  The curl of <m>\vb{F}</m> is
+            the vector <me>\curlt{\vb{F}} = \curl\vb{F} =
+            \parens{\pdv{R}{y} - \pdv{Q}{z}}\vb{i} +
+            \parens{\pdv{P}{z} - \pdv{R}{x}}\vb{j} +
+            \parens{\pdv{Q}{x} - \pdv{P}{y}}\vb{k}</me>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="theorem-conservative-vector-fields-in--rr-3-m-"/>
+        </title>
+        <statement>
+          <p>
+            Let <m>\vb{F}</m> denote a continuously differentiable
+            vector field on an open set containing the simply
+            connected region <m>D</m>.  Then <m>\vb{F}</m> is
+            conservative if and only if <m>\curl\vb{F} = \vb{0}</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="example-determining-rotation-in-a-vector-field"/>
+        </title>
+        <statement>
+          <p>
+            Suppose the vector field <m>\vb{F} = \dotprod{1, \sin z, x
+            - yz^{2}}</m> represents a swirling fluid.  Within this
+            fluid you place a small paddle wheel at the point
+            <m>(1,-2,0)</m>.  When viewed from directly above, will
+            the paddle wheel tend to rotate clockwise or
+            counterclockwise?
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="example-divergence-on-a-rectangle"/>
+        </title>
+        <statement>
+          <p>
+            Let <m>\vb{F} = \dotprod{xy, x}</m> and let <m>C</m>
+            denote the unit circle, traversed counterclockwise once.
+            Find the divergence of <m>\vb{F}</m> at <m>(-1,0)</m> and
+            <m>(0,-1)</m>.  Then find the <em>net divergence</em> of
+            <m>\vb{F}</m> through the interior of <m>C</m>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="theorem-green-s-theorem-for-flux-integrals"/>
+        </title>
+        <statement>
+          <p>
+            Let <m>\vb{F}</m>, <m>C</m> and <m>D</m> satisfy the same
+            hypotheses as in <xref ref="theorem-green-s-theorem"
+            text="type-global" />.  Then
+            <me>\oint_{C}\vb{F}\cdot\vb{n}\dd{s} =
+            \iint_{D}\brackets{\pdv{P}{x} + \pdv{Q}{y}}\,dA</me>.
+          </p>
+        </statement>
+      </exercise>
+      <exercise workspace="2in">
+        <title>
+          <xref ref="definition-laplacian"/>
+        </title>
+        <statement>
+          <p>
+            Let <m>f</m> be a twice differentiable scalar function on
+            <m>\RR^{3}</m>.  The <term>Laplacian</term> of <m>f</m> is
+            the function <me>\div(\grad f) = \del^{2}f = \Delta f</me>
+            given by <m>f_{xx} + f_{yy} + f_{zz}</m>.
+          </p>
+        </statement>
+      </exercise>
+     <exercise workspace="2in">
+        <title>
+          <xref ref="example-laplacians-and-average-values"/>
+        </title>
+        <statement>
+          <p>
+            Let <m>f_{1} = x^{2} + y^{2}</m> and let <m>f_{2} = x^{2}
+            - y^{2}</m>.  Let <m>C</m> denote the unit circle
+            traversed once counterclockwise.  Find the average values
+            of <m>f_{i}</m> on <m>C</m>, their specific values at
+            <m>(0,0)</m> and the Laplacians at <m>(0,0)</m>.
+          </p>
+        </statement>
+     </exercise>
+     <exercise workspace="2in">
+        <title>
+          <xref ref="theorem-green-s-first-identity"/>
+        </title>
+        <statement>
+          <p>
+            Let <m>D</m> denote a simply connected region with
+            piecewise smooth boundary <m>\partial D</m>.  Suppose that
+            <m>f</m> is continuously differentiable and <m>g</m> is
+            twice continuously differentiable on an open domain
+            containing <m>D</m>.  Then <me>\iint_{D}f\del^{2}g\,dA =
+            \oint_{\partial D}f(\grad g)\dn - \iint_{D}\grad f\cdot
+            \grad g\,dA</me>.
+          </p>
+        </statement>
+      </exercise>
+    </worksheet>
   </section>
   <section xml:id="section-parametric-surfaces-and-areas" label="section-parametric-surfaces-and-areas">
     <title>Parametric Surfaces and Areas</title>
